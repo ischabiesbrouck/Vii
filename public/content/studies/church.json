@@ -70,8 +70,8 @@
       "summaryEn": "A close reading of the key paragraphs, in the order of the reading path: the Church as sacrament, the formula subsistit in, the People of God, the necessity of the Church for salvation and her fulfilment in heaven.",
       "sections": [
         {
-          "headingNl": "Mysterie en sacrament (LG hoofdstuk I)",
-          "headingEn": "Mystery and sacrament (LG chapter I)",
+          "headingNl": "Mysterie en sacrament (LG §1–7)",
+          "headingEn": "Mystery and sacrament (LG §1–7)",
           "blocks": [
             {
               "type": "p",
@@ -86,7 +86,13 @@
               "type": "p",
               "nl": "De volgende paragrafen plaatsen de Kerk in het werk van de Drie-eenheid: het heilsplan van de Vader, de zending van de Zoon en de heiliging door de Geest (LG §2–4). Met Cyprianus noemt de tekst de Kerk een volk dat één is gemaakt vanuit de eenheid van Vader, Zoon en Geest (LG §4). De Kerk is kiem en begin van het Rijk van God op aarde (LG §5); na de bijbelse beelden (LG §6) beschrijft de tekst haar vooral als Lichaam van Christus (LG §7).",
               "en": "The following paragraphs place the Church within the work of the Trinity: the Father's plan of salvation, the mission of the Son and the sanctification by the Spirit (LG §2–4). With Cyprian the text calls the Church a people made one with the unity of Father, Son and Spirit (LG §4). The Church is the seed and beginning of the Kingdom of God on earth (LG §5); after the biblical images (LG §6) the text describes her above all as the Body of Christ (LG §7)."
-            },
+            }
+          ]
+        },
+        {
+          "headingNl": "Subsistit in (LG §8; UR §4)",
+          "headingEn": "Subsistit in (LG §8; UR §4)",
+          "blocks": [
             {
               "type": "p",
               "nl": "LG §8 brengt dit samen. De zichtbare, hiërarchisch geordende samenleving en het mystieke Lichaam zijn geen twee dingen, maar één complexe werkelijkheid uit een menselijk en een goddelijk element, naar analogie van het mysterie van het mensgeworden Woord (LG §8). Deze ene Kerk van Christus, die wij in de geloofsbelijdenis één, heilig, katholiek en apostolisch noemen, ‘is aanwezig in’ (subsistit in) de Katholieke Kerk, bestuurd door de opvolger van Petrus en de bisschoppen in gemeenschap met hem. Tegelijk erkent de tekst dat er buiten haar zichtbare structuur vele elementen van heiliging en waarheid zijn, die als gaven van de Kerk van Christus tot katholieke eenheid aansporen (LG §8). Dezelfde paragraaf noemt de Kerk heilig en tegelijk steeds aan zuivering toe.",
@@ -132,8 +138,8 @@
           ]
         },
         {
-          "headingNl": "Noodzaak van de Kerk en geordende verbondenheid (LG §13–17)",
-          "headingEn": "Necessity of the Church and ordered relations (LG §13–17)",
+          "headingNl": "Noodzaak, verbondenheid en voltooiing (LG §13–17, §48)",
+          "headingEn": "Necessity, relations and fulfilment (LG §13–17, §48)",
           "blocks": [
             {
               "type": "p",
@@ -152,13 +158,7 @@
             {
               "type": "quote",
               "paragraphId": "LG-15"
-            }
-          ]
-        },
-        {
-          "headingNl": "Pelgrimerende Kerk en voltooiing (LG hoofdstuk VII)",
-          "headingEn": "Pilgrim Church and fulfilment (LG chapter VII)",
-          "blocks": [
+            },
             {
               "type": "p",
               "nl": "De constitutie sluit de leer over de Kerk af met haar eschatologische karakter. De Kerk zal haar voltooiing pas in de hemelse heerlijkheid bereiken (LG §48). Op aarde is haar heiligheid echt, maar onvolkomen. Daarmee keert de tekst terug naar het begin: de Kerk is geen doel in zichzelf, maar een volk op weg naar het Rijk. Het hoofdstuk over Maria, die de kerkvaders type van de Kerk noemden, sluit daarbij aan (LG §63).",
@@ -389,6 +389,11 @@
           "headingEn": "Rules for reading",
           "blocks": [
             {
+              "type": "p",
+              "nl": "Zes eenvoudige regels helpen je Lumen Gentium zelf te lezen.",
+              "en": "Six simple rules will help you read Lumen Gentium for yourself."
+            },
+            {
               "type": "list",
               "nl": [
                 "Lees de hoofdstukken in hun volgorde. Wie meteen naar hoofdstuk III springt, mist dat het ambt in het mysterie en in het volk van God is ingebed (LG §1–17).",
@@ -428,8 +433,8 @@
               "kind": "note",
               "titleNl": "Een waarschuwing",
               "titleEn": "A caution",
-              "nl": "Deze studie is een academische inleiding, geen uitspraak van het leergezag. Waar zij posities naast elkaar zet, doet zij dat om je te helpen de tekst zelf te lezen. Het gezaghebbende oordeel over de uitleg van de conciliedocumenten ligt bij het leergezag van de Kerk, niet bij deze app.",
-              "en": "This study is an academic introduction, not a pronouncement of the magisterium. Where it sets positions side by side, it does so to help you read the text itself. The authoritative judgement on the interpretation of the conciliar documents belongs to the magisterium of the Church, not to this app."
+              "nl": "Deze studie is een academische inleiding, geen uitspraak van het leergezag. Het gezaghebbende oordeel over de uitleg van de conciliedocumenten ligt bij het leergezag van de Kerk, niet bij deze app.",
+              "en": "This study is an academic introduction, not a pronouncement of the magisterium. The authoritative judgement on the interpretation of the conciliar documents belongs to the magisterium of the Church, not to this app."
             }
           ]
         }
