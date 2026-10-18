@@ -22,7 +22,6 @@ import {
   WifiOff,
 } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Button } from '@/components/ui/button';
 import { InstallPrompt } from '@/components/InstallPrompt';
 import { Toast } from '@/components/Toast';
 import { CommandPalette } from '@/components/CommandPalette';
@@ -86,14 +85,14 @@ function Segmented<T extends string>({
   return (
     <fieldset className="mb-5">
       <legend className="kicker mb-2">{label}</legend>
-      <div className="grid auto-cols-fr grid-flow-col gap-1 rounded-md border border-line bg-card p-1">
+      <div className="grid auto-cols-fr grid-flow-col gap-1 rounded-full border border-line/70 bg-card p-1">
         {options.map((o) => (
           <button
             key={o.value}
             type="button"
             aria-pressed={value === o.value}
             onClick={() => onChange(o.value)}
-            className={cn('min-h-[40px] rounded px-2 text-sm', value === o.value ? 'bg-accent text-accent-fg' : 'hover:bg-surface')}
+            className={cn('min-h-[40px] rounded-full px-2 text-sm', value === o.value ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg')}
           >
             {o.label}
           </button>
@@ -163,9 +162,9 @@ function ThemeButton() {
   const next = order[(order.indexOf(theme) + 1) % order.length]!;
   const Icon = theme === 'light' ? Sun : theme === 'dark' ? Moon : Monitor;
   return (
-    <Button variant="ghost" size="icon" onClick={() => setTheme(next)} aria-label={`${t('settings.theme')}: ${t(`settings.${theme}`)}`} title={t(`settings.${theme}`)}>
+    <button type="button" className="icon-btn" onClick={() => setTheme(next)} aria-label={`${t('settings.theme')}: ${t(`settings.${theme}`)}`} title={t(`settings.${theme}`)}>
       <Icon className="h-[18px] w-[18px]" aria-hidden />
-    </Button>
+    </button>
   );
 }
 
@@ -173,14 +172,14 @@ function LangToggle() {
   const { lang, setLang } = useUi();
   const { t } = useTranslation();
   return (
-    <div role="group" aria-label={t('settings.language')} className="flex items-center rounded border border-line text-xs font-semibold">
+    <div role="group" aria-label={t('settings.language')} className="flex items-center rounded-full border border-line/70 bg-card p-0.5 text-xs font-semibold">
       {(['nl', 'en'] as const).map((l) => (
         <button
           key={l}
           type="button"
           aria-pressed={lang === l}
           onClick={() => setLang(l)}
-          className={cn('min-h-[34px] min-w-[38px] px-2 uppercase tracking-wider', lang === l ? 'bg-fg text-bg' : 'text-muted hover:text-fg')}
+          className={cn('min-h-[34px] min-w-[38px] rounded-full px-2 uppercase tracking-wider', lang === l ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg')}
         >
           {l}
         </button>
@@ -195,11 +194,11 @@ function PaletteButton({ onOpen }: { onOpen: () => void }) {
     <button
       type="button"
       onClick={onOpen}
-      className="hidden h-9 w-64 items-center gap-2 rounded border border-line bg-paper px-3 text-sm text-muted hover:border-gold xl:flex"
+      className="hidden h-10 w-64 items-center gap-2 rounded-full border border-line/70 bg-card px-4 text-sm text-muted shadow-card transition hover:shadow-lift xl:flex"
     >
       <Search className="h-4 w-4" aria-hidden />
       <span className="flex-1 text-left">{t('palette.open')}</span>
-      <kbd className="rounded border border-line px-1.5 text-[0.65rem]">Ctrl K</kbd>
+      <kbd className="rounded-full border border-line px-2 text-[0.65rem]">Ctrl K</kbd>
     </button>
   );
 }
@@ -212,9 +211,8 @@ function MoreMenu() {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger
         className={cn(
-          'relative flex items-center gap-1 px-3 text-[0.8rem] font-medium uppercase tracking-[0.1em] outline-none',
-          'after:absolute after:inset-x-3 after:bottom-0 after:h-[2px]',
-          activeMore ? 'text-accent after:bg-accent' : 'text-muted hover:text-fg',
+          'flex h-9 items-center gap-1 rounded-full px-4 text-sm font-medium transition-colors',
+          activeMore ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg',
         )}
       >
         {t('nav.more')} <ChevronDown className="h-3.5 w-3.5" aria-hidden />
@@ -223,11 +221,11 @@ function MoreMenu() {
         <DropdownMenu.Content
           align="start"
           sideOffset={4}
-          className="z-50 min-w-[12rem] rounded-md border border-line bg-paper p-1 shadow-lg data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:slide-in-from-top-1"
+          className="z-50 min-w-[12rem] rounded-md border border-line/70 bg-card p-1.5 shadow-lift data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:slide-in-from-top-1"
         >
           {more.map((m) => (
             <DropdownMenu.Item key={m.to} asChild>
-              <Link to={m.to} className="flex min-h-[40px] items-center rounded px-3 text-sm outline-none data-[highlighted]:bg-surface data-[highlighted]:text-accent">
+              <Link to={m.to} className="flex min-h-[40px] items-center rounded-full px-3 text-sm outline-none data-[highlighted]:bg-violet data-[highlighted]:text-violet-fg">
                 {t(`nav.${m.key}`)}
               </Link>
             </DropdownMenu.Item>
@@ -343,9 +341,8 @@ export function Layout() {
         </div>
       </div>
 
-      <header data-chrome className="sticky top-0 z-30 border-b border-line bg-paper/95 pt-safe backdrop-blur supports-[backdrop-filter]:bg-paper/85">
-        <div className="h-[2px] bg-gold/70" aria-hidden />
-        <div className="mx-auto flex h-14 max-w-page items-center gap-3 px-4 lg:h-16 lg:px-8">
+      <header data-chrome className="sticky top-0 z-30 bg-bg/85 pt-safe backdrop-blur-xl supports-[backdrop-filter]:bg-bg/70">
+        <div className="mx-auto flex h-16 max-w-page items-center gap-3 px-4 lg:px-8">
           <Wordmark />
           <div className="ml-auto flex items-center gap-1.5">
             {!online && (
@@ -359,18 +356,18 @@ export function Layout() {
               </span>
             )}
             <PaletteButton onOpen={() => setPaletteOpen(true)} />
-            <Button variant="ghost" size="icon" className="xl:hidden" aria-label={t('palette.open')} onClick={() => setPaletteOpen(true)}>
-              <Search className="h-5 w-5" aria-hidden />
-            </Button>
+            <button type="button" className="icon-btn xl:hidden" aria-label={t('palette.open')} onClick={() => setPaletteOpen(true)}>
+              <Search className="h-[18px] w-[18px]" aria-hidden />
+            </button>
             <div className="hidden items-center gap-1.5 lg:flex">
               <LangToggle />
               <ThemeButton />
             </div>
             <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label={t('app.menu')} className="lg:hidden">
-                  <Menu className="h-5 w-5" aria-hidden />
-                </Button>
+                <button type="button" aria-label={t('app.menu')} className="icon-btn lg:hidden">
+                  <Menu className="h-[18px] w-[18px]" aria-hidden />
+                </button>
               </SheetTrigger>
               <SheetContent side="right" title={t('app.menu')} closeLabel={t('app.close')}>
                 <nav aria-label={t('app.menu')} className="mb-6">
@@ -380,7 +377,7 @@ export function Layout() {
                         <NavLink
                           to={to}
                           className={({ isActive }) =>
-                            cn('flex min-h-[44px] items-center gap-3 rounded px-3', isActive ? 'bg-surface font-semibold text-accent' : 'hover:bg-surface')
+                            cn('flex min-h-[48px] items-center gap-3 rounded-full px-4', isActive ? 'bg-primary font-semibold text-primary-fg' : 'hover:bg-violet/60')
                           }
                         >
                           <Icon className="h-5 w-5" aria-hidden />
@@ -396,8 +393,8 @@ export function Layout() {
           </div>
         </div>
         {/* Primary navigation (desktop) */}
-        <nav aria-label={t('nav.primary')} className="hidden border-t border-line lg:block">
-          <ul className="mx-auto flex h-11 max-w-page items-stretch gap-1 px-6">
+        <nav aria-label={t('nav.primary')} className="hidden pb-3 lg:block">
+          <ul className="mx-auto flex w-max items-center gap-1 rounded-full border border-line/70 bg-card p-1 shadow-card">
             {primary.map(({ to, key, end }) => (
               <li key={to} className="flex">
                 <NavLink
@@ -405,9 +402,8 @@ export function Layout() {
                   end={end}
                   className={({ isActive }) =>
                     cn(
-                      'relative flex items-center px-3 text-[0.8rem] font-medium uppercase tracking-[0.1em] transition-colors',
-                      'after:absolute after:inset-x-3 after:bottom-0 after:h-[2px] after:transition-colors',
-                      isActive ? 'text-accent after:bg-accent' : 'text-muted after:bg-transparent hover:text-fg hover:after:bg-gold',
+                      'flex h-9 items-center rounded-full px-4 text-sm font-medium transition-colors duration-200',
+                      isActive ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg',
                     )
                   }
                 >
@@ -422,7 +418,7 @@ export function Layout() {
         </nav>
       </header>
 
-      <main id="main" tabIndex={-1} className="mx-auto w-full max-w-page flex-1 px-4 pb-12 pt-6 outline-none lg:px-8 lg:pt-10">
+      <main id="main" tabIndex={-1} className="mx-auto w-full max-w-page flex-1 px-4 pb-16 pt-4 outline-none lg:px-8 lg:pt-8">
         <ErrorBoundary resetKey={location.pathname}>
           <div key={location.pathname} className="motion-safe:animate-in motion-safe:fade-in-0 motion-safe:duration-300">
             <Outlet />
@@ -430,8 +426,7 @@ export function Layout() {
         </ErrorBoundary>
       </main>
 
-      <footer data-chrome className="bg-ink pb-24 text-ink-fg lg:pb-0">
-        <div className="h-[2px] bg-gold/70" aria-hidden />
+      <footer data-chrome className="rounded-t-2xl bg-ink pb-28 text-ink-fg lg:pb-0">
         <div className="mx-auto grid max-w-page gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
           <div>
             <p className="font-display text-lg font-bold uppercase tracking-[0.16em]">{t('app.name')}</p>
@@ -469,27 +464,30 @@ export function Layout() {
         </div>
       </footer>
 
+      {/* Mobile: floating ink pill; the active tab expands to show its label. */}
       <nav
         data-chrome
         aria-label={t('nav.primary')}
-        className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper/95 pb-safe backdrop-blur supports-[backdrop-filter]:bg-paper/90 lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-30 flex justify-center px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pointer-events-none lg:hidden"
       >
-        <ul className="mx-auto grid max-w-2xl grid-cols-5">
+        <ul className="pointer-events-auto flex items-center gap-1 rounded-full bg-[#18161E]/95 p-1.5 text-white shadow-float ring-1 ring-white/10 backdrop-blur-xl dark:bg-[#2A2633]/95">
           {tabs.map(({ to, key, Icon, end }) => (
             <li key={to}>
               <NavLink
                 to={to}
                 end={end}
+                aria-label={t(`nav.${key}`)}
                 className={({ isActive }) =>
-                  cn('group flex min-h-[60px] flex-col items-center justify-center gap-1 text-[0.68rem] tracking-wide', isActive ? 'font-semibold text-accent' : 'text-muted hover:text-fg')
+                  cn(
+                    'flex h-12 items-center justify-center gap-2 rounded-full transition-all duration-300 ease-out',
+                    isActive ? 'bg-white px-4 text-[#18161E]' : 'w-12 text-white/70 hover:text-white',
+                  )
                 }
               >
                 {({ isActive }) => (
                   <>
-                    <span className={cn('flex h-8 w-14 items-center justify-center rounded-full transition-colors duration-300', isActive && 'bg-accent/10')}>
-                      <Icon className="h-5 w-5" aria-hidden />
-                    </span>
-                    {t(`nav.${key}`)}
+                    <Icon className="h-5 w-5 shrink-0" aria-hidden />
+                    {isActive && <span className="text-[0.8rem] font-semibold">{t(`nav.${key}`)}</span>}
                   </>
                 )}
               </NavLink>

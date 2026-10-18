@@ -129,8 +129,31 @@ capitals (Cinzel) for titles and kickers, Source Serif 4 for text, Inter for UI,
 rubric red for paragraph numbers (the convention of liturgical books), gold
 hairlines, white paper and an ink band for the institutional strip and footer.
 The footer and About page state that this is an unofficial study edition, not
-affiliated with the Holy See. On desktop the app uses horizontal navigation and
-multi-column layouts. On mobile it uses a five-tab bottom bar.
+affiliated with the Holy See.
+
+The interface layer follows contemporary mobile study apps: soft mist ground,
+generously rounded cards (20–28 px), pill-shaped segmented tabs and chips, an ink
+pill for primary actions and the active tab, and a floating ink tab bar on mobile
+whose active tab expands to show its label. Cards are tinted after the liturgical
+colours (violet, rose, green, gold), and each constitution keeps one tint in the
+catechesis calendar (DV gold, LG violet, SC rose, GS green). Decorative glossy
+spheres are pure CSS gradients (no images, no network). Key screens:
+
+- **Home**: greeting with today's date, "Your path through Vatican II", search,
+  topic chips, a progress ring (lessons, studied paragraphs, watched videos), the
+  next lesson as a featured card (minutes / texts / questions), the latest
+  catechesis as a date tile, "up next" list and the four sessions.
+- **Lesson**: round back and share buttons, large title, lesson material in
+  segmented tabs (texts / videos / catecheses) with list rows; video rows play in
+  the in-app theater and show a resume ring; a progress card with the course ring
+  and quiz score.
+- **Catecheses**: a month calendar (previous/next month, a scrollable strip of
+  every day of the month with the catechesis days marked), constitution filter
+  chips, and an agenda with a date gutter and tinted cards. `#YYYY-MM-DD` links
+  open the right month and select the day.
+
+The segmented tabs implement the WAI-ARIA tabs pattern (arrow keys, Home/End,
+roving tab index). Desktop uses a pill navigation bar and multi-column layouts.
 
 ## Licensing guardrail
 
@@ -155,7 +178,7 @@ translation.
    declarations "dogmatic" or "disciplinary" would present an editorial judgement
    as fact. Decrees are labelled `disciplinary` by convention. Each document
    also carries its exact `designationLa`.
-2. **Subjects tab.** The bottom bar has five tabs (Home, Subjects, Documents, Claims, Search) instead of four.
+2. **Five tabs.** The mobile tab bar has five tabs (Home, Learn, Documents, Claims, Search) instead of four.
 3. **Bilingual editorial fields** (`summaryEn`, `claimEn`, `explanationEn`,
    `titleEn`/`bodyEn`, `definitionEn`, `noteEn`) were added so that the EN toggle
    covers content as well as UI chrome.

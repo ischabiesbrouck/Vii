@@ -28,9 +28,9 @@ export function VideoCard({ video, compact = false }: { video: Video; compact?: 
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 transition-opacity duration-500 group-hover:opacity-100"
-        style={{ background: 'radial-gradient(120% 90% at 85% 10%, rgb(176 141 79 / 0.38), transparent 60%)', opacity: 0.7 }}
+        style={{ background: 'radial-gradient(120% 90% at 85% 10%, rgb(169 150 220 / 0.45), transparent 60%), radial-gradient(80% 70% at 0% 100%, rgb(176 141 79 / 0.3), transparent 70%)', opacity: 0.8 }}
       />
-      <div aria-hidden className="pointer-events-none absolute inset-3 rounded-sm border border-[#C9A96E]/25" />
+      <div aria-hidden className="pointer-events-none absolute inset-3 rounded-lg border border-[#C9A96E]/25" />
       <span className="relative flex items-center justify-between gap-2 font-display text-[0.62rem] font-semibold uppercase tracking-caps text-[#C9A96E]">
         <span>
           {t(`video.kind.${video.kind}`)} · {t('video.english')}
@@ -54,7 +54,7 @@ export function VideoCard({ video, compact = false }: { video: Video; compact?: 
   );
 
   return (
-    <article className="group/card flex h-full flex-col overflow-hidden rounded-lg border border-line bg-card shadow-sm transition-shadow hover:shadow-md">
+    <article className="group/card flex h-full flex-col overflow-hidden rounded-xl border border-line/70 bg-card shadow-card transition duration-300 ease-out hover:shadow-lift">
       <div className="aspect-video w-full">
         {!online ? (
           <div className="h-full w-full" title={t('video.offline')}>
@@ -94,5 +94,53 @@ export function VideoCard({ video, compact = false }: { video: Video; compact?: 
         </div>
       </div>
     </article>
+  );
+}
+
+/** Compact list row (lesson material): round play button, title, channel and length. */
+export function VideoRow({ video }: { video: Video }) {
+  const { t } = useTranslation();
+  const online = useOnline();
+  const open = usePlayer((s) => s.open);
+  const w = useWatched((s) => s.watched[video.youtubeId]);
+  const progress = w?.done ? 1 : w && w.duration ? w.at / w.duration : 0;
+  const label = t('video.playLabel', { title: video.title });
+  const body = (
+    <>
+      <span className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-primary-fg shadow-card transition-transform duration-300 group-hover:scale-105">
+        {!online ? <WifiOff className="h-5 w-5" aria-hidden /> : w?.done ? <CheckCircle2 className="h-5 w-5" aria-hidden /> : <Play className="ml-0.5 h-5 w-5 fill-current" aria-hidden />}
+        {progress > 0 && progress < 1 && (
+          <svg viewBox="0 0 48 48" className="absolute inset-0 -rotate-90 text-gold" aria-hidden>
+            <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" strokeWidth="3" strokeDasharray={141.4} strokeDashoffset={141.4 * (1 - progress)} strokeLinecap="round" />
+          </svg>
+        )}
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="line-clamp-2 font-medium leading-snug">{video.title}</span>
+        <span className="mt-0.5 block truncate text-xs text-muted">
+          {video.channel === '—' ? t('video.unconfirmed') : video.channel} · {t(`video.kind.${video.kind}`)}
+          {w && !w.done && w.at > 5 && ` · ${t('video.resumeAt', { time: formatTime(w.at) })}`}
+        </span>
+      </span>
+      {video.length && <span className="shrink-0 text-sm tabular text-muted">{video.length}</span>}
+    </>
+  );
+  const cls = 'group flex w-full items-center gap-4 rounded-lg p-2 text-left transition hover:bg-violet/50';
+  if (!online)
+    return (
+      <div className={cn(cls, 'opacity-70')} title={t('video.offline')}>
+        {body}
+      </div>
+    );
+  if (IS_ARTIFACT_PREVIEW)
+    return (
+      <a href={watchUrl(video.youtubeId)} target="_blank" rel="noopener noreferrer" className={cls} aria-label={label}>
+        {body}
+      </a>
+    );
+  return (
+    <button type="button" onClick={() => open(video)} className={cls} aria-label={label} aria-haspopup="dialog">
+      {body}
+    </button>
   );
 }

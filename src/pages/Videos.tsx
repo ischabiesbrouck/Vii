@@ -5,7 +5,7 @@ import { VideoCard } from '@/components/VideoCard';
 import { getVideos } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
-import { cn, pick } from '@/lib/utils';
+import { pick } from '@/lib/utils';
 import type { VideoKind } from '@/types/content';
 
 const kinds: VideoKind[] = ['overview', 'history', 'document', 'interpretation', 'catechesis', 'primary-source'];
@@ -29,7 +29,7 @@ export function Videos() {
         type="button"
         aria-pressed={filter === k}
         onClick={() => setParams(k ? { kind: k } : {}, { replace: true })}
-        className={cn('min-h-[38px] rounded border px-3 text-sm', filter === k ? 'border-fg bg-fg text-bg' : 'border-line bg-card hover:border-gold')}
+        className="chip"
       >
         {k ? t(`video.kind.${k}`) : t('video.all')} <span className="opacity-70">({count})</span>
       </button>
@@ -39,7 +39,7 @@ export function Videos() {
   return (
     <div>
       <PageHeader eyebrow={t('video.english')} title={t('video.title')} intro={t('video.intro')} />
-      <div role="group" aria-label={t('video.title')} className="mb-6 flex flex-wrap gap-2">
+      <div role="group" aria-label={t('video.title')} className="scroll-x mb-6 sm:mx-0 sm:flex-wrap sm:px-0">
         {chip(null)}
         {kinds.map(chip)}
       </div>
