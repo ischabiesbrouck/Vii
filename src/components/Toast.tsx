@@ -5,7 +5,7 @@ export function Toast() {
   return (
     <div aria-live="polite" role="status" className="pointer-events-none fixed inset-x-0 bottom-24 lg:bottom-10 z-[60] flex justify-center px-4">
       {message && (
-        <div className="rounded-full bg-fg px-4 py-2 text-sm text-bg shadow-lg animate-in fade-in-0 slide-in-from-bottom-2">
+        <div className="rounded-sm border-l-2 border-gold bg-fg px-4 py-2.5 text-sm text-bg shadow-lg animate-in fade-in-0 slide-in-from-bottom-2">
           {message}
         </div>
       )}

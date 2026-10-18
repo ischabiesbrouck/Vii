@@ -123,37 +123,43 @@ public release, an editor should:
 
 ## Design
 
-The visual language follows printed conciliar editions and the Holy See's archive
-pages, without using any official emblem or branding: Roman inscriptional
-capitals (Cinzel) for titles and kickers, Source Serif 4 for text, Inter for UI,
-rubric red for paragraph numbers (the convention of liturgical books), gold
-hairlines, white paper and an ink band for the institutional strip and footer.
-The footer and About page state that this is an unofficial study edition, not
-affiliated with the Holy See.
+**Editio academica**: the visual language of a pontifical faculty and of the Holy
+See's own publications, without any official emblem or branding.
 
-The interface layer follows contemporary mobile study apps: soft mist ground,
-generously rounded cards (20–28 px), pill-shaped segmented tabs and chips, an ink
-pill for primary actions and the active tab, and a floating ink tab bar on mobile
-whose active tab expands to show its label. Cards are tinted after the liturgical
-colours (violet, rose, green, gold), and each constitution keeps one tint in the
-catechesis calendar (DV gold, LG violet, SC rose, GS green). Decorative glossy
-spheres are pure CSS gradients (no images, no network). Key screens:
+| Reference | What is borrowed |
+|---|---|
+| vatican.va | Document index grouped by kind (constitutions, decrees, declarations), Latin titles in capitals before the vernacular, a plain language bar, cream and gold |
+| *Acta Apostolicae Sedis* and conciliar editions | Serif typography, small caps, centred capitals for document titles, paragraph numbers in rubric red, hairline and double rules |
+| Liturgical books | Rubrics and initials in red |
+| Vatican News | Small red section labels with a date line ("Audientia generalis · Wednesday 7 October 2026") |
+| Curial documents | Latin date line in the utility bar ("Dominica, die XVIII mensis Octobris, anno MMXXVI"; weekdays as Feria II–VI) |
+| Pontifical universities | Seal with a Latin legend, a programme of study in a syllabus table (Lectio I–X, topic, length), details tables, sober forms |
 
-- **Home**: greeting with today's date, "Your path through Vatican II", search,
-  topic chips, a progress ring (lessons, studied paragraphs, watched videos), the
-  next lesson as a featured card (minutes / texts / questions), the latest
-  catechesis as a date tile, "up next" list and the four sessions.
-- **Lesson**: round back and share buttons, large title, lesson material in
-  segmented tabs (texts / videos / catecheses) with list rows; video rows play in
-  the in-app theater and show a resume ring; a progress card with the course ring
-  and quiz score.
-- **Catecheses**: a month calendar (previous/next month, a scrollable strip of
-  every day of the month with the catechesis days marked), constitution filter
-  chips, and an agenda with a date gutter and tinted cards. `#YYYY-MM-DD` links
-  open the right month and select the day.
+- **Type**: EB Garamond for headings and small-caps labels, Source Serif 4 for reading text and conciliar quotations, Cinzel only for the wordmark and Latin document titles, Inter for interface text.
+- **Colour**: paper white, ink, rubric red `#7A1F1F` and gold `#A88A4A`.
+- **Form**: square corners, hairlines instead of shadows, no gradients.
+- **Seal**: the app's own seal, an open book under a cross inside a ring with the legend *STVDIVM · CONCILII · VATICANI · II · MCMLXII · MCMLXV*. It deliberately avoids the keys, tiara and arms of the Holy See.
+- **Footer**: a colophon stating that this is an unofficial study edition without ecclesiastical approval (imprimatur).
 
-The segmented tabs implement the WAI-ARIA tabs pattern (arrow keys, Home/End,
-roving tab index). Desktop uses a pill navigation bar and multi-column layouts.
+Key screens:
+
+- **Home** (title page)
+  - Overline, title and a double rule.
+  - *Ex Concilio · Text of the day*: a paragraph with its rubric number and Latin incipit.
+  - Search form.
+  - Programme of study (syllabus table).
+  - The latest general-audience catecheses.
+  - *Index documentorum*.
+  - Study paths, Claim Check, video lectures and further study.
+- **Lesson**
+  - Breadcrumbs and a *Lectio V* overline.
+  - A details table (length, texts, knowledge check).
+  - Underlined material tabs (texts / videos / catecheses).
+  - Numbered sections with a red initial.
+  - A progress box and the course index in the margin.
+- **Catecheses**: a register of the audiences, newest first, grouped by month, with constitution tabs. `#YYYY-MM-DD` links highlight the day.
+
+The tabs implement the WAI-ARIA tabs pattern. On desktop the masthead and a small-caps navigation row sit under a dark utility bar. On mobile there is a fixed five-tab bar.
 
 ## Licensing guardrail
 

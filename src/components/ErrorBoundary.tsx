@@ -25,7 +25,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: s
         <button
           type="button"
           onClick={() => this.setState({ error: null })}
-          className="mt-4 inline-flex min-h-[44px] items-center rounded bg-accent px-4 text-sm font-medium text-accent-fg"
+          className="mt-4 inline-flex min-h-[44px] items-center rounded-sm bg-primary px-4 text-sm font-medium text-primary-fg"
         >
           {i18n.t('error.retry')}
         </button>

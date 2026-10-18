@@ -31,6 +31,8 @@ import { useOnline } from '@/lib/hooks';
 import { useUi, type FontSize, type Theme } from '@/store/ui';
 import { OFFICIAL_INDEX_URL, RKDOCUMENTEN_URL } from '@/config';
 import { cn } from '@/lib/utils';
+import { latinDate } from '@/lib/roman';
+import { Seal } from '@/components/Seal';
 
 const tabs = [
   { to: '/', key: 'home', Icon: Home, end: true },
@@ -69,8 +71,6 @@ const secondary = [
   { to: '/about', key: 'about', Icon: Info },
 ] as const;
 
-const emblemSrc = `${import.meta.env.BASE_URL}favicon.svg`;
-
 function Segmented<T extends string>({
   label,
   value,
@@ -85,14 +85,14 @@ function Segmented<T extends string>({
   return (
     <fieldset className="mb-5">
       <legend className="kicker mb-2">{label}</legend>
-      <div className="grid auto-cols-fr grid-flow-col gap-1 rounded-full border border-line/70 bg-card p-1">
+      <div className="grid auto-cols-fr grid-flow-col border border-line bg-card">
         {options.map((o) => (
           <button
             key={o.value}
             type="button"
             aria-pressed={value === o.value}
             onClick={() => onChange(o.value)}
-            className={cn('min-h-[40px] rounded-full px-2 text-sm', value === o.value ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg')}
+            className={cn('min-h-[40px] border-l border-line px-2 text-sm first:border-l-0', value === o.value ? 'bg-fg text-bg' : 'text-muted hover:text-fg')}
           >
             {o.label}
           </button>
@@ -140,49 +140,62 @@ export function SettingsPanel() {
   );
 }
 
-function Wordmark({ compact = false }: { compact?: boolean }) {
+function Wordmark() {
   const { t } = useTranslation();
   return (
-    <Link to="/" className="flex min-w-0 items-center gap-3 rounded py-1" aria-label={`${t('app.name')} — ${t('nav.home')}`}>
-      <img src={emblemSrc} alt="" width={36} height={36} className={cn('shrink-0', compact ? 'h-8 w-8' : 'h-9 w-9')} />
-      <span className="min-w-0">
-        <span className="block font-display text-[1.15rem] font-bold uppercase leading-none tracking-[0.16em] sm:text-[1.3rem]">
-          {t('app.name')}
-        </span>
-        <span className="mt-1 block truncate text-[0.68rem] uppercase leading-none tracking-[0.12em] text-muted">{t('app.tagline')}</span>
+    <Link to="/" className="flex min-w-0 items-center gap-3 py-1" aria-label={`${t('app.name')} — ${t('nav.home')}`}>
+      <Seal className="h-11 w-11 text-accent lg:h-14 lg:w-14" />
+      <span className="min-w-0 border-l border-line pl-3">
+        <span className="block font-display text-[1.12rem] font-bold uppercase leading-none tracking-[0.18em] sm:text-[1.35rem]">{t('app.name')}</span>
+        <span className="mt-1.5 block truncate font-title text-[0.95rem] italic leading-none text-muted">{t('app.subtitle')}</span>
       </span>
     </Link>
   );
 }
 
-function ThemeButton() {
+function ThemeButton({ className }: { className?: string }) {
   const { t } = useTranslation();
   const { theme, setTheme } = useUi();
   const order: Theme[] = ['system', 'light', 'dark'];
   const next = order[(order.indexOf(theme) + 1) % order.length]!;
   const Icon = theme === 'light' ? Sun : theme === 'dark' ? Moon : Monitor;
   return (
-    <button type="button" className="icon-btn" onClick={() => setTheme(next)} aria-label={`${t('settings.theme')}: ${t(`settings.${theme}`)}`} title={t(`settings.${theme}`)}>
-      <Icon className="h-[18px] w-[18px]" aria-hidden />
+    <button
+      type="button"
+      className={cn('inline-flex h-8 items-center gap-1.5 px-2 hover:text-white', className)}
+      onClick={() => setTheme(next)}
+      aria-label={`${t('settings.theme')}: ${t(`settings.${theme}`)}`}
+      title={t(`settings.${theme}`)}
+    >
+      <Icon className="h-3.5 w-3.5" aria-hidden />
     </button>
   );
 }
 
-function LangToggle() {
+/** Language bar in the manner of vatican.va: plain names, the current one marked. */
+function LangBar() {
   const { lang, setLang } = useUi();
   const { t } = useTranslation();
   return (
-    <div role="group" aria-label={t('settings.language')} className="flex items-center rounded-full border border-line/70 bg-card p-0.5 text-xs font-semibold">
-      {(['nl', 'en'] as const).map((l) => (
-        <button
-          key={l}
-          type="button"
-          aria-pressed={lang === l}
-          onClick={() => setLang(l)}
-          className={cn('min-h-[34px] min-w-[38px] rounded-full px-2 uppercase tracking-wider', lang === l ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg')}
-        >
-          {l}
-        </button>
+    <div role="group" aria-label={t('settings.language')} className="flex items-center">
+      {(
+        [
+          ['nl', 'Nederlands'],
+          ['en', 'English'],
+        ] as const
+      ).map(([l, name], i) => (
+        <span key={l} className="flex items-center">
+          {i > 0 && <span aria-hidden className="px-1.5 text-ink-fg/40">|</span>}
+          <button
+            type="button"
+            aria-pressed={lang === l}
+            lang={l}
+            onClick={() => setLang(l)}
+            className={cn('h-8 px-1', lang === l ? 'text-[#D9BE85] underline underline-offset-4' : 'text-ink-fg/75 hover:text-white')}
+          >
+            {name}
+          </button>
+        </span>
       ))}
     </div>
   );
@@ -194,14 +207,21 @@ function PaletteButton({ onOpen }: { onOpen: () => void }) {
     <button
       type="button"
       onClick={onOpen}
-      className="hidden h-10 w-64 items-center gap-2 rounded-full border border-line/70 bg-card px-4 text-sm text-muted shadow-card transition hover:shadow-lift xl:flex"
+      className="hidden h-10 w-72 items-center gap-2 rounded-sm border border-line bg-bg px-3 text-sm text-muted transition-colors hover:border-fg/40 xl:flex"
     >
       <Search className="h-4 w-4" aria-hidden />
       <span className="flex-1 text-left">{t('palette.open')}</span>
-      <kbd className="rounded-full border border-line px-2 text-[0.65rem]">Ctrl K</kbd>
+      <kbd className="rounded-sm border border-line px-1.5 font-sans text-[0.65rem]">Ctrl K</kbd>
     </button>
   );
 }
+
+const navItem = (active: boolean) =>
+  cn(
+    'relative flex h-full items-center px-3 font-title text-[1.08rem] tracking-[0.06em] transition-colors small-caps',
+    'after:absolute after:inset-x-3 after:bottom-0 after:h-[2px] after:transition-colors',
+    active ? 'text-accent after:bg-accent' : 'text-fg/80 after:bg-transparent hover:text-fg hover:after:bg-gold',
+  );
 
 function MoreMenu() {
   const { t } = useTranslation();
@@ -209,23 +229,18 @@ function MoreMenu() {
   const activeMore = more.some((m) => location.pathname.startsWith(m.to));
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger
-        className={cn(
-          'flex h-9 items-center gap-1 rounded-full px-4 text-sm font-medium transition-colors',
-          activeMore ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg',
-        )}
-      >
+      <DropdownMenu.Trigger className={cn(navItem(activeMore), 'gap-1 outline-none')}>
         {t('nav.more')} <ChevronDown className="h-3.5 w-3.5" aria-hidden />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           align="start"
-          sideOffset={4}
-          className="z-50 min-w-[12rem] rounded-md border border-line/70 bg-card p-1.5 shadow-lift data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:slide-in-from-top-1"
+          sideOffset={0}
+          className="z-50 min-w-[13rem] border border-line bg-paper py-1 shadow-lift data-[state=open]:animate-in data-[state=open]:fade-in-0"
         >
           {more.map((m) => (
             <DropdownMenu.Item key={m.to} asChild>
-              <Link to={m.to} className="flex min-h-[40px] items-center rounded-full px-3 text-sm outline-none data-[highlighted]:bg-violet data-[highlighted]:text-violet-fg">
+              <Link to={m.to} className="flex min-h-[40px] items-center border-l-2 border-transparent px-4 text-sm outline-none data-[highlighted]:border-accent data-[highlighted]:bg-surface">
                 {t(`nav.${m.key}`)}
               </Link>
             </DropdownMenu.Item>
@@ -331,53 +346,52 @@ export function Layout() {
         {t('app.skip')}
       </a>
 
-      {/* Institutional strip (desktop) */}
+      {/* Utility bar: Latin date line, language bar, official source */}
       <div data-chrome className="hidden bg-ink text-ink-fg lg:block">
-        <div className="mx-auto flex h-8 max-w-page items-center justify-between px-8 text-[0.68rem] uppercase tracking-[0.18em]">
-          <span className="font-display">Concilium Oecumenicum Vaticanum II · MCMLXII – MCMLXV</span>
-          <a href={OFFICIAL_INDEX_URL} target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100">
-            vatican.va ↗
-          </a>
+        <div className="mx-auto flex h-9 max-w-page items-center justify-between gap-6 px-8 text-[0.8rem]">
+          <span className="font-title text-[0.95rem] italic text-ink-fg/85">{latinDate(new Date())}</span>
+          <div className="flex items-center gap-4">
+            <LangBar />
+            <span aria-hidden className="h-4 w-px bg-ink-fg/25" />
+            <ThemeButton className="text-ink-fg/75" />
+            <span aria-hidden className="h-4 w-px bg-ink-fg/25" />
+            <a href={OFFICIAL_INDEX_URL} target="_blank" rel="noopener noreferrer" className="text-ink-fg/75 hover:text-white">
+              vatican.va ↗
+            </a>
+          </div>
         </div>
       </div>
 
-      <header data-chrome className="sticky top-0 z-30 bg-bg/85 pt-safe backdrop-blur-xl supports-[backdrop-filter]:bg-bg/70">
-        <div className="mx-auto flex h-16 max-w-page items-center gap-3 px-4 lg:px-8">
+      <header data-chrome className="sticky top-0 z-30 border-b border-line bg-paper pt-safe lg:static">
+        <div className="h-[3px] bg-gold/80" aria-hidden />
+        <div className="mx-auto flex h-16 max-w-page items-center gap-3 px-4 lg:h-24 lg:px-8">
           <Wordmark />
-          <div className="ml-auto flex items-center gap-1.5">
+          <div className="ml-auto flex items-center gap-1">
             {!online && (
-              <span
-                className="inline-flex items-center gap-1 rounded-full border border-line bg-card px-2 py-1 text-xs text-muted"
-                title={t('app.offlineHint')}
-                role="status"
-              >
+              <span className="inline-flex items-center gap-1 rounded-sm border border-line px-2 py-1 text-xs text-muted" title={t('app.offlineHint')} role="status">
                 <WifiOff className="h-3.5 w-3.5" aria-hidden />
                 {t('app.offline')}
               </span>
             )}
             <PaletteButton onOpen={() => setPaletteOpen(true)} />
             <button type="button" className="icon-btn xl:hidden" aria-label={t('palette.open')} onClick={() => setPaletteOpen(true)}>
-              <Search className="h-[18px] w-[18px]" aria-hidden />
+              <Search className="h-5 w-5" aria-hidden />
             </button>
-            <div className="hidden items-center gap-1.5 lg:flex">
-              <LangToggle />
-              <ThemeButton />
-            </div>
             <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
                 <button type="button" aria-label={t('app.menu')} className="icon-btn lg:hidden">
-                  <Menu className="h-[18px] w-[18px]" aria-hidden />
+                  <Menu className="h-5 w-5" aria-hidden />
                 </button>
               </SheetTrigger>
               <SheetContent side="right" title={t('app.menu')} closeLabel={t('app.close')}>
                 <nav aria-label={t('app.menu')} className="mb-6">
-                  <ul className="space-y-1">
+                  <ul className="divide-y divide-line border-y border-line">
                     {secondary.map(({ to, key, Icon }) => (
                       <li key={to}>
                         <NavLink
                           to={to}
                           className={({ isActive }) =>
-                            cn('flex min-h-[48px] items-center gap-3 rounded-full px-4', isActive ? 'bg-primary font-semibold text-primary-fg' : 'hover:bg-violet/60')
+                            cn('flex min-h-[48px] items-center gap-3 border-l-2 px-3', isActive ? 'border-accent bg-surface font-semibold text-accent' : 'border-transparent hover:bg-surface')
                           }
                         >
                           <Icon className="h-5 w-5" aria-hidden />
@@ -393,20 +407,11 @@ export function Layout() {
           </div>
         </div>
         {/* Primary navigation (desktop) */}
-        <nav aria-label={t('nav.primary')} className="hidden pb-3 lg:block">
-          <ul className="mx-auto flex w-max items-center gap-1 rounded-full border border-line/70 bg-card p-1 shadow-card">
+        <nav aria-label={t('nav.primary')} className="hidden border-t border-line lg:block">
+          <ul className="mx-auto flex h-12 max-w-page items-stretch px-5">
             {primary.map(({ to, key, end }) => (
               <li key={to} className="flex">
-                <NavLink
-                  to={to}
-                  end={end}
-                  className={({ isActive }) =>
-                    cn(
-                      'flex h-9 items-center rounded-full px-4 text-sm font-medium transition-colors duration-200',
-                      isActive ? 'bg-primary text-primary-fg' : 'text-muted hover:text-fg',
-                    )
-                  }
-                >
+                <NavLink to={to} end={end} className={({ isActive }) => navItem(isActive)}>
                   {t(`nav.${key}`)}
                 </NavLink>
               </li>
@@ -418,7 +423,7 @@ export function Layout() {
         </nav>
       </header>
 
-      <main id="main" tabIndex={-1} className="mx-auto w-full max-w-page flex-1 px-4 pb-16 pt-4 outline-none lg:px-8 lg:pt-8">
+      <main id="main" tabIndex={-1} className="mx-auto w-full max-w-page flex-1 px-4 pb-16 pt-6 outline-none lg:px-8 lg:pt-10">
         <ErrorBoundary resetKey={location.pathname}>
           <div key={location.pathname} className="motion-safe:animate-in motion-safe:fade-in-0 motion-safe:duration-300">
             <Outlet />
@@ -426,19 +431,22 @@ export function Layout() {
         </ErrorBoundary>
       </main>
 
-      <footer data-chrome className="rounded-t-2xl bg-ink pb-28 text-ink-fg lg:pb-0">
-        <div className="mx-auto grid max-w-page gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
-          <div>
-            <p className="font-display text-lg font-bold uppercase tracking-[0.16em]">{t('app.name')}</p>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-fg/80">{t('footer.disclaimer')}</p>
-            <p className="mt-3 text-xs uppercase tracking-[0.12em] text-ink-fg/60">{t('footer.unofficial')}</p>
+      <footer data-chrome className="border-t-[3px] border-gold/80 bg-ink pb-20 text-ink-fg lg:pb-0">
+        <div className="mx-auto grid max-w-page gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] lg:px-8">
+          <div className="flex gap-5">
+            <Seal className="h-20 w-20 text-[#C9A96E]" />
+            <div>
+              <p className="font-display text-lg font-bold uppercase tracking-[0.16em]">{t('app.name')}</p>
+              <p className="font-title text-base italic text-ink-fg/75">{t('app.subtitle')}</p>
+              <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-fg/80">{t('footer.disclaimer')}</p>
+            </div>
           </div>
           <nav aria-label={t('footer.study')}>
-            <p className="font-display text-xs font-semibold uppercase tracking-caps text-[#C9A96E]">{t('footer.study')}</p>
-            <ul className="mt-3 space-y-1.5 text-sm">
+            <p className="font-title text-[1.05rem] text-[#D9BE85] small-caps">{t('footer.study')}</p>
+            <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
               {footerLinks.map(({ to, key }) => (
                 <li key={to}>
-                  <Link to={to} className="text-ink-fg/85 hover:text-ink-fg hover:underline">
+                  <Link to={to} className="text-ink-fg/85 hover:text-white hover:underline">
                     {t(`nav.${key}`)}
                   </Link>
                 </li>
@@ -446,15 +454,15 @@ export function Layout() {
             </ul>
           </nav>
           <div>
-            <p className="font-display text-xs font-semibold uppercase tracking-caps text-[#C9A96E]">{t('footer.sources')}</p>
+            <p className="font-title text-[1.05rem] text-[#D9BE85] small-caps">{t('footer.sources')}</p>
             <ul className="mt-3 space-y-1.5 text-sm">
               <li>
-                <a href={OFFICIAL_INDEX_URL} target="_blank" rel="noopener noreferrer" className="text-ink-fg/85 hover:text-ink-fg hover:underline">
+                <a href={OFFICIAL_INDEX_URL} target="_blank" rel="noopener noreferrer" className="text-ink-fg/85 hover:text-white hover:underline">
                   {t('footer.vatican')} ↗
                 </a>
               </li>
               <li>
-                <a href={RKDOCUMENTEN_URL} target="_blank" rel="noopener noreferrer" className="text-ink-fg/85 hover:text-ink-fg hover:underline">
+                <a href={RKDOCUMENTEN_URL} target="_blank" rel="noopener noreferrer" className="text-ink-fg/85 hover:text-white hover:underline">
                   {t('footer.rk')} ↗
                 </a>
               </li>
@@ -462,34 +470,31 @@ export function Layout() {
             <p className="mt-6 text-xs text-ink-fg/60">{t('footer.privacy')}</p>
           </div>
         </div>
+        <div className="border-t border-ink-fg/15">
+          <p className="mx-auto max-w-page px-4 py-4 text-xs leading-relaxed text-ink-fg/60 lg:px-8">
+            {t('footer.unofficial')} {t('footer.colophon')}
+          </p>
+        </div>
       </footer>
 
-      {/* Mobile: floating ink pill; the active tab expands to show its label. */}
-      <nav
-        data-chrome
-        aria-label={t('nav.primary')}
-        className="fixed inset-x-0 bottom-0 z-30 flex justify-center px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pointer-events-none lg:hidden"
-      >
-        <ul className="pointer-events-auto flex items-center gap-1 rounded-full bg-[#18161E]/95 p-1.5 text-white shadow-float ring-1 ring-white/10 backdrop-blur-xl dark:bg-[#2A2633]/95">
+      {/* Mobile tab bar */}
+      <nav data-chrome aria-label={t('nav.primary')} className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper pb-safe lg:hidden">
+        <ul className="mx-auto grid max-w-2xl grid-cols-5">
           {tabs.map(({ to, key, Icon, end }) => (
             <li key={to}>
               <NavLink
                 to={to}
                 end={end}
-                aria-label={t(`nav.${key}`)}
                 className={({ isActive }) =>
                   cn(
-                    'flex h-12 items-center justify-center gap-2 rounded-full transition-all duration-300 ease-out',
-                    isActive ? 'bg-white px-4 text-[#18161E]' : 'w-12 text-white/70 hover:text-white',
+                    'relative flex min-h-[58px] flex-col items-center justify-center gap-1 text-[0.68rem] tracking-wide',
+                    'before:absolute before:inset-x-4 before:top-0 before:h-[2px]',
+                    isActive ? 'font-semibold text-accent before:bg-accent' : 'text-muted before:bg-transparent hover:text-fg',
                   )
                 }
               >
-                {({ isActive }) => (
-                  <>
-                    <Icon className="h-5 w-5 shrink-0" aria-hidden />
-                    {isActive && <span className="text-[0.8rem] font-semibold">{t(`nav.${key}`)}</span>}
-                  </>
-                )}
+                <Icon className="h-5 w-5" aria-hidden />
+                {t(`nav.${key}`)}
               </NavLink>
             </li>
           ))}

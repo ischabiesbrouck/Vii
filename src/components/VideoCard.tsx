@@ -28,9 +28,9 @@ export function VideoCard({ video, compact = false }: { video: Video; compact?: 
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 transition-opacity duration-500 group-hover:opacity-100"
-        style={{ background: 'radial-gradient(120% 90% at 85% 10%, rgb(169 150 220 / 0.45), transparent 60%), radial-gradient(80% 70% at 0% 100%, rgb(176 141 79 / 0.3), transparent 70%)', opacity: 0.8 }}
+        style={{ background: 'linear-gradient(180deg, transparent 55%, rgb(0 0 0 / 0.35))' }}
       />
-      <div aria-hidden className="pointer-events-none absolute inset-3 rounded-lg border border-[#C9A96E]/25" />
+      <div aria-hidden className="pointer-events-none absolute inset-3 border border-[#C9A96E]/30" />
       <span className="relative flex items-center justify-between gap-2 font-display text-[0.62rem] font-semibold uppercase tracking-caps text-[#C9A96E]">
         <span>
           {t(`video.kind.${video.kind}`)} · {t('video.english')}
@@ -41,10 +41,10 @@ export function VideoCard({ video, compact = false }: { video: Video; compact?: 
           </span>
         )}
       </span>
-      <span className="relative mx-auto flex h-14 w-14 items-center justify-center rounded-full border-2 border-[#C9A96E] bg-black/40 shadow-[0_0_0_6px_rgb(0_0_0/0.15)] transition-transform duration-300 group-hover:scale-110 group-focus-visible:scale-110">
+      <span className="relative mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-[#C9A96E] bg-black/30 transition-colors duration-200 group-hover:bg-[#C9A96E] group-hover:text-[#141210]">
         {online ? <Play className="ml-1 h-6 w-6 fill-current" aria-hidden /> : <WifiOff className="h-6 w-6" aria-hidden />}
       </span>
-      <span className="relative line-clamp-2 font-serif text-[0.95rem] font-semibold leading-snug">{video.title}</span>
+      <span className="relative line-clamp-2 font-title text-[1.08rem] font-medium leading-snug">{video.title}</span>
       {progress > 0 && (
         <span aria-hidden className="absolute inset-x-0 bottom-0 h-1 bg-white/15">
           <span className="block h-full bg-[#C9A96E]" style={{ width: `${progress * 100}%` }} />
@@ -54,7 +54,7 @@ export function VideoCard({ video, compact = false }: { video: Video; compact?: 
   );
 
   return (
-    <article className="group/card flex h-full flex-col overflow-hidden rounded-xl border border-line/70 bg-card shadow-card transition duration-300 ease-out hover:shadow-lift">
+    <article className="group/card flex h-full flex-col border border-line bg-card transition-colors duration-200 hover:border-gold">
       <div className="aspect-video w-full">
         {!online ? (
           <div className="h-full w-full" title={t('video.offline')}>
@@ -107,7 +107,7 @@ export function VideoRow({ video }: { video: Video }) {
   const label = t('video.playLabel', { title: video.title });
   const body = (
     <>
-      <span className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-primary-fg shadow-card transition-transform duration-300 group-hover:scale-105">
+      <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-accent/60 text-accent transition-colors duration-200 group-hover:bg-accent group-hover:text-accent-fg">
         {!online ? <WifiOff className="h-5 w-5" aria-hidden /> : w?.done ? <CheckCircle2 className="h-5 w-5" aria-hidden /> : <Play className="ml-0.5 h-5 w-5 fill-current" aria-hidden />}
         {progress > 0 && progress < 1 && (
           <svg viewBox="0 0 48 48" className="absolute inset-0 -rotate-90 text-gold" aria-hidden>
@@ -116,7 +116,7 @@ export function VideoRow({ video }: { video: Video }) {
         )}
       </span>
       <span className="min-w-0 flex-1">
-        <span className="line-clamp-2 font-medium leading-snug">{video.title}</span>
+        <span className="line-clamp-2 font-serif font-semibold leading-snug group-hover:text-accent">{video.title}</span>
         <span className="mt-0.5 block truncate text-xs text-muted">
           {video.channel === '—' ? t('video.unconfirmed') : video.channel} · {t(`video.kind.${video.kind}`)}
           {w && !w.done && w.at > 5 && ` · ${t('video.resumeAt', { time: formatTime(w.at) })}`}
@@ -125,7 +125,7 @@ export function VideoRow({ video }: { video: Video }) {
       {video.length && <span className="shrink-0 text-sm tabular text-muted">{video.length}</span>}
     </>
   );
-  const cls = 'group flex w-full items-center gap-4 rounded-lg p-2 text-left transition hover:bg-violet/50';
+  const cls = 'group flex w-full items-center gap-4 py-3 text-left transition-colors hover:bg-surface/60';
   if (!online)
     return (
       <div className={cn(cls, 'opacity-70')} title={t('video.offline')}>
