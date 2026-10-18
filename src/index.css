@@ -14,14 +14,14 @@
  */
 @layer base {
   :root {
-    --bg: 250 248 243; /* parchment #FAF8F3 */
+    --bg: 244 242 247; /* mist #F4F2F7 */
     --paper: 255 255 255;
     --fg: 26 26 26; /* ink #1A1A1A */
     --muted: 88 82 74;
     --surface: 246 241 230; /* vellum: conciliar text ground */
     --card: 255 255 255;
-    --line: 224 215 198;
-    --ink: 26 24 22; /* masthead / footer band */
+    --line: 228 223 234;
+    --ink: 24 22 30; /* masthead / footer band */
     --ink-fg: 236 230 218;
     --accent: 122 31 31; /* rubric #7A1F1F */
     --accent-fg: 250 248 243;
@@ -31,16 +31,28 @@
     --ok: 22 101 52;
     --warn: 146 64 14;
     --bad: 153 27 27;
+    --shadow: 40 30 60;
+    /* Soft tints after the liturgical colours: violet, rose, green, gold. */
+    --primary: 24 22 30; /* ink pill: primary actions, active tabs */
+    --primary-fg: 250 248 252;
+    --violet: 228 222 242;
+    --violet-fg: 74 58 120;
+    --rose: 245 222 226;
+    --rose-fg: 122 31 48;
+    --sage: 224 235 224;
+    --sage-fg: 38 84 52;
+    --sand: 243 233 213;
+    --sand-fg: 104 78 30;
     color-scheme: light;
   }
   .dark {
-    --bg: 18 18 18; /* #121212 */
-    --paper: 24 23 21;
+    --bg: 16 15 19;
+    --paper: 24 22 28;
     --fg: 232 228 220; /* #E8E4DC */
     --muted: 172 165 154;
     --surface: 30 28 25;
-    --card: 26 25 23;
-    --line: 60 55 48;
+    --card: 27 25 32;
+    --line: 52 48 60;
     --ink: 10 10 10;
     --ink-fg: 232 228 220;
     --accent: 232 142 142;
@@ -51,6 +63,17 @@
     --ok: 134 239 172;
     --warn: 253 186 116;
     --bad: 252 165 165;
+    --shadow: 0 0 0;
+    --primary: 236 232 244;
+    --primary-fg: 20 18 24;
+    --violet: 44 38 64;
+    --violet-fg: 204 192 240;
+    --rose: 62 36 44;
+    --rose-fg: 246 190 200;
+    --sage: 34 50 40;
+    --sage-fg: 168 220 180;
+    --sand: 56 46 30;
+    --sand-fg: 232 204 150;
     color-scheme: dark;
   }
 
@@ -61,6 +84,8 @@
   }
   body {
     @apply bg-bg font-sans text-fg antialiased;
+    /* Faint paper grain (both themes); purely decorative, no network. */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     min-height: 100dvh;
     overflow-x: hidden;
     font-feature-settings: 'cv11', 'ss01';
@@ -122,11 +147,35 @@
     @apply text-accent underline decoration-accent/40 underline-offset-[3px] hover:decoration-accent;
   }
   .panel {
-    @apply rounded-md border border-line bg-card;
+    @apply rounded-lg border border-line/70 bg-card shadow-card;
   }
   .panel-link {
-    @apply rounded-md border border-line bg-card transition-colors hover:border-gold;
+    @apply rounded-lg border border-line/70 bg-card shadow-card transition duration-300 ease-out hover:-translate-y-0.5 hover:shadow-lift motion-reduce:hover:translate-y-0;
   }
+  /* Tinted cards (reference: soft lavender / rose study cards). */
+  .tint-violet { @apply bg-violet text-fg; }
+  .tint-rose { @apply bg-rose text-fg; }
+  .tint-sage { @apply bg-sage text-fg; }
+  .tint-sand { @apply bg-sand text-fg; }
+  /* Round icon button (header, card actions). */
+  .icon-btn {
+    @apply inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line/70 bg-card text-fg shadow-card transition hover:shadow-lift;
+  }
+  /* Pill chip (filters, quick links). */
+  .chip {
+    @apply inline-flex min-h-[40px] shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-line/70 bg-card px-4 text-sm transition hover:border-fg/30;
+  }
+  .chip[aria-pressed='true'],
+  .chip[aria-current='page'] {
+    @apply border-primary bg-primary text-primary-fg;
+  }
+  .scroll-x {
+    @apply -mx-4 flex gap-2 overflow-x-auto px-4 pb-1;
+    scrollbar-width: none;
+    /* Fade the trailing edge: signals that the strip scrolls. */
+    mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+  }
+  .scroll-x::-webkit-scrollbar { display: none; }
   .la {
     font-style: italic;
   }
@@ -135,17 +184,30 @@
   .reader-lg { font-size: 1.3125rem; }
 }
 
+/* Reading focus mode: hides all app chrome around the text. */
+.focus-mode [data-chrome] {
+  display: none !important;
+}
+.focus-mode .reader-toolbar {
+  top: env(safe-area-inset-top) !important;
+}
+
 .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
 .pt-safe { padding-top: env(safe-area-inset-top); }
 .no-callout { -webkit-touch-callout: none; }
 .tabular { font-variant-numeric: tabular-nums; }
+
+@keyframes orb {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -8px, 0); }
+}
 
 @keyframes shimmer {
   from { background-position: -200% 0; }
   to { background-position: 200% 0; }
 }
 .skeleton {
-  border-radius: 3px;
+  border-radius: 0.75rem;
   background: linear-gradient(90deg, rgb(var(--line) / 0.5) 25%, rgb(var(--line)) 50%, rgb(var(--line) / 0.5) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.4s linear infinite;

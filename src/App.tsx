@@ -9,8 +9,11 @@ import { getSearchEngine } from '@/lib/search';
 
 // Route-level code splitting: only Home ships in the entry chunk. All chunks are
 // still precached by the service worker, so every route works offline.
-const page = <K extends string>(load: () => Promise<Record<K, React.ComponentType>>, name: K) =>
-  lazy(() => load().then((m) => ({ default: m[name] })));
+const preloaders: (() => Promise<unknown>)[] = [];
+const page = <K extends string>(load: () => Promise<Record<K, React.ComponentType>>, name: K) => {
+  preloaders.push(load);
+  return lazy(() => load().then((m) => ({ default: m[name] })));
+};
 
 const Learn = page(() => import('@/pages/Learn'), 'Learn');
 const Lesson = page(() => import('@/pages/Lesson'), 'Lesson');
@@ -41,6 +44,8 @@ export function App() {
   useEffect(() => {
     const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 1500));
     idle(() => void getSearchEngine().catch(() => undefined));
+    // Warm every page chunk after first paint, so later navigation never shows a loader.
+    idle(() => preloaders.forEach((load) => void load().catch(() => undefined)));
   }, []);
 
   const s = (el: React.ReactNode) => <Suspense fallback={<Loading />}>{el}</Suspense>;

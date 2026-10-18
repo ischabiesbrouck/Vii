@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, BookOpenText, CheckCircle2, Film, GraduationCap, ScrollText } from 'lucide-react';
-import { Loading, PageHeader, ProgressBar, SectionTitle } from '@/components/TextBlocks';
+import { Loading, PageHeader, SectionTitle } from '@/components/TextBlocks';
+import { Orbs } from '@/components/Orbs';
+import { ProgressRing } from '@/components/ProgressRing';
 import { getCatecheses, getLessons, getSubjects, getVideos } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
@@ -25,37 +27,42 @@ export function Learn() {
       <PageHeader eyebrow="Schola Concilii" title={t('learn.title')} intro={t('learn.intro')} />
 
       <section aria-labelledby="h-course" className="mb-14">
-        <div className="mb-6 grid gap-6 rounded-md border border-line bg-card p-6 lg:grid-cols-[1fr_18rem] lg:items-center">
-          <div>
-            <p className="kicker">{t('nav.course')}</p>
-            <h2 id="h-course" className="mt-1 font-serif text-2xl font-semibold">
+        <div className="relative mb-6 grid gap-6 overflow-hidden rounded-xl bg-violet p-6 sm:p-8 lg:grid-cols-[1fr_16rem] lg:items-center">
+          <Orbs preset="hero" className="hidden lg:block" />
+          <div className="relative">
+            <p className="font-display text-[0.7rem] font-semibold uppercase tracking-caps text-violet-fg">{t('nav.course')}</p>
+            <h2 id="h-course" className="mt-2 max-w-[20ch] font-serif text-[1.9rem] font-medium leading-[1.08] sm:text-[2.4rem]">
               {t('learn.courseTitle')}
             </h2>
-            <p className="mt-2 max-w-prose text-muted">{t('learn.courseLead')}</p>
+            <p className="mt-3 max-w-prose text-fg/75">{t('learn.courseLead')}</p>
           </div>
-          <div>
-            <p className="mb-2 text-sm tabular text-muted">{t('learn.done', { done, total: lessons.length })}</p>
-            <ProgressBar value={done / lessons.length} label={t('learn.done', { done, total: lessons.length })} />
-            <Link
-              to={`/learn/${next.id}`}
-              className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded bg-accent px-4 text-sm font-medium text-accent-fg hover:bg-accent/90"
-            >
-              {done === 0 ? t('learn.start') : t('learn.resume', { n: next.number })}
-              <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
+          <div className="relative flex items-center gap-5 rounded-lg bg-card/85 p-5 shadow-card backdrop-blur lg:flex-col lg:items-stretch">
+            <ProgressRing value={done / lessons.length} size={88} stroke={8} label={t('learn.done', { done, total: lessons.length })} className="text-violet-fg lg:self-center">
+              <span className="font-serif text-xl font-semibold tabular">{Math.round((done / lessons.length) * 100)}%</span>
+            </ProgressRing>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm tabular text-muted lg:text-center">{t('learn.done', { done, total: lessons.length })}</p>
+              <Link
+                to={`/learn/${next.id}`}
+                className="mt-3 inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-full bg-primary px-4 text-sm font-semibold text-primary-fg hover:bg-primary/90"
+              >
+                {done === 0 ? t('learn.start') : t('learn.resume', { n: next.number })}
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </div>
           </div>
         </div>
 
-        <ol className="grid gap-px overflow-hidden rounded-md border border-line bg-line sm:grid-cols-2">
+        <ol className="grid gap-3 sm:grid-cols-2">
           {lessons.map((l) => {
             const isDone = progress[l.id]?.done;
             return (
-              <li key={l.id} className="bg-card">
-                <Link to={`/learn/${l.id}`} className="group flex h-full gap-4 p-5 hover:bg-surface">
+              <li key={l.id}>
+                <Link to={`/learn/${l.id}`} className="panel-link group flex h-full gap-4 p-4 sm:p-5">
                   <span
                     className={cn(
-                      'flex h-10 w-10 shrink-0 items-center justify-center rounded-full border font-display text-sm font-semibold',
-                      isDone ? 'border-accent bg-accent text-accent-fg' : 'border-gold text-gold-text',
+                      'flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-sm font-semibold',
+                      isDone ? 'bg-primary text-primary-fg' : 'bg-violet text-violet-fg',
                     )}
                     aria-hidden
                   >
@@ -65,7 +72,7 @@ export function Learn() {
                     <span className="kicker block">
                       {l.labelLa} · {t('learn.minutes', { count: l.minutes })}
                     </span>
-                    <span className="mt-0.5 block font-serif text-lg font-semibold leading-snug group-hover:text-accent">{pick(lang, l.titleNl, l.titleEn)}</span>
+                    <span className="mt-0.5 block font-serif text-lg font-semibold leading-snug">{pick(lang, l.titleNl, l.titleEn)}</span>
                     <span className="mt-1 block text-sm text-muted">{pick(lang, l.summaryNl, l.summaryEn)}</span>
                     {isDone && <span className="sr-only">{t('learn.completed')}</span>}
                   </span>
@@ -81,7 +88,7 @@ export function Learn() {
         <ul className="grid gap-4 md:grid-cols-3">
           <li>
             <Link to="/subjects" className="panel-link flex h-full flex-col p-5">
-              <GraduationCap className="h-6 w-6 text-gold-text" aria-hidden />
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-violet text-violet-fg"><GraduationCap className="h-5 w-5" aria-hidden /></span>
               <span className="mt-3 font-serif text-lg font-semibold">{t('nav.subjects')}</span>
               <span className="mt-1 flex-1 text-sm text-muted">{t('home.subjectsLead')}</span>
               <span className="mt-3 text-xs tabular text-muted">{subjects.length} {t('home.statSubjects')}</span>
@@ -89,7 +96,7 @@ export function Learn() {
           </li>
           <li>
             <Link to="/catecheses" className="panel-link flex h-full flex-col p-5">
-              <ScrollText className="h-6 w-6 text-gold-text" aria-hidden />
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-rose text-rose-fg"><ScrollText className="h-5 w-5" aria-hidden /></span>
               <span className="mt-3 font-serif text-lg font-semibold">{pick(lang, cat.seriesTitleNl, cat.seriesTitleEn)}</span>
               <span className="mt-1 flex-1 text-sm text-muted">{t('cat.count', { count: cat.items.length })}</span>
               {latest && (
@@ -101,7 +108,7 @@ export function Learn() {
           </li>
           <li>
             <Link to="/videos" className="panel-link flex h-full flex-col p-5">
-              <Film className="h-6 w-6 text-gold-text" aria-hidden />
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sand text-sand-fg"><Film className="h-5 w-5" aria-hidden /></span>
               <span className="mt-3 font-serif text-lg font-semibold">{t('video.title')}</span>
               <span className="mt-1 flex-1 text-sm text-muted">{t('video.intro')}</span>
               <span className="mt-3 text-xs tabular text-muted">{videos.items.length} · {t('video.english')}</span>

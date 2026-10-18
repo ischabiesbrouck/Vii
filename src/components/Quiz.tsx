@@ -4,21 +4,9 @@ import { Check, RotateCcw, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CiteLink } from '@/components/TextBlocks';
 import { useLang } from '@/lib/hooks';
+import { seededOrder } from '@/lib/shuffle';
 import { cn, pick } from '@/lib/utils';
 import type { Lesson } from '@/types/content';
-
-/** Stable per-question shuffle, so the right answer is not always in the same position. */
-function order(seed: string, n: number): number[] {
-  let h = 2166136261;
-  for (let i = 0; i < seed.length; i++) h = Math.imul(h ^ seed.charCodeAt(i), 16777619);
-  const idx = Array.from({ length: n }, (_, i) => i);
-  for (let i = n - 1; i > 0; i--) {
-    h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0;
-    const j = h % (i + 1);
-    [idx[i], idx[j]] = [idx[j]!, idx[i]!];
-  }
-  return idx;
-}
 
 /** Factual knowledge check. Answers stay local; the best score is saved per lesson. */
 export function Quiz({ lesson, onScore }: { lesson: Lesson; onScore: (score: number) => void }) {
@@ -40,7 +28,7 @@ export function Quiz({ lesson, onScore }: { lesson: Lesson; onScore: (score: num
                 {pick(lang, q.questionNl, q.questionEn)}
               </legend>
               <div className="grid gap-2">
-                {order(`${lesson.id}-${qi}`, q.options.length).map((oi) => {
+                {seededOrder(`${lesson.id}-${qi}`, q.options.length).map((oi) => {
                   const o = q.options[oi]!;
                   const isPicked = picked[qi] === oi;
                   const isRight = oi === q.answer;
