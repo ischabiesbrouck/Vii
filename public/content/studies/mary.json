@@ -1,0 +1,361 @@
+{
+  "subjectId": "mary",
+  "review": "unverified",
+  "chapters": [
+    {
+      "labelLa": "Caput I",
+      "titleNl": "Een eigen document of een hoofdstuk over de Kerk?",
+      "titleEn": "A document of its own or a chapter on the Church?",
+      "summaryNl": "Vóór het Concilie groeide zowel de mariale beweging als de bijbelse, patristische en liturgische vernieuwing. In 1963 besliste een nipte meerderheid dat de leer over Maria een plaats zou krijgen binnen Lumen Gentium.",
+      "summaryEn": "Before the Council both the Marian movement and the biblical, patristic and liturgical renewal had been growing. In 1963 a narrow majority decided that the teaching on Mary would be placed within Lumen Gentium.",
+      "sections": [
+        {
+          "headingNl": "De mariologie vóór het Concilie",
+          "headingEn": "Mariology before the Council",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De eeuw vóór het Concilie was een bloeitijd van de mariologie. Pius IX definieerde in 1854 de Onbevlekte Ontvangenis (Ineffabilis Deus), Pius XII in 1950 de Tenhemelopneming (Munificentissimus Deus), en 1954 werd als Mariaal Jaar gevierd. Er ontstonden mariologische genootschappen en congressen, en in de consultatie die aan het Concilie voorafging, vroegen sommige bisschoppen om nieuwe definities, met name over Maria’s middelaarschap.",
+              "en": "The century before the Council was a flourishing period for Mariology. Pius IX defined the Immaculate Conception in 1854 (Ineffabilis Deus), Pius XII the Assumption in 1950 (Munificentissimus Deus), and 1954 was kept as a Marian Year. Mariological societies and congresses were founded, and in the consultation that preceded the Council some bishops asked for new definitions, notably on Mary’s mediation."
+            },
+            {
+              "type": "p",
+              "nl": "Tegelijk had de terugkeer naar de bronnen, in Schrift, kerkvaders en liturgie, een andere invalshoek naar voren gebracht. De vaders, zoals Ambrosius, hadden Maria vooral beschouwd als ‘type’ of voorafbeelding van de Kerk: wat de Kerk is en hoopt te worden, is in Maria al zichtbaar. Twee accenten stonden zo naast elkaar: het ene legde de nadruk op Maria’s unieke band met Christus en haar voorrechten, het andere op haar plaats als eerste en volmaakte gelovige binnen de Kerk.",
+              "en": "At the same time the return to the sources, in Scripture, the Fathers and the liturgy, had brought another perspective forward. The Fathers, such as Ambrose, had seen Mary above all as the ‘type’ or prefiguration of the Church: what the Church is and hopes to become is already visible in Mary. Two emphases thus stood side by side: one stressed Mary’s unique bond with Christ and her privileges, the other her place as the first and perfect believer within the Church."
+            },
+            {
+              "type": "box",
+              "kind": "context",
+              "titleNl": "Christotypisch en ecclesiotypisch",
+              "titleEn": "Christotypical and ecclesiotypical",
+              "nl": "In de theologische literatuur rond het Concilie worden de twee accenten vaak zo aangeduid. Een christotypische mariologie denkt Maria vanuit haar gelijkvormigheid aan Christus en haar medewerking aan zijn werk; een ecclesiotypische vanuit haar voorbeeld voor de Kerk. Het zijn geen tegengestelde leerstellingen, maar verschillende ordeningen van dezelfde geloofsgegevens. Hoofdstuk VIII van Lumen Gentium wil beide samenhouden.",
+              "en": "In the theological literature around the Council the two emphases are often named in this way. A christotypical Mariology thinks of Mary from her conformity to Christ and her cooperation in his work; an ecclesiotypical one from her being a model for the Church. These are not opposed doctrines but different orderings of the same data of faith. Chapter VIII of Lumen Gentium seeks to hold both together."
+            }
+          ]
+        },
+        {
+          "headingNl": "De stemming van 29 oktober 1963",
+          "headingEn": "The vote of 29 October 1963",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De voorbereidende Theologische Commissie had een afzonderlijk schema over Maria opgesteld, met de titel De Beata Maria Virgine Matre Dei et Matre hominum. In de eerste zitting werd het niet besproken. In de tweede zitting rees de vraag of het een eigen document moest blijven of in het schema over de Kerk moest worden opgenomen. Op 24 oktober 1963 pleitte kardinaal Rufino Santos (Manilla) voor een apart document, kardinaal Franz König (Wenen) voor opname. Op 29 oktober stemden 1.114 vaders voor opname en 1.074 tegen: een verschil van veertig stemmen, het kleinste bij een stemming van dit belang.",
+              "en": "The preparatory Theological Commission had drawn up a separate schema on Mary, entitled De Beata Maria Virgine Matre Dei et Matre hominum. It was not discussed in the first period. In the second period the question arose whether it should remain a document of its own or be incorporated into the schema on the Church. On 24 October 1963 Cardinal Rufino Santos (Manila) argued for a separate document, Cardinal Franz König (Vienna) for incorporation. On 29 October, 1,114 fathers voted for incorporation and 1,074 against: a margin of forty votes, the narrowest in a vote of this weight."
+            },
+            {
+              "type": "positions",
+              "titleNl": "Waarom een apart document, of waarom een hoofdstuk?",
+              "titleEn": "Why a separate document, or why a chapter?",
+              "positions": [
+                {
+                  "labelNl": "Een eigen document",
+                  "labelEn": "A document of its own",
+                  "nl": "Maria’s waardigheid als Moeder van God gaat die van alle andere leden van de Kerk te boven; zij staat in een unieke verhouding tot Christus en zijn werk. Een afzonderlijke tekst zou dat beter tot uitdrukking brengen en de eerder gedefinieerde voorrechten (LG §59) en haar bijzondere waardigheid (LG §67) zichtbaar eren. Opname in een tekst over de Kerk zou kunnen worden opgevat als een vermindering van haar plaats.",
+                  "en": "Mary’s dignity as Mother of God surpasses that of all other members of the Church; she stands in a unique relation to Christ and his work. A separate text would express this better and visibly honour the previously defined privileges (LG §59) and her singular dignity (LG §67). Inclusion in a text on the Church might be taken as a lessening of her place.",
+                  "sources": [
+                    "LG-59",
+                    "LG-67"
+                  ]
+                },
+                {
+                  "labelNl": "Een hoofdstuk van Lumen Gentium",
+                  "labelEn": "A chapter of Lumen Gentium",
+                  "nl": "Maria hoort bij het mysterie van Christus en de Kerk; buiten dat verband dreigt de mariologie een geïsoleerd vak te worden. Opname benadrukt dat Christus de enige Middelaar is (LG §60) en dat geen schepsel op één lijn staat met het mensgeworden Woord (LG §62), en sluit aan bij de kerkvaders. Ook oecumenisch zou dat de leer over Maria beter verstaanbaar maken.",
+                  "en": "Mary belongs to the mystery of Christ and the Church; outside that setting Mariology risks becoming an isolated discipline. Inclusion stresses that Christ is the one Mediator (LG §60) and that no creature is equal to the Incarnate Word (LG §62), and follows the Fathers. Ecumenically, too, this would make the teaching on Mary more intelligible.",
+                  "sources": [
+                    "LG-60",
+                    "LG-62"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "headingNl": "Van stemming tot afkondiging",
+          "headingEn": "From vote to promulgation",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Na de stemming werd een nieuwe tekst opgesteld, waarbij Gérard Philips, hoofdredacteur van Lumen Gentium, samenwerkte met de franciscaanse marioloog Carlo Balić, die aan het oorspronkelijke schema had meegewerkt. De tekst werd in september 1964, in de derde zitting, besproken. Op 21 november 1964 werd Lumen Gentium aangenomen met 2.151 tegen 5 stemmen. Dezelfde dag riep Paulus VI in zijn slotrede Maria uit tot ‘Moeder van de Kerk’, een titel die het hoofdstuk zelf niet als zodanig gebruikt, al zegt het dat de Kerk Maria als zeer geliefde moeder eert (LG §53).",
+              "en": "After the vote a new text was drafted, in which Gérard Philips, the principal drafter of Lumen Gentium, worked with the Franciscan mariologist Carlo Balić, who had contributed to the original schema. The text was debated in September 1964, in the third period. On 21 November 1964 Lumen Gentium was adopted by 2,151 votes to 5. On the same day Paul VI, in his closing address, proclaimed Mary ‘Mother of the Church’, a title the chapter itself does not use as such, though it says that the Church honours Mary as a most beloved mother (LG §53)."
+            },
+            {
+              "type": "diagram",
+              "id": "sessions",
+              "captionNl": "De vier conciliezittingen 1962–1965. De beslissing over de plaats van de Mariatekst viel in de tweede zitting (1963); Lumen Gentium met hoofdstuk VIII werd aan het einde van de derde zitting (1964) afgekondigd.",
+              "captionEn": "The four periods of the Council, 1962–1965. The decision on the place of the text on Mary was taken in the second period (1963); Lumen Gentium with its chapter VIII was promulgated at the end of the third period (1964)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput II",
+      "titleNl": "Wat de tekst zegt (LG §52–69)",
+      "titleEn": "What the text says (LG §52–69)",
+      "summaryNl": "Hoofdstuk VIII van Lumen Gentium heeft vijf delen: inleiding, Maria in de heilseconomie, Maria en de Kerk, de verering van Maria, en Maria als teken van hoop.",
+      "summaryEn": "Chapter VIII of Lumen Gentium has five parts: introduction, Mary in the economy of salvation, Mary and the Church, devotion to Mary, and Mary as a sign of hope.",
+      "sections": [
+        {
+          "headingNl": "Opbouw en bedoeling (LG §52–54)",
+          "headingEn": "Structure and intention (LG §52–54)",
+          "blocks": [
+            {
+              "type": "diagram",
+              "id": "outline-LG",
+              "captionNl": "De opbouw van Lumen Gentium. Hoofdstuk VIII (§52–69) over Maria sluit de constitutie af, na de hoofdstukken over het mysterie van de Kerk, het volk van God, de hiërarchie, de leken, de roeping tot heiligheid, de religieuzen en de eschatologische voltooiing.",
+              "captionEn": "The structure of Lumen Gentium. Chapter VIII (§52–69) on Mary concludes the constitution, after the chapters on the mystery of the Church, the People of God, the hierarchy, the laity, the call to holiness, religious and eschatological fulfilment."
+            },
+            {
+              "type": "p",
+              "nl": "Het hoofdstuk opent met de menswording: God zond zijn Zoon, geboren uit een vrouw, en de Kerk belijdt dat in haar geloofsbelijdenis (LG §52). Maria is waarlijk Moeder van God en van de Verlosser; zij is als dochter van Adam verbonden met alle mensen die gered moeten worden, en zij is tegelijk een uitnemend en geheel uniek lid van de Kerk, haar voorbeeld in geloof en liefde (LG §53).",
+              "en": "The chapter opens with the Incarnation: God sent his Son, born of a woman, and the Church confesses this in her creed (LG §52). Mary is truly Mother of God and of the Redeemer; as a daughter of Adam she is united with all who are to be saved, and she is at the same time a pre-eminent and wholly singular member of the Church, its model in faith and charity (LG §53)."
+            },
+            {
+              "type": "p",
+              "nl": "Het Concilie zegt uitdrukkelijk dat het geen volledige leer over Maria wil geven en geen vragen wil beslissen die door de theologie nog niet volledig zijn opgehelderd; meningen die in katholieke scholen vrij worden voorgesteld, behouden hun recht (LG §54). Dat is een leessleutel: het hoofdstuk is een samenvatting van wat vaststaat, geen eindpunt van het theologisch onderzoek.",
+              "en": "The Council expressly states that it does not intend to give a complete doctrine on Mary or to decide questions that theology has not yet fully clarified; opinions freely proposed in Catholic schools retain their rights (LG §54). That is a key for reading: the chapter is a summary of what is settled, not an end point of theological inquiry."
+            }
+          ]
+        },
+        {
+          "headingNl": "Maria in de heilseconomie (LG §55–59)",
+          "headingEn": "Mary in the economy of salvation (LG §55–59)",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De tekst volgt de heilsgeschiedenis. Het Oude Testament laat, gelezen in het licht van de volle openbaring, de figuur van de moeder van de Verlosser geleidelijk zien (LG §55). Bij de aankondiging stemt Maria vrij in en wijdt zich geheel aan de persoon en het werk van haar Zoon; met de kerkvaders stelt het Concilie Eva en Maria tegenover elkaar: de ongehoorzaamheid van de een, de gehoorzaamheid van het geloof van de ander (LG §56). Zij is met haar Zoon verbonden van de maagdelijke ontvangenis tot zijn dood (LG §57), en zij ging haar ‘pelgrimstocht van het geloof’ tot onder het kruis (LG §58).",
+              "en": "The text follows salvation history. The Old Testament, read in the light of full revelation, gradually brings into view the figure of the mother of the Redeemer (LG §55). At the Annunciation Mary freely consents and devotes herself wholly to the person and work of her Son; with the Fathers, the Council contrasts Eve and Mary: the disobedience of the one, the obedience of faith of the other (LG §56). She is united with her Son from the virginal conception to his death (LG §57), and she advanced in her ‘pilgrimage of faith’ to the foot of the cross (LG §58)."
+            },
+            {
+              "type": "p",
+              "nl": "Na de hemelvaart bidt zij met de apostelen om de komst van de Geest (LG §59). Daarna herhaalt het Concilie de twee eerder gedefinieerde dogma’s.",
+              "en": "After the Ascension she prays with the apostles for the coming of the Spirit (LG §59). The Council then restates the two previously defined dogmas."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "LG-59"
+            },
+            {
+              "type": "p",
+              "nl": "Er wordt geen nieuw dogma gedefinieerd; de formulering neemt de definities van 1854 en 1950 over en verbindt ze met het doel ervan: Maria’s gelijkvormigheid aan haar Zoon (LG §59). De titel ‘Koningin’ wordt op dezelfde wijze aan Christus gerelateerd: zij is verheven om meer op hem te lijken, niet naast hem.",
+              "en": "No new dogma is defined; the wording takes up the definitions of 1854 and 1950 and connects them to their purpose: Mary’s conformity to her Son (LG §59). The title ‘Queen’ is related to Christ in the same way: she is exalted in order to be more like him, not beside him."
+            }
+          ]
+        },
+        {
+          "headingNl": "Maria en de Kerk (LG §60–65)",
+          "headingEn": "Mary and the Church (LG §60–65)",
+          "blocks": [
+            {
+              "type": "quote",
+              "paragraphId": "LG-60"
+            },
+            {
+              "type": "p",
+              "nl": "Het derde deel begint bij het beginsel dat alles ordent: er is één Middelaar. Maria’s heilzame invloed vloeit voort uit de overvloed van Christus’ verdiensten, steunt op zijn middelaarschap en hangt er geheel van af; zij belemmert de onmiddellijke vereniging van de gelovigen met Christus niet, maar bevordert die (LG §60). In de orde van de genade is Maria onze moeder, omdat zij op geheel eigen wijze meewerkte aan het werk van de Verlosser (LG §61). Die moederschap duurt voort; daarom wordt zij in de Kerk aangeroepen als Voorspreekster, Helpster, Bijstand en Middelares (LG §62).",
+              "en": "The third part begins with the principle that orders everything: there is one Mediator. Mary’s saving influence flows from the superabundance of Christ’s merits, rests on his mediation and depends entirely on it; it does not hinder the immediate union of the faithful with Christ but fosters it (LG §60). In the order of grace Mary is our mother, because she cooperated in a wholly singular way in the work of the Saviour (LG §61). This motherhood continues; she is therefore invoked in the Church as Advocate, Helper, Benefactress and Mediatrix (LG §62)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "LG-62"
+            },
+            {
+              "type": "p",
+              "nl": "De titels moeten zo worden verstaan dat zij aan de waardigheid en werkzaamheid van Christus niets afdoen en niets toevoegen (LG §62). Het Concilie verheldert dit met twee analogieën: het ene priesterschap van Christus waaraan ambtsdragers en gelovigen op verschillende wijze deelhebben, en de ene goedheid van God die zich werkelijk in de schepselen verspreidt. Zo sluit het unieke middelaarschap een ondergeschikte, deelhebbende medewerking niet uit, maar wekt die juist op (LG §62).",
+              "en": "The titles are to be understood so that they neither take away from nor add anything to the dignity and efficacy of Christ (LG §62). The Council clarifies this with two analogies: the one priesthood of Christ, shared in different ways by ministers and faithful, and the one goodness of God that is truly poured out in creatures. In this way the unique mediation does not exclude a subordinate, participated cooperation but gives rise to it (LG §62)."
+            },
+            {
+              "type": "p",
+              "nl": "Met Ambrosius noemt het Concilie Maria ‘type’ van de Kerk, in geloof, liefde en volmaakte vereniging met Christus; zij is maagd en moeder (LG §63). De Kerk wordt op haar beurt moeder door de prediking en het doopsel, en maagd door haar ongerepte trouw (LG §64). In Maria heeft de Kerk de volmaaktheid al bereikt; de gelovigen strijden nog om in heiligheid te groeien en zien naar haar op (LG §65).",
+              "en": "With Ambrose the Council calls Mary the ‘type’ of the Church, in faith, charity and perfect union with Christ; she is virgin and mother (LG §63). The Church in turn becomes mother through preaching and baptism, and virgin through her unblemished fidelity (LG §64). In Mary the Church has already reached perfection; the faithful still strive to grow in holiness and look to her (LG §65)."
+            }
+          ]
+        },
+        {
+          "headingNl": "De verering van Maria (LG §66–69)",
+          "headingEn": "Devotion to Mary (LG §66–69)",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De verering van Maria is in de Kerk sinds de oudste tijden aanwezig, vooral sinds het Concilie van Efeze; zij is uniek, maar verschilt wezenlijk van de aanbidding die aan het mensgeworden Woord, aan de Vader en aan de Heilige Geest toekomt, en bevordert die juist (LG §66).",
+              "en": "Devotion to Mary has been present in the Church from the earliest times, especially since the Council of Ephesus; it is singular, yet differs essentially from the adoration given to the Incarnate Word, the Father and the Holy Spirit, and in fact fosters it (LG §66)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "LG-67"
+            },
+            {
+              "type": "p",
+              "nl": "LG §67 moedigt de liturgische verering en de door het leergezag aanbevolen vormen van devotie aan, en vraagt theologen en predikers zich te laten leiden door Schrift, kerkvaders, kerkleraren en liturgie. Zij moeten alles vermijden wat andere christenen over de leer van de Kerk zou kunnen misleiden. Ware devotie bestaat niet in een voorbijgaande emotie of in lichtgelovigheid, maar komt voort uit het ware geloof (LG §67). Het hoofdstuk eindigt met Maria als teken van zekere hoop voor het pelgrimerende volk van God (LG §68) en met een oecumenisch slot over de verering van Maria in de Oosterse Kerken (LG §69).",
+              "en": "LG §67 encourages liturgical devotion and the forms of piety recommended by the magisterium, and asks theologians and preachers to be guided by Scripture, the Fathers, the doctors and the liturgy. They must avoid whatever could mislead other Christians about the teaching of the Church. True devotion does not consist in passing emotion or in credulity, but proceeds from true faith (LG §67). The chapter ends with Mary as a sign of sure hope for the pilgrim People of God (LG §68) and with an ecumenical conclusion on the veneration of Mary in the Eastern Churches (LG §69)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput III",
+      "titleNl": "Kernbegrippen en onderscheidingen",
+      "titleEn": "Key concepts and distinctions",
+      "summaryNl": "Het hoofdstuk gebruikt klassieke begrippen met grote precisie. Wie ze kent, ziet hoe het Concilie Maria’s waardigheid bevestigt en tegelijk aan Christus ondergeschikt houdt.",
+      "summaryEn": "The chapter uses classical concepts with great precision. Knowing them shows how the Council affirms Mary’s dignity while keeping it subordinate to Christ.",
+      "sections": [
+        {
+          "headingNl": "Moederschap en type",
+          "headingEn": "Motherhood and type",
+          "blocks": [
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Moeder van God (Theotokos)",
+              "titleEn": "Mother of God (Theotokos)",
+              "nl": "De titel die het Concilie van Efeze (431) aan Maria toekende. Hij is in de eerste plaats een uitspraak over Christus: wie zij baarde, is één persoon, waarlijk God en waarlijk mens. LG §53 en LG §66 bouwen op deze titel.",
+              "en": "The title granted to Mary by the Council of Ephesus (431). It is first of all a statement about Christ: the one she bore is one person, truly God and truly man. LG §53 and LG §66 build on this title."
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Type van de Kerk (typus Ecclesiae)",
+              "titleEn": "Type of the Church (typus Ecclesiae)",
+              "nl": "Een patristisch begrip: Maria verbeeldt en verwerkelijkt vooraf wat de Kerk is, maagd door haar geloof en moeder door haar vruchtbaarheid (LG §63–65). Het betekent niet dat Maria slechts een symbool is; het gaat om een werkelijke persoon in wie de roeping van de Kerk al voltooid is.",
+              "en": "A patristic concept: Mary images and realises in advance what the Church is, virgin by her faith and mother by her fruitfulness (LG §63–65). It does not mean that Mary is merely a symbol; it concerns a real person in whom the vocation of the Church is already fulfilled."
+            }
+          ]
+        },
+        {
+          "headingNl": "Middelaarschap en verering",
+          "headingEn": "Mediation and veneration",
+          "blocks": [
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Enig middelaarschap en deelhebbende medewerking",
+              "titleEn": "Unique mediation and participated cooperation",
+              "nl": "Christus is de enige Middelaar tussen God en de mensen (LG §60, met 1 Tim. 2,5). Elke andere ‘middeling’ is ondergeschikt en deelhebbend: zij heeft haar kracht alleen van Christus en leidt naar hem toe. In die zin gebruikt LG §62 ook de titel ‘Middelares’, als een van meerdere titels en met de uitdrukkelijke uitleg dat er aan Christus niets wordt toegevoegd of afgedaan.",
+              "en": "Christ is the one Mediator between God and men (LG §60, with 1 Tim. 2:5). Every other ‘mediation’ is subordinate and participated: it has its power only from Christ and leads towards him. In this sense LG §62 also uses the title ‘Mediatrix’, as one of several titles and with the explicit explanation that nothing is added to or taken away from Christ."
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Verering en aanbidding",
+              "titleEn": "Veneration and adoration",
+              "nl": "De klassieke theologie onderscheidt aanbidding (latria), die alleen God toekomt, van verering (dulia) van de heiligen; voor Maria spreekt zij van een bijzondere verering (hyperdulia). Het Concilie gebruikt deze termen niet, maar zegt hetzelfde: de verering van Maria is uniek en verschilt wezenlijk van de aanbidding van God (LG §66).",
+              "en": "Classical theology distinguishes adoration (latria), due to God alone, from veneration (dulia) of the saints; for Mary it speaks of a special veneration (hyperdulia). The Council does not use these terms but says the same: devotion to Mary is singular and differs essentially from the adoration of God (LG §66)."
+            },
+            {
+              "type": "box",
+              "kind": "note",
+              "titleNl": "Wat de tekst openlaat",
+              "titleEn": "What the text leaves open",
+              "nl": "LG §54 laat vragen die nog niet volledig zijn opgehelderd bewust aan de theologie. Lees het hoofdstuk daarom niet als afwijzing van wat het niet noemt, en ook niet als impliciete definitie van wat het slechts vermeldt.",
+              "en": "LG §54 deliberately leaves questions not yet fully clarified to theology. Do not read the chapter, therefore, as a rejection of what it does not mention, nor as an implicit definition of what it merely records."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput IV",
+      "titleNl": "Receptie en lezen vandaag",
+      "titleEn": "Reception and reading today",
+      "summaryNl": "Het latere leergezag heeft hoofdstuk VIII uitgewerkt in de verering en in de theologie. Over de reikwijdte van Maria’s ‘moederlijke taak’ bestaan verschillende accenten, die de tekst beide wil insluiten.",
+      "summaryEn": "The later magisterium has developed chapter VIII in devotion and in theology. On the scope of Mary’s ‘maternal role’ there are different emphases, both of which the text seeks to include.",
+      "sections": [
+        {
+          "headingNl": "Het latere leergezag",
+          "headingEn": "The later magisterium",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "In de jaren na het Concilie namen sommige traditionele vormen van Mariadevotie af. Paulus VI wilde de verering in de lijn van het Concilie en de liturgische hervorming vernieuwen in de apostolische exhortatie Marialis cultus (1974), die vier oriëntaties noemt: bijbels, liturgisch, oecumenisch en antropologisch. Johannes Paulus II werkte in de encycliek Redemptoris Mater (1987) het thema van Maria’s pelgrimstocht van het geloof uit LG §58 verder uit, evenals haar ‘moederlijke middeling’ in Christus, en kondigde een Mariaal Jaar af (1987–1988).",
+              "en": "In the years after the Council some traditional forms of Marian devotion declined. Paul VI sought to renew devotion in line with the Council and the liturgical reform in the apostolic exhortation Marialis cultus (1974), which names four orientations: biblical, liturgical, ecumenical and anthropological. In the encyclical Redemptoris Mater (1987) John Paul II developed further the theme of Mary’s pilgrimage of faith from LG §58, as well as her ‘maternal mediation’ in Christ, and proclaimed a Marian Year (1987–1988)."
+            },
+            {
+              "type": "p",
+              "nl": "De Catechismus van de Katholieke Kerk vat de leer over Maria als moeder van de Kerk samen in de geest van hoofdstuk VIII en citeert het uitvoerig. In 2018 voegde paus Franciscus de gedachtenis van Maria, Moeder van de Kerk, op de maandag na Pinksteren aan de algemene kalender toe, waarmee de titel van Paulus VI ook liturgisch werd verankerd.",
+              "en": "The Catechism of the Catholic Church summarises the teaching on Mary as mother of the Church in the spirit of chapter VIII and quotes it extensively. In 2018 Pope Francis added the memorial of Mary, Mother of the Church, on the Monday after Pentecost to the General Calendar, thereby anchoring Paul VI’s title liturgically as well."
+            }
+          ]
+        },
+        {
+          "headingNl": "Omstreden accenten",
+          "headingEn": "Contested emphases",
+          "blocks": [
+            {
+              "type": "positions",
+              "titleNl": "Hoe ver reikt de titel ‘Middelares’ in LG §62?",
+              "titleEn": "How far does the title ‘Mediatrix’ in LG §62 reach?",
+              "positions": [
+                {
+                  "labelNl": "Ruimte voor verdere ontwikkeling",
+                  "labelEn": "Room for further development",
+                  "nl": "Het Concilie bevestigt Maria’s voortdurende moederlijke taak en gebruikt de titel ‘Middelares’ (LG §62). Volgens deze lezing laat LG §54 de theologie vrij om haar medewerking aan de verlossing verder te doordenken, als ontvouwing van wat al in de verheffing van LG §59 en de titels van LG §62 besloten ligt. Sommigen zien hier een mogelijke basis voor nadere leerstellige uitspraken.",
+                  "en": "The Council affirms Mary’s continuing maternal role and uses the title ‘Mediatrix’ (LG §62). On this reading LG §54 leaves theology free to think further about her cooperation in the redemption, as an unfolding of what is already contained in the exaltation of LG §59 and the titles of LG §62. Some see here a possible basis for further doctrinal statements.",
+                  "sources": [
+                    "LG-62",
+                    "LG-59"
+                  ]
+                },
+                {
+                  "labelNl": "Bewuste terughoudendheid",
+                  "labelEn": "Deliberate restraint",
+                  "nl": "Het Concilie noemt ‘Middelares’ slechts als een van meerdere titels, verbindt die meteen aan het enige middelaarschap van Christus (LG §60) en waarschuwt tegen overdrijving (LG §67). Volgens deze lezing koos het bewust niet voor nieuwe definities, en blijft die terughoudendheid de maatstaf, ook met het oog op de oecumene.",
+                  "en": "The Council mentions ‘Mediatrix’ only as one of several titles, immediately ties it to Christ’s unique mediation (LG §60) and warns against exaggeration (LG §67). On this reading it deliberately chose not to make new definitions, and that restraint remains the measure, also with a view to ecumenism.",
+                  "sources": [
+                    "LG-60",
+                    "LG-67"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "p",
+              "nl": "Beide lezingen beroepen zich op dezelfde tekst, en beide aanvaarden het kader dat de tekst zelf geeft: één Middelaar, een ondergeschikte en deelhebbende moederlijke taak, en een verering die tot Christus leidt (LG §60–62; LG §66–67).",
+              "en": "Both readings appeal to the same text, and both accept the framework the text itself provides: one Mediator, a subordinate and participated maternal role, and a devotion that leads to Christ (LG §60–62; LG §66–67)."
+            }
+          ]
+        },
+        {
+          "headingNl": "Hoe je hoofdstuk VIII vandaag leest",
+          "headingEn": "How to read chapter VIII today",
+          "blocks": [
+            {
+              "type": "list",
+              "nl": [
+                "Lees het hoofdstuk als slot van Lumen Gentium: de plaats zegt iets over de inhoud. Maria staat binnen het mysterie van Christus en de Kerk, niet ernaast (LG §52–53).",
+                "Begin bij het ordenende beginsel van LG §60: één Middelaar. Alles wat over Maria gezegd wordt, wordt daaraan gemeten.",
+                "Houd vast aan wat de tekst herhaalt, zoals de dogma’s van 1854 en 1950 (LG §59), en onderscheid dat van wat hij bewust openlaat (LG §54).",
+                "Neem de dubbele waarschuwing van LG §67 in beide richtingen ernstig: geen overdrijving, maar ook geen bekrompenheid.",
+                "Lees de bronnen die het Concilie zelf aanwijst: Schrift, kerkvaders en liturgie (LG §67), en daarna de uitwerking in Marialis cultus en Redemptoris Mater."
+              ],
+              "en": [
+                "Read the chapter as the conclusion of Lumen Gentium: its place says something about its content. Mary stands within the mystery of Christ and the Church, not beside it (LG §52–53).",
+                "Begin with the ordering principle of LG §60: one Mediator. Everything said about Mary is measured against it.",
+                "Hold to what the text restates, such as the dogmas of 1854 and 1950 (LG §59), and distinguish this from what it deliberately leaves open (LG §54).",
+                "Take the twofold warning of LG §67 seriously in both directions: no exaggeration, but no narrow-mindedness either.",
+                "Read the sources the Council itself points to: Scripture, the Fathers and the liturgy (LG §67), and then their development in Marialis cultus and Redemptoris Mater."
+              ]
+            },
+            {
+              "type": "p",
+              "nl": "Zo gelezen is de beslissing van 1963 geen keuze tegen Maria, maar voor een bepaalde manier van over haar spreken: vanuit Christus en binnen de Kerk, met de nuchterheid die LG §67 vraagt.",
+              "en": "Read in this way, the decision of 1963 was not a choice against Mary but for a particular way of speaking about her: from Christ and within the Church, with the sobriety that LG §67 asks for."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bibliography": [
+    "Catechism of the Catholic Church (2nd ed.). (1997). Libreria Editrice Vaticana.",
+    "John Paul II. (1987). Redemptoris Mater [Encyclical letter]. Libreria Editrice Vaticana.",
+    "O’Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
+    "Paul VI. (1974). Marialis cultus [Apostolic exhortation on devotion to the Blessed Virgin Mary]. Libreria Editrice Vaticana.",
+    "Ratzinger, J., & von Balthasar, H. U. (2005). Mary: The Church at the source (A. Walker, Trans.). Ignatius Press.",
+    "Tanner, N. P. (Ed.). (1990). Decrees of the ecumenical councils (Vol. 2). Sheed & Ward; Georgetown University Press.",
+    "Vorgrimler, H. (Ed.). (1967). Commentary on the documents of Vatican II (Vol. 1). Herder and Herder.",
+    "Wiltgen, R. M. (1967). The Rhine flows into the Tiber: The unknown Council. Hawthorn Books."
+  ]
+}
