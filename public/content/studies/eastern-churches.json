@@ -128,8 +128,13 @@
           "blocks": [
             {
               "type": "p",
-              "nl": "OE §7–11 herstellen de eer van de patriarchale instelling: de patriarchen zijn onderling gelijk in waardigheid, en hun rechten en privileges moeten worden hersteld volgens de oude tradities van elke Kerk. OE §12–23 behandelen de sacramenten en de eredienst. Voorbeelden zijn het vormsel dat volgens oosters gebruik door priesters samen met het doopsel wordt toegediend (OE §13–14), het herstel van het permanente diaconaat waar het in onbruik is geraakt (OE §17), de wens van een gemeenschappelijke paasdatum voor alle christenen (OE §20) en de bevoegdheid van elke Kerk om de talen van de liturgie te regelen (OE §23).",
-              "en": "OE §7–11 restore the honour of the patriarchal institution: the patriarchs are equal in dignity among themselves, and their rights and privileges are to be restored according to the ancient traditions of each Church. OE §12–23 treat the sacraments and divine worship. Examples are confirmation administered by priests together with baptism, as is the Eastern custom (OE §13–14), the restoration of the permanent diaconate where it has fallen into disuse (OE §17), the wish for a common date of Easter for all Christians (OE §20) and the authority of each Church to regulate the languages of the liturgy (OE §23)."
+              "nl": "OE §7–11 herstellen de eer van de patriarchale instelling: de patriarchen zijn onderling gelijk in waardigheid, en hun rechten en privileges moeten worden hersteld volgens de oude tradities van elke Kerk.",
+              "en": "OE §7–11 restore the honour of the patriarchal institution: the patriarchs are equal in dignity among themselves, and their rights and privileges are to be restored according to the ancient traditions of each Church."
+            },
+            {
+              "type": "p",
+              "nl": "OE §12–23 behandelen de sacramenten en de eredienst. Voorbeelden zijn het vormsel dat volgens oosters gebruik door priesters samen met het doopsel wordt toegediend (OE §13–14), het herstel van het permanente diaconaat waar het in onbruik is geraakt (OE §17), de wens van een gemeenschappelijke paasdatum voor alle christenen (OE §20) en de bevoegdheid van elke Kerk om de talen van de liturgie te regelen (OE §23).",
+              "en": "OE §12–23 treat the sacraments and divine worship. Examples are confirmation administered by priests together with baptism, as is the Eastern custom (OE §13–14), the restoration of the permanent diaconate where it has fallen into disuse (OE §17), the wish for a common date of Easter for all Christians (OE §20) and the authority of each Church to regulate the languages of the liturgy (OE §23)."
             }
           ]
         },
@@ -212,16 +217,16 @@
           "headingEn": "Spiritual ecumenism",
           "blocks": [
             {
-              "type": "quote",
-              "paragraphId": "UR-8"
-            },
-            {
               "type": "box",
               "kind": "term",
               "titleNl": "Geestelijke oecumene",
               "titleEn": "Spiritual ecumenism",
               "nl": "UR §8 noemt bekering van hart, heiligheid van leven en gebed voor de eenheid de ziel van heel de oecumenische beweging. Voor de betrekkingen met het Oosten heeft dat een bijzondere betekenis: de oosterse traditie leer je vooral kennen in haar liturgie, haar monastieke leven en haar kerkvaders (UR §15). Eenheid groeit daarom eerst door wederzijdse kennis en gebed, voordat zij in gemeenschappelijke structuren tot uitdrukking kan komen.",
               "en": "UR §8 calls change of heart, holiness of life and prayer for unity the soul of the whole ecumenical movement. For relations with the East this has a particular meaning: the Eastern tradition is known above all through its liturgy, its monastic life and its Fathers (UR §15). Unity therefore grows first through mutual knowledge and prayer, before it can be expressed in common structures."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "UR-8"
             },
             {
               "type": "p",
@@ -274,14 +279,22 @@
                   "labelEn": "Living witness to unity in diversity",
                   "nl": "Veel oosters-katholieke auteurs en herders lezen OE als een eerherstel: hun Kerken laten zien dat volle gemeenschap met de bisschop van Rome samengaat met een volledig oosterse liturgie, theologie en discipline. OE §24 geeft hun een bijzondere taak bij het bevorderen van de eenheid, en hun trouw aan de eigen traditie (OE §6) wordt voorgesteld als een teken voor de orthodoxen van hoe gemeenschap eruit zou kunnen zien.",
                   "en": "Many Eastern Catholic authors and pastors read OE as a vindication: their Churches show that full communion with the Bishop of Rome is compatible with a fully Eastern liturgy, theology and discipline. OE §24 gives them a special task in promoting unity, and their fidelity to their own tradition (OE §6) is presented as a sign to the Orthodox of what communion could look like.",
-                  "sources": ["OE-1", "OE-3", "OE-6"]
+                  "sources": [
+                    "OE-1",
+                    "OE-3",
+                    "OE-6"
+                  ]
                 },
                 {
                   "labelNl": "Geen model voor de toekomstige eenheid",
                   "labelEn": "Not the model for future unity",
                   "nl": "Orthodoxe theologen, en katholieke oecumenici in de lijn van UR, benadrukken dat het Concilie zelf de verzoening van individuen onderscheidde van het oecumenisch werk (UR §4) en de orthodoxe Kerken beschouwde als Kerken met ware sacramenten (UR §15). In deze lezing moet eenheid met het Oosten gezocht worden als gemeenschap tussen Kerken, niet door de vorming van oosterse gemeenschappen die van de orthodoxie worden losgemaakt. De oosters-katholieke Kerken verdienen respect, maar zijn niet het model voor de toekomstige eenheid.",
                   "en": "Orthodox theologians, and Catholic ecumenists in the line of UR, stress that the Council itself distinguished the reconciliation of individuals from ecumenical action (UR §4) and regarded the Orthodox Churches as Churches with true sacraments (UR §15). On this reading unity with the East must be sought as communion between Churches, not through the formation of Eastern communities detached from Orthodoxy. The Eastern Catholic Churches deserve respect, but are not the model for future unity.",
-                  "sources": ["UR-4", "LG-15", "UR-8"]
+                  "sources": [
+                    "UR-4",
+                    "LG-15",
+                    "UR-8"
+                  ]
                 }
               ]
             },
