@@ -21,6 +21,8 @@ interface UiState {
   installDismissed: boolean;
   /** Subject id → paragraph ids marked as studied. */
   studied: Record<string, string[]>;
+  /** Lesson id → completion and best knowledge-check score. */
+  lessons: Record<string, { done: boolean; score: number | null; updatedAt: number }>;
   setLang: (lang: Lang) => void;
   setTheme: (theme: Theme) => void;
   setFontSize: (size: FontSize) => void;
@@ -28,6 +30,7 @@ interface UiState {
   toggleBookmark: (paragraphId: string) => void;
   dismissInstall: () => void;
   toggleStudied: (subjectId: string, paragraphId: string) => void;
+  setLesson: (id: string, patch: { done?: boolean; score?: number }) => void;
 }
 
 /**
@@ -44,6 +47,7 @@ export const useUi = create<UiState>()(
       bookmarks: [],
       installDismissed: false,
       studied: {},
+      lessons: {},
       setLang: (lang) => set({ lang }),
       setTheme: (theme) => set({ theme }),
       setFontSize: (fontSize) => set({ fontSize }),
@@ -66,6 +70,20 @@ export const useUi = create<UiState>()(
           bookmarks: s.bookmarks.includes(id) ? s.bookmarks.filter((b) => b !== id) : [...s.bookmarks, id],
         })),
       dismissInstall: () => set({ installDismissed: true }),
+      setLesson: (id, patch) =>
+        set((s) => {
+          const prev = s.lessons[id] ?? { done: false, score: null, updatedAt: 0 };
+          return {
+            lessons: {
+              ...s.lessons,
+              [id]: {
+                done: patch.done ?? prev.done,
+                score: patch.score === undefined ? prev.score : Math.max(prev.score ?? 0, patch.score),
+                updatedAt: Date.now(),
+              },
+            },
+          };
+        }),
       toggleStudied: (subjectId, paragraphId) =>
         set((s) => {
           const cur = s.studied[subjectId] ?? [];

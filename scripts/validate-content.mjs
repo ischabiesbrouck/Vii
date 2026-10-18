@@ -28,9 +28,12 @@ const timeline = read('timeline.json');
 const glossary = read('glossary.json');
 const hermeneutics = read('hermeneutics.json');
 const subjects = read('subjects.json');
+const lessons = read('lessons.json');
+const catecheses = read('catecheses.json');
+const videos = read('videos.json');
 
 const hash = createHash('sha256');
-for (const f of ['documents.json', 'sources.json', 'claims.json', 'timeline.json', 'glossary.json', 'hermeneutics.json', 'subjects.json']) {
+for (const f of ['documents.json', 'sources.json', 'claims.json', 'timeline.json', 'glossary.json', 'hermeneutics.json', 'subjects.json', 'lessons.json', 'catecheses.json', 'videos.json']) {
   hash.update(readFileSync(join(root, f)));
 }
 
@@ -133,6 +136,39 @@ for (const sub of subjects) {
   }
 }
 
+// --- catecheses / videos / lessons ------------------------------------------
+const catDates = new Set();
+for (const c of catecheses.items) {
+  if (catDates.has(c.date)) err(`duplicate catechesis ${c.date}`);
+  catDates.add(c.date);
+  if (!c.url.startsWith('https://www.vatican.va/')) err(`catechesis ${c.date}: url must be vatican.va`);
+  if (c.docId && !docIds.has(c.docId)) err(`catechesis ${c.date}: unknown doc ${c.docId}`);
+  for (const p of c.paragraphs ?? []) checkRef(p, `catechesis ${c.date}`);
+}
+const videoIds = new Set();
+for (const v of videos.items) {
+  if (!/^[A-Za-z0-9_-]{11}$/.test(v.youtubeId)) err(`video ${v.youtubeId}: invalid YouTube id`);
+  if (videoIds.has(v.youtubeId)) err(`duplicate video ${v.youtubeId}`);
+  videoIds.add(v.youtubeId);
+  for (const d of v.docIds) if (!docIds.has(d)) err(`video ${v.youtubeId}: unknown doc ${d}`);
+  for (const sId of v.subjectIds) if (!subjectIds.has(sId)) err(`video ${v.youtubeId}: unknown subject ${sId}`);
+}
+for (const c of catecheses.items) if (c.videoId && !videoIds.has(c.videoId)) err(`catechesis ${c.date}: unknown video ${c.videoId}`);
+const lessonIds = new Set();
+for (const l of lessons) {
+  lessonIds.add(l.id);
+  for (const sec of l.sections) for (const r of sec.refs) checkRef(r, `lesson ${l.id}`);
+  for (const p of l.paragraphs) checkRef(p, `lesson ${l.id}`);
+  for (const d of l.catecheses) if (!catDates.has(d)) err(`lesson ${l.id}: unknown catechesis ${d}`);
+  for (const v of l.videos) if (!videoIds.has(v)) err(`lesson ${l.id}: unknown video ${v}`);
+  for (const sId of l.subjects) if (!subjectIds.has(sId)) err(`lesson ${l.id}: unknown subject ${sId}`);
+  for (const [i, qz] of l.quiz.entries()) {
+    if (qz.answer < 0 || qz.answer >= qz.options.length) err(`lesson ${l.id} quiz ${i}: answer out of range`);
+    if (qz.ref) checkRef(qz.ref, `lesson ${l.id} quiz ${i}`);
+  }
+}
+for (const v of videos.items) for (const l of v.lessonIds) if (!lessonIds.has(l)) err(`video ${v.youtubeId}: unknown lesson ${l}`);
+
 // --- report -----------------------------------------------------------------
 for (const w of warnings) console.warn(`warn  ${w}`);
 if (errors.length) {
@@ -150,5 +186,5 @@ const index = {
 };
 writeFileSync(join(root, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 console.log(
-  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · v${index.version}`,
+  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} catecheses · ${videos.items.length} videos · v${index.version}`,
 );

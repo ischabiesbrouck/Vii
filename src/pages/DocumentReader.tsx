@@ -7,7 +7,8 @@ import { Commentary, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar } fro
 import { ParagraphSheet, copyCitation } from '@/components/ParagraphSheet';
 import { SubjectIcon } from '@/components/SubjectIcon';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
-import { getDocumentContent, getDocuments, getSubjects } from '@/lib/content';
+import { getCatecheses, getDocumentContent, getDocuments, getSubjects, getVideos } from '@/lib/content';
+import { VideoCard } from '@/components/VideoCard';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { cn, formatDate, pick } from '@/lib/utils';
@@ -187,13 +188,15 @@ export function DocumentReader() {
   const navigate = useNavigate();
   const { fontSize, setFontSize, bookmarks, progress, recordProgress } = useUi();
   const { data, loading } = useAsync(async () => {
-    const [docs, content, subjects] = await Promise.all([getDocuments(), getDocumentContent(id), getSubjects()]);
+    const [docs, content, subjects, cat, videos] = await Promise.all([getDocuments(), getDocumentContent(id), getSubjects(), getCatecheses(), getVideos()]);
     const ordered = [...docs].sort((a, b) => a.promulgated.localeCompare(b.promulgated) || a.titleLa.localeCompare(b.titleLa));
     const i = ordered.findIndex((d) => d.id === id);
     const doc = ordered[i];
     if (!doc) return null;
     const related = subjects.filter((s) => s.steps.some((st) => st.paragraphId.startsWith(`${doc.abbr}-`)));
-    return { doc, content, prev: ordered[i - 1], next: ordered[i + 1], related };
+    const catecheses = cat.items.filter((c) => c.docId === doc.id);
+    const docVideos = videos.items.filter((v) => v.docIds.includes(doc.id));
+    return { doc, content, prev: ordered[i - 1], next: ordered[i + 1], related, catecheses, docVideos };
   }, [id]);
   const doc = data?.doc;
   const content = data?.content;
@@ -362,6 +365,39 @@ export function DocumentReader() {
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {(data.catecheses.length > 0 || data.docVideos.length > 0) && (
+        <section className="mb-10 grid gap-6 lg:grid-cols-2" aria-label={t('learn.explore')}>
+          {data.catecheses.length > 0 && (
+            <div>
+              <p className="kicker mb-2">{t('learn.catecheses')}</p>
+              <ol className="divide-y divide-line border-y border-line">
+                {data.catecheses.map((c) => (
+                  <li key={c.date}>
+                    <a href={c.url} target="_blank" rel="noopener noreferrer" className="flex items-baseline gap-3 py-2.5 hover:bg-surface sm:px-2">
+                      <span className="w-20 shrink-0 text-xs tabular text-gold-text">{formatDate(c.date, lang).replace(/ \d{4}$/, '')}</span>
+                      <span className="flex-1 text-sm">{pick(lang, c.titleNl, c.titleEn)}</span>
+                      <ExternalLink className="h-3 w-3 shrink-0 text-muted" aria-hidden />
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+          {data.docVideos.length > 0 && (
+            <div>
+              <p className="kicker mb-2">{t('video.title')}</p>
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {data.docVideos.slice(0, 2).map((v) => (
+                  <li key={v.youtubeId}>
+                    <VideoCard video={v} compact />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
       )}
 

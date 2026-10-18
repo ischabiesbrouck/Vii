@@ -1,0 +1,1598 @@
+[
+  {
+    "id": "why-a-council",
+    "number": 1,
+    "labelLa": "Lectio I",
+    "minutes": 15,
+    "titleNl": "Waarom een concilie?",
+    "titleEn": "Why a council?",
+    "summaryNl": "De Kerk vóór 1959, de bewegingen die het Concilie voorbereidden, en de verrassende aankondiging van Johannes XXIII.",
+    "summaryEn": "The Church before 1959, the movements that prepared the Council, and John XXIII's surprising announcement.",
+    "sections": [
+      {
+        "headingNl": "Een oecumenisch concilie",
+        "headingEn": "An ecumenical council",
+        "bodyNl": "Een oecumenisch (algemeen) concilie is een vergadering van de bisschoppen van de hele wereld die, samen met en onder de paus, met het hoogste gezag over geloof en kerkelijk leven beslist. Vaticanum II is in de katholieke telling het 21e. Het vorige, Vaticanum I (1869–1870), werd onderbroken door de Frans-Duitse oorlog en de inname van Rome, en is nooit formeel gesloten.",
+        "bodyEn": "An ecumenical (general) council is an assembly of the bishops of the whole world which, with and under the pope, decides with supreme authority on faith and Church life. In the Catholic reckoning Vatican II is the 21st. The previous one, Vatican I (1869–1870), was interrupted by the Franco-Prussian War and the capture of Rome, and was never formally closed.",
+        "refs": [
+          "LG-22",
+          "LG-25"
+        ]
+      },
+      {
+        "headingNl": "Bewegingen vóór het Concilie",
+        "headingEn": "Movements before the Council",
+        "bodyNl": "Het Concilie viel niet uit de lucht. Sinds de 19e eeuw groeide een liturgische beweging, die Pius X (1903) en Pius XII (Mediator Dei, 1947; hervorming van de Goede Week, 1951–1955) deels overnamen. De Bijbelbeweging kreeg ruimte met Divino afflante Spiritu (1943). Theologen als Henri de Lubac en Yves Congar zochten 'terugkeer naar de bronnen' (ressourcement): Schrift, kerkvaders, liturgie. En buiten de Katholieke Kerk groeide de oecumenische beweging (Wereldraad van Kerken, 1948).",
+        "bodyEn": "The Council did not come out of nowhere. Since the 19th century a liturgical movement had grown, partly adopted by Pius X (1903) and Pius XII (Mediator Dei, 1947; reform of Holy Week, 1951–1955). The biblical movement gained room with Divino afflante Spiritu (1943). Theologians such as Henri de Lubac and Yves Congar sought a 'return to the sources' (ressourcement): Scripture, the Fathers, liturgy. And outside the Catholic Church the ecumenical movement grew (World Council of Churches, 1948).",
+        "refs": [
+          "SC-14",
+          "PC-2"
+        ]
+      },
+      {
+        "headingNl": "De aankondiging",
+        "headingEn": "The announcement",
+        "bodyNl": "Johannes XXIII werd op 28 oktober 1958 gekozen, op 76-jarige leeftijd, en werd vaak als overgangspaus gezien. Op 25 januari 1959 kondigde hij in de basiliek van Sint-Paulus buiten de Muren tot verrassing van de kardinalen een oecumenisch concilie aan. Zijn doel formuleerde hij later als aggiornamento: de Kerk bij de tijd brengen, niet door haar leer te veranderen, maar door haar beter te laten verkondigen.",
+        "bodyEn": "John XXIII was elected on 28 October 1958, aged 76, and was often seen as a transitional pope. On 25 January 1959, at the Basilica of Saint Paul Outside the Walls, he surprised the cardinals by announcing an ecumenical council. He later described his aim as aggiornamento: bringing the Church up to date, not by changing her doctrine, but by enabling her to proclaim it better.",
+        "refs": [
+          "SC-1"
+        ]
+      },
+      {
+        "headingNl": "De openingstoespraak",
+        "headingEn": "The opening address",
+        "bodyNl": "In Gaudet Mater Ecclesia (11 oktober 1962) nam Johannes XXIII afstand van 'onheilsprofeten', onderscheidde hij de inhoud van het geloofsdepot van de wijze waarop het wordt uitgedrukt, en gaf hij de voorkeur aan 'het medicijn van de barmhartigheid' boven veroordelingen. Die drie gedachten bepaalden de toon van het hele Concilie.",
+        "bodyEn": "In Gaudet Mater Ecclesia (11 October 1962) John XXIII distanced himself from 'prophets of doom', distinguished the substance of the deposit of faith from the way it is expressed, and preferred 'the medicine of mercy' to condemnations. Those three ideas set the tone of the whole Council.",
+        "refs": [
+          "UR-6",
+          "DV-8"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Aangekondigd",
+        "labelEn": "Announced",
+        "valueNl": "25 januari 1959",
+        "valueEn": "25 January 1959"
+      },
+      {
+        "labelNl": "Geopend",
+        "labelEn": "Opened",
+        "valueNl": "11 oktober 1962",
+        "valueEn": "11 October 1962"
+      },
+      {
+        "labelNl": "Gesloten",
+        "labelEn": "Closed",
+        "valueNl": "8 december 1965",
+        "valueEn": "8 December 1965"
+      },
+      {
+        "labelNl": "Telling",
+        "labelEn": "Count",
+        "valueNl": "21e oecumenisch concilie",
+        "valueEn": "21st ecumenical council"
+      }
+    ],
+    "paragraphs": [
+      "SC-1",
+      "UR-1",
+      "DV-8"
+    ],
+    "catecheses": [
+      "2026-01-07"
+    ],
+    "videos": [
+      "kjpI0ADVjVM",
+      "qtXe946hsrQ",
+      "1rIuHQ_fhQk",
+      "JcRNsgB5UJk"
+    ],
+    "subjects": [
+      "reading-the-council",
+      "development"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Welke paus kondigde het Concilie aan?",
+        "questionEn": "Which pope announced the Council?",
+        "options": [
+          {
+            "nl": "Pius XII",
+            "en": "Pius XII"
+          },
+          {
+            "nl": "Johannes XXIII",
+            "en": "John XXIII"
+          },
+          {
+            "nl": "Paulus VI",
+            "en": "Paul VI"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Johannes XXIII kondigde het aan op 25 januari 1959.",
+        "explainEn": "John XXIII announced it on 25 January 1959."
+      },
+      {
+        "questionNl": "Wat betekent 'ressourcement'?",
+        "questionEn": "What does 'ressourcement' mean?",
+        "options": [
+          {
+            "nl": "Bij de tijd brengen",
+            "en": "Bringing up to date"
+          },
+          {
+            "nl": "Terugkeer naar de bronnen",
+            "en": "Return to the sources"
+          },
+          {
+            "nl": "Herziening van het kerkelijk recht",
+            "en": "Revision of canon law"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Ressourcement is de terugkeer naar Schrift, kerkvaders en liturgie; PC §2 noemt die beweging uitdrukkelijk.",
+        "explainEn": "Ressourcement is the return to Scripture, the Fathers and liturgy; PC §2 names this movement explicitly.",
+        "ref": "PC-2"
+      },
+      {
+        "questionNl": "Waarom was Vaticanum I nooit formeel gesloten?",
+        "questionEn": "Why was Vatican I never formally closed?",
+        "options": [
+          {
+            "nl": "De paus overleed",
+            "en": "The pope died"
+          },
+          {
+            "nl": "Oorlog en de inname van Rome onderbraken het",
+            "en": "War and the capture of Rome interrupted it"
+          },
+          {
+            "nl": "De bisschoppen weigerden te stemmen",
+            "en": "The bishops refused to vote"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "De Frans-Duitse oorlog en de inname van Rome in 1870 onderbraken Vaticanum I.",
+        "explainEn": "The Franco-Prussian War and the capture of Rome in 1870 interrupted Vatican I."
+      }
+    ],
+    "sources": [
+      "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
+      "John XXIII. (1962, October 11). Gaudet Mater Ecclesia [Opening address of the Second Vatican Council]. Libreria Editrice Vaticana."
+    ]
+  },
+  {
+    "id": "how-it-worked",
+    "number": 2,
+    "labelLa": "Lectio II",
+    "minutes": 15,
+    "titleNl": "Hoe werkte het Concilie?",
+    "titleEn": "How did the Council work?",
+    "summaryNl": "Vier zittingen, ruim tweeduizend bisschoppen, ontwerpteksten, commissies en stemmingen: de praktijk achter de documenten.",
+    "summaryEn": "Four sessions, more than two thousand bishops, drafts, commissions and votes: the practice behind the documents.",
+    "sections": [
+      {
+        "headingNl": "Wie er waren",
+        "headingEn": "Who was there",
+        "bodyNl": "Stemgerechtigd waren de concilievaders: bisschoppen van over de hele wereld, met abten en oversten van ordes, bij de opening rond de 2.500. Zij werden bijgestaan door theologische deskundigen (periti), onder wie Joseph Ratzinger, Yves Congar, Henri de Lubac en Karl Rahner. Waarnemers van andere christelijke kerken volgden de zittingen; vanaf de tweede zitting waren er ook leken als toehoorders (auditores), vanaf 1964 ook vrouwen.",
+        "bodyEn": "Voting members were the Council Fathers: bishops from all over the world, together with abbots and superiors of orders, around 2,500 at the opening. They were assisted by theological experts (periti), including Joseph Ratzinger, Yves Congar, Henri de Lubac and Karl Rahner. Observers from other Christian churches followed the sessions; from the second session lay people also attended as auditors, and from 1964 women as well.",
+        "refs": []
+      },
+      {
+        "headingNl": "Hoe een tekst ontstond",
+        "headingEn": "How a text came about",
+        "bodyNl": "De voorbereidende commissies leverden ongeveer zeventig ontwerpen (schemata). In de aula, waar Latijn werd gesproken, besprak de vergadering een schema, waarna een conciliecommissie het herschreef. Bij stemmingen tijdens de bewerking kon men stemmen met placet (ja), non placet (nee) of placet iuxta modum (ja, met een voorgestelde wijziging). Veel ontwerpen werden ingrijpend herschreven of samengevoegd; het ontwerp over de bronnen van de openbaring werd in 1962 zelfs teruggetrokken.",
+        "bodyEn": "The preparatory commissions produced about seventy drafts (schemata). In the hall, where Latin was spoken, the assembly debated a schema, after which a conciliar commission rewrote it. In votes during revision one could vote placet (yes), non placet (no) or placet iuxta modum (yes, with a proposed amendment). Many drafts were thoroughly rewritten or merged; the draft on the sources of revelation was even withdrawn in 1962.",
+        "refs": [
+          "DV-9"
+        ]
+      },
+      {
+        "headingNl": "Afkondiging en gezag",
+        "headingEn": "Promulgation and authority",
+        "bodyNl": "Een document werd in een openbare zitting in definitieve vorm gestemd en daarna door de paus 'samen met de vaders' afgekondigd. De eindstemmingen waren overweldigend: de meeste documenten kregen minder dan tien tegenstemmen. Het gezag van een tekst hangt af van zijn aard: dogmatische constituties wegen zwaarder dan decreten en verklaringen, en de Notificationes van 1964 bepalen dat alleen wat uitdrukkelijk als dogma wordt verklaard, als dogma bindt.",
+        "bodyEn": "A document was voted in final form at a public session and then promulgated by the pope 'together with the Fathers'. The final votes were overwhelming: most documents received fewer than ten votes against. A text's authority depends on its nature: dogmatic constitutions weigh more than decrees and declarations, and the Notificationes of 1964 state that only what is expressly declared as dogma binds as dogma.",
+        "refs": [
+          "LG-25"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Zittingen",
+        "labelEn": "Sessions",
+        "valueNl": "4 (1962–1965)",
+        "valueEn": "4 (1962–1965)"
+      },
+      {
+        "labelNl": "Vaders bij de opening",
+        "labelEn": "Fathers at the opening",
+        "valueNl": "ca. 2.500",
+        "valueEn": "c. 2,500"
+      },
+      {
+        "labelNl": "Voorbereidende ontwerpen",
+        "labelEn": "Preparatory drafts",
+        "valueNl": "ca. 70",
+        "valueEn": "c. 70"
+      },
+      {
+        "labelNl": "Documenten",
+        "labelEn": "Documents",
+        "valueNl": "16",
+        "valueEn": "16"
+      }
+    ],
+    "paragraphs": [
+      "LG-25",
+      "DV-9"
+    ],
+    "catecheses": [],
+    "videos": [
+      "Xqh_0wqTz2M",
+      "XjGRSvqKmhI",
+      "kjpI0ADVjVM"
+    ],
+    "subjects": [
+      "reading-the-council",
+      "authority"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Wat betekent 'placet iuxta modum'?",
+        "questionEn": "What does 'placet iuxta modum' mean?",
+        "options": [
+          {
+            "nl": "Nee",
+            "en": "No"
+          },
+          {
+            "nl": "Ja, met een voorgestelde wijziging",
+            "en": "Yes, with a proposed amendment"
+          },
+          {
+            "nl": "Onthouding",
+            "en": "Abstention"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Een ja-stem met een wijzigingsvoorstel, mogelijk tijdens de bewerking van een tekst.",
+        "explainEn": "A yes vote with a proposed amendment, possible during the revision of a text."
+      },
+      {
+        "questionNl": "In welke taal werd in de aula gedebatteerd?",
+        "questionEn": "In which language was the debate held in the hall?",
+        "options": [
+          {
+            "nl": "Italiaans",
+            "en": "Italian"
+          },
+          {
+            "nl": "Latijn",
+            "en": "Latin"
+          },
+          {
+            "nl": "Frans",
+            "en": "French"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Het Latijn was de taal van de debatten.",
+        "explainEn": "Latin was the language of the debates."
+      },
+      {
+        "questionNl": "Welk ontwerp werd in 1962 teruggetrokken?",
+        "questionEn": "Which draft was withdrawn in 1962?",
+        "options": [
+          {
+            "nl": "Over de liturgie",
+            "en": "On the liturgy"
+          },
+          {
+            "nl": "Over de bronnen van de openbaring",
+            "en": "On the sources of revelation"
+          },
+          {
+            "nl": "Over de media",
+            "en": "On the media"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Het werd herschreven en werd uiteindelijk Dei Verbum.",
+        "explainEn": "It was rewritten and eventually became Dei Verbum.",
+        "ref": "DV-9"
+      }
+    ],
+    "sources": [
+      "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books.",
+      "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press."
+    ]
+  },
+  {
+    "id": "four-constitutions",
+    "number": 3,
+    "labelLa": "Lectio III",
+    "minutes": 20,
+    "titleNl": "De vier constituties",
+    "titleEn": "The four constitutions",
+    "summaryNl": "De pijlers van het Concilie: openbaring, Kerk, liturgie en Kerk-in-de-wereld, en hoe ze samenhangen.",
+    "summaryEn": "The pillars of the Council: revelation, Church, liturgy and Church-in-the-world, and how they belong together.",
+    "sections": [
+      {
+        "headingNl": "Vier pijlers",
+        "headingEn": "Four pillars",
+        "bodyNl": "De vier constituties vormen de leessleutel voor de andere twaalf documenten. Dei Verbum (openbaring) zegt waaruit de Kerk leeft: het woord van God. Lumen Gentium (Kerk) zegt wie zij is. Sacrosanctum Concilium (liturgie) zegt waar zij het meest zichzelf is: in de viering. Gaudium et Spes zegt hoe zij zich tot de wereld verhoudt. De Bisschoppensynode van 1985 raadde aan de andere documenten in het licht van deze vier te lezen.",
+        "bodyEn": "The four constitutions are the key for reading the other twelve documents. Dei Verbum (revelation) says what the Church lives from: the word of God. Lumen Gentium (Church) says who she is. Sacrosanctum Concilium (liturgy) says where she is most herself: in worship. Gaudium et Spes says how she relates to the world. The 1985 Synod of Bishops recommended reading the other documents in the light of these four.",
+        "refs": [
+          "DV-10",
+          "LG-1",
+          "SC-10",
+          "GS-22"
+        ]
+      },
+      {
+        "headingNl": "Dogmatisch en pastoraal",
+        "headingEn": "Dogmatic and pastoral",
+        "bodyNl": "Lumen Gentium en Dei Verbum dragen de titel 'dogmatische constitutie', Gaudium et Spes 'pastorale constitutie'. Sacrosanctum Concilium heeft geen kwalificatie in de titel en bevat zowel leerstellige beginselen als disciplinaire normen. 'Pastoraal' betekent hier niet 'vrijblijvend', maar gericht op de toepassing van de leer in concrete omstandigheden.",
+        "bodyEn": "Lumen Gentium and Dei Verbum bear the title 'dogmatic constitution', Gaudium et Spes 'pastoral constitution'. Sacrosanctum Concilium has no qualifier in its title and contains both doctrinal principles and disciplinary norms. 'Pastoral' here does not mean 'optional', but directed to the application of doctrine in concrete circumstances.",
+        "refs": [
+          "LG-25"
+        ]
+      },
+      {
+        "headingNl": "Rode draad: Christus",
+        "headingEn": "Common thread: Christ",
+        "bodyNl": "Alle vier beginnen of culmineren bij Christus. LG opent met 'Christus is het licht der volken'. DV noemt Christus de volheid van de openbaring. SC noemt de liturgie het werk van Christus, die er aanwezig is. GS zegt dat alleen in het mysterie van het mensgeworden Woord het mysterie van de mens duidelijk wordt. Wie het Concilie als programma van aanpassing leest zonder die christologische kern, mist de bedoeling van de teksten.",
+        "bodyEn": "All four begin or culminate in Christ. LG opens with 'Christ is the light of nations'. DV calls Christ the fullness of revelation. SC calls the liturgy the work of Christ, who is present in it. GS says that only in the mystery of the incarnate Word does the mystery of man become clear. Whoever reads the Council as a programme of adaptation without that Christological core misses the intention of the texts.",
+        "refs": [
+          "LG-1",
+          "DV-4",
+          "SC-7",
+          "GS-22"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Dei Verbum",
+        "labelEn": "Dei Verbum",
+        "valueNl": "18 november 1965 · 2.344–6",
+        "valueEn": "18 November 1965 · 2,344–6"
+      },
+      {
+        "labelNl": "Lumen Gentium",
+        "labelEn": "Lumen Gentium",
+        "valueNl": "21 november 1964 · 2.151–5",
+        "valueEn": "21 November 1964 · 2,151–5"
+      },
+      {
+        "labelNl": "Sacrosanctum Concilium",
+        "labelEn": "Sacrosanctum Concilium",
+        "valueNl": "4 december 1963 · 2.147–4",
+        "valueEn": "4 December 1963 · 2,147–4"
+      },
+      {
+        "labelNl": "Gaudium et Spes",
+        "labelEn": "Gaudium et Spes",
+        "valueNl": "7 december 1965 · 2.309–75",
+        "valueEn": "7 December 1965 · 2,309–75"
+      }
+    ],
+    "paragraphs": [
+      "LG-1",
+      "DV-4",
+      "SC-10",
+      "GS-22"
+    ],
+    "catecheses": [
+      "2026-01-14",
+      "2026-02-18",
+      "2026-05-20",
+      "2026-09-02"
+    ],
+    "videos": [
+      "hN55SuVD7VQ",
+      "qtXe946hsrQ"
+    ],
+    "subjects": [
+      "church",
+      "revelation",
+      "liturgy",
+      "church-world"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Welke constitutie draagt de titel 'pastorale constitutie'?",
+        "questionEn": "Which constitution bears the title 'pastoral constitution'?",
+        "options": [
+          {
+            "nl": "Lumen Gentium",
+            "en": "Lumen Gentium"
+          },
+          {
+            "nl": "Gaudium et Spes",
+            "en": "Gaudium et Spes"
+          },
+          {
+            "nl": "Dei Verbum",
+            "en": "Dei Verbum"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Gaudium et Spes is de Constitutio pastoralis de Ecclesia in mundo huius temporis.",
+        "explainEn": "Gaudium et Spes is the Constitutio pastoralis de Ecclesia in mundo huius temporis."
+      },
+      {
+        "questionNl": "Met welke woorden begint Lumen Gentium?",
+        "questionEn": "With which words does Lumen Gentium begin?",
+        "options": [
+          {
+            "nl": "Christus is het licht der volken",
+            "en": "Christ is the light of nations"
+          },
+          {
+            "nl": "Vreugde en hoop",
+            "en": "Joy and hope"
+          },
+          {
+            "nl": "Gods Woord",
+            "en": "God's Word"
+          }
+        ],
+        "answer": 0,
+        "explainNl": "'Lumen gentium cum sit Christus' (LG §1).",
+        "explainEn": "'Lumen gentium cum sit Christus' (LG §1).",
+        "ref": "LG-1"
+      },
+      {
+        "questionNl": "Welke constitutie werd als eerste afgekondigd?",
+        "questionEn": "Which constitution was promulgated first?",
+        "options": [
+          {
+            "nl": "Sacrosanctum Concilium",
+            "en": "Sacrosanctum Concilium"
+          },
+          {
+            "nl": "Lumen Gentium",
+            "en": "Lumen Gentium"
+          },
+          {
+            "nl": "Dei Verbum",
+            "en": "Dei Verbum"
+          }
+        ],
+        "answer": 0,
+        "explainNl": "SC werd op 4 december 1963 afgekondigd.",
+        "explainEn": "SC was promulgated on 4 December 1963."
+      }
+    ],
+    "sources": [
+      "Tanner, N. P. (Ed.). (1990). Decrees of the ecumenical councils (Vol. 2). Georgetown University Press.",
+      "Synod of Bishops. (1985). The final report of the 1985 Extraordinary Synod. Libreria Editrice Vaticana."
+    ]
+  },
+  {
+    "id": "revelation-dv",
+    "number": 4,
+    "labelLa": "Lectio IV",
+    "minutes": 20,
+    "titleNl": "Openbaring: Dei Verbum",
+    "titleEn": "Revelation: Dei Verbum",
+    "summaryNl": "Hoe God zich bekendmaakt, hoe dat wordt doorgegeven, en hoe de Schrift te lezen.",
+    "summaryEn": "How God makes himself known, how that is handed on, and how to read Scripture.",
+    "sections": [
+      {
+        "headingNl": "Openbaring als ontmoeting",
+        "headingEn": "Revelation as encounter",
+        "bodyNl": "Dei Verbum beschrijft openbaring eerst als Gods zelfmededeling: God spreekt tot de mensen 'als tot vrienden' en nodigt hen uit tot gemeenschap met zich (DV §2). Het antwoord daarop is de 'gehoorzaamheid van het geloof', waarin de mens zich vrij en geheel aan God toevertrouwt (DV §5). In Christus is de openbaring voltooid; een nieuwe openbare openbaring is niet te verwachten (DV §4).",
+        "bodyEn": "Dei Verbum first describes revelation as God's self-communication: God speaks to people 'as friends' and invites them into fellowship with himself (DV §2). The response is the 'obedience of faith', in which a person entrusts his whole self freely to God (DV §5). Revelation is completed in Christ; no new public revelation is to be expected (DV §4).",
+        "refs": [
+          "DV-2",
+          "DV-4",
+          "DV-5"
+        ]
+      },
+      {
+        "headingNl": "Schrift, Traditie, leergezag",
+        "headingEn": "Scripture, Tradition, magisterium",
+        "bodyNl": "Schrift en Traditie vormen 'één heilige schat van het woord van God' (DV §10). De Kerk put haar zekerheid niet uit de Schrift alleen (DV §9). Het leergezag staat niet boven het woord van God, maar dient het (DV §10). De Traditie ontwikkelt zich: het inzicht in het overgeleverde groeit (DV §8), zonder dat de betekenis verandert.",
+        "bodyEn": "Scripture and Tradition form 'one sacred deposit of the word of God' (DV §10). The Church does not draw her certainty from Scripture alone (DV §9). The magisterium is not above the word of God but serves it (DV §10). Tradition develops: understanding of what has been handed down grows (DV §8), without its meaning changing.",
+        "refs": [
+          "DV-8",
+          "DV-9",
+          "DV-10"
+        ]
+      },
+      {
+        "headingNl": "De Schrift lezen",
+        "headingEn": "Reading Scripture",
+        "bodyNl": "Omdat God door menselijke auteurs spreekt, vraagt de uitleg aandacht voor wat de schrijvers bedoelden en voor literaire genres (DV §12), maar ook voor de eenheid van heel de Schrift, de levende traditie en de analogie van het geloof. De Kerk vereert de Schriften zoals zij het lichaam van de Heer vereert (DV §21). 'De Schriften niet kennen is Christus niet kennen' (DV §25).",
+        "bodyEn": "Because God speaks through human authors, interpretation requires attention to what the writers intended and to literary genres (DV §12), but also to the unity of the whole of Scripture, living tradition and the analogy of faith. The Church venerates the Scriptures as she venerates the body of the Lord (DV §21). 'Ignorance of the Scriptures is ignorance of Christ' (DV §25).",
+        "refs": [
+          "DV-12",
+          "DV-21",
+          "DV-25"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Afgekondigd",
+        "labelEn": "Promulgated",
+        "valueNl": "18 november 1965",
+        "valueEn": "18 November 1965"
+      },
+      {
+        "labelNl": "Eindstemming",
+        "labelEn": "Final vote",
+        "valueNl": "2.344 placet · 6 non placet",
+        "valueEn": "2,344 placet · 6 non placet"
+      },
+      {
+        "labelNl": "Paragrafen",
+        "labelEn": "Paragraphs",
+        "valueNl": "26",
+        "valueEn": "26"
+      }
+    ],
+    "paragraphs": [
+      "DV-2",
+      "DV-8",
+      "DV-10",
+      "DV-12"
+    ],
+    "catecheses": [
+      "2026-01-14",
+      "2026-01-21",
+      "2026-01-28",
+      "2026-02-04",
+      "2026-02-11"
+    ],
+    "videos": [],
+    "subjects": [
+      "revelation",
+      "development"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Volgens DV §9 put de Kerk haar zekerheid over het geopenbaarde…",
+        "questionEn": "According to DV §9 the Church draws her certainty about what is revealed…",
+        "options": [
+          {
+            "nl": "uit de Schrift alleen",
+            "en": "from Scripture alone"
+          },
+          {
+            "nl": "niet uit de Schrift alleen",
+            "en": "not from Scripture alone"
+          },
+          {
+            "nl": "uit het leergezag alleen",
+            "en": "from the magisterium alone"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "'Niet uit de heilige Schrift alleen' (DV §9).",
+        "explainEn": "'Not from Sacred Scripture alone' (DV §9).",
+        "ref": "DV-9"
+      },
+      {
+        "questionNl": "Wat zegt DV §10 over het leergezag?",
+        "questionEn": "What does DV §10 say about the magisterium?",
+        "options": [
+          {
+            "nl": "Het staat boven het woord van God",
+            "en": "It is above the word of God"
+          },
+          {
+            "nl": "Het dient het woord van God",
+            "en": "It serves the word of God"
+          },
+          {
+            "nl": "Het vervangt de Traditie",
+            "en": "It replaces Tradition"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Het leergezag staat niet boven het woord van God, maar dient het.",
+        "explainEn": "The magisterium is not above the word of God but serves it.",
+        "ref": "DV-10"
+      },
+      {
+        "questionNl": "Wat groeit volgens DV §8?",
+        "questionEn": "What grows according to DV §8?",
+        "options": [
+          {
+            "nl": "Het aantal dogma's",
+            "en": "The number of dogmas"
+          },
+          {
+            "nl": "Het inzicht in het overgeleverde",
+            "en": "Understanding of what has been handed down"
+          },
+          {
+            "nl": "De openbaring zelf",
+            "en": "Revelation itself"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Het inzicht groeit; de openbaring is in Christus voltooid (DV §4).",
+        "explainEn": "Understanding grows; revelation is completed in Christ (DV §4).",
+        "ref": "DV-8"
+      }
+    ],
+    "sources": [
+      "Leo XIV. (2026). Catecheses on the documents of the Second Vatican Council [General audiences, January–October 2026]. Libreria Editrice Vaticana.",
+      "Pontifical Biblical Commission. (2014). The inspiration and truth of Sacred Scripture. Liturgical Press."
+    ]
+  },
+  {
+    "id": "church-lg",
+    "number": 5,
+    "labelLa": "Lectio V",
+    "minutes": 25,
+    "titleNl": "De Kerk: Lumen Gentium",
+    "titleEn": "The Church: Lumen Gentium",
+    "summaryNl": "Mysterie, volk van God, hiërarchie, leken, heiligheid en Maria: de opbouw van de dogmatische constitutie over de Kerk.",
+    "summaryEn": "Mystery, People of God, hierarchy, laity, holiness and Mary: the structure of the dogmatic constitution on the Church.",
+    "sections": [
+      {
+        "headingNl": "Een bewuste volgorde",
+        "headingEn": "A deliberate order",
+        "bodyNl": "LG begint niet bij de structuur, maar bij het mysterie: de Kerk als 'sacrament' van eenheid met God (hfdst. 1). Daarna volgt het volk van God, alle gedoopten samen (hfdst. 2), en pas dan de hiërarchie (hfdst. 3), de leken (hfdst. 4), de universele roeping tot heiligheid (hfdst. 5), de religieuzen (hfdst. 6), de hemelse voltooiing (hfdst. 7) en Maria (hfdst. 8). Die volgorde was een van de belangrijkste beslissingen van het Concilie.",
+        "bodyEn": "LG does not begin with structure but with mystery: the Church as 'sacrament' of union with God (ch. 1). Then comes the People of God, all the baptised together (ch. 2), and only then the hierarchy (ch. 3), the laity (ch. 4), the universal call to holiness (ch. 5), religious (ch. 6), heavenly fulfilment (ch. 7) and Mary (ch. 8). That order was one of the Council's most important decisions.",
+        "refs": [
+          "LG-1",
+          "LG-9",
+          "LG-40"
+        ]
+      },
+      {
+        "headingNl": "Waar is de Kerk?",
+        "headingEn": "Where is the Church?",
+        "bodyNl": "De Kerk van Christus 'subsistit in' de Katholieke Kerk, bestuurd door de opvolger van Petrus en de bisschoppen in gemeenschap met hem, terwijl er buiten haar zichtbare structuur elementen van heiliging en waarheid zijn (LG §8). De Kerk is noodzakelijk tot heil (LG §14), en wie buiten eigen schuld het evangelie niet kent maar God oprecht zoekt, kan het heil bereiken (LG §16).",
+        "bodyEn": "The Church of Christ 'subsists in' the Catholic Church, governed by the successor of Peter and the bishops in communion with him, while elements of sanctification and truth exist outside her visible structure (LG §8). The Church is necessary for salvation (LG §14), and those who through no fault of their own do not know the Gospel but sincerely seek God can attain salvation (LG §16).",
+        "refs": [
+          "LG-8",
+          "LG-14",
+          "LG-16"
+        ]
+      },
+      {
+        "headingNl": "Paus en bisschoppen",
+        "headingEn": "Pope and bishops",
+        "bodyNl": "LG vult Vaticanum I aan: de bisschopswijding verleent de volheid van het wijdingssacrament (LG §21), en de bisschoppen vormen een college dat met en onder de paus het hoogste gezag draagt (LG §22). Zonder de paus heeft het college geen gezag; diens primaat blijft ongeschonden. De Nota explicativa praevia legt die lezing vast.",
+        "bodyEn": "LG completes Vatican I: episcopal consecration confers the fullness of holy orders (LG §21), and the bishops form a college that, with and under the pope, holds supreme authority (LG §22). Without the pope the college has no authority; his primacy remains intact. The Nota explicativa praevia fixes that reading.",
+        "refs": [
+          "LG-21",
+          "LG-22"
+        ]
+      },
+      {
+        "headingNl": "Heiligheid voor allen",
+        "headingEn": "Holiness for all",
+        "bodyNl": "Alle gelovigen, van welke staat ook, zijn geroepen tot de volheid van het christelijk leven en de volmaaktheid van de liefde (LG §40). De leken zoeken het rijk van God door de tijdelijke zaken naar Gods plan te ordenen (LG §31). Gemeenschappelijk en ambtelijk priesterschap verschillen wezenlijk, maar zijn op elkaar betrokken (LG §10).",
+        "bodyEn": "All the faithful, of whatever state, are called to the fullness of Christian life and the perfection of charity (LG §40). The laity seek the kingdom of God by ordering temporal affairs according to God's plan (LG §31). The common and ministerial priesthoods differ in essence but are ordered to each other (LG §10).",
+        "refs": [
+          "LG-10",
+          "LG-31",
+          "LG-40"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Afgekondigd",
+        "labelEn": "Promulgated",
+        "valueNl": "21 november 1964",
+        "valueEn": "21 November 1964"
+      },
+      {
+        "labelNl": "Eindstemming",
+        "labelEn": "Final vote",
+        "valueNl": "2.151 placet · 5 non placet",
+        "valueEn": "2,151 placet · 5 non placet"
+      },
+      {
+        "labelNl": "Hoofdstukken",
+        "labelEn": "Chapters",
+        "valueNl": "8",
+        "valueEn": "8"
+      },
+      {
+        "labelNl": "Bijlage",
+        "labelEn": "Appendix",
+        "valueNl": "Nota explicativa praevia",
+        "valueEn": "Nota explicativa praevia"
+      }
+    ],
+    "paragraphs": [
+      "LG-1",
+      "LG-8",
+      "LG-10",
+      "LG-22",
+      "LG-40"
+    ],
+    "catecheses": [
+      "2026-02-18",
+      "2026-03-04",
+      "2026-03-11",
+      "2026-03-18",
+      "2026-03-25",
+      "2026-04-01",
+      "2026-04-08",
+      "2026-05-06",
+      "2026-05-13"
+    ],
+    "videos": [
+      "5jXsERRB4ZE"
+    ],
+    "subjects": [
+      "church",
+      "authority",
+      "laity",
+      "mary"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Waar begint Lumen Gentium mee?",
+        "questionEn": "What does Lumen Gentium begin with?",
+        "options": [
+          {
+            "nl": "De hiërarchie",
+            "en": "The hierarchy"
+          },
+          {
+            "nl": "Het mysterie van de Kerk",
+            "en": "The mystery of the Church"
+          },
+          {
+            "nl": "Het kerkelijk recht",
+            "en": "Canon law"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Hoofdstuk 1 gaat over het mysterie van de Kerk.",
+        "explainEn": "Chapter 1 is on the mystery of the Church.",
+        "ref": "LG-1"
+      },
+      {
+        "questionNl": "Heeft het bisschoppencollege gezag zonder de paus?",
+        "questionEn": "Does the college of bishops have authority without the pope?",
+        "options": [
+          {
+            "nl": "Ja",
+            "en": "Yes"
+          },
+          {
+            "nl": "Nee",
+            "en": "No"
+          },
+          {
+            "nl": "Alleen in een concilie",
+            "en": "Only in a council"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "LG §22: geen gezag tenzij samen met de paus als hoofd.",
+        "explainEn": "LG §22: no authority unless together with the pope as head.",
+        "ref": "LG-22"
+      },
+      {
+        "questionNl": "Wie zijn volgens LG §40 geroepen tot heiligheid?",
+        "questionEn": "Who are called to holiness according to LG §40?",
+        "options": [
+          {
+            "nl": "Alleen religieuzen",
+            "en": "Only religious"
+          },
+          {
+            "nl": "Alle gelovigen",
+            "en": "All the faithful"
+          },
+          {
+            "nl": "Alleen priesters en religieuzen",
+            "en": "Only priests and religious"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Alle christengelovigen, van welke staat of stand ook.",
+        "explainEn": "All the faithful of Christ, of whatever rank or status.",
+        "ref": "LG-40"
+      }
+    ],
+    "sources": [
+      "Leo XIV. (2026). Catecheses on the documents of the Second Vatican Council [General audiences, January–October 2026]. Libreria Editrice Vaticana.",
+      "Congregation for the Doctrine of the Faith. (2007). Responses to some questions regarding certain aspects of the doctrine on the Church. Libreria Editrice Vaticana."
+    ]
+  },
+  {
+    "id": "liturgy-sc",
+    "number": 6,
+    "labelLa": "Lectio VI",
+    "minutes": 25,
+    "titleNl": "Liturgie: Sacrosanctum Concilium",
+    "titleEn": "Liturgy: Sacrosanctum Concilium",
+    "summaryNl": "Bron en hoogtepunt: de theologie van de liturgie, de voorwaarden voor hervorming, en wat er later gebeurde.",
+    "summaryEn": "Source and summit: the theology of the liturgy, the conditions for reform, and what happened later.",
+    "sections": [
+      {
+        "headingNl": "Wat is liturgie?",
+        "headingEn": "What is liturgy?",
+        "bodyNl": "Voor SC is de liturgie geen decor, maar het werk van Christus zelf, die erin aanwezig is: in het misoffer, in de bedienaar, onder de eucharistische gedaanten, in de sacramenten, in zijn woord en in de biddende gemeenschap (SC §7). Daarom is zij 'het hoogtepunt waarop het handelen van de Kerk gericht is, en de bron waaruit al haar kracht voortvloeit' (SC §10).",
+        "bodyEn": "For SC the liturgy is not decoration but the work of Christ himself, who is present in it: in the sacrifice of the Mass, in the minister, under the Eucharistic species, in the sacraments, in his word and in the praying community (SC §7). That is why it is 'the summit toward which the activity of the Church is directed, and the font from which all her power flows' (SC §10).",
+        "refs": [
+          "SC-7",
+          "SC-10"
+        ]
+      },
+      {
+        "headingNl": "Hervorming onder voorwaarden",
+        "headingEn": "Reform under conditions",
+        "bodyNl": "SC wil een algemene herstelling van de liturgie (SC §21), met volledige, bewuste en actieve deelname als doel (SC §14). Maar de voorwaarden zijn streng: alleen het kerkelijk gezag regelt de liturgie (SC §22), vernieuwingen alleen als het welzijn van de Kerk ze werkelijk vereist, en nieuwe vormen moeten organisch uit bestaande groeien (SC §23). Het Latijn blijft de regel in de Latijnse riten (SC §36); het gregoriaans krijgt de eerste plaats (SC §116).",
+        "bodyEn": "SC wants a general restoration of the liturgy (SC §21), with full, conscious and active participation as its aim (SC §14). But the conditions are strict: only Church authority regulates the liturgy (SC §22), innovations only if the good of the Church genuinely requires them, and new forms must grow organically from existing ones (SC §23). Latin remains the rule in the Latin rites (SC §36); Gregorian chant gets pride of place (SC §116).",
+        "refs": [
+          "SC-14",
+          "SC-21",
+          "SC-22",
+          "SC-23",
+          "SC-36",
+          "SC-116"
+        ]
+      },
+      {
+        "headingNl": "Van tekst naar praktijk",
+        "headingEn": "From text to practice",
+        "bodyNl": "De uitvoering lag bij een speciale raad (Consilium, opgericht in 1964). De nieuwe Ordo Missae werd in 1969 afgekondigd en het Romeins Missaal in 1970 uitgegeven. Veel wat mensen met 'Vaticanum II' verbinden, zoals de volledige overgang naar de volkstaal, de celebratie naar het volk toe en de handcommunie, staat niet in SC maar kwam uit latere uitvoeringsbesluiten en praktijk. Of die uitvoering trouw was aan SC, is tot vandaag onderwerp van debat; paus Leo XIV wijdde er in 2026 acht catecheses aan.",
+        "bodyEn": "Implementation lay with a special council (Consilium, set up in 1964). The new Order of Mass was promulgated in 1969 and the Roman Missal published in 1970. Much that people associate with 'Vatican II', such as the complete shift to the vernacular, celebration facing the people and communion in the hand, is not in SC but came from later implementing decisions and practice. Whether that implementation was faithful to SC is still debated today; Pope Leo XIV devoted eight catecheses to it in 2026.",
+        "refs": [
+          "SC-50",
+          "SC-128"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Afgekondigd",
+        "labelEn": "Promulgated",
+        "valueNl": "4 december 1963",
+        "valueEn": "4 December 1963"
+      },
+      {
+        "labelNl": "Eindstemming",
+        "labelEn": "Final vote",
+        "valueNl": "2.147 placet · 4 non placet",
+        "valueEn": "2,147 placet · 4 non placet"
+      },
+      {
+        "labelNl": "Nieuwe Ordo Missae",
+        "labelEn": "New Order of Mass",
+        "valueNl": "1969",
+        "valueEn": "1969"
+      },
+      {
+        "labelNl": "Catecheses Leo XIV",
+        "labelEn": "Leo XIV catecheses",
+        "valueNl": "8 (mei–augustus 2026)",
+        "valueEn": "8 (May–August 2026)"
+      }
+    ],
+    "paragraphs": [
+      "SC-7",
+      "SC-10",
+      "SC-14",
+      "SC-23",
+      "SC-36"
+    ],
+    "catecheses": [
+      "2026-05-20",
+      "2026-05-27",
+      "2026-06-03",
+      "2026-06-24",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26"
+    ],
+    "videos": [
+      "8rOfY9DLalU"
+    ],
+    "subjects": [
+      "liturgy",
+      "latin-music-art"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Wat schrijft SC §36 voor over het Latijn?",
+        "questionEn": "What does SC §36 prescribe about Latin?",
+        "options": [
+          {
+            "nl": "Het wordt afgeschaft",
+            "en": "It is abolished"
+          },
+          {
+            "nl": "Het blijft behouden in de Latijnse riten",
+            "en": "It is preserved in the Latin rites"
+          },
+          {
+            "nl": "Het wordt facultatief",
+            "en": "It becomes optional"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "'Het gebruik van de Latijnse taal moet in de Latijnse riten behouden blijven.'",
+        "explainEn": "'The use of the Latin language is to be preserved in the Latin rites.'",
+        "ref": "SC-36"
+      },
+      {
+        "questionNl": "Mag een priester op eigen gezag de liturgie veranderen?",
+        "questionEn": "May a priest change the liturgy on his own authority?",
+        "options": [
+          {
+            "nl": "Ja, sinds het Concilie",
+            "en": "Yes, since the Council"
+          },
+          {
+            "nl": "Nee",
+            "en": "No"
+          },
+          {
+            "nl": "Alleen bij jeugdmissen",
+            "en": "Only at youth Masses"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "SC §22 §3: niemand, ook geen priester.",
+        "explainEn": "SC §22 §3: no one, even a priest.",
+        "ref": "SC-22"
+      },
+      {
+        "questionNl": "Staat de celebratie 'naar het volk toe' in SC?",
+        "questionEn": "Is celebration 'facing the people' in SC?",
+        "options": [
+          {
+            "nl": "Ja, in §128",
+            "en": "Yes, in §128"
+          },
+          {
+            "nl": "Nee",
+            "en": "No"
+          },
+          {
+            "nl": "Ja, in §36",
+            "en": "Yes, in §36"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "SC noemt de celebratierichting nergens; het kwam via Inter Oecumenici (1964).",
+        "explainEn": "SC never mentions the direction of celebration; it came via Inter Oecumenici (1964).",
+        "ref": "SC-128"
+      }
+    ],
+    "sources": [
+      "Leo XIV. (2026). Catecheses on the documents of the Second Vatican Council [General audiences, January–October 2026]. Libreria Editrice Vaticana.",
+      "Ratzinger, J. (2000). The spirit of the liturgy (J. Saward, Trans.). Ignatius Press."
+    ]
+  },
+  {
+    "id": "church-world-gs",
+    "number": 7,
+    "labelLa": "Lectio VII",
+    "minutes": 25,
+    "titleNl": "Kerk en wereld: Gaudium et Spes",
+    "titleEn": "Church and world: Gaudium et Spes",
+    "summaryNl": "De mens in het licht van Christus, en de grote vragen van huwelijk, economie, politiek en vrede.",
+    "summaryEn": "The human person in the light of Christ, and the great questions of marriage, economics, politics and peace.",
+    "sections": [
+      {
+        "headingNl": "Een document voor iedereen",
+        "headingEn": "A document for everyone",
+        "bodyNl": "Gaudium et Spes richt zich niet alleen tot katholieken, maar tot 'alle mensen'. Het opent met solidariteit: 'Vreugde en hoop, verdriet en angst van de mensen van deze tijd zijn ook die van de leerlingen van Christus' (GS §1). De Kerk moet de tekenen des tijds onderzoeken 'in het licht van het evangelie' (GS §4): het evangelie is de maatstaf, niet de tijdgeest.",
+        "bodyEn": "Gaudium et Spes addresses not only Catholics but 'all people'. It opens with solidarity: 'The joys and hopes, the griefs and anxieties of the people of this age are also those of the followers of Christ' (GS §1). The Church must scrutinise the signs of the times 'in the light of the Gospel' (GS §4): the Gospel is the measure, not the spirit of the age.",
+        "refs": [
+          "GS-1",
+          "GS-4"
+        ]
+      },
+      {
+        "headingNl": "Wie is de mens?",
+        "headingEn": "Who is the human person?",
+        "bodyNl": "Deel I is een christelijke antropologie. De mens is één, lichaam en ziel (GS §14), en ontvangt in zijn geweten een wet die hij zichzelf niet geeft (GS §16). Vrijheid is een teken van het beeld van God (GS §17). De mens vindt zichzelf alleen in de oprechte gave van zichzelf (GS §24), en alleen in Christus wordt het mysterie van de mens werkelijk duidelijk (GS §22).",
+        "bodyEn": "Part I is a Christian anthropology. The human person is one, body and soul (GS §14), and receives in conscience a law he does not give himself (GS §16). Freedom is a sign of the image of God (GS §17). Man finds himself only in the sincere gift of self (GS §24), and only in Christ does the mystery of man truly become clear (GS §22).",
+        "refs": [
+          "GS-14",
+          "GS-16",
+          "GS-17",
+          "GS-22",
+          "GS-24"
+        ]
+      },
+      {
+        "headingNl": "Concrete vragen",
+        "headingEn": "Concrete questions",
+        "bodyNl": "Deel II behandelt dringende vragen. Huwelijk is een verbond van onherroepelijke instemming, gericht op kinderen (GS §48, §50); abortus en kindermoord zijn 'verfoeilijke misdaden' (GS §51). Het algemeen welzijn (GS §26) en de universele bestemming van de goederen (GS §69) vormen de basis van het sociaal denken. Kerk en politieke gemeenschap zijn autonoom, maar dienen dezelfde mensen (GS §76). Vrede is een werk van gerechtigheid (GS §78); zelfverdediging blijft legitiem (GS §79), totale oorlog wordt veroordeeld (GS §80).",
+        "bodyEn": "Part II addresses urgent questions. Marriage is a covenant of irrevocable consent, ordered to children (GS §48, §50); abortion and infanticide are 'unspeakable crimes' (GS §51). The common good (GS §26) and the universal destination of goods (GS §69) underpin social teaching. Church and political community are autonomous but serve the same people (GS §76). Peace is an enterprise of justice (GS §78); self-defence remains legitimate (GS §79), total war is condemned (GS §80).",
+        "refs": [
+          "GS-48",
+          "GS-51",
+          "GS-26",
+          "GS-69",
+          "GS-76",
+          "GS-78",
+          "GS-80"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Afgekondigd",
+        "labelEn": "Promulgated",
+        "valueNl": "7 december 1965",
+        "valueEn": "7 December 1965"
+      },
+      {
+        "labelNl": "Eindstemming",
+        "labelEn": "Final vote",
+        "valueNl": "2.309 placet · 75 non placet",
+        "valueEn": "2,309 placet · 75 non placet"
+      },
+      {
+        "labelNl": "Paragrafen",
+        "labelEn": "Paragraphs",
+        "valueNl": "93 — het langste document",
+        "valueEn": "93 — the longest document"
+      }
+    ],
+    "paragraphs": [
+      "GS-1",
+      "GS-16",
+      "GS-22",
+      "GS-24",
+      "GS-51"
+    ],
+    "catecheses": [
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16",
+      "2026-09-23",
+      "2026-10-07"
+    ],
+    "videos": [
+      "wOKGswU-IE8"
+    ],
+    "subjects": [
+      "church-world"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Wat is volgens GS §4 de maatstaf om de tekenen des tijds te verklaren?",
+        "questionEn": "According to GS §4, what is the measure for interpreting the signs of the times?",
+        "options": [
+          {
+            "nl": "De publieke opinie",
+            "en": "Public opinion"
+          },
+          {
+            "nl": "Het evangelie",
+            "en": "The Gospel"
+          },
+          {
+            "nl": "De wetenschap",
+            "en": "Science"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "'In het licht van het evangelie' (GS §4).",
+        "explainEn": "'In the light of the Gospel' (GS §4).",
+        "ref": "GS-4"
+      },
+      {
+        "questionNl": "Wat zegt GS §16 over het geweten?",
+        "questionEn": "What does GS §16 say about conscience?",
+        "options": [
+          {
+            "nl": "Het maakt zelf de wet",
+            "en": "It makes the law itself"
+          },
+          {
+            "nl": "Het ontdekt een wet die de mens zichzelf niet geeft",
+            "en": "It detects a law the person does not impose on himself"
+          },
+          {
+            "nl": "Het staat los van de waarheid",
+            "en": "It is independent of truth"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Het geweten ontvangt een wet; het is er niet de bron van.",
+        "explainEn": "Conscience receives a law; it is not its source.",
+        "ref": "GS-16"
+      },
+      {
+        "questionNl": "Veroordeelt het Concilie iedere oorlog?",
+        "questionEn": "Does the Council condemn every war?",
+        "options": [
+          {
+            "nl": "Ja",
+            "en": "Yes"
+          },
+          {
+            "nl": "Nee, zelfverdediging blijft legitiem",
+            "en": "No, self-defence remains legitimate"
+          },
+          {
+            "nl": "Het zegt er niets over",
+            "en": "It says nothing about it"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "GS §79 erkent het recht op wettige zelfverdediging; GS §80 veroordeelt totale oorlog.",
+        "explainEn": "GS §79 recognises the right to lawful self-defence; GS §80 condemns total war.",
+        "ref": "GS-79"
+      }
+    ],
+    "sources": [
+      "Leo XIV. (2026). Catecheses on the documents of the Second Vatican Council [General audiences, January–October 2026]. Libreria Editrice Vaticana.",
+      "John Paul II. (1993). Veritatis splendor [Encyclical letter]. Libreria Editrice Vaticana."
+    ]
+  },
+  {
+    "id": "decrees-declarations",
+    "number": 8,
+    "labelLa": "Lectio VIII",
+    "minutes": 20,
+    "titleNl": "De decreten en verklaringen",
+    "titleEn": "The decrees and declarations",
+    "summaryNl": "Negen decreten en drie verklaringen: van oecumene en oosterse Kerken tot godsdienstvrijheid en de niet-christelijke godsdiensten.",
+    "summaryEn": "Nine decrees and three declarations: from ecumenism and the Eastern Churches to religious freedom and non-Christian religions.",
+    "sections": [
+      {
+        "headingNl": "Wat een decreet is",
+        "headingEn": "What a decree is",
+        "bodyNl": "Decreten passen de leer van de constituties toe op een bepaald terrein van het kerkelijk leven: bisschoppen (CD), priesters (PO), priesteropleiding (OT), religieuzen (PC), leken (AA), missie (AG), oecumene (UR), oosterse Kerken (OE) en media (IM). Ze hebben vooral praktische en disciplinaire inhoud, maar bevatten ook leerstellige passages, zoals UR §3 en PO §2.",
+        "bodyEn": "Decrees apply the teaching of the constitutions to a particular area of Church life: bishops (CD), priests (PO), priestly formation (OT), religious (PC), laity (AA), mission (AG), ecumenism (UR), Eastern Churches (OE) and media (IM). Their content is mainly practical and disciplinary, but they also contain doctrinal passages, such as UR §3 and PO §2.",
+        "refs": [
+          "UR-3",
+          "PO-2",
+          "CD-11"
+        ]
+      },
+      {
+        "headingNl": "Drie verklaringen",
+        "headingEn": "Three declarations",
+        "bodyNl": "De verklaringen behandelen de verhouding van de Kerk tot de samenleving. Gravissimum Educationis gaat over opvoeding en noemt ouders de eerste opvoeders (GE §3). Nostra Aetate, het kortste document, gaat over de niet-christelijke godsdiensten en het Joodse volk (NA §2, §4). Dignitatis Humanae verklaart het recht op godsdienstvrijheid als vrijwaring van dwang (DH §2) en zegt tegelijk dat de traditionele leer onaangetast blijft (DH §1). Over DH is het debat het felst.",
+        "bodyEn": "The declarations deal with the Church's relation to society. Gravissimum Educationis concerns education and calls parents the first educators (GE §3). Nostra Aetate, the shortest document, concerns non-Christian religions and the Jewish people (NA §2, §4). Dignitatis Humanae declares the right to religious freedom as immunity from coercion (DH §2) and at the same time says traditional doctrine remains untouched (DH §1). The debate is fiercest over DH.",
+        "refs": [
+          "GE-3",
+          "NA-2",
+          "NA-4",
+          "DH-1",
+          "DH-2"
+        ]
+      },
+      {
+        "headingNl": "Oecumene en het christelijk Oosten",
+        "headingEn": "Ecumenism and the Christian East",
+        "bodyNl": "UR noemt het herstel van de eenheid onder alle christenen een hoofddoel van het Concilie (UR §1) en de 'geestelijke oecumene' de ziel van die beweging (UR §8). OE erkent de gelijke waardigheid van de oosterse riten (OE §3). Op 7 december 1965 hieven Paulus VI en patriarch Athenagoras de wederzijdse excommunicaties van 1054 op.",
+        "bodyEn": "UR calls the restoration of unity among all Christians a principal concern of the Council (UR §1) and 'spiritual ecumenism' the soul of that movement (UR §8). OE recognises the equal dignity of the Eastern rites (OE §3). On 7 December 1965 Paul VI and Patriarch Athenagoras lifted the mutual excommunications of 1054.",
+        "refs": [
+          "UR-1",
+          "UR-8",
+          "OE-3"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Decreten",
+        "labelEn": "Decrees",
+        "valueNl": "9",
+        "valueEn": "9"
+      },
+      {
+        "labelNl": "Verklaringen",
+        "labelEn": "Declarations",
+        "valueNl": "3",
+        "valueEn": "3"
+      },
+      {
+        "labelNl": "Kortste document",
+        "labelEn": "Shortest document",
+        "valueNl": "Nostra Aetate (5 §)",
+        "valueEn": "Nostra Aetate (5 §)"
+      },
+      {
+        "labelNl": "Meeste tegenstemmen",
+        "labelEn": "Most votes against",
+        "valueNl": "Inter Mirifica (164)",
+        "valueEn": "Inter Mirifica (164)"
+      }
+    ],
+    "paragraphs": [
+      "UR-3",
+      "NA-2",
+      "DH-2",
+      "OE-3",
+      "PO-2"
+    ],
+    "catecheses": [],
+    "videos": [
+      "hN55SuVD7VQ",
+      "iAlUMNUpMFg",
+      "VVk2yvOeTCM"
+    ],
+    "subjects": [
+      "ecumenism-religions",
+      "religious-liberty",
+      "eastern-churches",
+      "priesthood-religious",
+      "media-education"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Welk document is het kortste?",
+        "questionEn": "Which document is the shortest?",
+        "options": [
+          {
+            "nl": "Nostra Aetate",
+            "en": "Nostra Aetate"
+          },
+          {
+            "nl": "Inter Mirifica",
+            "en": "Inter Mirifica"
+          },
+          {
+            "nl": "Dignitatis Humanae",
+            "en": "Dignitatis Humanae"
+          }
+        ],
+        "answer": 0,
+        "explainNl": "Nostra Aetate telt vijf paragrafen.",
+        "explainEn": "Nostra Aetate has five paragraphs."
+      },
+      {
+        "questionNl": "Hoe definieert DH §2 godsdienstvrijheid?",
+        "questionEn": "How does DH §2 define religious freedom?",
+        "options": [
+          {
+            "nl": "Als recht om te geloven wat men wil, zonder morele plicht",
+            "en": "As a right to believe whatever one wishes, without moral duty"
+          },
+          {
+            "nl": "Als vrijwaring van dwang",
+            "en": "As immunity from coercion"
+          },
+          {
+            "nl": "Als scheiding van Kerk en staat",
+            "en": "As separation of Church and state"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Een recht op vrijwaring van dwang, binnen de juiste grenzen.",
+        "explainEn": "A right to immunity from coercion, within due limits.",
+        "ref": "DH-2"
+      },
+      {
+        "questionNl": "Wat noemt UR §8 de ziel van de oecumene?",
+        "questionEn": "What does UR §8 call the soul of ecumenism?",
+        "options": [
+          {
+            "nl": "Theologische dialoog",
+            "en": "Theological dialogue"
+          },
+          {
+            "nl": "Geestelijke oecumene",
+            "en": "Spiritual ecumenism"
+          },
+          {
+            "nl": "Gemeenschappelijke diensten",
+            "en": "Joint services"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Bekering van hart, heiligheid van leven en gebed om eenheid.",
+        "explainEn": "Change of heart, holiness of life and prayer for unity.",
+        "ref": "UR-8"
+      }
+    ],
+    "sources": [
+      "Tanner, N. P. (Ed.). (1990). Decrees of the ecumenical councils (Vol. 2). Georgetown University Press.",
+      "Commission of the Holy See for Religious Relations with the Jews. (2015). \"The gifts and the calling of God are irrevocable\" (Rom 11:29). Libreria Editrice Vaticana."
+    ]
+  },
+  {
+    "id": "after-the-council",
+    "number": 9,
+    "labelLa": "Lectio IX",
+    "minutes": 20,
+    "titleNl": "Na het Concilie: uitvoering en receptie",
+    "titleEn": "After the Council: implementation and reception",
+    "summaryNl": "Van 1965 tot vandaag: hervormingen, crises, synodes en de Catechismus.",
+    "summaryEn": "From 1965 to today: reforms, crises, synods and the Catechism.",
+    "sections": [
+      {
+        "headingNl": "De eerste jaren",
+        "headingEn": "The first years",
+        "bodyNl": "Na 1965 volgden uitvoeringsdocumenten (zoals Ecclesiae Sanctae, 1966), de liturgische hervorming (Ordo Missae 1969) en nieuwe structuren: de Bisschoppensynode (1965), bisschoppenconferenties en priesterraden. Tegelijk vielen de jaren rond 1968 samen met snelle secularisatie, een daling van roepingen en polarisatie. In Nederland zijn de Nieuwe Katechismus (1966) en het Pastoraal Concilie van de Nederlandse kerkprovincie (1966–1970) daar bekende voorbeelden van.",
+        "bodyEn": "After 1965 came implementing documents (such as Ecclesiae Sanctae, 1966), the liturgical reform (Order of Mass 1969) and new structures: the Synod of Bishops (1965), episcopal conferences and councils of priests. At the same time the years around 1968 coincided with rapid secularisation, a decline in vocations and polarisation. In the Netherlands the New Catechism (1966) and the Pastoral Council of the Dutch Church province (1966–1970) are well-known examples.",
+        "refs": [
+          "CD-5",
+          "CD-38"
+        ]
+      },
+      {
+        "headingNl": "Verduidelijking",
+        "headingEn": "Clarification",
+        "bodyNl": "Paulus VI behandelde de vragen die hij aan het Concilie had onttrokken in eigen documenten: het celibaat (Sacerdotalis caelibatus, 1967) en de geboorteregeling (Humanae vitae, 1968). Onder Johannes Paulus II volgden het nieuwe Wetboek van Canoniek Recht (1983), dat de ecclesiologie van het Concilie in juridische taal wilde vertalen, en de buitengewone Synode van 1985, die de Catechismus van de Katholieke Kerk (1992) voorstelde.",
+        "bodyEn": "Paul VI addressed the questions he had withdrawn from the Council in his own documents: celibacy (Sacerdotalis caelibatus, 1967) and birth regulation (Humanae vitae, 1968). Under John Paul II came the new Code of Canon Law (1983), which aimed to translate the Council's ecclesiology into juridical language, and the Extraordinary Synod of 1985, which proposed the Catechism of the Catholic Church (1992).",
+        "refs": [
+          "PO-16",
+          "GS-51"
+        ]
+      },
+      {
+        "headingNl": "Een open dossier",
+        "headingEn": "An open file",
+        "bodyNl": "De receptie gaat door. Benedictus XVI stelde in 2005 de 'hermeneutiek van hervorming in continuïteit' tegenover een 'hermeneutiek van breuk'. Rond de liturgie wisselden Summorum Pontificum (2007) en Traditionis custodes (2021) elkaar af. In 2025 werd zestig jaar sluiting van het Concilie herdacht, en in 2026 wijdt paus Leo XIV een hele catechesereeks aan de documenten zelf: een teken dat de Kerk de teksten opnieuw als maatstaf neemt.",
+        "bodyEn": "Reception continues. In 2005 Benedict XVI set the 'hermeneutic of reform in continuity' against a 'hermeneutic of rupture'. On the liturgy, Summorum Pontificum (2007) and Traditionis custodes (2021) followed each other. In 2025 sixty years since the close of the Council were commemorated, and in 2026 Pope Leo XIV devoted a whole series of catecheses to the documents themselves: a sign that the Church is again taking the texts as the measure.",
+        "refs": [
+          "DH-1",
+          "SC-23"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Ordo Missae",
+        "labelEn": "Order of Mass",
+        "valueNl": "1969",
+        "valueEn": "1969"
+      },
+      {
+        "labelNl": "Humanae vitae",
+        "labelEn": "Humanae vitae",
+        "valueNl": "1968",
+        "valueEn": "1968"
+      },
+      {
+        "labelNl": "Wetboek",
+        "labelEn": "Code of Canon Law",
+        "valueNl": "1983",
+        "valueEn": "1983"
+      },
+      {
+        "labelNl": "Catechismus",
+        "labelEn": "Catechism",
+        "valueNl": "1992",
+        "valueEn": "1992"
+      }
+    ],
+    "paragraphs": [
+      "CD-5",
+      "PO-16",
+      "SC-50"
+    ],
+    "catecheses": [],
+    "videos": [
+      "IWihACwB0fs"
+    ],
+    "subjects": [
+      "reading-the-council",
+      "development"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Welk document stelde de Synode van 1985 voor?",
+        "questionEn": "Which document did the 1985 Synod propose?",
+        "options": [
+          {
+            "nl": "Een nieuw missaal",
+            "en": "A new missal"
+          },
+          {
+            "nl": "De Catechismus van de Katholieke Kerk",
+            "en": "The Catechism of the Catholic Church"
+          },
+          {
+            "nl": "Een nieuw concilie",
+            "en": "A new council"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "De Catechismus verscheen in 1992.",
+        "explainEn": "The Catechism appeared in 1992."
+      },
+      {
+        "questionNl": "Wanneer verscheen de nieuwe Ordo Missae?",
+        "questionEn": "When did the new Order of Mass appear?",
+        "options": [
+          {
+            "nl": "1963",
+            "en": "1963"
+          },
+          {
+            "nl": "1969",
+            "en": "1969"
+          },
+          {
+            "nl": "1983",
+            "en": "1983"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "De Ordo Missae werd in 1969 afgekondigd; het Missaal verscheen in 1970.",
+        "explainEn": "The Order of Mass was promulgated in 1969; the Missal appeared in 1970."
+      },
+      {
+        "questionNl": "Behandelde het Concilie de geboorteregeling zelf?",
+        "questionEn": "Did the Council itself decide on birth regulation?",
+        "options": [
+          {
+            "nl": "Ja, in GS §51",
+            "en": "Yes, in GS §51"
+          },
+          {
+            "nl": "Nee, Paulus VI behandelde het in Humanae vitae",
+            "en": "No, Paul VI addressed it in Humanae vitae"
+          },
+          {
+            "nl": "Ja, in LG §11",
+            "en": "Yes, in LG §11"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "Paulus VI onttrok de vraag aan het Concilie.",
+        "explainEn": "Paul VI withdrew the question from the Council."
+      }
+    ],
+    "sources": [
+      "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.",
+      "Synod of Bishops. (1985). The final report of the 1985 Extraordinary Synod. Libreria Editrice Vaticana."
+    ]
+  },
+  {
+    "id": "reading-today",
+    "number": 10,
+    "labelLa": "Lectio X",
+    "minutes": 15,
+    "titleNl": "Het Concilie vandaag lezen",
+    "titleEn": "Reading the Council today",
+    "summaryNl": "Drie lezingen naast elkaar, zes leesprincipes, en hoe je zelf verder studeert.",
+    "summaryEn": "Three readings side by side, six reading principles, and how to continue studying on your own.",
+    "sections": [
+      {
+        "headingNl": "Drie lezingen",
+        "headingEn": "Three readings",
+        "bodyNl": "Grofweg bestaan er drie lezingen. De lezing van 'hervorming in continuïteit' (Benedictus XVI, Johannes Paulus II) ziet ontwikkeling van het ene subject Kerk. De lezing als 'gebeurtenis' (de school van Bologna, O'Malley) benadrukt de nieuwe stijl en richting. De traditionalistische kritiek ziet op enkele punten een breuk. De module Hermeneutiek zet ze met bronnen naast elkaar; deze app beslist het geschil niet.",
+        "bodyEn": "Broadly there are three readings. The reading of 'reform in continuity' (Benedict XVI, John Paul II) sees development of the one subject Church. The reading as 'event' (the Bologna school, O'Malley) stresses the new style and direction. The traditionalist critique sees rupture on some points. The Hermeneutics module sets them side by side with sources; this app does not resolve the dispute.",
+        "refs": []
+      },
+      {
+        "headingNl": "Leesprincipes",
+        "headingEn": "Reading principles",
+        "bodyNl": "Zes principes helpen: (1) lees de tekst zelf, met paragraafnummer; (2) lees een paragraaf als geheel; (3) onderscheid de tekst van latere uitvoering; (4) lees de documenten in samenhang, met de constituties als sleutel; (5) lees ze in het licht van de Traditie waarop ze zich beroepen; (6) weeg het gezag van een tekst naar zijn aard.",
+        "bodyEn": "Six principles help: (1) read the text itself, with its paragraph number; (2) read a paragraph as a whole; (3) distinguish the text from later implementation; (4) read the documents together, with the constitutions as the key; (5) read them in the light of the Tradition they appeal to; (6) weigh a text's authority by its nature.",
+        "refs": [
+          "DV-1",
+          "LG-18"
+        ]
+      },
+      {
+        "headingNl": "Verder studeren",
+        "headingEn": "Studying further",
+        "bodyNl": "Lees eerst de vier constituties volledig op vatican.va, daarna de catecheses van paus Leo XIV, die de constituties paragraaf voor paragraaf toelichten. Gebruik de onderwerpen in deze app voor gerichte leesroutes, de Claim Check om beweringen te toetsen, en een goede geschiedenis (O'Malley; Alberigo en Komonchak) naast een kritische (De Mattei) voor de context.",
+        "bodyEn": "First read the four constitutions in full on vatican.va, then Pope Leo XIV's catecheses, which explain the constitutions paragraph by paragraph. Use the subjects in this app for focused reading paths, the Claim Check to test claims, and a good history (O'Malley; Alberigo and Komonchak) alongside a critical one (De Mattei) for context.",
+        "refs": []
+      }
+    ],
+    "facts": [
+      {
+        "labelNl": "Documenten",
+        "labelEn": "Documents",
+        "valueNl": "16",
+        "valueEn": "16"
+      },
+      {
+        "labelNl": "Constituties",
+        "labelEn": "Constitutions",
+        "valueNl": "4",
+        "valueEn": "4"
+      },
+      {
+        "labelNl": "Catecheses (2026)",
+        "labelEn": "Catecheses (2026)",
+        "valueNl": "28 tot nu toe",
+        "valueEn": "28 so far"
+      }
+    ],
+    "paragraphs": [
+      "DV-1",
+      "LG-18",
+      "DH-1"
+    ],
+    "catecheses": [
+      "2026-01-07"
+    ],
+    "videos": [
+      "XjGRSvqKmhI",
+      "1rIuHQ_fhQk",
+      "m8j24FBRgrA",
+      "IWihACwB0fs",
+      "JcRNsgB5UJk",
+      "iAlUMNUpMFg"
+    ],
+    "subjects": [
+      "reading-the-council",
+      "development"
+    ],
+    "quiz": [
+      {
+        "questionNl": "Wie formuleerde de 'hermeneutiek van hervorming in continuïteit'?",
+        "questionEn": "Who formulated the 'hermeneutic of reform in continuity'?",
+        "options": [
+          {
+            "nl": "Johannes XXIII",
+            "en": "John XXIII"
+          },
+          {
+            "nl": "Benedictus XVI",
+            "en": "Benedict XVI"
+          },
+          {
+            "nl": "Paulus VI",
+            "en": "Paul VI"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "In zijn toespraak tot de Curie van 22 december 2005.",
+        "explainEn": "In his address to the Curia of 22 December 2005."
+      },
+      {
+        "questionNl": "Wat is het eerste leesprincipe?",
+        "questionEn": "What is the first reading principle?",
+        "options": [
+          {
+            "nl": "Lees eerst een samenvatting",
+            "en": "Read a summary first"
+          },
+          {
+            "nl": "Lees de tekst zelf, met paragraafnummer",
+            "en": "Read the text itself, with paragraph number"
+          },
+          {
+            "nl": "Lees de kritiek eerst",
+            "en": "Read the critics first"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "De tekst zelf is de maatstaf.",
+        "explainEn": "The text itself is the measure."
+      },
+      {
+        "questionNl": "Beslist deze app het debat over continuïteit of breuk?",
+        "questionEn": "Does this app decide the continuity-or-rupture debate?",
+        "options": [
+          {
+            "nl": "Ja",
+            "en": "Yes"
+          },
+          {
+            "nl": "Nee",
+            "en": "No"
+          }
+        ],
+        "answer": 1,
+        "explainNl": "De posities staan met bronnen naast elkaar; de app beslist niet.",
+        "explainEn": "The positions stand side by side with sources; the app does not decide."
+      }
+    ],
+    "sources": [
+      "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.",
+      "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
+      "de Mattei, R. (2012). The Second Vatican Council: An unwritten story. Loreto Publications."
+    ]
+  }
+]

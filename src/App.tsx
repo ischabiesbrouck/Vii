@@ -1,22 +1,33 @@
+import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
 import { IS_ARTIFACT_PREVIEW } from '@/config';
 import { Layout } from '@/components/Layout';
+import { Loading } from '@/components/TextBlocks';
 import { Home } from '@/pages/Home';
-import { Documents } from '@/pages/Documents';
-import { Subjects } from '@/pages/Subjects';
-import { SubjectDetail } from '@/pages/SubjectDetail';
-import { DocumentReader } from '@/pages/DocumentReader';
-import { Claims } from '@/pages/Claims';
-import { ClaimDetail } from '@/pages/ClaimDetail';
-import { SearchPage } from '@/pages/Search';
-import { Timeline } from '@/pages/Timeline';
-import { Glossary } from '@/pages/Glossary';
-import { Hermeneutics } from '@/pages/Hermeneutics';
-import { About } from '@/pages/About';
-import { NotFound } from '@/pages/NotFound';
 import { useThemeEffect } from '@/lib/hooks';
 import { getSearchEngine } from '@/lib/search';
-import { useEffect } from 'react';
+
+// Route-level code splitting: only Home ships in the entry chunk. All chunks are
+// still precached by the service worker, so every route works offline.
+const page = <K extends string>(load: () => Promise<Record<K, React.ComponentType>>, name: K) =>
+  lazy(() => load().then((m) => ({ default: m[name] })));
+
+const Learn = page(() => import('@/pages/Learn'), 'Learn');
+const Lesson = page(() => import('@/pages/Lesson'), 'Lesson');
+const Catecheses = page(() => import('@/pages/Catecheses'), 'Catecheses');
+const Videos = page(() => import('@/pages/Videos'), 'Videos');
+const Subjects = page(() => import('@/pages/Subjects'), 'Subjects');
+const SubjectDetail = page(() => import('@/pages/SubjectDetail'), 'SubjectDetail');
+const Documents = page(() => import('@/pages/Documents'), 'Documents');
+const DocumentReader = page(() => import('@/pages/DocumentReader'), 'DocumentReader');
+const Claims = page(() => import('@/pages/Claims'), 'Claims');
+const ClaimDetail = page(() => import('@/pages/ClaimDetail'), 'ClaimDetail');
+const SearchPage = page(() => import('@/pages/Search'), 'SearchPage');
+const Timeline = page(() => import('@/pages/Timeline'), 'Timeline');
+const Glossary = page(() => import('@/pages/Glossary'), 'Glossary');
+const Hermeneutics = page(() => import('@/pages/Hermeneutics'), 'Hermeneutics');
+const About = page(() => import('@/pages/About'), 'About');
+const NotFound = page(() => import('@/pages/NotFound'), 'NotFound');
 
 // The artifact preview cannot use history routing inside its sandboxed frame.
 const Router = IS_ARTIFACT_PREVIEW ? MemoryRouter : BrowserRouter;
@@ -30,23 +41,29 @@ export function App() {
     idle(() => void getSearchEngine().catch(() => undefined));
   }, []);
 
+  const s = (el: React.ReactNode) => <Suspense fallback={<Loading />}>{el}</Suspense>;
+
   return (
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="subjects" element={<Subjects />} />
-          <Route path="subjects/:id" element={<SubjectDetail />} />
-          <Route path="documents" element={<Documents />} />
-          <Route path="documents/:id" element={<DocumentReader />} />
-          <Route path="claims" element={<Claims />} />
-          <Route path="claims/:id" element={<ClaimDetail />} />
-          <Route path="search" element={<SearchPage />} />
-          <Route path="timeline" element={<Timeline />} />
-          <Route path="glossary" element={<Glossary />} />
-          <Route path="hermeneutics" element={<Hermeneutics />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="learn" element={s(<Learn />)} />
+          <Route path="learn/:id" element={s(<Lesson />)} />
+          <Route path="catecheses" element={s(<Catecheses />)} />
+          <Route path="videos" element={s(<Videos />)} />
+          <Route path="subjects" element={s(<Subjects />)} />
+          <Route path="subjects/:id" element={s(<SubjectDetail />)} />
+          <Route path="documents" element={s(<Documents />)} />
+          <Route path="documents/:id" element={s(<DocumentReader />)} />
+          <Route path="claims" element={s(<Claims />)} />
+          <Route path="claims/:id" element={s(<ClaimDetail />)} />
+          <Route path="search" element={s(<SearchPage />)} />
+          <Route path="timeline" element={s(<Timeline />)} />
+          <Route path="glossary" element={s(<Glossary />)} />
+          <Route path="hermeneutics" element={s(<Hermeneutics />)} />
+          <Route path="about" element={s(<About />)} />
+          <Route path="*" element={s(<NotFound />)} />
         </Route>
       </Routes>
     </Router>

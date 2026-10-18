@@ -117,8 +117,8 @@ export function About() {
         <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Privacy' : 'Privacy'}</h2>
         <p className="text-sm">
           {nl
-            ? 'Geen account, geen analytics, geen externe verzoeken tijdens gebruik. Leesvoortgang, bladwijzers en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB.'
-            : 'No account, no analytics, no external requests during use. Reading progress, bookmarks and settings stay on your device (localStorage); the search index is kept in IndexedDB.'}
+            ? 'Geen account, geen analytics. Leesvoortgang, bladwijzers, lesvoortgang en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB. De enige externe verbinding is een video die u zelf start: die wordt pas na uw klik geladen via youtube-nocookie.com. Links naar vatican.va openen in een nieuw tabblad.'
+            : 'No account, no analytics. Reading progress, bookmarks, lesson progress and settings stay on your device (localStorage); the search index is kept in IndexedDB. The only external connection is a video you start yourself: it loads only after your click, via youtube-nocookie.com. Links to vatican.va open in a new tab.'}
         </p>
       </section>
 

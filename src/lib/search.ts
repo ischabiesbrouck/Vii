@@ -1,9 +1,9 @@
 import MiniSearch, { type Options, type SearchResult } from 'minisearch';
 import { db } from './db';
-import { getAllParagraphs, getClaims, getGlossary, getIndex, getSubjects } from './content';
+import { getAllParagraphs, getCatecheses, getClaims, getGlossary, getIndex, getLessons, getSubjects } from './content';
 import { shortCite } from './citation';
 
-export type SearchKind = 'paragraph' | 'claim' | 'term' | 'subject';
+export type SearchKind = 'paragraph' | 'claim' | 'term' | 'subject' | 'lesson' | 'catechesis';
 
 export interface SearchDoc {
   id: string;
@@ -36,11 +36,46 @@ const OPTIONS: Options<SearchDoc> = {
 
 const CACHE_KEY = 'search-index';
 /** Bump when the shape of SearchDoc changes, to invalidate cached indexes. */
-const SCHEMA = 2;
+const SCHEMA = 3;
 
 async function buildDocs(): Promise<SearchDoc[]> {
-  const [paras, claims, terms, subjects] = await Promise.all([getAllParagraphs(), getClaims(), getGlossary(), getSubjects()]);
+  const [paras, claims, terms, subjects, lessons, cat] = await Promise.all([
+    getAllParagraphs(),
+    getClaims(),
+    getGlossary(),
+    getSubjects(),
+    getLessons(),
+    getCatecheses(),
+  ]);
   const docs: SearchDoc[] = [];
+  for (const l of lessons) {
+    docs.push({
+      id: `l:${l.id}`,
+      kind: 'lesson',
+      cite: l.labelLa,
+      title: l.titleNl,
+      titleEn: l.titleEn,
+      text: [l.summaryNl, l.summaryEn, ...l.sections.flatMap((s) => [s.headingNl, s.headingEn, s.bodyNl, s.bodyEn])].join(' '),
+      snippetNl: l.summaryNl,
+      snippetEn: l.summaryEn,
+      url: `/learn/${l.id}`,
+      tags: l.paragraphs.join(' '),
+    });
+  }
+  for (const c of cat.items) {
+    docs.push({
+      id: `k:${c.date}`,
+      kind: 'catechesis',
+      cite: c.date,
+      title: c.titleNl,
+      titleEn: c.titleEn,
+      text: [c.titleNl, c.titleEn, 'Leo XIV catechese catechesis'].join(' '),
+      snippetNl: `Paus Leo XIV · ${c.date}`,
+      snippetEn: `Pope Leo XIV · ${c.date}`,
+      url: `/catecheses#${c.date}`,
+      tags: (c.paragraphs ?? []).join(' '),
+    });
+  }
   for (const s of subjects) {
     docs.push({
       id: `s:${s.id}`,

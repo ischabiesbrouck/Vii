@@ -9,6 +9,19 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // Stable vendor chunks: better long-term caching across content/app updates.
+        manualChunks: {
+          react: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', 'lucide-react'],
+          search: ['minisearch', 'dexie'],
+          i18n: ['i18next', 'react-i18next', 'zustand'],
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({

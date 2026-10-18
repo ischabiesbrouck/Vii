@@ -6,7 +6,8 @@ import { useSubjectProgress } from '@/components/SubjectCard';
 import { VerdictBadge } from '@/components/Badges';
 import { Apa, Commentary, ConciliarText, Crumbs, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { Badge } from '@/components/ui/badge';
-import { getClaims, getDocuments, getGlossary, getParagraph, getSubjects } from '@/lib/content';
+import { getClaims, getDocuments, getGlossary, getParagraph, getSubjects, getVideos } from '@/lib/content';
+import { VideoCard } from '@/components/VideoCard';
 import { shortCite } from '@/lib/citation';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
@@ -33,7 +34,7 @@ export function SubjectDetail() {
   const toggleStudied = useUi((s) => s.toggleStudied);
 
   const { data, loading } = useAsync(async () => {
-    const [subjects, claims, glossary, docs] = await Promise.all([getSubjects(), getClaims(), getGlossary(), getDocuments()]);
+    const [subjects, claims, glossary, docs, videos] = await Promise.all([getSubjects(), getClaims(), getGlossary(), getDocuments(), getVideos()]);
     const index = subjects.findIndex((s) => s.id === id);
     const subject = subjects[index];
     if (!subject) return null;
@@ -46,6 +47,7 @@ export function SubjectDetail() {
       next: subjects[index + 1],
       claims: subject.claims.map((c) => claims.find((x) => x.id === c)).filter((x): x is NonNullable<typeof x> => !!x),
       terms: subject.terms.map((term) => glossary.find((g) => g.term === term)).filter((x): x is NonNullable<typeof x> => !!x),
+      videos: videos.items.filter((v) => v.subjectIds.includes(subject.id)),
       docs: docIds.map((d) => docs.find((x) => x.id === d)).filter((x): x is NonNullable<typeof x> => !!x),
     };
   }, [id]);
@@ -54,7 +56,7 @@ export function SubjectDetail() {
 
   if (loading) return <Loading />;
   if (!data) return <p className="py-8 text-center">{t('subjects.notFound')}</p>;
-  const { subject: s, steps, prev, next, claims, terms, docs } = data;
+  const { subject: s, steps, prev, next, claims, terms, docs, videos } = data;
   const title = pick(lang, s.titleNl, s.titleEn);
 
   return (
@@ -194,6 +196,19 @@ export function SubjectDetail() {
                 </div>
               ))}
             </dl>
+          </section>
+        )}
+
+        {videos.length > 0 && (
+          <section aria-labelledby="h-vid" className="mb-10">
+            <SectionTitle id="h-vid">{t('video.title')}</SectionTitle>
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {videos.map((v) => (
+                <li key={v.youtubeId}>
+                  <VideoCard video={v} />
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 

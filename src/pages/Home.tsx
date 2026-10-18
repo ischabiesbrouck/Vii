@@ -1,16 +1,17 @@
 import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, BookOpen, ChevronRight, Scale, Search } from 'lucide-react';
+import { ArrowRight, BookOpen, ChevronRight, ExternalLink, GraduationCap, Scale, Search } from 'lucide-react';
 import { DocTypeBadge, SolemnityBadge, VerdictBadge } from '@/components/Badges';
 import { CiteLink, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { SubjectCard } from '@/components/SubjectCard';
 import { Button } from '@/components/ui/button';
-import { getClaims, getDocuments, getIndex, getAllParagraphs, getSubjects } from '@/lib/content';
+import { getAllParagraphs, getCatecheses, getClaims, getDocuments, getIndex, getLessons, getSubjects, getVideos } from '@/lib/content';
+import { VideoCard } from '@/components/VideoCard';
 import { useAsync } from '@/lib/useAsync';
 import { shortCite } from '@/lib/citation';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
-import { pick } from '@/lib/utils';
+import { formatDate, pick } from '@/lib/utils';
 import { useUi } from '@/store/ui';
 
 function dayIndex(n: number) {
@@ -36,15 +37,20 @@ export function Home() {
   const navigate = useNavigate();
   const progress = useUi((s) => s.progress);
   const bookmarks = useUi((s) => s.bookmarks);
+  const lessonState = useUi((s) => s.lessons);
   const [q, setQ] = useState('');
   const { data, loading } = useAsync(
-    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getIndex(), getAllParagraphs()]),
+    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getIndex(), getAllParagraphs(), getLessons(), getCatecheses(), getVideos()]),
     [],
   );
   useDocumentTitle(undefined);
 
   if (loading || !data) return <Loading />;
-  const [docs, subjects, claims, , paragraphs] = data;
+  const [docs, subjects, claims, , paragraphs, lessons, cat, videos] = data;
+  const lessonsDone = lessons.filter((l) => lessonState[l.id]?.done).length;
+  const nextLesson = lessons.find((l) => !lessonState[l.id]?.done) ?? lessons[0]!;
+  const latestCat = [...cat.items].sort((a, b) => b.date.localeCompare(a.date))[0];
+  const featured = videos.items.find((v) => v.kind === 'overview') ?? videos.items[0];
 
   const onSearch = (e: FormEvent) => {
     e.preventDefault();
@@ -97,11 +103,20 @@ export function Home() {
             </Button>
           </form>
         </div>
-        {start && (
-          <div>
-            <SubjectCard subject={start} featured />
-          </div>
-        )}
+        <div className="flex h-full flex-col rounded-md border border-line border-t-[3px] border-t-gold bg-card p-6">
+          <p className="kicker">{t('nav.course')}</p>
+          <p className="mt-2 font-serif text-xl font-semibold leading-snug">{t('learn.courseTitle')}</p>
+          <p className="mt-2 flex-1 text-sm text-muted">{t('learn.courseLead')}</p>
+          <p className="mt-4 text-xs tabular text-muted">{t('learn.done', { done: lessonsDone, total: lessons.length })}</p>
+          <ProgressBar value={lessonsDone / lessons.length} className="mt-1.5" />
+          <Link
+            to={`/learn/${nextLesson.id}`}
+            className="mt-4 inline-flex min-h-[44px] items-center justify-center gap-2 rounded bg-accent px-4 text-sm font-medium text-accent-fg hover:bg-accent/90"
+          >
+            <GraduationCap className="h-4 w-4" aria-hidden />
+            {lessonsDone === 0 ? t('learn.start') : t('learn.resume', { n: nextLesson.number })}
+          </Link>
+        </div>
       </section>
 
       {/* Figures */}
@@ -116,6 +131,47 @@ export function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section aria-labelledby="h-learn" className="grid gap-6 lg:grid-cols-3">
+        <div className="lg:col-span-1">
+          <SectionTitle id="h-learn">{t('home.startHere')}</SectionTitle>
+          {start && <SubjectCard subject={start} featured />}
+        </div>
+        {latestCat && (
+          <div>
+            <SectionTitle
+              action={
+                <Link to="/catecheses" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
+                  {t('nav.catecheses')} <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+              }
+            >
+              {t('cat.latest')}
+            </SectionTitle>
+            <div className="panel flex h-[calc(100%-3rem)] flex-col p-5">
+              <p className="kicker">Leo PP. XIV · {formatDate(latestCat.date, lang)}</p>
+              <p className="mt-2 flex-1 font-serif text-lg font-semibold leading-snug">{pick(lang, latestCat.titleNl, latestCat.titleEn)}</p>
+              <a href={latestCat.url} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
+                {t('cat.read')} <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+              </a>
+            </div>
+          </div>
+        )}
+        {featured && (
+          <div>
+            <SectionTitle
+              action={
+                <Link to="/videos" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
+                  {t('nav.videos')} <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+              }
+            >
+              {t('video.title')}
+            </SectionTitle>
+            <VideoCard video={featured} compact />
+          </div>
+        )}
       </section>
 
       {(recentDoc || bookmarks.length > 0) && (

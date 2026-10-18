@@ -33,6 +33,9 @@ self-hosted Source Serif 4 and Inter (Fontsource).
 | Route | Purpose |
 |---|---|
 | `/` | Hero search, start-here subject, figures, continue reading, bookmarks, subjects, document of the day, Claim Check, the four sessions |
+| `/learn`, `/learn/:id` | **Course**: 10 lessons (why a council, how it worked, the four constitutions, each constitution, decrees and declarations, reception, reading today), each with key facts, the texts to read, Pope Leo XIV's catecheses, videos, a factual knowledge check and sources; progress saved locally |
+| `/catecheses` | Pope Leo XIV's 2026 general-audience catecheses on the Council's documents (28 so far), grouped by constitution, linking to the official texts on vatican.va |
+| `/videos` | 15 curated English videos (EWTN, Rome Reports, Word on Fire, CNS, Georgetown and others), filterable by kind; click-to-load embeds |
 | `/subjects`, `/subjects/:id` | **Subjects**: 16 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
 | `/documents` | The 16 documents by type, with solemnity badge |
 | `/documents/:id` | Reader: title page with vote bar, chapter outline (Caput I, II …) as sticky contents on desktop and a sheet on mobile, rubric-red marginal § numbers, previous/next document, related subjects; § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
@@ -52,6 +55,9 @@ precached by the service worker. Nothing is generated at runtime.
 |---|---|
 | `documents.json` | Metadata for all 16 documents (dates, votes, designation, summaries ≤ 80 words) |
 | `{docId}.json` | Paragraph excerpts for all 16 documents (125 in total), with chapter outlines for LG, SC, DV, DH, GS, UR, PO and CD |
+| `lessons.json` | 10 course lessons with knowledge checks; every reference validated |
+| `catecheses.json` | Leo XIV catecheses (date, official title, Dutch working title, vatican.va URL) |
+| `videos.json` | Video library; IDs and titles checked against web search results on 18 Oct 2026 |
 | `subjects.json` | 16 study paths; every step, claim and term is checked by the validator |
 | `claims.json` | 19 Claim Checks covering progressive, traditionalist and secular-media misreadings |
 | `timeline.json`, `glossary.json`, `hermeneutics.json` | Supporting modules |
@@ -88,6 +94,12 @@ public release, an editor should:
 - check the final-vote figures in `documents.json`;
 - check bibliographic details in `claims.json` and `hermeneutics.json`;
 - set `"review": "verified"` per file once checked.
+
+## Interaction
+
+- **Quick search**: Ctrl/⌘+K or `/` opens a keyboard-driven palette over pages and the full-text index.
+- **Route-level code splitting**: each page is its own chunk; vendor code is split into stable cached chunks. All of it is precached.
+- **Error boundary** per page, subtle page transitions (disabled under `prefers-reduced-motion`).
 
 ## Design
 
@@ -136,6 +148,8 @@ translation.
    It stays in use for borders, marks and the decree badge (with dark text), and
    gold-tinted metadata text uses `#6E5528` (about 6.5:1). In dark mode the red
    accent is lightened for text contrast.
+8. **Videos are the one opt-in network exception.** The brief forbids external calls at runtime. Videos use a click-to-load facade: nothing is requested from YouTube until the reader presses play, and the embed uses youtube-nocookie.com. Offline, the card says so. Video IDs could not be opened from the build environment (YouTube is blocked there), so they were checked against search results; uploaders that search could not confirm are labelled "channel not confirmed".
+9. **Knowledge checks** are factual (dates, what a paragraph says), never a test of personal orthodoxy, which stays out of scope.
 7. **Font precache** is limited to the Latin and Latin-ext subsets. Other subsets
    are never requested for Dutch, English or Latin text.
 

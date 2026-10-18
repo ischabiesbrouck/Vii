@@ -51,7 +51,7 @@ export function SearchPage() {
       </form>
 
       <div role="group" aria-label={t('search.title')} className="mb-5 flex flex-wrap gap-2">
-        {(['all', 'paragraph', 'subject', 'claim', 'term'] as const).map((k) => (
+        {(['all', 'paragraph', 'lesson', 'subject', 'catechesis', 'claim', 'term'] as const).map((k) => (
           <button
             key={k}
             type="button"
@@ -78,7 +78,7 @@ export function SearchPage() {
             <li key={h.id}>
               <Link to={h.url} className="block py-4 hover:bg-surface sm:px-3">
                 <div className="mb-1 flex flex-wrap items-center gap-2">
-                  <Badge variant={h.kind === 'paragraph' ? 'constitution' : h.kind === 'claim' ? 'slate' : h.kind === 'subject' ? 'ok' : 'gold'}>
+                  <Badge variant={h.kind === 'paragraph' ? 'constitution' : h.kind === 'claim' ? 'slate' : h.kind === 'subject' || h.kind === 'lesson' ? 'ok' : h.kind === 'catechesis' ? 'decree' : 'gold'}>
                     {t(`search.kind.${h.kind}`)}
                   </Badge>
                   {h.kind === 'paragraph' && <span className="font-semibold text-accent">{h.cite.split(' ').slice(0, 2).join(' ')}</span>}

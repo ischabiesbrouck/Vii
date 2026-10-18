@@ -7,6 +7,9 @@ import type {
   ExternalSource,
   GlossaryTerm,
   Subject,
+  Lesson,
+  CatechesisSeries,
+  VideoLibrary,
   HermeneuticsModule,
   Lang,
   Paragraph,
@@ -41,6 +44,9 @@ export const getGlossary = () => load<GlossaryTerm[]>('glossary.json');
 export const getHermeneutics = () => load<HermeneuticsModule>('hermeneutics.json');
 export const getSources = () => load<ExternalSource[]>('sources.json');
 export const getSubjects = () => load<Subject[]>('subjects.json');
+export const getLessons = () => load<Lesson[]>('lessons.json');
+export const getCatecheses = () => load<CatechesisSeries>('catecheses.json');
+export const getVideos = () => load<VideoLibrary>('videos.json');
 
 export async function getDocument(id: string): Promise<CouncilDocument | undefined> {
   return (await getDocuments()).find((d) => d.id === id);

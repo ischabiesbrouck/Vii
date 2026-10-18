@@ -187,3 +187,78 @@ export interface ContentIndex {
   /** Number of seeded paragraphs per docId. */
   counts: Record<string, number>;
 }
+
+/** A lesson in the guided course (/learn). Editorial, labelled as such. */
+export interface Lesson {
+  id: string;
+  number: number;
+  labelLa: string; // 'Lectio I'
+  minutes: number;
+  titleNl: string;
+  titleEn: string;
+  summaryNl: string;
+  summaryEn: string;
+  sections: { headingNl: string; headingEn: string; bodyNl: string; bodyEn: string; refs: string[] }[];
+  facts: { labelNl: string; labelEn: string; valueNl: string; valueEn: string }[];
+  paragraphs: string[]; // key texts to read
+  catecheses: string[]; // ISO dates of Leo XIV catecheses
+  videos: string[]; // YouTube ids
+  subjects: string[];
+  /** Factual knowledge check (dates, texts) — never a test of personal orthodoxy. */
+  quiz: {
+    questionNl: string;
+    questionEn: string;
+    options: { nl: string; en: string }[];
+    answer: number;
+    explainNl: string;
+    explainEn: string;
+    ref?: string;
+  }[];
+  sources: string[];
+}
+
+export interface Catechesis {
+  date: string;
+  part: 'intro' | 'DV' | 'LG' | 'SC' | 'GS';
+  number: number;
+  docId: string | null;
+  titleEn: string; // official English title
+  titleNl: string; // working translation
+  url: string; // vatican.va
+  paragraphs?: string[];
+  videoId?: string;
+}
+
+export interface CatechesisSeries {
+  seriesTitleEn: string;
+  seriesTitleNl: string;
+  introNl: string;
+  introEn: string;
+  checkedOn: string;
+  items: Catechesis[];
+}
+
+export type VideoKind = 'overview' | 'history' | 'document' | 'interpretation' | 'catechesis' | 'primary-source';
+
+export interface Video {
+  youtubeId: string;
+  title: string;
+  channel: string; // '—' when the uploader could not be confirmed
+  channelConfirmed: boolean;
+  kind: VideoKind;
+  whyNl: string;
+  whyEn: string;
+  perspectiveNl?: string;
+  perspectiveEn?: string;
+  length?: string; // only when a source states it
+  docIds: string[];
+  subjectIds: string[];
+  lessonIds: string[];
+}
+
+export interface VideoLibrary {
+  checkedOn: string;
+  noteNl: string;
+  noteEn: string;
+  items: Video[];
+}

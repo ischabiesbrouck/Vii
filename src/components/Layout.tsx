@@ -1,9 +1,12 @@
-import { useEffect, useState, type FormEvent } from 'react';
-import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { useTranslation } from 'react-i18next';
 import {
   BookOpen,
+  ChevronDown,
   Clock,
+  Film,
   GraduationCap,
   Home,
   Info,
@@ -13,6 +16,7 @@ import {
   Monitor,
   Moon,
   Scale,
+  ScrollText,
   Search,
   Sun,
   WifiOff,
@@ -21,6 +25,8 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { InstallPrompt } from '@/components/InstallPrompt';
 import { Toast } from '@/components/Toast';
+import { CommandPalette } from '@/components/CommandPalette';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { useOnline } from '@/lib/hooks';
 import { useUi, type FontSize, type Theme } from '@/store/ui';
 import { OFFICIAL_INDEX_URL, RKDOCUMENTEN_URL } from '@/config';
@@ -28,7 +34,7 @@ import { cn } from '@/lib/utils';
 
 const tabs = [
   { to: '/', key: 'home', Icon: Home, end: true },
-  { to: '/subjects', key: 'subjects', Icon: GraduationCap, end: false },
+  { to: '/learn', key: 'learn', Icon: GraduationCap, end: false },
   { to: '/documents', key: 'documents', Icon: Library, end: false },
   { to: '/claims', key: 'claims', Icon: ListChecks, end: false },
   { to: '/search', key: 'search', Icon: Search, end: false },
@@ -36,16 +42,27 @@ const tabs = [
 
 const primary = [
   { to: '/', key: 'home', end: true },
+  { to: '/learn', key: 'learn', end: false },
   { to: '/subjects', key: 'subjects', end: false },
   { to: '/documents', key: 'documents', end: false },
   { to: '/claims', key: 'claims', end: false },
-  { to: '/timeline', key: 'timeline', end: false },
-  { to: '/glossary', key: 'glossary', end: false },
-  { to: '/hermeneutics', key: 'hermeneutics', end: false },
-  { to: '/about', key: 'about', end: false },
+  { to: '/catecheses', key: 'catecheses', end: false },
+  { to: '/videos', key: 'videos', end: false },
 ] as const;
 
+const more = [
+  { to: '/timeline', key: 'timeline' },
+  { to: '/glossary', key: 'glossary' },
+  { to: '/hermeneutics', key: 'hermeneutics' },
+  { to: '/about', key: 'about' },
+] as const;
+
+const footerLinks = [...primary.slice(1), ...more];
+
 const secondary = [
+  { to: '/subjects', key: 'subjects', Icon: GraduationCap },
+  { to: '/catecheses', key: 'catecheses', Icon: ScrollText },
+  { to: '/videos', key: 'videos', Icon: Film },
   { to: '/timeline', key: 'timeline', Icon: Clock },
   { to: '/glossary', key: 'glossary', Icon: BookOpen },
   { to: '/hermeneutics', key: 'hermeneutics', Icon: Scale },
@@ -171,30 +188,52 @@ function LangToggle() {
   );
 }
 
-function HeaderSearch() {
+function PaletteButton({ onOpen }: { onOpen: () => void }) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const [q, setQ] = useState('');
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
-    navigate(`/search?q=${encodeURIComponent(q)}`);
-    setQ('');
-  };
   return (
-    <form role="search" onSubmit={submit} className="relative hidden w-64 xl:block">
-      <label htmlFor="header-q" className="sr-only">
-        {t('search.title')}
-      </label>
-      <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" aria-hidden />
-      <input
-        id="header-q"
-        type="search"
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder={t('search.placeholder')}
-        className="h-9 w-full rounded border border-line bg-paper pl-9 pr-3 text-sm placeholder:text-muted"
-      />
-    </form>
+    <button
+      type="button"
+      onClick={onOpen}
+      className="hidden h-9 w-64 items-center gap-2 rounded border border-line bg-paper px-3 text-sm text-muted hover:border-gold xl:flex"
+    >
+      <Search className="h-4 w-4" aria-hidden />
+      <span className="flex-1 text-left">{t('palette.open')}</span>
+      <kbd className="rounded border border-line px-1.5 text-[0.65rem]">Ctrl K</kbd>
+    </button>
+  );
+}
+
+function MoreMenu() {
+  const { t } = useTranslation();
+  const location = useLocation();
+  const activeMore = more.some((m) => location.pathname.startsWith(m.to));
+  return (
+    <DropdownMenu.Root>
+      <DropdownMenu.Trigger
+        className={cn(
+          'relative flex items-center gap-1 px-3 text-[0.8rem] font-medium uppercase tracking-[0.1em] outline-none',
+          'after:absolute after:inset-x-3 after:bottom-0 after:h-[2px]',
+          activeMore ? 'text-accent after:bg-accent' : 'text-muted hover:text-fg',
+        )}
+      >
+        {t('nav.more')} <ChevronDown className="h-3.5 w-3.5" aria-hidden />
+      </DropdownMenu.Trigger>
+      <DropdownMenu.Portal>
+        <DropdownMenu.Content
+          align="start"
+          sideOffset={4}
+          className="z-50 min-w-[12rem] rounded-md border border-line bg-paper p-1 shadow-lg data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:slide-in-from-top-1"
+        >
+          {more.map((m) => (
+            <DropdownMenu.Item key={m.to} asChild>
+              <Link to={m.to} className="flex min-h-[40px] items-center rounded px-3 text-sm outline-none data-[highlighted]:bg-surface data-[highlighted]:text-accent">
+                {t(`nav.${m.key}`)}
+              </Link>
+            </DropdownMenu.Item>
+          ))}
+        </DropdownMenu.Content>
+      </DropdownMenu.Portal>
+    </DropdownMenu.Root>
   );
 }
 
@@ -203,6 +242,24 @@ export function Layout() {
   const online = useOnline();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
+
+  // Global shortcuts: Ctrl/⌘+K anywhere, '/' outside text fields.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const typing = !!target && (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName));
+      if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        setPaletteOpen((o) => !o);
+      } else if (e.key === '/' && !typing) {
+        e.preventDefault();
+        setPaletteOpen(true);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -243,7 +300,10 @@ export function Layout() {
                 {t('app.offline')}
               </span>
             )}
-            <HeaderSearch />
+            <PaletteButton onOpen={() => setPaletteOpen(true)} />
+            <Button variant="ghost" size="icon" className="xl:hidden" aria-label={t('palette.open')} onClick={() => setPaletteOpen(true)}>
+              <Search className="h-5 w-5" aria-hidden />
+            </Button>
             <div className="hidden items-center gap-1.5 lg:flex">
               <LangToggle />
               <ThemeButton />
@@ -297,12 +357,19 @@ export function Layout() {
                 </NavLink>
               </li>
             ))}
+            <li className="flex">
+              <MoreMenu />
+            </li>
           </ul>
         </nav>
       </header>
 
       <main id="main" tabIndex={-1} className="mx-auto w-full max-w-page flex-1 px-4 pb-12 pt-6 outline-none lg:px-8 lg:pt-10">
-        <Outlet />
+        <ErrorBoundary resetKey={location.pathname}>
+          <div key={location.pathname} className="motion-safe:animate-in motion-safe:fade-in-0 motion-safe:duration-300">
+            <Outlet />
+          </div>
+        </ErrorBoundary>
       </main>
 
       <footer className="bg-ink pb-24 text-ink-fg lg:pb-0">
@@ -316,7 +383,7 @@ export function Layout() {
           <nav aria-label={t('footer.study')}>
             <p className="font-display text-xs font-semibold uppercase tracking-caps text-[#C9A96E]">{t('footer.study')}</p>
             <ul className="mt-3 space-y-1.5 text-sm">
-              {primary.slice(1).map(({ to, key }) => (
+              {footerLinks.map(({ to, key }) => (
                 <li key={to}>
                   <Link to={to} className="text-ink-fg/85 hover:text-ink-fg hover:underline">
                     {t(`nav.${key}`)}
@@ -369,6 +436,7 @@ export function Layout() {
         </ul>
       </nav>
 
+      <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} />
       <InstallPrompt />
       <Toast />
     </div>
