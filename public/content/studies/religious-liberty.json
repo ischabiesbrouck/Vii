@@ -86,6 +86,12 @@
               "type": "p",
               "nl": "Let op de twee beweringen in deze paragraaf. De eerste is negatief: de traditionele leer over de plicht van mensen en samenlevingen tegenover de ware godsdienst blijft onaangetast. De tweede is positief: het Concilie wil de leer van de recente pausen over de onschendbare rechten van de persoon en de constitutionele ordening van de samenleving verder ontwikkelen (DH §1). Hoe die twee zich tot elkaar verhouden, is de kern van het latere debat. Je kunt DH §1 dus niet overslaan als een beleefde inleiding; het is de sleutel waarmee de rest gelezen wil worden.",
               "en": "Note the two claims in this paragraph. The first is negative: traditional doctrine on the duty of individuals and societies toward the true religion is left untouched. The second is positive: the Council intends to develop the teaching of recent popes on the inviolable rights of the person and the constitutional order of society (DH §1). How these two relate is the heart of the later debate. You cannot therefore skip DH §1 as a polite preface; it is the key with which the rest asks to be read."
+            },
+            {
+              "type": "diagram",
+              "id": "outline-DH",
+              "captionNl": "De opbouw van Dignitatis Humanae: een inleiding (§1), een eerste deel over de algemene grondslag van de godsdienstvrijheid (§2–8) en een tweede deel over de godsdienstvrijheid in het licht van de Openbaring (§9–15).",
+              "captionEn": "The structure of Dignitatis Humanae: an introduction (§1), a first part on the general principle of religious freedom (§2–8) and a second part on religious freedom in the light of revelation (§9–15)."
             }
           ]
         },
@@ -159,12 +165,6 @@
             {
               "type": "quote",
               "paragraphId": "DH-14"
-            },
-            {
-              "type": "diagram",
-              "id": "outline-DH",
-              "captionNl": "De opbouw van Dignitatis Humanae: een inleiding (§1), een eerste deel over de algemene grondslag van de godsdienstvrijheid (§2–8) en een tweede deel over de godsdienstvrijheid in het licht van de Openbaring (§9–15).",
-              "captionEn": "The structure of Dignitatis Humanae: an introduction (§1), a first part on the general principle of religious freedom (§2–8) and a second part on religious freedom in the light of revelation (§9–15)."
             }
           ]
         }
@@ -280,21 +280,36 @@
                   "labelEn": "Development in continuity",
                   "nl": "De negentiende-eeuwse pausen veroordeelden indifferentisme en een staat die zich boven de godsdienst plaatst en de Kerk onderwerpt. DH verklaart iets anders: een recht van de persoon op vrijwaring van dwang, gegrond in zijn waardigheid en in de vrijheid van de geloofsdaad, met behoud van de plicht tegenover de ware godsdienst (DH §1–2). Wat veranderde, is een historisch bepaalde toepassing; het beginsel bleef. Benedictus XVI (2005) presenteert dit als het model van hervorming in continuïteit.",
                   "en": "The nineteenth-century popes condemned indifferentism and a state that places itself above religion and subjugates the Church. DH declares something else: a right of the person to immunity from coercion, grounded in his dignity and in the freedom of the act of faith, while the duty toward the true religion is retained (DH §1–2). What changed is a historically conditioned application; the principle remained. Benedict XVI (2005) presents this as the model of reform in continuity.",
-                  "sources": ["DH-1", "DH-2", "DH-10", "ext:benedict-2005", "ext:ccc-1997"]
+                  "sources": [
+                    "DH-1",
+                    "DH-2",
+                    "DH-10",
+                    "ext:benedict-2005",
+                    "ext:ccc-1997"
+                  ]
                 },
                 {
                   "labelNl": "Liberale doorbraak",
                   "labelEn": "Liberal breakthrough",
                   "nl": "DH erkende eindelijk het beginsel van de constitutionele staat en de vrijheid van geweten zoals die in de moderne democratie was ontwikkeld. Dat het Concilie zich uitdrukkelijk voorneemt de leer over de constitutionele orde te ontwikkelen (DH §1), en het eigen historisch falen erkent (DH §12), laat volgens deze lezing zien dat de oudere leer op dit punt achterhaald was. De continuïteitsformule van DH §1 is dan vooral een compromis om een brede meerderheid te verkrijgen.",
                   "en": "DH finally recognised the principle of the constitutional state and freedom of conscience as developed in modern democracy. That the Council expressly sets out to develop the teaching on constitutional order (DH §1) and acknowledges its own historical failure (DH §12) shows, on this reading, that the older teaching had been superseded on this point. The continuity formula of DH §1 is then chiefly a compromise to secure a broad majority.",
-                  "sources": ["DH-1", "DH-2", "DH-12"]
+                  "sources": [
+                    "DH-1",
+                    "DH-2",
+                    "DH-12"
+                  ]
                 },
                 {
                   "labelNl": "Traditionalistische kritiek",
                   "labelEn": "Traditionalist critique",
                   "nl": "Quanta cura en Immortale Dei leerden dat de staat de ware godsdienst moet erkennen en dat vrijheid van eredienst voor allen geen recht is. DH maakt die vrijheid wel tot een natuurlijk recht dat in de burgerlijke wet moet worden erkend (DH §2). De continuïteit die DH §1 uitspreekt, wordt volgens deze lezing door de rest van de tekst niet waargemaakt; de verklaring moet daarom kritisch worden gelezen in het licht van de eerdere leer.",
                   "en": "Quanta cura and Immortale Dei taught that the state must recognise the true religion and that freedom of worship for all is not a right. DH does make that freedom a natural right to be recognised in civil law (DH §2). On this reading the continuity asserted in DH §1 is not borne out by the rest of the text; the declaration must therefore be read critically in the light of earlier teaching.",
-                  "sources": ["ext:quanta-cura-1864", "ext:immortale-dei-1885", "DH-1", "DH-2"]
+                  "sources": [
+                    "ext:quanta-cura-1864",
+                    "ext:immortale-dei-1885",
+                    "DH-1",
+                    "DH-2"
+                  ]
                 }
               ]
             },

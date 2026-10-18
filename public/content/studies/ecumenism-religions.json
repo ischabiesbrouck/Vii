@@ -247,6 +247,11 @@
                 "Churches and ecclesial communities: UR uses both terms and distinguishes the Eastern Churches (UR §14–18) from the communities in the West (UR §19–23).",
                 "Doctrine and formulation: UR §6 and UR §11 distinguish between the deposit of faith and the way it is expressed; reform touches the second, not the first."
               ]
+            },
+            {
+              "type": "p",
+              "nl": "Deze onderscheidingen zijn geen spitsvondigheden. Ze verklaren waarom het Concilie in één adem waardering en kritiek kan uitspreken: de waardering geldt wat waar en heilig is, de kritiek geldt wat ontbreekt of afwijkt. Wie bijvoorbeeld UR §3 citeert over de gescheiden gemeenschappen als middelen tot heil, moet erbij zeggen dat hun werkzaamheid volgens dezelfde zin voortkomt uit de volheid die aan de Katholieke Kerk is toevertrouwd (UR §3).",
+              "en": "These distinctions are not hair-splitting. They explain why the Council can voice esteem and criticism in one breath: the esteem concerns what is true and holy, the criticism what is lacking or divergent. Anyone who quotes UR §3 on the separated communities as means of salvation, for example, should add that according to the same sentence their efficacy derives from the fullness entrusted to the Catholic Church (UR §3)."
             }
           ]
         }
@@ -302,21 +307,34 @@
                   "labelEn": "Magisterial reading",
                   "nl": "Subsistit in bevestigt en verduidelijkt de identiteit: de Kerk van Christus bestaat concreet, volledig en blijvend alleen in de Katholieke Kerk, die haar eenheid nooit kan verliezen (UR §4). De wijziging dient om de elementen van heiliging en waarheid buiten haar te erkennen (LG §8), niet om een tweede Kerk van Christus naast haar te veronderstellen. Dat sluit aan bij UR §3 over de volheid van de heilsmiddelen.",
                   "en": "Subsistit in affirms and clarifies the identity: the Church of Christ exists concretely, fully and permanently only in the Catholic Church, which can never lose her unity (UR §4). The change serves to acknowledge the elements of sanctification and truth outside her (LG §8), not to posit a second Church of Christ beside her. This fits UR §3 on the fullness of the means of salvation.",
-                  "sources": ["LG-8", "UR-3", "UR-4", "ext:cdf-responsa-2007", "ext:dominus-iesus-2000"]
+                  "sources": [
+                    "LG-8",
+                    "UR-3",
+                    "UR-4",
+                    "ext:cdf-responsa-2007",
+                    "ext:dominus-iesus-2000"
+                  ]
                 },
                 {
                   "labelNl": "Ruimere oecumenische lezing",
                   "labelEn": "Broader ecumenical reading",
                   "nl": "De overgang van est naar subsistit in laat ruimte voor een werkelijk, zij het onvolledig, kerkelijk bestaan buiten de zichtbare grenzen van de Katholieke Kerk. Dat UR §3 de gescheiden gemeenschappen middelen tot heil noemt en LG §15 spreekt van een werkelijke verbondenheid in de Geest, wijst volgens deze lezing op een bewust verlaten strikte identiteit.",
                   "en": "The shift from est to subsistit in leaves room for a real, if incomplete, ecclesial existence beyond the visible boundaries of the Catholic Church. That UR §3 calls the separated communities means of salvation and LG §15 speaks of a true union in the Spirit points, on this reading, to a deliberately abandoned strict identity.",
-                  "sources": ["LG-8", "LG-15", "UR-3"]
+                  "sources": [
+                    "LG-8",
+                    "LG-15",
+                    "UR-3"
+                  ]
                 },
                 {
                   "labelNl": "Traditionalistische kritiek",
                   "labelEn": "Traditionalist critique",
                   "nl": "De dubbelzinnigheid van subsistit in was bewust gekozen en heeft in de praktijk de leer van Mystici Corporis (1943), dat het mystieke Lichaam de Katholieke Kerk is, verzwakt. Ook als men de magisteriële lezing aanvaardt, heeft de formule volgens deze kritiek een oecumenische praktijk mogelijk gemaakt die de volheid van de Kerk naar de achtergrond schoof.",
                   "en": "The ambiguity of subsistit in was deliberate and in practice weakened the teaching of Mystici Corporis (1943) that the Mystical Body is the Catholic Church. Even if one accepts the magisterial reading, the formula, on this critique, enabled an ecumenical practice that pushed the fullness of the Church into the background.",
-                  "sources": ["ext:mystici-corporis-1943", "LG-8"]
+                  "sources": [
+                    "ext:mystici-corporis-1943",
+                    "LG-8"
+                  ]
                 }
               ]
             }
@@ -351,6 +369,11 @@
                 "Note the order of the circles in LG §16. It gives a theological ordering, not a ranking of human dignity, which is equal for all (NA §5).",
                 "Distinguish what the text says from later readings. The positions in the previous chapter are interpretations, not statements of the Council."
               ]
+            },
+            {
+              "type": "p",
+              "nl": "Lees de teksten ten slotte in hun eigen genre. UR is een decreet met praktische richtlijnen, NA een korte verklaring, LG een dogmatische constitutie. Het gewicht van een uitspraak hangt mede af van het document waarin ze staat en van de manier waarop ze geformuleerd is.",
+              "en": "Finally, read the texts in their own genre. UR is a decree with practical directives, NA a short declaration, LG a dogmatic constitution. The weight of a statement depends partly on the document in which it stands and on the way it is formulated."
             }
           ]
         },
