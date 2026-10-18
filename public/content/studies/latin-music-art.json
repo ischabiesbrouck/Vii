@@ -1,0 +1,359 @@
+{
+  "subjectId": "latin-music-art",
+  "review": "unverified",
+  "chapters": [
+    {
+      "labelLa": "Caput I",
+      "titleNl": "Taal, muziek en ruimte vóór het Concilie",
+      "titleEn": "Language, music and space before the Council",
+      "summaryNl": "Het Latijn, het gregoriaans en de vorm van de kerkruimte hadden elk een lange voorgeschiedenis. Wie die kent, leest de bepalingen van SC als antwoord op concrete vragen, niet als een sprong in het duister.",
+      "summaryEn": "Latin, Gregorian chant and the shape of the church building each had a long prehistory. Knowing it, you read the provisions of SC as answers to concrete questions, not as a leap in the dark.",
+      "sections": [
+        {
+          "headingNl": "Het Latijn in de Romeinse ritus",
+          "headingEn": "Latin in the Roman rite",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Het Latijn is niet de oorspronkelijke taal van de christelijke liturgie. In Rome werd aanvankelijk in het Grieks gevierd; in de loop van de vierde eeuw werd het Latijn de liturgische taal van de stad, omdat het de taal van het volk was geworden. Daarna bleef het eeuwenlang de taal van de Latijnse riten, ook toen het volk het niet meer sprak. Het Latijn werd zo een teken van eenheid en van continuïteit met de kerkvaders, maar ook een drempel voor wie het niet verstond.",
+              "en": "Latin is not the original language of Christian liturgy. In Rome the liturgy was at first celebrated in Greek; in the course of the fourth century Latin became the liturgical language of the city, because it had become the language of the people. Afterwards it remained for centuries the language of the Latin rites, even when the people no longer spoke it. Latin thus became a sign of unity and of continuity with the Fathers, but also a threshold for those who did not understand it."
+            },
+            {
+              "type": "box",
+              "kind": "context",
+              "titleNl": "Trente en Veterum sapientia",
+              "titleEn": "Trent and Veterum sapientia",
+              "nl": "Het Concilie van Trente oordeelde in zijn 22e zitting (1562) dat het niet raadzaam was de mis overal in de volkstaal te vieren, en vroeg de herders tegelijk om tijdens de mis geregeld iets van de gelezen teksten uit te leggen. Nog in februari 1962, ruim zeven maanden vóór de opening van Vaticanum II, ondertekende Johannes XXIII de apostolische constitutie Veterum sapientia, die de studie van het Latijn en het gebruik ervan in het priesteronderwijs krachtig aanbeval. Het Concilie begon dus met een recente pauselijke tekst die het Latijn hoog hield.",
+              "en": "The Council of Trent judged in its twenty-second session (1562) that it was not expedient for Mass to be celebrated everywhere in the vernacular, while asking pastors to explain something of the texts read during Mass at regular intervals. As late as February 1962, less than eight months before the opening of Vatican II, John XXIII signed the apostolic constitution Veterum sapientia, which strongly commended the study of Latin and its use in priestly formation. The Council thus began with a recent papal text that held Latin in high esteem."
+            },
+            {
+              "type": "p",
+              "nl": "Tegelijk was de vraag naar de volkstaal al vóór het Concilie gesteld. De liturgische beweging had tweetalige missalen voor leken verspreid, en voor sommige sacramenten bestonden al tweetalige rituale met pauselijke toestemming. In de aula was de verhouding tussen Latijn en volkstaal in het najaar van 1962 een van de meest besproken punten van het liturgieschema.",
+              "en": "At the same time the question of the vernacular had been raised before the Council. The liturgical movement had spread bilingual missals for the laity, and for some sacraments bilingual rituals already existed with papal permission. In the aula, the relation between Latin and the vernacular was one of the most discussed points of the liturgy schema in the autumn of 1962."
+            }
+          ]
+        },
+        {
+          "headingNl": "Gregoriaans, orgel en kerkgebouw",
+          "headingEn": "Chant, organ and church building",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Ook voor de kerkmuziek bestond een duidelijk kader. Na het herstel van het gregoriaans door de monniken van Solesmes noemde Pius X in Tra le sollecitudini (1903) het gregoriaans het hoogste model van kerkmuziek, gaf hij een ereplaats aan de klassieke polyfonie en liet hij nieuwere muziek toe voor zover zij de waardigheid van de liturgie diende. Pius XII werkte die lijn uit in Musicae sacrae disciplina (1955). Het orgel gold daarbij als het eigen instrument van de Latijnse Kerk.",
+              "en": "For sacred music, too, a clear framework existed. After the restoration of Gregorian chant by the monks of Solesmes, Pius X in Tra le sollecitudini (1903) called chant the supreme model of sacred music, gave a place of honour to classical polyphony and admitted more recent music insofar as it served the dignity of the liturgy. Pius XII developed that line in Musicae sacrae disciplina (1955). The organ was regarded as the proper instrument of the Latin Church."
+            },
+            {
+              "type": "p",
+              "nl": "Voor de kerkbouw golden de rubrieken en het kerkelijk recht, die vooral het altaar, het tabernakel en de wijding van de ruimte regelden. De liturgische beweging had al vóór het Concilie nagedacht over ruimtes die de deelname van de gemeenschap bevorderen. Het Concilie zelf bepaalde daarover weinig in detail; het vroeg vooral om herziening van de normen (SC §128). Het overzicht hieronder toont waar taal, muziek en kunst in de constitutie staan.",
+              "en": "Church building was governed by the rubrics and canon law, which mainly regulated the altar, the tabernacle and the consecration of the space. Before the Council the liturgical movement had already reflected on spaces that foster the participation of the community. The Council itself determined little about this in detail; above all it asked for a revision of the norms (SC §128). The outline below shows where language, music and art are found in the constitution."
+            },
+            {
+              "type": "diagram",
+              "id": "outline-SC",
+              "captionNl": "De opbouw van Sacrosanctum Concilium. De taalbepalingen staan in hoofdstuk I (§36) en worden in II (§54) en IV (§101) toegepast; hoofdstuk VI (§112–121) gaat over de kerkmuziek, hoofdstuk VII (§122–130) over kunst en kerkinrichting.",
+              "captionEn": "The structure of Sacrosanctum Concilium. The provisions on language are in chapter I (§36) and are applied in II (§54) and IV (§101); chapter VI (§112–121) treats sacred music, chapter VII (§122–130) art and church furnishings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput II",
+      "titleNl": "Wat de tekst zegt over de taal",
+      "titleEn": "What the text says about language",
+      "summaryNl": "SC §36 stelt het Latijn als regel en opent de volkstaal als mogelijkheid, onder gezag. De paragrafen over de mis en het getijdengebed passen dat beginsel toe.",
+      "summaryEn": "SC §36 sets Latin as the rule and opens the vernacular as a possibility, under authority. The paragraphs on the Mass and the Divine Office apply that principle.",
+      "sections": [
+        {
+          "headingNl": "Regel en mogelijkheid: SC §36",
+          "headingEn": "Rule and possibility: SC §36",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De sleutelparagraaf heeft vier leden. Het eerste stelt de regel, het tweede opent een mogelijkheid, het derde en vierde zeggen wie daarover beslist en hoe vertalingen tot stand komen (SC §36).",
+              "en": "The key paragraph has four sections. The first sets the rule, the second opens a possibility, the third and fourth say who decides and how translations come about (SC §36)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-36"
+            },
+            {
+              "type": "p",
+              "nl": "Let op de werkwoorden. Het gebruik van het Latijn ‘moet behouden blijven’ (servetur); de grenzen van de moedertaal ‘mogen uitgebreid worden’. Die uitbreiding betreft volgens de tekst vooral de lezingen en aansporingen, sommige gebeden en gezangen (SC §36). Of en in welke mate de volkstaal gebruikt wordt, beslist de bevoegde territoriale kerkelijke overheid, met goedkeuring of bevestiging door de Apostolische Stoel; vertalingen moeten door dezelfde overheid goedgekeurd worden (SC §36; SC §22). De beslissing ligt dus niet bij de afzonderlijke priester of parochie.",
+              "en": "Note the verbs. The use of Latin ‘is to be preserved’ (servetur); the limits of the mother tongue ‘may be extended’. According to the text that extension applies above all to the readings and directives, and to some prayers and chants (SC §36). Whether and to what extent the vernacular is used is decided by the competent territorial ecclesiastical authority, with the approval or confirmation of the Apostolic See; translations must be approved by the same authority (SC §36; SC §22). The decision therefore does not lie with the individual priest or parish."
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Salvo particulari iure",
+              "titleEn": "Salvo particulari iure",
+              "nl": "‘Onverminderd het particulier recht.’ Met deze clausule erkent SC §36 dat er al vóór het Concilie bijzondere regelingen bestonden, zoals toegestane tweetalige rituale. De regel van het Latijn geldt dus niet zonder uitzondering, maar de uitzondering bevestigt de regel. In de oosterse Kerken, die een eigen traditie van liturgische talen hebben, geldt de bepaling niet; zij betreft uitdrukkelijk de Latijnse riten.",
+              "en": "‘Particular law remaining in force.’ With this clause SC §36 recognises that particular arrangements already existed before the Council, such as permitted bilingual rituals. The rule of Latin therefore does not apply without exception, but the exception confirms the rule. In the Eastern Churches, which have their own tradition of liturgical languages, the provision does not apply; it expressly concerns the Latin rites."
+            },
+            {
+              "type": "p",
+              "nl": "Naast SC §36 staan de normen voor aanpassing aan de cultuur en de tradities van volkeren (SC §37–40). Waar een meer ingrijpende aanpassing nodig is, moet de territoriale overheid die voorleggen aan de Apostolische Stoel (SC §40). Ook dit is dus een geregelde weg, geen vrije ruimte.",
+              "en": "Alongside SC §36 stand the norms for adaptation to the culture and traditions of peoples (SC §37–40). Where a more radical adaptation is needed, the territorial authority must submit it to the Apostolic See (SC §40). This too is a regulated path, not a free space."
+            }
+          ]
+        },
+        {
+          "headingNl": "Mis, sacramenten en getijdengebed",
+          "headingEn": "Mass, sacraments and Divine Office",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Voor de mis past SC §54 het beginsel toe. In missen met het volk kan de moedertaal een passende plaats krijgen, vooral in de lezingen en het algemeen gebed en, naar de plaatselijke omstandigheden, in de delen die het volk toekomen. Maar de tekst voegt er onmiddellijk een opdracht aan toe:",
+              "en": "For the Mass, SC §54 applies the principle. In Masses with the people the mother tongue may be given a suitable place, especially in the readings and the common prayer and, according to local circumstances, in the parts that pertain to the people. But the text immediately adds a task:"
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-54"
+            },
+            {
+              "type": "p",
+              "nl": "De gelovigen moeten dus de vaste delen van de mis die hun toekomen, zoals Kyrie, Gloria, Credo, Sanctus en Agnus Dei, ook in het Latijn kunnen zeggen of zingen. Pas waar een ruimer gebruik van de volkstaal gepast lijkt, verwijst de tekst naar de procedure van SC §40 (SC §54). Voor de sacramenten en sacramentaliën erkent SC dat de volkstaal vaak zeer nuttig kan zijn (SC §63).",
+              "en": "The faithful must therefore be able to say or sing in Latin those fixed parts of the Mass that pertain to them, such as the Kyrie, Gloria, Creed, Sanctus and Agnus Dei. Only where a wider use of the vernacular seems fitting does the text refer to the procedure of SC §40 (SC §54). For the sacraments and sacramentals SC recognises that the vernacular can often be very useful (SC §63)."
+            },
+            {
+              "type": "p",
+              "nl": "In het getijdengebed is de regel nog strikter. Clerici behouden volgens de eeuwenoude traditie het Latijn; de ordinarius kan alleen in afzonderlijke gevallen een vertaling toestaan aan wie door het Latijn ernstig gehinderd wordt het officie naar behoren te bidden (SC §101). Voor religieuzen en leken die het getijdengebed bidden, is meer ruimte gelaten. Wie de drie plaatsen naast elkaar legt (SC §36, §54 en §101), ziet een consequente lijn: het Latijn als regel, de volkstaal als door het gezag geregelde uitbreiding.",
+              "en": "In the Divine Office the rule is stricter still. Clerics retain Latin according to the centuries-old tradition; the ordinary may permit a translation only in individual cases to those for whom Latin is a grave obstacle to praying the office properly (SC §101). More room is left for religious and lay people who pray the office. Setting the three places side by side (SC §36, §54 and §101), you see a consistent line: Latin as the rule, the vernacular as an extension regulated by authority."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput III",
+      "titleNl": "Kerkmuziek, kunst en kerkbouw",
+      "titleEn": "Sacred music, art and church building",
+      "summaryNl": "Hoofdstuk VI noemt de muzikale traditie een onschatbare schat en geeft het gregoriaans de eerste plaats; hoofdstuk VII vraagt om edele schoonheid en een herziening van de normen, zonder een stijl of celebratierichting voor te schrijven.",
+      "summaryEn": "Chapter VI calls the musical tradition an inestimable treasure and gives Gregorian chant pride of place; chapter VII asks for noble beauty and a revision of the norms, without prescribing a style or a direction of celebration.",
+      "sections": [
+        {
+          "headingNl": "De kerkmuziek (SC §112–121)",
+          "headingEn": "Sacred music (SC §112–121)",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Het hoofdstuk over de muziek begint met een opvallend sterke uitspraak: de muzikale traditie van de Kerk staat boven die van iedere andere kunst, omdat de gewijde zang een noodzakelijk of integrerend deel van de plechtige liturgie vormt (SC §112). Kerkmuziek is des te heiliger naarmate zij nauwer verbonden is met de liturgische handeling. Muziek is hier dus geen omlijsting, maar zelf liturgie.",
+              "en": "The chapter on music begins with a remarkably strong statement: the musical tradition of the Church surpasses that of any other art, because sacred song forms a necessary or integral part of the solemn liturgy (SC §112). Sacred music is the holier the more closely it is joined to the liturgical action. Music here is therefore not a setting, but itself liturgy."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-112"
+            },
+            {
+              "type": "p",
+              "nl": "Daaruit volgen de concrete bepalingen. De liturgie krijgt een edeler vorm als zij plechtig gezongen wordt, met gewijde bedienaren en de actieve deelname van het volk (SC §113). De schat van de kerkmuziek moet met grote zorg bewaard en bevorderd worden, scholae cantorum moeten ijverig bevorderd worden, en tegelijk moet het hele volk aan het zingen kunnen deelnemen (SC §114). Daarna volgt de centrale paragraaf over het gregoriaans:",
+              "en": "From this follow the concrete provisions. The liturgy takes on a nobler form when it is celebrated solemnly in song, with sacred ministers and the active participation of the people (SC §113). The treasury of sacred music is to be preserved and fostered with great care, choirs are to be diligently promoted, and at the same time the whole people must be able to take part in the singing (SC §114). Then comes the central paragraph on Gregorian chant:"
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-116"
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Ceteris paribus en principem locum",
+              "titleEn": "Ceteris paribus and principem locum",
+              "nl": "Het Latijn zegt dat de Kerk het gregoriaans erkent als eigen (proprium) aan de Romeinse liturgie, en dat het daarom ‘onder overigens gelijke omstandigheden’ (ceteris paribus) de ‘eerste plaats’ (principem locum) moet innemen (SC §116). De clausule ceteris paribus is de enige beperking: zij laat ruimte voor omstandigheden waarin het gregoriaans niet haalbaar is, maar maakt het niet tot één optie naast andere. Polyfonie en andere kerkmuziek blijven toegelaten, mits zij overeenstemmen met de geest van de liturgische handeling (SC §116; SC §30).",
+              "en": "The Latin says that the Church acknowledges Gregorian chant as proper (proprium) to the Roman liturgy, and that it should therefore, ‘other things being equal’ (ceteris paribus), have ‘pride of place’ (principem locum) (SC §116). The clause ceteris paribus is the only qualification: it leaves room for circumstances in which chant is not feasible, but it does not make chant one option among others. Polyphony and other sacred music remain admitted, provided they accord with the spirit of the liturgical action (SC §116; SC §30)."
+            },
+            {
+              "type": "p",
+              "nl": "De volgende paragrafen vragen om een kritische uitgave van de gregoriaanse boeken en om een uitgave met eenvoudiger melodieën voor kleinere kerken (SC §117), om de bevordering van religieuze volkszang (SC §118) en om respect voor de eigen muzikale tradities van volkeren in missiegebieden (SC §119). Over het orgel is de tekst ondubbelzinnig, terwijl andere instrumenten alleen met toestemming van de territoriale overheid worden toegelaten, als zij geschikt zijn voor gewijd gebruik en de waardigheid van het godshuis passen (SC §120). Componisten worden ten slotte opgeroepen werken te schrijven die de kenmerken van echte kerkmuziek hebben, op teksten uit de Schrift en de liturgische bronnen (SC §121).",
+              "en": "The following paragraphs ask for a critical edition of the chant books and an edition with simpler melodies for smaller churches (SC §117), for the fostering of religious singing by the people (SC §118) and for respect for the musical traditions of peoples in mission lands (SC §119). On the organ the text is unambiguous, while other instruments are admitted only with the consent of the territorial authority, if they are suitable for sacred use and befit the dignity of the house of God (SC §120). Finally, composers are called to write works that have the qualities of genuine sacred music, on texts drawn from Scripture and the liturgical sources (SC §121)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-120"
+            }
+          ]
+        },
+        {
+          "headingNl": "Kunst en kerkbouw (SC §122–130)",
+          "headingEn": "Art and church building (SC §122–130)",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Hoofdstuk VII rekent de schone kunsten tot de edelste activiteiten van de menselijke geest, met de gewijde kunst als hun hoogtepunt (SC §122). De Kerk heeft geen enkele stijl als haar eigen aangenomen; ook de kunst van onze tijd krijgt ruimte, mits zij met eerbied de gebouwen en riten dient (SC §123). Bisschoppen moeten eerder edele schoonheid zoeken dan louter pracht, en bij de bouw van kerken zorgen dat deze geschikt zijn voor de liturgische handelingen en de actieve deelname van de gelovigen (SC §124). Heiligenbeelden blijven, in gematigd aantal en in de juiste ordening (SC §125).",
+              "en": "Chapter VII counts the fine arts among the noblest activities of the human spirit, with sacred art as their summit (SC §122). The Church has not adopted any particular style as her own; the art of our time too is given scope, provided it serves the buildings and rites with reverence (SC §123). Bishops should seek noble beauty rather than mere sumptuous display, and in building churches ensure that they are suited to the liturgical actions and the active participation of the faithful (SC §124). Sacred images are retained, in moderate number and in due order (SC §125)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-128"
+            },
+            {
+              "type": "p",
+              "nl": "SC §128 is een opdracht tot herziening, geen uitgewerkte norm. De tekst noemt de bouw van kerken, de vorm en constructie van altaren, de waardigheid, plaats en veiligheid van het tabernakel, het doopvont, de beelden, de versiering en de gewaden. Wat met de vernieuwde liturgie minder strookt, moet verbeterd of afgeschaft worden; de territoriale bisschoppenvergaderingen krijgen ruimte voor aanpassing (SC §128). De constitutie sluit af met de opdracht om clerici te onderwijzen in de geschiedenis van de gewijde kunst (SC §129).",
+              "en": "SC §128 is a mandate for revision, not a worked-out norm. The text names the construction of churches, the shape and construction of altars, the dignity, placing and safety of the tabernacle, the baptistery, images, decoration and vestments. Whatever is less in harmony with the reformed liturgy is to be amended or abolished; the territorial assemblies of bishops are given room for adaptation (SC §128). The constitution closes with the mandate to teach clerics the history of sacred art (SC §129)."
+            },
+            {
+              "type": "box",
+              "kind": "note",
+              "titleNl": "Wat SC niet zegt over de celebratierichting",
+              "titleEn": "What SC does not say about the direction of celebration",
+              "nl": "Nergens in Sacrosanctum Concilium staat dat de priester naar het volk toe moet celebreren, en nergens dat hij dat niet mag. Het woord ‘versus populum’ komt in de constitutie niet voor. De aanbeveling om het hoofdaltaar los van de wand te plaatsen, zodat men eromheen kan lopen en naar het volk toe kan celebreren, staat in de instructie Inter Oecumenici (1964, nr. 91), een uitvoeringsdocument van na de afkondiging.",
+              "en": "Nowhere does Sacrosanctum Concilium say that the priest must celebrate facing the people, and nowhere that he may not. The phrase ‘versus populum’ does not occur in the constitution. The recommendation to place the main altar free of the wall, so that one can walk around it and celebrate facing the people, is found in the instruction Inter Oecumenici (1964, no. 91), an implementing document issued after promulgation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput IV",
+      "titleNl": "Van tekst naar praktijk",
+      "titleEn": "From text to practice",
+      "summaryNl": "Binnen enkele jaren was de volkstaal vrijwel overal de norm, verdween het gregoriaans uit veel parochies en werden altaren verplaatst. De vraag is hoe dat zich verhoudt tot een tekst die het Latijn als regel stelde.",
+      "summaryEn": "Within a few years the vernacular had become the norm almost everywhere, chant had disappeared from many parishes and altars had been moved. The question is how that relates to a text that set Latin as the rule.",
+      "sections": [
+        {
+          "headingNl": "De uitvoeringsdocumenten",
+          "headingEn": "The implementing documents",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Het beeld dat velen van ‘Vaticanum II’ hebben, is grotendeels gevormd door wat na 1963 kwam. De belangrijkste stappen op het gebied van taal, muziek en ruimte zijn:",
+              "en": "The image many people have of ‘Vatican II’ was largely formed by what came after 1963. The most important steps in the field of language, music and space are:"
+            },
+            {
+              "type": "list",
+              "nl": [
+                "1964: Inter Oecumenici breidt het gebruik van de volkstaal uit en beveelt een vrijstaand hoofdaltaar aan.",
+                "1967: de instructie Musicam sacram herhaalt de beginselen van SC over het gregoriaans en het Latijn en werkt trappen van gezongen deelname uit; in hetzelfde jaar laat Tres abhinc annos ook de canon in de volkstaal toe.",
+                "1969–1970: het missaal van Paulus VI verschijnt, in een Latijnse typische uitgave, waarna vertalingen volgen.",
+                "1974: Paulus VI zendt de bisschoppen een bundel eenvoudige gregoriaanse gezangen (Jubilate Deo), opdat de gelovigen een minimum aan Latijnse gezangen zouden kennen."
+              ],
+              "en": [
+                "1964: Inter Oecumenici extends the use of the vernacular and recommends a free-standing main altar.",
+                "1967: the instruction Musicam sacram restates SC’s principles on chant and Latin and sets out degrees of sung participation; in the same year Tres abhinc annos also permits the canon in the vernacular.",
+                "1969–1970: the missal of Paul VI appears, in a Latin typical edition, followed by translations.",
+                "1974: Paul VI sends the bishops a booklet of simple Gregorian chants (Jubilate Deo), so that the faithful would know a minimum of Latin chants."
+              ]
+            },
+            {
+              "type": "p",
+              "nl": "Die reeks laat iets belangrijks zien. Formeel werd het Latijn nooit afgeschaft: het missaal van Paulus VI is zelf een Latijns boek, en de documenten bleven het gregoriaans aanbevelen. Maar de bevoegde overheden maakten van de mogelijkheid van SC §36 vrijwel overal de gewone praktijk, en in veel parochies verdween het gezongen Latijn geheel, ondanks de opdracht van SC §54.",
+              "en": "That series shows something important. Formally Latin was never abolished: the missal of Paul VI is itself a Latin book, and the documents continued to commend chant. But the competent authorities turned the possibility of SC §36 into ordinary practice almost everywhere, and in many parishes sung Latin disappeared altogether, despite the task set by SC §54."
+            }
+          ]
+        },
+        {
+          "headingNl": "Twee omstreden vragen",
+          "headingEn": "Two contested questions",
+          "blocks": [
+            {
+              "type": "positions",
+              "titleNl": "Waarom ging de praktijk zo ver voorbij SC §36?",
+              "titleEn": "Why did practice go so far beyond SC §36?",
+              "positions": [
+                {
+                  "labelNl": "Een legitieme ontwikkeling binnen de tekst",
+                  "labelEn": "A legitimate development within the text",
+                  "nl": "SC zelf opende de deur: de grenzen van de volkstaal ‘mogen uitgebreid worden’, en de territoriale overheid beslist over de mate daarvan (SC §36), met een procedure voor ruimer gebruik (SC §54; SC §40). De bisschoppenconferenties en de Apostolische Stoel gebruikten die bevoegdheid in een reeks goedgekeurde stappen. Volgens deze lezing is de overgang naar de volkstaal een wettige toepassing van het pastorale doel van verstaanbare deelname (SC §14), niet een afwijking.",
+                  "en": "SC itself opened the door: the limits of the vernacular ‘may be extended’, and the territorial authority decides how far (SC §36), with a procedure for wider use (SC §54; SC §40). The episcopal conferences and the Apostolic See used that competence in a series of approved steps. On this reading the shift to the vernacular is a legitimate application of the pastoral aim of intelligible participation (SC §14), not a deviation.",
+                  "sources": ["SC-36", "SC-54", "SC-14", "ext:inter-oecumenici-1964"]
+                },
+                {
+                  "labelNl": "Een praktijk die de regel omkeerde",
+                  "labelEn": "A practice that inverted the rule",
+                  "nl": "Volgens deze lezing maakte de praktijk van de uitzondering de regel en van de regel de uitzondering. De tekst stelt het Latijn als regel (SC §36), wil dat het volk het ordinarium in het Latijn kan zingen (SC §54), houdt het Latijn aan in het officie van de clerici (SC §101) en geeft het gregoriaans de eerste plaats (SC §116), kort na Veterum sapientia. Het resultaat, een vrijwel volledig verdwijnen van het Latijn, valt met die tekst moeilijk te rijmen.",
+                  "en": "On this reading practice made the exception the rule and the rule the exception. The text sets Latin as the rule (SC §36), wants the people to be able to sing the Ordinary in Latin (SC §54), retains Latin in the clergy’s office (SC §101) and gives chant pride of place (SC §116), shortly after Veterum sapientia. The result, an almost complete disappearance of Latin, is hard to reconcile with that text.",
+                  "sources": ["SC-36", "SC-101", "SC-116", "ext:veterum-sapientia-1962"]
+                }
+              ]
+            },
+            {
+              "type": "positions",
+              "titleNl": "Celebratie naar het volk toe of in gemeenschappelijke richting?",
+              "titleEn": "Celebration facing the people or in a common direction?",
+              "positions": [
+                {
+                  "labelNl": "Naar het volk toe",
+                  "labelEn": "Facing the people",
+                  "nl": "Voorstanders zien in de celebratie naar het volk toe een passende uitdrukking van de gemeenschap rond het altaar als tafel van het paasmaal (SC §47), en een hulp voor bewuste deelname (SC §14). Inter Oecumenici beval het vrijstaande altaar aan, en de praktijk werd door de bevoegde overheden aanvaard. Dat SC er niets over zegt, maakt haar volgens deze lezing niet minder wettig.",
+                  "en": "Supporters see celebration facing the people as a fitting expression of the community gathered round the altar as the table of the paschal banquet (SC §47), and as an aid to conscious participation (SC §14). Inter Oecumenici recommended the free-standing altar, and the practice was accepted by the competent authorities. That SC says nothing about it does not, on this reading, make it any less legitimate.",
+                  "sources": ["SC-47", "SC-14", "ext:inter-oecumenici-1964"]
+                },
+                {
+                  "labelNl": "In gemeenschappelijke richting",
+                  "labelEn": "In a common direction",
+                  "nl": "Anderen, onder wie Ratzinger in The Spirit of the Liturgy en Uwe Michael Lang in Turning towards the Lord, betogen dat priester en volk van oudsher samen naar het oosten, naar de wederkomende Heer, gericht baden. Die richting drukt het eschatologische karakter van de liturgie uit (SC §8) en het offerkarakter van de mis (SC §47). Waar een gemeenschappelijke richting niet mogelijk is, stelde Ratzinger voor het kruis in het midden van het altaar te plaatsen. Ook deze lezing benadrukt dat SC §128 geen richting voorschrijft.",
+                  "en": "Others, including Ratzinger in The Spirit of the Liturgy and Uwe Michael Lang in Turning towards the Lord, argue that priest and people traditionally prayed together towards the east, towards the Lord who is to come. That direction expresses the eschatological character of the liturgy (SC §8) and the sacrificial character of the Mass (SC §47). Where a common direction is not possible, Ratzinger proposed placing the cross at the centre of the altar. This reading too stresses that SC §128 prescribes no direction.",
+                  "sources": ["SC-8", "SC-47", "SC-128"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "headingNl": "Het latere leergezag",
+          "headingEn": "Later magisterial teaching",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Het leergezag na het Concilie heeft de bepalingen van SC over taal en muziek nooit ingetrokken. Benedictus XVI beval in de postsynodale exhortatie Sacramentum caritatis (2007) aan om bij internationale vieringen het Latijn te gebruiken en de gelovigen de bekendste gebeden in het Latijn en enkele gregoriaanse gezangen te leren. Over het gebruik van het missaal van 1962 kwamen daarna tegengestelde disciplinaire regelingen: Summorum Pontificum (2007) verruimde het, Traditionis custodes (2021) beperkte het opnieuw. Die regelingen gaan over oudere liturgische boeken, niet over het gebruik van het Latijn in de vernieuwde liturgie, dat SC §36 en §54 blijven toelaten en aanbevelen.",
+              "en": "The magisterium after the Council has never withdrawn SC’s provisions on language and music. Benedict XVI, in the post-synodal exhortation Sacramentum caritatis (2007), recommended the use of Latin at international celebrations and that the faithful be taught the best-known prayers in Latin and some Gregorian chants. Opposing disciplinary arrangements then followed on the use of the 1962 missal: Summorum Pontificum (2007) widened it, Traditionis custodes (2021) restricted it again. Those arrangements concern older liturgical books, not the use of Latin in the reformed liturgy, which SC §36 and §54 continue to permit and commend."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput V",
+      "titleNl": "De tekst vandaag lezen",
+      "titleEn": "Reading the text today",
+      "summaryNl": "Wie de bepalingen over taal, muziek en ruimte goed leest, onderscheidt regel en mogelijkheid, conciliaire tekst en uitvoeringsdocument, en beginsel en smaak.",
+      "summaryEn": "Reading the provisions on language, music and space well means distinguishing rule from possibility, conciliar text from implementing document, and principle from taste.",
+      "sections": [
+        {
+          "headingNl": "Drie onderscheidingen",
+          "headingEn": "Three distinctions",
+          "blocks": [
+            {
+              "type": "list",
+              "nl": [
+                "Regel en mogelijkheid. SC §36 stelt een rangorde: het Latijn als regel, de volkstaal als uitbreiding. Wie zegt dat het Concilie het Latijn afschafte, keert die rangorde om; wie zegt dat het Concilie de volkstaal niet wilde, negeert de mogelijkheid die de tekst zelf opent.",
+                "Tekst en uitvoering. Celebratie naar het volk toe, de canon in de volkstaal en het verdwijnen van het gregoriaans komen niet uit SC, maar uit uitvoeringsdocumenten en praktijk. Toets een bewering daarom altijd aan de paragraaf zelf.",
+                "Beginsel en smaak. SC schrijft geen stijl voor (SC §123) en sluit polyfonie of nieuwe muziek niet uit (SC §116). Het vraagt wel om criteria: heiligheid, verbondenheid met de liturgische handeling en edele schoonheid (SC §112; SC §124)."
+              ],
+              "en": [
+                "Rule and possibility. SC §36 sets an order of rank: Latin as the rule, the vernacular as an extension. Whoever says the Council abolished Latin inverts that order; whoever says the Council did not want the vernacular ignores the possibility the text itself opens.",
+                "Text and implementation. Celebration facing the people, the canon in the vernacular and the disappearance of chant do not come from SC, but from implementing documents and practice. Always test a claim, therefore, against the paragraph itself.",
+                "Principle and taste. SC prescribes no style (SC §123) and does not exclude polyphony or new music (SC §116). It does ask for criteria: holiness, connection with the liturgical action and noble beauty (SC §112; SC §124)."
+              ]
+            },
+            {
+              "type": "p",
+              "nl": "Deze onderscheidingen beslissen geen enkel debat, maar ze maken een eerlijk debat mogelijk. Ze laten ook zien hoe sterk het beeld van ‘het Concilie’ bepaald is door documenten die het Concilie niet zelf schreef. Voor wie de teksten studeert, is dat geen reden tot wantrouwen tegenover de uitvoering, maar een reden om nauwkeurig te citeren.",
+              "en": "These distinctions decide no debate, but they make an honest debate possible. They also show how strongly the image of ‘the Council’ has been shaped by documents the Council did not itself write. For a student of the texts that is not a reason for suspicion towards the implementation, but a reason to quote precisely."
+            }
+          ]
+        },
+        {
+          "headingNl": "Vragen voor verdere studie",
+          "headingEn": "Questions for further study",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Waarom leidde een tekst die het Latijn als regel stelt (SC §36) toch tot een bijna volledige overgang naar de volkstaal? Wat betekent ceteris paribus in SC §116 in de praktijk van een gewone parochie, en wat zou ervoor nodig zijn om aan SC §54 te voldoen? En welke rol spelen uitvoeringsdocumenten zoals Inter Oecumenici en Musicam sacram in het beeld dat mensen van ‘Vaticanum II’ hebben? Lees bij die vragen ook het vorige onderwerp, over de beginselen van de liturgie (SC §10–23), want de bepalingen over taal en muziek zijn toepassingen van die beginselen.",
+              "en": "Why did a text that sets Latin as the rule (SC §36) still lead to an almost complete shift to the vernacular? What does ceteris paribus in SC §116 mean in the practice of an ordinary parish, and what would it take to meet SC §54? And what role do implementing documents such as Inter Oecumenici and Musicam sacram play in people’s image of ‘Vatican II’? With these questions, read the previous subject too, on the principles of the liturgy (SC §10–23), because the provisions on language and music are applications of those principles."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bibliography": [
+    "John XXIII. (1962). Veterum sapientia [Apostolic constitution on the promotion of the study of Latin]. Libreria Editrice Vaticana.",
+    "Lang, U. M. (2004). Turning towards the Lord: Orientation in liturgical prayer. Ignatius Press.",
+    "O’Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
+    "Pius X. (1903). Tra le sollecitudini [Motu proprio on sacred music]. Libreria Editrice Vaticana.",
+    "Ratzinger, J. (2000). The spirit of the liturgy (J. Saward, Trans.). Ignatius Press.",
+    "Sacred Congregation of Rites. (1964). Inter Oecumenici [First instruction on the orderly carrying out of the Constitution on the Liturgy]. Libreria Editrice Vaticana.",
+    "Sacred Congregation of Rites. (1967). Musicam sacram [Instruction on music in the liturgy]. Libreria Editrice Vaticana.",
+    "Tanner, N. P. (Ed.). (1990). Decrees of the ecumenical councils (Vol. 2). Sheed & Ward; Georgetown University Press."
+  ]
+}
