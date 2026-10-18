@@ -46,6 +46,7 @@ self-hosted Source Serif 4 and Inter (Fontsource).
 | `/learn`, `/learn/:id` | **Course**: 10 lessons (why a council, how it worked, the four constitutions, each constitution, decrees and declarations, reception, reading today), each with key facts, the texts to read, Pope Leo XIV's catecheses, videos, a factual knowledge check and sources; progress saved locally |
 | `/catecheses` | Pope Leo XIV's 2026 general-audience catecheses on the Council's documents (28 so far), grouped by constitution, linking to the official texts on vatican.va |
 | `/videos` | 15 curated English videos (EWTN, Rome Reports, Word on Fire, CNS, Georgetown and others), filterable by kind; they play in the in-app theater (see below) |
+| `/subjects/:id/study/:chapter` | **Study text** per subject: a continuous, chaptered explanation (Caput I–V) with numbered sections, conciliar quotations, term and context boxes, side-by-side positions on disputed questions, diagrams and a bibliography. Each chapter is a page with an index, running head and pager; chapters read are remembered locally |
 | `/subjects`, `/subjects/:id` | **Subjects**: 16 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
 | `/documents` | The 16 documents by type, with solemnity badge |
 | `/documents/:id` | Reader: title page with vote bar, chapter outline (Caput I, II …) as sticky contents on desktop and a sheet on mobile, rubric-red marginal § numbers, previous/next document, related subjects; § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
@@ -69,6 +70,8 @@ precached by the service worker. Nothing is generated at runtime.
 | `catecheses.json` | Leo XIV catecheses (date, official title, Dutch working title, vatican.va URL) |
 | `videos.json` | Video library; IDs and titles checked against web search results on 18 Oct 2026 |
 | `subjects.json` | 16 study paths; every step, claim and term is checked by the validator |
+| `studies/{subjectId}.json` | 16 study texts, 4–5 chapters each (about 38,500 words in Dutch and as many in English). Drafted with AI assistance, `review: "unverified"` |
+| `images.json` + `public/images/` | Registry for licensed images (author, licence, Wikimedia Commons source); empty until images are added |
 | `claims.json` | 19 Claim Checks covering progressive, traditionalist and secular-media misreadings |
 | `timeline.json`, `glossary.json`, `hermeneutics.json` | Supporting modules |
 | `sources.json` | Registry of external (pre- and post-conciliar) sources referenced as `ext:…` |
@@ -90,6 +93,16 @@ appeal or key paragraph does not resolve to a seeded paragraph or registered
 source. It also enforces the 80-word summary limit, requires two or more positions
 for every `contested` claim, and writes `index.json` (the list of available files
 plus a content hash that invalidates the cached search index).
+
+### Study texts
+
+Study texts follow the `Study` type in `src/types/content.ts`. The validator rejects a study text if:
+- a citation such as `LG §8` or `GS §22–24` falls outside the document's paragraph count;
+- a `quote` names a paragraph that has not been seeded;
+- an unknown diagram or image is used, or a position cites an unregistered source;
+- the Dutch and English versions do not both exist, or either language has fewer than 1,200 words.
+
+Conciliar text appears only through `quote` blocks, which render the seeded excerpt, so licensed text is never retyped. Diagrams are drawn from the app's own data, or restate a cited paragraph, so they need no image licence. Photos go in `images.json`, with author, licence and source shown under each image.
 
 ### Review status: **unverified**
 
