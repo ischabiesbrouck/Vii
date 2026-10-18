@@ -6,7 +6,8 @@ import { useSubjectProgress } from '@/components/SubjectCard';
 import { VerdictBadge } from '@/components/Badges';
 import { Apa, Commentary, ConciliarText, Crumbs, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { Badge } from '@/components/ui/badge';
-import { getClaims, getDocuments, getGlossary, getParagraph, getSubjects, getVideos } from '@/lib/content';
+import { getClaims, getDocuments, getGlossary, getParagraph, getStudy, getSubjects, getVideos } from '@/lib/content';
+import { readingMinutes } from '@/lib/study';
 import { VideoCard } from '@/components/VideoCard';
 import { shortCite } from '@/lib/citation';
 import { useAsync } from '@/lib/useAsync';
@@ -32,9 +33,10 @@ export function SubjectDetail() {
   const lang = useLang();
   const studied = useUi((s) => s.studied[id]) ?? [];
   const toggleStudied = useUi((s) => s.toggleStudied);
+  const chaptersRead = useUi((s) => s.studyRead[id]) ?? [];
 
   const { data, loading } = useAsync(async () => {
-    const [subjects, claims, glossary, docs, videos] = await Promise.all([getSubjects(), getClaims(), getGlossary(), getDocuments(), getVideos()]);
+    const [subjects, claims, glossary, docs, videos, study] = await Promise.all([getSubjects(), getClaims(), getGlossary(), getDocuments(), getVideos(), getStudy(id)]);
     const index = subjects.findIndex((s) => s.id === id);
     const subject = subjects[index];
     if (!subject) return null;
@@ -42,6 +44,7 @@ export function SubjectDetail() {
     const docIds = [...new Set(steps.map((s) => s.resolved?.doc.id).filter((x): x is string => !!x))];
     return {
       subject,
+      study,
       steps,
       prev: subjects[index - 1],
       next: subjects[index + 1],
@@ -56,7 +59,8 @@ export function SubjectDetail() {
 
   if (loading) return <Loading />;
   if (!data) return <p className="py-8 text-center">{t('subjects.notFound')}</p>;
-  const { subject: s, steps, prev, next, claims, terms, docs, videos } = data;
+  const { subject: s, study, steps, prev, next, claims, terms, docs, videos } = data;
+  const nextChapter = study ? (study.chapters.findIndex((_, i) => !chaptersRead.includes(i + 1)) + 1 || 1) : 1;
   const title = pick(lang, s.titleNl, s.titleEn);
 
   return (
@@ -71,7 +75,7 @@ export function SubjectDetail() {
             </span>
             <div className="min-w-0">
               <p className="kicker">{t(`subjects.level.${s.level}`)}</p>
-              <h1 className="mt-1 font-serif text-[1.75rem] font-semibold leading-tight sm:text-4xl">{title}</h1>
+              <h1 className="mt-1 font-title text-[2.2rem] font-medium leading-[1.08] sm:text-[2.9rem]">{title}</h1>
               <p className="mt-2 text-[1.05rem] text-muted">{pick(lang, s.taglineNl, s.taglineEn)}</p>
               <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">
                 <span className="inline-flex items-center gap-1">
@@ -92,6 +96,50 @@ export function SubjectDetail() {
         <Commentary className="mb-8">
           <p className="leading-relaxed">{pick(lang, s.introNl, s.introEn)}</p>
         </Commentary>
+
+        {study && (
+          <section aria-labelledby="h-study" className="mb-12 border border-line bg-paper">
+            <div className="h-[3px] bg-accent" aria-hidden />
+            <div className="p-5 sm:p-6">
+              <div className="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <p className="kicker">Tractatus</p>
+                  <h2 id="h-study" className="font-title text-[1.6rem] font-medium">
+                    {t('study.title')}
+                  </h2>
+                </div>
+                <p className="text-xs tabular text-muted">
+                  {t('study.chapters', { count: study.chapters.length })} · {t('study.minutes', { count: readingMinutes(study, lang) })}
+                  {chaptersRead.length > 0 && ` · ${t('study.progress', { done: chaptersRead.length, total: study.chapters.length })}`}
+                </p>
+              </div>
+              <p className="mt-1 max-w-prose text-sm text-muted">{t('study.intro')}</p>
+              <ol className="mt-5 divide-y divide-line border-y border-line">
+                {study.chapters.map((c, i) => (
+                  <li key={c.labelLa}>
+                    <Link to={`/subjects/${s.id}/study/${i + 1}`} className="group grid grid-cols-[5.5rem_minmax(0,1fr)] gap-3 py-3">
+                      <span className="flex items-center gap-1 pt-0.5 font-title text-[0.95rem] text-accent small-caps" lang="la">
+                        {c.labelLa}
+                        {chaptersRead.includes(i + 1) && <Check className="h-3.5 w-3.5 text-ok" aria-label={t('learn.completed')} />}
+                      </span>
+                      <span>
+                        <span className="block font-title text-[1.2rem] font-medium leading-snug group-hover:text-accent group-hover:underline">{pick(lang, c.titleNl, c.titleEn)}</span>
+                        <span className="mt-0.5 block text-sm leading-snug text-muted">{pick(lang, c.summaryNl, c.summaryEn)}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+              <Link
+                to={`/subjects/${s.id}/study/${nextChapter}`}
+                className="mt-5 inline-flex min-h-[44px] items-center gap-2 rounded-sm bg-primary px-5 text-sm font-semibold text-primary-fg hover:bg-primary/90"
+              >
+                {chaptersRead.length ? t('study.continue', { label: study.chapters[nextChapter - 1]?.labelLa }) : t('study.read')}
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </div>
+          </section>
+        )}
 
         <section aria-labelledby="h-obj" className="mb-10">
           <SectionTitle id="h-obj">{t('subjects.objectives')}</SectionTitle>

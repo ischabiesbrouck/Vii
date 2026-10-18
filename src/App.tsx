@@ -21,6 +21,7 @@ const Catecheses = page(() => import('@/pages/Catecheses'), 'Catecheses');
 const Videos = page(() => import('@/pages/Videos'), 'Videos');
 const Subjects = page(() => import('@/pages/Subjects'), 'Subjects');
 const SubjectDetail = page(() => import('@/pages/SubjectDetail'), 'SubjectDetail');
+const Study = page(() => import('@/pages/Study'), 'Study');
 const Documents = page(() => import('@/pages/Documents'), 'Documents');
 const DocumentReader = page(() => import('@/pages/DocumentReader'), 'DocumentReader');
 const Claims = page(() => import('@/pages/Claims'), 'Claims');
@@ -61,6 +62,7 @@ export function App() {
           <Route path="videos" element={s(<Videos />)} />
           <Route path="subjects" element={s(<Subjects />)} />
           <Route path="subjects/:id" element={s(<SubjectDetail />)} />
+          <Route path="subjects/:id/study/:chapter" element={s(<Study />)} />
           <Route path="documents" element={s(<Documents />)} />
           <Route path="documents/:id" element={s(<DocumentReader />)} />
           <Route path="claims" element={s(<Claims />)} />

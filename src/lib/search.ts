@@ -1,9 +1,9 @@
 import MiniSearch, { type Options, type SearchResult } from 'minisearch';
 import { db } from './db';
-import { getAllParagraphs, getCatecheses, getClaims, getGlossary, getIndex, getLessons, getSubjects } from './content';
+import { getAllParagraphs, getCatecheses, getClaims, getGlossary, getIndex, getLessons, getStudy, getSubjects } from './content';
 import { shortCite } from './citation';
 
-export type SearchKind = 'paragraph' | 'claim' | 'term' | 'subject' | 'lesson' | 'catechesis';
+export type SearchKind = 'paragraph' | 'study' | 'claim' | 'term' | 'subject' | 'lesson' | 'catechesis';
 
 export interface SearchDoc {
   id: string;
@@ -36,7 +36,7 @@ const OPTIONS: Options<SearchDoc> = {
 
 const CACHE_KEY = 'search-index';
 /** Bump when the shape of SearchDoc changes, to invalidate cached indexes. */
-const SCHEMA = 3;
+const SCHEMA = 4;
 
 async function buildDocs(): Promise<SearchDoc[]> {
   const [paras, claims, terms, subjects, lessons, cat] = await Promise.all([
@@ -48,6 +48,27 @@ async function buildDocs(): Promise<SearchDoc[]> {
     getCatecheses(),
   ]);
   const docs: SearchDoc[] = [];
+  const studies = await Promise.all(subjects.map((s) => getStudy(s.id)));
+  for (const [si, st] of studies.entries()) {
+    const subject = subjects[si]!;
+    for (const [ci, ch] of (st?.chapters ?? []).entries()) {
+      const text = ch.sections
+        .flatMap((sec) => [sec.headingNl, sec.headingEn, ...sec.blocks.flatMap((b) => ('nl' in b ? [b.nl, b.en].flat() : []))])
+        .join(' ');
+      docs.push({
+        id: `st:${subject.id}:${ci + 1}`,
+        kind: 'study',
+        cite: ch.labelLa,
+        title: `${ch.titleNl} — ${subject.titleNl}`,
+        titleEn: `${ch.titleEn} — ${subject.titleEn}`,
+        text,
+        snippetNl: ch.summaryNl,
+        snippetEn: ch.summaryEn,
+        url: `/subjects/${subject.id}/study/${ci + 1}`,
+        tags: '',
+      });
+    }
+  }
   for (const l of lessons) {
     docs.push({
       id: `l:${l.id}`,

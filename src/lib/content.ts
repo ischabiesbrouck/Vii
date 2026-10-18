@@ -14,6 +14,8 @@ import type {
   Lang,
   Paragraph,
   TimelineEvent,
+  Study,
+  LicensedImage,
 } from '@/types/content';
 
 /**
@@ -47,6 +49,14 @@ export const getSubjects = () => load<Subject[]>('subjects.json');
 export const getLessons = () => load<Lesson[]>('lessons.json');
 export const getCatecheses = () => load<CatechesisSeries>('catecheses.json');
 export const getVideos = () => load<VideoLibrary>('videos.json');
+export const getImages = () => load<LicensedImage[]>('images.json').catch(() => [] as LicensedImage[]);
+
+/** Full study text for a subject, or null when none has been written yet. */
+export async function getStudy(subjectId: string): Promise<Study | null> {
+  const index = await getIndex();
+  if (!index.studies?.includes(subjectId)) return null;
+  return load<Study>(`studies/${subjectId}.json`);
+}
 
 export async function getDocument(id: string): Promise<CouncilDocument | undefined> {
   return (await getDocuments()).find((d) => d.id === id);

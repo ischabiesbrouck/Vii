@@ -186,6 +186,8 @@ export interface ContentIndex {
   available: string[];
   /** Number of seeded paragraphs per docId. */
   counts: Record<string, number>;
+  /** Subject ids that have a study text in /content/studies/. */
+  studies?: string[];
 }
 
 /** A lesson in the guided course (/learn). Editorial, labelled as such. */
@@ -261,4 +263,64 @@ export interface VideoLibrary {
   noteNl: string;
   noteEn: string;
   items: Video[];
+}
+
+/* ---------- Study texts (full editorial explanation per subject) ---------- */
+
+export type DiagramId =
+  | 'sessions'
+  | 'documents'
+  | 'votes'
+  | 'dv-transmission'
+  | 'lg-belonging'
+  | 'lg-people'
+  | `outline-${'LG' | 'SC' | 'DV' | 'DH' | 'GS' | 'UR' | 'PO' | 'CD'}`;
+
+export type StudyBlock =
+  /** Editorial prose. Citations written as "LG §8" or "GS §22–24" are linked automatically. */
+  | { type: 'p'; nl: string; en: string }
+  /** A conciliar excerpt, rendered from the seeded paragraph (never retyped). */
+  | { type: 'quote'; paragraphId: string }
+  | { type: 'list'; nl: string[]; en: string[] }
+  | { type: 'box'; kind: 'term' | 'note' | 'context'; titleNl: string; titleEn: string; nl: string; en: string }
+  /** Contested questions: positions side by side, never decided by the app. */
+  | { type: 'positions'; titleNl: string; titleEn: string; positions: { labelNl: string; labelEn: string; nl: string; en: string; sources: string[] }[] }
+  | { type: 'diagram'; id: DiagramId; captionNl: string; captionEn: string }
+  /** A licensed image from public/content/images.json. */
+  | { type: 'image'; imageId: string; captionNl: string; captionEn: string };
+
+export interface StudySection {
+  headingNl: string;
+  headingEn: string;
+  blocks: StudyBlock[];
+}
+
+export interface StudyChapter {
+  labelLa: string; // 'Caput I'
+  titleNl: string;
+  titleEn: string;
+  summaryNl: string;
+  summaryEn: string;
+  sections: StudySection[];
+}
+
+export interface Study {
+  subjectId: string;
+  review: 'unverified' | 'verified';
+  chapters: StudyChapter[];
+  /** APA 7 references for the whole study text. */
+  bibliography: string[];
+}
+
+export interface LicensedImage {
+  id: string;
+  file: string; // path under public/images/
+  width: number;
+  height: number;
+  altNl: string;
+  altEn: string;
+  author: string;
+  license: string; // e.g. 'Public domain', 'CC BY-SA 4.0'
+  licenseUrl?: string;
+  sourceUrl: string; // Wikimedia Commons file page
 }
