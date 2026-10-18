@@ -43,7 +43,7 @@ export function ParagraphSheet({
       await navigator.share({
         title: citation,
         text: `${citation}\n${doc.officialUrl}`,
-        url: `${location.origin}/documents/${doc.id}#${paragraph.id}`,
+        url: new URL(`${import.meta.env.BASE_URL}documents/${doc.id}#${paragraph.id}`, location.origin).href,
       });
     } catch {
       /* user cancelled */

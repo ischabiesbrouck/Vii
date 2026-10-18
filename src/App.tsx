@@ -31,6 +31,8 @@ const NotFound = page(() => import('@/pages/NotFound'), 'NotFound');
 
 // The artifact preview cannot use history routing inside its sandboxed frame.
 const Router = IS_ARTIFACT_PREVIEW ? MemoryRouter : BrowserRouter;
+// '/Vii/' on GitHub Pages, '' at a domain root.
+const ROUTER_BASENAME = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function App() {
   useThemeEffect();
@@ -44,7 +46,7 @@ export function App() {
   const s = (el: React.ReactNode) => <Suspense fallback={<Loading />}>{el}</Suspense>;
 
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router basename={IS_ARTIFACT_PREVIEW ? undefined : ROUTER_BASENAME} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />

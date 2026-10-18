@@ -3,9 +3,12 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath, URL } from 'node:url';
 
+// Deploy path: '/' by default; BASE_PATH=/Vii/ for GitHub Pages (project site).
+const BASE = (process.env.BASE_PATH ?? '/').replace(/\/?$/, '/');
+
 export default defineConfig(({ mode }) => ({
   // `vite build --mode artifact`: self-contained preview with relative asset paths.
-  base: mode === 'artifact' ? './' : '/',
+  base: mode === 'artifact' ? './' : BASE,
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
@@ -33,16 +36,16 @@ export default defineConfig(({ mode }) => ({
         short_name: 'Concilium',
         description: 'Vaticanum II in context — de 16 conciliedocumenten, met paragraafnummers.',
         lang: 'nl-NL',
-        start_url: '/',
-        scope: '/',
+        start_url: BASE,
+        scope: BASE,
         display: 'standalone',
         orientation: 'portrait',
         theme_color: '#7A1F1F',
         background_color: '#FAF8F3',
         icons: [
-          { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-          { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
-          { src: '/icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          { src: `${BASE}icons/icon-192.png`, sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: `${BASE}icons/icon-512.png`, sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: `${BASE}icons/icon-maskable-512.png`, sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
       workbox: {
@@ -50,8 +53,8 @@ export default defineConfig(({ mode }) => ({
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,json,webmanifest}'],
         // Only Latin / Latin-ext font subsets are ever needed for NL, EN and LA text.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-wght-*.woff2'],
-        navigateFallback: '/index.html',
-        navigateFallbackDenylist: [/^\/content\//],
+        navigateFallback: `${BASE}index.html`,
+        navigateFallbackDenylist: [new RegExp(`^${BASE}content/`)],
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         // No runtimeCaching: nothing external is ever fetched at runtime.

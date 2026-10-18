@@ -20,6 +20,14 @@ npm run preview    # serve dist/ to test install + offline
 Deploy `dist/` to any static host with an SPA fallback to `index.html`
 (`public/_redirects` for Netlify and `vercel.json` for Vercel are included).
 
+### GitHub Pages
+
+`.github/workflows/deploy-pages.yml` builds and deploys on every push to `main`
+to `https://<owner>.github.io/<repo>/` (here: `https://ischabiesbrouck.github.io/Vii/`).
+One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+The build sets `BASE_PATH=/<repo>/`, which the router, manifest, icons and service
+worker all follow; `404.html` provides the SPA fallback for deep links.
+
 ## Stack
 
 React 18 · TypeScript (strict) · Vite 6 · Tailwind CSS 3 with shadcn/ui-style
