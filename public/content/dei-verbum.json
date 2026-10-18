@@ -53,6 +53,39 @@
       ]
     },
     {
+      "id": "DV-5",
+      "docId": "dei-verbum",
+      "number": 5,
+      "textEn": "\"The obedience of faith\" (Rom. 16:26 …) \"is to be given to God who reveals,\" an obedience by which man commits his whole self freely to God …",
+      "textNl": "Aan God die zich openbaart, moet men 'de gehoorzaamheid van het geloof' betonen (Rom. 16,26), waardoor de mens zich in vrijheid geheel aan God toevertrouwt …",
+      "tags": [
+        "faith",
+        "revelation"
+      ],
+      "crossRefs": [
+        "DV-2",
+        "DH-10"
+      ]
+    },
+    {
+      "id": "DV-8",
+      "docId": "dei-verbum",
+      "number": 8,
+      "textEn": "This tradition which comes from the Apostles develops in the Church with the help of the Holy Spirit. For there is a growth in the understanding of the realities and the words which have been handed down.",
+      "textNl": "Deze overlevering, die van de apostelen afkomstig is, ontwikkelt zich in de Kerk onder bijstand van de heilige Geest. Het inzicht in de overgeleverde zaken en woorden groeit immers.",
+      "tags": [
+        "tradition",
+        "development-of-doctrine"
+      ],
+      "crossRefs": [
+        "DV-9",
+        "DV-10",
+        "ext:dei-filius-1870"
+      ],
+      "noteNl": "De groei betreft het inzicht, niet de inhoud: Vaticanum I (Dei Filius) had gesteld dat leerstellingen in dezelfde betekenis bewaard moeten blijven.",
+      "noteEn": "The growth concerns understanding, not content: Vatican I (Dei Filius) had stated that doctrines must be kept in the same meaning."
+    },
+    {
       "id": "DV-9",
       "docId": "dei-verbum",
       "number": 9,
@@ -112,6 +145,24 @@
       "noteEn": "Whether 'nostrae salutis causa' restricts the scope of inerrancy, or names the purpose of the whole of Scripture, is disputed."
     },
     {
+      "id": "DV-12",
+      "docId": "dei-verbum",
+      "number": 12,
+      "textEn": "… the interpreter of Sacred Scripture, in order to see clearly what God wanted to communicate to us, should carefully investigate what meaning the sacred writers really intended, and what God wanted to manifest by means of their words. To search out the intention of the sacred writers, attention should be given, among other things, to \"literary forms.\"",
+      "textNl": "… de uitlegger van de heilige Schrift moet, om duidelijk te zien wat God ons heeft willen meedelen, nauwkeurig nagaan wat de heilige schrijvers werkelijk bedoeld hebben en wat God door hun woorden heeft willen openbaren. Om de bedoeling van de heilige schrijvers te achterhalen, moet men onder meer letten op de 'literaire genres'.",
+      "tags": [
+        "scripture",
+        "exegesis",
+        "interpretation"
+      ],
+      "crossRefs": [
+        "DV-11",
+        "ext:divino-afflante-1943"
+      ],
+      "noteNl": "De paragraaf vervolgt dat de Schrift ook gelezen moet worden in de eenheid van heel de Schrift, de levende traditie van de Kerk en de analogie van het geloof.",
+      "noteEn": "The paragraph continues that Scripture must also be read within the unity of the whole of Scripture, the living tradition of the Church and the analogy of faith."
+    },
+    {
       "id": "DV-19",
       "docId": "dei-verbum",
       "number": 19,
@@ -124,6 +175,37 @@
       ],
       "crossRefs": [
         "DV-11"
+      ]
+    },
+    {
+      "id": "DV-21",
+      "docId": "dei-verbum",
+      "number": 21,
+      "textEn": "The Church has always venerated the divine Scriptures just as she venerates the body of the Lord …",
+      "textNl": "De Kerk heeft de goddelijke Schriften altijd vereerd zoals zij ook het lichaam van de Heer vereert …",
+      "tags": [
+        "scripture",
+        "eucharist",
+        "spirituality"
+      ],
+      "crossRefs": [
+        "SC-51",
+        "DV-25"
+      ]
+    },
+    {
+      "id": "DV-24",
+      "docId": "dei-verbum",
+      "number": 24,
+      "textEn": "… the study of the sacred page is, as it were, the soul of sacred theology.",
+      "textNl": "… de studie van de heilige bladzijde is als het ware de ziel van de theologie.",
+      "tags": [
+        "scripture",
+        "theology"
+      ],
+      "crossRefs": [
+        "OT-16",
+        "DV-25"
       ]
     },
     {

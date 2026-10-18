@@ -1,0 +1,55 @@
+{
+  "docId": "inter-mirifica",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "IM-1",
+      "docId": "inter-mirifica",
+      "number": 1,
+      "textEn": "Among the wonderful technological discoveries which men of talent, especially in the present era, have made with God's help, the Church welcomes and promotes with special interest those which have a most direct relation to men's minds and which have uncovered new avenues of communicating most readily news, views and teachings of every sort.",
+      "textNl": "Onder de wonderbaarlijke technische uitvindingen die het menselijk vernuft, vooral in onze tijd, met Gods hulp heeft gedaan, aanvaardt en bevordert de Kerk met bijzondere aandacht die welke het meest rechtstreeks de menselijke geest raken en nieuwe wegen hebben geopend om nieuws, opvattingen en onderricht van allerlei aard snel mee te delen.",
+      "tags": [
+        "media",
+        "technology"
+      ],
+      "crossRefs": [
+        "IM-3",
+        "GS-36"
+      ]
+    },
+    {
+      "id": "IM-3",
+      "docId": "inter-mirifica",
+      "number": 3,
+      "textEn": "The Catholic Church, since it was founded by Christ our Lord to bear salvation to all men and thus is obliged to preach the Gospel, considers it one of its duties to announce the Good News of salvation also with the help of the media of social communication and to instruct men in their proper use.",
+      "textNl": "Omdat de Katholieke Kerk door Christus de Heer is gesticht om het heil aan alle mensen te brengen en daarom verplicht is het evangelie te verkondigen, beschouwt zij het als haar taak de Blijde Boodschap ook met behulp van de sociale communicatiemiddelen te verkondigen en de mensen in het juiste gebruik ervan te onderrichten.",
+      "tags": [
+        "media",
+        "mission",
+        "evangelisation"
+      ],
+      "crossRefs": [
+        "AG-2",
+        "IM-1"
+      ]
+    },
+    {
+      "id": "IM-18",
+      "docId": "inter-mirifica",
+      "number": 18,
+      "textEn": "Moreover, that the varied apostolate of the Church with respect to the media of social communication may be strengthened effectively, each year in every diocese of the world, by the determination of the Bishops, there should be celebrated a day on which the faithful are instructed in their responsibilities in this regard.",
+      "textNl": "Om het veelzijdige apostolaat van de Kerk op het gebied van de sociale communicatiemiddelen doeltreffend te versterken, moet bovendien elk jaar in ieder bisdom ter wereld, op een door de bisschoppen te bepalen dag, een dag gehouden worden waarop de gelovigen over hun verantwoordelijkheden op dit gebied worden onderricht.",
+      "tags": [
+        "media",
+        "laity"
+      ],
+      "crossRefs": [
+        "IM-3"
+      ],
+      "noteNl": "Hier ligt de oorsprong van de jaarlijkse Wereldcommunicatiedag, voor het eerst gehouden in 1967.",
+      "noteEn": "This is the origin of the annual World Communications Day, first held in 1967."
+    }
+  ]
+}

@@ -33,7 +33,7 @@ self-hosted Source Serif 4 and Inter (Fontsource).
 | Route | Purpose |
 |---|---|
 | `/` | Hero search, start-here subject, figures, continue reading, bookmarks, subjects, document of the day, Claim Check, the four sessions |
-| `/subjects`, `/subjects/:id` | **Subjects**: 13 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
+| `/subjects`, `/subjects/:id` | **Subjects**: 16 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
 | `/documents` | The 16 documents by type, with solemnity badge |
 | `/documents/:id` | Reader: title page with vote bar, chapter outline (Caput I, II …) as sticky contents on desktop and a sheet on mobile, rubric-red marginal § numbers, previous/next document, related subjects; § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
 | `/claims`, `/claims/:id` | Claim Check, filterable by verdict; evidence paragraphs inline; contested claims show positions side by side |
@@ -51,9 +51,9 @@ precached by the service worker. Nothing is generated at runtime.
 | File | Contents |
 |---|---|
 | `documents.json` | Metadata for all 16 documents (dates, votes, designation, summaries ≤ 80 words) |
-| `{docId}.json` | Paragraph excerpts. Seeded: LG, SC, DH (scaffold) + NA, DV, GS, AA, PO, UR, AG (paragraphs cited as evidence) |
-| `subjects.json` | 13 study paths; every step, claim and term is checked by the validator |
-| `claims.json` | 16 Claim Checks covering progressive, traditionalist and secular-media misreadings |
+| `{docId}.json` | Paragraph excerpts for all 16 documents (125 in total), with chapter outlines for LG, SC, DV, DH, GS, UR, PO and CD |
+| `subjects.json` | 16 study paths; every step, claim and term is checked by the validator |
+| `claims.json` | 19 Claim Checks covering progressive, traditionalist and secular-media misreadings |
 | `timeline.json`, `glossary.json`, `hermeneutics.json` | Supporting modules |
 | `sources.json` | Registry of external (pre- and post-conciliar) sources referenced as `ext:…` |
 
@@ -62,8 +62,9 @@ precached by the service worker. Nothing is generated at runtime.
 1. Create `public/content/{docId}.json` following `DocumentContent` in
    `src/types/content.ts` (paragraph ids are `ABBR-number`, e.g. `CD-11`).
 2. Run `npm run validate:content`. The file is picked up automatically: no
-   code change. TODO: 4 documents (IM, OE, CD, OT) have no content file yet; the
-   other non-scaffold files hold only the paragraphs that claims and subjects cite.
+   code change. All 16 documents now have a content file (125 excerpts). LG, SC, DV, DH and
+   GS are covered most fully; for the others the file holds the key paragraphs
+   that claims and subjects cite. TODO: widen coverage per document.
 
 ### Fidelity gate
 

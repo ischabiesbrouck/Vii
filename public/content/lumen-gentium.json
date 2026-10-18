@@ -181,6 +181,24 @@
       ]
     },
     {
+      "id": "LG-21",
+      "docId": "lumen-gentium",
+      "number": 21,
+      "textEn": "… this Sacred Council teaches that by Episcopal consecration the fullness of the sacrament of Orders is conferred …",
+      "textNl": "… deze heilige Synode leert dat door de bisschopswijding de volheid van het wijdingssacrament wordt verleend …",
+      "tags": [
+        "bishops",
+        "sacraments",
+        "holy-orders"
+      ],
+      "crossRefs": [
+        "LG-22",
+        "CD-11"
+      ],
+      "noteNl": "Hiermee besliste het Concilie een oude theologische vraag: of de bisschopswijding sacramenteel is of alleen een jurisdictie verleent.",
+      "noteEn": "With this the Council settled an old theological question: whether episcopal consecration is sacramental or confers only jurisdiction."
+    },
+    {
       "id": "LG-22",
       "docId": "lumen-gentium",
       "number": 22,
@@ -265,6 +283,22 @@
       ],
       "crossRefs": [
         "LG-31"
+      ]
+    },
+    {
+      "id": "LG-48",
+      "docId": "lumen-gentium",
+      "number": 48,
+      "textEn": "The Church, to which we are all called in Christ Jesus, and in which we acquire sanctity through the grace of God, will attain its full perfection only in the glory of heaven …",
+      "textNl": "De Kerk, waartoe wij allen in Christus Jezus geroepen zijn en waarin wij door Gods genade heiligheid verwerven, zal pas in de hemelse heerlijkheid haar voltooiing bereiken …",
+      "tags": [
+        "eschatology",
+        "ecclesiology",
+        "holiness"
+      ],
+      "crossRefs": [
+        "LG-40",
+        "GS-39"
       ]
     },
     {

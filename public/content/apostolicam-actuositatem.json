@@ -50,6 +50,21 @@
       "crossRefs": [
         "LG-33"
       ]
+    },
+    {
+      "id": "AA-4",
+      "docId": "apostolicam-actuositatem",
+      "number": 4,
+      "textEn": "… the success of the lay apostolate depends upon the laity's living union with Christ …",
+      "textNl": "… de vruchtbaarheid van het lekenapostolaat hangt af van de levende vereniging van de leken met Christus …",
+      "tags": [
+        "laity",
+        "spirituality"
+      ],
+      "crossRefs": [
+        "AA-3",
+        "LG-40"
+      ]
     }
   ]
 }

@@ -127,6 +127,16 @@
         "paragraphId": "LG-15",
         "focusNl": "Verbondenheid met gedoopte niet-katholieken.",
         "focusEn": "Bonds with baptised non-Catholics."
+      },
+      {
+        "paragraphId": "LG-48",
+        "focusNl": "De Kerk bereikt haar voltooiing pas in de hemel.",
+        "focusEn": "The Church reaches her fulfilment only in heaven."
+      },
+      {
+        "paragraphId": "UR-4",
+        "focusNl": "De eenheid van de Kerk, die zij nooit kan verliezen.",
+        "focusEn": "The unity of the Church, which she can never lose."
       }
     ],
     "claims": [
@@ -163,7 +173,7 @@
     "id": "authority",
     "icon": "keys",
     "level": "core",
-    "minutes": 20,
+    "minutes": 30,
     "titleNl": "Paus, bisschoppen en leergezag",
     "titleEn": "Pope, bishops and magisterium",
     "taglineNl": "Primaat, collegialiteit en welke instemming het leergezag vraagt.",
@@ -205,6 +215,31 @@
         "paragraphId": "DV-10",
         "focusNl": "Het leergezag staat niet boven het woord van God.",
         "focusEn": "The magisterium is not above the word of God."
+      },
+      {
+        "paragraphId": "LG-21",
+        "focusNl": "De bisschopswijding als volheid van het wijdingssacrament.",
+        "focusEn": "Episcopal consecration as the fullness of holy orders."
+      },
+      {
+        "paragraphId": "CD-2",
+        "focusNl": "Het primaat in het decreet over de bisschoppen.",
+        "focusEn": "The primacy in the decree on bishops."
+      },
+      {
+        "paragraphId": "CD-5",
+        "focusNl": "De Bisschoppensynode.",
+        "focusEn": "The Synod of Bishops."
+      },
+      {
+        "paragraphId": "CD-11",
+        "focusNl": "Wat een bisdom is.",
+        "focusEn": "What a diocese is."
+      },
+      {
+        "paragraphId": "CD-38",
+        "focusNl": "De bisschoppenconferentie.",
+        "focusEn": "The episcopal conference."
       }
     ],
     "claims": [
@@ -214,7 +249,9 @@
     "terms": [
       "collegialiteit",
       "Nota explicativa praevia",
-      "geloofszin (sensus fidei)"
+      "geloofszin (sensus fidei)",
+      "bisschoppenconferentie",
+      "Bisschoppensynode"
     ],
     "questionsNl": [
       "Waarom was het voor de concilievaders belangrijk dat het primaat 'ongeschonden' bleef?",
@@ -239,7 +276,7 @@
     "id": "revelation",
     "icon": "scroll",
     "level": "core",
-    "minutes": 25,
+    "minutes": 35,
     "titleNl": "Openbaring, Schrift en Traditie",
     "titleEn": "Revelation, Scripture and Tradition",
     "taglineNl": "Hoe God zich bekendmaakt en hoe dat wordt doorgegeven.",
@@ -273,6 +310,16 @@
         "focusEn": "Revelation is completed in Christ."
       },
       {
+        "paragraphId": "DV-5",
+        "focusNl": "De gehoorzaamheid van het geloof.",
+        "focusEn": "The obedience of faith."
+      },
+      {
+        "paragraphId": "DV-8",
+        "focusNl": "Groei in het inzicht in de overlevering.",
+        "focusEn": "Growth in understanding of tradition."
+      },
+      {
         "paragraphId": "DV-9",
         "focusNl": "Niet uit de Schrift alleen.",
         "focusEn": "Not from Scripture alone."
@@ -288,9 +335,24 @@
         "focusEn": "Inspiration and truth of Scripture."
       },
       {
+        "paragraphId": "DV-12",
+        "focusNl": "Hoe de Schrift uit te leggen: bedoeling, genres, eenheid.",
+        "focusEn": "How to interpret Scripture: intention, genres, unity."
+      },
+      {
         "paragraphId": "DV-19",
         "focusNl": "Het historisch karakter van de evangeliën.",
         "focusEn": "The historical character of the Gospels."
+      },
+      {
+        "paragraphId": "DV-21",
+        "focusNl": "Schrift en eucharistie vereerd als één tafel.",
+        "focusEn": "Scripture and Eucharist venerated as one table."
+      },
+      {
+        "paragraphId": "DV-24",
+        "focusNl": "De Schrift als ziel van de theologie.",
+        "focusEn": "Scripture as the soul of theology."
       },
       {
         "paragraphId": "DV-25",
@@ -300,7 +362,8 @@
     ],
     "claims": [
       "sola-scriptura",
-      "limited-inerrancy"
+      "limited-inerrancy",
+      "doctrine-changes"
     ],
     "terms": [],
     "questionsNl": [
@@ -326,7 +389,7 @@
     "id": "liturgy",
     "icon": "chalice",
     "level": "core",
-    "minutes": 25,
+    "minutes": 40,
     "titleNl": "Liturgie en eucharistie",
     "titleEn": "Liturgy and the Eucharist",
     "taglineNl": "Bron en hoogtepunt: wat Sacrosanctum Concilium werkelijk vroeg.",
@@ -345,9 +408,19 @@
     ],
     "steps": [
       {
+        "paragraphId": "SC-2",
+        "focusNl": "De liturgie voltrekt het werk van de verlossing.",
+        "focusEn": "The liturgy accomplishes the work of redemption."
+      },
+      {
         "paragraphId": "SC-7",
         "focusNl": "De vier wijzen van Christus' aanwezigheid.",
         "focusEn": "The modes of Christ's presence."
+      },
+      {
+        "paragraphId": "SC-8",
+        "focusNl": "De aardse liturgie als voorsmaak van de hemelse.",
+        "focusEn": "The earthly liturgy as foretaste of the heavenly."
       },
       {
         "paragraphId": "SC-10",
@@ -380,22 +453,44 @@
         "focusEn": "Organic growth from existing forms."
       },
       {
+        "paragraphId": "SC-34",
+        "focusNl": "Edele eenvoud.",
+        "focusEn": "Noble simplicity."
+      },
+      {
         "paragraphId": "SC-47",
         "focusNl": "De mis als bestendiging van het kruisoffer.",
         "focusEn": "The Mass as perpetuation of the sacrifice of the Cross."
       },
       {
+        "paragraphId": "SC-50",
+        "focusNl": "Vereenvoudiging met behoud van het wezen.",
+        "focusEn": "Simplification while preserving the substance."
+      },
+      {
+        "paragraphId": "SC-51",
+        "focusNl": "De schatten van de Bijbel rijker openen.",
+        "focusEn": "Opening the treasures of the Bible more lavishly."
+      },
+      {
         "paragraphId": "SC-55",
         "focusNl": "Communie uit hetzelfde offer.",
         "focusEn": "Communion from the same sacrifice."
+      },
+      {
+        "paragraphId": "SC-106",
+        "focusNl": "De zondag als oorspronkelijke feestdag.",
+        "focusEn": "Sunday as the original feast day."
       }
     ],
     "claims": [
       "versus-populum",
-      "communion-in-hand"
+      "communion-in-hand",
+      "priest-may-adapt-liturgy"
     ],
     "terms": [
-      "actieve deelname (participatio actuosa)"
+      "actieve deelname (participatio actuosa)",
+      "edele eenvoud (nobilis simplicitas)"
     ],
     "questionsNl": [
       "Welke elementen van de liturgie zijn volgens SC §21 onveranderlijk?",
@@ -585,7 +680,7 @@
     "id": "ecumenism-religions",
     "icon": "dove",
     "level": "core",
-    "minutes": 25,
+    "minutes": 35,
     "titleNl": "Oecumene en andere godsdiensten",
     "titleEn": "Ecumenism and other religions",
     "taglineNl": "Eenheid onder christenen en de houding tegenover andere godsdiensten.",
@@ -612,6 +707,21 @@
         "paragraphId": "UR-3",
         "focusNl": "De volheid van de heilsmiddelen.",
         "focusEn": "The fullness of the means of salvation."
+      },
+      {
+        "paragraphId": "UR-4",
+        "focusNl": "Wat de Kerk nooit kan verliezen.",
+        "focusEn": "What the Church can never lose."
+      },
+      {
+        "paragraphId": "UR-6",
+        "focusNl": "Voortdurende hervorming.",
+        "focusEn": "Continual reformation."
+      },
+      {
+        "paragraphId": "UR-8",
+        "focusNl": "Geestelijke oecumene als ziel van de beweging.",
+        "focusEn": "Spiritual ecumenism as the soul of the movement."
       },
       {
         "paragraphId": "UR-11",
@@ -653,7 +763,8 @@
       "all-religions-equal"
     ],
     "terms": [
-      "hiërarchie van waarheden"
+      "hiërarchie van waarheden",
+      "geestelijke oecumene"
     ],
     "questionsNl": [
       "Hoe kan de Kerk tegelijk 'niets verwerpen' en 'onophoudelijk Christus verkondigen'?",
@@ -726,12 +837,24 @@
         "paragraphId": "NA-2",
         "focusNl": "Christus als de weg, de waarheid en het leven.",
         "focusEn": "Christ as the way, the truth and the life."
+      },
+      {
+        "paragraphId": "AG-11",
+        "focusNl": "De zaden van het Woord in de culturen.",
+        "focusEn": "The seeds of the Word in cultures."
+      },
+      {
+        "paragraphId": "IM-3",
+        "focusNl": "Ook de media dienen de verkondiging.",
+        "focusEn": "The media too serve proclamation."
       }
     ],
     "claims": [
       "all-religions-equal"
     ],
-    "terms": [],
+    "terms": [
+      "zaden van het Woord (semina Verbi)"
+    ],
     "questionsNl": [
       "Waarom verwijst AG §2 naar de Vader, de Zoon en de Geest om de missie te funderen?",
       "Hoe voorkomt de tekst dat LG §16 als 'missie is niet nodig' gelezen wordt?",
@@ -812,6 +935,16 @@
         "paragraphId": "GE-3",
         "focusNl": "Ouders als eerste en voornaamste opvoeders.",
         "focusEn": "Parents as primary and principal educators."
+      },
+      {
+        "paragraphId": "AA-4",
+        "focusNl": "Vruchtbaarheid hangt af van vereniging met Christus.",
+        "focusEn": "Fruitfulness depends on union with Christ."
+      },
+      {
+        "paragraphId": "GS-43",
+        "focusNl": "De scheiding tussen geloof en dagelijks leven.",
+        "focusEn": "The split between faith and daily life."
       }
     ],
     "claims": [
@@ -845,7 +978,7 @@
     "id": "church-world",
     "icon": "globe",
     "level": "core",
-    "minutes": 30,
+    "minutes": 50,
     "titleNl": "Kerk en wereld: geweten, huwelijk, vrede",
     "titleEn": "Church and world: conscience, marriage, peace",
     "taglineNl": "Gaudium et Spes over de mens, de cultuur en de samenleving.",
@@ -874,9 +1007,19 @@
         "focusEn": "The signs of the times, in the light of the Gospel."
       },
       {
+        "paragraphId": "GS-14",
+        "focusNl": "De mens is één, uit lichaam en ziel.",
+        "focusEn": "The human person is one, body and soul."
+      },
+      {
         "paragraphId": "GS-16",
         "focusNl": "Het geweten ontvangt een wet.",
         "focusEn": "Conscience receives a law."
+      },
+      {
+        "paragraphId": "GS-17",
+        "focusNl": "Vrijheid als teken van het beeld van God.",
+        "focusEn": "Freedom as a sign of God's image."
       },
       {
         "paragraphId": "GS-19",
@@ -894,9 +1037,24 @@
         "focusEn": "Finding oneself through a sincere gift of self."
       },
       {
+        "paragraphId": "GS-26",
+        "focusNl": "Het algemeen welzijn.",
+        "focusEn": "The common good."
+      },
+      {
+        "paragraphId": "GS-27",
+        "focusNl": "Wat de menselijke waardigheid schendt.",
+        "focusEn": "What violates human dignity."
+      },
+      {
         "paragraphId": "GS-36",
         "focusNl": "De juiste autonomie van de aardse werkelijkheden.",
         "focusEn": "The rightful autonomy of earthly affairs."
+      },
+      {
+        "paragraphId": "GS-39",
+        "focusNl": "Nieuwe aarde en zorg voor deze aarde.",
+        "focusEn": "New earth and care for this one."
       },
       {
         "paragraphId": "GS-48",
@@ -914,6 +1072,26 @@
         "focusEn": "Protection of life from conception."
       },
       {
+        "paragraphId": "GS-69",
+        "focusNl": "De universele bestemming van de goederen.",
+        "focusEn": "The universal destination of goods."
+      },
+      {
+        "paragraphId": "GS-76",
+        "focusNl": "Kerk en politieke gemeenschap.",
+        "focusEn": "Church and political community."
+      },
+      {
+        "paragraphId": "GS-78",
+        "focusNl": "Vrede als werk van gerechtigheid.",
+        "focusEn": "Peace as an enterprise of justice."
+      },
+      {
+        "paragraphId": "GS-79",
+        "focusNl": "Het recht op wettige zelfverdediging.",
+        "focusEn": "The right to lawful self-defence."
+      },
+      {
         "paragraphId": "GS-80",
         "focusNl": "Veroordeling van totale oorlog.",
         "focusEn": "Condemnation of total war."
@@ -922,10 +1100,13 @@
     "claims": [
       "conscience-autonomous",
       "silent-on-atheism",
-      "abortion-teaching-changed"
+      "abortion-teaching-changed",
+      "council-pacifist"
     ],
     "terms": [
-      "tekenen des tijds"
+      "tekenen des tijds",
+      "algemeen welzijn (bonum commune)",
+      "universele bestemming van de goederen"
     ],
     "questionsNl": [
       "Waarom staat GS §22 aan het eind van het hoofdstuk over de menselijke waardigheid?",
@@ -1014,9 +1195,9 @@
     "id": "priesthood-religious",
     "icon": "shepherd",
     "level": "deeper",
-    "minutes": 15,
-    "titleNl": "Priesters en religieuzen",
-    "titleEn": "Priests and religious",
+    "minutes": 30,
+    "titleNl": "Priesters, priesteropleiding en religieuzen",
+    "titleEn": "Priests, priestly formation and religious",
     "taglineNl": "Ambt, celibaat en vernieuwing van het religieuze leven.",
     "taglineEn": "Ministry, celibacy and the renewal of religious life.",
     "introNl": "Na de grote constituties wijdde het Concilie decreten aan bisschoppen, priesters, priesteropleiding en religieuzen. Dit onderwerp bundelt de kernteksten: het wezenlijke onderscheid van het gewijde ambt, de bevestiging van het celibaat in de Latijnse Kerk en de dubbele beweging van vernieuwing in het religieuze leven.",
@@ -1038,9 +1219,34 @@
         "focusEn": "In essence and not only in degree."
       },
       {
+        "paragraphId": "PO-2",
+        "focusNl": "Handelen in de persoon van Christus het Hoofd.",
+        "focusEn": "Acting in the person of Christ the Head."
+      },
+      {
         "paragraphId": "PO-16",
         "focusNl": "Celibaat: hoog gewaardeerd, bevestigd, niet uit de aard van het priesterschap.",
         "focusEn": "Celibacy: highly valued, confirmed, not from the nature of priesthood."
+      },
+      {
+        "paragraphId": "OT-1",
+        "focusNl": "Vernieuwing van de Kerk hangt af van de priesters.",
+        "focusEn": "Renewal of the Church depends on priests."
+      },
+      {
+        "paragraphId": "OT-2",
+        "focusNl": "Roepingen: taak van heel de gemeenschap.",
+        "focusEn": "Vocations: the task of the whole community."
+      },
+      {
+        "paragraphId": "OT-10",
+        "focusNl": "Vorming tot het celibaat.",
+        "focusEn": "Formation for celibacy."
+      },
+      {
+        "paragraphId": "OT-16",
+        "focusNl": "Theologie: Schrift, kerkvaders, dan Thomas.",
+        "focusEn": "Theology: Scripture, the Fathers, then Thomas."
       },
       {
         "paragraphId": "PC-2",
@@ -1058,7 +1264,8 @@
     ],
     "terms": [
       "gemeenschappelijk priesterschap",
-      "ressourcement"
+      "ressourcement",
+      "in persona Christi capitis"
     ],
     "questionsNl": [
       "Waarom is de volgorde in PC §2 (eerst bronnen, dan aanpassing) belangrijk?",
@@ -1076,6 +1283,261 @@
       },
       {
         "citation": "John Paul II. (1992). Pastores dabo vobis [Post-synodal apostolic exhortation on the formation of priests]. Libreria Editrice Vaticana."
+      }
+    ]
+  },
+  {
+    "id": "development",
+    "icon": "sprout",
+    "level": "deeper",
+    "minutes": 25,
+    "titleNl": "Ontwikkeling van de leer",
+    "titleEn": "Development of doctrine",
+    "taglineNl": "Hoe de Kerk kan groeien in begrip zonder te breken met wat zij ontving.",
+    "taglineEn": "How the Church can grow in understanding without breaking with what she received.",
+    "introNl": "Wie Vaticanum II wil begrijpen, moet weten hoe de Kerk zelf over verandering denkt. Het Concilie spreekt over groei in inzicht, over hervorming van formuleringen en over organische ontwikkeling, maar sluit nieuwe openbaring en verandering van betekenis uit. Dit onderwerp legt de teksten naast elkaar die samen die grens trekken.",
+    "introEn": "To understand Vatican II you need to know how the Church herself thinks about change. The Council speaks of growth in understanding, of reform of formulations and of organic development, but excludes new revelation and change of meaning. This subject sets side by side the texts that together draw that line.",
+    "objectivesNl": [
+      "Groei in inzicht onderscheiden van verandering van inhoud.",
+      "Uitleggen wat 'organische ontwikkeling' betekent in SC §23 en OE §6.",
+      "Het verband leggen tussen deze teksten en het hermeneutiekdebat."
+    ],
+    "objectivesEn": [
+      "Distinguish growth in understanding from change of content.",
+      "Explain what 'organic development' means in SC §23 and OE §6.",
+      "Connect these texts to the hermeneutics debate."
+    ],
+    "steps": [
+      {
+        "paragraphId": "DV-4",
+        "focusNl": "Geen nieuwe openbare openbaring.",
+        "focusEn": "No new public revelation."
+      },
+      {
+        "paragraphId": "DV-8",
+        "focusNl": "Groei in het inzicht, onder bijstand van de Geest.",
+        "focusEn": "Growth in understanding, with the help of the Spirit."
+      },
+      {
+        "paragraphId": "DV-10",
+        "focusNl": "Het leergezag leert alleen wat overgeleverd is.",
+        "focusEn": "The magisterium teaches only what has been handed down."
+      },
+      {
+        "paragraphId": "UR-6",
+        "focusNl": "Hervorming van gebreken en formuleringen, niet van de geloofsschat.",
+        "focusEn": "Reform of deficiencies and formulations, not of the deposit of faith."
+      },
+      {
+        "paragraphId": "UR-11",
+        "focusNl": "Hiërarchie van waarheden.",
+        "focusEn": "Hierarchy of truths."
+      },
+      {
+        "paragraphId": "SC-21",
+        "focusNl": "Onveranderlijke en veranderlijke elementen.",
+        "focusEn": "Immutable and changeable elements."
+      },
+      {
+        "paragraphId": "SC-23",
+        "focusNl": "Organische groei uit bestaande vormen.",
+        "focusEn": "Organic growth from existing forms."
+      },
+      {
+        "paragraphId": "OE-6",
+        "focusNl": "Alleen organische ontwikkeling van de oosterse riten.",
+        "focusEn": "Only organic development of the Eastern rites."
+      },
+      {
+        "paragraphId": "DH-1",
+        "focusNl": "Een nieuwe verklaring die zegt de oude leer onaangetast te laten.",
+        "focusEn": "A new declaration that says it leaves the old doctrine untouched."
+      },
+      {
+        "paragraphId": "PC-2",
+        "focusNl": "Terug naar de bronnen en aanpassing.",
+        "focusEn": "Return to the sources and adaptation."
+      }
+    ],
+    "claims": [
+      "doctrine-changes",
+      "religious-liberty-reversal",
+      "new-church-broke-with-trent"
+    ],
+    "terms": [
+      "ontwikkeling van de leer",
+      "ressourcement",
+      "aggiornamento",
+      "hermeneutiek van continuïteit / discontinuïteit"
+    ],
+    "questionsNl": [
+      "Wat is het verschil tussen een nieuwe formulering en een nieuwe leer?",
+      "Is DH §1 een geslaagd voorbeeld van ontwikkeling, of een bewering die de tekst niet waarmaakt?",
+      "Welke criteria zou je gebruiken om 'organische' van 'kunstmatige' ontwikkeling te onderscheiden?"
+    ],
+    "questionsEn": [
+      "What is the difference between a new formulation and a new doctrine?",
+      "Is DH §1 a successful example of development, or a claim the text does not deliver?",
+      "What criteria would you use to tell 'organic' from 'artificial' development?"
+    ],
+    "furtherReading": [
+      {
+        "citation": "Newman, J. H. (1845). An essay on the development of Christian doctrine. James Toovey."
+      },
+      {
+        "citation": "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana."
+      }
+    ]
+  },
+  {
+    "id": "eastern-churches",
+    "icon": "sunrise",
+    "level": "deeper",
+    "minutes": 20,
+    "titleNl": "De oosterse Kerken",
+    "titleEn": "The Eastern Churches",
+    "taglineNl": "Gelijke waardigheid van riten, en de weg naar het christelijk Oosten.",
+    "taglineEn": "Equal dignity of rites, and the way toward the Christian East.",
+    "introNl": "De Katholieke Kerk is meer dan de Latijnse Kerk. Orientalium Ecclesiarum erkent de oosters-katholieke Kerken als gelijkwaardig en vraagt hen hun eigen tradities te bewaren. Samen met Unitatis Redintegratio opent het decreet ook de deur naar de orthodoxe Kerken: op dezelfde dag als de laatste afkondigingen hieven Paulus VI en patriarch Athenagoras de excommunicaties van 1054 op.",
+    "introEn": "The Catholic Church is more than the Latin Church. Orientalium Ecclesiarum recognises the Eastern Catholic Churches as equal and asks them to keep their own traditions. Together with Unitatis Redintegratio, the decree also opens the door to the Orthodox Churches: on the day of the final promulgations, Paul VI and Patriarch Athenagoras lifted the excommunications of 1054.",
+    "objectivesNl": [
+      "Uitleggen wat een particuliere Kerk of ritus is (OE §2).",
+      "De gelijke waardigheid van de riten weergeven (OE §3).",
+      "Beschrijven onder welke voorwaarden sacramentele gemeenschap met oosterse christenen mogelijk is."
+    ],
+    "objectivesEn": [
+      "Explain what a particular Church or rite is (OE §2).",
+      "Summarise the equal dignity of the rites (OE §3).",
+      "Describe under which conditions sacramental sharing with Eastern Christians is possible."
+    ],
+    "steps": [
+      {
+        "paragraphId": "OE-1",
+        "focusNl": "Waardering voor de oosterse tradities.",
+        "focusEn": "Esteem for the Eastern traditions."
+      },
+      {
+        "paragraphId": "OE-2",
+        "focusNl": "Eén Kerk, meerdere particuliere Kerken.",
+        "focusEn": "One Church, several particular Churches."
+      },
+      {
+        "paragraphId": "OE-3",
+        "focusNl": "Gelijke waardigheid van de riten.",
+        "focusEn": "Equal dignity of the rites."
+      },
+      {
+        "paragraphId": "OE-6",
+        "focusNl": "Eigen ritus bewaren; alleen organische ontwikkeling.",
+        "focusEn": "Keep one's own rite; only organic development."
+      },
+      {
+        "paragraphId": "OE-27",
+        "focusNl": "Sacramenten voor gescheiden oosterse christenen.",
+        "focusEn": "Sacraments for separated Eastern Christians."
+      },
+      {
+        "paragraphId": "UR-4",
+        "focusNl": "De eenheid die de Kerk nooit kan verliezen.",
+        "focusEn": "The unity the Church can never lose."
+      }
+    ],
+    "claims": [],
+    "terms": [
+      "geestelijke oecumene"
+    ],
+    "questionsNl": [
+      "Waarom was het voor het Concilie belangrijk de 'voorrang van de Latijnse ritus' los te laten?",
+      "Wat leert de oosterse traditie over de verhouding tussen eenheid en verscheidenheid?",
+      "Hoe verhoudt OE §27 zich tot UR §8 over de ziel van de oecumene?"
+    ],
+    "questionsEn": [
+      "Why did it matter to the Council to abandon the 'precedence of the Latin rite'?",
+      "What does the Eastern tradition teach about the relation between unity and diversity?",
+      "How does OE §27 relate to UR §8 on the soul of ecumenism?"
+    ],
+    "furtherReading": [
+      {
+        "citation": "John Paul II. (1995). Orientale lumen [Apostolic letter]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "John Paul II. (1995). Ut unum sint [Encyclical letter on commitment to ecumenism]. Libreria Editrice Vaticana."
+      }
+    ]
+  },
+  {
+    "id": "media-education",
+    "icon": "radio",
+    "level": "deeper",
+    "minutes": 15,
+    "titleNl": "Opvoeding en media",
+    "titleEn": "Education and the media",
+    "taglineNl": "Ouders als eerste opvoeders, en de Kerk in het tijdperk van de massamedia.",
+    "taglineEn": "Parents as first educators, and the Church in the age of mass media.",
+    "introNl": "Twee kortere documenten, Inter Mirifica en Gravissimum Educationis, behandelen hoe geloof en kennis worden doorgegeven. Het eerste was in 1963 het meest bekritiseerde document van het Concilie; het tweede legt de nadruk op het recht van ieder op opvoeding en op de eerste verantwoordelijkheid van ouders. Beide vragen inzet van leken.",
+    "introEn": "Two shorter documents, Inter Mirifica and Gravissimum Educationis, deal with how faith and knowledge are passed on. The first was, in 1963, the most criticised document of the Council; the second stresses everyone's right to education and the primary responsibility of parents. Both call for lay engagement.",
+    "objectivesNl": [
+      "Uitleggen waarom de Kerk de media als middel van verkondiging ziet (IM §3).",
+      "Het recht op opvoeding en de rol van ouders weergeven (GE §1, §3).",
+      "De oorsprong van de Wereldcommunicatiedag noemen."
+    ],
+    "objectivesEn": [
+      "Explain why the Church sees the media as a means of proclamation (IM §3).",
+      "Summarise the right to education and the role of parents (GE §1, §3).",
+      "Name the origin of World Communications Day."
+    ],
+    "steps": [
+      {
+        "paragraphId": "IM-1",
+        "focusNl": "Waardering voor nieuwe communicatiemiddelen.",
+        "focusEn": "Esteem for new means of communication."
+      },
+      {
+        "paragraphId": "IM-3",
+        "focusNl": "De media in dienst van de verkondiging.",
+        "focusEn": "The media in the service of proclamation."
+      },
+      {
+        "paragraphId": "IM-18",
+        "focusNl": "Een jaarlijkse dag voor de media.",
+        "focusEn": "An annual day for the media."
+      },
+      {
+        "paragraphId": "GE-1",
+        "focusNl": "Het onvervreemdbare recht op opvoeding.",
+        "focusEn": "The inalienable right to education."
+      },
+      {
+        "paragraphId": "GE-3",
+        "focusNl": "Ouders als eerste opvoeders.",
+        "focusEn": "Parents as first educators."
+      },
+      {
+        "paragraphId": "GS-50",
+        "focusNl": "Kinderen als voortreffelijkste geschenk van het huwelijk.",
+        "focusEn": "Children as the supreme gift of marriage."
+      }
+    ],
+    "claims": [],
+    "terms": [
+      "Wereldcommunicatiedag"
+    ],
+    "questionsNl": [
+      "Wat zou IM §3 betekenen in het tijdperk van sociale media?",
+      "Waarom noemt GE §3 ouders de 'eerste en voornaamste' opvoeders, vóór school en staat?",
+      "Waarom werd Inter Mirifica in 1963 als te oppervlakkig gezien?"
+    ],
+    "questionsEn": [
+      "What would IM §3 mean in the age of social media?",
+      "Why does GE §3 call parents the 'primary and principal' educators, before school and state?",
+      "Why was Inter Mirifica seen as superficial in 1963?"
+    ],
+    "furtherReading": [
+      {
+        "citation": "Pontifical Council for Social Communications. (1971). Communio et progressio [Pastoral instruction]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "John Paul II. (1981). Familiaris consortio [Apostolic exhortation]. Libreria Editrice Vaticana."
       }
     ]
   }

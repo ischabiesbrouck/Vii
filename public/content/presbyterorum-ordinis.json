@@ -5,6 +5,23 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "PO-2",
+      "docId": "presbyterorum-ordinis",
+      "number": 2,
+      "textEn": "… the priesthood of priests … is conferred by that special sacrament; through it priests, by the anointing of the Holy Spirit, are signed with a special character and are conformed to Christ the Priest in such a way that they can act in the person of Christ the Head.",
+      "textNl": "… het priesterschap van de priesters … wordt verleend door een bijzonder sacrament, waardoor de priesters door de zalving van de heilige Geest met een bijzonder merkteken getekend worden en aan Christus de Priester gelijkvormig worden, zodat zij kunnen handelen in de persoon van Christus het Hoofd.",
+      "textLa": "… ita ut in persona Christi Capitis agere valeant.",
+      "tags": [
+        "priesthood",
+        "in-persona-christi",
+        "sacraments"
+      ],
+      "crossRefs": [
+        "LG-10",
+        "LG-21"
+      ]
+    },
+    {
       "id": "PO-16",
       "docId": "presbyterorum-ordinis",
       "number": 16,

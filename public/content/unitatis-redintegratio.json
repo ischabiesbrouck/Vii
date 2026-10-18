@@ -40,6 +40,54 @@
       "noteEn": "Earlier in §3 the text acknowledges that the separated Churches and communities are 'by no means deprived of significance and importance' in the mystery of salvation."
     },
     {
+      "id": "UR-4",
+      "docId": "unitatis-redintegratio",
+      "number": 4,
+      "textEn": "… we believe that the unity of the one and only Church, which Christ bestowed on it from the beginning … subsists in the Catholic Church as something she can never lose …",
+      "textNl": "… wij geloven dat de eenheid van de ene en enige Kerk, die Christus haar vanaf het begin geschonken heeft, … in de Katholieke Kerk aanwezig is (subsistere) als iets wat zij nooit kan verliezen …",
+      "tags": [
+        "ecumenism",
+        "unity",
+        "subsistit-in"
+      ],
+      "crossRefs": [
+        "LG-8",
+        "UR-3"
+      ]
+    },
+    {
+      "id": "UR-6",
+      "docId": "unitatis-redintegratio",
+      "number": 6,
+      "textEn": "Christ summons the Church to continual reformation as she sojourns here on earth. The Church is always in need of this, in so far as she is an institution of men here on earth.",
+      "textNl": "Christus roept de Kerk op haar pelgrimstocht op tot voortdurende hervorming, die zij als menselijke en aardse instelling altijd nodig heeft.",
+      "tags": [
+        "reform",
+        "ecumenism"
+      ],
+      "crossRefs": [
+        "SC-21",
+        "DV-8"
+      ],
+      "noteNl": "De tekst vervolgt dat dit niet de geloofsschat zelf betreft, maar gebreken in zeden, kerkelijke discipline of de wijze van formuleren.",
+      "noteEn": "The text continues that this does not touch the deposit of faith itself, but deficiencies in conduct, Church discipline or the way doctrine has been formulated."
+    },
+    {
+      "id": "UR-8",
+      "docId": "unitatis-redintegratio",
+      "number": 8,
+      "textEn": "This change of heart and holiness of life, along with public and private prayer for the unity of Christians, should be regarded as the soul of the whole ecumenical movement, and merits the name, \"spiritual ecumenism.\"",
+      "textNl": "Deze bekering van hart en heiligheid van leven, samen met openbaar en persoonlijk gebed voor de eenheid van de christenen, moeten beschouwd worden als de ziel van heel de oecumenische beweging en mogen terecht 'geestelijke oecumene' genoemd worden.",
+      "tags": [
+        "ecumenism",
+        "prayer",
+        "spirituality"
+      ],
+      "crossRefs": [
+        "UR-1"
+      ]
+    },
+    {
       "id": "UR-11",
       "docId": "unitatis-redintegratio",
       "number": 11,

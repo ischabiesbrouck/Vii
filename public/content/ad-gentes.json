@@ -38,6 +38,24 @@
         "NA-2",
         "ext:redemptoris-missio-1990"
       ]
+    },
+    {
+      "id": "AG-11",
+      "docId": "ad-gentes",
+      "number": 11,
+      "textEn": "… let them gladly and reverently lay bare the seeds of the Word which lie hidden among them.",
+      "textNl": "… laten zij met vreugde en eerbied de zaden van het Woord ontdekken die daarin verborgen liggen.",
+      "tags": [
+        "mission",
+        "non-christians",
+        "semina-verbi"
+      ],
+      "crossRefs": [
+        "NA-2",
+        "AG-7"
+      ],
+      "noteNl": "'Zaden van het Woord' (semina Verbi) is een uitdrukking van Justinus de Martelaar (2e eeuw).",
+      "noteEn": "'Seeds of the Word' (semina Verbi) is an expression of Justin Martyr (2nd century)."
     }
   ]
 }

@@ -29,6 +29,21 @@
       "crossRefs": []
     },
     {
+      "id": "GS-14",
+      "docId": "gaudium-et-spes",
+      "number": 14,
+      "textEn": "Though made of body and soul, man is one.",
+      "textNl": "De mens is één, uit lichaam en ziel.",
+      "textLa": "Corpore et anima unus …",
+      "tags": [
+        "anthropology",
+        "body"
+      ],
+      "crossRefs": [
+        "GS-22"
+      ]
+    },
+    {
       "id": "GS-16",
       "docId": "gaudium-et-spes",
       "number": 16,
@@ -46,6 +61,21 @@
       ],
       "noteNl": "§16 beschrijft het geweten als ontvanger van een wet, niet als bron ervan.",
       "noteEn": "§16 describes conscience as the recipient of a law, not its source."
+    },
+    {
+      "id": "GS-17",
+      "docId": "gaudium-et-spes",
+      "number": 17,
+      "textEn": "Only in freedom can man direct himself toward goodness. … Authentic freedom is an exceptional sign of the divine image within man.",
+      "textNl": "Alleen in vrijheid kan de mens zich tot het goede wenden. … De ware vrijheid is een uitzonderlijk teken van het beeld van God in de mens.",
+      "tags": [
+        "freedom",
+        "anthropology"
+      ],
+      "crossRefs": [
+        "DH-2",
+        "GS-16"
+      ]
     },
     {
       "id": "GS-19",
@@ -110,6 +140,39 @@
       ]
     },
     {
+      "id": "GS-26",
+      "docId": "gaudium-et-spes",
+      "number": 26,
+      "textEn": "… the common good, that is, the sum of those conditions of social life which allow social groups and their individual members relatively thorough and ready access to their own fulfillment …",
+      "textNl": "… het algemeen welzijn, dat wil zeggen het geheel van die voorwaarden van het sociale leven die zowel groepen als individuen in staat stellen vollediger en gemakkelijker hun eigen vervolmaking te bereiken …",
+      "tags": [
+        "common-good",
+        "social-teaching"
+      ],
+      "crossRefs": [
+        "GS-69",
+        "DH-7"
+      ]
+    },
+    {
+      "id": "GS-27",
+      "docId": "gaudium-et-spes",
+      "number": 27,
+      "textEn": "Furthermore, whatever is opposed to life itself, such as any type of murder, genocide, abortion, euthanasia or wilful self-destruction, whatever violates the integrity of the human person, such as mutilation, torments inflicted on body or mind, attempts to coerce the will itself; whatever insults human dignity, such as subhuman living conditions, arbitrary imprisonment, deportation, slavery, prostitution, the selling of women and children; as well as disgraceful working conditions … all these things and others of their like are infamies indeed.",
+      "textNl": "Verder: alles wat tegen het leven zelf ingaat, zoals elke vorm van moord, genocide, abortus, euthanasie en vrijwillige zelfdoding; alles wat de integriteit van de menselijke persoon schendt, zoals verminking, lichamelijke of geestelijke foltering en pogingen de wil zelf te dwingen; alles wat de menselijke waardigheid aantast, zoals mensonwaardige levensomstandigheden, willekeurige gevangenneming, deportatie, slavernij, prostitutie, handel in vrouwen en kinderen, en ook onwaardige arbeidsomstandigheden … dit alles en dergelijke zijn schandelijke praktijken.",
+      "tags": [
+        "human-dignity",
+        "life",
+        "social-teaching"
+      ],
+      "crossRefs": [
+        "GS-51",
+        "GS-24"
+      ],
+      "noteNl": "Eén lijst die leven, integriteit en sociale waardigheid samen noemt; selectief citeren uit één van de drie reeksen vertekent de tekst.",
+      "noteEn": "One list naming life, integrity and social dignity together; quoting from only one of the three series distorts the text."
+    },
+    {
       "id": "GS-36",
       "docId": "gaudium-et-spes",
       "number": 36,
@@ -123,6 +186,37 @@
       "crossRefs": [
         "GS-4",
         "GS-22"
+      ]
+    },
+    {
+      "id": "GS-39",
+      "docId": "gaudium-et-spes",
+      "number": 39,
+      "textEn": "… the expectation of a new earth must not weaken but rather stimulate our concern for cultivating this one.",
+      "textNl": "… de verwachting van een nieuwe aarde mag de zorg om deze aarde niet verzwakken, maar moet haar juist aanwakkeren.",
+      "tags": [
+        "eschatology",
+        "work",
+        "church-and-world"
+      ],
+      "crossRefs": [
+        "LG-48",
+        "GS-36"
+      ]
+    },
+    {
+      "id": "GS-43",
+      "docId": "gaudium-et-spes",
+      "number": 43,
+      "textEn": "This split between the faith which many profess and their daily lives deserves to be counted among the more serious errors of our age.",
+      "textNl": "Deze scheiding tussen het geloof dat velen belijden en hun dagelijks leven moet tot de ernstigste dwalingen van onze tijd gerekend worden.",
+      "tags": [
+        "laity",
+        "faith-and-life"
+      ],
+      "crossRefs": [
+        "LG-31",
+        "AA-2"
       ]
     },
     {
@@ -173,6 +267,70 @@
         "GS-48",
         "ext:casti-connubii-1930"
       ]
+    },
+    {
+      "id": "GS-69",
+      "docId": "gaudium-et-spes",
+      "number": 69,
+      "textEn": "God intended the earth with everything contained in it for the use of all human beings and peoples.",
+      "textNl": "God heeft de aarde met alles wat zij bevat bestemd voor het gebruik door alle mensen en volken.",
+      "tags": [
+        "universal-destination",
+        "property",
+        "social-teaching"
+      ],
+      "crossRefs": [
+        "GS-26"
+      ]
+    },
+    {
+      "id": "GS-76",
+      "docId": "gaudium-et-spes",
+      "number": 76,
+      "textEn": "The Church and the political community in their own fields are autonomous and independent from each other. Yet both, under different titles, are devoted to the personal and social vocation of the same men.",
+      "textNl": "Kerk en politieke gemeenschap zijn elk op hun eigen terrein onafhankelijk en autonoom. Maar beide staan, zij het op verschillende titel, in dienst van de persoonlijke en sociale roeping van dezelfde mensen.",
+      "tags": [
+        "church-and-state",
+        "politics"
+      ],
+      "crossRefs": [
+        "DH-1",
+        "DH-2",
+        "GS-36"
+      ]
+    },
+    {
+      "id": "GS-78",
+      "docId": "gaudium-et-spes",
+      "number": 78,
+      "textEn": "Peace is not merely the absence of war; nor can it be reduced solely to the maintenance of a balance of power between enemies; nor is it brought about by dictatorship. Instead, it is rightly and appropriately called an enterprise of justice.",
+      "textNl": "Vrede is niet louter de afwezigheid van oorlog, noch kan zij herleid worden tot het handhaven van een machtsevenwicht tussen tegenstanders, noch komt zij voort uit een heerschappij van geweld; zij wordt terecht een 'werk van gerechtigheid' genoemd.",
+      "tags": [
+        "peace",
+        "justice"
+      ],
+      "crossRefs": [
+        "GS-79",
+        "GS-80"
+      ]
+    },
+    {
+      "id": "GS-79",
+      "docId": "gaudium-et-spes",
+      "number": 79,
+      "textEn": "… as long as the danger of war remains and there is no competent and sufficiently powerful authority at the international level, governments cannot be denied the right to lawful self-defense, once every means of peaceful settlement has been exhausted.",
+      "textNl": "… zolang het gevaar van oorlog blijft bestaan en er geen bevoegd internationaal gezag met voldoende macht is, kan aan regeringen het recht op wettige zelfverdediging niet ontzegd worden, nadat alle middelen tot vreedzame regeling zijn uitgeput.",
+      "tags": [
+        "peace",
+        "war",
+        "self-defense"
+      ],
+      "crossRefs": [
+        "GS-78",
+        "GS-80"
+      ],
+      "noteNl": "Dezelfde paragraaf vraagt wetten die gewetensbezwaarden tegen wapengebruik humaan behandelen.",
+      "noteEn": "The same paragraph asks for laws that make humane provision for conscientious objectors to bearing arms."
     },
     {
       "id": "GS-80",

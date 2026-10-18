@@ -5,6 +5,21 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "GE-1",
+      "docId": "gravissimum-educationis",
+      "number": 1,
+      "textEn": "All men of every race, condition and age, since they enjoy the dignity of a human being, have an inalienable right to an education that is in keeping with their ultimate goal …",
+      "textNl": "Alle mensen, van welk ras, welke stand of leeftijd ook, hebben krachtens hun waardigheid als persoon een onvervreemdbaar recht op opvoeding die beantwoordt aan hun eigen doel …",
+      "tags": [
+        "education",
+        "human-dignity"
+      ],
+      "crossRefs": [
+        "GE-3",
+        "GS-26"
+      ]
+    },
+    {
       "id": "GE-3",
       "docId": "gravissimum-educationis",
       "number": 3,

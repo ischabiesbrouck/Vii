@@ -6,17 +6,39 @@
     "heardFrom": "secular-media",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "SC-36", "relevance": "Stelt als regel dat het Latijn in de Latijnse riten behouden blijft; uitbreiding van de volkstaal is een mogelijkheid.", "relevanceEn": "Sets as the rule that Latin is preserved in the Latin rites; extending the vernacular is a possibility." },
-      { "paragraphId": "SC-54", "relevance": "Vraagt dat gelovigen de vaste misgezangen ook in het Latijn kunnen zeggen of zingen.", "relevanceEn": "Asks that the faithful be able to say or sing the Ordinary of the Mass in Latin as well." },
-      { "paragraphId": "SC-101", "relevance": "Clerici behouden het Latijn in het getijdengebed.", "relevanceEn": "Clerics retain Latin in the divine office." },
-      { "paragraphId": "SC-116", "relevance": "Het gregoriaans, Latijns gezang, krijgt de eerste plaats.", "relevanceEn": "Gregorian chant, which is sung in Latin, receives pride of place." }
+      {
+        "paragraphId": "SC-36",
+        "relevance": "Stelt als regel dat het Latijn in de Latijnse riten behouden blijft; uitbreiding van de volkstaal is een mogelijkheid.",
+        "relevanceEn": "Sets as the rule that Latin is preserved in the Latin rites; extending the vernacular is a possibility."
+      },
+      {
+        "paragraphId": "SC-54",
+        "relevance": "Vraagt dat gelovigen de vaste misgezangen ook in het Latijn kunnen zeggen of zingen.",
+        "relevanceEn": "Asks that the faithful be able to say or sing the Ordinary of the Mass in Latin as well."
+      },
+      {
+        "paragraphId": "SC-101",
+        "relevance": "Clerici behouden het Latijn in het getijdengebed.",
+        "relevanceEn": "Clerics retain Latin in the divine office."
+      },
+      {
+        "paragraphId": "SC-116",
+        "relevance": "Het gregoriaans, Latijns gezang, krijgt de eerste plaats.",
+        "relevanceEn": "Gregorian chant, which is sung in Latin, receives pride of place."
+      }
     ],
     "explanationNl": "Geen enkel conciliedocument schaft het Latijn af. SC opent de mogelijkheid tot meer volkstaal, onder gezag van de bisschoppen en de Apostolische Stoel. De vrijwel volledige overgang naar de volkstaal is het gevolg van latere uitvoeringsbesluiten (1964–1971) en van de praktijk, niet van de tekst van het Concilie. Of die ontwikkeling de bedoeling van de concilievaders weergaf, is een historische vraag die hier niet beslist wordt.",
     "explanationEn": "No conciliar document abolishes Latin. SC opens the possibility of more vernacular, under the authority of the bishops and the Apostolic See. The near-total shift to the vernacular resulted from later implementing decisions (1964–1971) and from practice, not from the text of the Council. Whether that development reflected the intention of the Council Fathers is a historical question not decided here.",
     "furtherReading": [
-      { "citation": "John XXIII. (1962). Veterum sapientia [Apostolic constitution on the promotion of the study of Latin]. Libreria Editrice Vaticana." },
-      { "citation": "Reid, A. (2005). The organic development of the liturgy (2nd ed.). Ignatius Press." },
-      { "citation": "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press." }
+      {
+        "citation": "John XXIII. (1962). Veterum sapientia [Apostolic constitution on the promotion of the study of Latin]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Reid, A. (2005). The organic development of the liturgy (2nd ed.). Ignatius Press."
+      },
+      {
+        "citation": "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press."
+      }
     ]
   },
   {
@@ -26,18 +48,45 @@
     "heardFrom": "progressive-reading",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "LG-14", "relevance": "De Kerk is noodzakelijk tot heil; wie dat weet en weigert, kan niet gered worden.", "relevanceEn": "The Church is necessary for salvation; whoever knows this and refuses cannot be saved." },
-      { "paragraphId": "LG-16", "relevance": "Heil is mogelijk voor wie buiten eigen schuld het evangelie niet kent en God oprecht zoekt — en de paragraaf wijst ook op dwaling en de plicht tot verkondiging.", "relevanceEn": "Salvation is possible for those who through no fault of their own do not know the Gospel and sincerely seek God — the paragraph also points to error and the duty to preach." },
-      { "paragraphId": "NA-2", "relevance": "Waardering voor wat waar en heilig is in andere godsdiensten, samen met de plicht Christus als de weg te verkondigen.", "relevanceEn": "Esteem for what is true and holy in other religions, together with the duty to proclaim Christ as the way." },
-      { "paragraphId": "DH-1", "relevance": "De ene ware godsdienst is verwerkelijkt in de katholieke en apostolische Kerk.", "relevanceEn": "The one true religion subsists in the Catholic and Apostolic Church." },
-      { "paragraphId": "AG-7", "relevance": "Gods mogelijkheden buiten de Kerk heffen de noodzaak van verkondiging niet op.", "relevanceEn": "God's ways outside the Church do not remove the necessity of preaching." }
+      {
+        "paragraphId": "LG-14",
+        "relevance": "De Kerk is noodzakelijk tot heil; wie dat weet en weigert, kan niet gered worden.",
+        "relevanceEn": "The Church is necessary for salvation; whoever knows this and refuses cannot be saved."
+      },
+      {
+        "paragraphId": "LG-16",
+        "relevance": "Heil is mogelijk voor wie buiten eigen schuld het evangelie niet kent en God oprecht zoekt — en de paragraaf wijst ook op dwaling en de plicht tot verkondiging.",
+        "relevanceEn": "Salvation is possible for those who through no fault of their own do not know the Gospel and sincerely seek God — the paragraph also points to error and the duty to preach."
+      },
+      {
+        "paragraphId": "NA-2",
+        "relevance": "Waardering voor wat waar en heilig is in andere godsdiensten, samen met de plicht Christus als de weg te verkondigen.",
+        "relevanceEn": "Esteem for what is true and holy in other religions, together with the duty to proclaim Christ as the way."
+      },
+      {
+        "paragraphId": "DH-1",
+        "relevance": "De ene ware godsdienst is verwerkelijkt in de katholieke en apostolische Kerk.",
+        "relevanceEn": "The one true religion subsists in the Catholic and Apostolic Church."
+      },
+      {
+        "paragraphId": "AG-7",
+        "relevance": "Gods mogelijkheden buiten de Kerk heffen de noodzaak van verkondiging niet op.",
+        "relevanceEn": "God's ways outside the Church do not remove the necessity of preaching."
+      }
     ],
     "explanationNl": "De teksten combineren twee beweringen: elementen van waarheid buiten de Kerk worden erkend, en heil blijft mogelijk voor wie onschuldig onwetend is; tegelijk wordt de noodzaak van de Kerk en van de verkondiging van Christus herhaald. Gelijkwaardigheid van godsdiensten als heilswegen staat nergens in de tekst. De CDF-verklaring Dominus Iesus (2000) bevestigt deze lezing uitdrukkelijk.",
     "explanationEn": "The texts combine two claims: elements of truth outside the Church are acknowledged and salvation remains possible for the inculpably ignorant; at the same time the necessity of the Church and of proclaiming Christ is restated. The equality of religions as paths of salvation is not in the text. The CDF declaration Dominus Iesus (2000) confirms this reading explicitly.",
     "furtherReading": [
-      { "citation": "Congregation for the Doctrine of the Faith. (2000). Dominus Iesus: On the unicity and salvific universality of Jesus Christ and the Church. Libreria Editrice Vaticana.", "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20000806_dominus-iesus_en.html" },
-      { "citation": "John Paul II. (1990). Redemptoris missio [Encyclical letter]. Libreria Editrice Vaticana." },
-      { "citation": "Sullivan, F. A. (1992). Salvation outside the Church? Tracing the history of the Catholic response. Paulist Press." }
+      {
+        "citation": "Congregation for the Doctrine of the Faith. (2000). Dominus Iesus: On the unicity and salvific universality of Jesus Christ and the Church. Libreria Editrice Vaticana.",
+        "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20000806_dominus-iesus_en.html"
+      },
+      {
+        "citation": "John Paul II. (1990). Redemptoris missio [Encyclical letter]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Sullivan, F. A. (1992). Salvation outside the Church? Tracing the history of the Catholic response. Paulist Press."
+      }
     ]
   },
   {
@@ -47,17 +96,41 @@
     "heardFrom": "traditionalist-reading",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "LG-18", "relevance": "Leert 'in de voetsporen van het Eerste Vaticaans Concilie' en herhaalt diens leer over het primaat.", "relevanceEn": "Teaches 'following closely in the footsteps of the First Vatican Council' and restates its teaching on the primacy." },
-      { "paragraphId": "DV-1", "relevance": "Volgt uitdrukkelijk 'de voetsporen van het Concilie van Trente en van het Eerste Vaticaans Concilie'.", "relevanceEn": "Expressly follows 'in the footsteps of the Council of Trent and of the First Vatican Council'." },
-      { "paragraphId": "LG-8", "relevance": "De ene Kerk van Christus 'subsistit in' de Katholieke Kerk, bestuurd door de opvolger van Petrus.", "relevanceEn": "The one Church of Christ 'subsists in' the Catholic Church, governed by the successor of Peter." },
-      { "paragraphId": "SC-47", "relevance": "Herhaalt de offerleer van de mis.", "relevanceEn": "Restates the sacrificial doctrine of the Mass." }
+      {
+        "paragraphId": "LG-18",
+        "relevance": "Leert 'in de voetsporen van het Eerste Vaticaans Concilie' en herhaalt diens leer over het primaat.",
+        "relevanceEn": "Teaches 'following closely in the footsteps of the First Vatican Council' and restates its teaching on the primacy."
+      },
+      {
+        "paragraphId": "DV-1",
+        "relevance": "Volgt uitdrukkelijk 'de voetsporen van het Concilie van Trente en van het Eerste Vaticaans Concilie'.",
+        "relevanceEn": "Expressly follows 'in the footsteps of the Council of Trent and of the First Vatican Council'."
+      },
+      {
+        "paragraphId": "LG-8",
+        "relevance": "De ene Kerk van Christus 'subsistit in' de Katholieke Kerk, bestuurd door de opvolger van Petrus.",
+        "relevanceEn": "The one Church of Christ 'subsists in' the Catholic Church, governed by the successor of Peter."
+      },
+      {
+        "paragraphId": "SC-47",
+        "relevance": "Herhaalt de offerleer van de mis.",
+        "relevanceEn": "Restates the sacrificial doctrine of the Mass."
+      }
     ],
     "explanationNl": "De teksten presenteren zich uitdrukkelijk als voortzetting van eerdere concilies. Dat er verschuivingen in nadruk, taal en praktijk waren, ontkent niemand; of die op leerstellig niveau een breuk vormen, is het onderwerp van het hermeneutiekdebat (zie /hermeneutics). De tekst zelf claimt geen nieuwe Kerk. De CDF-Responsa (2007) stellen dat het Concilie de katholieke leer over de Kerk niet heeft veranderd.",
     "explanationEn": "The texts expressly present themselves as continuing earlier councils. No one denies shifts in emphasis, language and practice; whether these amount to a doctrinal rupture is the subject of the hermeneutics debate (see /hermeneutics). The text itself claims no new Church. The CDF Responsa (2007) state that the Council did not change Catholic doctrine on the Church.",
     "furtherReading": [
-      { "citation": "Congregation for the Doctrine of the Faith. (2007). Responses to some questions regarding certain aspects of the doctrine on the Church. Libreria Editrice Vaticana.", "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20070629_responsa-quaestiones_en.html" },
-      { "citation": "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.", "url": "https://www.vatican.va/content/benedict-xvi/en/speeches/2005/december/documents/hf_ben-xvi_spe_20051222_roman-curia.html" },
-      { "citation": "de Mattei, R. (2012). The Second Vatican Council: An unwritten story. Loreto Publications." }
+      {
+        "citation": "Congregation for the Doctrine of the Faith. (2007). Responses to some questions regarding certain aspects of the doctrine on the Church. Libreria Editrice Vaticana.",
+        "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20070629_responsa-quaestiones_en.html"
+      },
+      {
+        "citation": "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.",
+        "url": "https://www.vatican.va/content/benedict-xvi/en/speeches/2005/december/documents/hf_ben-xvi_spe_20051222_roman-curia.html"
+      },
+      {
+        "citation": "de Mattei, R. (2012). The Second Vatican Council: An unwritten story. Loreto Publications."
+      }
     ]
   },
   {
@@ -67,17 +140,41 @@
     "heardFrom": "secular-media",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "AA-1", "relevance": "De rol van leken is 'eigen en onvervangbaar'; de Kerk kan het lekenapostolaat nooit missen.", "relevanceEn": "The role of the laity is 'proper and indispensable'; the Church can never be without the lay apostolate." },
-      { "paragraphId": "AA-2", "relevance": "De christelijke roeping is uit haar aard roeping tot apostolaat.", "relevanceEn": "The Christian vocation is by its nature a vocation to the apostolate." },
-      { "paragraphId": "AA-3", "relevance": "Leken ontvangen recht én plicht tot apostolaat van de Heer zelf.", "relevanceEn": "The laity receive the right and duty to the apostolate from the Lord himself." },
-      { "paragraphId": "LG-31", "relevance": "Het seculiere karakter is de leken eigen: zij heiligen de wereld van binnenuit.", "relevanceEn": "The secular character is proper to the laity: they sanctify the world from within." },
-      { "paragraphId": "LG-33", "relevance": "Het lekenapostolaat is deelname aan de heilszending van de Kerk zelf.", "relevanceEn": "The lay apostolate is a participation in the saving mission of the Church itself." }
+      {
+        "paragraphId": "AA-1",
+        "relevance": "De rol van leken is 'eigen en onvervangbaar'; de Kerk kan het lekenapostolaat nooit missen.",
+        "relevanceEn": "The role of the laity is 'proper and indispensable'; the Church can never be without the lay apostolate."
+      },
+      {
+        "paragraphId": "AA-2",
+        "relevance": "De christelijke roeping is uit haar aard roeping tot apostolaat.",
+        "relevanceEn": "The Christian vocation is by its nature a vocation to the apostolate."
+      },
+      {
+        "paragraphId": "AA-3",
+        "relevance": "Leken ontvangen recht én plicht tot apostolaat van de Heer zelf.",
+        "relevanceEn": "The laity receive the right and duty to the apostolate from the Lord himself."
+      },
+      {
+        "paragraphId": "LG-31",
+        "relevance": "Het seculiere karakter is de leken eigen: zij heiligen de wereld van binnenuit.",
+        "relevanceEn": "The secular character is proper to the laity: they sanctify the world from within."
+      },
+      {
+        "paragraphId": "LG-33",
+        "relevance": "Het lekenapostolaat is deelname aan de heilszending van de Kerk zelf.",
+        "relevanceEn": "The lay apostolate is a participation in the saving mission of the Church itself."
+      }
     ],
     "explanationNl": "De teksten spreken van plicht, niet van keuze, en gronden die plicht in doopsel en vormsel. Tegelijk onderscheidt LG §10 het gemeenschappelijk van het ambtelijk priesterschap 'wezenlijk en niet slechts in graad'. Beide misverstanden — leken als bijzaak, en leken als vervanging van het gewijde ambt — vinden geen steun in de tekst.",
     "explanationEn": "The texts speak of duty, not choice, and ground that duty in baptism and confirmation. At the same time LG §10 distinguishes the common from the ministerial priesthood 'in essence and not only in degree'. Both misreadings — the laity as an afterthought, and the laity as a substitute for ordained ministry — find no support in the text.",
     "furtherReading": [
-      { "citation": "John Paul II. (1988). Christifideles laici [Post-synodal apostolic exhortation on the vocation and mission of the lay faithful]. Libreria Editrice Vaticana." },
-      { "citation": "Congar, Y. (1957). Lay people in the Church: A study for a theology of laity (D. Attwater, Trans.). Newman Press. (Original work published 1953)" }
+      {
+        "citation": "John Paul II. (1988). Christifideles laici [Post-synodal apostolic exhortation on the vocation and mission of the lay faithful]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Congar, Y. (1957). Lay people in the Church: A study for a theology of laity (D. Attwater, Trans.). Newman Press. (Original work published 1953)"
+      }
     ]
   },
   {
@@ -87,9 +184,21 @@
     "heardFrom": "progressive-reading",
     "verdict": "contested",
     "evidence": [
-      { "paragraphId": "LG-8", "relevance": "De omstreden formule zelf, met de erkenning van elementen van heiliging en waarheid buiten de zichtbare structuur.", "relevanceEn": "The disputed formula itself, with the acknowledgement of elements of sanctification and truth outside the visible structure." },
-      { "paragraphId": "UR-3", "relevance": "Alleen via de Katholieke Kerk is de volheid van de heilsmiddelen bereikbaar.", "relevanceEn": "Only through the Catholic Church can the fullness of the means of salvation be attained." },
-      { "paragraphId": "DH-1", "relevance": "Dezelfde term wordt gebruikt voor de ene ware godsdienst in de katholieke en apostolische Kerk.", "relevanceEn": "The same term is used for the one true religion in the Catholic and Apostolic Church." }
+      {
+        "paragraphId": "LG-8",
+        "relevance": "De omstreden formule zelf, met de erkenning van elementen van heiliging en waarheid buiten de zichtbare structuur.",
+        "relevanceEn": "The disputed formula itself, with the acknowledgement of elements of sanctification and truth outside the visible structure."
+      },
+      {
+        "paragraphId": "UR-3",
+        "relevance": "Alleen via de Katholieke Kerk is de volheid van de heilsmiddelen bereikbaar.",
+        "relevanceEn": "Only through the Catholic Church can the fullness of the means of salvation be attained."
+      },
+      {
+        "paragraphId": "DH-1",
+        "relevance": "Dezelfde term wordt gebruikt voor de ene ware godsdienst in de katholieke en apostolische Kerk.",
+        "relevanceEn": "The same term is used for the one true religion in the Catholic and Apostolic Church."
+      }
     ],
     "explanationNl": "Het ontwerp van 1963 zei 'est' (is); de definitieve tekst 'subsistit in'. Dat de wijziging betekenisvol is, erkennen alle partijen. Wát zij betekent, is omstreden. De magisteriële interpretatie (CDF 2007) stelt: 'subsistit' betekent dat de Kerk van Christus alleen in de Katholieke Kerk volledig en blijvend bestaat, en de wijziging dient om elementen buiten haar te erkennen — niet om de identiteit op te heffen.",
     "explanationEn": "The 1963 draft read 'est' (is); the final text 'subsistit in'. All sides agree the change is significant. What it means is disputed. The magisterial interpretation (CDF 2007) holds that 'subsistit' means the Church of Christ exists fully and permanently only in the Catholic Church, and that the change serves to acknowledge elements outside her — not to abolish the identity.",
@@ -127,7 +236,10 @@
       }
     ],
     "furtherReading": [
-      { "citation": "Congregation for the Doctrine of the Faith. (2007). Responses to some questions regarding certain aspects of the doctrine on the Church. Libreria Editrice Vaticana.", "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20070629_responsa-quaestiones_en.html" }
+      {
+        "citation": "Congregation for the Doctrine of the Faith. (2007). Responses to some questions regarding certain aspects of the doctrine on the Church. Libreria Editrice Vaticana.",
+        "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20070629_responsa-quaestiones_en.html"
+      }
     ]
   },
   {
@@ -137,10 +249,26 @@
     "heardFrom": "traditionalist-reading",
     "verdict": "contested",
     "evidence": [
-      { "paragraphId": "DH-1", "relevance": "Verklaart uitdrukkelijk dat de traditionele leer over de plicht tegenover de ware godsdienst 'onaangetast' blijft.", "relevanceEn": "Expressly declares that traditional doctrine on the duty toward the true religion is left 'untouched'." },
-      { "paragraphId": "DH-2", "relevance": "Het recht op vrijwaring van dwang, 'binnen de juiste grenzen'.", "relevanceEn": "The right to immunity from coercion, 'within due limits'." },
-      { "paragraphId": "DH-7", "relevance": "De staat mag de openbare orde beschermen tegen misbruik.", "relevanceEn": "The state may protect public order against abuse." },
-      { "paragraphId": "DH-12", "relevance": "Erkent dat er in de geschiedenis wijzen van handelen waren die 'weinig in overeenstemming' waren met het evangelie.", "relevanceEn": "Acknowledges that there have been ways of acting in history 'hardly in accord' with the Gospel." }
+      {
+        "paragraphId": "DH-1",
+        "relevance": "Verklaart uitdrukkelijk dat de traditionele leer over de plicht tegenover de ware godsdienst 'onaangetast' blijft.",
+        "relevanceEn": "Expressly declares that traditional doctrine on the duty toward the true religion is left 'untouched'."
+      },
+      {
+        "paragraphId": "DH-2",
+        "relevance": "Het recht op vrijwaring van dwang, 'binnen de juiste grenzen'.",
+        "relevanceEn": "The right to immunity from coercion, 'within due limits'."
+      },
+      {
+        "paragraphId": "DH-7",
+        "relevance": "De staat mag de openbare orde beschermen tegen misbruik.",
+        "relevanceEn": "The state may protect public order against abuse."
+      },
+      {
+        "paragraphId": "DH-12",
+        "relevance": "Erkent dat er in de geschiedenis wijzen van handelen waren die 'weinig in overeenstemming' waren met het evangelie.",
+        "relevanceEn": "Acknowledges that there have been ways of acting in history 'hardly in accord' with the Gospel."
+      }
     ],
     "explanationNl": "De tekst zelf beweert continuïteit (§1). Of die bewering overtuigt, hangt af van hoe men de 19e-eeuwse veroordelingen leest: als afwijzing van een recht op dwaling als zodanig, of als oordeel over een specifieke liberale staatsopvatting. Deze app beslist het geschil niet.",
     "explanationEn": "The text itself asserts continuity (§1). Whether that assertion convinces depends on how one reads the 19th-century condemnations: as rejecting a right to error as such, or as a judgement on a specific liberal theory of the state. This app does not resolve the dispute.",
@@ -178,8 +306,13 @@
       }
     ],
     "furtherReading": [
-      { "citation": "Pius IX. (1864). Quanta cura [Encyclical letter]. Libreria Editrice Vaticana." },
-      { "citation": "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.", "url": "https://www.vatican.va/content/benedict-xvi/en/speeches/2005/december/documents/hf_ben-xvi_spe_20051222_roman-curia.html" }
+      {
+        "citation": "Pius IX. (1864). Quanta cura [Encyclical letter]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.",
+        "url": "https://www.vatican.va/content/benedict-xvi/en/speeches/2005/december/documents/hf_ben-xvi_spe_20051222_roman-curia.html"
+      }
     ]
   },
   {
@@ -189,15 +322,29 @@
     "heardFrom": "secular-media",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "SC-128", "relevance": "Vraagt om herziening van de normen voor kerkbouw en altaren, zonder een celebratierichting voor te schrijven.", "relevanceEn": "Asks for a revision of the norms for church building and altars, without prescribing a direction of celebration." },
-      { "paragraphId": "SC-22", "relevance": "Regeling van de liturgie berust bij de Apostolische Stoel en de bisschop, niet bij individuele priesters.", "relevanceEn": "Regulation of the liturgy rests with the Apostolic See and the bishop, not with individual priests." }
+      {
+        "paragraphId": "SC-128",
+        "relevance": "Vraagt om herziening van de normen voor kerkbouw en altaren, zonder een celebratierichting voor te schrijven.",
+        "relevanceEn": "Asks for a revision of the norms for church building and altars, without prescribing a direction of celebration."
+      },
+      {
+        "paragraphId": "SC-22",
+        "relevance": "Regeling van de liturgie berust bij de Apostolische Stoel en de bisschop, niet bij individuele priesters.",
+        "relevanceEn": "Regulation of the liturgy rests with the Apostolic See and the bishop, not with individual priests."
+      }
     ],
     "explanationNl": "Geen enkel conciliedocument noemt de celebratierichting. De instructie Inter Oecumenici (1964, nr. 91) achtte het wenselijk dat het hoofdaltaar los van de wand staat zodat men eromheen kan lopen en naar het volk toe kan celebreren. Dat is een uitvoeringsbesluit van na het Concilie, geen tekst van het Concilie.",
     "explanationEn": "No conciliar document mentions the direction of celebration. The instruction Inter Oecumenici (1964, no. 91) considered it desirable that the main altar stand free of the wall so that one can walk around it and celebrate facing the people. That is a post-conciliar implementing decision, not a conciliar text.",
     "furtherReading": [
-      { "citation": "Sacred Congregation of Rites. (1964). Inter Oecumenici [First instruction on the orderly carrying out of the Constitution on the Liturgy]. Libreria Editrice Vaticana." },
-      { "citation": "Lang, U. M. (2004). Turning towards the Lord: Orientation in liturgical prayer. Ignatius Press." },
-      { "citation": "Ratzinger, J. (2000). The spirit of the liturgy (J. Saward, Trans.). Ignatius Press." }
+      {
+        "citation": "Sacred Congregation of Rites. (1964). Inter Oecumenici [First instruction on the orderly carrying out of the Constitution on the Liturgy]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Lang, U. M. (2004). Turning towards the Lord: Orientation in liturgical prayer. Ignatius Press."
+      },
+      {
+        "citation": "Ratzinger, J. (2000). The spirit of the liturgy (J. Saward, Trans.). Ignatius Press."
+      }
     ]
   },
   {
@@ -207,12 +354,18 @@
     "heardFrom": "secular-media",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "SC-55", "relevance": "Beveelt communie uit hetzelfde offer aan en staat onder beide gedaanten toe in bepaalde gevallen; over de wijze van uitreiken zwijgt de tekst.", "relevanceEn": "Commends communion from the same sacrifice and permits both kinds in certain cases; the text is silent on the manner of distribution." }
+      {
+        "paragraphId": "SC-55",
+        "relevance": "Beveelt communie uit hetzelfde offer aan en staat onder beide gedaanten toe in bepaalde gevallen; over de wijze van uitreiken zwijgt de tekst.",
+        "relevanceEn": "Commends communion from the same sacrifice and permits both kinds in certain cases; the text is silent on the manner of distribution."
+      }
     ],
     "explanationNl": "De conciliedocumenten zeggen niets over communie op de hand. De instructie Memoriale Domini (1969) handhaafde communie op de tong als algemene norm en liet bisschoppenconferenties onder voorwaarden een indult aanvragen voor de handcommunie, waar die gewoonte al bestond.",
     "explanationEn": "The conciliar documents say nothing about communion in the hand. The instruction Memoriale Domini (1969) retained communion on the tongue as the general norm and allowed episcopal conferences, under conditions, to request an indult for communion in the hand where that custom already existed.",
     "furtherReading": [
-      { "citation": "Sacred Congregation for Divine Worship. (1969). Memoriale Domini [Instruction on the manner of distributing Holy Communion]. Libreria Editrice Vaticana." }
+      {
+        "citation": "Sacred Congregation for Divine Worship. (1969). Memoriale Domini [Instruction on the manner of distributing Holy Communion]. Libreria Editrice Vaticana."
+      }
     ]
   },
   {
@@ -222,16 +375,34 @@
     "heardFrom": "traditionalist-reading",
     "verdict": "partly",
     "evidence": [
-      { "paragraphId": "LG-25", "relevance": "Ook niet-onfeilbaar authentiek onderricht vraagt 'godsdienstige onderwerping van verstand en wil'.", "relevanceEn": "Even non-infallible authentic teaching calls for 'religious submission of mind and will'." },
-      { "paragraphId": "LG-18", "relevance": "LG herhaalt de gedefinieerde leer van Vaticanum I; herhaalde dogma's blijven dogma's.", "relevanceEn": "LG restates the defined teaching of Vatican I; restated dogmas remain dogmas." },
-      { "paragraphId": "DV-10", "relevance": "Een 'dogmatische constitutie' over openbaring en leergezag.", "relevanceEn": "A 'dogmatic constitution' on revelation and the magisterium." }
+      {
+        "paragraphId": "LG-25",
+        "relevance": "Ook niet-onfeilbaar authentiek onderricht vraagt 'godsdienstige onderwerping van verstand en wil'.",
+        "relevanceEn": "Even non-infallible authentic teaching calls for 'religious submission of mind and will'."
+      },
+      {
+        "paragraphId": "LG-18",
+        "relevance": "LG herhaalt de gedefinieerde leer van Vaticanum I; herhaalde dogma's blijven dogma's.",
+        "relevanceEn": "LG restates the defined teaching of Vatican I; restated dogmas remain dogmas."
+      },
+      {
+        "paragraphId": "DV-10",
+        "relevance": "Een 'dogmatische constitutie' over openbaring en leergezag.",
+        "relevanceEn": "A 'dogmatic constitution' on revelation and the magisterium."
+      }
     ],
     "explanationNl": "Wat klopt: het Concilie definieerde geen nieuwe dogma's en de Notificationes van 16 november 1964 stellen dat alleen wat het Concilie uitdrukkelijk als zodanig verklaart, als geloofsdogma bindt. Wat niet klopt: 'niet bindend'. Dezelfde Notificationes vragen dat de rest aanvaard wordt 'volgens de bedoeling van het Concilie', en LG §25 vraagt religieuze instemming met authentiek leergezag. Waar het Concilie eerder gedefinieerde leer herhaalt, behoudt die haar gezag.",
     "explanationEn": "What is correct: the Council defined no new dogmas, and the Notificationes of 16 November 1964 state that only what the Council expressly declares as such binds as dogma of faith. What is incorrect: 'not binding'. The same Notificationes ask that the rest be accepted 'according to the mind of the Council', and LG §25 calls for religious assent to authentic magisterium. Where the Council restates previously defined doctrine, that doctrine keeps its authority.",
     "furtherReading": [
-      { "citation": "Felici, P. (1964, November 16). Notificationes [General Secretary's communication on the theological qualification of the conciliar texts, appended to Lumen Gentium]. Libreria Editrice Vaticana." },
-      { "citation": "Gherardini, B. (2009). Concilio Ecumenico Vaticano II: Un discorso da fare. Casa Mariana Editrice." },
-      { "citation": "Congregation for the Doctrine of the Faith. (1990). Donum veritatis: Instruction on the ecclesial vocation of the theologian. Libreria Editrice Vaticana." }
+      {
+        "citation": "Felici, P. (1964, November 16). Notificationes [General Secretary's communication on the theological qualification of the conciliar texts, appended to Lumen Gentium]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Gherardini, B. (2009). Concilio Ecumenico Vaticano II: Un discorso da fare. Casa Mariana Editrice."
+      },
+      {
+        "citation": "Congregation for the Doctrine of the Faith. (1990). Donum veritatis: Instruction on the ecclesial vocation of the theologian. Libreria Editrice Vaticana."
+      }
     ]
   },
   {
@@ -241,15 +412,31 @@
     "heardFrom": "progressive-reading",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "LG-22", "relevance": "Het college heeft geen gezag zonder de paus als hoofd; diens primaat blijft 'volledig ongeschonden'.", "relevanceEn": "The college has no authority without the pope as its head; his primacy 'remains whole and intact'." },
-      { "paragraphId": "LG-18", "relevance": "Herhaalt de leer van Vaticanum I over het primaat.", "relevanceEn": "Restates Vatican I's teaching on the primacy." },
-      { "paragraphId": "LG-25", "relevance": "Religieuze instemming met het pauselijk leergezag, ook buiten ex cathedra-uitspraken.", "relevanceEn": "Religious assent to papal magisterium, even outside ex cathedra statements." }
+      {
+        "paragraphId": "LG-22",
+        "relevance": "Het college heeft geen gezag zonder de paus als hoofd; diens primaat blijft 'volledig ongeschonden'.",
+        "relevanceEn": "The college has no authority without the pope as its head; his primacy 'remains whole and intact'."
+      },
+      {
+        "paragraphId": "LG-18",
+        "relevance": "Herhaalt de leer van Vaticanum I over het primaat.",
+        "relevanceEn": "Restates Vatican I's teaching on the primacy."
+      },
+      {
+        "paragraphId": "LG-25",
+        "relevance": "Religieuze instemming met het pauselijk leergezag, ook buiten ex cathedra-uitspraken.",
+        "relevanceEn": "Religious assent to papal magisterium, even outside ex cathedra statements."
+      }
     ],
     "explanationNl": "LG leert dat het bisschoppencollege met en onder de paus drager is van het hoogste gezag — nooit zonder of tegenover hem. De Nota explicativa praevia, op gezag van Paulus VI toegevoegd, sluit de lezing van een college van gelijken uitdrukkelijk uit. Over hoe collegialiteit in de praktijk vorm moet krijgen (synodes, bisschoppenconferenties), bestaat wel legitiem debat.",
     "explanationEn": "LG teaches that the college of bishops with and under the pope is a subject of supreme authority — never without or against him. The Nota explicativa praevia, added on the authority of Paul VI, expressly excludes reading it as a college of equals. How collegiality should take shape in practice (synods, episcopal conferences) is a matter of legitimate debate.",
     "furtherReading": [
-      { "citation": "Second Vatican Council. (1964). Nota explicativa praevia [Preliminary note of explanation appended to Lumen Gentium]. Libreria Editrice Vaticana." },
-      { "citation": "John Paul II. (1998). Apostolos suos [Apostolic letter motu proprio on the theological and juridical nature of episcopal conferences]. Libreria Editrice Vaticana." }
+      {
+        "citation": "Second Vatican Council. (1964). Nota explicativa praevia [Preliminary note of explanation appended to Lumen Gentium]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "John Paul II. (1998). Apostolos suos [Apostolic letter motu proprio on the theological and juridical nature of episcopal conferences]. Libreria Editrice Vaticana."
+      }
     ]
   },
   {
@@ -259,15 +446,31 @@
     "heardFrom": "traditionalist-reading",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "DV-9", "relevance": "De Kerk put haar zekerheid over het geopenbaarde 'niet uit de Schrift alleen'.", "relevanceEn": "The Church does not draw her certainty about what has been revealed 'from Sacred Scripture alone'." },
-      { "paragraphId": "DV-10", "relevance": "Traditie en Schrift vormen één heilige schat; het leergezag dient beide.", "relevanceEn": "Tradition and Scripture form one sacred deposit; the magisterium serves both." },
-      { "paragraphId": "DV-1", "relevance": "Volgt uitdrukkelijk Trente en Vaticanum I.", "relevanceEn": "Expressly follows Trent and Vatican I." }
+      {
+        "paragraphId": "DV-9",
+        "relevance": "De Kerk put haar zekerheid over het geopenbaarde 'niet uit de Schrift alleen'.",
+        "relevanceEn": "The Church does not draw her certainty about what has been revealed 'from Sacred Scripture alone'."
+      },
+      {
+        "paragraphId": "DV-10",
+        "relevance": "Traditie en Schrift vormen één heilige schat; het leergezag dient beide.",
+        "relevanceEn": "Tradition and Scripture form one sacred deposit; the magisterium serves both."
+      },
+      {
+        "paragraphId": "DV-1",
+        "relevance": "Volgt uitdrukkelijk Trente en Vaticanum I.",
+        "relevanceEn": "Expressly follows Trent and Vatican I."
+      }
     ],
     "explanationNl": "De tekst sluit 'Schrift alleen' uitdrukkelijk uit (§9). Wel liet het Concilie bewust open of de Traditie inhoudelijke waarheden bevat die niet ook in de Schrift staan (de 'materiële toereikendheid' van de Schrift) — een vraag die in het debat over het ontwerp De fontibus revelationis (1962) centraal stond.",
     "explanationEn": "The text expressly excludes 'Scripture alone' (§9). The Council did deliberately leave open whether Tradition contains truths of content not also found in Scripture (the 'material sufficiency' of Scripture) — a question central to the debate on the draft De fontibus revelationis (1962).",
     "furtherReading": [
-      { "citation": "Ratzinger, J. (1969). Dogmatic constitution on divine revelation: Origin and background. In H. Vorgrimler (Ed.), Commentary on the documents of Vatican II (Vol. 3). Herder and Herder." },
-      { "citation": "Council of Trent. (1546). Decretum de libris sacris et de traditionibus recipiendis [Session IV]. In N. P. Tanner (Ed.), Decrees of the ecumenical councils (Vol. 2). Georgetown University Press, 1990." }
+      {
+        "citation": "Ratzinger, J. (1969). Dogmatic constitution on divine revelation: Origin and background. In H. Vorgrimler (Ed.), Commentary on the documents of Vatican II (Vol. 3). Herder and Herder."
+      },
+      {
+        "citation": "Council of Trent. (1546). Decretum de libris sacris et de traditionibus recipiendis [Session IV]. In N. P. Tanner (Ed.), Decrees of the ecumenical councils (Vol. 2). Georgetown University Press, 1990."
+      }
     ]
   },
   {
@@ -277,8 +480,16 @@
     "heardFrom": "progressive-reading",
     "verdict": "contested",
     "evidence": [
-      { "paragraphId": "DV-11", "relevance": "'Zonder dwaling … die waarheid die God omwille van ons heil wilde laten optekenen' — de kernformule waarover gediscussieerd wordt.", "relevanceEn": "'Without error … that truth which God wanted put into sacred writings for the sake of salvation' — the core formula under discussion." },
-      { "paragraphId": "DV-19", "relevance": "De Kerk bevestigt 'zonder aarzelen' de historiciteit van de evangeliën.", "relevanceEn": "The Church 'unhesitatingly' asserts the historical character of the Gospels." }
+      {
+        "paragraphId": "DV-11",
+        "relevance": "'Zonder dwaling … die waarheid die God omwille van ons heil wilde laten optekenen' — de kernformule waarover gediscussieerd wordt.",
+        "relevanceEn": "'Without error … that truth which God wanted put into sacred writings for the sake of salvation' — the core formula under discussion."
+      },
+      {
+        "paragraphId": "DV-19",
+        "relevance": "De Kerk bevestigt 'zonder aarzelen' de historiciteit van de evangeliën.",
+        "relevanceEn": "The Church 'unhesitatingly' asserts the historical character of the Gospels."
+      }
     ],
     "explanationNl": "De zinsnede 'omwille van ons heil' kan grammaticaal gelezen worden als doelaanduiding (waarom God de Schrift gaf) of als beperking (welk deel van de Schrift zonder dwaling is). De tekst zelf beslist dat niet ondubbelzinnig; daarom staan de lezingen hieronder naast elkaar.",
     "explanationEn": "The phrase 'for the sake of salvation' can grammatically be read as naming a purpose (why God gave Scripture) or as a restriction (which part of Scripture is without error). The text itself does not decide this unambiguously; the readings are therefore set side by side below.",
@@ -305,7 +516,9 @@
       }
     ],
     "furtherReading": [
-      { "citation": "Pius XII. (1943). Divino afflante Spiritu [Encyclical letter on biblical studies]. Libreria Editrice Vaticana." }
+      {
+        "citation": "Pius XII. (1943). Divino afflante Spiritu [Encyclical letter on biblical studies]. Libreria Editrice Vaticana."
+      }
     ]
   },
   {
@@ -315,13 +528,21 @@
     "heardFrom": "secular-media",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "PO-16", "relevance": "Bevestigt de wet van het celibaat voor de Latijnse Kerk, en erkent dat het niet uit de aard van het priesterschap volgt (oosterse praktijk).", "relevanceEn": "Confirms the law of celibacy for the Latin Church, while acknowledging it does not follow from the nature of the priesthood (Eastern practice)." }
+      {
+        "paragraphId": "PO-16",
+        "relevance": "Bevestigt de wet van het celibaat voor de Latijnse Kerk, en erkent dat het niet uit de aard van het priesterschap volgt (oosterse praktijk).",
+        "relevanceEn": "Confirms the law of celibacy for the Latin Church, while acknowledging it does not follow from the nature of the priesthood (Eastern practice)."
+      }
     ],
     "explanationNl": "PO §16 bevestigt de celibaatswet uitdrukkelijk. De nuance dat celibaat 'niet door de aard van het priesterschap vereist' wordt, staat er ook en verklaart waarom de oosterse gehuwde clerus niet wordt afgewezen. Paulus VI onttrok het onderwerp in 1965 aan het openbare conciliedebat en behandelde het in Sacerdotalis caelibatus (1967).",
     "explanationEn": "PO §16 expressly confirms the law of celibacy. The nuance that celibacy is 'not demanded by the very nature of the priesthood' is also there and explains why the married Eastern clergy is not disparaged. Paul VI withdrew the topic from public conciliar debate in 1965 and addressed it in Sacerdotalis caelibatus (1967).",
     "furtherReading": [
-      { "citation": "Paul VI. (1967). Sacerdotalis caelibatus [Encyclical letter on priestly celibacy]. Libreria Editrice Vaticana." },
-      { "citation": "Cochini, C. (1990). Apostolic origins of priestly celibacy (N. Marans, Trans.). Ignatius Press. (Original work published 1981)" }
+      {
+        "citation": "Paul VI. (1967). Sacerdotalis caelibatus [Encyclical letter on priestly celibacy]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Cochini, C. (1990). Apostolic origins of priestly celibacy (N. Marans, Trans.). Ignatius Press. (Original work published 1981)"
+      }
     ]
   },
   {
@@ -331,15 +552,31 @@
     "heardFrom": "progressive-reading",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "GS-16", "relevance": "Het geweten ontdekt een wet 'die hij zichzelf niet geeft'; een geweten kan door gewoonte van de zonde blind worden.", "relevanceEn": "Conscience detects a law 'which he does not impose upon himself'; a conscience can grow sightless through habitual sin." },
-      { "paragraphId": "DH-3", "relevance": "De hoogste norm van het menselijk leven is de goddelijke wet: eeuwig, objectief en universeel.", "relevanceEn": "The highest norm of human life is the divine law: eternal, objective and universal." },
-      { "paragraphId": "DH-14", "relevance": "Gelovigen moeten bij gewetensvorming zorgvuldig acht slaan op de leer van de Kerk.", "relevanceEn": "The faithful must carefully attend to the Church's teaching in forming their consciences." }
+      {
+        "paragraphId": "GS-16",
+        "relevance": "Het geweten ontdekt een wet 'die hij zichzelf niet geeft'; een geweten kan door gewoonte van de zonde blind worden.",
+        "relevanceEn": "Conscience detects a law 'which he does not impose upon himself'; a conscience can grow sightless through habitual sin."
+      },
+      {
+        "paragraphId": "DH-3",
+        "relevance": "De hoogste norm van het menselijk leven is de goddelijke wet: eeuwig, objectief en universeel.",
+        "relevanceEn": "The highest norm of human life is the divine law: eternal, objective and universal."
+      },
+      {
+        "paragraphId": "DH-14",
+        "relevance": "Gelovigen moeten bij gewetensvorming zorgvuldig acht slaan op de leer van de Kerk.",
+        "relevanceEn": "The faithful must carefully attend to the Church's teaching in forming their consciences."
+      }
     ],
     "explanationNl": "De teksten spreken met grote waardigheid over het geweten, maar als het orgaan waarin de mens een wet ontvangt, niet als de bron van die wet. GS §16 onderscheidt het onoverwinnelijk dwalende geweten (dat zijn waardigheid behoudt) van nalatigheid in het zoeken naar waarheid (dat dat niet doet).",
     "explanationEn": "The texts speak of conscience with great dignity, but as the faculty in which the person receives a law, not as the source of that law. GS §16 distinguishes the invincibly erroneous conscience (which keeps its dignity) from negligence in seeking the truth (which does not).",
     "furtherReading": [
-      { "citation": "John Paul II. (1993). Veritatis splendor [Encyclical letter on the Church's moral teaching], §§54–64. Libreria Editrice Vaticana." },
-      { "citation": "Newman, J. H. (1875). A letter addressed to His Grace the Duke of Norfolk. B. M. Pickering." }
+      {
+        "citation": "John Paul II. (1993). Veritatis splendor [Encyclical letter on the Church's moral teaching], §§54–64. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Newman, J. H. (1875). A letter addressed to His Grace the Duke of Norfolk. B. M. Pickering."
+      }
     ]
   },
   {
@@ -349,14 +586,26 @@
     "heardFrom": "traditionalist-reading",
     "verdict": "partly",
     "evidence": [
-      { "paragraphId": "GS-19", "relevance": "Behandelt atheïsme als een van de ernstigste verschijnselen van deze tijd en wijst op medeverantwoordelijkheid van gelovigen.", "relevanceEn": "Treats atheism as among the most serious phenomena of the age and notes believers' share of responsibility." },
-      { "paragraphId": "GS-21", "relevance": "De Kerk verwerpt 'met de grootste beslistheid' de verderfelijke leringen van het atheïsme; voetnoten verwijzen naar eerdere veroordelingen.", "relevanceEn": "The Church repudiates 'as firmly as possible' the poisonous doctrines of atheism; footnotes refer to earlier condemnations." }
+      {
+        "paragraphId": "GS-19",
+        "relevance": "Behandelt atheïsme als een van de ernstigste verschijnselen van deze tijd en wijst op medeverantwoordelijkheid van gelovigen.",
+        "relevanceEn": "Treats atheism as among the most serious phenomena of the age and notes believers' share of responsibility."
+      },
+      {
+        "paragraphId": "GS-21",
+        "relevance": "De Kerk verwerpt 'met de grootste beslistheid' de verderfelijke leringen van het atheïsme; voetnoten verwijzen naar eerdere veroordelingen.",
+        "relevanceEn": "The Church repudiates 'as firmly as possible' the poisonous doctrines of atheism; footnotes refer to earlier condemnations."
+      }
     ],
     "explanationNl": "Over atheïsme spreekt GS §19–21 uitgebreid. Wat klopt: het woord 'communisme' staat niet in de tekst. Een petitie van een groot aantal concilievaders voor een expliciete veroordeling werd in 1965 niet in de tekst opgenomen; de afweging daarachter is historisch omstreden.",
     "explanationEn": "GS §19–21 speaks at length about atheism. What is correct: the word 'communism' does not appear in the text. A petition from a large number of Council Fathers for an explicit condemnation was not included in the text in 1965; the reasons behind that are historically disputed.",
     "furtherReading": [
-      { "citation": "Pius XI. (1937). Divini Redemptoris [Encyclical letter on atheistic communism]. Libreria Editrice Vaticana." },
-      { "citation": "Wiltgen, R. M. (1967). The Rhine flows into the Tiber: A history of Vatican II. Hawthorn Books." }
+      {
+        "citation": "Pius XI. (1937). Divini Redemptoris [Encyclical letter on atheistic communism]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Wiltgen, R. M. (1967). The Rhine flows into the Tiber: A history of Vatican II. Hawthorn Books."
+      }
     ]
   },
   {
@@ -366,14 +615,127 @@
     "heardFrom": "secular-media",
     "verdict": "not-in-the-text",
     "evidence": [
-      { "paragraphId": "GS-51", "relevance": "'Abortus en kindermoord zijn verfoeilijke misdaden'; het leven moet vanaf de ontvangenis beschermd worden.", "relevanceEn": "'Abortion and infanticide are unspeakable crimes'; life must be guarded from conception." },
-      { "paragraphId": "GS-48", "relevance": "Het huwelijk berust op een onherroepelijke persoonlijke instemming en is door de Schepper met eigen wetten toegerust.", "relevanceEn": "Marriage rests on irrevocable personal consent and is qualified by the Creator's laws." }
+      {
+        "paragraphId": "GS-51",
+        "relevance": "'Abortus en kindermoord zijn verfoeilijke misdaden'; het leven moet vanaf de ontvangenis beschermd worden.",
+        "relevanceEn": "'Abortion and infanticide are unspeakable crimes'; life must be guarded from conception."
+      },
+      {
+        "paragraphId": "GS-48",
+        "relevance": "Het huwelijk berust op een onherroepelijke persoonlijke instemming en is door de Schepper met eigen wetten toegerust.",
+        "relevanceEn": "Marriage rests on irrevocable personal consent and is qualified by the Creator's laws."
+      }
     ],
     "explanationNl": "De tekst herhaalt de leer in scherpe bewoordingen. GS legt meer nadruk op het huwelijk als gemeenschap van liefde dan oudere handboeken, maar handhaaft de onontbindbaarheid en de bescherming van het leven. De vraag naar geboorteregeling werd door Paulus VI aan het Concilie onttrokken en in Humanae vitae (1968) behandeld.",
     "explanationEn": "The text restates the teaching in stark terms. GS places more emphasis on marriage as a communion of love than older manuals, but maintains indissolubility and the protection of life. The question of birth regulation was withdrawn from the Council by Paul VI and addressed in Humanae vitae (1968).",
     "furtherReading": [
-      { "citation": "Paul VI. (1968). Humanae vitae [Encyclical letter on the regulation of birth]. Libreria Editrice Vaticana." },
-      { "citation": "Pius XI. (1930). Casti connubii [Encyclical letter on Christian marriage]. Libreria Editrice Vaticana." }
+      {
+        "citation": "Paul VI. (1968). Humanae vitae [Encyclical letter on the regulation of birth]. Libreria Editrice Vaticana."
+      },
+      {
+        "citation": "Pius XI. (1930). Casti connubii [Encyclical letter on Christian marriage]. Libreria Editrice Vaticana."
+      }
+    ]
+  },
+  {
+    "id": "doctrine-changes",
+    "claim": "Volgens Vaticanum II kan de leer van de Kerk met de tijd van inhoud veranderen.",
+    "claimEn": "According to Vatican II, the Church's doctrine can change its content over time.",
+    "heardFrom": "progressive-reading",
+    "verdict": "partly",
+    "evidence": [
+      {
+        "paragraphId": "DV-8",
+        "relevance": "Er is groei in het inzicht in wat overgeleverd is.",
+        "relevanceEn": "There is growth in the understanding of what has been handed down."
+      },
+      {
+        "paragraphId": "DV-4",
+        "relevance": "Er komt geen nieuwe openbare openbaring meer.",
+        "relevanceEn": "No new public revelation is to be expected."
+      },
+      {
+        "paragraphId": "UR-6",
+        "relevance": "Hervorming betreft gebreken in zeden, discipline en formulering, niet de geloofsschat zelf.",
+        "relevanceEn": "Reform concerns deficiencies in conduct, discipline and formulation, not the deposit of faith itself."
+      },
+      {
+        "paragraphId": "DV-10",
+        "relevance": "Het leergezag leert alleen wat overgeleverd is.",
+        "relevanceEn": "The magisterium teaches only what has been handed down."
+      }
+    ],
+    "explanationNl": "Wat klopt: het Concilie erkent ontwikkeling in het begrip van de leer (DV §8) en hervorming van de manier waarop leer geformuleerd wordt (UR §6). Wat niet klopt: verandering van inhoud. De teksten sluiten nieuwe openbaring uit (DV §4) en binden het leergezag aan wat overgeleverd is (DV §10). Waar de grens ligt tussen nieuwe formulering en nieuwe inhoud, is precies wat in het hermeneutiekdebat ter discussie staat.",
+    "explanationEn": "What is correct: the Council recognises development in the understanding of doctrine (DV §8) and reform of the way doctrine is formulated (UR §6). What is incorrect: change of content. The texts exclude new revelation (DV §4) and bind the magisterium to what has been handed down (DV §10). Where the line lies between new formulation and new content is exactly what the hermeneutics debate is about.",
+    "furtherReading": [
+      {
+        "citation": "Newman, J. H. (1845). An essay on the development of Christian doctrine. James Toovey."
+      },
+      {
+        "citation": "First Vatican Council. (1870). Dei Filius: Dogmatic constitution on the Catholic faith. In N. P. Tanner (Ed.), Decrees of the ecumenical councils (Vol. 2). Georgetown University Press, 1990."
+      }
+    ]
+  },
+  {
+    "id": "priest-may-adapt-liturgy",
+    "claim": "Sinds het Concilie mag iedere priester de liturgie naar eigen inzicht aanpassen.",
+    "claimEn": "Since the Council every priest may adapt the liturgy as he sees fit.",
+    "heardFrom": "progressive-reading",
+    "verdict": "not-in-the-text",
+    "evidence": [
+      {
+        "paragraphId": "SC-22",
+        "relevance": "Niemand, ook geen priester, mag op eigen gezag iets toevoegen, weglaten of veranderen.",
+        "relevanceEn": "No one, even a priest, may add, remove or change anything on his own authority."
+      },
+      {
+        "paragraphId": "SC-23",
+        "relevance": "Geen vernieuwingen tenzij het welzijn van de Kerk ze werkelijk vereist.",
+        "relevanceEn": "No innovations unless the good of the Church genuinely requires them."
+      },
+      {
+        "paragraphId": "OE-6",
+        "relevance": "Ook voor de oosterse riten: alleen organische ontwikkeling.",
+        "relevanceEn": "For the Eastern rites too: only organic development."
+      }
+    ],
+    "explanationNl": "SC §22 sluit eigenmachtige aanpassing uitdrukkelijk uit. De regeling van de liturgie ligt bij de Apostolische Stoel en, binnen de grenzen van het recht, bij de bisschop en de bisschoppenconferentie. Waar de liturgische boeken keuzes laten, gaat het om voorziene opties, niet om vrije aanpassing.",
+    "explanationEn": "SC §22 expressly excludes adaptation on one's own authority. Regulation of the liturgy belongs to the Apostolic See and, within the limits of the law, to the bishop and the episcopal conference. Where the liturgical books leave choices, these are provided options, not free adaptation.",
+    "furtherReading": [
+      {
+        "citation": "Congregation for Divine Worship and the Discipline of the Sacraments. (2004). Redemptionis sacramentum [Instruction]. Libreria Editrice Vaticana."
+      }
+    ]
+  },
+  {
+    "id": "council-pacifist",
+    "claim": "Het Concilie verklaarde iedere vorm van oorlog en gewapende verdediging ongeoorloofd.",
+    "claimEn": "The Council declared every form of war and armed defence illicit.",
+    "heardFrom": "secular-media",
+    "verdict": "not-in-the-text",
+    "evidence": [
+      {
+        "paragraphId": "GS-79",
+        "relevance": "Regeringen kan het recht op wettige zelfverdediging niet ontzegd worden, na uitputting van vreedzame middelen.",
+        "relevanceEn": "Governments cannot be denied the right to lawful self-defence, once peaceful means are exhausted."
+      },
+      {
+        "paragraphId": "GS-80",
+        "relevance": "Veroordeling van oorlogshandelingen die zonder onderscheid hele steden vernietigen.",
+        "relevanceEn": "Condemnation of acts of war that indiscriminately destroy entire cities."
+      },
+      {
+        "paragraphId": "GS-78",
+        "relevance": "Vrede is meer dan afwezigheid van oorlog: een werk van gerechtigheid.",
+        "relevanceEn": "Peace is more than the absence of war: an enterprise of justice."
+      }
+    ],
+    "explanationNl": "Het Concilie veroordeelt de totale oorlog scherp (GS §80) en vraagt bescherming van gewetensbezwaarden (GS §79), maar erkent uitdrukkelijk het recht op wettige zelfverdediging. Het blijft daarmee binnen de traditie van de rechtvaardige oorlog, met nieuwe nadruk op de gevaren van moderne wapens.",
+    "explanationEn": "The Council sharply condemns total war (GS §80) and asks for protection of conscientious objectors (GS §79), but expressly recognises the right to lawful self-defence. It thereby stays within the just-war tradition, with new emphasis on the dangers of modern weapons.",
+    "furtherReading": [
+      {
+        "citation": "Catechism of the Catholic Church (2nd ed.). (1997). Libreria Editrice Vaticana. (§§2307–2317)"
+      }
     ]
   }
 ]

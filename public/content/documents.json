@@ -101,7 +101,10 @@
     "paragraphCount": 24,
     "summaryNl": "Kort decreet over pers, film, radio en televisie. Erkent hun waarde, wijst op morele verantwoordelijkheid van makers en gebruikers en vraagt om katholieke inzet in de media. Het document met de meeste tegenstemmen bij de eindstemming; veel bisschoppen vonden het te oppervlakkig.",
     "summaryEn": "A short decree on press, film, radio and television. It recognises their value, stresses the moral responsibility of producers and users, and asks for Catholic engagement in the media. It received the most negative votes of any document at the final vote; many bishops considered it superficial.",
-    "keyParagraphs": [],
+    "keyParagraphs": [
+      "IM-3",
+      "IM-18"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19631204_inter-mirifica_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19631204_inter-mirifica_lt.html"
   },
@@ -207,7 +210,10 @@
     "paragraphCount": 30,
     "summaryNl": "Over de oosters-katholieke Kerken in volle gemeenschap met Rome. Bevestigt hun gelijke waardigheid, het behoud van hun eigen riten, tucht en patriarchale instellingen, en regelt enkele praktische vragen rond sacramenten en gemeenschap met de oosters-orthodoxen.",
     "summaryEn": "On the Eastern Catholic Churches in full communion with Rome. It affirms their equal dignity and the preservation of their own rites, discipline and patriarchal institutions, and regulates practical questions on the sacraments and on communion with the Eastern Orthodox.",
-    "keyParagraphs": [],
+    "keyParagraphs": [
+      "OE-3",
+      "OE-6"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_orientalium-ecclesiarum_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_orientalium-ecclesiarum_lt.html"
   },
@@ -229,10 +235,42 @@
     "summaryEn": "Catholic principles of ecumenism. It recognises elements of sanctification and truth outside the visible structure of the Church, states that the fullness of the means of salvation is attained only through the Catholic Church (§3), speaks of a 'hierarchy of truths' and warns against false irenicism (§11).",
     "keyParagraphs": [
       "UR-3",
+      "UR-4",
+      "UR-8",
       "UR-11"
     ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 1,
+        "titleNl": "Inleiding",
+        "titleEn": "Introduction"
+      },
+      {
+        "labelLa": "Caput I",
+        "from": 2,
+        "to": 4,
+        "titleNl": "Katholieke beginselen van de oecumene",
+        "titleEn": "Catholic principles on ecumenism"
+      },
+      {
+        "labelLa": "Caput II",
+        "from": 5,
+        "to": 12,
+        "titleNl": "De beoefening van de oecumene",
+        "titleEn": "The practice of ecumenism"
+      },
+      {
+        "labelLa": "Caput III",
+        "from": 13,
+        "to": 24,
+        "titleNl": "De van de Apostolische Stoel van Rome gescheiden Kerken en kerkelijke gemeenschappen",
+        "titleEn": "Churches and ecclesial communities separated from the Roman Apostolic See"
+      }
+    ]
   },
   {
     "id": "christus-dominus",
@@ -250,9 +288,50 @@
     "paragraphCount": 44,
     "summaryNl": "Praktische uitwerking van de leer over het bisschopsambt uit Lumen Gentium: de verhouding tot de paus en de Romeinse Curie, de taak van de bisschop in zijn bisdom, de herindeling van bisdommen en de rol van bisschoppenconferenties.",
     "summaryEn": "Practical application of Lumen Gentium's teaching on the episcopate: relations with the pope and the Roman Curia, the bishop's task in his diocese, the redrawing of dioceses and the role of episcopal conferences.",
-    "keyParagraphs": [],
+    "keyParagraphs": [
+      "CD-5",
+      "CD-11",
+      "CD-38"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_christus-dominus_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_christus-dominus_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_christus-dominus_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 3,
+        "titleNl": "Inleiding",
+        "titleEn": "Preface"
+      },
+      {
+        "labelLa": "Caput I",
+        "from": 4,
+        "to": 10,
+        "titleNl": "De bisschoppen en de universele Kerk",
+        "titleEn": "The bishops in relation to the universal Church"
+      },
+      {
+        "labelLa": "Caput II",
+        "from": 11,
+        "to": 35,
+        "titleNl": "De bisschoppen en hun particuliere Kerken of bisdommen",
+        "titleEn": "The bishops and their particular Churches or dioceses"
+      },
+      {
+        "labelLa": "Caput III",
+        "from": 36,
+        "to": 43,
+        "titleNl": "Samenwerking van de bisschoppen voor het welzijn van meerdere Kerken",
+        "titleEn": "Concerning bishops cooperating for the common good of many Churches"
+      },
+      {
+        "labelLa": "Mandatum generale",
+        "from": 44,
+        "to": 44,
+        "titleNl": "Algemene opdracht",
+        "titleEn": "General directive"
+      }
+    ]
   },
   {
     "id": "perfectae-caritatis",
@@ -270,7 +349,9 @@
     "paragraphCount": 25,
     "summaryNl": "Over vernieuwing van het religieuze leven: terugkeer naar de bronnen van het christelijk leven en de oorspronkelijke geest van de stichters, samen met aanpassing aan veranderde omstandigheden. Bevestigt de evangelische raden van armoede, kuisheid en gehoorzaamheid.",
     "summaryEn": "On the renewal of religious life: a return to the sources of Christian life and to the original spirit of the founders, together with adaptation to changed conditions. It reaffirms the evangelical counsels of poverty, chastity and obedience.",
-    "keyParagraphs": [],
+    "keyParagraphs": [
+      "PC-2"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_perfectae-caritatis_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_perfectae-caritatis_lt.html"
   },
@@ -290,7 +371,10 @@
     "paragraphCount": 22,
     "summaryNl": "Over de vorming van priesterkandidaten: nationale opleidingsprogramma's, geestelijke vorming, het celibaat als gave, de studie van Schrift en filosofie, en theologie met de heilige Thomas als leermeester.",
     "summaryEn": "On the formation of candidates for the priesthood: national programmes of formation, spiritual formation, celibacy as a gift, the study of Scripture and philosophy, and theology with Saint Thomas as master.",
-    "keyParagraphs": [],
+    "keyParagraphs": [
+      "OT-2",
+      "OT-16"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_optatam-totius_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_optatam-totius_lt.html"
   },
@@ -310,7 +394,10 @@
     "paragraphCount": 12,
     "summaryNl": "Korte verklaring over het recht op opvoeding, de primaire verantwoordelijkheid van ouders, de taak van staat en Kerk, en het belang van katholieke scholen en universiteiten.",
     "summaryEn": "A short declaration on the right to education, the primary responsibility of parents, the tasks of the state and the Church, and the importance of Catholic schools and universities.",
-    "keyParagraphs": [],
+    "keyParagraphs": [
+      "GE-1",
+      "GE-3"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_gravissimum-educationis_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_gravissimum-educationis_lt.html"
   },
@@ -354,6 +441,8 @@
     "summaryNl": "Over openbaring, Traditie en Schrift. Volgt uitdrukkelijk Trente en Vaticanum I (§1). Traditie en Schrift vormen één heilige schat van het woord van God; de Kerk put haar zekerheid niet uit de Schrift alleen (§9). Het leergezag staat niet boven het woord van God maar dient het (§10). Over inspiratie en waarheid van de Schrift (§11) en het historisch karakter van de evangeliën (§19).",
     "summaryEn": "On revelation, Tradition and Scripture. It expressly follows Trent and Vatican I (§1). Tradition and Scripture form one sacred deposit of the word of God; the Church does not draw her certainty from Scripture alone (§9). The magisterium is not above the word of God but serves it (§10). On inspiration and the truth of Scripture (§11) and the historical character of the Gospels (§19).",
     "keyParagraphs": [
+      "DV-2",
+      "DV-8",
       "DV-9",
       "DV-10",
       "DV-11"
@@ -525,7 +614,44 @@
       "PO-16"
     ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 1,
+        "titleNl": "Inleiding",
+        "titleEn": "Introduction"
+      },
+      {
+        "labelLa": "Caput I",
+        "from": 2,
+        "to": 3,
+        "titleNl": "Het priesterschap in de zending van de Kerk",
+        "titleEn": "The priesthood in the ministry of the Church"
+      },
+      {
+        "labelLa": "Caput II",
+        "from": 4,
+        "to": 11,
+        "titleNl": "Het dienstwerk van de priesters",
+        "titleEn": "The ministry of priests"
+      },
+      {
+        "labelLa": "Caput III",
+        "from": 12,
+        "to": 21,
+        "titleNl": "Het leven van de priesters",
+        "titleEn": "The life of priests"
+      },
+      {
+        "labelLa": "Conclusio",
+        "from": 22,
+        "to": 22,
+        "titleNl": "Slot",
+        "titleEn": "Conclusion"
+      }
+    ]
   },
   {
     "id": "gaudium-et-spes",
@@ -547,7 +673,9 @@
       "GS-16",
       "GS-22",
       "GS-24",
-      "GS-51"
+      "GS-27",
+      "GS-51",
+      "GS-76"
     ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_lt.html",

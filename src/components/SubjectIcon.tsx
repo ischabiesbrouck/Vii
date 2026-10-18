@@ -7,10 +7,13 @@ import {
   Globe2,
   KeyRound,
   Music,
+  Radio,
   Scale,
   ScrollText,
   Sparkles,
+  Sprout,
   Star,
+  Sunrise,
   Users,
   Wheat,
   type LucideIcon,
@@ -30,6 +33,9 @@ const icons: Record<string, LucideIcon> = {
   globe: Globe2,
   star: Star,
   shepherd: BookOpenText,
+  sprout: Sprout,
+  sunrise: Sunrise,
+  radio: Radio,
 };
 
 export function SubjectIcon({ name, className }: { name: string; className?: string }) {
