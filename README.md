@@ -158,6 +158,12 @@ Key screens:
   - Numbered sections with a red initial.
   - A progress box and the course index in the margin.
 - **Catecheses**: a register of the audiences, newest first, grouped by month, with constitution tabs. `#YYYY-MM-DD` links highlight the day.
+- **Document reader**: a title page after the official conciliar editions.
+  - It opens with the heading formula *Paulus Episcopus, Servus Servorum Dei, una cum Sacrosancti Concilii Patribus, ad perpetuam rei memoriam*, then the Latin designation in red, the title in capitals, the vernacular title and the promulgation line.
+  - A details strip shows the date, the session (II–IV), the final vote and the paragraphs.
+  - An *Index* in the margin lists the chapters (*Caput I*, …).
+  - Chapter headings in the text are centred, in the manner of the *Acta Apostolicae Sedis*.
+  - Text tagged `lang="la"` is set by EB Garamond's Latin locale rules, which give the classical V for U in capitals (CAPVT, CONSTITVTIO).
 
 The tabs implement the WAI-ARIA tabs pattern. On desktop the masthead and a small-caps navigation row sit under a dark utility bar. On mobile there is a fixed five-tab bar.
 
