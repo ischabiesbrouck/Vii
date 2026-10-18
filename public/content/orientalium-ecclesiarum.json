@@ -1,0 +1,87 @@
+{
+  "docId": "orientalium-ecclesiarum",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "OE-1",
+      "docId": "orientalium-ecclesiarum",
+      "number": 1,
+      "textEn": "The Catholic Church holds in high esteem the institutions, liturgical rites, ecclesiastical traditions and the established standards of the Christian life of the Eastern Churches …",
+      "textNl": "De Katholieke Kerk heeft grote waardering voor de instellingen, liturgische riten, kerkelijke tradities en de beproefde christelijke levenswijze van de oosterse Kerken …",
+      "tags": [
+        "eastern-churches",
+        "tradition"
+      ],
+      "crossRefs": [
+        "OE-2",
+        "UR-4"
+      ]
+    },
+    {
+      "id": "OE-2",
+      "docId": "orientalium-ecclesiarum",
+      "number": 2,
+      "textEn": "The Holy Catholic Church, which is the Mystical Body of Christ, is made up of the faithful who are organically united in the Holy Spirit by the same faith, the same sacraments and the same government and who, combining into various groups which are held together by a hierarchy, form separate Churches or rites.",
+      "textNl": "De heilige Katholieke Kerk, die het mystieke Lichaam van Christus is, bestaat uit gelovigen die in de heilige Geest organisch verenigd zijn door hetzelfde geloof, dezelfde sacramenten en hetzelfde bestuur, en die, verbonden in verschillende door een hiërarchie samengehouden groepen, particuliere Kerken of riten vormen.",
+      "tags": [
+        "eastern-churches",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "OE-3",
+        "LG-8"
+      ]
+    },
+    {
+      "id": "OE-3",
+      "docId": "orientalium-ecclesiarum",
+      "number": 3,
+      "textEn": "These individual Churches, whether of the East or the West, although they differ somewhat among themselves in rite … are, nevertheless, each as much as the others, entrusted to the pastoral government of the Roman Pontiff … They are consequently of equal dignity, so that none of them is superior to the others as regards rite …",
+      "textNl": "Deze particuliere Kerken, zowel van het Oosten als van het Westen, verschillen weliswaar enigszins van elkaar in ritus …, maar zijn evenzeer toevertrouwd aan het herderlijk bestuur van de Romeinse Paus … Zij zijn daarom van gelijke waardigheid, zodat geen van hen op grond van de ritus boven de andere staat …",
+      "tags": [
+        "eastern-churches",
+        "ecclesiology",
+        "papacy"
+      ],
+      "crossRefs": [
+        "OE-2",
+        "LG-22"
+      ],
+      "noteNl": "Een bewuste afwijzing van de oudere opvatting dat de Latijnse ritus voorrang had ('praestantia ritus latini').",
+      "noteEn": "A deliberate rejection of the older view that the Latin rite held precedence ('praestantia ritus latini')."
+    },
+    {
+      "id": "OE-6",
+      "docId": "orientalium-ecclesiarum",
+      "number": 6,
+      "textEn": "All members of the Eastern Rite should know and be convinced that they can and should always preserve their legitimate liturgical rite and their established way of life, and that these may not be altered except to obtain for themselves an organic improvement.",
+      "textNl": "Alle oosterse christenen moeten weten en ervan overtuigd zijn dat zij hun wettige liturgische ritus en hun eigen levenswijze altijd kunnen en moeten bewaren, en dat daarin geen veranderingen mogen worden aangebracht dan omwille van hun eigen organische ontwikkeling.",
+      "tags": [
+        "eastern-churches",
+        "liturgy",
+        "continuity"
+      ],
+      "crossRefs": [
+        "SC-23",
+        "OE-1"
+      ]
+    },
+    {
+      "id": "OE-27",
+      "docId": "orientalium-ecclesiarum",
+      "number": 27,
+      "textEn": "… Eastern Christians who are in fact separated in good faith from the Catholic Church, if they ask of their own accord and have the right dispositions, may be granted the sacraments of Penance, the Eucharist and the Anointing of the Sick.",
+      "textNl": "… aan oosterse christenen die te goeder trouw van de Katholieke Kerk gescheiden zijn, mogen, als zij er uit eigen beweging om vragen en goed gesteld zijn, de sacramenten van boete, eucharistie en ziekenzalving worden toegediend.",
+      "tags": [
+        "eastern-churches",
+        "ecumenism",
+        "sacraments"
+      ],
+      "crossRefs": [
+        "UR-3"
+      ]
+    }
+  ]
+}

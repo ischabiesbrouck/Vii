@@ -1,0 +1,363 @@
+{
+  "seriesTitleEn": "Pope Leo XIV — The Documents of the Second Vatican Council",
+  "seriesTitleNl": "Paus Leo XIV — De documenten van het Tweede Vaticaans Concilie",
+  "introNl": "Sinds januari 2026 wijdt paus Leo XIV zijn woensdagse catecheses tijdens de algemene audiëntie aan de documenten van het Concilie, constitutie na constitutie. De volledige teksten staan in het Engels (en andere talen) op vatican.va. De Nederlandse titels hieronder zijn werkvertalingen.",
+  "introEn": "Since January 2026 Pope Leo XIV has devoted his Wednesday general-audience catecheses to the documents of the Council, constitution by constitution. The full texts are published in English (and other languages) on vatican.va.",
+  "checkedOn": "2026-10-18",
+  "items": [
+    {
+      "date": "2026-01-07",
+      "part": "intro",
+      "number": 0,
+      "docId": null,
+      "titleEn": "Vatican Council II through its Documents. Introductory catechesis",
+      "titleNl": "Het Tweede Vaticaans Concilie in zijn documenten. Inleidende catechese",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260107-udienza-generale.html"
+    },
+    {
+      "date": "2026-01-14",
+      "part": "DV",
+      "number": 1,
+      "docId": "dei-verbum",
+      "titleEn": "God speaks to men as to friends",
+      "titleNl": "God spreekt tot de mensen als tot vrienden",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260114-udienza-generale.html",
+      "paragraphs": [
+        "DV-2"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "part": "DV",
+      "number": 2,
+      "docId": "dei-verbum",
+      "titleEn": "Jesus Christ reveals the Father",
+      "titleNl": "Jezus Christus openbaart de Vader",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260121-udienza-generale.html",
+      "paragraphs": [
+        "DV-4"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "part": "DV",
+      "number": 3,
+      "docId": "dei-verbum",
+      "titleEn": "A single sacred deposit. The relationship between Scripture and Tradition",
+      "titleNl": "Eén heilige schat. De verhouding tussen Schrift en Traditie",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260128-udienza-generale.html",
+      "paragraphs": [
+        "DV-9",
+        "DV-10"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "part": "DV",
+      "number": 4,
+      "docId": "dei-verbum",
+      "titleEn": "The Sacred Scripture: the Word of God in human words",
+      "titleNl": "De heilige Schrift: het woord van God in mensenwoorden",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260204-udienza-generale.html",
+      "paragraphs": [
+        "DV-11",
+        "DV-12"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "part": "DV",
+      "number": 5,
+      "docId": "dei-verbum",
+      "titleEn": "The Word of God in the life of the Church",
+      "titleNl": "Het woord van God in het leven van de Kerk",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260211-udienza-generale.html",
+      "paragraphs": [
+        "DV-21",
+        "DV-25"
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "part": "LG",
+      "number": 1,
+      "docId": "lumen-gentium",
+      "titleEn": "The mystery of the Church, sacrament of the union with God, and the unity of all humanity",
+      "titleNl": "Het mysterie van de Kerk, sacrament van de vereniging met God en van de eenheid van heel de mensheid",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260218-udienza-generale.html",
+      "paragraphs": [
+        "LG-1"
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "part": "LG",
+      "number": 2,
+      "docId": "lumen-gentium",
+      "titleEn": "The Church, a visible and spiritual reality",
+      "titleNl": "De Kerk, een zichtbare en geestelijke werkelijkheid",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260304-udienza-generale.html",
+      "paragraphs": [
+        "LG-8"
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "part": "LG",
+      "number": 3,
+      "docId": "lumen-gentium",
+      "titleEn": "The Church, people of God",
+      "titleNl": "De Kerk, volk van God",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260311-udienza-generale.html",
+      "paragraphs": [
+        "LG-9"
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "part": "LG",
+      "number": 4,
+      "docId": "lumen-gentium",
+      "titleEn": "The Church, a priestly and prophetic people",
+      "titleNl": "De Kerk, een priesterlijk en profetisch volk",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260318-udienza-generale.html",
+      "paragraphs": [
+        "LG-10",
+        "LG-12"
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "part": "LG",
+      "number": 5,
+      "docId": "lumen-gentium",
+      "titleEn": "On the foundation of the Apostles. The Church in her hierarchical dimension",
+      "titleNl": "Op het fundament van de apostelen. De Kerk in haar hiërarchische dimensie",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260325-udienza-generale.html",
+      "paragraphs": [
+        "LG-18",
+        "LG-21",
+        "LG-22"
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "part": "LG",
+      "number": 6,
+      "docId": "lumen-gentium",
+      "titleEn": "Living stones in the Church and witnesses in the world: the laity in the People of God",
+      "titleNl": "Levende stenen in de Kerk en getuigen in de wereld: de leken in het volk van God",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260401-udienza-generale.html",
+      "paragraphs": [
+        "LG-31",
+        "LG-33"
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "part": "LG",
+      "number": 7,
+      "docId": "lumen-gentium",
+      "titleEn": "Holiness and evangelical counsels in the Church",
+      "titleNl": "Heiligheid en evangelische raden in de Kerk",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260408-udienza-generale.html",
+      "paragraphs": [
+        "LG-40"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "part": "LG",
+      "number": 8,
+      "docId": "lumen-gentium",
+      "titleEn": "The Church, pilgrim in history towards the heavenly homeland",
+      "titleNl": "De Kerk, pelgrim in de geschiedenis op weg naar het hemels vaderland",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260506-udienza-generale.html",
+      "paragraphs": [
+        "LG-48"
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "part": "LG",
+      "number": 9,
+      "docId": "lumen-gentium",
+      "titleEn": "The Virgin Mary, model of the Church",
+      "titleNl": "De Maagd Maria, voorbeeld van de Kerk",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260513-udienza-generale.html",
+      "paragraphs": [
+        "LG-60",
+        "LG-62"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "part": "SC",
+      "number": 1,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "The liturgy in the mystery of the Church",
+      "titleNl": "De liturgie in het mysterie van de Kerk",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260520-udienza-generale.html",
+      "paragraphs": [
+        "SC-7",
+        "SC-10",
+        "SC-14"
+      ],
+      "videoId": "8rOfY9DLalU"
+    },
+    {
+      "date": "2026-05-27",
+      "part": "SC",
+      "number": 2,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "The reform of the liturgy: tradition and development",
+      "titleNl": "De hervorming van de liturgie: traditie en ontwikkeling",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260527-udienza-generale.html",
+      "paragraphs": [
+        "SC-21",
+        "SC-23"
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "part": "SC",
+      "number": 3,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "Rite, sign and symbol",
+      "titleNl": "Ritus, teken en symbool",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260603-udienza-generale.html",
+      "paragraphs": [
+        "SC-34"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "part": "SC",
+      "number": 4,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "The Mystery of the Eucharist",
+      "titleNl": "Het mysterie van de eucharistie",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260624-udienza-generale.html",
+      "paragraphs": [
+        "SC-47",
+        "SC-55"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "part": "SC",
+      "number": 5,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "The prayer of the Church",
+      "titleNl": "Het gebed van de Kerk",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260805-udienza-generale.html",
+      "paragraphs": [
+        "SC-101"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "part": "SC",
+      "number": 6,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "The liturgical year",
+      "titleNl": "Het liturgisch jaar",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260812-udienza-generale.html",
+      "paragraphs": [
+        "SC-106"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "part": "SC",
+      "number": 7,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "Sacred music",
+      "titleNl": "Kerkmuziek",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260819-udienza-generale.html",
+      "paragraphs": [
+        "SC-112",
+        "SC-116",
+        "SC-120"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "part": "SC",
+      "number": 8,
+      "docId": "sacrosanctum-concilium",
+      "titleEn": "The motivations of the liturgical reform",
+      "titleNl": "De beweegredenen van de liturgische hervorming",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260826-udienza-generale.html",
+      "paragraphs": [
+        "SC-21",
+        "SC-50"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "part": "GS",
+      "number": 1,
+      "docId": "gaudium-et-spes",
+      "titleEn": "The Church: listening to and serving the world (GS 1–10)",
+      "titleNl": "De Kerk: luisteren naar en dienen van de wereld (GS 1–10)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260902-udienza-generale.html",
+      "paragraphs": [
+        "GS-1",
+        "GS-4"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "part": "GS",
+      "number": 2,
+      "docId": "gaudium-et-spes",
+      "titleEn": "Human dignity: a gift and a responsibility (GS 12–22)",
+      "titleNl": "Menselijke waardigheid: gave en verantwoordelijkheid (GS 12–22)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260909-udienza-generale.html",
+      "paragraphs": [
+        "GS-16",
+        "GS-22"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "part": "GS",
+      "number": 3,
+      "docId": "gaudium-et-spes",
+      "titleEn": "The human community (GS 23–32)",
+      "titleNl": "De menselijke gemeenschap (GS 23–32)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260916-udienza-generale.html",
+      "paragraphs": [
+        "GS-24",
+        "GS-26",
+        "GS-27"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "part": "GS",
+      "number": 4,
+      "docId": "gaudium-et-spes",
+      "titleEn": "The meaning of man's activity throughout the world (GS 33–39)",
+      "titleNl": "De zin van het menselijk handelen in de wereld (GS 33–39)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20260923-udienza-generale.html",
+      "paragraphs": [
+        "GS-36",
+        "GS-39"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "part": "GS",
+      "number": 5,
+      "docId": "gaudium-et-spes",
+      "titleEn": "The mission of the Church in the contemporary world (GS 40–45)",
+      "titleNl": "De zending van de Kerk in de wereld van deze tijd (GS 40–45)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/audiences/2026/documents/20261007-udienza-generale.html",
+      "paragraphs": [
+        "GS-43"
+      ]
+    }
+  ]
+}

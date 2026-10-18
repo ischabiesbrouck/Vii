@@ -1,0 +1,26 @@
+{
+  "docId": "perfectae-caritatis",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "PC-2",
+      "docId": "perfectae-caritatis",
+      "number": 2,
+      "textEn": "The adaptation and renewal of the religious life includes both the constant return to the sources of all Christian life and to the original spirit of the institutes and their adaptation to the changed conditions of our time.",
+      "textNl": "De aangepaste vernieuwing van het religieuze leven omvat zowel de voortdurende terugkeer naar de bronnen van heel het christelijk leven en naar de oorspronkelijke geest van de instituten, als hun aanpassing aan de veranderde omstandigheden van onze tijd.",
+      "tags": [
+        "religious-life",
+        "renewal",
+        "ressourcement"
+      ],
+      "crossRefs": [
+        "SC-1",
+        "LG-40"
+      ],
+      "noteNl": "Deze ene zin bevat beide bewegingen van het Concilie: terugkeer naar de bronnen (ressourcement) en aanpassing (aggiornamento), in die volgorde.",
+      "noteEn": "This one sentence contains both movements of the Council: return to the sources (ressourcement) and adaptation (aggiornamento), in that order."
+    }
+  ]
+}

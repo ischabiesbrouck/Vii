@@ -1,0 +1,70 @@
+{
+  "docId": "optatam-totius",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "OT-1",
+      "docId": "optatam-totius",
+      "number": 1,
+      "textEn": "… the desired renewal of the whole Church depends to a great extent on the ministry of its priests, which must be animated by the spirit of Christ …",
+      "textNl": "… de gewenste vernieuwing van heel de Kerk hangt grotendeels af van het dienstwerk van de priesters, dat door de geest van Christus bezield moet zijn …",
+      "tags": [
+        "priesthood",
+        "formation",
+        "renewal"
+      ],
+      "crossRefs": [
+        "PO-2"
+      ]
+    },
+    {
+      "id": "OT-2",
+      "docId": "optatam-totius",
+      "number": 2,
+      "textEn": "The duty of fostering vocations pertains to the whole Christian community …",
+      "textNl": "De plicht roepingen te bevorderen rust op heel de christelijke gemeenschap …",
+      "tags": [
+        "vocations",
+        "formation",
+        "laity"
+      ],
+      "crossRefs": [
+        "OT-1",
+        "GS-50"
+      ]
+    },
+    {
+      "id": "OT-10",
+      "docId": "optatam-totius",
+      "number": 10,
+      "textEn": "Students who, according to the holy and fixed laws of their own rite, follow the revered tradition of priestly celibacy should be educated to this state with great care.",
+      "textNl": "Studenten die volgens de heilige en vaste wetten van hun eigen ritus de eerbiedwaardige traditie van het priestercelibaat volgen, moeten met grote zorg voor deze staat gevormd worden.",
+      "tags": [
+        "celibacy",
+        "formation"
+      ],
+      "crossRefs": [
+        "PO-16"
+      ]
+    },
+    {
+      "id": "OT-16",
+      "docId": "optatam-totius",
+      "number": 16,
+      "textEn": "… the students should learn to penetrate them more deeply with the help of speculation, under the guidance of St. Thomas, and to perceive their interconnections.",
+      "textNl": "… de studenten moeten leren de mysteries van het heil met behulp van speculatief denken, onder leiding van de heilige Thomas, dieper te doorgronden en hun onderlinge samenhang te zien.",
+      "tags": [
+        "theology",
+        "formation",
+        "thomism"
+      ],
+      "crossRefs": [
+        "DV-24"
+      ],
+      "noteNl": "Het begin van §16 stelt dat de theologie moet beginnen bij de Schrift en de kerkvaders, en pas daarna speculatief moet worden uitgewerkt.",
+      "noteEn": "The beginning of §16 states that theology must start from Scripture and the Fathers, and only then be developed speculatively."
+    }
+  ]
+}

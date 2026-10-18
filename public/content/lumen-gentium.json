@@ -1,0 +1,369 @@
+{
+  "docId": "lumen-gentium",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "LG-1",
+      "docId": "lumen-gentium",
+      "number": 1,
+      "textEn": "Christ is the Light of nations. Because this is so, this Sacred Synod gathered together in the Holy Spirit eagerly desires, by proclaiming the Gospel to every creature, to bring the light of Christ to all men, a light brightly visible on the countenance of the Church. Since the Church is in Christ like a sacrament or as a sign and instrument both of a very closely knit union with God and of the unity of the whole human race …",
+      "textNl": "Christus is het Licht der volken. Daarom verlangt deze heilige Synode, in de Heilige Geest bijeengekomen, vurig om door de verkondiging van het evangelie aan alle schepselen alle mensen te verlichten met het licht van Christus, dat op het gelaat van de Kerk weerschijnt. Omdat de Kerk in Christus als het ware het sacrament is, dat wil zeggen teken en werktuig van de innige vereniging met God en van de eenheid van heel het mensdom …",
+      "textLa": "Lumen gentium cum sit Christus …",
+      "tags": [
+        "ecclesiology",
+        "sacrament",
+        "mission"
+      ],
+      "crossRefs": [
+        "LG-8",
+        "GS-22"
+      ]
+    },
+    {
+      "id": "LG-8",
+      "docId": "lumen-gentium",
+      "number": 8,
+      "textEn": "This Church constituted and organized in the world as a society, subsists in the Catholic Church, which is governed by the successor of Peter and by the Bishops in communion with him, although many elements of sanctification and of truth are found outside of its visible structure. These elements, as gifts belonging to the Church of Christ, are forces impelling toward catholic unity.",
+      "textNl": "Deze Kerk, in deze wereld als een samenleving ingericht en geordend, is aanwezig in (subsistit in) de Katholieke Kerk, die bestuurd wordt door de opvolger van Petrus en de bisschoppen in gemeenschap met hem, ook al zijn buiten haar zichtbare structuur vele elementen van heiliging en waarheid te vinden. Deze elementen, als gaven die eigen zijn aan de Kerk van Christus, dringen aan op katholieke eenheid.",
+      "textLa": "Haec Ecclesia, in hoc mundo ut societas constituta et ordinata, subsistit in Ecclesia catholica, a successore Petri et Episcopis in eius communione gubernata, licet extra eius compaginem elementa plura sanctificationis et veritatis inveniantur …",
+      "tags": [
+        "ecclesiology",
+        "subsistit-in",
+        "ecumenism"
+      ],
+      "crossRefs": [
+        "UR-3",
+        "LG-14",
+        "LG-15",
+        "ext:mystici-corporis-1943",
+        "ext:cdf-responsa-2007",
+        "ext:dominus-iesus-2000"
+      ],
+      "noteNl": "Eerdere ontwerpen hadden 'est' (is). De betekenis van de wijziging naar 'subsistit in' is omstreden; zie Claim Check en de CDF-Responsa van 2007.",
+      "noteEn": "Earlier drafts read 'est' (is). The meaning of the change to 'subsistit in' is disputed; see Claim Check and the 2007 CDF Responsa."
+    },
+    {
+      "id": "LG-9",
+      "docId": "lumen-gentium",
+      "number": 9,
+      "textEn": "At all times and in every race God has given welcome to whosoever fears Him and does what is right. God, however, does not make men holy and save them merely as individuals, without bond or link between one another. Rather has it pleased Him to bring men together as one people …",
+      "textNl": "Te allen tijde en onder alle volken heeft God welgevallen gehad in ieder die Hem vreest en doet wat recht is. Het heeft God echter behaagd de mensen niet afzonderlijk, zonder onderling verband, te heiligen en te redden, maar hen samen te brengen tot één volk …",
+      "tags": [
+        "ecclesiology",
+        "people-of-god"
+      ],
+      "crossRefs": [
+        "LG-14"
+      ]
+    },
+    {
+      "id": "LG-10",
+      "docId": "lumen-gentium",
+      "number": 10,
+      "textEn": "Though they differ from one another in essence and not only in degree, the common priesthood of the faithful and the ministerial or hierarchical priesthood are nonetheless interrelated: each of them in its own special way is a participation in the one priesthood of Christ.",
+      "textNl": "Hoewel het gemeenschappelijk priesterschap van de gelovigen en het ambtelijk of hiërarchisch priesterschap wezenlijk en niet slechts in graad van elkaar verschillen, zijn zij toch op elkaar betrokken: elk heeft op eigen wijze deel aan het ene priesterschap van Christus.",
+      "textLa": "Sacerdotium autem commune fidelium et sacerdotium ministeriale seu hierarchicum, licet essentia et non gradu tantum differant, ad invicem tamen ordinantur …",
+      "tags": [
+        "ecclesiology",
+        "priesthood",
+        "laity"
+      ],
+      "crossRefs": [
+        "LG-31",
+        "PO-16"
+      ]
+    },
+    {
+      "id": "LG-11",
+      "docId": "lumen-gentium",
+      "number": 11,
+      "textEn": "Taking part in the Eucharistic sacrifice, which is the fount and apex of the whole Christian life, they offer the Divine Victim to God, and offer themselves along with It.",
+      "textNl": "Door deel te nemen aan het eucharistisch offer, bron en hoogtepunt van heel het christelijk leven, dragen zij het goddelijk Slachtoffer aan God op en zichzelf daarmee.",
+      "textLa": "… Sacrificium eucharisticum, totius vitae christianae fontem et culmen, participantes …",
+      "tags": [
+        "eucharist",
+        "sacrifice",
+        "laity"
+      ],
+      "crossRefs": [
+        "SC-10",
+        "SC-47"
+      ]
+    },
+    {
+      "id": "LG-12",
+      "docId": "lumen-gentium",
+      "number": 12,
+      "textEn": "The entire body of the faithful, anointed as they are by the Holy One, cannot err in matters of belief. They manifest this special property by means of the whole peoples' supernatural discernment in matters of faith when \"from the Bishops down to the last of the lay faithful\" they show universal agreement in matters of faith and morals.",
+      "textNl": "Het geheel van de gelovigen, dat de zalving van de Heilige heeft ontvangen, kan in het geloof niet dwalen. Deze bijzondere eigenschap toont het door de bovennatuurlijke geloofszin van heel het volk, wanneer het 'van de bisschoppen tot de laatste gelovige leek' in zaken van geloof en zeden algemene overeenstemming betuigt.",
+      "tags": [
+        "sensus-fidei",
+        "laity",
+        "magisterium"
+      ],
+      "crossRefs": [
+        "LG-25"
+      ],
+      "noteNl": "De tekst vervolgt dat dit geloofsbesef geleid wordt door het heilig leergezag. Het gaat om universele overeenstemming, niet om een meerderheid op een bepaald moment.",
+      "noteEn": "The text continues that this sense of faith is guided by the sacred magisterium. It concerns universal agreement, not a majority at a given moment."
+    },
+    {
+      "id": "LG-14",
+      "docId": "lumen-gentium",
+      "number": 14,
+      "textEn": "Basing itself upon Sacred Scripture and Tradition, it teaches that the Church, now sojourning on earth as an exile, is necessary for salvation. … Whosoever, therefore, knowing that the Catholic Church was made necessary by Christ, would refuse to enter or to remain in it, could not be saved.",
+      "textNl": "Steunend op de heilige Schrift en de Traditie leert de Synode dat deze pelgrimerende Kerk noodzakelijk is tot heil. … Daarom kunnen zij niet gered worden die, wetend dat de Katholieke Kerk door God in Jezus Christus als noodzakelijk is gesticht, toch weigeren haar binnen te gaan of in haar te volharden.",
+      "tags": [
+        "ecclesiology",
+        "salvation",
+        "necessity-of-the-church"
+      ],
+      "crossRefs": [
+        "LG-16",
+        "AG-7",
+        "UR-3",
+        "ext:mystici-corporis-1943"
+      ]
+    },
+    {
+      "id": "LG-15",
+      "docId": "lumen-gentium",
+      "number": 15,
+      "textEn": "The Church recognizes that in many ways she is linked with those who, being baptized, are honored with the name of Christian, though they do not profess the faith in its entirety or do not preserve unity of communion with the successor of Peter.",
+      "textNl": "De Kerk weet zich om vele redenen verbonden met hen die, gedoopt, de christelijke naam dragen, maar het geloof niet in zijn geheel belijden of de eenheid van gemeenschap onder de opvolger van Petrus niet bewaren.",
+      "tags": [
+        "ecclesiology",
+        "ecumenism"
+      ],
+      "crossRefs": [
+        "UR-3",
+        "LG-8"
+      ]
+    },
+    {
+      "id": "LG-16",
+      "docId": "lumen-gentium",
+      "number": 16,
+      "textEn": "Those also can attain to salvation who through no fault of their own do not know the Gospel of Christ or His Church, yet sincerely seek God and moved by grace strive by their deeds to do His will as it is known to them through the dictates of conscience. … But often men, deceived by the Evil One, have become vain in their reasonings and have exchanged the truth of God for a lie, serving the creature rather than the Creator.",
+      "textNl": "Zij die buiten eigen schuld het evangelie van Christus en zijn Kerk niet kennen, maar God met oprecht hart zoeken en, onder invloed van de genade, zijn wil zoals zij die door de stem van hun geweten kennen, in daden trachten te volbrengen, kunnen eveneens het eeuwig heil verwerven. … Maar heel vaak zijn mensen, door de Boze bedrogen, ijdel geworden in hun redeneringen en hebben zij de waarheid van God verruild voor de leugen, door het schepsel te dienen in plaats van de Schepper.",
+      "tags": [
+        "salvation",
+        "non-christians",
+        "conscience"
+      ],
+      "crossRefs": [
+        "LG-14",
+        "NA-2",
+        "AG-7",
+        "GS-22"
+      ],
+      "noteNl": "Eerder in §16 worden het Joodse volk en 'in de eerste plaats de moslims' genoemd onder hen die op verschillende wijze op het volk van God zijn gericht. De paragraaf eindigt met de opdracht het evangelie te verkondigen.",
+      "noteEn": "Earlier in §16 the Jewish people and 'in the first place the Moslems' are named among those related in various ways to the people of God. The paragraph ends with the mandate to preach the Gospel."
+    },
+    {
+      "id": "LG-18",
+      "docId": "lumen-gentium",
+      "number": 18,
+      "textEn": "This Sacred Council, following closely in the footsteps of the First Vatican Council, with that Council teaches and declares that Jesus Christ, the eternal Shepherd, established His holy Church …",
+      "textNl": "In de voetsporen van het Eerste Vaticaans Concilie leert en verklaart deze heilige Synode met dat Concilie dat Jezus Christus, de eeuwige Herder, zijn heilige Kerk heeft gebouwd …",
+      "tags": [
+        "ecclesiology",
+        "hierarchy",
+        "continuity",
+        "papacy"
+      ],
+      "crossRefs": [
+        "LG-22",
+        "LG-25",
+        "ext:pastor-aeternus-1870"
+      ]
+    },
+    {
+      "id": "LG-21",
+      "docId": "lumen-gentium",
+      "number": 21,
+      "textEn": "… this Sacred Council teaches that by Episcopal consecration the fullness of the sacrament of Orders is conferred …",
+      "textNl": "… deze heilige Synode leert dat door de bisschopswijding de volheid van het wijdingssacrament wordt verleend …",
+      "tags": [
+        "bishops",
+        "sacraments",
+        "holy-orders"
+      ],
+      "crossRefs": [
+        "LG-22",
+        "CD-11"
+      ],
+      "noteNl": "Hiermee besliste het Concilie een oude theologische vraag: of de bisschopswijding sacramenteel is of alleen een jurisdictie verleent.",
+      "noteEn": "With this the Council settled an old theological question: whether episcopal consecration is sacramental or confers only jurisdiction."
+    },
+    {
+      "id": "LG-22",
+      "docId": "lumen-gentium",
+      "number": 22,
+      "textEn": "But the college or body of bishops has no authority unless it is understood together with the Roman Pontiff, the successor of Peter as its head. The pope's power of primacy over all, both pastors and faithful, remains whole and intact.",
+      "textNl": "Het college of lichaam van de bisschoppen heeft echter geen gezag, tenzij het wordt opgevat in vereniging met de Romeinse Paus, de opvolger van Petrus, als zijn hoofd. Diens primatiaal gezag over allen, herders zowel als gelovigen, blijft volledig ongeschonden.",
+      "textLa": "Collegium autem seu corpus Episcoporum auctoritatem non habet, nisi simul cum Pontifice Romano, successore Petri, ut capite eius intellegatur …",
+      "tags": [
+        "collegiality",
+        "papacy",
+        "hierarchy"
+      ],
+      "crossRefs": [
+        "LG-18",
+        "ext:nota-praevia-1964",
+        "ext:pastor-aeternus-1870"
+      ],
+      "noteNl": "De Nota explicativa praevia (1964), op gezag van de paus aan LG toegevoegd, preciseert dat 'college' niet in strikt juridische zin van gelijken bedoeld is.",
+      "noteEn": "The Nota explicativa praevia (1964), added to LG on papal authority, specifies that 'college' is not meant in the strictly juridical sense of a group of equals."
+    },
+    {
+      "id": "LG-25",
+      "docId": "lumen-gentium",
+      "number": 25,
+      "textEn": "In matters of faith and morals, the bishops speak in the name of Christ and the faithful are to accept their teaching and adhere to it with a religious assent. This religious submission of mind and will must be shown in a special way to the authentic magisterium of the Roman Pontiff, even when he is not speaking ex cathedra …",
+      "textNl": "In zaken van geloof en zeden spreken de bisschoppen in de naam van Christus en moeten de gelovigen hun leer aanvaarden en met godsdienstige instemming aanhangen. Deze godsdienstige onderwerping van verstand en wil moet op bijzondere wijze betoond worden aan het authentieke leergezag van de Romeinse Paus, ook wanneer hij niet ex cathedra spreekt …",
+      "tags": [
+        "magisterium",
+        "papacy",
+        "infallibility",
+        "authority"
+      ],
+      "crossRefs": [
+        "LG-12",
+        "LG-18",
+        "DV-10",
+        "ext:pastor-aeternus-1870",
+        "ext:notificationes-1964"
+      ]
+    },
+    {
+      "id": "LG-31",
+      "docId": "lumen-gentium",
+      "number": 31,
+      "textEn": "The term laity is here understood to mean all the faithful except those in holy orders and those in the state of religious life specially approved by the Church. … What specifically characterizes the laity is their secular nature. … the laity, by their very vocation, seek the kingdom of God by engaging in temporal affairs and by ordering them according to the plan of God.",
+      "textNl": "Onder leken worden hier verstaan alle gelovigen behalve de leden van de gewijde stand en van de door de Kerk erkende religieuze staat. … Het seculiere karakter is de leken eigen en kenmerkend. … Krachtens hun eigen roeping zoeken de leken het rijk van God door zich met tijdelijke zaken bezig te houden en die volgens Gods plan te ordenen.",
+      "tags": [
+        "laity",
+        "secular-character"
+      ],
+      "crossRefs": [
+        "LG-33",
+        "AA-2",
+        "AA-3",
+        "LG-10"
+      ]
+    },
+    {
+      "id": "LG-33",
+      "docId": "lumen-gentium",
+      "number": 33,
+      "textEn": "The lay apostolate, however, is a participation in the salvific mission of the Church itself. Through their baptism and confirmation all are commissioned to that apostolate by the Lord Himself.",
+      "textNl": "Het lekenapostolaat is een deelname aan de heilszending van de Kerk zelf. Tot dit apostolaat worden allen door de Heer zelf aangesteld, door doopsel en vormsel.",
+      "tags": [
+        "laity",
+        "apostolate",
+        "mission"
+      ],
+      "crossRefs": [
+        "AA-3",
+        "LG-31"
+      ]
+    },
+    {
+      "id": "LG-40",
+      "docId": "lumen-gentium",
+      "number": 40,
+      "textEn": "Thus it is evident to everyone, that all the faithful of Christ of whatever rank or status, are called to the fullness of the Christian life and to the perfection of charity …",
+      "textNl": "Het is dus voor allen duidelijk dat alle christengelovigen, van welke staat of stand ook, geroepen zijn tot de volheid van het christelijk leven en tot de volmaaktheid van de liefde …",
+      "tags": [
+        "holiness",
+        "laity"
+      ],
+      "crossRefs": [
+        "LG-31"
+      ]
+    },
+    {
+      "id": "LG-48",
+      "docId": "lumen-gentium",
+      "number": 48,
+      "textEn": "The Church, to which we are all called in Christ Jesus, and in which we acquire sanctity through the grace of God, will attain its full perfection only in the glory of heaven …",
+      "textNl": "De Kerk, waartoe wij allen in Christus Jezus geroepen zijn en waarin wij door Gods genade heiligheid verwerven, zal pas in de hemelse heerlijkheid haar voltooiing bereiken …",
+      "tags": [
+        "eschatology",
+        "ecclesiology",
+        "holiness"
+      ],
+      "crossRefs": [
+        "LG-40",
+        "GS-39"
+      ]
+    },
+    {
+      "id": "LG-59",
+      "docId": "lumen-gentium",
+      "number": 59,
+      "textEn": "Finally, the Immaculate Virgin, preserved free from all guilt of original sin, on the completion of her earthly sojourn, was taken up body and soul into heavenly glory, and exalted by the Lord as Queen of the universe, that she might be the more fully conformed to her Son, the Lord of lords and the conqueror of sin and death.",
+      "textNl": "Ten slotte werd de Onbevlekte Maagd, die vrij was gebleven van iedere smet van de erfzonde, na het voltooien van haar aardse levensloop met lichaam en ziel in de hemelse heerlijkheid opgenomen en door de Heer verheven tot Koningin van het heelal, om vollediger gelijkvormig te worden aan haar Zoon, de Heer der heren en de overwinnaar van zonde en dood.",
+      "tags": [
+        "mary",
+        "immaculate-conception",
+        "assumption"
+      ],
+      "crossRefs": [
+        "LG-62"
+      ],
+      "noteNl": "Herhaalt de dogma's van 1854 (Onbevlekte Ontvangenis) en 1950 (Tenhemelopneming), zonder nieuwe definitie.",
+      "noteEn": "Restates the dogmas of 1854 (Immaculate Conception) and 1950 (Assumption), without a new definition."
+    },
+    {
+      "id": "LG-60",
+      "docId": "lumen-gentium",
+      "number": 60,
+      "textEn": "There is but one Mediator as we know from the words of the apostle, \"for there is one God and one mediator of God and men, the man Christ Jesus, who gave himself a redemption for all\". The maternal duty of Mary toward men in no wise obscures or diminishes this unique mediation of Christ, but rather shows His power.",
+      "textNl": "Er is slechts één Middelaar, zoals wij weten uit de woorden van de apostel: 'Want er is één God en één middelaar tussen God en de mensen, de mens Christus Jezus, die zichzelf gegeven heeft als losprijs voor allen.' De moederlijke taak van Maria jegens de mensen verduistert of vermindert deze unieke middelaarschap van Christus geenszins, maar toont juist zijn kracht.",
+      "tags": [
+        "mary",
+        "christology",
+        "mediation"
+      ],
+      "crossRefs": [
+        "LG-62"
+      ]
+    },
+    {
+      "id": "LG-62",
+      "docId": "lumen-gentium",
+      "number": 62,
+      "textEn": "For no creature could ever be counted as equal with the Incarnate Word and Redeemer.",
+      "textNl": "Want geen enkel schepsel kan ooit op één lijn gesteld worden met het mensgeworden Woord en de Verlosser.",
+      "tags": [
+        "mary",
+        "christology",
+        "mediation"
+      ],
+      "crossRefs": [
+        "LG-60"
+      ],
+      "noteNl": "Het Concilie besloot in 1963 met een kleine meerderheid de tekst over Maria niet als apart document, maar als slothoofdstuk van LG op te nemen.",
+      "noteEn": "In 1963 the Council decided by a narrow majority to include the text on Mary as the final chapter of LG rather than as a separate document."
+    },
+    {
+      "id": "LG-67",
+      "docId": "lumen-gentium",
+      "number": 67,
+      "textEn": "… it exhorts theologians and preachers of the divine word to abstain zealously both from all gross exaggerations as well as from petty narrow-mindedness in considering the singular dignity of the Mother of God.",
+      "textNl": "… het spoort theologen en verkondigers van het goddelijk woord aan zich zorgvuldig te onthouden zowel van alle valse overdrijving als van een te grote bekrompenheid bij het beschouwen van de bijzondere waardigheid van de Moeder van God.",
+      "tags": [
+        "mary",
+        "devotion"
+      ],
+      "crossRefs": [
+        "LG-60",
+        "LG-62"
+      ]
+    }
+  ]
+}

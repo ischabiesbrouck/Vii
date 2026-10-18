@@ -1,0 +1,61 @@
+{
+  "docId": "ad-gentes",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "AG-2",
+      "docId": "ad-gentes",
+      "number": 2,
+      "textEn": "The pilgrim Church is missionary by her very nature, since it is from the mission of the Son and the mission of the Holy Spirit that she draws her origin, in accordance with the decree of God the Father.",
+      "textNl": "De pelgrimerende Kerk is uit haar aard missionair, omdat zij haar oorsprong vindt in de zending van de Zoon en de zending van de heilige Geest, volgens het raadsbesluit van God de Vader.",
+      "textLa": "Ecclesia peregrinans natura sua missionaria est …",
+      "tags": [
+        "mission",
+        "trinity",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "AG-7",
+        "LG-1"
+      ]
+    },
+    {
+      "id": "AG-7",
+      "docId": "ad-gentes",
+      "number": 7,
+      "textEn": "Therefore though God in ways known to Himself can lead those inculpably ignorant of the Gospel to find that faith without which it is impossible to please Him, yet a necessity lies upon the Church, and at the same time a sacred duty, to preach the Gospel.",
+      "textNl": "Hoewel God langs wegen die Hij kent de mensen die buiten eigen schuld het evangelie niet kennen, kan brengen tot het geloof zonder hetwelk het onmogelijk is Hem te behagen, rust op de Kerk toch de noodzaak, en tegelijk de heilige plicht, het evangelie te verkondigen.",
+      "tags": [
+        "mission",
+        "salvation",
+        "non-christians"
+      ],
+      "crossRefs": [
+        "LG-14",
+        "LG-16",
+        "NA-2",
+        "ext:redemptoris-missio-1990"
+      ]
+    },
+    {
+      "id": "AG-11",
+      "docId": "ad-gentes",
+      "number": 11,
+      "textEn": "… let them gladly and reverently lay bare the seeds of the Word which lie hidden among them.",
+      "textNl": "… laten zij met vreugde en eerbied de zaden van het Woord ontdekken die daarin verborgen liggen.",
+      "tags": [
+        "mission",
+        "non-christians",
+        "semina-verbi"
+      ],
+      "crossRefs": [
+        "NA-2",
+        "AG-7"
+      ],
+      "noteNl": "'Zaden van het Woord' (semina Verbi) is een uitdrukking van Justinus de Martelaar (2e eeuw).",
+      "noteEn": "'Seeds of the Word' (semina Verbi) is an expression of Justin Martyr (2nd century)."
+    }
+  ]
+}

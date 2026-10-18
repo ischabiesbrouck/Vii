@@ -1,0 +1,269 @@
+{
+  "checkedOn": "2026-10-18",
+  "noteNl": "Video-ID's en titels zijn op 18 oktober 2026 gecontroleerd via zoekresultaten; YouTube zelf kon vanuit de bouwomgeving niet geopend worden. Lengtes zijn alleen vermeld waar een bron ze noemt. Video's zijn aanvullend: de tekst van het Concilie blijft de maatstaf.",
+  "noteEn": "Video IDs and titles were checked against search results on 18 October 2026; YouTube itself could not be opened from the build environment. Lengths are given only where a source states them. Videos are supplementary: the Council's text remains the measure.",
+  "items": [
+    {
+      "youtubeId": "kjpI0ADVjVM",
+      "title": "The Second Vatican Council: Transforming the Church for Today",
+      "channel": "EWTN",
+      "channelConfirmed": true,
+      "kind": "overview",
+      "whyNl": "Een compacte terugblik van EWTN-Vaticaanjournaliste Bénédicte Cedergren op wat er op het Concilie gebeurde.",
+      "whyEn": "A compact review by EWTN Vatican journalist Bénédicte Cedergren of what happened at the Council.",
+      "docIds": [],
+      "subjectIds": [],
+      "lessonIds": [
+        "why-a-council",
+        "how-it-worked"
+      ]
+    },
+    {
+      "youtubeId": "hN55SuVD7VQ",
+      "title": "A Look at the 16 Key Documents of the Second Vatican Council",
+      "channel": "EWTN News",
+      "channelConfirmed": true,
+      "kind": "overview",
+      "whyNl": "Catherine Hadro (EWTN News) loopt de zestien documenten langs: een goed overzicht voor beginners.",
+      "whyEn": "Catherine Hadro (EWTN News) walks through the sixteen documents: a good overview for beginners.",
+      "docIds": [],
+      "subjectIds": [],
+      "lessonIds": [
+        "four-constitutions",
+        "decrees-declarations"
+      ]
+    },
+    {
+      "youtubeId": "qtXe946hsrQ",
+      "title": "VATICAN II (Part 1): 60 years since the last Church council",
+      "channel": "Rome Reports",
+      "channelConfirmed": true,
+      "kind": "overview",
+      "whyNl": "Korte nieuwsreportage over de plaats van het Concilie in de geschiedenis en zijn vier constituties.",
+      "whyEn": "Short news report on the Council's place in history and its four constitutions.",
+      "docIds": [],
+      "subjectIds": [],
+      "lessonIds": [
+        "why-a-council",
+        "four-constitutions"
+      ]
+    },
+    {
+      "youtubeId": "5jXsERRB4ZE",
+      "title": "VATICAN II (Part 2): What is the common priesthood of the faithful?",
+      "channel": "Rome Reports",
+      "channelConfirmed": false,
+      "kind": "document",
+      "whyNl": "Over het gemeenschappelijk priesterschap van de gelovigen (LG §10) en wat het Concilie níet voorschreef, zoals de celebratierichting.",
+      "whyEn": "On the common priesthood of the faithful (LG §10) and what the Council did not prescribe, such as the direction of celebration.",
+      "docIds": [
+        "lumen-gentium"
+      ],
+      "subjectIds": [
+        "laity"
+      ],
+      "lessonIds": [
+        "church-lg"
+      ]
+    },
+    {
+      "youtubeId": "Xqh_0wqTz2M",
+      "title": "Voices of Vatican II",
+      "channel": "Catholic News Service",
+      "channelConfirmed": false,
+      "kind": "history",
+      "whyNl": "Documentaire (2015) met archiefbeelden en twaalf deelnemers aan het Concilie, onder wie Joseph Ratzinger. Langer, maar uniek bronmateriaal.",
+      "whyEn": "Documentary (2015) with archival footage and twelve participants in the Council, including Joseph Ratzinger. Longer, but unique source material.",
+      "docIds": [],
+      "subjectIds": [],
+      "lessonIds": [
+        "how-it-worked"
+      ],
+      "length": "±50 min"
+    },
+    {
+      "youtubeId": "XjGRSvqKmhI",
+      "title": "Pope Benedict XVI speaks to priests of Rome about Vatican II (English translation)",
+      "channel": "—",
+      "channelConfirmed": false,
+      "kind": "primary-source",
+      "whyNl": "Primaire bron: de onvoorbereide herinneringen van Benedictus XVI aan het Concilie, waaraan hij als jonge theoloog deelnam (14 februari 2013).",
+      "whyEn": "Primary source: Benedict XVI's unscripted recollections of the Council, in which he took part as a young theologian (14 February 2013).",
+      "docIds": [],
+      "subjectIds": [
+        "reading-the-council"
+      ],
+      "lessonIds": [
+        "how-it-worked",
+        "reading-today"
+      ]
+    },
+    {
+      "youtubeId": "1rIuHQ_fhQk",
+      "title": "What Was the Actual Purpose of Vatican II? — Bishop Barron on Vatican II",
+      "channel": "Bishop Robert Barron (Word on Fire)",
+      "channelConfirmed": true,
+      "kind": "interpretation",
+      "whyNl": "Bisschop Barron over het eigenlijke doel van het Concilie, uit een gesprek met de filosoof Rocco Buttiglione.",
+      "whyEn": "Bishop Barron on the actual purpose of the Council, from a conversation with the philosopher Rocco Buttiglione.",
+      "docIds": [],
+      "subjectIds": [
+        "reading-the-council"
+      ],
+      "lessonIds": [
+        "why-a-council",
+        "reading-today"
+      ],
+      "perspectiveNl": "Leest het Concilie in de lijn van Johannes Paulus II en Benedictus XVI.",
+      "perspectiveEn": "Reads the Council in the line of John Paul II and Benedict XVI."
+    },
+    {
+      "youtubeId": "4407HnA3xfA",
+      "title": "Most Influential Figure of Vatican II Besides Those at the Council? — Bishop Barron on Vatican II",
+      "channel": "Bishop Robert Barron (Word on Fire)",
+      "channelConfirmed": true,
+      "kind": "interpretation",
+      "whyNl": "Over de theoloog die het Concilie het sterkst beïnvloedde zonder er zelf bij te zijn.",
+      "whyEn": "On the theologian who most influenced the Council without being present at it.",
+      "docIds": [],
+      "subjectIds": [
+        "development"
+      ],
+      "lessonIds": [
+        "why-a-council"
+      ],
+      "perspectiveNl": "Leest het Concilie in de lijn van Johannes Paulus II en Benedictus XVI.",
+      "perspectiveEn": "Reads the Council in the line of John Paul II and Benedict XVI."
+    },
+    {
+      "youtubeId": "m8j24FBRgrA",
+      "title": "Bishop Barron on The Meaning of Vatican II",
+      "channel": "Bishop Robert Barron (Word on Fire)",
+      "channelConfirmed": true,
+      "kind": "interpretation",
+      "whyNl": "Korte commentaar op de betekenis van het Concilie voor de evangelisatie vandaag.",
+      "whyEn": "Short commentary on the meaning of the Council for evangelisation today.",
+      "docIds": [],
+      "subjectIds": [
+        "reading-the-council",
+        "mission"
+      ],
+      "lessonIds": [
+        "reading-today"
+      ],
+      "perspectiveNl": "Leest het Concilie in de lijn van Johannes Paulus II en Benedictus XVI.",
+      "perspectiveEn": "Reads the Council in the line of John Paul II and Benedict XVI."
+    },
+    {
+      "youtubeId": "IWihACwB0fs",
+      "title": "Vatican II 60 Years Later: Debating the Council's Legacy",
+      "channel": "EWTN News",
+      "channelConfirmed": true,
+      "kind": "interpretation",
+      "whyNl": "Gesprek over hoe de nalatenschap van het Concilie nog altijd wordt besproken; nuttig naast de module Hermeneutiek.",
+      "whyEn": "Discussion of how the Council's legacy is still debated; useful alongside the Hermeneutics module.",
+      "docIds": [],
+      "subjectIds": [
+        "reading-the-council"
+      ],
+      "lessonIds": [
+        "after-the-council",
+        "reading-today"
+      ]
+    },
+    {
+      "youtubeId": "JcRNsgB5UJk",
+      "title": "Vatican II: Its Aims and Trajectories — John W. O'Malley, S.J.",
+      "channel": "Georgetown University",
+      "channelConfirmed": false,
+      "kind": "history",
+      "whyNl": "Lezing van de historicus John O'Malley (auteur van 'What Happened at Vatican II') op de Georgetown-conferentie van 2012. Langer, academisch.",
+      "whyEn": "Lecture by historian John O'Malley (author of 'What Happened at Vatican II') at Georgetown's 2012 conference. Longer, academic.",
+      "docIds": [],
+      "subjectIds": [
+        "reading-the-council"
+      ],
+      "lessonIds": [
+        "why-a-council",
+        "reading-today"
+      ],
+      "perspectiveNl": "Leest het Concilie vooral als 'gebeurtenis' met een nieuwe stijl.",
+      "perspectiveEn": "Reads the Council above all as an 'event' with a new style."
+    },
+    {
+      "youtubeId": "8rOfY9DLalU",
+      "title": "CATECHESIS: Leo XIV explains the first document of VATICAN II",
+      "channel": "Rome Reports",
+      "channelConfirmed": true,
+      "kind": "catechesis",
+      "whyNl": "Rome Reports vat de catechese van 20 mei 2026 over Sacrosanctum Concilium samen.",
+      "whyEn": "Rome Reports summarises the catechesis of 20 May 2026 on Sacrosanctum Concilium.",
+      "docIds": [
+        "sacrosanctum-concilium"
+      ],
+      "subjectIds": [
+        "liturgy"
+      ],
+      "lessonIds": [
+        "liturgy-sc"
+      ]
+    },
+    {
+      "youtubeId": "iAlUMNUpMFg",
+      "title": "Vatican II: Rupture or Continuity? Part 2: Dignitatis Humanae — Matthew Dugandzic, PhD",
+      "channel": "St. Mary's Seminary & University",
+      "channelConfirmed": false,
+      "kind": "document",
+      "whyNl": "Academische les over de kernvraag rond Dignitatis Humanae: breuk of continuïteit?",
+      "whyEn": "Academic lesson on the core question about Dignitatis Humanae: rupture or continuity?",
+      "docIds": [
+        "dignitatis-humanae"
+      ],
+      "subjectIds": [
+        "religious-liberty"
+      ],
+      "lessonIds": [
+        "decrees-declarations",
+        "reading-today"
+      ]
+    },
+    {
+      "youtubeId": "wOKGswU-IE8",
+      "title": "Gaudium et Spes — Turning to the world — Professor Catherine E. Clifford",
+      "channel": "—",
+      "channelConfirmed": false,
+      "kind": "document",
+      "whyNl": "Inleiding op Gaudium et Spes door theologe Catherine Clifford, ter gelegenheid van het vijftigjarig jubileum.",
+      "whyEn": "Introduction to Gaudium et Spes by theologian Catherine Clifford, for the fiftieth anniversary.",
+      "docIds": [
+        "gaudium-et-spes"
+      ],
+      "subjectIds": [
+        "church-world"
+      ],
+      "lessonIds": [
+        "church-world-gs"
+      ],
+      "perspectiveNl": "Legt de nadruk op de vernieuwende kant van de constitutie.",
+      "perspectiveEn": "Emphasises the innovative side of the constitution."
+    },
+    {
+      "youtubeId": "VVk2yvOeTCM",
+      "title": "New Vatican Document: Most Rev. Robert Barron",
+      "channel": "—",
+      "channelConfirmed": false,
+      "kind": "document",
+      "whyNl": "Bisschop Barron over het Vaticaanse document bij zestig jaar Nostra Aetate (2025).",
+      "whyEn": "Bishop Barron on the Vatican document marking sixty years of Nostra Aetate (2025).",
+      "docIds": [
+        "nostra-aetate"
+      ],
+      "subjectIds": [
+        "ecumenism-religions"
+      ],
+      "lessonIds": [
+        "decrees-declarations"
+      ]
+    }
+  ]
+}

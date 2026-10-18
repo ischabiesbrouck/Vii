@@ -1,0 +1,362 @@
+{
+  "docId": "sacrosanctum-concilium",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "SC-1",
+      "docId": "sacrosanctum-concilium",
+      "number": 1,
+      "textEn": "This sacred Council has several aims in view: it desires to impart an ever increasing vigor to the Christian life of the faithful; to adapt more suitably to the needs of our own times those institutions which are subject to change; to foster whatever can promote union among all who believe in Christ; to strengthen whatever can help to call the whole of mankind into the household of the Church.",
+      "textNl": "Dit heilig Concilie stelt zich meerdere doelen: het wil het christelijk leven van de gelovigen steeds krachtiger maken; de instellingen die aan verandering onderhevig zijn beter aanpassen aan de noden van onze tijd; bevorderen wat de eenheid van allen die in Christus geloven kan dienen; en versterken wat kan helpen de hele mensheid in de schoot van de Kerk te roepen.",
+      "tags": [
+        "council-aims",
+        "aggiornamento"
+      ],
+      "crossRefs": [
+        "ext:gaudet-mater-1962"
+      ],
+      "noteNl": "De vier doelen van het Concilie als geheel, geformuleerd in het eerste document. Let op de beperking: aanpassing betreft 'instellingen die aan verandering onderhevig zijn'.",
+      "noteEn": "The four aims of the Council as a whole, stated in its first document. Note the limitation: adaptation concerns 'institutions which are subject to change'."
+    },
+    {
+      "id": "SC-2",
+      "docId": "sacrosanctum-concilium",
+      "number": 2,
+      "textEn": "For the liturgy, \"through which the work of our redemption is accomplished,\" most of all in the divine sacrifice of the Eucharist, is the outstanding means whereby the faithful may express in their lives, and manifest to others, the mystery of Christ and the real nature of the true Church.",
+      "textNl": "Want de liturgie, 'waardoor het werk van onze verlossing voltrokken wordt', vooral in het goddelijk offer van de eucharistie, draagt er in de hoogste mate toe bij dat de gelovigen het mysterie van Christus en het ware wezen van de Kerk in hun leven tot uitdrukking brengen en aan anderen tonen.",
+      "tags": [
+        "liturgy",
+        "eucharist",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "SC-10",
+        "LG-11"
+      ]
+    },
+    {
+      "id": "SC-7",
+      "docId": "sacrosanctum-concilium",
+      "number": 7,
+      "textEn": "To accomplish so great a work, Christ is always present in His Church, especially in her liturgical celebrations. He is present in the sacrifice of the Mass, not only in the person of His minister, … but especially under the Eucharistic species.",
+      "textNl": "Om zo'n groot werk te volbrengen is Christus altijd aanwezig in zijn Kerk, vooral in haar liturgische vieringen. Hij is aanwezig in het misoffer, niet alleen in de persoon van de bedienaar, … maar vooral onder de eucharistische gedaanten.",
+      "tags": [
+        "liturgy",
+        "eucharist",
+        "real-presence"
+      ],
+      "crossRefs": [
+        "SC-47",
+        "ext:mediator-dei-1947",
+        "ext:trent-sess22-1562"
+      ]
+    },
+    {
+      "id": "SC-8",
+      "docId": "sacrosanctum-concilium",
+      "number": 8,
+      "textEn": "In the earthly liturgy we take part in a foretaste of that heavenly liturgy which is celebrated in the holy city of Jerusalem toward which we journey as pilgrims …",
+      "textNl": "In de aardse liturgie nemen wij, bij voorsmaak, deel aan de hemelse liturgie die gevierd wordt in de heilige stad Jeruzalem, waarheen wij als pelgrims op weg zijn …",
+      "tags": [
+        "liturgy",
+        "eschatology"
+      ],
+      "crossRefs": [
+        "SC-10",
+        "LG-48"
+      ]
+    },
+    {
+      "id": "SC-10",
+      "docId": "sacrosanctum-concilium",
+      "number": 10,
+      "textEn": "Nevertheless the liturgy is the summit toward which the activity of the Church is directed; at the same time it is the font from which all her power flows.",
+      "textNl": "Niettemin is de liturgie het hoogtepunt waarop het handelen van de Kerk gericht is, en tegelijk de bron waaruit al haar kracht voortvloeit.",
+      "textLa": "Attamen Liturgia est culmen ad quod actio Ecclesiae tendit et simul fons unde omnis eius virtus emanat.",
+      "tags": [
+        "liturgy"
+      ],
+      "crossRefs": [
+        "LG-11"
+      ]
+    },
+    {
+      "id": "SC-14",
+      "docId": "sacrosanctum-concilium",
+      "number": 14,
+      "textEn": "Mother Church earnestly desires that all the faithful should be led to that fully conscious, and active participation in liturgical celebrations which is demanded by the very nature of the liturgy.",
+      "textNl": "Moeder de Kerk verlangt vurig dat alle gelovigen gebracht worden tot die volledige, bewuste en actieve deelname aan de liturgische vieringen die door de aard van de liturgie zelf gevraagd wordt.",
+      "textLa": "… ad plenam illam, consciam atque actuosam liturgicarum celebrationum participationem ducantur …",
+      "tags": [
+        "liturgy",
+        "participation"
+      ],
+      "crossRefs": [
+        "ext:tra-le-sollecitudini-1903",
+        "ext:mediator-dei-1947"
+      ],
+      "noteNl": "'Participatio actuosa' komt al voor bij Pius X (1903) en Pius XII (1947). Of 'actuosa' primair innerlijke betrokkenheid of uiterlijke activiteit betekent, is een terugkerend interpretatiepunt.",
+      "noteEn": "'Participatio actuosa' already appears in Pius X (1903) and Pius XII (1947). Whether 'actuosa' primarily means interior engagement or exterior activity is a recurring point of interpretation."
+    },
+    {
+      "id": "SC-21",
+      "docId": "sacrosanctum-concilium",
+      "number": 21,
+      "textEn": "In order that the Christian people may more certainly derive an abundance of graces from the sacred liturgy, holy Mother Church desires to undertake with great care a general restoration of the liturgy itself. For the liturgy is made up of immutable elements divinely instituted, and of elements subject to change.",
+      "textNl": "Opdat het christenvolk met meer zekerheid overvloedige genade uit de heilige liturgie ontvangt, wil de heilige Moeder Kerk met grote zorg een algemene herstelling van de liturgie zelf ondernemen. Want de liturgie bestaat uit onveranderlijke, door God ingestelde elementen en uit elementen die aan verandering onderhevig zijn.",
+      "tags": [
+        "liturgy",
+        "reform"
+      ],
+      "crossRefs": [
+        "SC-23"
+      ]
+    },
+    {
+      "id": "SC-22",
+      "docId": "sacrosanctum-concilium",
+      "number": 22,
+      "textEn": "§1. Regulation of the sacred liturgy depends solely on the authority of the Church, that is, on the Apostolic See and, as laws may determine, on the bishop. … §3. Therefore no other person, even if he be a priest, may add, remove, or change anything in the liturgy on his own authority.",
+      "textNl": "§1. De regeling van de heilige liturgie berust uitsluitend bij het gezag van de Kerk, dat wil zeggen bij de Apostolische Stoel en, volgens de bepalingen van het recht, bij de bisschop. … §3. Daarom mag niemand anders, ook al is hij priester, op eigen gezag iets aan de liturgie toevoegen, weglaten of veranderen.",
+      "tags": [
+        "liturgy",
+        "authority"
+      ],
+      "crossRefs": []
+    },
+    {
+      "id": "SC-23",
+      "docId": "sacrosanctum-concilium",
+      "number": 23,
+      "textEn": "Finally, there must be no innovations unless the good of the Church genuinely and certainly requires them; and care must be taken that any new forms adopted should in some way grow organically from forms already existing.",
+      "textNl": "Ten slotte mogen er geen vernieuwingen komen tenzij het welzijn van de Kerk die werkelijk en zeker vereist; en er moet voor gezorgd worden dat nieuwe vormen op een of andere wijze organisch voortkomen uit reeds bestaande vormen.",
+      "textLa": "Innovationes demum ne fiant nisi vera et certa utilitas Ecclesiae id exigat …",
+      "tags": [
+        "liturgy",
+        "reform",
+        "continuity"
+      ],
+      "crossRefs": [
+        "SC-21"
+      ],
+      "noteNl": "Het criterium van 'organische groei' wordt zowel door voorstanders als critici van de latere hervorming (1969–1970) aangehaald.",
+      "noteEn": "The criterion of 'organic growth' is cited both by defenders and by critics of the later reform (1969–1970)."
+    },
+    {
+      "id": "SC-34",
+      "docId": "sacrosanctum-concilium",
+      "number": 34,
+      "textEn": "The rites should be distinguished by a noble simplicity; they should be short, clear, and unencumbered by useless repetitions; they should be within the people's powers of comprehension, and normally should not require much explanation.",
+      "textNl": "De riten moeten uitblinken door edele eenvoud, kort, doorzichtig en zonder nutteloze herhalingen zijn; zij moeten aangepast zijn aan het bevattingsvermogen van de gelovigen en in het algemeen niet veel uitleg nodig hebben.",
+      "textLa": "Ritus nobili simplicitate fulgeant …",
+      "tags": [
+        "liturgy",
+        "reform"
+      ],
+      "crossRefs": [
+        "SC-21",
+        "SC-23",
+        "SC-50"
+      ]
+    },
+    {
+      "id": "SC-36",
+      "docId": "sacrosanctum-concilium",
+      "number": 36,
+      "textEn": "§1. Particular law remaining in force, the use of the Latin language is to be preserved in the Latin rites. §2. But since the use of the mother tongue, whether in the Mass, the administration of the sacraments, or other parts of the liturgy, frequently may be of great advantage to the people, the limits of its employment may be extended.",
+      "textNl": "§1. Onverminderd het particulier recht moet het gebruik van de Latijnse taal in de Latijnse riten behouden blijven. §2. Omdat echter het gebruik van de moedertaal, in de mis, bij de toediening van de sacramenten of in andere delen van de liturgie, voor het volk vaak zeer nuttig kan zijn, mag de ruimte daarvoor worden uitgebreid.",
+      "textLa": "§1. Linguae latinae usus, salvo particulari iure, in Ritibus latinis servetur.",
+      "tags": [
+        "liturgy",
+        "latin",
+        "vernacular"
+      ],
+      "crossRefs": [
+        "SC-54",
+        "SC-101",
+        "ext:veterum-sapientia-1962"
+      ],
+      "noteNl": "De tekst bepaalt behoud van het Latijn als regel en uitbreiding van de volkstaal als mogelijkheid, onder toezicht van het territoriaal kerkelijk gezag (§36,3).",
+      "noteEn": "The text sets the retention of Latin as the rule and an extension of the vernacular as a possibility, under the supervision of the territorial ecclesiastical authority (§36.3)."
+    },
+    {
+      "id": "SC-47",
+      "docId": "sacrosanctum-concilium",
+      "number": 47,
+      "textEn": "At the Last Supper, on the night when He was betrayed, our Saviour instituted the eucharistic sacrifice of His Body and Blood. He did this in order to perpetuate the sacrifice of the Cross throughout the centuries until He should come again …",
+      "textNl": "Bij het Laatste Avondmaal, in de nacht waarin Hij werd overgeleverd, heeft onze Verlosser het eucharistisch offer van zijn Lichaam en Bloed ingesteld, om daardoor het offer van het kruis door de eeuwen heen te bestendigen tot Hij wederkomt …",
+      "tags": [
+        "eucharist",
+        "sacrifice"
+      ],
+      "crossRefs": [
+        "SC-7",
+        "LG-11",
+        "ext:trent-sess22-1562"
+      ]
+    },
+    {
+      "id": "SC-50",
+      "docId": "sacrosanctum-concilium",
+      "number": 50,
+      "textEn": "… the rites are to be simplified, due care being taken to preserve their substance; elements which, with the passage of time, came to be duplicated, or were added with but little advantage, are now to be discarded; other elements which have suffered injury through accidents of history are now to be restored to the vigor which they had in the days of the holy Fathers …",
+      "textNl": "… de riten moeten, met behoud van hun wezen, vereenvoudigd worden; wat in de loop der tijden verdubbeld werd of zonder veel nut werd toegevoegd, moet wegvallen; en sommige elementen die door de tand des tijds verloren gingen, moeten volgens de oude norm van de kerkvaders hersteld worden …",
+      "tags": [
+        "liturgy",
+        "reform",
+        "mass"
+      ],
+      "crossRefs": [
+        "SC-21",
+        "SC-23",
+        "SC-34"
+      ],
+      "noteNl": "De basis voor de herziening van de Ordo Missae (1969). Hoe ver 'vereenvoudigen met behoud van het wezen' mocht gaan, is het centrale punt van debat over de hervorming.",
+      "noteEn": "The basis for the revision of the Order of Mass (1969). How far 'simplifying while preserving the substance' could go is the central point in the debate on the reform."
+    },
+    {
+      "id": "SC-51",
+      "docId": "sacrosanctum-concilium",
+      "number": 51,
+      "textEn": "The treasures of the bible are to be opened up more lavishly, so that richer fare may be provided for the faithful at the table of God's word.",
+      "textNl": "De schatten van de Bijbel moeten rijkelijker geopend worden, zodat de gelovigen aan de tafel van Gods woord overvloediger gevoed worden.",
+      "tags": [
+        "liturgy",
+        "scripture",
+        "lectionary"
+      ],
+      "crossRefs": [
+        "DV-21",
+        "DV-25"
+      ]
+    },
+    {
+      "id": "SC-54",
+      "docId": "sacrosanctum-concilium",
+      "number": 54,
+      "textEn": "In Masses which are celebrated with the people, a suitable place may be allotted to their mother tongue. … Nevertheless steps should be taken so that the faithful may also be able to say or to sing together in Latin those parts of the Ordinary of the Mass which pertain to them.",
+      "textNl": "In missen die met het volk gevierd worden, kan aan de moedertaal een passende plaats gegeven worden. … Er moet echter voor gezorgd worden dat de gelovigen de delen van het ordinarium van de mis die hun toekomen, ook in het Latijn samen kunnen zeggen of zingen.",
+      "tags": [
+        "liturgy",
+        "latin",
+        "vernacular"
+      ],
+      "crossRefs": [
+        "SC-36"
+      ]
+    },
+    {
+      "id": "SC-55",
+      "docId": "sacrosanctum-concilium",
+      "number": 55,
+      "textEn": "That more perfect form of participation in the Mass whereby the faithful, after the priest's communion, receive the Lord's body from the same sacrifice, is strongly commended.",
+      "textNl": "Die meer volmaakte vorm van deelname aan de mis, waarbij de gelovigen na de communie van de priester het lichaam van de Heer uit hetzelfde offer ontvangen, wordt sterk aanbevolen.",
+      "tags": [
+        "eucharist",
+        "communion",
+        "participation"
+      ],
+      "crossRefs": [
+        "ext:trent-sess22-1562",
+        "ext:memoriale-domini-1969"
+      ],
+      "noteNl": "Het vervolg van §55 laat communie onder beide gedaanten toe in door de Apostolische Stoel te bepalen gevallen. Over de wijze van uitreiken (op de tong of in de hand) zegt het document niets.",
+      "noteEn": "The rest of §55 permits communion under both kinds in cases to be determined by the Apostolic See. The document says nothing about the manner of distribution (on the tongue or in the hand)."
+    },
+    {
+      "id": "SC-101",
+      "docId": "sacrosanctum-concilium",
+      "number": 101,
+      "textEn": "§1. In accordance with the centuries-old tradition of the Latin rite, the Latin language is to be retained by clerics in the divine office.",
+      "textNl": "§1. Volgens de eeuwenoude traditie van de Latijnse ritus moeten clerici in het getijdengebed de Latijnse taal behouden.",
+      "tags": [
+        "liturgy",
+        "latin",
+        "divine-office"
+      ],
+      "crossRefs": [
+        "SC-36"
+      ]
+    },
+    {
+      "id": "SC-106",
+      "docId": "sacrosanctum-concilium",
+      "number": 106,
+      "textEn": "By a tradition handed down from the apostles which took its origin from the very day of Christ's resurrection, the Church celebrates the paschal mystery every eighth day; with good reason this, then, bears the name of the Lord's day or Sunday. … the Lord's day is the original feast day …",
+      "textNl": "Volgens een apostolische overlevering, die teruggaat tot de dag van de verrijzenis van Christus zelf, viert de Kerk het paasmysterie iedere achtste dag, die terecht de dag des Heren of zondag heet. … de dag des Heren is de oorspronkelijke feestdag …",
+      "tags": [
+        "sunday",
+        "liturgical-year"
+      ],
+      "crossRefs": [
+        "SC-10"
+      ]
+    },
+    {
+      "id": "SC-112",
+      "docId": "sacrosanctum-concilium",
+      "number": 112,
+      "textEn": "The musical tradition of the universal Church is a treasure of inestimable value, greater even than that of any other art.",
+      "textNl": "De muzikale traditie van de universele Kerk is een schat van onschatbare waarde, die uitsteekt boven die van iedere andere kunst.",
+      "tags": [
+        "sacred-music"
+      ],
+      "crossRefs": [
+        "SC-116",
+        "ext:tra-le-sollecitudini-1903"
+      ]
+    },
+    {
+      "id": "SC-116",
+      "docId": "sacrosanctum-concilium",
+      "number": 116,
+      "textEn": "The Church acknowledges Gregorian chant as specially suited to the Roman liturgy: therefore, other things being equal, it should be given pride of place in liturgical services. But other kinds of sacred music, especially polyphony, are by no means excluded from liturgical celebrations …",
+      "textNl": "De Kerk erkent het gregoriaans als de eigen zang van de Romeinse liturgie; daarom moet het, onder overigens gelijke omstandigheden, in de liturgische handelingen de eerste plaats innemen. Andere soorten kerkmuziek, vooral polyfonie, worden echter geenszins van de liturgische vieringen uitgesloten …",
+      "textLa": "Ecclesia cantum gregorianum agnoscit ut liturgiae romanae proprium: qui ideo in actionibus liturgicis, ceteris paribus, principem locum obtineat.",
+      "tags": [
+        "sacred-music",
+        "gregorian-chant",
+        "latin"
+      ],
+      "crossRefs": [
+        "SC-112",
+        "SC-120",
+        "ext:tra-le-sollecitudini-1903"
+      ],
+      "noteNl": "Het Latijn zegt 'proprium' (eigen aan); de Engelse vatican.va-vertaling geeft 'specially suited'. 'Ceteris paribus' (onder overigens gelijke omstandigheden) is de enige voorwaarde.",
+      "noteEn": "The Latin says 'proprium' (proper to); the English vatican.va translation renders 'specially suited'. 'Ceteris paribus' (other things being equal) is the only qualification."
+    },
+    {
+      "id": "SC-120",
+      "docId": "sacrosanctum-concilium",
+      "number": 120,
+      "textEn": "In the Latin Church the pipe organ is to be held in high esteem, for it is the traditional musical instrument which adds a wonderful splendor to the Church's ceremonies and powerfully lifts up man's mind to God and to higher things.",
+      "textNl": "In de Latijnse Kerk moet het pijporgel in hoge ere gehouden worden, want het is het traditionele muziekinstrument dat aan de plechtigheden van de Kerk een wonderlijke luister geeft en de geest van de mens krachtig tot God en het hogere verheft.",
+      "tags": [
+        "sacred-music"
+      ],
+      "crossRefs": [
+        "SC-116"
+      ]
+    },
+    {
+      "id": "SC-128",
+      "docId": "sacrosanctum-concilium",
+      "number": 128,
+      "textEn": "Along with the revision of the liturgical books, as laid down in Art. 25, there is to be an early revision of the canons and ecclesiastical statutes which govern the provision of material things involved in sacred worship. These laws refer especially to the worthy and well planned construction of sacred buildings, the shape and construction of altars …",
+      "textNl": "Samen met de herziening van de liturgische boeken, zoals bepaald in art. 25, moeten spoedig ook de canons en kerkelijke bepalingen herzien worden die de stoffelijke zaken van de eredienst regelen, vooral de waardige en doelmatige bouw van kerken, de vorm en constructie van altaren …",
+      "tags": [
+        "liturgy",
+        "altar",
+        "architecture"
+      ],
+      "crossRefs": [
+        "ext:inter-oecumenici-1964"
+      ],
+      "noteNl": "§128 vraagt om herziening van de normen voor altaren, maar schrijft geen celebratierichting voor. 'Versus populum' wordt in SC nergens genoemd.",
+      "noteEn": "§128 asks for a revision of the norms for altars but prescribes no direction of celebration. 'Versus populum' is not mentioned anywhere in SC."
+    }
+  ]
+}

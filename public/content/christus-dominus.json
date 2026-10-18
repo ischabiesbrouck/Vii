@@ -1,0 +1,91 @@
+{
+  "docId": "christus-dominus",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "CD-2",
+      "docId": "christus-dominus",
+      "number": 2,
+      "textEn": "In this Church of Christ the Roman pontiff, as the successor of Peter … enjoys supreme, full, immediate, and universal authority over the care of souls by divine institution.",
+      "textNl": "In deze Kerk van Christus bezit de Romeinse Paus, als opvolger van Petrus …, krachtens goddelijke instelling de hoogste, volledige, onmiddellijke en universele macht over de zielzorg.",
+      "tags": [
+        "papacy",
+        "authority"
+      ],
+      "crossRefs": [
+        "LG-22",
+        "ext:pastor-aeternus-1870"
+      ]
+    },
+    {
+      "id": "CD-5",
+      "docId": "christus-dominus",
+      "number": 5,
+      "textEn": "Bishops chosen from various parts of the world, in ways and manners established or to be established by the Roman pontiff, render more effective assistance to the supreme pastor of the Church in a deliberative body which will be called by the proper name of Synod of Bishops.",
+      "textNl": "Bisschoppen uit verschillende delen van de wereld, gekozen op de wijze die de Romeinse Paus heeft vastgesteld of zal vaststellen, verlenen de opperherder van de Kerk doeltreffender hulp in een beraadslagend lichaam dat met een eigen naam Bisschoppensynode zal heten.",
+      "tags": [
+        "collegiality",
+        "synod",
+        "papacy"
+      ],
+      "crossRefs": [
+        "LG-22",
+        "CD-38"
+      ],
+      "noteNl": "Paulus VI had de Bisschoppensynode al op 15 september 1965 ingesteld (Apostolica sollicitudo); CD §5 neemt dat over.",
+      "noteEn": "Paul VI had already established the Synod of Bishops on 15 September 1965 (Apostolica sollicitudo); CD §5 takes this up."
+    },
+    {
+      "id": "CD-11",
+      "docId": "christus-dominus",
+      "number": 11,
+      "textEn": "A diocese is a portion of the people of God which is entrusted to a bishop to be shepherded by him with the cooperation of the presbytery.",
+      "textNl": "Een bisdom is een deel van het volk van God dat aan een bisschop wordt toevertrouwd om het met medewerking van zijn priesters te weiden.",
+      "tags": [
+        "diocese",
+        "bishops",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "LG-9",
+        "CD-2"
+      ]
+    },
+    {
+      "id": "CD-21",
+      "docId": "christus-dominus",
+      "number": 21,
+      "textEn": "… diocesan bishops and others regarded in law as their equals, if they have become less capable of fulfilling their duties properly because of the increasing burden of age or some other serious reason, are earnestly requested to offer their resignation from office …",
+      "textNl": "… diocesane bisschoppen en hun rechtsgelijken worden met aandrang verzocht hun ontslag aan te bieden wanneer zij door toenemende ouderdom of een andere ernstige reden minder goed in staat zijn hun taak naar behoren te vervullen …",
+      "tags": [
+        "bishops",
+        "church-governance"
+      ],
+      "crossRefs": [
+        "CD-11"
+      ],
+      "noteNl": "De leeftijdsgrens van 75 jaar werd niet door het Concilie vastgesteld, maar in 1966 in het uitvoeringsdocument Ecclesiae Sanctae.",
+      "noteEn": "The age limit of 75 was not set by the Council but in the 1966 implementing document Ecclesiae Sanctae."
+    },
+    {
+      "id": "CD-38",
+      "docId": "christus-dominus",
+      "number": 38,
+      "textEn": "An episcopal conference is, as it were, a council in which the bishops of a given nation or territory jointly exercise their pastoral office to promote the greater good which the Church offers mankind …",
+      "textNl": "Een bisschoppenconferentie is als het ware een vergadering waarin de bisschoppen van een land of gebied hun herderlijk ambt gezamenlijk uitoefenen om het welzijn dat de Kerk de mensen biedt beter te bevorderen …",
+      "tags": [
+        "episcopal-conference",
+        "collegiality",
+        "bishops"
+      ],
+      "crossRefs": [
+        "CD-5",
+        "LG-22"
+      ],
+      "noteNl": "Het theologisch gezag van bisschoppenconferenties werd later verduidelijkt in Apostolos suos (Johannes Paulus II, 1998).",
+      "noteEn": "The theological authority of episcopal conferences was later clarified in Apostolos suos (John Paul II, 1998)."
+    }
+  ]
+}
