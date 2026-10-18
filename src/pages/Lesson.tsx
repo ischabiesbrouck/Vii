@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, ArrowRight, CheckCircle2, ChevronRight, Clock, ExternalLink, Share2 } from 'lucide-react';
-import { Apa, ConciliarText, CiteLink, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
+import { ArrowLeft, ArrowRight, CheckCircle2, ChevronRight, ExternalLink, Share2 } from 'lucide-react';
+import { Apa, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { SubjectCard } from '@/components/SubjectCard';
 import { VideoRow } from '@/components/VideoCard';
 import { Quiz } from '@/components/Quiz';
-import { ProgressRing } from '@/components/ProgressRing';
-import { Orbs } from '@/components/Orbs';
 import { SegmentedTabs, panelId, tabId } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { getCatecheses, getLessons, getParagraph, getSubjects, getVideos } from '@/lib/content';
@@ -15,6 +13,7 @@ import { copyText, shortCite } from '@/lib/citation';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { cn, pick } from '@/lib/utils';
+import { toRoman } from '@/lib/roman';
 import { useUi } from '@/store/ui';
 import { useToast } from '@/store/toast';
 
@@ -80,24 +79,22 @@ export function Lesson() {
   ];
 
   const progressCard = (
-    <div className="relative overflow-hidden rounded-xl bg-violet p-5">
-      <Orbs preset="small" />
-      <p className="relative font-display text-[0.68rem] font-semibold uppercase tracking-caps text-violet-fg">{t('learn.yourProgress')}</p>
-      <div className="relative mt-3 flex items-center gap-4">
-        <ProgressRing value={doneCount / lessons.length} size={84} stroke={8} label={t('learn.done', { done: doneCount, total: lessons.length })} className="text-violet-fg">
-          <span className="font-serif text-xl font-semibold tabular">{Math.round((doneCount / lessons.length) * 100)}%</span>
-        </ProgressRing>
-        <div className="min-w-0 text-sm">
-          <p className="tabular">{t('learn.done', { done: doneCount, total: lessons.length })}</p>
-          <p className="mt-1 text-fg/70">
-            {state?.score != null ? t('learn.quizDone', { score: state.score, total: l.quiz.length }) : t('learn.quizTodo')}
-          </p>
-          {state?.done && (
-            <p className="mt-1 inline-flex items-center gap-1 font-semibold text-violet-fg">
-              <CheckCircle2 className="h-4 w-4" aria-hidden /> {t('learn.completed')}
-            </p>
-          )}
-        </div>
+    <div className="border border-line bg-paper">
+      <div className="h-[3px] bg-accent" aria-hidden />
+      <div className="p-5">
+        <p className="kicker">{t('learn.yourProgress')}</p>
+        <p className="mt-2 text-sm tabular">{t('learn.done', { done: doneCount, total: lessons.length })}</p>
+        <ProgressBar value={doneCount / lessons.length} className="mt-2" label={t('learn.done', { done: doneCount, total: lessons.length })} />
+        <dl className="mt-4 space-y-1.5 text-sm">
+          <div className="flex justify-between gap-3">
+            <dt className="text-muted">{t('learn.quiz')}</dt>
+            <dd className="tabular">{state?.score != null ? `${state.score} / ${l.quiz.length}` : '—'}</dd>
+          </div>
+          <div className="flex justify-between gap-3">
+            <dt className="text-muted">{t('learn.lesson')}</dt>
+            <dd>{state?.done ? <span className="font-semibold text-ok">{t('learn.completed')}</span> : '—'}</dd>
+          </div>
+        </dl>
       </div>
     </div>
   );
@@ -105,44 +102,49 @@ export function Lesson() {
   return (
     <article className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_19rem]">
       <div className="min-w-0">
-        <div className="mb-6 flex items-center justify-between gap-3">
-          <Link to="/learn" className="icon-btn" aria-label={t('learn.back')}>
-            <ArrowLeft className="h-5 w-5" aria-hidden />
-          </Link>
-          <span className="rounded-full border border-line/70 bg-card px-3 py-1.5 text-xs tabular text-muted shadow-card">
-            {t('learn.lessonOf', { n: l.number, total: lessons.length })}
-          </span>
-          <button type="button" className="icon-btn" onClick={share} aria-label={t('learn.share')}>
-            <Share2 className="h-[18px] w-[18px]" aria-hidden />
+        <div className="mb-2 flex items-start justify-between gap-3">
+          <Crumbs items={[{ to: '/', label: t('crumbs.home') }, { to: '/learn', label: t('learn.title') }, { label: `${t('learn.lesson')} ${l.number}` }]} />
+          <button type="button" className="inline-flex min-h-[32px] shrink-0 items-center gap-1.5 text-xs text-muted hover:text-accent" onClick={share}>
+            <Share2 className="h-3.5 w-3.5" aria-hidden /> {t('learn.share')}
           </button>
         </div>
 
-        <header className="mb-8">
-          <p className="kicker">{l.labelLa}</p>
-          <h1 className="mt-3 font-serif text-[2.4rem] font-medium leading-[1.04] tracking-[-0.015em] sm:text-[3.4rem]">{title}</h1>
-          <p className="mt-4 max-w-prose text-[1.08rem] leading-relaxed text-muted">{pick(lang, l.summaryNl, l.summaryEn)}</p>
-          <p className="mt-4 flex flex-wrap items-center gap-2 text-xs text-muted">
-            <span className="inline-flex items-center gap-1 rounded-full bg-card px-3 py-1.5 shadow-card">
-              <Clock className="h-3.5 w-3.5" aria-hidden /> {t('learn.minutes', { count: l.minutes })}
-            </span>
-            {state?.done && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-sage px-3 py-1.5 font-semibold text-sage-fg">
-                <CheckCircle2 className="h-3.5 w-3.5" aria-hidden /> {t('learn.completed')}
-              </span>
-            )}
+        <header className="mb-10">
+          <p className="kicker">
+            Lectio {toRoman(l.number)} · {t('learn.lessonOf', { n: l.number, total: lessons.length })}
           </p>
+          <h1 className="mt-2 font-title text-[2.3rem] font-medium leading-[1.06] sm:text-[3.1rem]">{title}</h1>
+          <div className="rule-double mt-5 max-w-[12rem]" aria-hidden />
+          <p className="mt-5 max-w-prose font-serif text-[1.1rem] leading-relaxed text-fg/80">{pick(lang, l.summaryNl, l.summaryEn)}</p>
+          <dl className="mt-6 grid max-w-xl grid-cols-3 divide-x divide-line border-y border-line text-sm">
+            {[
+              [t('home.colDuration'), t('learn.minutes', { count: l.minutes })],
+              [t('learn.tabTexts'), String(data.paragraphs.length)],
+              [t('learn.quiz'), String(l.quiz.length)],
+            ].map(([k, v]) => (
+              <div key={k} className="px-3 py-2 first:pl-0">
+                <dt className="text-xs text-muted">{k}</dt>
+                <dd className="mt-0.5 font-medium tabular">{v}</dd>
+              </div>
+            ))}
+          </dl>
+          {state?.done && (
+            <p className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-ok">
+              <CheckCircle2 className="h-4 w-4" aria-hidden /> {t('learn.completed')}
+            </p>
+          )}
         </header>
 
         {/* Lesson material: pill tabs with list rows (texts, videos, catecheses) */}
-        <section aria-labelledby="h-material" className="panel mb-6 p-4 sm:p-5">
-          <h2 id="h-material" className="sr-only">
+        <section aria-labelledby="h-material" className="mb-10">
+          <h2 id="h-material" className="kicker mb-1">
             {t('learn.materials')}
           </h2>
-          <SegmentedTabs items={tabs} value={tab} onChange={setTab} label={t('learn.materials')} prefix="lesson" className="w-full sm:w-auto" />
-          <div role="tabpanel" id={panelId('lesson', tab)} aria-labelledby={tabId('lesson', tab)} tabIndex={0} className="mt-3 rounded-lg outline-none">
+          <SegmentedTabs items={tabs} value={tab} onChange={setTab} label={t('learn.materials')} prefix="lesson" />
+          <div role="tabpanel" id={panelId('lesson', tab)} aria-labelledby={tabId('lesson', tab)} tabIndex={0} className="outline-none">
             {tab === 'texts' &&
               (data.paragraphs.length ? (
-                <ul className="space-y-1">
+                <ul className="divide-y divide-line border-b border-line">
                   {data.paragraphs.map(({ paragraph, doc }) => (
                     <li key={paragraph.id}>
                       <a
@@ -154,11 +156,11 @@ export function Lesson() {
                           el?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
                           el?.focus({ preventScroll: true });
                         }}
-                        className="group flex items-center gap-4 rounded-lg p-2 transition hover:bg-violet/50"
+                        className="group flex items-center gap-4 py-3 transition-colors hover:bg-surface/60"
                       >
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-bg font-serif text-sm font-semibold text-accent">§</span>
+                        <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-line font-serif text-base font-semibold text-accent">§</span>
                         <span className="min-w-0 flex-1">
-                          <span className="block font-medium">{shortCite(paragraph.id)}</span>
+                          <span className="block font-serif font-semibold group-hover:text-accent">{shortCite(paragraph.id)}</span>
                           <span className="block truncate text-xs text-muted" lang="la">
                             {doc.titleLa}
                           </span>
@@ -169,11 +171,11 @@ export function Lesson() {
                   ))}
                 </ul>
               ) : (
-                <p className="p-3 text-sm text-muted">{t('learn.noMaterial')}</p>
+                <p className="py-4 text-sm text-muted">{t('learn.noMaterial')}</p>
               ))}
             {tab === 'videos' &&
               (data.videos.length ? (
-                <ul className="space-y-1">
+                <ul className="divide-y divide-line border-b border-line">
                   {data.videos.map((v) => (
                     <li key={v.youtubeId}>
                       <VideoRow video={v} />
@@ -181,23 +183,23 @@ export function Lesson() {
                   ))}
                 </ul>
               ) : (
-                <p className="p-3 text-sm text-muted">{t('learn.noMaterial')}</p>
+                <p className="py-4 text-sm text-muted">{t('learn.noMaterial')}</p>
               ))}
             {tab === 'catecheses' &&
               (data.catecheses.length ? (
-                <ul className="space-y-1">
+                <ul className="divide-y divide-line border-b border-line">
                   {data.catecheses.map((c) => {
                     const d = dateParts(c.date, lang);
                     return (
                       <li key={c.date}>
-                        <a href={c.url} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 rounded-lg p-2 transition hover:bg-rose/60">
-                          <span className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-full bg-rose text-rose-fg">
+                        <a href={c.url} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 py-3 transition-colors hover:bg-surface/60">
+                          <span className="flex h-11 w-11 shrink-0 flex-col items-center justify-center border border-line text-accent">
                             <span className="font-serif text-base font-semibold leading-none tabular">{d.day}</span>
                             <span className="text-[0.6rem] uppercase">{d.month}</span>
                           </span>
                           <span className="min-w-0 flex-1">
-                            <span className="line-clamp-2 font-medium leading-snug">{pick(lang, c.titleNl, c.titleEn)}</span>
-                            <span className="block text-xs text-muted">Leo PP. XIV · vatican.va</span>
+                            <span className="line-clamp-2 font-serif font-semibold leading-snug group-hover:text-accent">{pick(lang, c.titleNl, c.titleEn)}</span>
+                            <span className="block text-xs text-muted">Leo PP. XIV · Audientia generalis · vatican.va</span>
                           </span>
                           <ExternalLink className="h-4 w-4 shrink-0 text-muted" aria-hidden />
                         </a>
@@ -206,7 +208,7 @@ export function Lesson() {
                   })}
                 </ul>
               ) : (
-                <p className="p-3 text-sm text-muted">{t('learn.noMaterial')}</p>
+                <p className="py-4 text-sm text-muted">{t('learn.noMaterial')}</p>
               ))}
           </div>
         </section>
@@ -214,9 +216,9 @@ export function Lesson() {
         <div className="mb-8 lg:hidden">{progressCard}</div>
 
         {/* Key facts on mobile */}
-        <dl className="mb-10 grid grid-cols-2 gap-3 lg:hidden">
+        <dl className="mb-10 grid grid-cols-2 gap-px border border-line bg-line lg:hidden">
           {l.facts.map((f) => (
-            <div key={f.labelNl} className="rounded-lg bg-card p-4 shadow-card">
+            <div key={f.labelNl} className="bg-card p-3">
               <dt className="text-xs text-muted">{pick(lang, f.labelNl, f.labelEn)}</dt>
               <dd className="mt-1 text-sm font-medium tabular">{pick(lang, f.valueNl, f.valueEn)}</dd>
             </div>
@@ -226,7 +228,7 @@ export function Lesson() {
         <div className="space-y-10">
           {l.sections.map((s, i) => (
             <section key={s.headingNl} aria-labelledby={`sec-${i}`}>
-              <h2 id={`sec-${i}`} className="mb-3 flex items-baseline gap-3 font-serif text-[1.5rem] font-semibold leading-snug">
+              <h2 id={`sec-${i}`} className="mb-3 flex items-baseline gap-3 font-title text-[1.6rem] font-medium leading-snug">
                 <span className="font-display text-sm text-gold-text" aria-hidden>
                   {['I', 'II', 'III', 'IV', 'V'][i]}
                 </span>
@@ -238,7 +240,7 @@ export function Lesson() {
               {s.refs.length > 0 && (
                 <p className="mt-3 flex flex-wrap gap-2 text-sm">
                   {s.refs.map((r) => (
-                    <CiteLink key={r} id={r} className="chip min-h-[34px] px-3 no-underline" />
+                    <CiteLink key={r} id={r} className="chip min-h-[32px] px-2.5 no-underline" />
                   ))}
                 </p>
               )}
@@ -268,7 +270,7 @@ export function Lesson() {
         )}
 
         <section aria-labelledby="h-quiz" className="panel mt-12 p-5 sm:p-7">
-          <h2 id="h-quiz" className="font-serif text-[1.4rem] font-semibold">
+          <h2 id="h-quiz" className="font-title text-[1.5rem] font-medium">
             {t('learn.quiz')}
           </h2>
           <p className="mb-5 mt-1 text-sm text-muted">{t('learn.quizHint')}</p>
@@ -336,7 +338,7 @@ export function Lesson() {
       </div>
 
       <aside className="hidden lg:block">
-        <div className="sticky top-[calc(8.5rem+env(safe-area-inset-top))] space-y-5">
+        <div className="sticky top-6 space-y-5">
           {progressCard}
           <div className="panel p-5">
             <p className="kicker mb-3">{t('learn.keyFacts')}</p>
@@ -358,9 +360,9 @@ export function Lesson() {
                   <Link
                     to={`/learn/${x.id}`}
                     aria-current={x.id === l.id ? 'page' : undefined}
-                    className={cn('flex gap-2 rounded-full px-2 py-1.5', x.id === l.id ? 'bg-primary font-semibold text-primary-fg' : 'hover:bg-violet/60')}
+                    className={cn('flex gap-2 border-l-2 py-1.5 pl-2', x.id === l.id ? 'border-accent bg-surface font-semibold text-accent' : 'border-transparent hover:text-accent')}
                   >
-                    <span className="w-5 shrink-0 text-right text-xs tabular opacity-70">{allLessons[x.id]?.done ? '✓' : x.number}</span>
+                    <span className="w-7 shrink-0 font-display text-xs leading-5 text-gold-text">{allLessons[x.id]?.done ? '✓' : toRoman(x.number)}</span>
                     <span className="truncate">{pick(lang, x.titleNl, x.titleEn)}</span>
                   </Link>
                 </li>

@@ -114,10 +114,11 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <header className="mb-8 pt-2">
-      {eyebrow && <p className="kicker mb-3">{eyebrow}</p>}
-      <h1 className="font-serif text-[2.25rem] font-medium leading-[1.05] tracking-[-0.01em] sm:text-[3.1rem]">{title}</h1>
-      {intro && <p className="mt-4 max-w-prose text-[1.05rem] leading-relaxed text-muted">{intro}</p>}
+    <header className="mb-10">
+      {eyebrow && <p className="kicker mb-2">{eyebrow}</p>}
+      <h1 className="font-title text-[2.3rem] font-medium leading-[1.08] sm:text-[3rem]">{title}</h1>
+      <div className="rule-double mt-5 max-w-[12rem]" aria-hidden />
+      {intro && <p className="mt-5 max-w-prose font-serif text-[1.08rem] leading-relaxed text-fg/80">{intro}</p>}
       {children}
     </header>
   );
@@ -125,8 +126,8 @@ export function PageHeader({
 
 export function SectionTitle({ children, id, action }: { children: ReactNode; id?: string; action?: ReactNode }) {
   return (
-    <div className="mb-4 flex items-end justify-between gap-3">
-      <h2 id={id} className="font-serif text-[1.4rem] font-semibold leading-tight">
+    <div className="mb-4 flex items-end justify-between gap-3 border-b border-fg/70 pb-2">
+      <h2 id={id} className="font-title text-[1.5rem] font-medium leading-tight">
         {children}
       </h2>
       {action}
@@ -174,7 +175,7 @@ export function Loading() {
 export function ProgressBar({ value, label, className }: { value: number; label?: string; className?: string }) {
   return (
     <div
-      className={cn('h-1.5 w-full overflow-hidden rounded-full bg-line', className)}
+      className={cn('h-1 w-full overflow-hidden bg-line', className)}
       role={label ? 'progressbar' : undefined}
       aria-label={label}
       aria-valuemin={label ? 0 : undefined}
@@ -182,7 +183,7 @@ export function ProgressBar({ value, label, className }: { value: number; label?
       aria-valuenow={label ? Math.round(value * 100) : undefined}
       aria-hidden={label ? undefined : true}
     >
-      <div className="h-full rounded-full bg-primary transition-[width] duration-500" style={{ width: `${Math.min(1, value) * 100}%` }} />
+      <div className="h-full bg-accent transition-[width] duration-500" style={{ width: `${Math.min(1, value) * 100}%` }} />
     </div>
   );
 }

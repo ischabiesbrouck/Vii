@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { fullCite, shortCite } from '@/lib/citation';
-import { toRoman } from '@/lib/roman';
+import { latinDate, toRoman } from '@/lib/roman';
 import { seededOrder } from '@/lib/shuffle';
 import { formatTime } from '@/store/player';
 
@@ -17,6 +17,10 @@ describe('roman numerals', () => {
     expect(toRoman(1962)).toBe('MCMLXII');
     expect(toRoman(1965)).toBe('MCMLXV');
     expect(toRoman(4)).toBe('IV');
+  });
+  it('writes a curial Latin date', () => {
+    expect(latinDate(new Date(2026, 9, 18))).toBe('Dominica, die XVIII mensis Octobris, anno MMXXVI');
+    expect(latinDate(new Date(1965, 11, 8))).toBe('Feria IV, die VIII mensis Decembris, anno MCMLXV');
   });
 });
 

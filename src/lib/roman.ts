@@ -13,3 +13,14 @@ export function toRoman(n: number): string {
   }
   return out;
 }
+
+const WEEKDAYS = ['Dominica', 'Feria II', 'Feria III', 'Feria IV', 'Feria V', 'Feria VI', 'Sabbato'];
+const MONTHS_GEN = ['Ianuarii', 'Februarii', 'Martii', 'Aprilis', 'Maii', 'Iunii', 'Iulii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris'];
+
+/**
+ * Date in the style of curial documents: "Dominica, die XVIII mensis Octobris, anno MMXXVI".
+ * Weekdays follow ecclesiastical usage (Dominica, Feria II–VI, Sabbato).
+ */
+export function latinDate(d: Date): string {
+  return `${WEEKDAYS[d.getDay()]}, die ${toRoman(d.getDate())} mensis ${MONTHS_GEN[d.getMonth()]}, anno ${toRoman(d.getFullYear())}`;
+}

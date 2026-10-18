@@ -5,6 +5,8 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/cinzel';
 import '@fontsource-variable/source-serif-4';
 import '@fontsource-variable/source-serif-4/wght-italic.css';
+import '@fontsource-variable/eb-garamond';
+import '@fontsource-variable/eb-garamond/wght-italic.css';
 import './index.css';
 import i18n from './i18n';
 import { useToast } from './store/toast';

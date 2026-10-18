@@ -116,7 +116,7 @@ export function SubjectDetail() {
                   <span
                     className={cn(
                       'absolute -left-[calc(1.5rem+13px)] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full border text-xs font-semibold tabular sm:-left-[calc(2rem+13px)]',
-                      isDone ? 'border-accent bg-accent text-accent-fg' : 'border-gold bg-paper text-gold-text',
+                      isDone ? 'border-primary bg-primary text-primary-fg' : 'border-gold bg-paper text-gold-text',
                     )}
                     aria-hidden
                   >
@@ -258,7 +258,7 @@ export function SubjectDetail() {
 
       {/* Sidebar (desktop) */}
       <aside className="hidden lg:block">
-        <div className="sticky top-[calc(7.5rem+env(safe-area-inset-top))] space-y-6">
+        <div className="sticky top-6 space-y-6">
           <div className="panel p-5">
             <Progress subject={s} />
           </div>

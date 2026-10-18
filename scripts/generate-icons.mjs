@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Generates the PWA icons without external tools: a parchment "C" (open ring)
- * with a muted-gold dot on the conciliar red. Run with `npm run icons`.
+ * Generates the PWA icons without external tools: a parchment cross within a
+ * gold seal ring on the conciliar red. Run with `npm run icons`.
  */
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { deflateSync } from 'node:zlib';
@@ -15,13 +15,16 @@ const RED = [0x7a, 0x1f, 0x1f];
 const PARCHMENT = [0xfa, 0xf8, 0xf3];
 const GOLD = [0xb0, 0x8d, 0x4f];
 
-/** Coverage of the glyph at normalised coords (centre 0,0; radius 1 = half size). */
+/** Colour of the glyph at normalised coords (centre 0,0; radius 1 = half size): seal ring and cross. */
 function shade(x, y, scale) {
-  const r = Math.hypot(x, y) / scale;
-  const angle = Math.atan2(y, x); // 0 = pointing right
-  const ring = r >= 0.52 && r <= 0.74 && Math.abs(angle) > 0.62;
-  if (ring) return PARCHMENT;
-  if (Math.hypot(x / scale - 0.0, y / scale) <= 0.14) return GOLD;
+  const u = x / scale;
+  const v = y / scale;
+  const r = Math.hypot(u, v);
+  if (r >= 0.74 && r <= 0.8) return GOLD;
+  if (r >= 0.66 && r <= 0.685) return GOLD;
+  const upright = Math.abs(u) <= 0.075 && v >= -0.46 && v <= 0.46;
+  const beam = Math.abs(v + 0.12) <= 0.075 && Math.abs(u) <= 0.3;
+  if (upright || beam) return PARCHMENT;
   return null;
 }
 

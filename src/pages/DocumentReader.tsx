@@ -421,7 +421,7 @@ export function DocumentReader() {
         <div className={focus ? 'mx-auto max-w-[50rem]' : 'grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]'}>
           {/* Table of contents (desktop) */}
           <aside data-chrome className="hidden lg:block" aria-label={t('doc.contents')}>
-            <div className="sticky top-[calc(7.5rem+env(safe-area-inset-top))] max-h-[calc(100dvh-9rem)] overflow-y-auto pr-1">
+            <div className="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-y-auto pr-1">
               <p className="kicker mb-3">{t('doc.contents')}</p>
               <Outline doc={doc} paragraphs={paragraphs} currentId={currentId} onPick={goTo} />
             </div>
@@ -429,7 +429,7 @@ export function DocumentReader() {
 
           <div className="min-w-0">
             {/* Toolbar */}
-            <div className="reader-toolbar sticky top-[calc(3.5rem+3px+env(safe-area-inset-top))] z-20 -mx-4 mb-6 border-b border-line bg-bg/95 px-4 py-2 backdrop-blur lg:top-[calc(7rem+env(safe-area-inset-top))] lg:mx-0 lg:px-0">
+            <div className="reader-toolbar sticky top-[calc(4rem+4px+env(safe-area-inset-top))] z-20 -mx-4 mb-6 border-b border-line bg-bg/95 px-4 py-2 backdrop-blur lg:top-0 lg:mx-0 lg:px-0">
               <div className="flex flex-wrap items-center gap-2">
                 <button
                   type="button"
@@ -473,7 +473,7 @@ export function DocumentReader() {
                       type="button"
                       aria-pressed={fontSize === s.value}
                       onClick={() => setFontSize(s.value)}
-                      className={cn('min-h-[36px] min-w-[40px] rounded-sm px-2 text-sm', fontSize === s.value ? 'bg-accent text-accent-fg' : 'hover:bg-surface')}
+                      className={cn('min-h-[36px] min-w-[40px] rounded-sm px-2 text-sm', fontSize === s.value ? 'bg-primary text-primary-fg' : 'hover:bg-surface')}
                     >
                       {s.label}
                     </button>
