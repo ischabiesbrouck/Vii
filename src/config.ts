@@ -14,7 +14,10 @@ export type ContentMode = 'excerpt' | 'full';
 export const CONTENT_MODE: ContentMode =
   import.meta.env.VITE_CONTENT_MODE === 'full' ? 'full' : 'excerpt';
 
-export const CONTENT_BASE = '/content';
+/** Preview build for a claude.ai Artifact: relative paths, in-memory routing, no service worker. */
+export const IS_ARTIFACT_PREVIEW = import.meta.env.VITE_ARTIFACT === '1';
+
+export const CONTENT_BASE = `${import.meta.env.BASE_URL}content`;
 
 export const OFFICIAL_INDEX_URL =
   'https://www.vatican.va/archive/hist_councils/ii_vatican_council/index.htm';

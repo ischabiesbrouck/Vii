@@ -27,7 +27,10 @@ export function useThemeEffect() {
   useEffect(() => {
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
     const apply = () => {
-      const dark = theme === 'dark' || (theme === 'system' && mq.matches);
+      // An explicit data-theme on <html> (set by an embedding host) overrides the OS preference.
+      const host = document.documentElement.dataset.theme;
+      const systemDark = host === 'dark' || (host !== 'light' && mq.matches);
+      const dark = theme === 'dark' || (theme === 'system' && systemDark);
       document.documentElement.classList.toggle('dark', dark);
       document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#121212' : '#7A1F1F');
     };

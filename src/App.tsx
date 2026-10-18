@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
+import { IS_ARTIFACT_PREVIEW } from '@/config';
 import { Layout } from '@/components/Layout';
 import { Home } from '@/pages/Home';
 import { Documents } from '@/pages/Documents';
@@ -15,6 +16,9 @@ import { useThemeEffect } from '@/lib/hooks';
 import { getSearchEngine } from '@/lib/search';
 import { useEffect } from 'react';
 
+// The artifact preview cannot use history routing inside its sandboxed frame.
+const Router = IS_ARTIFACT_PREVIEW ? MemoryRouter : BrowserRouter;
+
 export function App() {
   useThemeEffect();
 
@@ -25,7 +29,7 @@ export function App() {
   }, []);
 
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
@@ -41,6 +45,6 @@ export function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }

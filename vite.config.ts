@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath, URL } from 'node:url';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  // `vite build --mode artifact`: self-contained preview with relative asset paths.
+  base: mode === 'artifact' ? './' : '/',
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
@@ -42,6 +44,7 @@ export default defineConfig({
         // No runtimeCaching: nothing external is ever fetched at runtime.
       },
       devOptions: { enabled: false },
+      disable: mode === 'artifact',
     }),
   ],
-});
+}));

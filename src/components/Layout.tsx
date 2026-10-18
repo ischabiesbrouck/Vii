@@ -118,7 +118,7 @@ export function Layout() {
       <header className="sticky top-0 z-30 border-b border-line bg-bg/95 pt-safe backdrop-blur supports-[backdrop-filter]:bg-bg/80">
         <div className="mx-auto flex h-14 w-full max-w-3xl items-center gap-2 px-3">
           <Link to="/" className="flex min-w-0 items-center gap-2 rounded-md py-1">
-            <img src="/favicon.svg" alt="" width={28} height={28} className="h-7 w-7 shrink-0" />
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" width={28} height={28} className="h-7 w-7 shrink-0" />
             <span className="min-w-0">
               <span className="block font-serif text-lg font-semibold leading-none">{t('app.name')}</span>
               <span className="block truncate text-[0.7rem] leading-tight text-muted">{t('app.tagline')}</span>
