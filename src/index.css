@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens. Palette from the brief; two accessibility adjustments:
+ * - gold-text (#6E5528) is used for gold-tinted metadata TEXT, because #B08D4F on
+ *   parchment is ~2.9:1 and fails WCAG AA. #B08D4F is kept for borders and marks.
+ * - In dark mode the red accent is lightened so text reaches ≥4.5:1 on #121212.
+ */
+@layer base {
+  :root {
+    --bg: 250 248 243; /* parchment #FAF8F3 */
+    --fg: 26 26 26; /* ink #1A1A1A */
+    --muted: 82 78 72;
+    --surface: 243 238 226; /* conciliar text background */
+    --card: 255 255 255;
+    --line: 222 214 199;
+    --accent: 122 31 31; /* #7A1F1F */
+    --accent-fg: 250 248 243;
+    --gold: 176 141 79; /* #B08D4F */
+    --gold-text: 110 85 40;
+    --slate: 71 85 105;
+    --ok: 22 101 52;
+    --warn: 146 64 14;
+    --bad: 153 27 27;
+    color-scheme: light;
+  }
+  .dark {
+    --bg: 18 18 18; /* #121212 */
+    --fg: 232 228 220; /* #E8E4DC */
+    --muted: 176 170 160;
+    --surface: 30 28 25;
+    --card: 26 26 26;
+    --line: 58 54 48;
+    --accent: 231 140 140;
+    --accent-fg: 18 18 18;
+    --gold: 176 141 79;
+    --gold-text: 212 180 122;
+    --slate: 148 163 184;
+    --ok: 134 239 172;
+    --warn: 253 186 116;
+    --bad: 252 165 165;
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    background: rgb(var(--bg));
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg;
+  }
+  [lang='la'] {
+    font-style: italic;
+  }
+}
+
+@layer components {
+  /* Conciliar text: serif, bordered, light background. */
+  .conciliar {
+    @apply font-serif bg-surface border border-line border-l-4 border-l-accent rounded-md px-4 py-3;
+    line-height: 1.7;
+  }
+  /* Editorial commentary: sans-serif, labelled. */
+  .commentary {
+    @apply font-sans text-sm border border-dashed border-line rounded-md px-4 py-3 bg-card;
+    line-height: 1.6;
+  }
+  .label-eyebrow {
+    @apply text-[0.7rem] uppercase tracking-wider font-semibold text-gold-text;
+  }
+  .reader-sm { font-size: 1rem; }
+  .reader-md { font-size: 1.125rem; }
+  .reader-lg { font-size: 1.3125rem; }
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+.no-callout {
+  -webkit-touch-callout: none;
+}

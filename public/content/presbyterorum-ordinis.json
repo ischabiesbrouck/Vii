@@ -1,0 +1,25 @@
+{
+  "docId": "presbyterorum-ordinis",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "PO-16",
+      "docId": "presbyterorum-ordinis",
+      "number": 16,
+      "textEn": "Perfect and perpetual continence for the sake of the kingdom of heaven, commended by Christ the Lord and through the course of time as well as in our own days freely accepted and observed in a praiseworthy manner by many of the faithful, is held by the Church to be of great value in a special manner for the priestly life. … It is not demanded, however, by the very nature of the priesthood, as is apparent from the practice of the early Church and from the traditions of the Eastern Churches …",
+      "textNl": "De volmaakte en voortdurende onthouding omwille van het rijk der hemelen, door Christus de Heer aanbevolen en door vele gelovigen in de loop der tijden en ook nu vrijwillig aanvaard en lofwaardig onderhouden, wordt door de Kerk altijd zeer hoog gewaardeerd, in het bijzonder voor het priesterleven. … Zij wordt echter niet vereist door de aard van het priesterschap zelf, zoals blijkt uit de praktijk van de vroege Kerk en de traditie van de oosterse Kerken …",
+      "tags": [
+        "celibacy",
+        "priesthood"
+      ],
+      "crossRefs": [
+        "LG-10",
+        "ext:sacerdotalis-caelibatus-1967"
+      ],
+      "noteNl": "Verderop in §16 'keurt de Synode deze wetgeving opnieuw goed en bevestigt haar' voor wie tot het priesterschap in de Latijnse Kerk bestemd zijn.",
+      "noteEn": "Later in §16 the Synod 'again approves and confirms this legislation' for those destined for the priesthood in the Latin Church."
+    }
+  ]
+}

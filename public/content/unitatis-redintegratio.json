@@ -1,0 +1,43 @@
+{
+  "docId": "unitatis-redintegratio",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "UR-3",
+      "docId": "unitatis-redintegratio",
+      "number": 3,
+      "textEn": "For it is only through Christ's Catholic Church, which is \"the all-embracing means of salvation,\" that they can benefit fully from the means of salvation.",
+      "textNl": "Want alleen door de katholieke Kerk van Christus, die het algemene hulpmiddel tot heil is, kan men de volheid van de heilsmiddelen bereiken.",
+      "tags": [
+        "ecumenism",
+        "salvation",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "LG-8",
+        "LG-14",
+        "LG-15"
+      ],
+      "noteNl": "Eerder in §3 erkent de tekst dat de gescheiden Kerken en gemeenschappen 'geenszins zonder betekenis en waarde' zijn in het mysterie van het heil.",
+      "noteEn": "Earlier in §3 the text acknowledges that the separated Churches and communities are 'by no means deprived of significance and importance' in the mystery of salvation."
+    },
+    {
+      "id": "UR-11",
+      "docId": "unitatis-redintegratio",
+      "number": 11,
+      "textEn": "Nothing is so foreign to the spirit of ecumenism as a false irenicism … When comparing doctrines with one another, they should remember that in Catholic doctrine there exists a \"hierarchy\" of truths, since they vary in their relation to the fundamental Christian faith.",
+      "textNl": "Niets is zo vreemd aan de oecumene als dat valse irenisme … Bij het vergelijken van de leerstellingen moet men bedenken dat er in de katholieke leer een 'hiërarchie' van waarheden bestaat, omdat hun verband met het fundament van het christelijk geloof verschillend is.",
+      "tags": [
+        "ecumenism",
+        "hierarchy-of-truths"
+      ],
+      "crossRefs": [
+        "UR-3"
+      ],
+      "noteNl": "De 'hiërarchie van waarheden' betreft het verband van een leerstuk met het centrum van het geloof, niet de mate waarin het geloofd moet worden.",
+      "noteEn": "The 'hierarchy of truths' concerns how a doctrine relates to the centre of the faith, not the degree to which it must be believed."
+    }
+  ]
+}

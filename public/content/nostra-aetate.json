@@ -1,0 +1,90 @@
+{
+  "docId": "nostra-aetate",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "NA-1",
+      "docId": "nostra-aetate",
+      "number": 1,
+      "textEn": "In our time, when day by day mankind is being drawn closer together, and the ties between different peoples are becoming stronger, the Church examines more closely her relationship to non-Christian religions.",
+      "textNl": "In onze tijd, nu de mensheid dagelijks hechter verenigd wordt en de banden tussen de volken nauwer worden, beziet de Kerk nauwkeuriger wat haar verhouding is tot de niet-christelijke godsdiensten.",
+      "textLa": "Nostra aetate, in qua genus humanum in dies arctius unitur …",
+      "tags": [
+        "interreligious",
+        "non-christians"
+      ],
+      "crossRefs": [
+        "NA-2"
+      ]
+    },
+    {
+      "id": "NA-2",
+      "docId": "nostra-aetate",
+      "number": 2,
+      "textEn": "The Catholic Church rejects nothing that is true and holy in these religions. She regards with sincere reverence those ways of conduct and of life, those precepts and teachings which, though differing in many aspects from the ones she holds and sets forth, nonetheless often reflect a ray of that Truth which enlightens all men. Indeed, she proclaims, and ever must proclaim Christ \"the way, the truth, and the life\" (John 14:6), in whom men may find the fullness of religious life, in whom God has reconciled all things to Himself.",
+      "textNl": "De Katholieke Kerk verwerpt niets van wat in deze godsdiensten waar en heilig is. Met oprechte eerbied beschouwt zij die wijzen van handelen en leven, die voorschriften en leerstellingen die, hoewel zij in veel opzichten verschillen van wat zij zelf houdt en voorhoudt, toch niet zelden een straal weerspiegelen van die Waarheid die alle mensen verlicht. Zij verkondigt echter, en moet onophoudelijk verkondigen, Christus, 'de weg, de waarheid en het leven' (Joh. 14,6), in wie de mensen de volheid van het religieuze leven vinden en in wie God alles met zich heeft verzoend.",
+      "tags": [
+        "interreligious",
+        "non-christians",
+        "mission",
+        "salvation"
+      ],
+      "crossRefs": [
+        "LG-16",
+        "AG-7",
+        "ext:dominus-iesus-2000",
+        "ext:redemptoris-missio-1990"
+      ],
+      "noteNl": "De paragraaf bevat twee beweringen tegelijk: waardering voor wat waar en heilig is, en de blijvende plicht Christus te verkondigen. Selectief citeren van één helft vertekent de tekst.",
+      "noteEn": "The paragraph makes two claims at once: esteem for what is true and holy, and the abiding duty to proclaim Christ. Quoting only one half distorts the text."
+    },
+    {
+      "id": "NA-3",
+      "docId": "nostra-aetate",
+      "number": 3,
+      "textEn": "The Church regards with esteem also the Moslems. They adore the one God, living and subsisting in Himself; merciful and all-powerful, the Creator of heaven and earth, who has spoken to men …",
+      "textNl": "Met hoogachting beschouwt de Kerk ook de moslims, die de ene God aanbidden, de levende en in zichzelf bestaande, barmhartige en almachtige Schepper van hemel en aarde, die tot de mensen gesproken heeft …",
+      "tags": [
+        "interreligious",
+        "islam"
+      ],
+      "crossRefs": [
+        "LG-16"
+      ]
+    },
+    {
+      "id": "NA-4",
+      "docId": "nostra-aetate",
+      "number": 4,
+      "textEn": "True, the Jewish authorities and those who followed their lead pressed for the death of Christ; still, what happened in His passion cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today. Although the Church is the new people of God, the Jews should not be presented as rejected or accursed by God, as if this followed from the Holy Scriptures. … It is, therefore, the burden of the Church's preaching to proclaim the cross of Christ as the sign of God's all-embracing love and as the fountain from which every grace flows.",
+      "textNl": "Weliswaar hebben de Joodse overheden met hun aanhangers aangedrongen op de dood van Christus; toch kan wat bij zijn lijden is gebeurd niet zonder onderscheid aan alle toen levende Joden, noch aan de Joden van nu worden aangerekend. Hoewel de Kerk het nieuwe volk van God is, mogen de Joden niet worden voorgesteld als door God verworpen of vervloekt, alsof dit uit de heilige Schrift zou volgen. … Het is daarom de taak van de prediking van de Kerk het kruis van Christus te verkondigen als teken van Gods universele liefde en als bron van alle genade.",
+      "tags": [
+        "interreligious",
+        "judaism",
+        "antisemitism"
+      ],
+      "crossRefs": [
+        "LG-16",
+        "ext:gifts-calling-2015"
+      ],
+      "noteNl": "§4 zegt ook dat de Kerk, met de profeten en de apostel, de dag verwacht 'die alleen God kent' waarop alle volken de Heer met één stem zullen aanroepen.",
+      "noteEn": "§4 also says that the Church, with the prophets and the Apostle, awaits the day 'known to God alone' on which all peoples will address the Lord in a single voice."
+    },
+    {
+      "id": "NA-5",
+      "docId": "nostra-aetate",
+      "number": 5,
+      "textEn": "The Church reproves, as foreign to the mind of Christ, any discrimination against men or harassment of them because of their race, color, condition of life, or religion.",
+      "textNl": "De Kerk verwerpt daarom, als in strijd met de geest van Christus, iedere discriminatie of vervolging van mensen omwille van hun ras of kleur, hun stand of godsdienst.",
+      "tags": [
+        "human-dignity",
+        "discrimination"
+      ],
+      "crossRefs": [
+        "GS-24"
+      ]
+    }
+  ]
+}

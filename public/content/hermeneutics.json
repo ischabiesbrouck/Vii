@@ -1,0 +1,82 @@
+{
+  "introNl": "Hoe lees je een concilie? Over de teksten van Vaticanum II bestaat weinig discussie wat hun letterlijke inhoud betreft; de strijd gaat over de leessleutel. Is het Concilie in de eerste plaats een reeks teksten, of een 'gebeurtenis' met een eigen geest? Vormt het een breuk of een ontwikkeling? Hieronder staan drie hoofdposities naast elkaar, elk met de paragrafen waarop zij zich beroepen en de kritiek die zij ontmoeten. Deze module beslist het debat niet.",
+  "introEn": "How do you read a council? There is little dispute about the literal content of the texts of Vatican II; the conflict is about the key for reading them. Is the Council primarily a set of texts, or an 'event' with a spirit of its own? Is it a rupture or a development? Three main positions are set side by side below, each with the paragraphs it appeals to and the criticism it meets. This module does not resolve the debate.",
+  "positions": [
+    {
+      "id": "reform-in-continuity",
+      "labelNl": "Hervorming in continuïteit",
+      "labelEn": "Reform in continuity",
+      "thesisNl": "Het Concilie is een vernieuwing van het ene subject Kerk, dat groeit en zich ontwikkelt maar hetzelfde blijft. Op het niveau van beginselen is er continuïteit; in concrete toepassingen (bv. kerk en staat) kan er discontinuïteit zijn. De teksten zijn de maatstaf, gelezen in het licht van de Traditie, met de dogmatische constituties als sleutel.",
+      "thesisEn": "The Council is a renewal of the one subject Church, which grows and develops while remaining the same. At the level of principles there is continuity; in concrete applications (e.g. Church and state) there can be discontinuity. The texts are the measure, read in the light of Tradition, with the dogmatic constitutions as the key.",
+      "appealsTo": [
+        { "paragraphId": "DV-1", "noteNl": "Uitdrukkelijk 'in de voetsporen van' Trente en Vaticanum I.", "noteEn": "Expressly 'in the footsteps of' Trent and Vatican I." },
+        { "paragraphId": "LG-18", "noteNl": "Herhaling van de leer van Vaticanum I.", "noteEn": "Restatement of the teaching of Vatican I." },
+        { "paragraphId": "DH-1", "noteNl": "Traditionele leer 'onaangetast'.", "noteEn": "Traditional doctrine 'untouched'." },
+        { "paragraphId": "SC-23", "noteNl": "Nieuwe vormen moeten 'organisch' uit bestaande groeien.", "noteEn": "New forms must grow 'organically' from existing ones." }
+      ],
+      "criticismNl": "Critici van links stellen dat deze lezing de werkelijke vernieuwing van het Concilie afzwakt; critici van rechts dat zij een continuïteit postuleert die in sommige teksten (DH, NA) niet aantoonbaar is.",
+      "criticismEn": "Critics on the left argue that this reading dilutes the Council's real novelty; critics on the right that it postulates a continuity not demonstrable in some texts (DH, NA).",
+      "sources": [
+        "Benedict XVI. (2005, December 22). Address to the Roman Curia offering them his Christmas greetings. Libreria Editrice Vaticana.",
+        "Marchetto, A. (2010). The Second Vatican Ecumenical Council: A counterpoint for the history of the Council (K. D. Whitehead, Trans.). University of Scranton Press. (Original work published 2005)",
+        "Synod of Bishops. (1985). The final report of the 1985 Extraordinary Synod. Libreria Editrice Vaticana."
+      ]
+    },
+    {
+      "id": "event-discontinuity",
+      "labelNl": "Gebeurtenis en nieuw begin",
+      "labelEn": "Event and new beginning",
+      "thesisNl": "Het Concilie was meer dan zijn teksten: een 'gebeurtenis' die een nieuwe stijl van kerk-zijn inluidde (dialoog in plaats van veroordeling, overtuiging in plaats van wetgeving). De compromissen in de teksten verbergen de werkelijke richting; wie alleen op de letter let, mist de geest.",
+      "thesisEn": "The Council was more than its texts: an 'event' that inaugurated a new style of being Church (dialogue rather than condemnation, persuasion rather than legislation). The compromises in the texts conceal the real direction; whoever attends only to the letter misses the spirit.",
+      "appealsTo": [
+        { "paragraphId": "SC-1", "noteNl": "Aanpassing aan de noden van de tijd als uitdrukkelijk doel.", "noteEn": "Adaptation to the needs of the times as an explicit aim." },
+        { "paragraphId": "GS-4", "noteNl": "De tekenen des tijds onderzoeken.", "noteEn": "Scrutinising the signs of the times." },
+        { "paragraphId": "LG-8", "noteNl": "De verschuiving van 'est' naar 'subsistit in'.", "noteEn": "The shift from 'est' to 'subsistit in'." },
+        { "paragraphId": "DH-2", "noteNl": "Erkenning van godsdienstvrijheid als recht.", "noteEn": "Recognition of religious freedom as a right." }
+      ],
+      "criticismNl": "Critici stellen dat een 'geest' die los van of tegen de letter wordt ingeroepen, niet te toetsen is en de teksten — die de vaders met overgrote meerderheid aannamen — van hun gezag berooft. O'Malley zelf benadrukt dat stijl en tekst niet tegen elkaar uitgespeeld mogen worden.",
+      "criticismEn": "Critics argue that a 'spirit' invoked apart from or against the letter cannot be tested and deprives the texts — adopted by the Fathers by overwhelming majorities — of their authority. O'Malley himself stresses that style and text must not be played off against each other.",
+      "sources": [
+        "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books.",
+        "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
+        "Faggioli, M. (2012). Vatican II: The battle for meaning. Paulist Press."
+      ]
+    },
+    {
+      "id": "traditionalist-rupture",
+      "labelNl": "Breuk (traditionalistische kritiek)",
+      "labelEn": "Rupture (traditionalist critique)",
+      "thesisNl": "Op enkele punten — godsdienstvrijheid, oecumene, collegialiteit — zijn de teksten zelf dubbelzinnig of niet te verzoenen met eerder leergezag. Omdat het Concilie zich pastoraal noemde en niets definieerde, staan zulke punten open voor correctie.",
+      "thesisEn": "On some points — religious freedom, ecumenism, collegiality — the texts themselves are ambiguous or irreconcilable with prior magisterium. Because the Council called itself pastoral and defined nothing, such points remain open to correction.",
+      "appealsTo": [
+        { "paragraphId": "DH-2", "noteNl": "Gezien als in spanning met Quanta cura (1864).", "noteEn": "Seen as in tension with Quanta cura (1864)." },
+        { "paragraphId": "LG-8", "noteNl": "'Subsistit in' als bewuste dubbelzinnigheid.", "noteEn": "'Subsistit in' as deliberate ambiguity." },
+        { "paragraphId": "LG-22", "noteNl": "Collegialiteit als bedreiging van het primaat (vóór de Nota praevia).", "noteEn": "Collegiality as a threat to the primacy (before the Nota praevia)." }
+      ],
+      "criticismNl": "Critici stellen dat deze positie, net als de 'gebeurtenis'-lezing, het Concilie als breuk leest — alleen met een tegengesteld waardeoordeel — en dat zij het gezag van een oecumenisch concilie met de paus onderschat (LG §25).",
+      "criticismEn": "Critics argue that this position, like the 'event' reading, reads the Council as a rupture — only with the opposite value judgement — and underestimates the authority of an ecumenical council with the pope (LG §25).",
+      "sources": [
+        "de Mattei, R. (2012). The Second Vatican Council: An unwritten story. Loreto Publications.",
+        "Gherardini, B. (2009). Concilio Ecumenico Vaticano II: Un discorso da fare. Casa Mariana Editrice.",
+        "Lefebvre, M. (1987). Ils l'ont découronné. Éditions Fideliter."
+      ]
+    }
+  ],
+  "principlesNl": [
+    "Lees de tekst zelf, met paragraafnummer, vóór elk commentaar.",
+    "Lees elke tekst als geheel; citeer geen halve paragraaf.",
+    "Onderscheid de tekst van het Concilie van latere uitvoeringsbesluiten en praktijk.",
+    "Lees de documenten in hun onderlinge samenhang, met de vier constituties als sleutel.",
+    "Lees de documenten in het licht van de Traditie, waarop zij zich zelf beroepen.",
+    "Weeg het gezag van een tekst naar zijn aard (dogmatische constitutie, decreet, verklaring) en naar wat hij zelf zegt te doen."
+  ],
+  "principlesEn": [
+    "Read the text itself, with its paragraph number, before any commentary.",
+    "Read each text as a whole; do not quote half a paragraph.",
+    "Distinguish the text of the Council from later implementing decisions and practice.",
+    "Read the documents in their mutual coherence, with the four constitutions as the key.",
+    "Read the documents in the light of Tradition, to which they themselves appeal.",
+    "Weigh a text's authority by its nature (dogmatic constitution, decree, declaration) and by what it says it is doing."
+  ],
+  "principlesSource": "Grotendeels ontleend aan: Synod of Bishops. (1985). The final report of the 1985 Extraordinary Synod, I.5. Libreria Editrice Vaticana."
+}

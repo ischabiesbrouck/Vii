@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Concilium — Vaticanum II in context</title>
+    <meta name="description" content="Studiehulp bij de 16 documenten van het Tweede Vaticaans Concilie: de tekst zelf, met paragraafnummers en context." />
+    <meta name="theme-color" content="#7A1F1F" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Concilium" />
+    <script>
+      // Apply theme before first paint to avoid a flash.
+      try {
+        var s = JSON.parse(localStorage.getItem('concilium-ui') || '{}').state || {};
+        var t = s.theme || 'system';
+        var dark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+        if (s.lang === 'en') document.documentElement.lang = 'en';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+{
+  "docId": "dei-verbum",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "DV-1",
+      "docId": "dei-verbum",
+      "number": 1,
+      "textEn": "… following in the footsteps of the Council of Trent and of the First Vatican Council, this present council wishes to set forth authentic doctrine on divine revelation and how it is handed on …",
+      "textNl": "… in de voetsporen van het Concilie van Trente en van het Eerste Vaticaans Concilie wil dit Concilie de authentieke leer over de goddelijke openbaring en haar overlevering uiteenzetten …",
+      "tags": [
+        "revelation",
+        "continuity"
+      ],
+      "crossRefs": [
+        "ext:trent-sess4-1546",
+        "ext:dei-filius-1870",
+        "LG-18"
+      ]
+    },
+    {
+      "id": "DV-9",
+      "docId": "dei-verbum",
+      "number": 9,
+      "textEn": "Hence there exists a close connection and communication between sacred tradition and Sacred Scripture. … Consequently it is not from Sacred Scripture alone that the Church draws her certainty about everything which has been revealed. Therefore both sacred tradition and Sacred Scripture are to be accepted and venerated with the same sense of loyalty and reverence.",
+      "textNl": "De heilige Traditie en de heilige Schrift zijn dus nauw met elkaar verbonden en hebben deel aan elkaar. … Daardoor put de Kerk haar zekerheid over al het geopenbaarde niet uit de heilige Schrift alleen. Daarom moeten beide met gelijke gevoelens van toewijding en eerbied worden aanvaard en vereerd.",
+      "textLa": "… quo fit ut Ecclesia certitudinem suam de omnibus revelatis per solam Sacram Scripturam non hauriat.",
+      "tags": [
+        "revelation",
+        "tradition",
+        "scripture"
+      ],
+      "crossRefs": [
+        "DV-10",
+        "ext:trent-sess4-1546"
+      ],
+      "noteNl": "'Met gelijke gevoelens van toewijding en eerbied' neemt vrijwel letterlijk de formule van Trente (sessie IV, 1546) over.",
+      "noteEn": "'With the same sense of loyalty and reverence' takes over almost verbatim the formula of Trent (Session IV, 1546)."
+    },
+    {
+      "id": "DV-10",
+      "docId": "dei-verbum",
+      "number": 10,
+      "textEn": "Sacred tradition and Sacred Scripture form one sacred deposit of the word of God, committed to the Church. … This teaching office is not above the word of God, but serves it, teaching only what has been handed on …",
+      "textNl": "De heilige Traditie en de heilige Schrift vormen één heilige schat van het woord van God, die aan de Kerk is toevertrouwd. … Dit leergezag staat niet boven het woord van God, maar dient het, door alleen te leren wat is overgeleverd …",
+      "textLa": "Quod quidem Magisterium non supra verbum Dei est, sed eidem ministrat …",
+      "tags": [
+        "revelation",
+        "tradition",
+        "scripture",
+        "magisterium"
+      ],
+      "crossRefs": [
+        "DV-9",
+        "LG-25"
+      ],
+      "noteNl": "De paragraaf eindigt: Traditie, Schrift en leergezag zijn zo verbonden dat 'het ene niet zonder de andere bestaat'.",
+      "noteEn": "The paragraph concludes that Tradition, Scripture and magisterium are so linked 'that one cannot stand without the others'."
+    },
+    {
+      "id": "DV-11",
+      "docId": "dei-verbum",
+      "number": 11,
+      "textEn": "… since everything asserted by the inspired authors or sacred writers must be held to be asserted by the Holy Spirit, it follows that the books of Scripture must be acknowledged as teaching solidly, faithfully and without error that truth which God wanted put into sacred writings for the sake of salvation.",
+      "textNl": "… omdat alles wat de geïnspireerde auteurs of hagiografen beweren, beschouwd moet worden als beweerd door de Heilige Geest, moet men erkennen dat de boeken van de Schrift de waarheid die God omwille van ons heil in de heilige geschriften wilde laten optekenen, vast, getrouw en zonder dwaling leren.",
+      "textLa": "… Scripturae libri veritatem, quam Deus nostrae salutis causa Litteris Sacris consignari voluit, firmiter, fideliter et sine errore docere profitendi sunt.",
+      "tags": [
+        "scripture",
+        "inspiration",
+        "inerrancy"
+      ],
+      "crossRefs": [
+        "ext:providentissimus-1893",
+        "ext:divino-afflante-1943",
+        "ext:pbc-2014"
+      ],
+      "noteNl": "Of 'nostrae salutis causa' de reikwijdte van de onfeilbaarheid beperkt, of het doel van de hele Schrift aanduidt, is omstreden.",
+      "noteEn": "Whether 'nostrae salutis causa' restricts the scope of inerrancy, or names the purpose of the whole of Scripture, is disputed."
+    },
+    {
+      "id": "DV-19",
+      "docId": "dei-verbum",
+      "number": 19,
+      "textEn": "Holy Mother Church has firmly and with absolute constancy held, and continues to hold, that the four Gospels just named, whose historical character the Church unhesitatingly asserts, faithfully hand on what Jesus Christ, while living among men, really did and taught …",
+      "textNl": "De heilige Moeder Kerk heeft vast en standvastig gehouden en houdt nog, dat de vier genoemde evangeliën, waarvan zij de historiciteit zonder aarzelen bevestigt, getrouw overleveren wat Jezus, de Zoon van God, tijdens zijn leven onder de mensen werkelijk gedaan en geleerd heeft …",
+      "tags": [
+        "scripture",
+        "gospels",
+        "history"
+      ],
+      "crossRefs": [
+        "DV-11"
+      ]
+    }
+  ]
+}

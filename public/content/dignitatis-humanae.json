@@ -1,0 +1,67 @@
+{
+  "docId": "dignitatis-humanae",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "DH-1", "docId": "dignitatis-humanae", "number": 1,
+      "textEn": "First, the council professes its belief that God Himself has made known to mankind the way in which men are to serve Him, and thus be saved in Christ and come to blessedness. We believe that this one true religion subsists in the Catholic and Apostolic Church … Religious freedom, in turn, which men demand as necessary to fulfill their duty to worship God, has to do with immunity from coercion in civil society. Therefore it leaves untouched traditional Catholic doctrine on the moral duty of men and societies toward the true religion and toward the one Church of Christ.",
+      "textNl": "Allereerst belijdt het Concilie dat God zelf aan het mensdom de weg heeft bekendgemaakt waarlangs de mensen Hem moeten dienen en zo in Christus gered en gelukzalig kunnen worden. Deze ene ware godsdienst, zo geloven wij, is verwerkelijkt (subsistere) in de katholieke en apostolische Kerk … De godsdienstvrijheid die de mensen opeisen om hun plicht tot godsverering te kunnen vervullen, betreft de vrijwaring van dwang in de burgerlijke samenleving. Zij laat daarom de traditionele katholieke leer over de morele plicht van mensen en samenlevingen tegenover de ware godsdienst en de ene Kerk van Christus onaangetast.",
+      "textLa": "… integram relinquit traditionalem doctrinam catholicam de morali hominum ac societatum officio erga veram religionem et unicam Christi Ecclesiam.",
+      "tags": ["religious-liberty", "true-religion", "continuity", "church-and-state"],
+      "crossRefs": ["DH-2", "LG-8", "ext:immortale-dei-1885", "ext:quanta-cura-1864"],
+      "noteNl": "Deze zin werd in de laatste redactie toegevoegd. Hoe zij zich verhoudt tot §2 vormt de kern van het interpretatiedebat; zie Claim Check.",
+      "noteEn": "This sentence was added in the final redaction. How it relates to §2 is the core of the interpretive debate; see Claim Check."
+    },
+    {
+      "id": "DH-2", "docId": "dignitatis-humanae", "number": 2,
+      "textEn": "This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that no one is to be forced to act in a manner contrary to his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits. … The council further declares that the right to religious freedom has its foundation in the very dignity of the human person as this dignity is known through the revealed word of God and by reason itself.",
+      "textNl": "Dit Vaticaans Concilie verklaart dat de menselijke persoon recht heeft op godsdienstvrijheid. Deze vrijheid houdt in dat alle mensen vrij moeten zijn van dwang, zowel van de kant van individuen als van sociale groepen en van welke menselijke macht ook, zodat niemand gedwongen wordt tegen zijn geweten te handelen, privé of in het openbaar, alleen of met anderen, binnen de juiste grenzen. … Het Concilie verklaart verder dat het recht op godsdienstvrijheid gegrond is in de waardigheid zelf van de menselijke persoon, zoals die door het geopenbaarde woord van God en door de rede zelf gekend wordt.",
+      "textLa": "Haec Vaticana Synodus declarat personam humanam ius habere ad libertatem religiosam.",
+      "tags": ["religious-liberty", "human-dignity", "church-and-state"],
+      "crossRefs": ["DH-1", "DH-7", "DH-10", "ext:quanta-cura-1864"],
+      "noteNl": "Het recht wordt geformuleerd als een recht op vrijwaring van dwang (een negatief recht), niet als een recht om te geloven wat men wil zonder morele verplichting.",
+      "noteEn": "The right is framed as a right to immunity from coercion (a negative right), not as a right to believe whatever one wishes without moral obligation."
+    },
+    {
+      "id": "DH-3", "docId": "dignitatis-humanae", "number": 3,
+      "textEn": "Further light is shed on the subject if one considers that the highest norm of human life is the divine law—eternal, objective and universal—whereby God orders, directs and governs the entire universe and all the ways of the human community …",
+      "textNl": "Dit wordt nog duidelijker als men bedenkt dat de hoogste norm van het menselijk leven de goddelijke wet zelf is — eeuwig, objectief en universeel — waardoor God de hele wereld en de wegen van de menselijke gemeenschap ordent, leidt en bestuurt …",
+      "tags": ["religious-liberty", "natural-law", "conscience"],
+      "crossRefs": ["GS-16"]
+    },
+    {
+      "id": "DH-7", "docId": "dignitatis-humanae", "number": 7,
+      "textEn": "… society has the right to defend itself against possible abuses committed on the pretext of freedom of religion.",
+      "textNl": "… de samenleving heeft het recht zich te verdedigen tegen misbruiken die onder het voorwendsel van godsdienstvrijheid kunnen plaatsvinden.",
+      "tags": ["religious-liberty", "public-order", "church-and-state"],
+      "crossRefs": ["DH-2"],
+      "noteNl": "§7 noemt als grenzen de bescherming van de rechten van allen, de openbare vrede en de openbare zedelijkheid, samen de 'openbare orde'.",
+      "noteEn": "§7 names as limits the protection of the rights of all, public peace and public morality, together 'public order'."
+    },
+    {
+      "id": "DH-10", "docId": "dignitatis-humanae", "number": 10,
+      "textEn": "It is one of the major tenets of Catholic doctrine that man's response to God in faith must be free: no one therefore is to be forced to embrace the Christian faith against his own will.",
+      "textNl": "Het is een van de hoofdpunten van de katholieke leer dat de mens God vrijwillig moet antwoorden door te geloven; daarom mag niemand tegen zijn wil gedwongen worden het geloof te aanvaarden.",
+      "tags": ["religious-liberty", "faith", "freedom"],
+      "crossRefs": ["DH-2"]
+    },
+    {
+      "id": "DH-12", "docId": "dignitatis-humanae", "number": 12,
+      "textEn": "In the life of the People of God, as it has made its pilgrim way through the vicissitudes of human history, there has at times appeared a way of acting that was hardly in accord with the spirit of the Gospel or even opposed to it.",
+      "textNl": "In het leven van het volk van God, op zijn pelgrimstocht door de wisselvalligheden van de menselijke geschiedenis, is soms een wijze van handelen voorgekomen die weinig in overeenstemming was met de geest van het evangelie, of er zelfs mee in strijd was.",
+      "tags": ["religious-liberty", "history"],
+      "crossRefs": ["DH-10"],
+      "noteNl": "De tekst vervolgt dat de leer van de Kerk dat niemand tot het geloof gedwongen mag worden, ondanks dit alles standhield.",
+      "noteEn": "The text continues that the Church's teaching that no one is to be coerced into faith has nonetheless stood firm throughout."
+    },
+    {
+      "id": "DH-14", "docId": "dignitatis-humanae", "number": 14,
+      "textEn": "In the formation of their consciences, the Christian faithful ought carefully to attend to the sacred and certain doctrine of the Church. For the Church is, by the will of Christ, the teacher of the truth.",
+      "textNl": "Bij de vorming van hun geweten moeten de christengelovigen zorgvuldig acht slaan op de heilige en zekere leer van de Kerk. Want de Kerk is naar de wil van Christus de lerares van de waarheid.",
+      "tags": ["conscience", "magisterium"],
+      "crossRefs": ["GS-16", "LG-25"]
+    }
+  ]
+}

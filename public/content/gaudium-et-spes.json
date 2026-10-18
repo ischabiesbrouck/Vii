@@ -1,0 +1,145 @@
+{
+  "docId": "gaudium-et-spes",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "GS-1",
+      "docId": "gaudium-et-spes",
+      "number": 1,
+      "textEn": "The joys and the hope, the griefs and the anxieties of the men of this age, especially those who are poor or in any way afflicted, these are the joys and hopes, the griefs and anxieties of the followers of Christ.",
+      "textNl": "Vreugde en hoop, verdriet en angst van de mensen van deze tijd, vooral van de armen en van alle verdrukten, zijn ook vreugde en hoop, verdriet en angst van de leerlingen van Christus.",
+      "textLa": "Gaudium et spes, luctus et angor hominum huius temporis …",
+      "tags": [
+        "church-and-world"
+      ],
+      "crossRefs": []
+    },
+    {
+      "id": "GS-4",
+      "docId": "gaudium-et-spes",
+      "number": 4,
+      "textEn": "To carry out such a task, the Church has always had the duty of scrutinizing the signs of the times and of interpreting them in the light of the Gospel.",
+      "textNl": "Om deze taak te vervullen heeft de Kerk te allen tijde de plicht de tekenen des tijds te onderzoeken en ze in het licht van het evangelie te verklaren.",
+      "tags": [
+        "signs-of-the-times",
+        "church-and-world"
+      ],
+      "crossRefs": []
+    },
+    {
+      "id": "GS-16",
+      "docId": "gaudium-et-spes",
+      "number": 16,
+      "textEn": "In the depths of his conscience, man detects a law which he does not impose upon himself, but which holds him to obedience. … Conscience is the most secret core and sanctuary of a man. There he is alone with God, Whose voice echoes in his depths. … Conscience frequently errs from invincible ignorance without losing its dignity. The same cannot be said for a man who cares but little for truth and goodness, or for a conscience which by degrees grows practically sightless as a result of habitual sin.",
+      "textNl": "In de diepte van zijn geweten ontdekt de mens een wet die hij zichzelf niet geeft, maar waaraan hij moet gehoorzamen. … Het geweten is de meest verborgen kern en het heiligdom van de mens, waar hij alleen is met God, wiens stem in zijn binnenste weerklinkt. … Het geweten kan echter uit onoverwinnelijke onwetendheid dwalen zonder zijn waardigheid te verliezen. Dat kan niet gezegd worden van iemand die zich weinig bekommert om het zoeken naar waarheid en goedheid, of van een geweten dat door de gewoonte van de zonde gaandeweg bijna blind wordt.",
+      "tags": [
+        "conscience",
+        "natural-law",
+        "moral-theology"
+      ],
+      "crossRefs": [
+        "DH-3",
+        "DH-14",
+        "LG-16"
+      ],
+      "noteNl": "§16 beschrijft het geweten als ontvanger van een wet, niet als bron ervan.",
+      "noteEn": "§16 describes conscience as the recipient of a law, not its source."
+    },
+    {
+      "id": "GS-19",
+      "docId": "gaudium-et-spes",
+      "number": 19,
+      "textEn": "The root reason for human dignity lies in man's call to communion with God. … Hence believers can have more than a little to do with the birth of atheism.",
+      "textNl": "De meest verheven grond van de menselijke waardigheid ligt in de roeping van de mens tot gemeenschap met God. … Daarom kunnen gelovigen aan het ontstaan van het atheïsme niet weinig schuld hebben.",
+      "tags": [
+        "atheism",
+        "human-dignity"
+      ],
+      "crossRefs": [
+        "GS-21"
+      ]
+    },
+    {
+      "id": "GS-21",
+      "docId": "gaudium-et-spes",
+      "number": 21,
+      "textEn": "In her loyal devotion to God and men, the Church has already repudiated and cannot cease repudiating, sorrowfully but as firmly as possible, those poisonous doctrines and actions which contradict reason and the common experience of humanity, and dethrone man from his native excellence.",
+      "textNl": "In haar trouw aan God en de mensen heeft de Kerk deze verderfelijke leringen en daden, die in strijd zijn met de rede en de gemeenschappelijke ervaring van de mensen en die de mens van zijn aangeboren grootheid beroven, al verworpen en zij kan niet anders dan ze met smart maar met de grootste beslistheid blijven verwerpen.",
+      "tags": [
+        "atheism",
+        "communism"
+      ],
+      "crossRefs": [
+        "GS-19",
+        "ext:divini-redemptoris-1937"
+      ],
+      "noteNl": "De voetnoten bij §21 verwijzen naar eerdere pauselijke veroordelingen, waaronder Divini Redemptoris (1937) over het communisme. Het woord 'communisme' staat niet in de tekst.",
+      "noteEn": "The footnotes to §21 refer to earlier papal condemnations, including Divini Redemptoris (1937) on communism. The word 'communism' does not appear in the text."
+    },
+    {
+      "id": "GS-22",
+      "docId": "gaudium-et-spes",
+      "number": 22,
+      "textEn": "The truth is that only in the mystery of the incarnate Word does the mystery of man take on light. … For since Christ died for all men, and since the ultimate vocation of man is in fact one, and divine, we ought to believe that the Holy Spirit in a manner known only to God offers to every man the possibility of being associated with this paschal mystery.",
+      "textNl": "In werkelijkheid wordt het mysterie van de mens alleen in het mysterie van het mensgeworden Woord echt duidelijk. … Omdat Christus voor allen gestorven is en de uiteindelijke roeping van de mens in feite één is, namelijk een goddelijke, moeten wij vasthouden dat de Heilige Geest aan allen de mogelijkheid biedt om, op een wijze die God kent, met dit paasmysterie verbonden te worden.",
+      "textLa": "Reapse nonnisi in mysterio Verbi incarnati mysterium hominis vere clarescit.",
+      "tags": [
+        "christology",
+        "anthropology",
+        "salvation"
+      ],
+      "crossRefs": [
+        "LG-16",
+        "AG-7"
+      ]
+    },
+    {
+      "id": "GS-24",
+      "docId": "gaudium-et-spes",
+      "number": 24,
+      "textEn": "This likeness reveals that man, who is the only creature on earth which God willed for itself, cannot fully find himself except through a sincere gift of himself.",
+      "textNl": "Deze gelijkenis maakt duidelijk dat de mens, het enige schepsel op aarde dat God om zichzelf gewild heeft, zichzelf slechts volledig kan vinden in de oprechte gave van zichzelf.",
+      "tags": [
+        "anthropology",
+        "self-gift"
+      ],
+      "crossRefs": [
+        "GS-22"
+      ]
+    },
+    {
+      "id": "GS-48",
+      "docId": "gaudium-et-spes",
+      "number": 48,
+      "textEn": "The intimate partnership of married life and love has been established by the Creator and qualified by His laws, and is rooted in the conjugal covenant of irrevocable personal consent.",
+      "textNl": "De innige gemeenschap van leven en liefde in het huwelijk is door de Schepper gegrondvest en met eigen wetten toegerust; zij wordt tot stand gebracht door het huwelijksverbond, dat wil zeggen door een onherroepelijke persoonlijke instemming.",
+      "tags": [
+        "marriage",
+        "family"
+      ],
+      "crossRefs": [
+        "GS-51",
+        "ext:casti-connubii-1930"
+      ]
+    },
+    {
+      "id": "GS-51",
+      "docId": "gaudium-et-spes",
+      "number": 51,
+      "textEn": "For God, the Lord of life, has conferred on men the surpassing ministry of safeguarding life in a manner which is worthy of man. Therefore from the moment of its conception life must be guarded with the greatest care while abortion and infanticide are unspeakable crimes.",
+      "textNl": "God, de Heer van het leven, heeft aan de mensen de verheven taak toevertrouwd het leven te beschermen, een taak die op een menswaardige wijze vervuld moet worden. Daarom moet het leven vanaf de ontvangenis met de grootste zorg beschermd worden; abortus en kindermoord zijn verfoeilijke misdaden.",
+      "textLa": "… abortus necnon infanticidium nefanda sunt crimina.",
+      "tags": [
+        "life",
+        "abortion",
+        "marriage"
+      ],
+      "crossRefs": [
+        "GS-48",
+        "ext:casti-connubii-1930"
+      ]
+    }
+  ]
+}
