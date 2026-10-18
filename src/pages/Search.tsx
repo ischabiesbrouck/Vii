@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { PageHeader } from '@/components/TextBlocks';
-import { getSearchEngine, search, type Hit } from '@/lib/search';
+import { getSearchEngine, search, type Hit, type SearchKind } from '@/lib/search';
+import { cn } from '@/lib/utils';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { pick } from '@/lib/utils';
 
@@ -23,6 +24,7 @@ export function SearchPage() {
   const [q, setQ] = useState(params.get('q') ?? '');
   const [hits, setHits] = useState<Hit[] | null>(null);
   const [ready, setReady] = useState(false);
+  const [kind, setKind] = useState<SearchKind | 'all'>('all');
   useDocumentTitle(t('search.title'));
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export function SearchPage() {
   }, [q, setParams]);
 
   return (
-    <div>
+    <div className="mx-auto max-w-3xl">
       <PageHeader title={t('search.title')} intro={t('search.hint')} />
       <form role="search" onSubmit={(e) => e.preventDefault()} className="mb-5">
         <label htmlFor="q" className="sr-only">
@@ -47,6 +49,21 @@ export function SearchPage() {
         </label>
         <Input id="q" type="search" autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('search.placeholder')} />
       </form>
+
+      <div role="group" aria-label={t('search.title')} className="mb-5 flex flex-wrap gap-2">
+        {(['all', 'paragraph', 'subject', 'claim', 'term'] as const).map((k) => (
+          <button
+            key={k}
+            type="button"
+            aria-pressed={kind === k}
+            onClick={() => setKind(k)}
+            className={cn('min-h-[36px] rounded border px-3 text-sm', kind === k ? 'border-fg bg-fg text-bg' : 'border-line bg-card hover:border-gold')}
+          >
+            {k === 'all' ? t('search.all') : t(`search.kind.${k}`)}
+            {hits && <span className="ml-1 opacity-70">({k === 'all' ? hits.length : hits.filter((h) => h.kind === k).length})</span>}
+          </button>
+        ))}
+      </div>
 
       {!ready && <p className="text-sm text-muted" role="status">{t('search.building')}</p>}
 
@@ -56,17 +73,17 @@ export function SearchPage() {
             {hits.length ? t('search.results', { count: hits.length }) : t('search.noResults', { q })}
           </p>
         )}
-        <ul className="space-y-2">
-          {hits?.map((h) => (
+        <ul className="divide-y divide-line border-y border-line">
+          {hits?.filter((h) => kind === 'all' || h.kind === kind).map((h) => (
             <li key={h.id}>
-              <Link to={h.url} className="block rounded-lg border border-line bg-card p-4 hover:border-accent">
+              <Link to={h.url} className="block py-4 hover:bg-surface sm:px-3">
                 <div className="mb-1 flex flex-wrap items-center gap-2">
-                  <Badge variant={h.kind === 'paragraph' ? 'constitution' : h.kind === 'claim' ? 'slate' : 'gold'}>
+                  <Badge variant={h.kind === 'paragraph' ? 'constitution' : h.kind === 'claim' ? 'slate' : h.kind === 'subject' ? 'ok' : 'gold'}>
                     {t(`search.kind.${h.kind}`)}
                   </Badge>
                   {h.kind === 'paragraph' && <span className="font-semibold text-accent">{h.cite.split(' ').slice(0, 2).join(' ')}</span>}
                 </div>
-                <p className="text-sm font-medium">{pick(lang, h.title, h.titleEn)}</p>
+                <p className="font-serif font-semibold">{pick(lang, h.title, h.titleEn)}</p>
                 <p className={h.kind === 'paragraph' ? 'mt-1 font-serif text-sm text-muted' : 'mt-1 text-sm text-muted'}>
                   {snippet(pick(lang, h.snippetNl, h.snippetEn), h.terms)}
                 </p>

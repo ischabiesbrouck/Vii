@@ -1,17 +1,19 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { BookmarkCheck, ExternalLink, Info, Star } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Star } from 'lucide-react';
 import { DocTypeBadge, SolemnityBadge } from '@/components/Badges';
-import { Commentary, ConciliarText, CiteLink, Loading } from '@/components/TextBlocks';
+import { Commentary, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar } from '@/components/TextBlocks';
 import { ParagraphSheet, copyCitation } from '@/components/ParagraphSheet';
-import { getDocument, getDocumentContent } from '@/lib/content';
+import { SubjectIcon } from '@/components/SubjectIcon';
+import { Sheet, SheetContent } from '@/components/ui/sheet';
+import { getDocumentContent, getDocuments, getSubjects } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { cn, formatDate, pick } from '@/lib/utils';
 import { CONTENT_MODE, RKDOCUMENTEN_URL } from '@/config';
 import { useUi, type FontSize } from '@/store/ui';
-import type { CouncilDocument, Paragraph } from '@/types/content';
+import type { CouncilDocument, OutlineSection, Paragraph } from '@/types/content';
 
 function useLongPress(onLong: () => void, onTap: () => void, ms = 550) {
   const timer = useRef<number | undefined>(undefined);
@@ -79,10 +81,14 @@ function ReaderParagraph({
     () => onOpen(p),
   );
   return (
-    <article className="relative" aria-labelledby={`${p.id}-label`}>
-      <div className="mb-1 flex items-center gap-2">
-        <a id={p.id} href={`#${p.id}`} className="block scroll-mt-36 font-sans text-sm font-semibold text-accent">
-          <span id={`${p.id}-label`}>§{p.number}</span>
+    <article className="grid gap-x-4 sm:grid-cols-[3.25rem_minmax(0,1fr)]" aria-labelledby={`${p.id}-label`}>
+      {/* Rubric: the paragraph number in red, in the margin, as in liturgical and conciliar editions. */}
+      <div className="mb-1 flex items-center gap-2 sm:mb-0 sm:flex-col sm:items-end sm:gap-1 sm:pt-3">
+        <a id={p.id} href={`#${p.id}`} className="block scroll-mt-40 font-serif text-lg font-semibold leading-none text-accent">
+          <span id={`${p.id}-label`}>
+            <span className="text-[0.8em] opacity-80">§</span>
+            {p.number}
+          </span>
         </a>
         {isKey && <Star className="h-3.5 w-3.5 fill-gold text-gold" aria-label={t('doc.keyParagraphs')} />}
         {isBookmarked && <BookmarkCheck className="h-3.5 w-3.5 text-accent" aria-label={t('para.bookmark')} />}
@@ -93,7 +99,7 @@ function ReaderParagraph({
         tabIndex={0}
         aria-haspopup="dialog"
         aria-label={`${doc.abbr} §${p.number}`}
-        className="no-callout cursor-pointer rounded-md transition-shadow hover:shadow-sm"
+        className="no-callout cursor-pointer rounded-md transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]"
         {...handlers}
       >
         <ConciliarText paragraph={p} cite={`${doc.abbr} §${p.number}`} />
@@ -102,13 +108,76 @@ function ReaderParagraph({
   );
 }
 
-const popeNl = { 'Paul VI': 'Paulus VI', 'John XXIII': 'Johannes XXIII' } as const;
+function sectionOf(outline: OutlineSection[] | undefined, n: number) {
+  return outline?.find((o) => n >= o.from && n <= o.to);
+}
+
+function Outline({
+  doc,
+  paragraphs,
+  currentId,
+  onPick,
+}: {
+  doc: CouncilDocument;
+  paragraphs: Paragraph[];
+  currentId: string | null;
+  onPick: (id: string) => void;
+}) {
+  const { t } = useTranslation();
+  const lang = useLang();
+  const current = paragraphs.find((p) => p.id === currentId);
+  if (!doc.outline) {
+    return (
+      <ul className="grid grid-cols-5 gap-1 text-sm">
+        {paragraphs.map((p) => (
+          <li key={p.id}>
+            <button type="button" onClick={() => onPick(p.id)} className={cn('min-h-[36px] w-full rounded hover:bg-surface', p.id === currentId && 'bg-surface font-semibold text-accent')}>
+              §{p.number}
+            </button>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+  return (
+    <ol className="space-y-1">
+      {doc.outline.map((o) => {
+        const inSection = paragraphs.filter((p) => p.number >= o.from && p.number <= o.to);
+        const active = current && current.number >= o.from && current.number <= o.to;
+        return (
+          <li key={o.labelLa}>
+            <button
+              type="button"
+              disabled={!inSection.length}
+              onClick={() => inSection[0] && onPick(inSection[0].id)}
+              className={cn(
+                'w-full rounded px-2 py-1.5 text-left transition-colors disabled:cursor-default',
+                active ? 'bg-surface' : 'enabled:hover:bg-surface',
+              )}
+            >
+              <span className={cn('block font-display text-[0.65rem] font-semibold uppercase tracking-caps', active ? 'text-accent' : 'text-gold-text')}>
+                {o.labelLa} · §{o.from}
+                {o.to !== o.from && `–${o.to}`}
+              </span>
+              <span className={cn('block text-[0.82rem] leading-snug', inSection.length ? 'text-fg' : 'text-muted')}>{pick(lang, o.titleNl, o.titleEn)}</span>
+              <span className="block text-[0.7rem] text-muted">
+                {inSection.length ? t('doc.excerptCount', { count: inSection.length }) : t('doc.noneSeededInSection')}
+              </span>
+            </button>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
 
 const sizes: { value: FontSize; label: string }[] = [
   { value: 'sm', label: 'A' },
   { value: 'md', label: 'A+' },
   { value: 'lg', label: 'A++' },
 ];
+
+const popeNl = { 'Paul VI': 'Paulus VI', 'John XXIII': 'Johannes XXIII' } as const;
 
 export function DocumentReader() {
   const { id = '' } = useParams();
@@ -117,18 +186,32 @@ export function DocumentReader() {
   const location = useLocation();
   const navigate = useNavigate();
   const { fontSize, setFontSize, bookmarks, progress, recordProgress } = useUi();
-  const docState = useAsync(() => getDocument(id), [id]);
-  const contentState = useAsync(() => getDocumentContent(id), [id]);
-  const doc = docState.data;
-  const content = contentState.data;
+  const { data, loading } = useAsync(async () => {
+    const [docs, content, subjects] = await Promise.all([getDocuments(), getDocumentContent(id), getSubjects()]);
+    const ordered = [...docs].sort((a, b) => a.promulgated.localeCompare(b.promulgated) || a.titleLa.localeCompare(b.titleLa));
+    const i = ordered.findIndex((d) => d.id === id);
+    const doc = ordered[i];
+    if (!doc) return null;
+    const related = subjects.filter((s) => s.steps.some((st) => st.paragraphId.startsWith(`${doc.abbr}-`)));
+    return { doc, content, prev: ordered[i - 1], next: ordered[i + 1], related };
+  }, [id]);
+  const doc = data?.doc;
+  const content = data?.content;
   const [active, setActive] = useState<Paragraph | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [tocOpen, setTocOpen] = useState(false);
+  const [currentId, setCurrentId] = useState<string | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const [liveFraction, setLiveFraction] = useState(0);
 
   useDocumentTitle(doc ? `${doc.abbr} · ${doc.titleLa}` : undefined);
 
   const paragraphs = useMemo(() => [...(content?.paragraphs ?? [])].sort((a, b) => a.number - b.number), [content]);
+
+  const goTo = useCallback((pid: string) => {
+    setTocOpen(false);
+    navigate({ hash: pid }, { replace: true });
+  }, [navigate]);
 
   // Scroll to #LG-8 once content is rendered, and on later hash changes.
   useEffect(() => {
@@ -150,6 +233,7 @@ export function DocumentReader() {
       const a = document.getElementById(p.id);
       if (a && a.getBoundingClientRect().top < window.innerHeight * 0.4) current = p.id;
     }
+    setCurrentId(current);
     recordProgress(id, fraction, current);
   }, [id, paragraphs, recordProgress]);
 
@@ -160,7 +244,7 @@ export function DocumentReader() {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
         const now = Date.now();
-        if (now - last > 250) {
+        if (now - last > 200) {
           last = now;
           onScroll();
         }
@@ -173,171 +257,247 @@ export function DocumentReader() {
     };
   }, [onScroll]);
 
-  if (docState.loading) return <Loading />;
-  if (!doc) return <p className="py-8 text-center">{t('doc.notFound')}</p>;
+  if (loading) return <Loading />;
+  if (!doc || !data) return <p className="py-8 text-center">{t('doc.notFound')}</p>;
 
   const stored = progress[id]?.fraction ?? 0;
   const shown = Math.max(stored, liveFraction);
-  const summary = pick(lang, doc.summaryNl, doc.summaryEn);
+  const total = (doc.voteFor ?? 0) + (doc.voteAgainst ?? 0);
+  const linkCls = 'inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold';
 
   return (
     <div>
-      <header className="mb-5">
-        <div className="mb-2 flex flex-wrap gap-1.5">
-          <DocTypeBadge type={doc.type} />
-          <SolemnityBadge solemnity={doc.solemnity} />
-          <span className="text-xs font-semibold leading-6 text-gold-text">{doc.abbr}</span>
-        </div>
-        <h1 className="font-serif text-3xl font-semibold leading-tight">
-          <span lang="la">{doc.titleLa}</span>
-        </h1>
-        <p className="mt-1 text-lg">{pick(lang, doc.titleNl, doc.titleEn)}</p>
-        <p lang="la" className="mt-1 text-sm text-muted">
-          {doc.designationLa}
-        </p>
-        <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
-          <dt className="text-gold-text">{t('doc.promulgated')}</dt>
-          <dd>
-            {formatDate(doc.promulgated, lang)} {t('doc.by')} {lang === 'nl' ? popeNl[doc.promulgatedBy] : doc.promulgatedBy}
-          </dd>
-          {doc.voteFor !== null && (
-            <>
-              <dt className="text-gold-text">{t('doc.votes')}</dt>
-              <dd>
-                {doc.voteFor.toLocaleString(lang)} <span lang="la">{t('doc.placet')}</span> · {doc.voteAgainst?.toLocaleString(lang)}{' '}
-                <span lang="la">{t('doc.nonPlacet')}</span>
-              </dd>
-            </>
-          )}
-          <dt className="text-gold-text">§</dt>
-          <dd>{t('doc.paragraphs', { count: doc.paragraphCount })}</dd>
-        </dl>
-        <Commentary className="mt-4" label={`${t('commentary')} · ${t('doc.summary')}`}>
-          {summary}
-        </Commentary>
-        {doc.keyParagraphs.length > 0 && (
-          <p className="mt-3 text-sm">
-            <span className="text-gold-text">{t('doc.keyParagraphs')}: </span>
-            {doc.keyParagraphs.map((k, i) => (
-              <span key={k}>
-                {i > 0 && ', '}
-                <CiteLink id={k} />
-              </span>
-            ))}
+      <Crumbs items={[{ to: '/', label: t('crumbs.home') }, { to: '/documents', label: t('nav.documents') }, { label: doc.titleLa }]} />
+
+      {/* Title page */}
+      <header className="mb-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+        <div className="min-w-0">
+          <div className="mb-3 flex flex-wrap items-center gap-1.5">
+            <DocTypeBadge type={doc.type} />
+            <SolemnityBadge solemnity={doc.solemnity} />
+          </div>
+          <h1 className="display-title text-[2.1rem] leading-[1.1] sm:text-5xl">
+            <span lang="la">{doc.titleLa}</span>
+          </h1>
+          <p className="mt-3 font-serif text-xl">{pick(lang, doc.titleNl, doc.titleEn)}</p>
+          <p lang="la" className="la mt-1 text-sm text-muted">
+            {doc.designationLa}
           </p>
-        )}
-        <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">
-          <li>
-            <a href={doc.officialUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] items-center gap-1 text-accent underline underline-offset-2">
-              {t('doc.official')}
-              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-            </a>
-          </li>
-          <li>
-            <a href={doc.officialUrlLa} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] items-center gap-1 text-accent underline underline-offset-2">
-              {t('doc.officialLa')}
-              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-            </a>
-          </li>
-          {lang === 'nl' && (
-            <li>
-              <a href={RKDOCUMENTEN_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] items-center gap-1 text-accent underline underline-offset-2">
-                {t('doc.officialNl')}
-                <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-              </a>
-            </li>
+          <Commentary className="mt-6" label={`${t('commentary')} · ${t('doc.summary')}`}>
+            <p className="leading-relaxed">{pick(lang, doc.summaryNl, doc.summaryEn)}</p>
+          </Commentary>
+          {doc.keyParagraphs.length > 0 && (
+            <p className="mt-4 text-sm">
+              <span className="kicker mr-2">{t('doc.keyParagraphs')}</span>
+              {doc.keyParagraphs.map((k, i) => (
+                <span key={k}>
+                  {i > 0 && ', '}
+                  <CiteLink id={k} />
+                </span>
+              ))}
+            </p>
           )}
-        </ul>
+        </div>
+
+        <aside className="panel h-fit p-5">
+          <dl className="space-y-3 text-sm">
+            <div>
+              <dt className="kicker">{t('doc.promulgated')}</dt>
+              <dd className="mt-0.5">
+                {formatDate(doc.promulgated, lang)}
+                <br />
+                <span className="text-muted">
+                  {t('doc.by')} {lang === 'nl' ? popeNl[doc.promulgatedBy] : doc.promulgatedBy}
+                </span>
+              </dd>
+            </div>
+            {doc.voteFor !== null && doc.voteAgainst !== null && (
+              <div>
+                <dt className="kicker">{t('doc.votes')}</dt>
+                <dd className="mt-1 tabular">
+                  <div className="flex h-2 overflow-hidden rounded-full bg-line" aria-hidden>
+                    <div className="bg-gold" style={{ width: `${(doc.voteFor / total) * 100}%` }} />
+                    <div className="bg-accent" style={{ width: `${(doc.voteAgainst / total) * 100}%`, minWidth: 2 }} />
+                  </div>
+                  <p className="mt-1.5">
+                    {doc.voteFor.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.placet')}</span> ·{' '}
+                    {doc.voteAgainst.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.nonPlacet')}</span>
+                  </p>
+                </dd>
+              </div>
+            )}
+            <div>
+              <dt className="kicker">{t('doc.paragraphsLabel')}</dt>
+              <dd className="mt-0.5 tabular">
+                {doc.paragraphCount} · {content ? t('doc.excerptCount', { count: paragraphs.length }) : t('doc.metadataOnly')}
+              </dd>
+            </div>
+          </dl>
+          <div className="mt-5 flex flex-col gap-2">
+            <a href={doc.officialUrl} target="_blank" rel="noopener noreferrer" className={linkCls}>
+              <ExternalLink className="h-3.5 w-3.5 text-gold-text" aria-hidden /> {t('doc.official')}
+            </a>
+            <a href={doc.officialUrlLa} target="_blank" rel="noopener noreferrer" className={linkCls}>
+              <ExternalLink className="h-3.5 w-3.5 text-gold-text" aria-hidden /> {t('doc.officialLa')}
+            </a>
+            {lang === 'nl' && (
+              <a href={RKDOCUMENTEN_URL} target="_blank" rel="noopener noreferrer" className={linkCls}>
+                <ExternalLink className="h-3.5 w-3.5 text-gold-text" aria-hidden /> rkdocumenten.nl
+              </a>
+            )}
+          </div>
+        </aside>
       </header>
 
-      {contentState.loading ? (
-        <Loading />
-      ) : !content ? (
+      {data.related.length > 0 && (
+        <section className="mb-10" aria-label={t('doc.inSubjects')}>
+          <p className="kicker mb-2">{t('doc.inSubjects')}</p>
+          <ul className="flex flex-wrap gap-2">
+            {data.related.map((s) => (
+              <li key={s.id}>
+                <Link to={`/subjects/${s.id}`} className="inline-flex min-h-[40px] items-center gap-2 rounded border border-line bg-card px-3 text-sm hover:border-gold">
+                  <SubjectIcon name={s.icon} className="h-4 w-4 text-gold-text" />
+                  {pick(lang, s.titleNl, s.titleEn)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {!content ? (
         // TODO(content): add public/content/{docId}.json to enable the reader for this document.
         <Commentary>{t('doc.notSeeded')}</Commentary>
       ) : (
-        <>
-          <div className="sticky top-[calc(3.5rem+env(safe-area-inset-top))] z-20 -mx-4 mb-4 border-b border-line bg-bg/95 px-4 py-2 backdrop-blur">
-            <div className="flex items-center gap-2">
-              <label className="flex items-center gap-2 text-sm">
-                <span className="sr-only sm:not-sr-only">{t('doc.jump')}</span>
-                <select
-                  className="min-h-[40px] rounded-md border border-line bg-card px-2 text-sm"
-                  value=""
-                  aria-label={t('doc.jump')}
-                  onChange={(e) => e.target.value && navigate({ hash: e.target.value }, { replace: true })}
+        <div className="grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]">
+          {/* Table of contents (desktop) */}
+          <aside className="hidden lg:block" aria-label={t('doc.contents')}>
+            <div className="sticky top-[calc(7.5rem+env(safe-area-inset-top))] max-h-[calc(100dvh-9rem)] overflow-y-auto pr-1">
+              <p className="kicker mb-3">{t('doc.contents')}</p>
+              <Outline doc={doc} paragraphs={paragraphs} currentId={currentId} onPick={goTo} />
+            </div>
+          </aside>
+
+          <div className="min-w-0">
+            {/* Toolbar */}
+            <div className="sticky top-[calc(3.5rem+3px+env(safe-area-inset-top))] z-20 -mx-4 mb-6 border-b border-line bg-bg/95 px-4 py-2 backdrop-blur lg:top-[calc(7rem+env(safe-area-inset-top))] lg:mx-0 lg:px-0">
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setTocOpen(true)}
+                  className="inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold lg:hidden"
                 >
-                  <option value="">§ …</option>
-                  {paragraphs.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      §{p.number}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <div className="ml-auto flex rounded-md border border-line bg-card p-0.5" role="group" aria-label={t('settings.fontSize')}>
-                {sizes.map((s) => (
-                  <button
-                    key={s.value}
-                    type="button"
-                    aria-pressed={fontSize === s.value}
-                    onClick={() => setFontSize(s.value)}
-                    className={cn('min-h-[36px] min-w-[40px] rounded px-2 text-sm', fontSize === s.value ? 'bg-accent text-accent-fg' : 'hover:bg-surface')}
+                  <ListTree className="h-4 w-4" aria-hidden />
+                  {t('doc.contents')}
+                </button>
+                <label className="flex items-center gap-2 text-sm">
+                  <span className="sr-only">{t('doc.jump')}</span>
+                  <select
+                    className="min-h-[40px] rounded border border-line bg-card px-2 text-sm"
+                    value=""
+                    aria-label={t('doc.jump')}
+                    onChange={(e) => e.target.value && goTo(e.target.value)}
                   >
-                    {s.label}
-                  </button>
-                ))}
+                    <option value="">§ …</option>
+                    {paragraphs.map((p) => (
+                      <option key={p.id} value={p.id}>
+                        §{p.number}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <div className="ml-auto flex rounded border border-line bg-card p-0.5" role="group" aria-label={t('settings.fontSize')}>
+                  {sizes.map((s) => (
+                    <button
+                      key={s.value}
+                      type="button"
+                      aria-pressed={fontSize === s.value}
+                      onClick={() => setFontSize(s.value)}
+                      className={cn('min-h-[36px] min-w-[40px] rounded-sm px-2 text-sm', fontSize === s.value ? 'bg-accent text-accent-fg' : 'hover:bg-surface')}
+                    >
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
               </div>
+              <ProgressBar value={shown} label={t('doc.progress')} className="mt-2" />
             </div>
-            <div
-              className="mt-2 h-1 w-full overflow-hidden rounded-full bg-line"
-              role="progressbar"
-              aria-label={t('doc.progress')}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              aria-valuenow={Math.round(shown * 100)}
-            >
-              <div className="h-full bg-accent transition-[width]" style={{ width: `${shown * 100}%` }} />
+
+            {CONTENT_MODE === 'excerpt' && (
+              <Commentary className="mb-4">
+                <p>{t('doc.excerptMode')}</p>
+                <details className="mt-2">
+                  <summary className="cursor-pointer font-medium">
+                    {t('doc.source')}
+                    {content.review === 'unverified' && ` · ${t('doc.unverified')}`}
+                  </summary>
+                  <p className="mt-1 text-muted">{pick(lang, content.sourceNl, content.sourceEn)}</p>
+                </details>
+              </Commentary>
+            )}
+            <p className="mb-8 text-xs text-muted">{t('doc.tapHint')}</p>
+
+            <div ref={listRef} className={cn('max-w-[46rem] space-y-6', `reader-${fontSize}`)}>
+              {paragraphs.map((p, i) => {
+                const sec = sectionOf(doc.outline, p.number);
+                const prevSec = i > 0 ? sectionOf(doc.outline, paragraphs[i - 1]!.number) : undefined;
+                return (
+                  <div key={p.id}>
+                    {sec && sec !== prevSec && (
+                      <div className={cn('mb-6 sm:pl-[4.25rem]', i > 0 && 'pt-6')}>
+                        <p className="font-display text-xs font-semibold uppercase tracking-caps text-accent">{sec.labelLa}</p>
+                        <h2 className="mt-1 font-serif text-xl font-semibold leading-snug">{pick(lang, sec.titleNl, sec.titleEn)}</h2>
+                        <div className="rule-gold mt-3" aria-hidden />
+                      </div>
+                    )}
+                    <ReaderParagraph
+                      p={p}
+                      doc={doc}
+                      isKey={doc.keyParagraphs.includes(p.id)}
+                      isBookmarked={bookmarks.includes(p.id)}
+                      onOpen={(para) => {
+                        setActive(para);
+                        setSheetOpen(true);
+                      }}
+                    />
+                  </div>
+                );
+              })}
             </div>
+            <ParagraphSheet paragraph={active} doc={doc} open={sheetOpen} onOpenChange={setSheetOpen} />
+            <Sheet open={tocOpen} onOpenChange={setTocOpen}>
+              <SheetContent title={t('doc.contents')} description={doc.titleLa} closeLabel={t('app.close')}>
+                <Outline doc={doc} paragraphs={paragraphs} currentId={currentId} onPick={goTo} />
+              </SheetContent>
+            </Sheet>
           </div>
-
-          {CONTENT_MODE === 'excerpt' && (
-            <Commentary className="mb-3">
-              <p>{t('doc.excerptMode')}</p>
-              <details className="mt-2">
-                <summary className="cursor-pointer font-medium">
-                  {t('doc.source')}
-                  {content.review === 'unverified' && ` · ${t('doc.unverified')}`}
-                </summary>
-                <p className="mt-1 text-muted">{pick(lang, content.sourceNl, content.sourceEn)}</p>
-              </details>
-            </Commentary>
-          )}
-          <p className="mb-4 text-xs text-muted">{t('doc.tapHint')}</p>
-
-          <div ref={listRef} className={cn('mx-auto max-w-prose space-y-5', `reader-${fontSize}`)}>
-            {paragraphs.map((p) => (
-              <ReaderParagraph
-                key={p.id}
-                p={p}
-                doc={doc}
-                isKey={doc.keyParagraphs.includes(p.id)}
-                isBookmarked={bookmarks.includes(p.id)}
-                onOpen={(para) => {
-                  setActive(para);
-                  setSheetOpen(true);
-                }}
-              />
-            ))}
-          </div>
-          <p className="mt-8 text-center text-sm">
-            <Link to="/documents" className="text-accent underline underline-offset-2">
-              {t('doc.all')}
-            </Link>
-          </p>
-          <ParagraphSheet paragraph={active} doc={doc} open={sheetOpen} onOpenChange={setSheetOpen} />
-        </>
+        </div>
       )}
+
+      <nav aria-label={t('nav.documents')} className="mt-14 grid gap-3 border-t border-line pt-6 sm:grid-cols-2">
+        {data.prev ? (
+          <Link to={`/documents/${data.prev.id}`} className="panel-link p-4">
+            <span className="kicker inline-flex items-center gap-1">
+              <ArrowLeft className="h-3 w-3" aria-hidden /> {t('doc.prev')}
+            </span>
+            <span className="display-title mt-1 block text-base" lang="la">
+              {data.prev.titleLa}
+            </span>
+          </Link>
+        ) : (
+          <span />
+        )}
+        {data.next && (
+          <Link to={`/documents/${data.next.id}`} className="panel-link p-4 text-right">
+            <span className="kicker inline-flex items-center gap-1">
+              {t('doc.next')} <ArrowRight className="h-3 w-3" aria-hidden />
+            </span>
+            <span className="display-title mt-1 block text-base" lang="la">
+              {data.next.titleLa}
+            </span>
+          </Link>
+        )}
+      </nav>
     </div>
   );
 }

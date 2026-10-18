@@ -15,9 +15,75 @@
     "paragraphCount": 130,
     "summaryNl": "Eerste afgekondigde document. Noemt de liturgie hoogtepunt en bron van het leven van de Kerk (§10) en vraagt om volledige, bewuste en actieve deelname (§14). Opent een algemene herziening van de riten, maar houdt het Latijn in de Latijnse riten aan (§36), staat beperkte uitbreiding van de volkstaal toe (§36, §54) en geeft het gregoriaans de eerste plaats (§116). Uitvoering werd aan de Apostolische Stoel overgelaten.",
     "summaryEn": "The first document promulgated. It calls the liturgy the summit and font of the Church's life (§10) and asks for full, conscious and active participation (§14). It opens a general revision of the rites, while retaining Latin in the Latin rites (§36), permitting a limited extension of the vernacular (§36, §54) and giving Gregorian chant pride of place (§116). Implementation was left to the Apostolic See.",
-    "keyParagraphs": ["SC-10", "SC-14", "SC-22", "SC-23", "SC-36", "SC-54", "SC-116"],
+    "keyParagraphs": [
+      "SC-10",
+      "SC-14",
+      "SC-22",
+      "SC-23",
+      "SC-36",
+      "SC-54",
+      "SC-116"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 4,
+        "titleNl": "Inleiding",
+        "titleEn": "Introduction"
+      },
+      {
+        "labelLa": "Caput I",
+        "from": 5,
+        "to": 46,
+        "titleNl": "Algemene beginselen voor de vernieuwing en bevordering van de liturgie",
+        "titleEn": "General principles for the restoration and promotion of the sacred liturgy"
+      },
+      {
+        "labelLa": "Caput II",
+        "from": 47,
+        "to": 58,
+        "titleNl": "Het heilig mysterie van de eucharistie",
+        "titleEn": "The most sacred mystery of the Eucharist"
+      },
+      {
+        "labelLa": "Caput III",
+        "from": 59,
+        "to": 82,
+        "titleNl": "De overige sacramenten en de sacramentaliën",
+        "titleEn": "The other sacraments and the sacramentals"
+      },
+      {
+        "labelLa": "Caput IV",
+        "from": 83,
+        "to": 101,
+        "titleNl": "Het getijdengebed",
+        "titleEn": "The Divine Office"
+      },
+      {
+        "labelLa": "Caput V",
+        "from": 102,
+        "to": 111,
+        "titleNl": "Het liturgisch jaar",
+        "titleEn": "The liturgical year"
+      },
+      {
+        "labelLa": "Caput VI",
+        "from": 112,
+        "to": 121,
+        "titleNl": "De kerkmuziek",
+        "titleEn": "Sacred music"
+      },
+      {
+        "labelLa": "Caput VII",
+        "from": 122,
+        "to": 130,
+        "titleNl": "De gewijde kunst en het kerkelijk vaatwerk",
+        "titleEn": "Sacred art and sacred furnishings"
+      }
+    ]
   },
   {
     "id": "inter-mirifica",
@@ -55,9 +121,75 @@
     "paragraphCount": 69,
     "summaryNl": "Leer over de Kerk als mysterie en als volk van God. Stelt dat de Kerk van Christus 'subsistit in' de Katholieke Kerk (§8), dat zij noodzakelijk is tot heil (§14), en behandelt de hiërarchie en het college van bisschoppen samen met en onder de paus (§18–25), de leken (§30–38), de universele roeping tot heiligheid (§40) en Maria (hfdst. 8). Met de Nota explicativa praevia als interpretatieve bijlage.",
     "summaryEn": "Teaching on the Church as mystery and as people of God. It states that the Church of Christ 'subsists in' the Catholic Church (§8) and is necessary for salvation (§14), and treats the hierarchy and the college of bishops with and under the pope (§18–25), the laity (§30–38), the universal call to holiness (§40) and Mary (ch. 8). The Nota explicativa praevia is attached as an interpretive note.",
-    "keyParagraphs": ["LG-1", "LG-8", "LG-14", "LG-16", "LG-22", "LG-25", "LG-40"],
+    "keyParagraphs": [
+      "LG-1",
+      "LG-8",
+      "LG-14",
+      "LG-16",
+      "LG-22",
+      "LG-25",
+      "LG-40"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_lt.html",
+    "outline": [
+      {
+        "labelLa": "Caput I",
+        "from": 1,
+        "to": 8,
+        "titleNl": "Het mysterie van de Kerk",
+        "titleEn": "The mystery of the Church"
+      },
+      {
+        "labelLa": "Caput II",
+        "from": 9,
+        "to": 17,
+        "titleNl": "Het volk van God",
+        "titleEn": "The People of God"
+      },
+      {
+        "labelLa": "Caput III",
+        "from": 18,
+        "to": 29,
+        "titleNl": "De hiërarchische structuur van de Kerk, in het bijzonder het episcopaat",
+        "titleEn": "The hierarchical structure of the Church, in particular the episcopate"
+      },
+      {
+        "labelLa": "Caput IV",
+        "from": 30,
+        "to": 38,
+        "titleNl": "De leken",
+        "titleEn": "The laity"
+      },
+      {
+        "labelLa": "Caput V",
+        "from": 39,
+        "to": 42,
+        "titleNl": "De universele roeping tot heiligheid in de Kerk",
+        "titleEn": "The universal call to holiness in the Church"
+      },
+      {
+        "labelLa": "Caput VI",
+        "from": 43,
+        "to": 47,
+        "titleNl": "De religieuzen",
+        "titleEn": "Religious"
+      },
+      {
+        "labelLa": "Caput VII",
+        "from": 48,
+        "to": 51,
+        "titleNl": "Het eschatologisch karakter van de pelgrimerende Kerk",
+        "titleEn": "The eschatological nature of the pilgrim Church"
+      },
+      {
+        "labelLa": "Caput VIII",
+        "from": 52,
+        "to": 69,
+        "titleNl": "De heilige Maagd Maria, Moeder van God, in het mysterie van Christus en de Kerk",
+        "titleEn": "The Blessed Virgin Mary, Mother of God, in the mystery of Christ and the Church"
+      }
+    ]
   },
   {
     "id": "orientalium-ecclesiarum",
@@ -95,7 +227,10 @@
     "paragraphCount": 24,
     "summaryNl": "Katholieke beginselen van de oecumene. Erkent elementen van heiliging en waarheid buiten de zichtbare structuur van de Kerk, stelt dat de volheid van de heilsmiddelen alleen via de Katholieke Kerk bereikbaar is (§3), spreekt van een 'hiërarchie van waarheden' en waarschuwt tegen vals irenisme (§11).",
     "summaryEn": "Catholic principles of ecumenism. It recognises elements of sanctification and truth outside the visible structure of the Church, states that the fullness of the means of salvation is attained only through the Catholic Church (§3), speaks of a 'hierarchy of truths' and warns against false irenicism (§11).",
-    "keyParagraphs": ["UR-3", "UR-11"],
+    "keyParagraphs": [
+      "UR-3",
+      "UR-11"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio_lt.html"
   },
@@ -195,7 +330,10 @@
     "paragraphCount": 5,
     "summaryNl": "Kortste document. Stelt dat de Kerk niets verwerpt van wat waar en heilig is in andere godsdiensten, en tegelijk Christus moet verkondigen als 'de weg, de waarheid en het leven' (§2). Spreekt over hindoeïsme, boeddhisme, islam (§3) en jodendom (§4), wijst collectieve schuld van de Joden aan de dood van Christus af en veroordeelt discriminatie (§5).",
     "summaryEn": "The shortest document. It states that the Church rejects nothing that is true and holy in other religions while being bound to proclaim Christ as 'the way, the truth and the life' (§2). It addresses Hinduism, Buddhism, Islam (§3) and Judaism (§4), rejects collective Jewish guilt for the death of Christ and condemns discrimination (§5).",
-    "keyParagraphs": ["NA-2", "NA-4"],
+    "keyParagraphs": [
+      "NA-2",
+      "NA-4"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_nostra-aetate_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_nostra-aetate_lt.html"
   },
@@ -215,9 +353,64 @@
     "paragraphCount": 26,
     "summaryNl": "Over openbaring, Traditie en Schrift. Volgt uitdrukkelijk Trente en Vaticanum I (§1). Traditie en Schrift vormen één heilige schat van het woord van God; de Kerk put haar zekerheid niet uit de Schrift alleen (§9). Het leergezag staat niet boven het woord van God maar dient het (§10). Over inspiratie en waarheid van de Schrift (§11) en het historisch karakter van de evangeliën (§19).",
     "summaryEn": "On revelation, Tradition and Scripture. It expressly follows Trent and Vatican I (§1). Tradition and Scripture form one sacred deposit of the word of God; the Church does not draw her certainty from Scripture alone (§9). The magisterium is not above the word of God but serves it (§10). On inspiration and the truth of Scripture (§11) and the historical character of the Gospels (§19).",
-    "keyParagraphs": ["DV-9", "DV-10", "DV-11"],
+    "keyParagraphs": [
+      "DV-9",
+      "DV-10",
+      "DV-11"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 1,
+        "titleNl": "Inleiding",
+        "titleEn": "Preface"
+      },
+      {
+        "labelLa": "Caput I",
+        "from": 2,
+        "to": 6,
+        "titleNl": "De openbaring zelf",
+        "titleEn": "Revelation itself"
+      },
+      {
+        "labelLa": "Caput II",
+        "from": 7,
+        "to": 10,
+        "titleNl": "De overdracht van de goddelijke openbaring",
+        "titleEn": "Handing on divine revelation"
+      },
+      {
+        "labelLa": "Caput III",
+        "from": 11,
+        "to": 13,
+        "titleNl": "De goddelijke inspiratie en de uitleg van de heilige Schrift",
+        "titleEn": "Sacred Scripture, its inspiration and divine interpretation"
+      },
+      {
+        "labelLa": "Caput IV",
+        "from": 14,
+        "to": 16,
+        "titleNl": "Het Oude Testament",
+        "titleEn": "The Old Testament"
+      },
+      {
+        "labelLa": "Caput V",
+        "from": 17,
+        "to": 20,
+        "titleNl": "Het Nieuwe Testament",
+        "titleEn": "The New Testament"
+      },
+      {
+        "labelLa": "Caput VI",
+        "from": 21,
+        "to": 26,
+        "titleNl": "De heilige Schrift in het leven van de Kerk",
+        "titleEn": "Sacred Scripture in the life of the Church"
+      }
+    ]
   },
   {
     "id": "apostolicam-actuositatem",
@@ -235,7 +428,10 @@
     "paragraphCount": 33,
     "summaryNl": "Over de apostolische opdracht van leken. De christelijke roeping is uit haar aard ook roeping tot apostolaat (§2); leken ontvangen recht en plicht daartoe uit doopsel en vormsel, van de Heer zelf (§3). Behandelt gezin, parochie, sociale omgeving en vormen van georganiseerd apostolaat.",
     "summaryEn": "On the apostolic mission of the laity. The Christian vocation is by its nature also a vocation to the apostolate (§2); the laity receive the right and duty to it through baptism and confirmation, from the Lord himself (§3). It treats the family, the parish, the social environment and forms of organised apostolate.",
-    "keyParagraphs": ["AA-2", "AA-3"],
+    "keyParagraphs": [
+      "AA-2",
+      "AA-3"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651118_apostolicam-actuositatem_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651118_apostolicam-actuositatem_lt.html"
   },
@@ -255,9 +451,37 @@
     "paragraphCount": 15,
     "summaryNl": "Verklaart dat de menselijke persoon recht heeft op godsdienstvrijheid, opgevat als vrijwaring van dwang in de burgerlijke samenleving, binnen de juiste grenzen (§2). Stelt uitdrukkelijk dat dit de traditionele leer over de morele plicht van mensen en samenlevingen tegenover de ware godsdienst en de ene Kerk van Christus onaangetast laat (§1). De verhouding tot de 19e-eeuwse leer blijft een twistpunt.",
     "summaryEn": "Declares that the human person has a right to religious freedom, understood as immunity from coercion in civil society, within due limits (§2). It expressly states that this leaves untouched traditional doctrine on the moral duty of individuals and societies toward the true religion and the one Church of Christ (§1). Its relation to 19th-century teaching remains disputed.",
-    "keyParagraphs": ["DH-1", "DH-2", "DH-7", "DH-10"],
+    "keyParagraphs": [
+      "DH-1",
+      "DH-2",
+      "DH-7",
+      "DH-10"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 1,
+        "titleNl": "Inleiding",
+        "titleEn": "Introduction"
+      },
+      {
+        "labelLa": "Pars I",
+        "from": 2,
+        "to": 8,
+        "titleNl": "Algemene grondslag van de godsdienstvrijheid",
+        "titleEn": "General principle of religious freedom"
+      },
+      {
+        "labelLa": "Pars II",
+        "from": 9,
+        "to": 15,
+        "titleNl": "De godsdienstvrijheid in het licht van de openbaring",
+        "titleEn": "Religious freedom in the light of revelation"
+      }
+    ]
   },
   {
     "id": "ad-gentes",
@@ -275,7 +499,9 @@
     "paragraphCount": 42,
     "summaryNl": "De Kerk is uit haar aard missionair. God kan wie buiten eigen schuld het evangelie niet kent langs eigen wegen tot het geloof brengen, maar dat neemt de noodzaak en heilige plicht tot verkondiging niet weg (§7). Over missiewerk, jonge Kerken, missionarissen en samenwerking.",
     "summaryEn": "The Church is missionary by her very nature. God can lead those inculpably ignorant of the Gospel to faith in ways known to himself, but this does not remove the necessity and sacred duty to preach the Gospel (§7). On missionary work, young Churches, missionaries and cooperation.",
-    "keyParagraphs": ["AG-7"],
+    "keyParagraphs": [
+      "AG-7"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_ad-gentes_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_ad-gentes_lt.html"
   },
@@ -295,7 +521,9 @@
     "paragraphCount": 22,
     "summaryNl": "Over het priesterschap: verkondiging, sacramenten en herderlijke leiding, de verhouding tot bisschop, medepriesters en leken, en het geestelijk leven van de priester. Bevestigt de wet van het celibaat voor de Latijnse Kerk, en erkent tegelijk de gehuwde priesters van de oosterse Kerken (§16).",
     "summaryEn": "On the priesthood: preaching, sacraments and pastoral governance, relations with the bishop, fellow priests and laity, and the priest's spiritual life. It confirms the law of celibacy for the Latin Church while acknowledging the married priests of the Eastern Churches (§16).",
-    "keyParagraphs": ["PO-16"],
+    "keyParagraphs": [
+      "PO-16"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis_en.html",
     "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis_lt.html"
   },
@@ -315,8 +543,99 @@
     "paragraphCount": 93,
     "summaryNl": "Langste document. Over de menselijke persoon, gemeenschap en activiteit in het licht van Christus: 'alleen in het mysterie van het mensgeworden Woord wordt het mysterie van de mens werkelijk duidelijk' (§22). Deel twee behandelt huwelijk en gezin (§47–52), cultuur, economie, politiek, oorlog en vrede. Spreekt over het geweten (§16), atheïsme (§19–21) en de tekenen des tijds (§4).",
     "summaryEn": "The longest document. On the human person, community and activity in the light of Christ: 'only in the mystery of the incarnate Word does the mystery of man take on light' (§22). Part two treats marriage and family (§47–52), culture, economics, politics, war and peace. It discusses conscience (§16), atheism (§19–21) and the signs of the times (§4).",
-    "keyParagraphs": ["GS-16", "GS-22", "GS-24", "GS-51"],
+    "keyParagraphs": [
+      "GS-16",
+      "GS-22",
+      "GS-24",
+      "GS-51"
+    ],
     "officialUrl": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_en.html",
-    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_lt.html"
+    "officialUrlLa": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_lt.html",
+    "outline": [
+      {
+        "labelLa": "Prooemium",
+        "from": 1,
+        "to": 3,
+        "titleNl": "Inleiding",
+        "titleEn": "Preface"
+      },
+      {
+        "labelLa": "Expositio introductiva",
+        "from": 4,
+        "to": 10,
+        "titleNl": "De situatie van de mens in de wereld van vandaag",
+        "titleEn": "The situation of men in the modern world"
+      },
+      {
+        "labelLa": "Pars I, Caput I",
+        "from": 11,
+        "to": 22,
+        "titleNl": "De waardigheid van de menselijke persoon",
+        "titleEn": "The dignity of the human person"
+      },
+      {
+        "labelLa": "Pars I, Caput II",
+        "from": 23,
+        "to": 32,
+        "titleNl": "De menselijke gemeenschap",
+        "titleEn": "The community of mankind"
+      },
+      {
+        "labelLa": "Pars I, Caput III",
+        "from": 33,
+        "to": 39,
+        "titleNl": "Het menselijk handelen in de wereld",
+        "titleEn": "Man's activity throughout the world"
+      },
+      {
+        "labelLa": "Pars I, Caput IV",
+        "from": 40,
+        "to": 45,
+        "titleNl": "De taak van de Kerk in de wereld van deze tijd",
+        "titleEn": "The role of the Church in the modern world"
+      },
+      {
+        "labelLa": "Pars II, Caput I",
+        "from": 46,
+        "to": 52,
+        "titleNl": "De waardigheid van huwelijk en gezin",
+        "titleEn": "The dignity of marriage and the family"
+      },
+      {
+        "labelLa": "Pars II, Caput II",
+        "from": 53,
+        "to": 62,
+        "titleNl": "De bevordering van de cultuur",
+        "titleEn": "The proper development of culture"
+      },
+      {
+        "labelLa": "Pars II, Caput III",
+        "from": 63,
+        "to": 72,
+        "titleNl": "Het sociaal-economisch leven",
+        "titleEn": "Economic and social life"
+      },
+      {
+        "labelLa": "Pars II, Caput IV",
+        "from": 73,
+        "to": 76,
+        "titleNl": "Het leven van de politieke gemeenschap",
+        "titleEn": "The life of the political community"
+      },
+      {
+        "labelLa": "Pars II, Caput V",
+        "from": 77,
+        "to": 90,
+        "titleNl": "De bevordering van de vrede en de opbouw van de volkerengemeenschap",
+        "titleEn": "The fostering of peace and the community of nations"
+      },
+      {
+        "labelLa": "Conclusio",
+        "from": 91,
+        "to": 93,
+        "titleNl": "Slot",
+        "titleEn": "Conclusion"
+      }
+    ]
   }
 ]

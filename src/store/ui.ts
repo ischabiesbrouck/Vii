@@ -19,12 +19,15 @@ interface UiState {
   progress: Record<string, Progress>;
   bookmarks: string[];
   installDismissed: boolean;
+  /** Subject id → paragraph ids marked as studied. */
+  studied: Record<string, string[]>;
   setLang: (lang: Lang) => void;
   setTheme: (theme: Theme) => void;
   setFontSize: (size: FontSize) => void;
   recordProgress: (docId: string, fraction: number, lastParagraphId: string | null) => void;
   toggleBookmark: (paragraphId: string) => void;
   dismissInstall: () => void;
+  toggleStudied: (subjectId: string, paragraphId: string) => void;
 }
 
 /**
@@ -40,6 +43,7 @@ export const useUi = create<UiState>()(
       progress: {},
       bookmarks: [],
       installDismissed: false,
+      studied: {},
       setLang: (lang) => set({ lang }),
       setTheme: (theme) => set({ theme }),
       setFontSize: (fontSize) => set({ fontSize }),
@@ -62,6 +66,12 @@ export const useUi = create<UiState>()(
           bookmarks: s.bookmarks.includes(id) ? s.bookmarks.filter((b) => b !== id) : [...s.bookmarks, id],
         })),
       dismissInstall: () => set({ installDismissed: true }),
+      toggleStudied: (subjectId, paragraphId) =>
+        set((s) => {
+          const cur = s.studied[subjectId] ?? [];
+          const next = cur.includes(paragraphId) ? cur.filter((x) => x !== paragraphId) : [...cur, paragraphId];
+          return { studied: { ...s.studied, [subjectId]: next } };
+        }),
     }),
     {
       name: 'concilium-ui',

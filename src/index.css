@@ -3,20 +3,27 @@
 @tailwind utilities;
 
 /*
- * Design tokens. Palette from the brief; two accessibility adjustments:
- * - gold-text (#6E5528) is used for gold-tinted metadata TEXT, because #B08D4F on
- *   parchment is ~2.9:1 and fails WCAG AA. #B08D4F is kept for borders and marks.
- * - In dark mode the red accent is lightened so text reaches ≥4.5:1 on #121212.
+ * Concilium design system — "editio".
+ * Modelled on printed conciliar editions and the Holy See's archive pages:
+ * Roman inscriptional capitals for titles, rubric red for paragraph numbers
+ * (the convention of liturgical books), gold hairlines, white paper, ink bands.
+ *
+ * Accessibility adjustments to the brief's palette:
+ * - gold-text (#6E5528) for gold-tinted TEXT; #B08D4F only for rules, marks, badges.
+ * - In dark mode the rubric red is lightened so it reaches ≥ 4.5:1 on #121212.
  */
 @layer base {
   :root {
     --bg: 250 248 243; /* parchment #FAF8F3 */
+    --paper: 255 255 255;
     --fg: 26 26 26; /* ink #1A1A1A */
-    --muted: 82 78 72;
-    --surface: 243 238 226; /* conciliar text background */
+    --muted: 88 82 74;
+    --surface: 246 241 230; /* vellum: conciliar text ground */
     --card: 255 255 255;
-    --line: 222 214 199;
-    --accent: 122 31 31; /* #7A1F1F */
+    --line: 224 215 198;
+    --ink: 26 24 22; /* masthead / footer band */
+    --ink-fg: 236 230 218;
+    --accent: 122 31 31; /* rubric #7A1F1F */
     --accent-fg: 250 248 243;
     --gold: 176 141 79; /* #B08D4F */
     --gold-text: 110 85 40;
@@ -28,15 +35,18 @@
   }
   .dark {
     --bg: 18 18 18; /* #121212 */
+    --paper: 24 23 21;
     --fg: 232 228 220; /* #E8E4DC */
-    --muted: 176 170 160;
+    --muted: 172 165 154;
     --surface: 30 28 25;
-    --card: 26 26 26;
-    --line: 58 54 48;
-    --accent: 231 140 140;
+    --card: 26 25 23;
+    --line: 60 55 48;
+    --ink: 10 10 10;
+    --ink-fg: 232 228 220;
+    --accent: 232 142 142;
     --accent-fg: 18 18 18;
-    --gold: 176 141 79;
-    --gold-text: 212 180 122;
+    --gold: 196 164 106;
+    --gold-text: 214 184 128;
     --slate: 148 163 184;
     --ok: 134 239 172;
     --warn: 253 186 116;
@@ -47,45 +57,96 @@
   html {
     -webkit-text-size-adjust: 100%;
     background: rgb(var(--bg));
+    scroll-padding-top: 8rem;
   }
   body {
-    @apply bg-bg text-fg font-sans antialiased;
+    @apply bg-bg font-sans text-fg antialiased;
     min-height: 100dvh;
     overflow-x: hidden;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
   }
   :focus-visible {
     @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg;
   }
-  [lang='la'] {
-    font-style: italic;
+  ::selection {
+    background: rgb(var(--gold) / 0.35);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
 @layer components {
-  /* Conciliar text: serif, bordered, light background. */
+  /* Conciliar text: serif, bordered, vellum ground. */
   .conciliar {
-    @apply font-serif bg-surface border border-line border-l-4 border-l-accent rounded-md px-4 py-3;
+    @apply rounded-md border border-line bg-surface px-4 py-3 font-serif;
+    border-left: 3px solid rgb(var(--accent));
     line-height: 1.7;
+    font-variant-numeric: oldstyle-nums;
   }
-  /* Editorial commentary: sans-serif, labelled. */
+  /* Editorial commentary: sans-serif, dashed rule, labelled. */
   .commentary {
-    @apply font-sans text-sm border border-dashed border-line rounded-md px-4 py-3 bg-card;
+    @apply rounded-md border border-dashed border-line bg-card px-4 py-3 font-sans text-sm;
     line-height: 1.6;
   }
+  /* Overline in Roman capitals. */
+  .kicker {
+    @apply font-display text-[0.72rem] font-semibold uppercase tracking-caps text-gold-text;
+  }
   .label-eyebrow {
-    @apply text-[0.7rem] uppercase tracking-wider font-semibold text-gold-text;
+    @apply text-[0.7rem] font-semibold uppercase tracking-wider text-gold-text;
+  }
+  .display-title {
+    @apply font-display font-semibold uppercase tracking-[0.06em];
+  }
+  /* Gold hairline with a central lozenge. */
+  .rule-ornament {
+    @apply flex items-center gap-3 text-gold;
+  }
+  .rule-ornament::before,
+  .rule-ornament::after {
+    content: '';
+    @apply h-px flex-1 bg-gold/60;
+  }
+  .rule-gold {
+    @apply h-px w-full bg-gold/60;
+  }
+  .link {
+    @apply text-accent underline decoration-accent/40 underline-offset-[3px] hover:decoration-accent;
+  }
+  .panel {
+    @apply rounded-md border border-line bg-card;
+  }
+  .panel-link {
+    @apply rounded-md border border-line bg-card transition-colors hover:border-gold;
+  }
+  .la {
+    font-style: italic;
   }
   .reader-sm { font-size: 1rem; }
   .reader-md { font-size: 1.125rem; }
   .reader-lg { font-size: 1.3125rem; }
 }
 
-.pb-safe {
-  padding-bottom: env(safe-area-inset-bottom);
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.pt-safe { padding-top: env(safe-area-inset-top); }
+.no-callout { -webkit-touch-callout: none; }
+.tabular { font-variant-numeric: tabular-nums; }
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
 }
-.pt-safe {
-  padding-top: env(safe-area-inset-top);
-}
-.no-callout {
-  -webkit-touch-callout: none;
+.skeleton {
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgb(var(--line) / 0.5) 25%, rgb(var(--line)) 50%, rgb(var(--line) / 0.5) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
 }

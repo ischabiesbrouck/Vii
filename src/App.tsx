@@ -3,6 +3,8 @@ import { IS_ARTIFACT_PREVIEW } from '@/config';
 import { Layout } from '@/components/Layout';
 import { Home } from '@/pages/Home';
 import { Documents } from '@/pages/Documents';
+import { Subjects } from '@/pages/Subjects';
+import { SubjectDetail } from '@/pages/SubjectDetail';
 import { DocumentReader } from '@/pages/DocumentReader';
 import { Claims } from '@/pages/Claims';
 import { ClaimDetail } from '@/pages/ClaimDetail';
@@ -33,6 +35,8 @@ export function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="subjects" element={<Subjects />} />
+          <Route path="subjects/:id" element={<SubjectDetail />} />
           <Route path="documents" element={<Documents />} />
           <Route path="documents/:id" element={<DocumentReader />} />
           <Route path="claims" element={<Claims />} />

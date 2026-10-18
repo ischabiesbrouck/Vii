@@ -49,7 +49,7 @@ export function InstallPrompt() {
   };
 
   return (
-    <div role="region" aria-label={t('install.title')} className="fixed inset-x-0 bottom-[4.75rem] z-40 mx-auto w-full max-w-2xl px-3 pb-safe">
+    <div role="region" aria-label={t('install.title')} className="fixed inset-x-0 bottom-[4.75rem] lg:bottom-6 z-40 mx-auto w-full max-w-2xl px-3 pb-safe">
       <div className="flex items-start gap-3 rounded-xl border border-line bg-card p-3 shadow-lg">
         <Download className="mt-1 h-5 w-5 shrink-0 text-accent" aria-hidden />
         <div className="min-w-0 flex-1">

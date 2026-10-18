@@ -6,6 +6,7 @@ import type {
   DocumentContent,
   ExternalSource,
   GlossaryTerm,
+  Subject,
   HermeneuticsModule,
   Lang,
   Paragraph,
@@ -39,6 +40,7 @@ export const getTimeline = () => load<TimelineEvent[]>('timeline.json');
 export const getGlossary = () => load<GlossaryTerm[]>('glossary.json');
 export const getHermeneutics = () => load<HermeneuticsModule>('hermeneutics.json');
 export const getSources = () => load<ExternalSource[]>('sources.json');
+export const getSubjects = () => load<Subject[]>('subjects.json');
 
 export async function getDocument(id: string): Promise<CouncilDocument | undefined> {
   return (await getDocuments()).find((d) => d.id === id);

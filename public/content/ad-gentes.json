@@ -5,6 +5,23 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "AG-2",
+      "docId": "ad-gentes",
+      "number": 2,
+      "textEn": "The pilgrim Church is missionary by her very nature, since it is from the mission of the Son and the mission of the Holy Spirit that she draws her origin, in accordance with the decree of God the Father.",
+      "textNl": "De pelgrimerende Kerk is uit haar aard missionair, omdat zij haar oorsprong vindt in de zending van de Zoon en de zending van de heilige Geest, volgens het raadsbesluit van God de Vader.",
+      "textLa": "Ecclesia peregrinans natura sua missionaria est …",
+      "tags": [
+        "mission",
+        "trinity",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "AG-7",
+        "LG-1"
+      ]
+    },
+    {
       "id": "AG-7",
       "docId": "ad-gentes",
       "number": 7,

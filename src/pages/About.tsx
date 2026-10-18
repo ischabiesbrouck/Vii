@@ -25,8 +25,9 @@ export function About() {
   const nl = lang === 'nl';
 
   return (
-    <div className="space-y-8">
+    <div className="mx-auto max-w-3xl space-y-10">
       <PageHeader title={t('about.title')} intro={t('app.tagline')} />
+      <p className="text-sm font-medium">{t('footer.unofficial')}</p>
 
       <Commentary label={nl ? 'Disclaimer' : 'Disclaimer'}>
         <p>
@@ -41,7 +42,7 @@ export function About() {
       </Commentary>
 
       <section>
-        <h2 className="mb-2 font-serif text-xl font-semibold">{nl ? 'Methode' : 'Method'}</h2>
+        <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Methode' : 'Method'}</h2>
         <ol className="list-decimal space-y-1.5 pl-5 text-sm">
           {(nl
             ? [
@@ -65,7 +66,7 @@ export function About() {
       </section>
 
       <section>
-        <h2 className="mb-2 font-serif text-xl font-semibold">{nl ? 'Inhoudsstatus' : 'Content status'}</h2>
+        <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Inhoudsstatus' : 'Content status'}</h2>
         <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
           <dt className="text-gold-text">CONTENT_MODE</dt>
           <dd>
@@ -88,7 +89,7 @@ export function About() {
       </section>
 
       <section>
-        <h2 className="mb-2 font-serif text-xl font-semibold">{nl ? 'Licenties' : 'Licensing'}</h2>
+        <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Licenties' : 'Licensing'}</h2>
         <div className="space-y-2 text-sm">
           <p>
             {nl
@@ -113,7 +114,7 @@ export function About() {
       </section>
 
       <section>
-        <h2 className="mb-2 font-serif text-xl font-semibold">{nl ? 'Privacy' : 'Privacy'}</h2>
+        <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Privacy' : 'Privacy'}</h2>
         <p className="text-sm">
           {nl
             ? 'Geen account, geen analytics, geen externe verzoeken tijdens gebruik. Leesvoortgang, bladwijzers en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB.'
@@ -122,7 +123,7 @@ export function About() {
       </section>
 
       <section>
-        <h2 className="mb-2 font-serif text-xl font-semibold">{nl ? 'Belangrijkste bronnen' : 'Principal sources'}</h2>
+        <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Belangrijkste bronnen' : 'Principal sources'}</h2>
         <ul className="space-y-1.5 text-sm">
           {bibliography.map((b) => (
             <li key={b} className="pl-6 -indent-6">
@@ -133,7 +134,7 @@ export function About() {
       </section>
 
       <section>
-        <h2 className="mb-3 font-serif text-xl font-semibold">{nl ? 'Instellingen' : 'Settings'}</h2>
+        <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Instellingen' : 'Settings'}</h2>
         <SettingsPanel />
       </section>
     </div>

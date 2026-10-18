@@ -1,9 +1,9 @@
 import MiniSearch, { type Options, type SearchResult } from 'minisearch';
 import { db } from './db';
-import { getAllParagraphs, getClaims, getGlossary, getIndex } from './content';
+import { getAllParagraphs, getClaims, getGlossary, getIndex, getSubjects } from './content';
 import { shortCite } from './citation';
 
-export type SearchKind = 'paragraph' | 'claim' | 'term';
+export type SearchKind = 'paragraph' | 'claim' | 'term' | 'subject';
 
 export interface SearchDoc {
   id: string;
@@ -35,10 +35,26 @@ const OPTIONS: Options<SearchDoc> = {
 };
 
 const CACHE_KEY = 'search-index';
+/** Bump when the shape of SearchDoc changes, to invalidate cached indexes. */
+const SCHEMA = 2;
 
 async function buildDocs(): Promise<SearchDoc[]> {
-  const [paras, claims, terms] = await Promise.all([getAllParagraphs(), getClaims(), getGlossary()]);
+  const [paras, claims, terms, subjects] = await Promise.all([getAllParagraphs(), getClaims(), getGlossary(), getSubjects()]);
   const docs: SearchDoc[] = [];
+  for (const s of subjects) {
+    docs.push({
+      id: `s:${s.id}`,
+      kind: 'subject',
+      cite: '',
+      title: s.titleNl,
+      titleEn: s.titleEn,
+      text: [s.taglineNl, s.taglineEn, s.introNl, s.introEn].join(' '),
+      snippetNl: s.taglineNl,
+      snippetEn: s.taglineEn,
+      url: `/subjects/${s.id}`,
+      tags: s.steps.map((x) => x.paragraphId).join(' '),
+    });
+  }
   for (const { paragraph: p, doc } of paras) {
     docs.push({
       id: `p:${p.id}`,
@@ -92,7 +108,7 @@ let enginePromise: Promise<MiniSearch<SearchDoc>> | null = null;
  */
 export function getSearchEngine(): Promise<MiniSearch<SearchDoc>> {
   enginePromise ??= (async () => {
-    const { version } = await getIndex();
+    const version = `${(await getIndex()).version}:${SCHEMA}`;
     try {
       const row = await db.kv.get(CACHE_KEY);
       if (row && row.version === version) return MiniSearch.loadJSON<SearchDoc>(row.value, OPTIONS);

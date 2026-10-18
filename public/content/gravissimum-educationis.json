@@ -1,0 +1,23 @@
+{
+  "docId": "gravissimum-educationis",
+  "sourceNl": "Engels: korte excerpten uit de vertaling op vatican.va (© Libreria Editrice Vaticana). Nederlands: redactionele werkvertaling van die excerpten — niet de officiële Nederlandse vertaling. Latijn: excerpten uit de editio typica. Status: nog niet regel-voor-regel geverifieerd tegen de bron.",
+  "sourceEn": "English: short excerpts from the translation on vatican.va (© Libreria Editrice Vaticana). Dutch: editorial working translation of those excerpts — not the official Dutch translation. Latin: excerpts from the editio typica. Status: not yet verified line by line against the source.",
+  "review": "unverified",
+  "paragraphs": [
+    {
+      "id": "GE-3",
+      "docId": "gravissimum-educationis",
+      "number": 3,
+      "textEn": "Since parents have given children their life, they are bound by the most serious obligation to educate their offspring and therefore must be recognized as the primary and principal educators.",
+      "textNl": "Omdat de ouders hun kinderen het leven hebben geschonken, hebben zij de zeer ernstige plicht hun kroost op te voeden; daarom moeten zij erkend worden als de eerste en voornaamste opvoeders.",
+      "tags": [
+        "education",
+        "family",
+        "parents"
+      ],
+      "crossRefs": [
+        "GS-50"
+      ]
+    }
+  ]
+}

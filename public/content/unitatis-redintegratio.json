@@ -5,6 +5,22 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "UR-1",
+      "docId": "unitatis-redintegratio",
+      "number": 1,
+      "textEn": "The restoration of unity among all Christians is one of the principal concerns of the Second Vatican Council.",
+      "textNl": "Het herstel van de eenheid onder alle christenen is een van de voornaamste doelen van het Tweede Vaticaans Concilie.",
+      "textLa": "Unitatis redintegratio inter universos christianos promovenda unum est ex praecipuis propositis Sacrosanctae Oecumenicae Synodi Vaticanae Secundae.",
+      "tags": [
+        "ecumenism",
+        "council-aims"
+      ],
+      "crossRefs": [
+        "SC-1",
+        "UR-3"
+      ]
+    },
+    {
       "id": "UR-3",
       "docId": "unitatis-redintegratio",
       "number": 3,

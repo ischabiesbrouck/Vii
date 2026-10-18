@@ -1,13 +1,14 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft } from 'lucide-react';
 import { HeardFromBadge, VerdictBadge } from '@/components/Badges';
-import { Apa, Commentary, ConciliarText, CiteLink, Loading } from '@/components/TextBlocks';
+import { Apa, Commentary, ConciliarText, CiteLink, Crumbs, Loading, SectionTitle } from '@/components/TextBlocks';
 import { getClaims, getParagraph } from '@/lib/content';
 import { shortCite } from '@/lib/citation';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { pick } from '@/lib/utils';
+
+const shortClaim = (s: string) => (s.length > 48 ? `${s.slice(0, 46).trimEnd()}…` : s);
 
 export function ClaimDetail() {
   const { id = '' } = useParams();
@@ -26,15 +27,12 @@ export function ClaimDetail() {
   const { claim, evidence } = data;
 
   return (
-    <article>
-      <Link to="/claims" className="mb-4 inline-flex min-h-[44px] items-center gap-1 text-sm text-accent">
-        <ArrowLeft className="h-4 w-4" aria-hidden />
-        {t('claims.title')}
-      </Link>
+    <article className="mx-auto max-w-4xl">
+      <Crumbs items={[{ to: '/', label: t('crumbs.home') }, { to: '/claims', label: t('claims.title') }, { label: shortClaim(pick(lang, claim.claim, claim.claimEn)) }]} />
 
       <header className="mb-6">
-        <p className="label-eyebrow mb-1">{t('claims.claim')}</p>
-        <h1 className="font-serif text-2xl font-semibold leading-snug">“{pick(lang, claim.claim, claim.claimEn)}”</h1>
+        <p className="kicker mb-2">{t('claims.claim')}</p>
+        <h1 className="font-serif text-[1.65rem] font-semibold leading-snug sm:text-3xl">“{pick(lang, claim.claim, claim.claimEn)}”</h1>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <VerdictBadge verdict={claim.verdict} />
           <span className="text-xs text-muted">{t('claims.heard')}</span>
@@ -45,9 +43,7 @@ export function ClaimDetail() {
       <Commentary className="mb-6">{pick(lang, claim.explanationNl, claim.explanationEn)}</Commentary>
 
       <section aria-labelledby="ev-h" className="mb-8">
-        <h2 id="ev-h" className="mb-3 font-serif text-xl font-semibold">
-          {t('claims.evidence')}
-        </h2>
+        <SectionTitle id="ev-h">{t('claims.evidence')}</SectionTitle>
         <ol className="space-y-5">
           {evidence.map((e) => (
             <li key={e.paragraphId}>
@@ -66,11 +62,9 @@ export function ClaimDetail() {
 
       {claim.positions && claim.positions.length > 0 && (
         <section aria-labelledby="pos-h" className="mb-8">
-          <h2 id="pos-h" className="font-serif text-xl font-semibold">
-            {t('claims.positions')}
-          </h2>
-          <p className="mb-3 text-sm text-muted">{t('claims.positionsHint')}</p>
-          <div className="grid gap-3 md:grid-cols-2">
+          <SectionTitle id="pos-h">{t('claims.positions')}</SectionTitle>
+          <p className="-mt-1 mb-4 text-sm text-muted">{t('claims.positionsHint')}</p>
+          <div className={claim.positions.length >= 3 ? 'grid gap-3 lg:grid-cols-3' : 'grid gap-3 md:grid-cols-2'}>
             {claim.positions.map((p) => (
               <Commentary key={p.labelNl} label={pick(lang, p.labelNl, p.labelEn)}>
                 <p>{pick(lang, p.summaryNl, p.summaryEn)}</p>
@@ -88,12 +82,10 @@ export function ClaimDetail() {
       )}
 
       <section aria-labelledby="fr-h">
-        <h2 id="fr-h" className="mb-2 font-serif text-xl font-semibold">
-          {t('claims.furtherReading')}
-        </h2>
-        <ul className="list-disc space-y-1.5 pl-5">
+        <SectionTitle id="fr-h">{t('claims.furtherReading')}</SectionTitle>
+        <ul className="space-y-2">
           {claim.furtherReading.map((r) => (
-            <li key={r.citation}>
+            <li key={r.citation} className="pl-6 -indent-6">
               <Apa citation={r.citation} url={r.url} />
             </li>
           ))}

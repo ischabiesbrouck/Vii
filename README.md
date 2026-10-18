@@ -32,9 +32,10 @@ self-hosted Source Serif 4 and Inter (Fontsource).
 
 | Route | Purpose |
 |---|---|
-| `/` | Continue reading, document of the day, search, bookmarks |
+| `/` | Hero search, start-here subject, figures, continue reading, bookmarks, subjects, document of the day, Claim Check, the four sessions |
+| `/subjects`, `/subjects/:id` | **Subjects**: 13 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
 | `/documents` | The 16 documents by type, with solemnity badge |
-| `/documents/:id` | Reader: § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
+| `/documents/:id` | Reader: title page with vote bar, chapter outline (Caput I, II …) as sticky contents on desktop and a sheet on mobile, rubric-red marginal § numbers, previous/next document, related subjects; § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
 | `/claims`, `/claims/:id` | Claim Check, filterable by verdict; evidence paragraphs inline; contested claims show positions side by side |
 | `/search` | Offline full-text search (paragraphs, claims, terms); `LG 8` jumps to the paragraph |
 | `/timeline` | 1959 announcement → 1965 closing, by session |
@@ -51,6 +52,7 @@ precached by the service worker. Nothing is generated at runtime.
 |---|---|
 | `documents.json` | Metadata for all 16 documents (dates, votes, designation, summaries ≤ 80 words) |
 | `{docId}.json` | Paragraph excerpts. Seeded: LG, SC, DH (scaffold) + NA, DV, GS, AA, PO, UR, AG (paragraphs cited as evidence) |
+| `subjects.json` | 13 study paths; every step, claim and term is checked by the validator |
 | `claims.json` | 16 Claim Checks covering progressive, traditionalist and secular-media misreadings |
 | `timeline.json`, `glossary.json`, `hermeneutics.json` | Supporting modules |
 | `sources.json` | Registry of external (pre- and post-conciliar) sources referenced as `ext:…` |
@@ -60,8 +62,8 @@ precached by the service worker. Nothing is generated at runtime.
 1. Create `public/content/{docId}.json` following `DocumentContent` in
    `src/types/content.ts` (paragraph ids are `ABBR-number`, e.g. `CD-11`).
 2. Run `npm run validate:content`. The file is picked up automatically: no
-   code change. TODO: 6 documents (IM, OE, CD, PC, OT, GE) have no content file
-   yet; NA, DV, GS, AA, PO, UR and AG hold only the paragraphs cited elsewhere.
+   code change. TODO: 4 documents (IM, OE, CD, OT) have no content file yet; the
+   other non-scaffold files hold only the paragraphs that claims and subjects cite.
 
 ### Fidelity gate
 
@@ -86,6 +88,17 @@ public release, an editor should:
 - check bibliographic details in `claims.json` and `hermeneutics.json`;
 - set `"review": "verified"` per file once checked.
 
+## Design
+
+The visual language follows printed conciliar editions and the Holy See's archive
+pages, without using any official emblem or branding: Roman inscriptional
+capitals (Cinzel) for titles and kickers, Source Serif 4 for text, Inter for UI,
+rubric red for paragraph numbers (the convention of liturgical books), gold
+hairlines, white paper and an ink band for the institutional strip and footer.
+The footer and About page state that this is an unofficial study edition, not
+affiliated with the Holy See. On desktop the app uses horizontal navigation and
+multi-column layouts. On mobile it uses a five-tab bottom bar.
+
 ## Licensing guardrail
 
 Conciliar texts and their modern translations are under copyright held by
@@ -109,19 +122,20 @@ translation.
    declarations "dogmatic" or "disciplinary" would present an editorial judgement
    as fact. Decrees are labelled `disciplinary` by convention. Each document
    also carries its exact `designationLa`.
-2. **Bilingual editorial fields** (`summaryEn`, `claimEn`, `explanationEn`,
+2. **Subjects tab.** The bottom bar has five tabs (Home, Subjects, Documents, Claims, Search) instead of four.
+3. **Bilingual editorial fields** (`summaryEn`, `claimEn`, `explanationEn`,
    `titleEn`/`bodyEn`, `definitionEn`, `noteEn`) were added so that the EN toggle
    covers content as well as UI chrome.
-3. **`ClaimCheck.positions`** holds the side-by-side positions required for
+4. **`ClaimCheck.positions`** holds the side-by-side positions required for
    `contested` verdicts (content rule 4).
-4. **`GlossaryTerm.firstUse` may be `null`** for terms that do not occur in the
+5. **`GlossaryTerm.firstUse` may be `null`** for terms that do not occur in the
    conciliar texts (*aggiornamento*, *ressourcement*). The UI says so instead of
    pointing to a paragraph that does not contain the term.
-5. **Gold text colour.** `#B08D4F` on parchment is about 2.9:1 and fails WCAG AA.
+6. **Gold text colour.** `#B08D4F` on parchment is about 2.9:1 and fails WCAG AA.
    It stays in use for borders, marks and the decree badge (with dark text), and
    gold-tinted metadata text uses `#6E5528` (about 6.5:1). In dark mode the red
    accent is lightened for text contrast.
-6. **Font precache** is limited to the Latin and Latin-ext subsets. Other subsets
+7. **Font precache** is limited to the Latin and Latin-ext subsets. Other subsets
    are never requested for Dutch, English or Latin text.
 
 ## Acceptance checks

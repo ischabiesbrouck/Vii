@@ -21,6 +21,38 @@
       ]
     },
     {
+      "id": "DV-2",
+      "docId": "dei-verbum",
+      "number": 2,
+      "textEn": "In His goodness and wisdom God chose to reveal Himself and to make known to us the hidden purpose of His will (see Eph. 1:9) by which through Christ, the Word made flesh, man might in the Holy Spirit have access to the Father and come to share in the divine nature …",
+      "textNl": "Het heeft God in zijn goedheid en wijsheid behaagd zichzelf te openbaren en het geheim van zijn wil bekend te maken (vgl. Ef. 1,9), waardoor de mensen door Christus, het vleesgeworden Woord, in de heilige Geest toegang hebben tot de Vader en deel krijgen aan de goddelijke natuur …",
+      "tags": [
+        "revelation",
+        "trinity"
+      ],
+      "crossRefs": [
+        "DV-4",
+        "GS-22"
+      ],
+      "noteNl": "Openbaring wordt hier eerst beschreven als Gods zelfmededeling aan personen, en pas daarna als overdracht van waarheden.",
+      "noteEn": "Revelation is described here first as God's self-communication to persons, and only then as the handing on of truths."
+    },
+    {
+      "id": "DV-4",
+      "docId": "dei-verbum",
+      "number": 4,
+      "textEn": "The Christian dispensation, therefore, as the new and definitive covenant, will never pass away and we now await no further new public revelation before the glorious manifestation of our Lord Jesus Christ …",
+      "textNl": "De christelijke heilseconomie zal dus, als het nieuwe en definitieve verbond, nooit voorbijgaan, en er is geen nieuwe openbare openbaring meer te verwachten vóór de glorierijke verschijning van onze Heer Jezus Christus …",
+      "tags": [
+        "revelation",
+        "christology"
+      ],
+      "crossRefs": [
+        "DV-2",
+        "DV-10"
+      ]
+    },
+    {
       "id": "DV-9",
       "docId": "dei-verbum",
       "number": 9,
@@ -93,6 +125,22 @@
       "crossRefs": [
         "DV-11"
       ]
+    },
+    {
+      "id": "DV-25",
+      "docId": "dei-verbum",
+      "number": 25,
+      "textEn": "… the sacred synod also earnestly and especially urges all the Christian faithful, especially Religious, to learn by frequent reading of the divine Scriptures the \"excellent knowledge of Jesus Christ\" (Phil. 3:8). \"For ignorance of the Scriptures is ignorance of Christ.\"",
+      "textNl": "… de heilige Synode spoort ook alle christengelovigen, vooral de religieuzen, met nadruk aan om door het veelvuldig lezen van de goddelijke Schriften 'de verheven kennis van Jezus Christus' (Fil. 3,8) te verwerven. 'Want de Schriften niet kennen is Christus niet kennen.'",
+      "tags": [
+        "scripture",
+        "spirituality"
+      ],
+      "crossRefs": [
+        "DV-10"
+      ],
+      "noteNl": "Het laatste citaat is van de heilige Hiëronymus (Commentaar op Jesaja, proloog).",
+      "noteEn": "The final quotation is from Saint Jerome (Commentary on Isaiah, prologue)."
     }
   ]
 }

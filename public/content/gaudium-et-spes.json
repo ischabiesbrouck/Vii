@@ -110,6 +110,22 @@
       ]
     },
     {
+      "id": "GS-36",
+      "docId": "gaudium-et-spes",
+      "number": 36,
+      "textEn": "If by the autonomy of earthly affairs we mean that created things and societies themselves enjoy their own laws and values which must be gradually deciphered, put to use, and regulated by men, then it is entirely right to demand that autonomy. … But if the expression, the independence of temporal affairs, is taken to mean that created things do not depend on God, and that man can use them without any reference to their Creator, anyone who acknowledges God will see how false such a meaning is. For without the Creator the creature would disappear.",
+      "textNl": "Als men onder de autonomie van de aardse werkelijkheden verstaat dat de geschapen dingen en de samenlevingen hun eigen wetten en waarden hebben, die de mens geleidelijk moet ontdekken, gebruiken en ordenen, dan is het volkomen terecht die autonomie op te eisen. … Maar als men met 'autonomie van de tijdelijke werkelijkheid' bedoelt dat de geschapen dingen niet van God afhangen en dat de mens ze kan gebruiken zonder ze op de Schepper te betrekken, dan ziet iedereen die God erkent hoe vals zo'n opvatting is. Want zonder de Schepper verdwijnt het schepsel.",
+      "tags": [
+        "church-and-world",
+        "science",
+        "autonomy"
+      ],
+      "crossRefs": [
+        "GS-4",
+        "GS-22"
+      ]
+    },
+    {
       "id": "GS-48",
       "docId": "gaudium-et-spes",
       "number": 48,
@@ -122,6 +138,23 @@
       "crossRefs": [
         "GS-51",
         "ext:casti-connubii-1930"
+      ]
+    },
+    {
+      "id": "GS-50",
+      "docId": "gaudium-et-spes",
+      "number": 50,
+      "textEn": "Marriage and conjugal love are by their nature ordained toward the begetting and educating of children. Children are really the supreme gift of marriage and contribute very substantially to the welfare of their parents.",
+      "textNl": "Huwelijk en echtelijke liefde zijn uit hun aard gericht op het voortbrengen en opvoeden van kinderen. Kinderen zijn immers het voortreffelijkste geschenk van het huwelijk en dragen zeer veel bij tot het welzijn van de ouders zelf.",
+      "tags": [
+        "marriage",
+        "family",
+        "children"
+      ],
+      "crossRefs": [
+        "GS-48",
+        "GS-51",
+        "GE-3"
       ]
     },
     {
@@ -140,6 +173,23 @@
         "GS-48",
         "ext:casti-connubii-1930"
       ]
+    },
+    {
+      "id": "GS-80",
+      "docId": "gaudium-et-spes",
+      "number": 80,
+      "textEn": "Any act of war aimed indiscriminately at the destruction of entire cities or extensive areas along with their population is a crime against God and man himself. It merits unequivocal and unhesitating condemnation.",
+      "textNl": "Iedere oorlogshandeling die zonder onderscheid gericht is op de vernietiging van hele steden of uitgestrekte gebieden met hun bevolking, is een misdaad tegen God en de mens zelf, die krachtig en zonder aarzelen veroordeeld moet worden.",
+      "tags": [
+        "peace",
+        "war",
+        "moral-theology"
+      ],
+      "crossRefs": [
+        "GS-51"
+      ],
+      "noteNl": "Wordt vaak genoemd als de enige uitdrukkelijke veroordeling ('condemnatio') die het Concilie uitspreekt.",
+      "noteEn": "Often cited as the only explicit condemnation ('condemnatio') the Council pronounces."
     }
   ]
 }

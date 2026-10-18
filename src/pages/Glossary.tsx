@@ -37,8 +37,8 @@ export function Glossary() {
   if (loading || !terms) return <Loading />;
 
   return (
-    <div>
-      <PageHeader title={t('glossary.title')} intro={t('home.glossaryTeaser')} />
+    <div className="mx-auto max-w-3xl">
+      <PageHeader eyebrow="Index terminorum" title={t('glossary.title')} intro={t('home.glossaryTeaser')} />
       <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
         <label htmlFor="gq" className="sr-only">
           {t('glossary.filter')}
@@ -50,11 +50,11 @@ export function Glossary() {
         </label>
       </div>
       {shown.length === 0 && <p className="text-muted">{t('glossary.empty')}</p>}
-      <dl className="space-y-3">
+      <dl className="divide-y divide-line border-y border-line">
         {shown.map((g) => (
-          <div key={g.term} id={g.term} className="scroll-mt-20 rounded-lg border border-line bg-card p-4">
+          <div key={g.term} id={g.term} className="scroll-mt-32 py-5">
             <dt className="flex flex-wrap items-center gap-2">
-              <span className="font-serif text-lg font-semibold">{pick(lang, g.term, g.termEn)}</span>
+              <span className="font-serif text-xl font-semibold">{pick(lang, g.term, g.termEn)}</span>
               {g.disputed && (
                 <Badge variant="warn">
                   <AlertTriangle className="h-3 w-3" aria-hidden />
@@ -62,7 +62,7 @@ export function Glossary() {
                 </Badge>
               )}
             </dt>
-            <dd className="mt-1 text-sm">
+            <dd className="mt-1.5 text-[0.95rem] leading-relaxed">
               <p>{pick(lang, g.definitionNl, g.definitionEn)}</p>
               <p className="mt-2 text-xs text-muted">
                 {t('glossary.firstUse')}: {g.firstUse ? <CiteLink id={g.firstUse} /> : t('glossary.notInTexts')}

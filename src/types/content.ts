@@ -37,6 +37,41 @@ export interface CouncilDocument {
   keyParagraphs: string[]; // paragraph ids
   officialUrl: string; // vatican.va (English)
   officialUrlLa: string; // vatican.va (Latin)
+  /** Chapter structure (contiguous ranges covering every paragraph), where known. */
+  outline?: OutlineSection[];
+}
+
+export interface OutlineSection {
+  labelLa: string; // 'Caput III', 'Prooemium'
+  from: number;
+  to: number;
+  titleNl: string;
+  titleEn: string;
+}
+
+export type SubjectLevel = 'start' | 'core' | 'deeper';
+
+/** A guided study path through the texts. */
+export interface Subject {
+  id: string;
+  icon: string;
+  level: SubjectLevel;
+  minutes: number;
+  titleNl: string;
+  titleEn: string;
+  taglineNl: string;
+  taglineEn: string;
+  introNl: string; // editorial
+  introEn: string;
+  objectivesNl: string[];
+  objectivesEn: string[];
+  /** Ordered reading path: the sequence is part of the pedagogy. */
+  steps: { paragraphId: string; focusNl: string; focusEn: string }[];
+  claims: string[]; // ClaimCheck ids
+  terms: string[]; // GlossaryTerm.term keys
+  questionsNl: string[];
+  questionsEn: string[];
+  furtherReading: { citation: string; url?: string }[];
 }
 
 export interface Paragraph {
@@ -149,4 +184,6 @@ export interface ContentIndex {
   review: ReviewStatus;
   /** docIds that have a /content/{docId}.json file. */
   available: string[];
+  /** Number of seeded paragraphs per docId. */
+  counts: Record<string, number>;
 }

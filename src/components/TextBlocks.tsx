@@ -47,7 +47,7 @@ export function ConciliarText({
         {text}
       </blockquote>
       {showLatin && paragraph.textLa && (
-        <p lang="la" className="mt-2 border-t border-line pt-2 text-[0.92em] text-muted">
+        <p lang="la" className="la mt-2 border-t border-line pt-2 text-[0.92em] text-muted">
           {paragraph.textLa}
         </p>
       )}
@@ -102,21 +102,90 @@ export function Apa({ citation, url }: { citation: string; url?: string | undefi
   );
 }
 
-export function PageHeader({ title, intro, eyebrow }: { title: string; intro?: string; eyebrow?: string }) {
+export function PageHeader({
+  title,
+  intro,
+  eyebrow,
+  children,
+}: {
+  title: ReactNode;
+  intro?: ReactNode;
+  eyebrow?: string;
+  children?: ReactNode;
+}) {
   return (
-    <header className="mb-6">
-      {eyebrow && <p className="label-eyebrow mb-1">{eyebrow}</p>}
-      <h1 className="font-serif text-2xl font-semibold leading-tight sm:text-3xl">{title}</h1>
-      {intro && <p className="mt-2 text-muted">{intro}</p>}
+    <header className="mb-8">
+      {eyebrow && <p className="kicker mb-2">{eyebrow}</p>}
+      <h1 className="font-serif text-[1.75rem] font-semibold leading-tight sm:text-4xl">{title}</h1>
+      {intro && <p className="mt-3 max-w-prose text-[1.05rem] leading-relaxed text-muted">{intro}</p>}
+      {children}
+      <div className="rule-ornament mt-6" aria-hidden>
+        <span className="text-[0.55rem]">◆</span>
+      </div>
     </header>
+  );
+}
+
+export function SectionTitle({ children, id, action }: { children: ReactNode; id?: string; action?: ReactNode }) {
+  return (
+    <div className="mb-4 flex items-end justify-between gap-3 border-b border-line pb-2">
+      <h2 id={id} className="font-display text-sm font-semibold uppercase tracking-caps text-fg">
+        {children}
+      </h2>
+      {action}
+    </div>
+  );
+}
+
+export function Crumbs({ items }: { items: { to?: string; label: string }[] }) {
+  return (
+    <nav aria-label="Breadcrumb" className="mb-4 text-xs text-muted">
+      <ol className="flex flex-wrap items-center gap-1">
+        {items.map((it, i) => (
+          <li key={i} className="flex items-center gap-1">
+            {i > 0 && <span aria-hidden className="text-gold">/</span>}
+            {it.to ? (
+              <Link to={it.to} className="inline-flex min-h-[32px] items-center hover:text-accent">
+                {it.label}
+              </Link>
+            ) : (
+              <span aria-current="page" className="text-fg">
+                {it.label}
+              </span>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
   );
 }
 
 export function Loading() {
   const { t } = useTranslation();
   return (
-    <p className="py-8 text-center text-muted" role="status">
-      {t('app.loading')}
-    </p>
+    <div role="status" aria-label={t('app.loading')} className="space-y-4 py-4">
+      <div className="skeleton h-3 w-28" />
+      <div className="skeleton h-8 w-3/4" />
+      <div className="skeleton h-4 w-full" />
+      <div className="skeleton h-4 w-5/6" />
+      <div className="skeleton mt-6 h-28 w-full" />
+      <div className="skeleton h-28 w-full" />
+    </div>
+  );
+}
+
+export function ProgressBar({ value, label, className }: { value: number; label?: string; className?: string }) {
+  return (
+    <div
+      className={cn('h-1 w-full overflow-hidden rounded-full bg-line', className)}
+      role={label ? 'progressbar' : undefined}
+      aria-label={label}
+      aria-valuemin={label ? 0 : undefined}
+      aria-valuemax={label ? 100 : undefined}
+      aria-valuenow={label ? Math.round(value * 100) : undefined}
+      aria-hidden={label ? undefined : true}
+    >
+      <div className="h-full bg-accent transition-[width] duration-500" style={{ width: `${Math.min(1, value) * 100}%` }} />
+    </div>
   );
 }

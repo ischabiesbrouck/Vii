@@ -27,9 +27,10 @@ const claims = read('claims.json');
 const timeline = read('timeline.json');
 const glossary = read('glossary.json');
 const hermeneutics = read('hermeneutics.json');
+const subjects = read('subjects.json');
 
 const hash = createHash('sha256');
-for (const f of ['documents.json', 'sources.json', 'claims.json', 'timeline.json', 'glossary.json', 'hermeneutics.json']) {
+for (const f of ['documents.json', 'sources.json', 'claims.json', 'timeline.json', 'glossary.json', 'hermeneutics.json', 'subjects.json']) {
   hash.update(readFileSync(join(root, f)));
 }
 
@@ -47,17 +48,25 @@ for (const d of documents) {
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(d.promulgated)) err(`${d.abbr}: bad date ${d.promulgated}`);
   if (!d.officialUrl.startsWith('https://www.vatican.va/')) err(`${d.abbr}: officialUrl must be vatican.va`);
+  let next = 1;
+  for (const o of d.outline ?? []) {
+    if (o.from !== next || o.to < o.from || o.to > d.paragraphCount) err(`${d.abbr}: outline section ${o.labelLa} (${o.from}–${o.to}) is not contiguous`);
+    next = o.to + 1;
+  }
+  if (d.outline && next !== d.paragraphCount + 1) err(`${d.abbr}: outline does not cover all ${d.paragraphCount} paragraphs`);
 }
 
 // --- paragraphs -------------------------------------------------------------
 const paragraphs = new Map();
 const available = [];
+const counts = {};
 for (const d of documents) {
   const file = `${d.id}.json`;
   if (!existsSync(join(root, file))) continue; // TODO(content): 13 documents await content files.
   available.push(d.id);
   hash.update(readFileSync(join(root, file)));
   const c = read(file);
+  counts[d.id] = c.paragraphs.length;
   if (c.docId !== d.id) err(`${file}: docId mismatch`);
   if (!c.sourceNl || !c.sourceEn) err(`${file}: missing provenance (sourceNl/sourceEn)`);
   for (const p of c.paragraphs) {
@@ -109,6 +118,21 @@ for (const g of glossary) if (g.firstUse) checkRef(g.firstUse, `glossary "${g.te
 for (const t of timeline) for (const id of t.docIds ?? []) if (!docIds.has(id)) err(`timeline ${t.date}: unknown doc ${id}`);
 for (const pos of hermeneutics.positions) for (const a of pos.appealsTo) checkRef(a.paragraphId, `hermeneutics ${pos.id}`);
 
+// --- subjects ---------------------------------------------------------------
+const termKeys = new Set(glossary.map((g) => g.term));
+const subjectIds = new Set();
+for (const sub of subjects) {
+  if (subjectIds.has(sub.id)) err(`duplicate subject ${sub.id}`);
+  subjectIds.add(sub.id);
+  if (sub.steps.length < 3) err(`subject ${sub.id}: at least 3 reading steps required`);
+  for (const st of sub.steps) checkRef(st.paragraphId, `subject ${sub.id}`);
+  for (const c of sub.claims) if (!claimIds.has(c)) err(`subject ${sub.id}: unknown claim ${c}`);
+  for (const t of sub.terms) if (!termKeys.has(t)) err(`subject ${sub.id}: unknown glossary term "${t}"`);
+  for (const k of ['objectives', 'questions']) {
+    if (sub[`${k}Nl`].length !== sub[`${k}En`].length) err(`subject ${sub.id}: ${k}Nl/${k}En length mismatch`);
+  }
+}
+
 // --- report -----------------------------------------------------------------
 for (const w of warnings) console.warn(`warn  ${w}`);
 if (errors.length) {
@@ -122,8 +146,9 @@ const index = {
   version: hash.digest('hex').slice(0, 12),
   review: allReviewed ? 'verified' : 'unverified',
   available,
+  counts,
 };
 writeFileSync(join(root, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 console.log(
-  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · v${index.version}`,
+  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · v${index.version}`,
 );

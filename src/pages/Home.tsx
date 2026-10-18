@@ -1,12 +1,13 @@
 import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { BookOpen, ChevronRight, Clock, ListChecks, Scale, Search } from 'lucide-react';
-import { DocTypeBadge, SolemnityBadge } from '@/components/Badges';
-import { CiteLink, Loading } from '@/components/TextBlocks';
-import { Input } from '@/components/ui/input';
+import { ArrowRight, BookOpen, ChevronRight, Scale, Search } from 'lucide-react';
+import { DocTypeBadge, SolemnityBadge, VerdictBadge } from '@/components/Badges';
+import { CiteLink, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
+import { SubjectCard } from '@/components/SubjectCard';
 import { Button } from '@/components/ui/button';
-import { useDocuments } from '@/lib/data';
+import { getClaims, getDocuments, getIndex, getAllParagraphs, getSubjects } from '@/lib/content';
+import { useAsync } from '@/lib/useAsync';
 import { shortCite } from '@/lib/citation';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { pick } from '@/lib/utils';
@@ -19,15 +20,31 @@ function dayIndex(n: number) {
   return (day + d.getFullYear()) % n;
 }
 
+const sessions = [
+  { n: 'I', from: '1962-10-11', to: '1962-12-08', docs: 0 },
+  { n: 'II', from: '1963-09-29', to: '1963-12-04', docs: 2 },
+  { n: 'III', from: '1964-09-14', to: '1964-11-21', docs: 3 },
+  { n: 'IV', from: '1965-09-14', to: '1965-12-08', docs: 11 },
+];
+
+const shortDate = (iso: string, lang: 'nl' | 'en') =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString(lang === 'nl' ? 'nl-NL' : 'en-GB', { day: 'numeric', month: 'short' });
+
 export function Home() {
   const { t } = useTranslation();
   const lang = useLang();
   const navigate = useNavigate();
-  const { data: docs, loading } = useDocuments();
   const progress = useUi((s) => s.progress);
   const bookmarks = useUi((s) => s.bookmarks);
   const [q, setQ] = useState('');
+  const { data, loading } = useAsync(
+    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getIndex(), getAllParagraphs()]),
+    [],
+  );
   useDocumentTitle(undefined);
+
+  if (loading || !data) return <Loading />;
+  const [docs, subjects, claims, , paragraphs] = data;
 
   const onSearch = (e: FormEvent) => {
     e.preventDefault();
@@ -37,117 +54,221 @@ export function Home() {
   const recent = Object.entries(progress)
     .filter(([, p]) => p.fraction > 0.02 || p.lastParagraphId)
     .sort((a, b) => b[1].updatedAt - a[1].updatedAt)[0];
-  const recentDoc = recent && docs?.find((d) => d.id === recent[0]);
-  const today = docs?.[dayIndex(docs.length)];
+  const recentDoc = recent && docs.find((d) => d.id === recent[0]);
+  const today = docs[dayIndex(docs.length)];
+  const start = subjects.find((s) => s.level === 'start');
+  const core = subjects.filter((s) => s.level === 'core').slice(0, 6);
+  const featuredClaims = [claims.find((c) => c.verdict === 'not-in-the-text'), claims.find((c) => c.verdict === 'contested'), claims.find((c) => c.verdict === 'partly')].filter(
+    (c): c is NonNullable<typeof c> => !!c,
+  );
 
-  const explore = [
-    { to: '/claims', Icon: ListChecks, title: t('nav.claims'), body: t('home.claimsTeaser') },
-    { to: '/timeline', Icon: Clock, title: t('nav.timeline'), body: t('home.timelineTeaser') },
-    { to: '/glossary', Icon: BookOpen, title: t('nav.glossary'), body: t('home.glossaryTeaser') },
-    { to: '/hermeneutics', Icon: Scale, title: t('nav.hermeneutics'), body: t('home.hermeneuticsTeaser') },
+  const stats = [
+    { n: docs.length, label: t('home.statDocs'), to: '/documents' },
+    { n: paragraphs.length, label: t('home.statExcerpts'), to: '/search' },
+    { n: subjects.length, label: t('home.statSubjects'), to: '/subjects' },
+    { n: claims.length, label: t('home.statClaims'), to: '/claims' },
   ];
 
   return (
-    <div className="space-y-8">
-      <section>
-        <h1 className="font-serif text-3xl font-semibold leading-tight">
-          <span lang="la">Concilium</span>
-        </h1>
-        <p className="mt-2 text-muted">{t('home.intro')}</p>
-        <form role="search" onSubmit={onSearch} className="mt-4 flex gap-2">
-          <label htmlFor="home-search" className="sr-only">
-            {t('search.title')}
-          </label>
-          <Input id="home-search" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('home.searchPlaceholder')} />
-          <Button type="submit" size="icon" aria-label={t('search.title')}>
-            <Search className="h-5 w-5" aria-hidden />
-          </Button>
-        </form>
+    <div className="space-y-14">
+      {/* Hero */}
+      <section className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-end">
+        <div>
+          <p className="kicker">{t('home.heroOverline')}</p>
+          <h1 className="mt-3 font-serif text-[2rem] font-semibold leading-[1.15] sm:text-5xl">{t('home.heroTitle')}</h1>
+          <p className="mt-4 max-w-prose text-[1.05rem] leading-relaxed text-muted">{t('home.intro')}</p>
+          <form role="search" onSubmit={onSearch} className="mt-6 flex max-w-xl gap-2">
+            <label htmlFor="home-search" className="sr-only">
+              {t('search.title')}
+            </label>
+            <div className="relative flex-1">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" aria-hidden />
+              <input
+                id="home-search"
+                type="search"
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder={t('home.searchPlaceholder')}
+                className="min-h-[48px] w-full rounded border border-line bg-paper pl-10 pr-3 text-base placeholder:text-muted"
+              />
+            </div>
+            <Button type="submit" className="min-h-[48px] px-5">
+              {t('search.title')}
+            </Button>
+          </form>
+        </div>
+        {start && (
+          <div>
+            <SubjectCard subject={start} featured />
+          </div>
+        )}
       </section>
 
-      {loading && <Loading />}
-
-      {recent && recentDoc && (
-        <section aria-labelledby="continue-h">
-          <h2 id="continue-h" className="label-eyebrow mb-2">
-            {t('home.continue')}
-          </h2>
-          <Link
-            to={`/documents/${recentDoc.id}${recent[1].lastParagraphId ? `#${recent[1].lastParagraphId}` : ''}`}
-            className="block rounded-lg border border-line bg-card p-4 hover:border-accent"
-          >
-            <div className="flex items-center justify-between gap-2">
-              <div className="min-w-0">
-                <p className="font-serif text-lg font-semibold" lang="la">
-                  {recentDoc.titleLa}
-                </p>
-                <p className="text-sm text-muted">
-                  {recentDoc.abbr}
-                  {recent[1].lastParagraphId && ` · ${t('home.continueAt', { cite: shortCite(recent[1].lastParagraphId) })}`}
-                </p>
-              </div>
-              <ChevronRight className="h-5 w-5 shrink-0 text-muted" aria-hidden />
-            </div>
-            <div className="mt-3 h-1 overflow-hidden rounded-full bg-line" aria-hidden>
-              <div className="h-full bg-accent" style={{ width: `${recent[1].fraction * 100}%` }} />
-            </div>
-          </Link>
-        </section>
-      )}
-
-      {today && (
-        <section aria-labelledby="dotd-h">
-          <h2 id="dotd-h" className="label-eyebrow mb-2">
-            {t('home.docOfDay')}
-          </h2>
-          <Link to={`/documents/${today.id}`} className="block rounded-lg border border-line bg-card p-4 hover:border-accent">
-            <div className="mb-2 flex flex-wrap gap-1.5">
-              <DocTypeBadge type={today.type} />
-              <SolemnityBadge solemnity={today.solemnity} />
-            </div>
-            <p className="font-serif text-xl font-semibold" lang="la">
-              {today.titleLa}
-            </p>
-            <p className="text-sm">{pick(lang, today.titleNl, today.titleEn)}</p>
-            <p className="mt-2 line-clamp-3 text-sm text-muted">{pick(lang, today.summaryNl, today.summaryEn)}</p>
-          </Link>
-        </section>
-      )}
-
-      <section aria-labelledby="explore-h">
-        <h2 id="explore-h" className="label-eyebrow mb-2">
-          {t('home.explore')}
-        </h2>
-        <ul className="grid gap-2 sm:grid-cols-2">
-          {explore.map(({ to, Icon, title, body }) => (
-            <li key={to}>
-              <Link to={to} className="flex h-full items-start gap-3 rounded-lg border border-line bg-card p-4 hover:border-accent">
-                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />
-                <span>
-                  <span className="block font-semibold">{title}</span>
-                  <span className="block text-sm text-muted">{body}</span>
-                </span>
+      {/* Figures */}
+      <section aria-label="Concilium">
+        <ul className="grid grid-cols-2 border-y border-line sm:grid-cols-4">
+          {stats.map((s, i) => (
+            <li key={s.label} className={i > 0 ? 'border-line sm:border-l' : ''}>
+              <Link to={s.to} className="flex flex-col items-center justify-center py-5 hover:bg-surface">
+                <span className="font-serif text-3xl font-semibold tabular text-accent">{s.n}</span>
+                <span className="mt-1 text-xs uppercase tracking-[0.12em] text-muted">{s.label}</span>
               </Link>
             </li>
           ))}
         </ul>
       </section>
 
-      <section aria-labelledby="bm-h">
-        <h2 id="bm-h" className="label-eyebrow mb-2">
-          {t('home.bookmarks')}
-        </h2>
-        {bookmarks.length ? (
-          <ul className="flex flex-wrap gap-2">
-            {bookmarks.map((b) => (
-              <li key={b}>
-                <CiteLink id={b} className="inline-flex min-h-[40px] items-center rounded-full border border-line bg-card px-3 no-underline" />
+      {(recentDoc || bookmarks.length > 0) && (
+        <section className="grid gap-6 md:grid-cols-2">
+          {recent && recentDoc && (
+            <div>
+              <SectionTitle>{t('home.continue')}</SectionTitle>
+              <Link
+                to={`/documents/${recentDoc.id}${recent[1].lastParagraphId ? `#${recent[1].lastParagraphId}` : ''}`}
+                className="panel-link block p-5"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="display-title text-lg" lang="la">
+                      {recentDoc.titleLa}
+                    </p>
+                    <p className="text-sm text-muted">
+                      {pick(lang, recentDoc.titleNl, recentDoc.titleEn)}
+                      {recent[1].lastParagraphId && ` · ${t('home.continueAt', { cite: shortCite(recent[1].lastParagraphId) })}`}
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 shrink-0 text-muted" aria-hidden />
+                </div>
+                <ProgressBar value={recent[1].fraction} className="mt-4" />
+              </Link>
+            </div>
+          )}
+          <div>
+            <SectionTitle>{t('home.bookmarks')}</SectionTitle>
+            {bookmarks.length ? (
+              <ul className="flex flex-wrap gap-2">
+                {bookmarks.map((b) => (
+                  <li key={b}>
+                    <CiteLink id={b} className="inline-flex min-h-[40px] items-center rounded border border-line bg-card px-3 no-underline hover:border-gold" />
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-muted">{t('home.noBookmarks')}</p>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Subjects */}
+      <section aria-labelledby="h-subjects">
+        <SectionTitle
+          id="h-subjects"
+          action={
+            <Link to="/subjects" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
+              {t('home.allSubjects')} <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          }
+        >
+          {t('nav.subjects')}
+        </SectionTitle>
+        <p className="-mt-1 mb-5 text-sm text-muted">{t('home.subjectsLead')}</p>
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {core.map((s) => (
+            <li key={s.id}>
+              <SubjectCard subject={s} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="grid gap-10 lg:grid-cols-2">
+        {today && (
+          <div>
+            <SectionTitle>{t('home.docOfDay')}</SectionTitle>
+            <Link to={`/documents/${today.id}`} className="panel-link block p-6">
+              <div className="mb-3 flex flex-wrap gap-1.5">
+                <DocTypeBadge type={today.type} />
+                <SolemnityBadge solemnity={today.solemnity} />
+              </div>
+              <p className="display-title text-2xl" lang="la">
+                {today.titleLa}
+              </p>
+              <p className="mt-1">{pick(lang, today.titleNl, today.titleEn)}</p>
+              <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-muted">{pick(lang, today.summaryNl, today.summaryEn)}</p>
+            </Link>
+          </div>
+        )}
+        <div>
+          <SectionTitle
+            action={
+              <Link to="/claims" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
+                {t('home.allClaims')} <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            }
+          >
+            {t('claims.title')}
+          </SectionTitle>
+          <p className="-mt-1 mb-4 text-sm text-muted">{t('home.claimsLead')}</p>
+          <ul className="divide-y divide-line border-y border-line">
+            {featuredClaims.map((c) => (
+              <li key={c.id}>
+                <Link to={`/claims/${c.id}`} className="flex items-start gap-3 py-4 hover:bg-surface sm:px-2">
+                  <div className="min-w-0 flex-1">
+                    <p className="font-serif leading-snug">“{pick(lang, c.claim, c.claimEn)}”</p>
+                    <div className="mt-2">
+                      <VerdictBadge verdict={c.verdict} />
+                    </div>
+                  </div>
+                  <ChevronRight className="mt-1 h-4 w-4 shrink-0 text-muted" aria-hidden />
+                </Link>
               </li>
             ))}
           </ul>
-        ) : (
-          <p className="text-sm text-muted">{t('home.noBookmarks')}</p>
-        )}
+        </div>
+      </section>
+
+      {/* Sessions */}
+      <section aria-labelledby="h-sessions">
+        <SectionTitle
+          id="h-sessions"
+          action={
+            <Link to="/timeline" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
+              {t('nav.timeline')} <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          }
+        >
+          {t('home.sessions')}
+        </SectionTitle>
+        <ol className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-line bg-line lg:grid-cols-4">
+          {sessions.map((s) => (
+            <li key={s.n} className="bg-card p-5">
+              <p className="font-display text-xs font-semibold uppercase tracking-caps text-gold-text">Sessio</p>
+              <p className="font-display text-4xl font-semibold text-accent">{s.n}</p>
+              <p className="mt-2 text-sm tabular">
+                {shortDate(s.from, lang)} – {shortDate(s.to, lang)} {s.to.slice(0, 4)}
+              </p>
+              <p className="mt-1 text-xs text-muted">{t('home.statDocs')}: {s.docs}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="grid gap-4 sm:grid-cols-2">
+        <Link to="/glossary" className="panel-link flex items-start gap-4 p-5">
+          <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-gold-text" aria-hidden />
+          <span>
+            <span className="block font-serif text-lg font-semibold">{t('nav.glossary')}</span>
+            <span className="block text-sm text-muted">{t('home.glossaryTeaser')}</span>
+          </span>
+        </Link>
+        <Link to="/hermeneutics" className="panel-link flex items-start gap-4 p-5">
+          <Scale className="mt-0.5 h-5 w-5 shrink-0 text-gold-text" aria-hidden />
+          <span>
+            <span className="block font-serif text-lg font-semibold">{t('nav.hermeneutics')}</span>
+            <span className="block text-sm text-muted">{t('home.hermeneuticsTeaser')}</span>
+          </span>
+        </Link>
       </section>
     </div>
   );
