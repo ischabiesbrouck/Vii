@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, NavLink, Outlet, useLocation, useNavigationType } from 'react-router-dom';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { useTranslation } from 'react-i18next';
 import {
@@ -27,6 +27,7 @@ import { InstallPrompt } from '@/components/InstallPrompt';
 import { Toast } from '@/components/Toast';
 import { CommandPalette } from '@/components/CommandPalette';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { VideoTheater } from '@/components/VideoTheater';
 import { useOnline } from '@/lib/hooks';
 import { useUi, type FontSize, type Theme } from '@/store/ui';
 import { OFFICIAL_INDEX_URL, RKDOCUMENTEN_URL } from '@/config';
@@ -261,9 +262,66 @@ export function Layout() {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
+  const navType = useNavigationType();
+  const [announce, setAnnounce] = useState('');
+  const firstRender = useRef(true);
+
+  // Scroll: remember each history entry's position at the moment the reader leaves it
+  // (link click or back/forward, both before React re-renders), restore it on
+  // back/forward, and start at the top on new navigation (hash links scroll themselves).
+  const keyRef = useRef(location.key);
   useEffect(() => {
+    const save = () => {
+      try {
+        sessionStorage.setItem(`scroll:${keyRef.current}`, String(window.scrollY));
+      } catch {
+        /* storage unavailable */
+      }
+    };
+    window.addEventListener('click', save, true);
+    window.addEventListener('popstate', save, true);
+    return () => {
+      window.removeEventListener('click', save, true);
+      window.removeEventListener('popstate', save, true);
+    };
+  }, []);
+
+  useEffect(() => {
+    keyRef.current = location.key;
     setMenuOpen(false);
-    if (!location.hash) window.scrollTo(0, 0);
+    if (location.hash) return;
+    let saved: number | null = null;
+    try {
+      const v = sessionStorage.getItem(`scroll:${location.key}`);
+      saved = v === null ? null : Number(v);
+    } catch {
+      saved = null;
+    }
+    if (navType === 'POP' && saved) {
+      // Content loads asynchronously: retry until the page is tall enough.
+      let tries = 0;
+      const tick = () => {
+        if (document.documentElement.scrollHeight - window.innerHeight >= saved! || ++tries > 30) window.scrollTo(0, saved!);
+        else requestAnimationFrame(tick);
+      };
+      tick();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.key, location.hash, navType]);
+
+  // Accessibility: on route change, move focus to <main> and announce the new page title.
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    if (location.hash) return;
+    const id = window.setTimeout(() => {
+      document.getElementById('main')?.focus({ preventScroll: true });
+      setAnnounce(document.title);
+    }, 120);
+    return () => window.clearTimeout(id);
   }, [location.pathname, location.hash]);
 
   return (
@@ -276,7 +334,7 @@ export function Layout() {
       </a>
 
       {/* Institutional strip (desktop) */}
-      <div className="hidden bg-ink text-ink-fg lg:block">
+      <div data-chrome className="hidden bg-ink text-ink-fg lg:block">
         <div className="mx-auto flex h-8 max-w-page items-center justify-between px-8 text-[0.68rem] uppercase tracking-[0.18em]">
           <span className="font-display">Concilium Oecumenicum Vaticanum II · MCMLXII – MCMLXV</span>
           <a href={OFFICIAL_INDEX_URL} target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100">
@@ -285,7 +343,7 @@ export function Layout() {
         </div>
       </div>
 
-      <header className="sticky top-0 z-30 border-b border-line bg-paper/95 pt-safe backdrop-blur supports-[backdrop-filter]:bg-paper/85">
+      <header data-chrome className="sticky top-0 z-30 border-b border-line bg-paper/95 pt-safe backdrop-blur supports-[backdrop-filter]:bg-paper/85">
         <div className="h-[2px] bg-gold/70" aria-hidden />
         <div className="mx-auto flex h-14 max-w-page items-center gap-3 px-4 lg:h-16 lg:px-8">
           <Wordmark />
@@ -372,7 +430,7 @@ export function Layout() {
         </ErrorBoundary>
       </main>
 
-      <footer className="bg-ink pb-24 text-ink-fg lg:pb-0">
+      <footer data-chrome className="bg-ink pb-24 text-ink-fg lg:pb-0">
         <div className="h-[2px] bg-gold/70" aria-hidden />
         <div className="mx-auto grid max-w-page gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
           <div>
@@ -412,6 +470,7 @@ export function Layout() {
       </footer>
 
       <nav
+        data-chrome
         aria-label={t('nav.primary')}
         className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper/95 pb-safe backdrop-blur supports-[backdrop-filter]:bg-paper/90 lg:hidden"
       >
@@ -422,21 +481,28 @@ export function Layout() {
                 to={to}
                 end={end}
                 className={({ isActive }) =>
-                  cn(
-                    'relative flex min-h-[58px] flex-col items-center justify-center gap-1 text-[0.68rem] tracking-wide',
-                    isActive ? 'font-semibold text-accent before:absolute before:inset-x-5 before:top-0 before:h-[2px] before:bg-accent' : 'text-muted hover:text-fg',
-                  )
+                  cn('group flex min-h-[60px] flex-col items-center justify-center gap-1 text-[0.68rem] tracking-wide', isActive ? 'font-semibold text-accent' : 'text-muted hover:text-fg')
                 }
               >
-                <Icon className="h-5 w-5" aria-hidden />
-                {t(`nav.${key}`)}
+                {({ isActive }) => (
+                  <>
+                    <span className={cn('flex h-8 w-14 items-center justify-center rounded-full transition-colors duration-300', isActive && 'bg-accent/10')}>
+                      <Icon className="h-5 w-5" aria-hidden />
+                    </span>
+                    {t(`nav.${key}`)}
+                  </>
+                )}
               </NavLink>
             </li>
           ))}
         </ul>
       </nav>
 
+      <p aria-live="polite" aria-atomic="true" className="sr-only">
+        {announce}
+      </p>
       <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} />
+      <VideoTheater />
       <InstallPrompt />
       <Toast />
     </div>

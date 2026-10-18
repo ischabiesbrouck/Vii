@@ -5,7 +5,6 @@ import { ArrowRight, BookOpen, ChevronRight, ExternalLink, GraduationCap, Scale,
 import { DocTypeBadge, SolemnityBadge, VerdictBadge } from '@/components/Badges';
 import { CiteLink, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { SubjectCard } from '@/components/SubjectCard';
-import { Button } from '@/components/ui/button';
 import { getAllParagraphs, getCatecheses, getClaims, getDocuments, getIndex, getLessons, getSubjects, getVideos } from '@/lib/content';
 import { VideoCard } from '@/components/VideoCard';
 import { useAsync } from '@/lib/useAsync';
@@ -77,63 +76,87 @@ export function Home() {
 
   return (
     <div className="space-y-14">
-      {/* Hero */}
-      <section className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-end">
-        <div>
-          <p className="kicker">{t('home.heroOverline')}</p>
-          <h1 className="mt-3 font-serif text-[2rem] font-semibold leading-[1.15] sm:text-5xl">{t('home.heroTitle')}</h1>
-          <p className="mt-4 max-w-prose text-[1.05rem] leading-relaxed text-muted">{t('home.intro')}</p>
-          <form role="search" onSubmit={onSearch} className="mt-6 flex max-w-xl gap-2">
-            <label htmlFor="home-search" className="sr-only">
-              {t('search.title')}
-            </label>
-            <div className="relative flex-1">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" aria-hidden />
-              <input
-                id="home-search"
-                type="search"
-                value={q}
-                onChange={(e) => setQ(e.target.value)}
-                placeholder={t('home.searchPlaceholder')}
-                className="min-h-[48px] w-full rounded border border-line bg-paper pl-10 pr-3 text-base placeholder:text-muted"
-              />
+      {/* Hero: full-bleed ink band in the manner of a conciliar edition's title page */}
+      <section className="relative -mt-6 mx-[calc(50%-50vw)] overflow-hidden bg-ink text-ink-fg lg:-mt-10" aria-labelledby="hero-title">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: 'radial-gradient(60% 80% at 85% 0%, rgb(176 141 79 / 0.28), transparent 70%), radial-gradient(50% 70% at 0% 100%, rgb(122 31 31 / 0.35), transparent 70%)' }} />
+        <span aria-hidden className="pointer-events-none absolute -right-6 top-1/2 hidden -translate-y-1/2 select-none font-display text-[22rem] font-bold leading-none text-white/[0.035] lg:block">II</span>
+        <div className="relative mx-auto grid max-w-page gap-10 px-4 py-12 sm:py-16 lg:grid-cols-[1.45fr_1fr] lg:items-center lg:px-8 lg:py-20">
+          <div>
+            <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[#C9A96E] sm:text-xs">Concilivm Oecvmenicvm Vaticanvm II</p>
+            <div aria-hidden className="mt-4 h-px w-24 bg-gradient-to-r from-[#C9A96E] to-transparent" />
+            <h1 id="hero-title" className="mt-5 font-serif text-[2.1rem] font-semibold leading-[1.1] text-white sm:text-[3.4rem]">
+              {t('home.heroTitle')}
+            </h1>
+            <p className="mt-5 max-w-prose text-[1.05rem] leading-relaxed text-ink-fg/80">{t('home.intro')}</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                to={`/learn/${nextLesson.id}`}
+                className="inline-flex min-h-[48px] items-center gap-2 rounded-full bg-[#C9A96E] px-6 text-sm font-semibold text-[#141210] shadow-lg shadow-black/20 transition hover:bg-[#d6b97f]"
+              >
+                <GraduationCap className="h-4 w-4" aria-hidden />
+                {lessonsDone === 0 ? t('learn.start') : t('learn.resume', { n: nextLesson.number })}
+              </Link>
+              <Link to="/documents" className="inline-flex min-h-[48px] items-center gap-2 rounded-full border border-white/25 px-6 text-sm font-medium text-white transition hover:border-white/60 hover:bg-white/5">
+                {t('nav.documents')} <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
             </div>
-            <Button type="submit" className="min-h-[48px] px-5">
-              {t('search.title')}
-            </Button>
-          </form>
-        </div>
-        <div className="flex h-full flex-col rounded-md border border-line border-t-[3px] border-t-gold bg-card p-6">
-          <p className="kicker">{t('nav.course')}</p>
-          <p className="mt-2 font-serif text-xl font-semibold leading-snug">{t('learn.courseTitle')}</p>
-          <p className="mt-2 flex-1 text-sm text-muted">{t('learn.courseLead')}</p>
-          <p className="mt-4 text-xs tabular text-muted">{t('learn.done', { done: lessonsDone, total: lessons.length })}</p>
-          <ProgressBar value={lessonsDone / lessons.length} className="mt-1.5" />
-          <Link
-            to={`/learn/${nextLesson.id}`}
-            className="mt-4 inline-flex min-h-[44px] items-center justify-center gap-2 rounded bg-accent px-4 text-sm font-medium text-accent-fg hover:bg-accent/90"
-          >
-            <GraduationCap className="h-4 w-4" aria-hidden />
-            {lessonsDone === 0 ? t('learn.start') : t('learn.resume', { n: nextLesson.number })}
-          </Link>
-        </div>
-      </section>
+            <form role="search" onSubmit={onSearch} className="mt-6 max-w-xl">
+              <label htmlFor="home-search" className="sr-only">
+                {t('search.title')}
+              </label>
+              <div className="relative">
+                <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-fg/60" aria-hidden />
+                <input
+                  id="home-search"
+                  type="search"
+                  value={q}
+                  onChange={(e) => setQ(e.target.value)}
+                  placeholder={t('home.searchPlaceholder')}
+                  className="min-h-[50px] w-full rounded-full border border-white/15 bg-white/[0.06] pl-11 pr-4 text-base text-white placeholder:text-ink-fg/50 focus:border-[#C9A96E] focus:bg-white/10"
+                />
+              </div>
+            </form>
+          </div>
 
-      {/* Figures */}
-      <section aria-label="Concilium">
-        <ul className="grid grid-cols-2 border-y border-line sm:grid-cols-4">
-          {stats.map((s, i) => (
-            <li key={s.label} className={i > 0 ? 'border-line sm:border-l' : ''}>
-              <Link to={s.to} className="flex flex-col items-center justify-center py-5 hover:bg-surface">
-                <span className="font-serif text-3xl font-semibold tabular text-accent">{s.n}</span>
-                <span className="mt-1 text-xs uppercase tracking-[0.12em] text-muted">{s.label}</span>
+          <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
+            <p className="font-display text-[0.65rem] font-semibold uppercase tracking-caps text-[#C9A96E]">{t('home.sessions')}</p>
+            <ol className="mt-4 space-y-4">
+              {sessions.map((se) => (
+                <li key={se.n} className="flex items-baseline gap-4">
+                  <span className="w-10 shrink-0 font-display text-2xl font-semibold text-[#C9A96E]">{se.n}</span>
+                  <span className="min-w-0 flex-1 border-b border-white/10 pb-3">
+                    <span className="block text-sm tabular text-white">
+                      {shortDate(se.from, lang)} – {shortDate(se.to, lang)} {se.to.slice(0, 4)}
+                    </span>
+                    <span className="block text-xs text-ink-fg/60">
+                      {t('home.statDocs')}: {se.docs}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-5">
+              <p className="text-xs tabular text-ink-fg/70">{t('learn.done', { done: lessonsDone, total: lessons.length })}</p>
+              <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-white/10" aria-hidden>
+                <div className="h-full bg-[#C9A96E] transition-[width] duration-700" style={{ width: `${(lessonsDone / lessons.length) * 100}%` }} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul className="relative mx-auto grid max-w-page grid-cols-2 border-t border-white/10 sm:grid-cols-4 lg:px-8">
+          {stats.map((st, i) => (
+            <li key={st.label} className={i % 2 === 1 ? 'border-l border-white/10' : i > 0 ? 'sm:border-l sm:border-white/10' : ''}>
+              <Link to={st.to} className="flex flex-col items-center justify-center py-5 transition hover:bg-white/5">
+                <span className="font-serif text-3xl font-semibold tabular text-white">{st.n}</span>
+                <span className="mt-1 text-[0.68rem] uppercase tracking-[0.16em] text-ink-fg/60">{st.label}</span>
               </Link>
             </li>
           ))}
         </ul>
       </section>
 
-      <section aria-labelledby="h-learn" className="grid gap-6 lg:grid-cols-3">
+      <section aria-labelledby="h-learn" className="grid items-start gap-6 lg:grid-cols-3">
         <div className="lg:col-span-1">
           <SectionTitle id="h-learn">{t('home.startHere')}</SectionTitle>
           {start && <SubjectCard subject={start} featured />}
@@ -149,7 +172,7 @@ export function Home() {
             >
               {t('cat.latest')}
             </SectionTitle>
-            <div className="panel flex h-[calc(100%-3rem)] flex-col p-5">
+            <div className="panel flex min-h-[11rem] flex-col p-5">
               <p className="kicker">Leo PP. XIV · {formatDate(latestCat.date, lang)}</p>
               <p className="mt-2 flex-1 font-serif text-lg font-semibold leading-snug">{pick(lang, latestCat.titleNl, latestCat.titleEn)}</p>
               <a href={latestCat.url} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
@@ -282,32 +305,6 @@ export function Home() {
             ))}
           </ul>
         </div>
-      </section>
-
-      {/* Sessions */}
-      <section aria-labelledby="h-sessions">
-        <SectionTitle
-          id="h-sessions"
-          action={
-            <Link to="/timeline" className="inline-flex items-center gap-1 text-sm text-accent hover:underline">
-              {t('nav.timeline')} <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-          }
-        >
-          {t('home.sessions')}
-        </SectionTitle>
-        <ol className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-line bg-line lg:grid-cols-4">
-          {sessions.map((s) => (
-            <li key={s.n} className="bg-card p-5">
-              <p className="font-display text-xs font-semibold uppercase tracking-caps text-gold-text">Sessio</p>
-              <p className="font-display text-4xl font-semibold text-accent">{s.n}</p>
-              <p className="mt-2 text-sm tabular">
-                {shortDate(s.from, lang)} – {shortDate(s.to, lang)} {s.to.slice(0, 4)}
-              </p>
-              <p className="mt-1 text-xs text-muted">{t('home.statDocs')}: {s.docs}</p>
-            </li>
-          ))}
-        </ol>
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2">

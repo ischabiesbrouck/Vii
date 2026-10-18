@@ -14,6 +14,8 @@ analytics, no network requests at runtime after the service worker installs.
 npm install
 npm run dev        # validates content, then starts Vite
 npm run build      # tsc --noEmit → content validation → vite build (+ service worker)
+npm test           # Vitest unit tests (citations, shuffle, content integrity, i18n key parity)
+npm run check      # typecheck + content validation + tests (what CI runs)
 npm run preview    # serve dist/ to test install + offline
 ```
 
@@ -43,7 +45,7 @@ self-hosted Source Serif 4 and Inter (Fontsource).
 | `/` | Hero search, start-here subject, figures, continue reading, bookmarks, subjects, document of the day, Claim Check, the four sessions |
 | `/learn`, `/learn/:id` | **Course**: 10 lessons (why a council, how it worked, the four constitutions, each constitution, decrees and declarations, reception, reading today), each with key facts, the texts to read, Pope Leo XIV's catecheses, videos, a factual knowledge check and sources; progress saved locally |
 | `/catecheses` | Pope Leo XIV's 2026 general-audience catecheses on the Council's documents (28 so far), grouped by constitution, linking to the official texts on vatican.va |
-| `/videos` | 15 curated English videos (EWTN, Rome Reports, Word on Fire, CNS, Georgetown and others), filterable by kind; click-to-load embeds |
+| `/videos` | 15 curated English videos (EWTN, Rome Reports, Word on Fire, CNS, Georgetown and others), filterable by kind; they play in the in-app theater (see below) |
 | `/subjects`, `/subjects/:id` | **Subjects**: 16 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
 | `/documents` | The 16 documents by type, with solemnity badge |
 | `/documents/:id` | Reader: title page with vote bar, chapter outline (Caput I, II …) as sticky contents on desktop and a sheet on mobile, rubric-red marginal § numbers, previous/next document, related subjects; § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
@@ -108,6 +110,16 @@ public release, an editor should:
 - **Quick search**: Ctrl/⌘+K or `/` opens a keyboard-driven palette over pages and the full-text index.
 - **Route-level code splitting**: each page is its own chunk; vendor code is split into stable cached chunks. All of it is precached.
 - **Error boundary** per page, subtle page transitions (disabled under `prefers-reduced-motion`).
+- **Video theater**: videos play inside the app in one modal player (youtube-nocookie.com, `rel=0`). The app listens to the embed's documented postMessage events (no external API script; messages are accepted only from the player's own origin and window). When a video ends, the iframe is removed and replaced by the app's own end card (replay / close), so YouTube's end-screen suggestions and autoplay of a next video never appear. The position is saved locally: cards show progress, "resume from m:ss" and a "watched" mark.
+- **Focus mode** in the reader hides all chrome for distraction-free reading (Esc exits).
+- **Navigation**: back/forward restores the scroll position per history entry; on route change focus moves to the main region and the page title is announced to screen readers.
+- **Preloading**: after first paint, idle time is used to fetch all page chunks and build the search index, so later navigation is instant.
+- **Offline-ready toast** once the service worker has precached everything.
+
+## Quality gates
+
+- `.github/workflows/ci.yml` runs `npm run check` and a production build on every pull request and branch push.
+- `.github/workflows/deploy-pages.yml` runs the tests before building and deploying `main`.
 
 ## Design
 
@@ -169,7 +181,9 @@ Verified locally with headless Chromium against `vite preview`:
   every route, the LG reader, the paragraph sheet and search all work;
 - **zero** external requests and zero failed requests after install;
 - no horizontal scroll at **320 px** on any route;
-- `tsc --noEmit` is clean under `strict` (+ `noUncheckedIndexedAccess`).
+- `tsc --noEmit` is clean under `strict` (+ `noUncheckedIndexedAccess`);
+- video theater: an "ended" event removes the player and shows the end card; a spoofed message from another origin is ignored; the "watched" mark persists;
+- focus mode hides and restores the header; back navigation restores the scroll position.
 
 Not run here: a Lighthouse audit (Lighthouse 12 removed its PWA category; use
 Chrome DevTools → Application → Manifest for installability), and device tests

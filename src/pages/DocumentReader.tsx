@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Star } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Maximize2, Minimize2, Star } from 'lucide-react';
+import { useFocusMode } from '@/store/focus';
 import { DocTypeBadge, SolemnityBadge } from '@/components/Badges';
 import { Commentary, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar } from '@/components/TextBlocks';
 import { ParagraphSheet, copyCitation } from '@/components/ParagraphSheet';
@@ -205,6 +206,18 @@ export function DocumentReader() {
   const [tocOpen, setTocOpen] = useState(false);
   const [currentId, setCurrentId] = useState<string | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
+  const focus = useFocusMode((s) => s.on);
+  const setFocus = useFocusMode((s) => s.set);
+
+  // Leave focus mode on Esc and whenever the reader unmounts.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && useFocusMode.getState().set(false);
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      useFocusMode.getState().set(false);
+    };
+  }, []);
   const [liveFraction, setLiveFraction] = useState(0);
 
   useDocumentTitle(doc ? `${doc.abbr} · ${doc.titleLa}` : undefined);
@@ -405,9 +418,9 @@ export function DocumentReader() {
         // TODO(content): add public/content/{docId}.json to enable the reader for this document.
         <Commentary>{t('doc.notSeeded')}</Commentary>
       ) : (
-        <div className="grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]">
+        <div className={focus ? 'mx-auto max-w-[50rem]' : 'grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]'}>
           {/* Table of contents (desktop) */}
-          <aside className="hidden lg:block" aria-label={t('doc.contents')}>
+          <aside data-chrome className="hidden lg:block" aria-label={t('doc.contents')}>
             <div className="sticky top-[calc(7.5rem+env(safe-area-inset-top))] max-h-[calc(100dvh-9rem)] overflow-y-auto pr-1">
               <p className="kicker mb-3">{t('doc.contents')}</p>
               <Outline doc={doc} paragraphs={paragraphs} currentId={currentId} onPick={goTo} />
@@ -416,15 +429,16 @@ export function DocumentReader() {
 
           <div className="min-w-0">
             {/* Toolbar */}
-            <div className="sticky top-[calc(3.5rem+3px+env(safe-area-inset-top))] z-20 -mx-4 mb-6 border-b border-line bg-bg/95 px-4 py-2 backdrop-blur lg:top-[calc(7rem+env(safe-area-inset-top))] lg:mx-0 lg:px-0">
-              <div className="flex items-center gap-2">
+            <div className="reader-toolbar sticky top-[calc(3.5rem+3px+env(safe-area-inset-top))] z-20 -mx-4 mb-6 border-b border-line bg-bg/95 px-4 py-2 backdrop-blur lg:top-[calc(7rem+env(safe-area-inset-top))] lg:mx-0 lg:px-0">
+              <div className="flex flex-wrap items-center gap-2">
                 <button
                   type="button"
+                  aria-label={t('doc.contents')}
                   onClick={() => setTocOpen(true)}
                   className="inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold lg:hidden"
                 >
                   <ListTree className="h-4 w-4" aria-hidden />
-                  {t('doc.contents')}
+                  <span className="hidden min-[400px]:inline">{t('doc.contents')}</span>
                 </button>
                 <label className="flex items-center gap-2 text-sm">
                   <span className="sr-only">{t('doc.jump')}</span>
@@ -442,7 +456,17 @@ export function DocumentReader() {
                     ))}
                   </select>
                 </label>
-                <div className="ml-auto flex rounded border border-line bg-card p-0.5" role="group" aria-label={t('settings.fontSize')}>
+                <button
+                  type="button"
+                  onClick={() => setFocus(!focus)}
+                  aria-pressed={focus}
+                  title={focus ? t('doc.focusExit') : t('doc.focus')}
+                  className="ml-auto inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold"
+                >
+                  {focus ? <Minimize2 className="h-4 w-4" aria-hidden /> : <Maximize2 className="h-4 w-4" aria-hidden />}
+                  <span className="hidden sm:inline">{focus ? t('doc.focusExit') : t('doc.focus')}</span>
+                </button>
+                <div className="flex rounded border border-line bg-card p-0.5" role="group" aria-label={t('settings.fontSize')}>
                   {sizes.map((s) => (
                     <button
                       key={s.value}

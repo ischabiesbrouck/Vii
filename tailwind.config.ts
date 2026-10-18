@@ -33,6 +33,11 @@ export default {
       maxWidth: { prose: '68ch', page: '76rem' },
       borderRadius: { DEFAULT: '3px', md: '4px', lg: '6px' },
       letterSpacing: { caps: '0.14em' },
+      boxShadow: {
+        card: '0 1px 2px rgb(var(--shadow) / 0.05), 0 2px 10px -2px rgb(var(--shadow) / 0.06)',
+        lift: '0 2px 4px rgb(var(--shadow) / 0.05), 0 14px 32px -8px rgb(var(--shadow) / 0.16)',
+      },
+      transitionTimingFunction: { out: 'cubic-bezier(0.22, 1, 0.36, 1)' },
     },
   },
   plugins: [animate],

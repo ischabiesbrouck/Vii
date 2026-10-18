@@ -31,6 +31,7 @@
     --ok: 22 101 52;
     --warn: 146 64 14;
     --bad: 153 27 27;
+    --shadow: 60 40 20;
     color-scheme: light;
   }
   .dark {
@@ -51,6 +52,7 @@
     --ok: 134 239 172;
     --warn: 253 186 116;
     --bad: 252 165 165;
+    --shadow: 0 0 0;
     color-scheme: dark;
   }
 
@@ -61,6 +63,8 @@
   }
   body {
     @apply bg-bg font-sans text-fg antialiased;
+    /* Faint paper grain (both themes); purely decorative, no network. */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     min-height: 100dvh;
     overflow-x: hidden;
     font-feature-settings: 'cv11', 'ss01';
@@ -122,10 +126,10 @@
     @apply text-accent underline decoration-accent/40 underline-offset-[3px] hover:decoration-accent;
   }
   .panel {
-    @apply rounded-md border border-line bg-card;
+    @apply rounded-lg border border-line bg-card shadow-card;
   }
   .panel-link {
-    @apply rounded-md border border-line bg-card transition-colors hover:border-gold;
+    @apply rounded-lg border border-line bg-card shadow-card transition duration-300 ease-out hover:-translate-y-0.5 hover:border-gold/70 hover:shadow-lift motion-reduce:hover:translate-y-0;
   }
   .la {
     font-style: italic;
@@ -133,6 +137,14 @@
   .reader-sm { font-size: 1rem; }
   .reader-md { font-size: 1.125rem; }
   .reader-lg { font-size: 1.3125rem; }
+}
+
+/* Reading focus mode: hides all app chrome around the text. */
+.focus-mode [data-chrome] {
+  display: none !important;
+}
+.focus-mode .reader-toolbar {
+  top: env(safe-area-inset-top) !important;
 }
 
 .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
