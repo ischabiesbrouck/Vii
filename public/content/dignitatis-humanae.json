@@ -24,7 +24,23 @@
         "ext:quanta-cura-1864"
       ],
       "noteNl": "Deze zin werd in de laatste redactie toegevoegd. Hoe zij zich verhoudt tot §2 vormt de kern van het interpretatiedebat; zie Claim Check.",
-      "noteEn": "This sentence was added in the final redaction. How it relates to §2 is the core of the interpretive debate; see Claim Check."
+      "noteEn": "This sentence was added in the final redaction. How it relates to §2 is the core of the interpretive debate; see Claim Check.",
+      "explain": {
+        "nl": {
+          "what": "De inleiding stelt vast dat de mensen van deze tijd zich steeds meer bewust worden van de waardigheid van de persoon en vrijheid van handelen vragen, vooral in godsdienstige zaken. Het Concilie belijdt eerst dat God zelf de weg van dienst en heil heeft bekendgemaakt en dat de ene ware godsdienst in de katholieke Kerk verwerkelijkt is. Alle mensen moeten de waarheid zoeken en aanhangen. De godsdienstvrijheid betreft de vrijwaring van dwang in de burgerlijke samenleving en laat de traditionele leer onaangetast.",
+          "who": "De verklaring richt zich tot de gehele Kerk en uitdrukkelijk ook tot de burgerlijke samenleving en haar overheden. De Concilievaders spreken samen met Paulus VI in een verklaring (*declaratio*), een genre dat een leer uiteenzet zonder nieuwe dogmatische definities. Onderwerp zijn de mensen van deze tijd, hun groeiend vrijheidsbesef en hun plicht tegenover God en zijn Kerk.",
+          "why": "Sinds de negentiende eeuw leerden de pausen, onder meer in *Quanta cura* (1864) en *Immortale Dei* (1885), dat de staat de ware godsdienst moet erkennen. Velen vreesden dat een verklaring over vrijheid die leer zou loochenen. De zin dat de traditionele leer onaangetast blijft, kwam pas in de laatste redactie tijdens de vierde zitting in de tekst, mede om aan de bezwaren van een minderheid tegemoet te komen.",
+          "how": "De inleiding opent met een waarneming van de tijd en met de woorden over de menselijke waardigheid die het document zijn naam geven. Daarna volgt een geloofsbelijdenis, en pas dan de afbakening van het onderwerp. Die volgorde, eerst waarheid en dan vrijheid, bepaalt de lezing van alles wat volgt. Het slot kondigt aan dat het Concilie de leer van recente pausen over de rechten van de persoon en de rechtsorde van de samenleving wil ontwikkelen.",
+          "meaning": "De term *subsistit in* is overgenomen uit LG §8: de ene ware godsdienst is concreet aanwezig in de katholieke Kerk. Het recht dat volgt, ligt op het vlak van de burgerlijke samenleving en laat de morele plicht tegenover de waarheid staan. Catechismus nr. 2104–2105 neemt beide lijnen over. Hoe de continuïteitszin zich tot DH §2 verhoudt, is omstreden: sommigen lezen ontwikkeling in continuïteit, anderen een compromis of een onopgeloste spanning."
+        },
+        "en": {
+          "what": "The introduction observes that people today are increasingly conscious of the dignity of the person and ask for freedom of action, above all in religious matters. The Council first professes that God himself has made known the way of service and salvation, and that the one true religion subsists in the Catholic Church. All are bound to seek the truth and hold to it. Religious freedom concerns immunity from coercion in civil society and leaves traditional doctrine untouched.",
+          "who": "The declaration addresses the whole Church and expressly also civil society and its governments. The Council Fathers speak together with Paul VI in a declaration (*declaratio*), a genre that sets out teaching without new dogmatic definitions. Its subject is the people of this age, their growing awareness of freedom, and their duty toward God and his Church.",
+          "why": "Since the nineteenth century the popes, in *Quanta cura* (1864) and *Immortale Dei* (1885) among others, had taught that the state must recognise the true religion. Many feared that a declaration on freedom would deny that teaching. The sentence stating that traditional doctrine remains untouched entered the text only in the final redaction during the fourth session, partly to meet the objections of a minority.",
+          "how": "The introduction opens with an observation about the age and with the words on human dignity that give the document its name. A profession of faith follows, and only then the delimitation of the subject. That order, truth first and freedom second, governs the reading of everything that follows. The closing sentence announces that the Council means to develop the teaching of recent popes on the rights of the person and the constitutional order of society.",
+          "meaning": "The term *subsistit in* is taken from LG §8: the one true religion is concretely present in the Catholic Church. The right that follows lies on the plane of civil society and leaves the moral duty toward truth in place. Catechism nos. 2104–2105 take up both lines. How the continuity sentence relates to DH §2 is disputed: some read development in continuity, others a compromise or an unresolved tension."
+        }
+      }
     },
     {
       "id": "DH-2",
@@ -45,7 +61,23 @@
         "ext:quanta-cura-1864"
       ],
       "noteNl": "Het recht wordt geformuleerd als een recht op vrijwaring van dwang (een negatief recht), niet als een recht om te geloven wat men wil zonder morele verplichting.",
-      "noteEn": "The right is framed as a right to immunity from coercion (a negative right), not as a right to believe whatever one wishes without moral obligation."
+      "noteEn": "The right is framed as a right to immunity from coercion (a negative right), not as a right to believe whatever one wishes without moral obligation.",
+      "explain": {
+        "nl": {
+          "what": "Het Concilie verklaart dat de menselijke persoon recht heeft op godsdienstvrijheid. Niemand mag door individuen, groepen of de staat gedwongen worden tegen zijn geweten te handelen, of verhinderd worden ernaar te handelen, privé of publiek, alleen of met anderen, binnen de juiste grenzen. Dat recht is gegrond in de waardigheid van de persoon, gekend door rede en openbaring. Het moet in de rechtsorde als burgerrecht worden erkend en blijft ook gelden voor wie zijn plicht de waarheid te zoeken niet nakomt.",
+          "who": "De Concilievaders spreken hier tot alle mensen en met name tot wetgevers en regeringen, want het recht moet in de rechtsorde van de samenleving worden verankerd. Drager van het recht is iedere menselijke persoon, gelovig of niet. Wie het recht moet eerbiedigen, zijn de medeburgers, de sociale groepen en elke menselijke macht.",
+          "why": "Het oudere schema van these en hypothese liet de vrijheid van andersdenkenden hooguit gedogen als minder kwaad. Bisschoppen uit landen met een katholieke minderheid of een communistisch regime vroegen om een principiële grondslag. Over die grondslag werd tot 1965 gestreden. Murray benadrukte de beperkte bevoegdheid van de staat, andere theologen de persoon en de vrijheid van de geloofsdaad. De eindtekst verbindt beide lijnen.",
+          "how": "De paragraaf heeft de vorm van een plechtige verklaring (*declarat*) en is helder opgebouwd: eerst het recht, dan de inhoud, de grondslag en de juridische gevolgen. Het argument loopt via de plicht. Omdat de mens de waarheid moet zoeken en aanhangen, kan hij dat alleen in vrijheid en zonder uitwendige dwang. De noten verwijzen naar recente pausen, onder wie Johannes XXIII. Met DH §2 begint het eerste deel (DH §2–8).",
+          "meaning": "Godsdienstvrijheid betekent hier *immunitas a coercitione*, een negatief recht tegenover anderen. Het houdt geen uitspraak in dat alle godsdiensten even waar zijn, en het ontslaat de mens voor God niet van de plicht de waarheid te zoeken. Catechismus nr. 2106–2108 zegt uitdrukkelijk dat het geen morele toestemming is om de dwaling aan te hangen. Of DH §2 de leer van *Quanta cura* ontwikkelt of herroept, blijft omstreden; zie de Claim Check."
+        },
+        "en": {
+          "what": "The Council declares that the human person has a right to religious freedom. No one may be forced by individuals, groups or the state to act against his conscience, or be prevented from acting according to it, privately or publicly, alone or with others, within due limits. The right is grounded in the dignity of the person, known by reason and revelation. It must be recognised as a civil right in the legal order, and it holds even for those who fail in their duty to seek the truth.",
+          "who": "The Council Fathers speak here to all people and in particular to legislators and governments, since the right must be anchored in the juridical order of society. The bearer of the right is every human person, believer or not. Those bound to respect it are fellow citizens, social groups and every human power.",
+          "why": "The older scheme of thesis and hypothesis allowed the freedom of dissenters to be tolerated at most, as a lesser evil. Bishops from countries with a Catholic minority or a communist regime asked for a grounding in principle. That grounding was argued over until 1965. Murray stressed the limited competence of the state, other theologians the person and the freedom of the act of faith. The final text combines both lines.",
+          "how": "The paragraph takes the form of a solemn declaration (*declarat*) and is clearly built: first the right, then its content, its foundation and its juridical consequences. The argument runs through obligation. Because man must seek and adhere to the truth, he can do so only in freedom and without external coercion. The footnotes refer to recent popes, John XXIII among them. DH §2 opens the first part (DH §2–8).",
+          "meaning": "Religious freedom here means *immunitas a coercitione*, a negative right held against others. It makes no claim that all religions are equally true, and it does not release anyone before God from the duty to seek the truth. Catechism nos. 2106–2108 state expressly that it is no moral licence to adhere to error. Whether DH §2 develops or reverses the teaching of *Quanta cura* remains disputed; see the Claim Check."
+        }
+      }
     },
     {
       "id": "DH-3",
@@ -60,7 +92,23 @@
       ],
       "crossRefs": [
         "GS-16"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De paragraaf legt uit hoe het recht samenhangt met de goddelijke wet. God bestuurt de wereld door zijn eeuwige wet; de mens neemt daaraan deel en kent haar door zijn geweten. De waarheid moet worden gezocht op een wijze die bij de persoon past: door vrij onderzoek, onderricht, gesprek en uitwisseling. Godsdienst bestaat vooral in vrije, innerlijke daden. De overheid moet het godsdienstig leven erkennen en begunstigen, maar overschrijdt haar grenzen als zij godsdienstige daden wil voorschrijven of verhinderen.",
+          "who": "Het Concilie spreekt tot ieder mens als drager van een geweten en tot de overheid, wier bevoegdheid het afbakent. Het onderwerp is de verhouding tussen goddelijke wet, geweten en burgerlijke macht. Ook theologen en filosofen zijn aangesproken, want de paragraaf vormt de wijsgerige kern van het betoog in het eerste deel.",
+          "why": "Tegenstanders vreesden dat een recht op godsdienstvrijheid op subjectivisme zou rusten, alsof het geweten zelf de norm schept. DH §3 beantwoordt dat bezwaar door het geweten onder de objectieve goddelijke wet te plaatsen. Zo kon de verklaring een recht formuleren zonder in relativisme te vervallen. De paragraaf sluit aan bij de natuurwetleer van Thomas van Aquino, die in de noten wordt aangehaald.",
+          "how": "De toon is betogend en wijsgerig. Het argument loopt van de eeuwige wet via het geweten naar de innerlijke aard van de godsdienst en eindigt bij de grenzen van de staat. De noten verwijzen naar Thomas van Aquino, *Summa theologiae* I-II, q. 91 en q. 93. De paragraaf legt de grond onder DH §2 en bereidt de bepalingen over gemeenschappen en openbare orde voor (DH §4–7).",
+          "meaning": "Het geweten is hier het vermogen waarmee de mens de goddelijke wet waarneemt; het is geen autonome bron van normen. Dat sluit aan bij GS §16 en Catechismus nr. 1776–1782. De paragraaf vraagt de staat bovendien het godsdienstig leven van de burgers te erkennen en te begunstigen. Een lezing van DH §3 als pleidooi voor seculiere neutraliteit gaat aan die zin voorbij, net als een lezing die het geweten van de waarheid losmaakt."
+        },
+        "en": {
+          "what": "The paragraph explains how the right relates to divine law. God governs the world by his eternal law; man shares in it and knows it through conscience. Truth is to be sought in a manner befitting the person: by free inquiry, teaching, conversation and exchange. Religion consists above all in free, interior acts. Government ought to acknowledge and favour the religious life of citizens, but it oversteps its limits if it presumes to command or prevent religious acts.",
+          "who": "The Council speaks to every person as the bearer of a conscience and to government, whose competence it marks out. The subject is the relation between divine law, conscience and civil power. Theologians and philosophers are addressed as well, since the paragraph forms the philosophical core of the argument in the first part.",
+          "why": "Opponents feared that a right to religious freedom would rest on subjectivism, as if conscience itself created the norm. DH §3 answers that objection by placing conscience under the objective divine law. The declaration could thus formulate a right without falling into relativism. The paragraph follows the natural law teaching of Thomas Aquinas, cited in the footnotes.",
+          "how": "The tone is argumentative and philosophical. The argument runs from the eternal law through conscience to the interior nature of religion and ends at the limits of the state. The footnotes cite Thomas Aquinas, *Summa theologiae* I-II, q. 91 and q. 93. The paragraph lays the ground under DH §2 and prepares the provisions on communities and public order (DH §4–7).",
+          "meaning": "Conscience here is the faculty by which man perceives the divine law; it is no autonomous source of norms. This agrees with GS §16 and Catechism nos. 1776–1782. The paragraph also asks the state to acknowledge and favour the religious life of its citizens. Reading DH §3 as a plea for secular neutrality overlooks that sentence, as does any reading that detaches conscience from truth."
+        }
+      }
     },
     {
       "id": "DH-4",
@@ -76,7 +124,23 @@
       "crossRefs": [
         "DH-2",
         "DH-13"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De vrijheid die individuen toekomt, geldt ook voor hen als gemeenschap. Godsdienstige gemeenschappen mogen zich naar eigen normen besturen, openbaar eredienst houden, hun bedienaren kiezen, opleiden en benoemen, gebouwen en goederen verwerven en hun geloof in woord en geschrift verkondigen. Daarbij moeten zij elke vorm van dwang of oneerlijke overreding vermijden, vooral tegenover armen en ongeschoolden. Zij mogen ook bijeenkomsten houden en opvoedkundige, culturele, caritatieve en sociale instellingen oprichten.",
+          "who": "Het Concilie spreekt over godsdienstige gemeenschappen, de Katholieke Kerk en andere, en richt zich tot de overheden die hun ruimte moeten eerbiedigen. Tegelijk spreekt het die gemeenschappen zelf aan op de manier waarop zij hun geloof verspreiden en nieuwe leden zoeken.",
+          "why": "In de jaren zestig beperkten verschillende staten het leven van kerken: de benoeming van bisschoppen, de opleiding van priesters en het contact met Rome. Bisschoppen uit Oost-Europa kenden die toestand uit eigen ervaring. Een recht dat alleen het individu beschermde, zou de gemeenschap onbeschermd laten. De waarschuwing tegen oneerlijke overreding maakt duidelijk dat het recht ook een plicht meebrengt voor wie het geloof uitdraagt.",
+          "how": "De paragraaf werkt als een opsomming van concrete vrijheden, haast als een wettekst. Zij past het beginsel van DH §2 toe op het sociale karakter van mens en godsdienst. De grens van de openbare orde blijft gelden en wordt in DH §7 uitgewerkt. Later past DH §13 dezelfde gedachte toe op de vrijheid van de Kerk zelf.",
+          "meaning": "Godsdienstvrijheid is hier ook een collectief recht: de vrijheid van een gemeenschap om haar eigen leven en bestuur te regelen. De paragraaf beschrijft wat de staat niet mag en verklaart godsdiensten daarmee niet gelijkwaardig. Het onderscheid tussen getuigen en manipuleren keert terug in latere documenten over evangelisatie en dialoog. Wie DH §4 aanhaalt als verbod op zending, ziet over het hoofd dat verkondiging in woord en geschrift uitdrukkelijk tot het recht behoort."
+        },
+        "en": {
+          "what": "The freedom that belongs to individuals also belongs to them as a community. Religious communities may govern themselves by their own norms, hold public worship, select, train and appoint their ministers, acquire buildings and property, and proclaim their faith in speech and writing. In doing so they must avoid every kind of coercion or dishonest persuasion, especially toward the poor and uneducated. They may also hold meetings and establish educational, cultural, charitable and social organisations.",
+          "who": "The Council speaks of religious communities, the Catholic Church and others, and addresses the governments that must respect their space. At the same time it addresses those communities themselves on the way they spread their faith and seek new members.",
+          "why": "In the 1960s several states restricted the life of churches: the appointment of bishops, the training of priests and contact with Rome. Bishops from Eastern Europe knew that situation at first hand. A right that protected only the individual would have left the community unprotected. The warning against dishonest persuasion makes clear that the right also brings a duty for those who spread the faith.",
+          "how": "The paragraph works as a list of concrete freedoms, almost like a legal text. It applies the principle of DH §2 to the social nature of man and of religion. The limit of public order still applies and is worked out in DH §7. Later, DH §13 applies the same reasoning to the freedom of the Church herself.",
+          "meaning": "Religious freedom is here also a collective right: the freedom of a community to order its own life and government. The paragraph describes what the state may not do, and in doing so it does not declare religions equal. The distinction between witness and manipulation returns in later documents on evangelisation and dialogue. Anyone citing DH §4 as a ban on mission overlooks that proclamation in speech and writing belongs expressly to the right."
+        }
+      }
     },
     {
       "id": "DH-5",
@@ -93,7 +157,23 @@
       "crossRefs": [
         "DH-4",
         "GE-3"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het gezin is een samenleving met een eigen, oorspronkelijk recht en mag zijn godsdienstig leven onder leiding van de ouders vrij beleven. De ouders bepalen welke godsdienstige opvoeding hun kinderen krijgen. De overheid moet hun recht erkennen om vrij scholen te kiezen, zonder hun daarvoor onrechtvaardige lasten op te leggen. Zij schendt dat recht wanneer kinderen lessen moeten volgen die tegen de overtuiging van hun ouders ingaan, of wanneer één onderwijsstelsel zonder godsdienstige vorming wordt opgelegd.",
+          "who": "Het Concilie spreekt over ouders en gezinnen en richt zich tot de overheden die het onderwijs regelen. Katholieke ouders in landen waar zij een minderheid vormen en andersgelovige ouders in overwegend katholieke landen vallen onder dezelfde regel.",
+          "why": "In veel landen was de schoolkwestie scherp: staatsmonopolies op onderwijs, verplichte ideologische vorming onder communistische regimes en financiële achterstelling van confessionele scholen. De Kerk had het ouderlijk recht al eerder verdedigd, onder meer in *Divini illius magistri* (1929) van Pius XI. DH §5 plaatst dat recht nu in het kader van de godsdienstvrijheid, die voor iedereen geldt.",
+          "how": "De paragraaf past het beginsel van DH §2 en DH §4 toe op de kleinste gemeenschap, het gezin. Zij noemt eerst het recht en daarna concrete schendingen ervan. Ze sluit aan bij de verklaring over de christelijke opvoeding, die de ouders de eerste opvoeders noemt en hun vrije schoolkeuze verdedigt (GE §3 en GE §6). Beide teksten werden in de laatste zittingen voltooid.",
+          "meaning": "Het ouderlijk recht gaat volgens de tekst aan de staat vooraf; de staat erkent het en verleent het niet. Kinderen worden daarmee geen bezit van de ouders: het gaat om opvoeding in overeenstemming met de overtuiging van het gezin. Catechismus nr. 2221–2229 en de canones 793 en 797 van het Wetboek van 1983 nemen dit over. Over de concrete vorm van schoolfinanciering doet de paragraaf geen uitspraak."
+        },
+        "en": {
+          "what": "The family is a society in its own original right and may freely live its religious life under the guidance of parents. Parents determine the religious education their children receive. Government must acknowledge their right to choose schools freely, without imposing unjust burdens on them for that choice. It violates the right when children are forced to attend lessons contrary to their parents' beliefs, or when a single system of education without religious formation is imposed on all.",
+          "who": "The Council speaks of parents and families and addresses the governments that regulate education. Catholic parents in countries where they are a minority and parents of other faiths in largely Catholic countries fall under the same rule.",
+          "why": "In many countries the school question was acute: state monopolies on education, compulsory ideological formation under communist regimes and financial disadvantage for denominational schools. The Church had defended parental rights before, among other places in *Divini illius magistri* (1929) of Pius XI. DH §5 now places that right within the framework of religious freedom, which holds for everyone.",
+          "how": "The paragraph applies the principle of DH §2 and DH §4 to the smallest community, the family. It names the right first and then concrete violations of it. It agrees with the declaration on Christian education, which calls parents the first educators and defends their free choice of school (GE §3 and GE §6). Both texts were completed in the last sessions.",
+          "meaning": "According to the text, parental right precedes the state; the state recognises it and does not grant it. Children do not thereby become the property of their parents: the point is an education consistent with the convictions of the family. Catechism nos. 2221–2229 and canons 793 and 797 of the 1983 Code take this up. The paragraph says nothing about the concrete form of school funding."
+        }
+      }
     },
     {
       "id": "DH-6",
@@ -110,7 +190,23 @@
         "DH-1",
         "DH-7",
         "ext:immortale-dei-1885"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het algemeen welzijn bestaat vooral in de bescherming van de rechten en de vervulling van de plichten van de persoon. Zorg voor de godsdienstvrijheid is daarom een taak van burgers, groepen, overheid en Kerk, elk op eigen wijze. De overheid moet die vrijheid door rechtvaardige wetten beschermen. Krijgt één gemeenschap in de rechtsorde een bijzondere erkenning, dan moet het recht van allen gewaarborgd blijven. De overheid mag niemand een godsdienst opleggen of verbieden en moet de gelijkheid voor de wet bewaken.",
+          "who": "Deze paragraaf richt zich vooral tot regeringen en wetgevers, ook in landen met een staatskerk of met een concordaat dat de katholieke godsdienst erkent. Daarnaast noemt zij burgers, sociale groepen en de Kerk als dragers van verantwoordelijkheid voor de vrijheid van allen.",
+          "why": "In de aula speelde de vraag of de verklaring de confessionele staat veroordeelde. Vooral een deel van de Spaanse en Italiaanse bisschoppen vreesde gevolgen voor de bestaande verhoudingen met de staat. De tekst komt aan die vrees tegemoet: een bijzondere erkenning blijft mogelijk, mits de vrijheid van allen gewaarborgd is. Het begrip algemeen welzijn sluit aan bij *Pacem in terris* (1963), waarin Johannes XXIII het in termen van rechten en plichten beschreef.",
+          "how": "De paragraaf werkt met voorwaardelijke zinnen: als er een bijzondere erkenning is, dan geldt een voorwaarde. Het betoog loopt van het begrip algemeen welzijn naar de plichten van de overheid en eindigt bij het verbod om godsdienst op te leggen of uit te bannen. De paragraaf staat tussen de bepalingen over gezin en onderwijs (DH §5) en die over de grenzen van de vrijheid (DH §7).",
+          "meaning": "De verklaring laat een confessionele staat toe en verbindt daaraan een voorwaarde: de godsdienstvrijheid van allen. Ook het omgekeerde wordt genoemd: een overheid mag geen godsdienst onderdrukken, een verwijzing naar de ervaring onder totalitaire regimes. Of DH §6 de oudere leer van de these handhaaft of feitelijk achter zich laat, is een van de omstreden punten. De Catechismus (nr. 2105–2109) bespreekt de sociale plicht en het recht in één doorlopende uiteenzetting."
+        },
+        "en": {
+          "what": "The common good consists chiefly in protecting the rights and fulfilling the duties of the human person. Care for religious freedom is therefore a task for citizens, groups, government and Church, each in its own way. Government must protect that freedom by just laws. If one community receives special recognition in the constitutional order, the right of all must remain guaranteed. Government may impose or forbid religion to no one and must safeguard equality before the law.",
+          "who": "This paragraph is addressed above all to governments and legislators, including those in countries with an established church or a concordat recognising the Catholic religion. It also names citizens, social groups and the Church as bearers of responsibility for the freedom of all.",
+          "why": "In the hall the question arose whether the declaration condemned the confessional state. Part of the Spanish and Italian episcopate in particular feared consequences for existing relations with the state. The text meets that fear: special recognition remains possible, provided the freedom of all is guaranteed. Its notion of the common good follows *Pacem in terris* (1963), where John XXIII described it in terms of rights and duties.",
+          "how": "The paragraph works with conditional clauses: if there is special recognition, a condition applies. The argument runs from the notion of the common good to the duties of government and ends with the prohibition on imposing or suppressing religion. It stands between the provisions on family and education (DH §5) and those on the limits of freedom (DH §7).",
+          "meaning": "The declaration permits a confessional state and attaches a condition to it: the religious freedom of all. The converse is named as well: government may suppress no religion, a reference to experience under totalitarian regimes. Whether DH §6 maintains the older teaching of the thesis or in fact leaves it behind is one of the disputed points. The Catechism (nos. 2105–2109) treats the social duty and the right in one continuous exposition."
+        }
+      }
     },
     {
       "id": "DH-7",
@@ -127,7 +223,23 @@
         "DH-2"
       ],
       "noteNl": "§7 noemt als grenzen de bescherming van de rechten van allen, de openbare vrede en de openbare zedelijkheid, samen de 'openbare orde'.",
-      "noteEn": "§7 names as limits the protection of the rights of all, public peace and public morality, together 'public order'."
+      "noteEn": "§7 names as limits the protection of the rights of all, public peace and public morality, together 'public order'.",
+      "explain": {
+        "nl": {
+          "what": "Het recht op godsdienstvrijheid wordt in de samenleving uitgeoefend en kent dus grenzen. Ieder moet bij het gebruik van zijn vrijheid rekening houden met de rechten van anderen, met zijn eigen plichten en met het algemeen welzijn. De samenleving mag zich verdedigen tegen misbruik onder het voorwendsel van godsdienstvrijheid. Die bescherming komt vooral de overheid toe, volgens rechtsnormen die passen bij de objectieve morele orde. Vrijheid moet zo ruim mogelijk worden erkend en alleen beperkt waar en voor zover dat nodig is.",
+          "who": "Het Concilie spreekt tot alle burgers die vrijheden uitoefenen en tot de overheden die over de grenzen beslissen. Het onderwerp is de openbare orde, die de bescherming van de rechten van allen, de openbare vrede en de openbare zedelijkheid omvat.",
+          "why": "Critici van het ontwerp vreesden dat een recht op godsdienstvrijheid ook sekten en schadelijke praktijken zou beschermen. Anderen vreesden dat staten het ruime begrip algemeen welzijn zouden gebruiken om godsdiensten willekeurig te beperken. De keuze voor het smallere begrip openbare orde, dat onder meer Murray verdedigde, beantwoordt beide zorgen.",
+          "how": "De paragraaf werkt de woorden binnen de juiste grenzen uit DH §2 uit. Zij noemt eerst het beginsel van persoonlijke en sociale verantwoordelijkheid, dan het recht van de samenleving om zich te verdedigen, en ten slotte de goederen die samen de openbare orde vormen. Het slot formuleert een vermoeden ten gunste van de vrijheid. Met DH §8, over opvoeding tot verantwoorde vrijheid, sluit het eerste deel af.",
+          "meaning": "Openbare orde (*ordo publicus*) is een smaller begrip dan algemeen welzijn. Een overheid mag een godsdienst niet beperken omdat zij hem onwaar acht; zij mag dat wel om rechten van anderen, vrede en zedelijkheid te beschermen. Catechismus nr. 2109 waarschuwt zowel tegen willekeurige beperking als tegen een louter positivistische of naturalistische opvatting van die grenzen. Hoe ver de openbare zedelijkheid reikt, wordt in concrete gevallen verschillend beoordeeld."
+        },
+        "en": {
+          "what": "The right to religious freedom is exercised in society and therefore has limits. In using their freedom all must respect the rights of others, their own duties and the common good. Society may defend itself against abuses committed on the pretext of religious freedom. That protection belongs chiefly to government, acting by juridical norms in keeping with the objective moral order. Freedom is to be recognised as far as possible and curtailed only when and in so far as necessary.",
+          "who": "The Council speaks to all citizens who exercise freedoms and to the governments that decide on their limits. The subject is public order, which comprises the protection of the rights of all, public peace and public morality.",
+          "why": "Critics of the draft feared that a right to religious freedom would also protect sects and harmful practices. Others feared that states would use the broad notion of the common good to restrict religions arbitrarily. Choosing the narrower notion of public order, which Murray among others defended, answers both concerns.",
+          "how": "The paragraph spells out the words within due limits from DH §2. It names first the principle of personal and social responsibility, then the right of society to defend itself, and finally the goods that together make up public order. The close states a presumption in favour of freedom. With DH §8, on education for responsible freedom, the first part ends.",
+          "meaning": "Public order (*ordo publicus*) is a narrower notion than the common good. A government may not restrict a religion because it judges it false; it may do so to protect the rights of others, peace and morality. Catechism no. 2109 warns both against arbitrary restriction and against a merely positivist or naturalist conception of those limits. How far public morality reaches is judged differently in concrete cases."
+        }
+      }
     },
     {
       "id": "DH-9",

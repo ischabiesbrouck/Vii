@@ -5,6 +5,39 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "CD-1",
+      "docId": "christus-dominus",
+      "number": 1,
+      "textEn": "Christ the Lord, Son of the living God, came that He might save His people from their sins and that all men might be sanctified. Just as He Himself was sent by the Father, so He also sent His apostles.",
+      "textNl": "Christus de Heer, de Zoon van de levende God, is gekomen om zijn volk van zijn zonden te verlossen en opdat alle mensen geheiligd zouden worden. Zoals Hij zelf door de Vader gezonden was, zo heeft Hij ook zijn apostelen gezonden.",
+      "textLa": "Christus Dominus, Filius Dei vivi, …",
+      "tags": [
+        "bishops",
+        "mission",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "CD-2",
+        "LG-18"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De inleiding van het decreet begint bij Christus. Hij kwam om zijn volk van de zonde te redden en alle mensen te heiligen, en zoals de Vader Hem zond, zond Hij de apostelen. Hij gaf hun de heilige Geest, opdat zij de Vader op aarde zouden verheerlijken, de mensen zouden redden en het lichaam van Christus, de Kerk, zouden opbouwen. Het bisschopsambt krijgt zijn plaats binnen die zending.",
+          "who": "Het Concilie spreekt met Paulus VI in een decreet tot heel de Kerk, en in het bijzonder tot de bisschoppen, over wie het document gaat. In deze eerste paragraaf staat de bisschop zelf nog niet in het middelpunt. Het onderwerp is Christus, die door de Vader gezonden is, en de apostelen die Hij op zijn beurt uitzendt. Van hen leiden de bisschoppen hun ambt af (CD §2).",
+          "why": "Het ontwerp dat in november 1963 in de aula werd besproken, opende met juridische vragen over de verhouding tussen bisschoppen en Romeinse Curie. Veel vaders vonden het te juridisch en vroegen dat het zou aansluiten bij de leer over het bisschopsambt die in het schema over de Kerk werd uitgewerkt. De definitieve tekst begint daarom met de zending van Christus en de apostelen, zoals ook LG §18–20 doet.",
+          "how": "De paragraaf is kort en heeft de vorm van een bijbelse inleiding. Hij sluit aan bij Matteüs 1,21 over Jezus die zijn volk redt, bij Johannes 20,21 over de zending door de Vader en bij Efeziërs 4,12 over de opbouw van het lichaam van Christus. Het decreet volgt hier de gang van Lumen Gentium, van de zending van de Zoon naar het apostolaat en de Kerk. De volgende paragrafen leiden daaruit het ambt van paus en bisschoppen af.",
+          "meaning": "Met zending (missio) wordt bedoeld dat het ambt van de bisschoppen teruggaat op de opdracht die Christus aan de apostelen gaf. Het staat in dienst van heiliging en heil van de mensen. Wie het decreet als louter bestuursrecht leest, mist dit vertrekpunt; de juridische bepalingen die volgen, veronderstellen het. De Catechismus volgt in nr. 857–862 dezelfde gedachtegang over de apostelen en hun opvolgers."
+        },
+        "en": {
+          "what": "The decree's preface begins with Christ. He came to save his people from sin and to sanctify all people, and as the Father sent him, so he sent the apostles. He gave them the Holy Spirit so that they might glorify the Father on earth, save people and build up the body of Christ, which is the Church. The episcopal office takes its place within that mission.",
+          "who": "The Council, with Paul VI, speaks in a decree to the whole Church and above all to the bishops, who are the subject of the document. In this first paragraph the bishop is not yet in the foreground. The subject is Christ, sent by the Father, and the apostles whom he in turn sends out. From them the bishops derive their office (CD §2).",
+          "why": "The draft discussed in the hall in November 1963 opened with juridical questions about relations between bishops and the Roman Curia. Many Fathers found it too juridical and asked that it build on the doctrine of the episcopate then being worked out in the schema on the Church. The final text therefore begins with the mission of Christ and the apostles, as LG §18–20 also does.",
+          "how": "The paragraph is short and takes the form of a biblical preface. It draws on Matthew 1:21 on Jesus saving his people, John 20:21 on the sending by the Father, and Ephesians 4:12 on building up the body of Christ. The decree follows the movement of Lumen Gentium here, from the mission of the Son to the apostolate and the Church. The following paragraphs derive the office of pope and bishops from it.",
+          "meaning": "Mission (missio) means that the bishops' office goes back to the commission Christ gave the apostles. It serves the sanctification and salvation of people. A reading of the decree as mere administrative law misses this starting point, which the juridical provisions that follow presuppose. The Catechism follows the same line of thought on the apostles and their successors in nos. 857–862."
+        }
+      }
+    },
+    {
       "id": "CD-2",
       "docId": "christus-dominus",
       "number": 2,
@@ -17,7 +50,56 @@
       "crossRefs": [
         "LG-22",
         "ext:pastor-aeternus-1870"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "§2 zet de grondlijnen van het ambt uiteen. Christus gaf Petrus en zijn opvolgers de taak de Kerk te weiden. Daarom heeft de paus krachtens goddelijke instelling het hoogste, volledige, onmiddellijke en universele gezag in de zielzorg, over alle Kerken en alle gelovigen. Ook de bisschoppen zijn door de heilige Geest aangesteld, als opvolgers van de apostelen. Samen met de paus en onder zijn gezag zetten zij als leraren, priesters en herders het werk van Christus voort.",
+          "who": "Het Concilie spreekt over de paus en de bisschoppen, en richt zich daarbij vooral tot de bisschoppen zelf. Zij lezen hier hoe hun ambt zich verhoudt tot dat van de opvolger van Petrus. Voor alle gelovigen geeft de paragraaf de grondslag van het kerkelijk gezag weer, zoals het decreet die verder praktisch uitwerkt.",
+          "why": "De formule over het pauselijk gezag komt uit *Pastor aeternus* (1870) van Vaticanum I, dat de primaatsmacht als volledig, gewoon en onmiddellijk definieerde. Door de onderbreking van dat concilie in 1870 kwam een leer over de bisschoppen er niet meer aan bod. Vaticanum II wilde die leemte vullen zonder aan het primaat af te doen. §2 houdt beide in één paragraaf bij elkaar, in lijn met LG §18 en LG §22.",
+          "how": "De paragraaf is leerstellig van toon, ook al staat hij in een decreet. Eerst wordt het primaat beschreven, met de terminologie van Vaticanum I; daarna het ambt van de bisschoppen, die door de Geest zijn aangesteld (Handelingen 20,28). De taken van leren, heiligen en besturen keren in hoofdstuk II terug als ordening van de bisschoppelijke opdracht (CD §12–16).",
+          "meaning": "Onmiddellijk gezag betekent dat de paus rechtstreeks in elk bisdom kan optreden, zonder tussenkomst van de bisschop. Dat maakt de bisschoppen nog geen gedelegeerden van de paus: zij hebben een eigen gezag (LG §27; CD §8). Hoe beide gezagsvormen zich tot elkaar verhouden, blijft een vraag in de theologie. Het Wetboek van 1983 neemt de formule over in can. 331, de Catechismus in nr. 882."
+        },
+        "en": {
+          "what": "§2 sets out the foundations of the office. Christ entrusted to Peter and his successors the task of feeding the Church. The pope therefore has, by divine institution, supreme, full, immediate and universal authority over the care of souls, over all Churches and all the faithful. The bishops too are appointed by the Holy Spirit as successors of the apostles. Together with the pope and under his authority they continue Christ's work as teachers, priests and shepherds.",
+          "who": "The Council speaks about the pope and the bishops and addresses itself above all to the bishops. Here they read how their office relates to that of Peter's successor. For all the faithful the paragraph states the basis of ecclesial authority, which the rest of the decree then applies in practice.",
+          "why": "The formula on papal authority comes from *Pastor aeternus* (1870) of Vatican I, which defined primatial power as full, ordinary and immediate. Because that council was interrupted in 1870, it never reached a doctrine on the bishops. Vatican II wished to fill that gap without diminishing the primacy. §2 holds both together in a single paragraph, in line with LG §18 and LG §22.",
+          "how": "The paragraph is doctrinal in tone, although it stands in a decree. It first describes the primacy in the terminology of Vatican I, then the office of the bishops, who are placed by the Spirit (Acts 20:28). The tasks of teaching, sanctifying and governing return in chapter II as the framework of the bishop's duties (CD §12–16).",
+          "meaning": "Immediate authority means that the pope can act directly in any diocese without going through the bishop. This does not make the bishops delegates of the pope: they have an authority of their own (LG §27; CD §8). How the two relate remains a question in theology. The 1983 Code takes up the formula in can. 331 and the Catechism in no. 882."
+        }
+      }
+    },
+    {
+      "id": "CD-4",
+      "docId": "christus-dominus",
+      "number": 4,
+      "textEn": "Bishops, by virtue of their sacramental consecration and hierarchical communion with the head and other members of the college, are constituted members of the episcopal body.",
+      "textNl": "Bisschoppen worden krachtens hun sacramentele wijding en hun hiërarchische gemeenschap met het hoofd en de andere leden van het college lid van het bisschoppelijk lichaam.",
+      "tags": [
+        "collegiality",
+        "bishops",
+        "hierarchy"
+      ],
+      "crossRefs": [
+        "LG-22",
+        "CD-5",
+        "ext:nota-praevia-1964"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Hoofdstuk I opent met het bisschoppencollege. Iemand wordt lid van het college door de sacramentele wijding en door de hiërarchische gemeenschap met de paus en de andere bisschoppen. Het college zet het college van de apostelen voort en is, samen met zijn hoofd en nooit zonder hem, drager van het hoogste gezag in de Kerk. Dat gezag wordt plechtig uitgeoefend in een oecumenisch concilie, en ook door de over de wereld verspreide bisschoppen wanneer de paus hen tot collegiaal handelen oproept of hun gezamenlijk handelen aanvaardt.",
+          "who": "De paragraaf spreekt over alle bisschoppen die lid zijn van het college, en over de paus als zijn hoofd. Hij richt zich tot de bisschoppen, die hier hun medeverantwoordelijkheid voor de hele Kerk leren kennen. Ook het recht van alle leden van het college om aan een oecumenisch concilie deel te nemen wordt uitdrukkelijk genoemd.",
+          "why": "Collegialiteit was het meest omstreden thema van de tweede zitting. Op 30 oktober 1963 sprak een ruime meerderheid zich in oriënterende stemmingen uit voor de leer dat het bisschoppencollege het apostelcollege opvolgt. Het oorspronkelijke ontwerp over de bisschoppen ging daar nog niet van uit, wat in het debat van november 1963 een van de bezwaren was. In de herziene tekst werd de leer van LG §22 opgenomen.",
+          "how": "§4 vat grotendeels LG §22 samen, in de taal van een decreet. De paragraaf formuleert geen nieuwe leer; hij herhaalt de leer van de constitutie als grond voor de praktische bepalingen die volgen. De voorwaarde van gemeenschap met hoofd en leden sluit aan bij de *Nota explicativa praevia* (1964), die aan Lumen Gentium werd toegevoegd. Daarna volgen de Bisschoppensynode (CD §5) en de zorg voor alle Kerken (CD §6).",
+          "meaning": "Hiërarchische gemeenschap (communio hierarchica) betekent dat de wijding alleen niet volstaat om het ambt uit te oefenen; daarvoor is ook de verbondenheid met hoofd en leden vereist, zoals de *Nota praevia* uitlegt. Het college bestaat nooit zonder de paus. Over de verhouding tussen primaat en college bestaan verschillende verklaringen: sommige theologen zien één drager van het hoogste gezag, anderen twee onvolledig onderscheiden dragers. Zie Catechismus nr. 880–885."
+        },
+        "en": {
+          "what": "Chapter I opens with the college of bishops. One becomes a member of the college through sacramental consecration and hierarchical communion with the pope and the other bishops. The college continues the college of the apostles and, together with its head and never without him, holds supreme authority in the Church. That authority is exercised solemnly in an ecumenical council, and also by the bishops dispersed through the world when the pope calls them to collegial action or accepts their joint action.",
+          "who": "The paragraph speaks of all bishops who belong to the college, and of the pope as its head. It is addressed to the bishops, who learn here of their shared responsibility for the whole Church. The right of all members of the college to take part in an ecumenical council is also stated explicitly.",
+          "why": "Collegiality was the most contested theme of the second session. On 30 October 1963 a large majority, in orientation votes, supported the teaching that the college of bishops succeeds the college of the apostles. The original draft on the bishops did not yet start from this, which was one of the objections in the debate of November 1963. The revised text incorporated the teaching of LG §22.",
+          "how": "§4 largely summarises LG §22 in the language of a decree. It formulates no new doctrine; it restates the constitution's teaching as the basis for the practical provisions that follow. The condition of communion with head and members echoes the *Nota explicativa praevia* (1964) attached to Lumen Gentium. The Synod of Bishops (CD §5) and concern for all the Churches (CD §6) follow.",
+          "meaning": "Hierarchical communion (communio hierarchica) means that consecration alone does not suffice for exercising the office; union with head and members is also required, as the *Nota praevia* explains. The college never exists without the pope. Theologians explain the relation of primacy and college in different ways: some see one subject of supreme authority, others two inadequately distinct subjects. See Catechism nos. 880–885."
+        }
+      }
     },
     {
       "id": "CD-5",
@@ -35,7 +117,55 @@
         "CD-38"
       ],
       "noteNl": "Paulus VI had de Bisschoppensynode al op 15 september 1965 ingesteld (Apostolica sollicitudo); CD §5 neemt dat over.",
-      "noteEn": "Paul VI had already established the Synod of Bishops on 15 September 1965 (Apostolica sollicitudo); CD §5 takes this up."
+      "noteEn": "Paul VI had already established the Synod of Bishops on 15 September 1965 (Apostolica sollicitudo); CD §5 takes this up.",
+      "explain": {
+        "nl": {
+          "what": "§5 kondigt een raad aan van bisschoppen uit verschillende delen van de wereld, die de paus doeltreffender bijstaat en de naam Bisschoppensynode zal dragen. De bisschoppen worden gekozen op een wijze die de paus heeft vastgesteld of nog zal vaststellen. Omdat de synode namens de hele katholieke bisschoppenschaar optreedt, toont zij dat alle bisschoppen in hiërarchische gemeenschap deel hebben aan de zorg voor de universele Kerk.",
+          "who": "De paragraaf spreekt over de paus als opperherder en over de bisschoppen die hem in de synode bijstaan. Hij richt zich tot de bisschoppen, maar beschrijft een instelling van de universele Kerk. De paus blijft degene die de samenstelling en werkwijze bepaalt.",
+          "why": "Tijdens het debat van november 1963 vroegen verschillende vaders, onder wie patriarch Maximos IV, om een vast orgaan van bisschoppen rond de paus. Paulus VI kwam het Concilie voor en richtte de synode zelf op met het motu proprio *Apostolica sollicitudo* van 15 september 1965, aan het begin van de vierde zitting. §5 neemt dat besluit over, zoals de toelichting bij dit excerpt vermeldt.",
+          "how": "Het gaat om een korte, institutionele bepaling. De synode wordt omschreven als hulp voor de opperherder; zij staat in dienst van het primaat en drukt tegelijk de gezamenlijke zorg van de bisschoppen uit. De paragraaf volgt op de leer over het college (CD §4) en gaat vooraf aan de oproep tot zorg voor alle Kerken (CD §6). Zij is de eerste concrete vorm van collegiale samenwerking in het decreet.",
+          "meaning": "Het Latijn spreekt van een Consilium; de Engelse vertaling op vatican.va geeft dat weer als een beraadslagend lichaam. Volgens *Apostolica sollicitudo* en can. 343 heeft de synode in beginsel een raadgevende taak, tenzij de paus haar beslissende macht verleent. Zij is geen permanent bestuursorgaan naast de paus. Paus Franciscus herzag de werkwijze in *Episcopalis communio* (2018). Hoe synodaal bestuur en primaat zich verhouden, blijft onderwerp van gesprek."
+        },
+        "en": {
+          "what": "§5 announces a council of bishops from various parts of the world who give more effective help to the pope, to be called the Synod of Bishops. The bishops are chosen in ways the pope has laid down or will lay down. Because the synod acts on behalf of the whole Catholic episcopate, it shows that all bishops in hierarchical communion share in the care of the universal Church.",
+          "who": "The paragraph speaks of the pope as supreme pastor and of the bishops who assist him in the synod. It addresses the bishops but describes an institution of the universal Church. The pope remains the one who determines its composition and procedure.",
+          "why": "During the debate of November 1963 several Fathers, among them Patriarch Maximos IV, asked for a permanent body of bishops around the pope. Paul VI anticipated the Council and established the synod himself with the motu proprio *Apostolica sollicitudo* of 15 September 1965, at the start of the fourth session. §5 takes up that decision, as the note to this excerpt records.",
+          "how": "This is a short institutional provision. The synod is described as a help to the supreme pastor; it serves the primacy and at the same time expresses the shared care of the bishops. The paragraph follows the doctrine of the college (CD §4) and precedes the call to care for all the Churches (CD §6). It is the decree's first concrete form of collegial cooperation.",
+          "meaning": "The Latin has Consilium, which the English translation on vatican.va renders as a deliberative body. Under *Apostolica sollicitudo* and can. 343 the synod is in principle consultative, unless the pope grants it deliberative power. It is not a permanent governing body alongside the pope. Pope Francis revised its procedure in *Episcopalis communio* (2018). How synodal governance relates to the primacy remains under discussion."
+        }
+      }
+    },
+    {
+      "id": "CD-8",
+      "docId": "christus-dominus",
+      "number": 8,
+      "textEn": "To bishops, as successors of the apostles, in the dioceses entrusted to them, there belongs per se all the ordinary, proper, and immediate authority which is required for the exercise of their pastoral office. But this never in any way infringes upon the power which the Roman pontiff has, by virtue of his office, of reserving cases to himself or to some other authority.",
+      "textNl": "Aan de bisschoppen komt als opvolgers van de apostelen in de hun toevertrouwde bisdommen uit zichzelf alle gewone, eigen en onmiddellijke macht toe die voor de uitoefening van hun herderlijk ambt vereist is. Dit doet echter op geen enkele wijze afbreuk aan de macht die de Romeinse Paus krachtens zijn ambt heeft om zaken aan zichzelf of aan een ander gezag voor te behouden.",
+      "tags": [
+        "bishops",
+        "authority",
+        "diocese"
+      ],
+      "crossRefs": [
+        "CD-2",
+        "CD-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§8 regelt de macht van de diocesane bisschop. In zijn bisdom heeft hij uit zichzelf alle gewone, eigen en onmiddellijke macht die hij voor zijn herderlijke taak nodig heeft. De paus behoudt het recht bepaalde zaken aan zich of aan een andere instantie voor te behouden. Daarnaast mag de bisschop in bijzondere gevallen dispensatie geven van algemene kerkelijke wetten wanneer dat het geestelijk welzijn van de gelovigen dient, tenzij de hoogste autoriteit een voorbehoud heeft gemaakt.",
+          "who": "De paragraaf richt zich tot de diocesane bisschoppen en spreekt over hun verhouding tot de paus en de Romeinse Curie. Voor de gelovigen heeft hij praktische gevolgen, omdat zij voor veel dispensaties niet langer op Rome zijn aangewezen. Ook de Curie wordt hier impliciet aangesproken, want haar rol tegenover de bisdommen verandert.",
+          "why": "Vóór het Concilie ontvingen bisschoppen veel bevoegdheden als volmachten van de Heilige Stoel, die geregeld moesten worden vernieuwd, zoals de vijfjaarlijkse facultates. In de aula werd gevraagd die verhouding om te keren. Paulus VI verleende met *Pastorale munus* van 30 november 1963 al een reeks volmachten. §8 gaat verder: de macht hoort bij het ambt zelf en het pauselijk voorbehoud wordt de uitzondering.",
+          "how": "De tekst is juridisch van vorm en gebruikt de begrippen van het kerkelijk recht. Hij steunt op de leer van LG §27, dat bisschoppen geen plaatsvervangers van de paus zijn. Het eerste deel (8a) stelt het beginsel, het tweede deel (8b) verleent de bisschop dispensatiemacht. De paragraaf staat in hoofdstuk I, dat de verhouding tussen de bisschoppen en de universele Kerk behandelt.",
+          "meaning": "Gewone macht hoort bij het ambt zelf; eigen macht wordt in eigen naam uitgeoefend; onmiddellijke macht bereikt de gelovigen rechtstreeks. Wie dit als volledige autonomie van de bisschop leest, vergeet het voorbehoud van de paus en de gemeenschap met het college. Paulus VI werkte 8b uit in *De episcoporum muneribus* (1966). Het Wetboek van 1983 neemt het beginsel over in can. 381 en de dispensatiemacht in can. 87."
+        },
+        "en": {
+          "what": "§8 deals with the power of the diocesan bishop. In his diocese he has, of himself, all the ordinary, proper and immediate power needed for his pastoral task. The pope keeps the right to reserve certain matters to himself or to another authority. In addition, the bishop may in particular cases dispense the faithful from general Church laws when this serves their spiritual good, unless the supreme authority has made a reservation.",
+          "who": "The paragraph is addressed to diocesan bishops and concerns their relation to the pope and the Roman Curia. It has practical consequences for the faithful, who no longer depend on Rome for many dispensations. The Curia is also addressed by implication, since its role towards the dioceses changes.",
+          "why": "Before the Council bishops received many powers as faculties granted by the Holy See and renewed at intervals, such as the quinquennial faculties. In the hall it was asked that this relation be reversed. Paul VI granted a set of faculties in *Pastorale munus* of 30 November 1963. §8 goes further: the power belongs to the office itself and papal reservation becomes the exception.",
+          "how": "The text is juridical in form and uses the concepts of canon law. It rests on the teaching of LG §27 that bishops are not vicars of the pope. The first part (8a) states the principle, the second (8b) grants the bishop the power to dispense. The paragraph stands in chapter I, which treats the bishops in relation to the universal Church.",
+          "meaning": "Ordinary power belongs to the office itself; proper power is exercised in one's own name; immediate power reaches the faithful directly. A reading of this as full autonomy of the bishop forgets the papal reservation and communion with the college. Paul VI applied 8b in *De episcoporum muneribus* (1966). The 1983 Code takes up the principle in can. 381 and the power to dispense in can. 87."
+        }
+      }
     },
     {
       "id": "CD-11",
@@ -51,7 +181,87 @@
       "crossRefs": [
         "LG-9",
         "CD-2"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "§11 omschrijft het bisdom als een deel van het volk van God dat aan een bisschop wordt toevertrouwd, om het met medewerking van het presbyterium te weiden. Doordat dit deel door de bisschop in de heilige Geest bijeengebracht wordt door evangelie en eucharistie, vormt het een particuliere Kerk, waarin de ene, heilige, katholieke en apostolische Kerk van Christus werkelijk aanwezig is en werkt. De bisschoppen zijn er onder het gezag van de paus de eigen herders van en weiden hun kudde in naam van de Heer.",
+          "who": "Het Concilie spreekt over het bisdom en over de bisschop als eigen, gewone en onmiddellijke herder ervan, onder het gezag van de paus. De tekst richt zich tot de bisschoppen, maar is ook van belang voor priesters en gelovigen, die hier lezen wat hun plaatselijke Kerk theologisch is. Het hoofdstuk dat met §11 begint, behandelt de bisschop in zijn eigen bisdom.",
+          "why": "Het Wetboek van 1917 behandelde het bisdom vooral als territoriale bestuurseenheid. Het Concilie wilde het bisdom theologisch verstaan, vanuit het volk van God (LG §9) en de eucharistische gemeenschap (LG §26). Zo kwam een ecclesiologie terug die in de vroege Kerk vertrouwd was: de ene Kerk bestaat in en uit de plaatselijke Kerken (LG §23).",
+          "how": "De omschrijving begint met mensen, een deel van het volk van God, en noemt het gebied pas later, waar de grenzen van bisdommen aan de orde komen (CD §22–24). Zij verbindt de bisschop met zijn presbyterium en noemt evangelie en eucharistie als wat de particuliere Kerk samenbrengt. De paragraaf opent hoofdstuk II en vormt het theologische uitgangspunt voor de bepalingen over leren, heiligen en besturen.",
+          "meaning": "Een bisdom is in deze tekst meer dan een administratieve afdeling van de wereldkerk, en evenmin een zelfstandige Kerk naast de andere: de ene Kerk van Christus is erin aanwezig, in gemeenschap met de paus en het college. Het Wetboek van 1983 neemt de omschrijving bijna letterlijk over in can. 369. Over de vraag of de universele Kerk aan de particuliere voorafgaat, verschilden Ratzinger en Kasper rond 2000 van mening, na de brief *Communionis notio* (1992)."
+        },
+        "en": {
+          "what": "§11 defines the diocese as a portion of the People of God entrusted to a bishop, to be shepherded with the cooperation of the presbyterate. Gathered by the bishop in the Holy Spirit through the Gospel and the Eucharist, this portion forms a particular Church in which the one, holy, catholic and apostolic Church of Christ is truly present and at work. Under the pope's authority the bishops are its proper pastors and feed their flock in the name of the Lord.",
+          "who": "The Council speaks of the diocese and of the bishop as its proper, ordinary and immediate pastor under the authority of the pope. The text addresses the bishops, but it matters also to priests and faithful, who read here what their local Church is theologically. The chapter that opens with §11 treats the bishop in his own diocese.",
+          "why": "The 1917 Code treated the diocese chiefly as a territorial unit of administration. The Council wished to understand the diocese theologically, from the People of God (LG §9) and the eucharistic community (LG §26). An ecclesiology familiar to the early Church thus returned: the one Church exists in and from the local Churches (LG §23).",
+          "how": "The definition begins with people, a portion of the People of God, and mentions territory only later, where diocesan boundaries are discussed (CD §22–24). It links the bishop with his presbyterate and names the Gospel and the Eucharist as what gathers the particular Church. The paragraph opens chapter II and is the theological starting point for the provisions on teaching, sanctifying and governing.",
+          "meaning": "In this text a diocese is more than an administrative branch of the worldwide Church, nor is it an independent Church beside others: the one Church of Christ is present in it, in communion with the pope and the college. The 1983 Code adopts the definition almost word for word in can. 369. Whether the universal Church precedes the particular Church was debated by Ratzinger and Kasper around 2000, after the letter *Communionis notio* (1992)."
+        }
+      }
+    },
+    {
+      "id": "CD-16",
+      "docId": "christus-dominus",
+      "number": 16,
+      "textEn": "In exercising their office of father and pastor, bishops should stand in the midst of their people as those who serve. Let them be good shepherds who know their sheep and whose sheep know them.",
+      "textNl": "Bij de uitoefening van hun ambt van vader en herder moeten de bisschoppen te midden van hun volk staan als dienaars. Zij moeten goede herders zijn die hun schapen kennen en door hun schapen gekend worden.",
+      "tags": [
+        "bishops",
+        "diocese",
+        "church-governance"
+      ],
+      "crossRefs": [
+        "CD-11",
+        "PO-7"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§16 beschrijft hoe een bisschop zijn bestuurstaak uitoefent. Hij moet als dienaar te midden van zijn volk staan, zijn gelovigen kennen en voor hen bidden. Zijn priesters moet hij als zonen en vrienden behandelen, beluisteren en ondersteunen. Hij moet de omstandigheden van zijn gelovigen leren kennen, ook met behulp van maatschappelijk onderzoek. Zijn zorg geldt allen, van welke leeftijd, stand of afkomst ook, en ook de gescheiden broeders en de niet-gedoopten.",
+          "who": "De paragraaf richt zich tot de diocesane bisschoppen. Hij spreekt over hun verhouding tot de priesters, de gelovigen, andere christenen en niet-gedoopten. Het beeld van de bisschop dat hier geschetst wordt, is dat van een vader en herder die bij zijn volk leeft en het kent.",
+          "why": "Het herderlijk ambt werd in de handboeken van vóór het Concilie vooral juridisch beschreven, in termen van rechtsmacht. De pastorale vernieuwing en de ervaring van missiegebieden vroegen om een bisschop die dichter bij zijn mensen stond. Het Concilie verbond die wens met het bijbelse herdersbeeld en met de leer van LG §27 over de bisschop als plaatsvervanger van Christus in zijn Kerk.",
+          "how": "De toon is vermanend en geestelijk; de paragraaf heeft de vorm van een spiegel voor herders. Hij sluit aan bij Johannes 10,14 over de goede herder en bij Lucas 22,26 over wie dient. Met §16 eindigt de reeks over de taken van de bisschop: leren (CD §12–14), heiligen (CD §15) en besturen (CD §16). Daarna volgen bepalingen over het apostolaat en de structuur van bisdommen.",
+          "meaning": "Het besturen van een bisdom wordt hier opgevat als herderlijke dienst. Het gezag van de bisschop (CD §8) blijft daarbij onverminderd; de paragraaf bepaalt de stijl waarin hij het uitoefent. De aanbeveling om sociaal onderzoek te gebruiken maakt de pastoraal niet afhankelijk van de sociologie. Het directorium *Apostolorum successores* (2004) en de Catechismus nr. 896 werken het herdersbeeld verder uit."
+        },
+        "en": {
+          "what": "§16 describes how a bishop exercises his task of governing. He is to stand among his people as one who serves, know his faithful and pray for them. He is to treat his priests as sons and friends, listen to them and support them. He is to learn about the conditions of his faithful, also with the help of social research. His care extends to all, whatever their age, condition or origin, and also to separated brethren and the non-baptised.",
+          "who": "The paragraph is addressed to diocesan bishops. It concerns their relations with priests, the faithful, other Christians and the non-baptised. The image of the bishop sketched here is that of a father and shepherd who lives among his people and knows them.",
+          "why": "Pre-conciliar manuals described the pastoral office mainly in juridical terms, as jurisdiction. Pastoral renewal and the experience of mission territories called for a bishop closer to his people. The Council linked that wish to the biblical image of the shepherd and to the teaching of LG §27 on the bishop as vicar of Christ in his Church.",
+          "how": "The tone is hortatory and spiritual; the paragraph reads as a mirror for pastors. It echoes John 10:14 on the good shepherd and Luke 22:26 on the one who serves. With §16 the series on the bishop's tasks ends: teaching (CD §12–14), sanctifying (CD §15) and governing (CD §16). Provisions on the apostolate and on the structure of dioceses follow.",
+          "meaning": "Governing a diocese is understood here as pastoral service. The bishop's authority (CD §8) remains undiminished; the paragraph sets the manner in which he exercises it. The recommendation to use social research does not make pastoral care dependent on sociology. The directory *Apostolorum successores* (2004) and Catechism no. 896 develop the image of the shepherd further."
+        }
+      }
+    },
+    {
+      "id": "CD-20",
+      "docId": "christus-dominus",
+      "number": 20,
+      "textEn": "Since the apostolic office of bishops was instituted by Christ the Lord and pursues a spiritual and supernatural purpose, this sacred ecumenical synod declares that the right of nominating and appointing bishops belongs properly, peculiarly, and per se exclusively to the competent ecclesiastical authority.",
+      "textNl": "Omdat het apostolisch ambt van de bisschoppen door Christus de Heer is ingesteld en een geestelijk en bovennatuurlijk doel nastreeft, verklaart deze heilige oecumenische Synode dat het recht om bisschoppen te benoemen en aan te stellen eigen, bijzonder en op zichzelf uitsluitend toekomt aan het bevoegde kerkelijk gezag.",
+      "tags": [
+        "bishops",
+        "church-and-state",
+        "freedom"
+      ],
+      "crossRefs": [
+        "GS-76",
+        "CD-1"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§20 verklaart dat het recht om bisschoppen te benoemen eigen, bijzonder en op zichzelf uitsluitend toekomt aan het bevoegde kerkelijk gezag. Om de vrijheid van de Kerk te beschermen, wil het Concilie dat burgerlijke overheden in de toekomst geen rechten of voorrechten meer krijgen om bisschoppen te kiezen, te benoemen, voor te dragen of aan te wijzen. Overheden die zulke rechten op grond van een verdrag of gewoonte bezitten, worden vriendelijk verzocht er na overleg met de Heilige Stoel vrijwillig afstand van te doen.",
+          "who": "De paragraaf spreekt over de benoeming van bisschoppen en richt zich tot twee partijen. Het bevoegde kerkelijk gezag, in de Latijnse Kerk de paus, wordt in zijn recht bevestigd. De burgerlijke overheden die in concordaten of door gewoonte nog benoemingsrechten hadden, worden beleefd verzocht daarvan af te zien. Het Concilie spreekt hier dus ook tot staten.",
+          "why": "Sinds de middeleeuwen hadden vorsten en later staten invloed op bisschopsbenoemingen, van de investituur tot het voordrachtsrecht in concordaten. In 1965 bestonden zulke rechten nog, bijvoorbeeld in Spanje. Regimes in Oost-Europa belemmerden in diezelfde jaren de benoeming van bisschoppen. Het Concilie wilde de vrijheid van de Kerk als beginsel formuleren, in lijn met DH §13 over de vrijheid van de Kerk.",
+          "how": "De paragraaf heeft twee delen. Het eerste is een plechtige verklaring met een theologische motivering: het ambt is door Christus ingesteld en heeft een geestelijk doel. Het tweede is een wens en een verzoek, diplomatiek geformuleerd. De tekst staat in hoofdstuk II, in het deel over de benoeming en het ontslag van bisschoppen, vlak voor §21 over het aanbieden van ontslag.",
+          "meaning": "Het Concilie verbiedt hiermee geen overleg met staten, en bestaande verdragen worden niet eenzijdig opgezegd. Het stelt wel dat de Kerk de benoeming in beginsel zelf verricht. Spanje gaf zijn voordrachtsrecht op in een akkoord met de Heilige Stoel van 1976. Het Wetboek van 1983 neemt het beginsel op in can. 377. Over het voorlopige akkoord met China (2018) wordt verschillend geoordeeld: sommigen zien er een pragmatisch overleg in, anderen een spanning met §20."
+        },
+        "en": {
+          "what": "§20 declares that the right to nominate and appoint bishops belongs properly, peculiarly and per se exclusively to the competent ecclesiastical authority. To protect the freedom of the Church, the Council wishes that civil authorities should no longer be granted rights or privileges of electing, nominating, presenting or designating bishops. Authorities that hold such rights by treaty or custom are courteously asked to renounce them voluntarily after consulting the Holy See.",
+          "who": "The paragraph concerns the appointment of bishops and addresses two parties. The competent ecclesiastical authority, in the Latin Church the pope, is confirmed in its right. Civil authorities that still held rights of appointment through concordats or custom are politely asked to give them up. Here the Council also speaks to states.",
+          "why": "Since the Middle Ages rulers and later states had influence over episcopal appointments, from lay investiture to rights of presentation in concordats. In 1965 such rights still existed, for example in Spain. In the same years regimes in Eastern Europe obstructed the appointment of bishops. The Council wished to state the freedom of the Church as a principle, in line with DH §13 on the freedom of the Church.",
+          "how": "The paragraph has two parts. The first is a solemn declaration with a theological ground: the office was instituted by Christ and has a spiritual purpose. The second is a wish and a request, phrased diplomatically. The text stands in chapter II, in the section on the appointment and resignation of bishops, just before §21 on offering resignation.",
+          "meaning": "The Council does not hereby forbid consultation with states, nor does it unilaterally revoke existing treaties. It does state that the Church in principle makes the appointment herself. Spain gave up its right of presentation in an agreement with the Holy See in 1976. The 1983 Code includes the principle in can. 377. Opinions differ on the provisional agreement with China (2018): some see pragmatic consultation, others a tension with §20."
+        }
+      }
     },
     {
       "id": "CD-21",
@@ -67,7 +277,23 @@
         "CD-11"
       ],
       "noteNl": "De leeftijdsgrens van 75 jaar werd niet door het Concilie vastgesteld, maar in 1966 in het uitvoeringsdocument Ecclesiae Sanctae.",
-      "noteEn": "The age limit of 75 was not set by the Council but in the 1966 implementing document Ecclesiae Sanctae."
+      "noteEn": "The age limit of 75 was not set by the Council but in the 1966 implementing document Ecclesiae Sanctae.",
+      "explain": {
+        "nl": {
+          "what": "§21 vraagt diocesane bisschoppen en wie hun rechtens gelijkgesteld zijn, met aandrang hun ontslag aan te bieden wanneer zij door toenemende ouderdom of een andere ernstige reden hun taak minder goed kunnen vervullen. Dat kan op eigen initiatief of op verzoek van het bevoegde gezag. Wanneer dat gezag het ontslag aanvaardt, zorgt het voor een passend levensonderhoud van de afgetreden bisschop en voor de erkenning van zijn bijzondere rechten.",
+          "who": "De tekst richt zich tot de diocesane bisschoppen en hun rechtsgelijken, zoals territoriale prelaten. Hij spreekt ook tot het bevoegde gezag, de paus, dat het ontslag aanvaardt en voor de afgetreden bisschop moet zorgen. Indirect gaat het om de gelovigen van het bisdom, wier pastorale zorg niet mag lijden onder het onvermogen van hun herder.",
+          "why": "Bisschoppen bleven vóór het Concilie meestal tot hun dood in functie. Met de stijgende levensverwachting en de toename van pastorale taken werd dat in veel bisdommen een probleem. Het Concilie koos voor een dringend verzoek en noemde geen leeftijd. De grens van 75 jaar kwam pas in *Ecclesiae Sanctae* (1966), zoals de toelichting bij dit excerpt vermeldt.",
+          "how": "De formulering is een verzoek, met aandrang uitgesproken. Het decreet laat de beoordeling aan de bisschop zelf en aan het bevoegde gezag. Voor pastoors staat in CD §31 een vergelijkbare bepaling. De paragraaf hoort bij het deel van hoofdstuk II over benoeming en ontslag, na de bepaling over de vrijheid van benoeming (CD §20).",
+          "meaning": "Het aanbieden van ontslag doet het ambt niet automatisch vervallen: de paus beslist over de aanvaarding. Het Wetboek van 1983 vraagt in can. 401 het ontslag bij 75 jaar, en ook bij ziekte of een andere ernstige reden. Paus Franciscus regelde de procedure verder in het motu proprio *Imparare a congedarsi* (2018). De afgetreden bisschop blijft bisschop en lid van het college."
+        },
+        "en": {
+          "what": "§21 earnestly asks diocesan bishops and those equivalent to them in law to offer their resignation when increasing age or another serious reason makes them less able to fulfil their task. They may do so on their own initiative or at the request of the competent authority. If that authority accepts the resignation, it provides for the suitable support of the retired bishop and for the recognition of his special rights.",
+          "who": "The text is addressed to diocesan bishops and those equivalent to them, such as territorial prelates. It also speaks to the competent authority, the pope, who accepts the resignation and must provide for the retired bishop. Indirectly it concerns the faithful of the diocese, whose pastoral care should not suffer from their shepherd's incapacity.",
+          "why": "Before the Council bishops usually remained in office until death. With rising life expectancy and growing pastoral demands this became a problem in many dioceses. The Council chose an urgent request and named no age. The limit of 75 came only with *Ecclesiae Sanctae* (1966), as the note to this excerpt records.",
+          "how": "The wording is a request, made earnestly. The decree leaves the judgement to the bishop himself and to the competent authority. CD §31 contains a similar provision for parish priests. The paragraph belongs to the part of chapter II on appointment and resignation, after the provision on freedom of appointment (CD §20).",
+          "meaning": "Offering resignation does not end the office automatically: the pope decides whether to accept it. The 1983 Code asks in can. 401 for resignation at 75, and also in case of illness or another grave reason. Pope Francis regulated the procedure further in the motu proprio *Imparare a congedarsi* (2018). A retired bishop remains a bishop and a member of the college."
+        }
+      }
     },
     {
       "id": "CD-38",
@@ -85,7 +311,23 @@
         "LG-22"
       ],
       "noteNl": "Het theologisch gezag van bisschoppenconferenties werd later verduidelijkt in Apostolos suos (Johannes Paulus II, 1998).",
-      "noteEn": "The theological authority of episcopal conferences was later clarified in Apostolos suos (John Paul II, 1998)."
+      "noteEn": "The theological authority of episcopal conferences was later clarified in Apostolos suos (John Paul II, 1998).",
+      "explain": {
+        "nl": {
+          "what": "§38 omschrijft de bisschoppenconferentie als een soort raad waarin de bisschoppen van een land of gebied gezamenlijk hun herderlijk ambt uitoefenen. Lid zijn de plaatselijke ordinarissen, behalve vicarissen-generaal, en de coadjutoren, hulpbisschoppen en andere titulaire bisschoppen met een bijzondere opdracht; de statuten regelen het stemrecht. Elke conferentie stelt statuten op die de Heilige Stoel goedkeurt. Haar besluiten binden wanneer het recht of een opdracht van Rome daarin voorziet, zij met twee derde van de stemmen zijn genomen en door de Heilige Stoel zijn erkend.",
+          "who": "De paragraaf spreekt over de bisschoppen van een land of gebied en over hun verhouding tot de Heilige Stoel. Hij richt zich tot de bisschoppen, die conferenties moeten oprichten waar die nog niet bestaan, en tot de Heilige Stoel, die statuten goedkeurt en besluiten erkent. Ook samenwerking tussen conferenties van verschillende landen en met de oosterse Kerken komt ter sprake.",
+          "why": "Bisschoppenconferenties bestonden al vóór het Concilie, in Duitsland sinds de negentiende eeuw in Fulda, en in de twintigste eeuw in vele andere landen. Het Wetboek van 1917 gaf hun nauwelijks een rechtsgrond. De concilievaders werkten in Rome geregeld per land samen, wat de wens om de conferenties vast te leggen versterkte. §38 maakt van een praktijk een instelling van het algemene kerkelijk recht.",
+          "how": "CD §36 plaatst de conferenties in de lijn van de oude synodes en concilies, en CD §37 motiveert ze vanuit de noden van de tijd. §38 geeft daarna in zes punten de normen: begrip, samenstelling, statuten, besluiten, verhouding tot andere conferenties en tot de oosterse hiërarchie. De toon is juridisch en voorzichtig: de conferentie helpt de bisschop, zonder zijn eigen verantwoordelijkheid in het bisdom over te nemen.",
+          "meaning": "De uitdrukking als het ware een raad laat de theologische status open. Sommigen, onder wie Joseph Ratzinger in de jaren tachtig, zagen de conferentie vooral als praktisch hulpmiddel zonder eigen leergezag; anderen zagen er een uitdrukking van collegialiteit en van de oude synodale traditie in. *Apostolos suos* (1998) bepaalde dat leerstellige verklaringen eenstemmigheid of erkenning door Rome vereisen. Zie ook can. 447–459."
+        },
+        "en": {
+          "what": "§38 describes the episcopal conference as a kind of council in which the bishops of a nation or territory jointly exercise their pastoral office. Its members are the local ordinaries, except vicars general, together with coadjutors, auxiliaries and other titular bishops with a special charge; the statutes regulate voting rights. Each conference draws up statutes approved by the Holy See. Its decisions bind where law or a mandate from Rome provides for it, when adopted by two thirds of the votes and recognised by the Holy See.",
+          "who": "The paragraph concerns the bishops of a nation or territory and their relation to the Holy See. It is addressed to the bishops, who are to set up conferences where none yet exist, and to the Holy See, which approves statutes and recognises decisions. Cooperation between conferences of different countries and with the Eastern Churches is also mentioned.",
+          "why": "Episcopal conferences existed before the Council, in Germany at Fulda since the nineteenth century and in many other countries during the twentieth. The 1917 Code gave them scarcely any legal basis. In Rome the Council Fathers regularly worked together by country, which strengthened the wish to give the conferences a fixed form. §38 turns a practice into an institution of the general law of the Church.",
+          "how": "CD §36 places the conferences in the line of ancient synods and councils, and CD §37 grounds them in present needs. §38 then sets out the norms in six points: concept, membership, statutes, decisions, relations with other conferences and with the Eastern hierarchy. The tone is juridical and careful: the conference assists the bishop without taking over his own responsibility in the diocese.",
+          "meaning": "The phrase as it were a council leaves the theological status open. Some, including Joseph Ratzinger in the 1980s, saw the conference mainly as a practical aid without teaching authority of its own; others saw in it an expression of collegiality and of the ancient synodal tradition. *Apostolos suos* (1998) laid down that doctrinal declarations require unanimity or recognition by Rome. See also can. 447–459."
+        }
+      }
     }
   ]
 }
