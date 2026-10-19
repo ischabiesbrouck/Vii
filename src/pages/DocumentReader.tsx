@@ -418,7 +418,21 @@ export function DocumentReader() {
         </div>
       </div>
 
-      {data.related.length > 0 && (
+      {data.background && (
+        <SegmentedTabs
+          prefix="doc"
+          label={doc.titleLa}
+          value={view}
+          onChange={setView}
+          className="mb-8"
+          items={[
+            { id: 'text', label: t('history.tabText'), count: content?.paragraphs.length },
+            { id: 'history', label: t('history.tabHistory') },
+          ]}
+        />
+      )}
+
+      {view === 'text' && data.related.length > 0 && (
         <section className="mb-10" aria-label={t('doc.inSubjects')}>
           <p className="kicker mb-2">{t('doc.inSubjects')}</p>
           <ul className="flex flex-wrap gap-2">
@@ -434,7 +448,7 @@ export function DocumentReader() {
         </section>
       )}
 
-      {(data.catecheses.length > 0 || data.docVideos.length > 0) && (
+      {view === 'text' && (data.catecheses.length > 0 || data.docVideos.length > 0) && (
         <section className="mb-10 grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-2" aria-label={t('learn.explore')}>
           {data.catecheses.length > 0 && (
             <div>
@@ -465,20 +479,6 @@ export function DocumentReader() {
             </div>
           )}
         </section>
-      )}
-
-      {data.background && (
-        <SegmentedTabs
-          prefix="doc"
-          label={doc.titleLa}
-          value={view}
-          onChange={setView}
-          className="mb-8"
-          items={[
-            { id: 'text', label: t('history.tabText'), count: content?.paragraphs.length },
-            { id: 'history', label: t('history.tabHistory') },
-          ]}
-        />
       )}
 
       {data.background && view === 'history' ? (

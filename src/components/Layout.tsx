@@ -413,10 +413,14 @@ export function Layout() {
     };
   }, []);
 
+  // A change of query string alone (a tab such as ?view=history) keeps the scroll position.
+  const lastPath = useRef(location.pathname);
   useEffect(() => {
     keyRef.current = location.key;
     setMenuOpen(false);
-    if (location.hash) return;
+    const samePage = lastPath.current === location.pathname;
+    lastPath.current = location.pathname;
+    if (location.hash || (samePage && navType === 'REPLACE')) return;
     let saved: number | null = null;
     try {
       const v = sessionStorage.getItem(`scroll:${location.key}`);
