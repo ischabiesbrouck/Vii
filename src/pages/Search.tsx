@@ -51,7 +51,7 @@ export function SearchPage() {
       </form>
 
       <div role="group" aria-label={t('search.title')} className="mb-5 flex flex-wrap gap-2">
-        {(['all', 'paragraph', 'study', 'lesson', 'subject', 'catechesis', 'claim', 'term'] as const).map((k) => (
+        {(['all', 'paragraph', 'study', 'shortcat', 'lesson', 'subject', 'catechesis', 'claim', 'term'] as const).map((k) => (
           <button
             key={k}
             type="button"

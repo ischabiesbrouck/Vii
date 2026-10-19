@@ -270,6 +270,52 @@ for (const f of studyFiles) {
   studies.push({ id: st.subjectId, nl, en });
 }
 
+
+// --- short catecheses (public/content/catechesis/{id}.json) ------------------
+const catDir = join(root, 'catechesis');
+const catFiles = existsSync(catDir) ? readdirSync(catDir).filter((f) => f.endsWith('.json')) : [];
+const shortCats = [];
+// Direct quotations are not allowed: no quoted run of more than six words.
+const QUOTED = /[“"‘']([^”"’']{1,400})[”"’']/g;
+for (const f of catFiles) {
+  hash.update(readFileSync(join(catDir, f)));
+  const c = JSON.parse(readFileSync(join(catDir, f), 'utf8'));
+  const where = `catechesis/${f}`;
+  if (`${c.id}.json` !== f) err(`${where}: id must match file name`);
+  for (const k of ['questionNl', 'questionEn', 'titleNl', 'titleEn', 'introNl', 'introEn', 'icon']) if (!c[k]?.trim?.()) err(`${where}: missing ${k}`);
+  if (!Number.isInteger(c.number)) err(`${where}: number missing`);
+  if (!['unverified', 'verified'].includes(c.review)) err(`${where}: review must be unverified|verified`);
+  if (!(c.sections?.length >= 3)) err(`${where}: needs at least 3 sections`);
+  let nl = 0;
+  let en = 0;
+  const check = (t, w, lang) => {
+    if (typeof t !== 'string' || !t.trim()) return err(`${w}: empty ${lang} text`);
+    checkInlineCites(t, w);
+    for (const m of t.matchAll(QUOTED)) if (m[1].trim().split(/\s+/).length > 6) err(`${w}: direct quotation not allowed ("${m[1].slice(0, 40)}…")`);
+    if (lang === 'nl') nl += t.split(/\s+/).length;
+    else en += t.split(/\s+/).length;
+  };
+  check(c.introNl, where, 'nl');
+  check(c.introEn, where, 'en');
+  for (const [i, sec] of (c.sections ?? []).entries()) {
+    const w = `${where} s${i + 1}`;
+    if (!sec.headingNl?.trim() || !sec.headingEn?.trim()) err(`${w}: missing heading`);
+    if (!sec.nl?.length || sec.nl.length !== sec.en?.length) err(`${w}: nl/en paragraph count differs`);
+    for (const t of sec.nl ?? []) check(t, w, 'nl');
+    for (const t of sec.en ?? []) check(t, w, 'en');
+  }
+  for (const [a, b, k] of [[c.inBriefNl, c.inBriefEn, 'inBrief'], [c.reflectNl, c.reflectEn, 'reflect']]) {
+    if (!a?.length || a.length !== b?.length) err(`${where}: ${k} nl/en must be non-empty and equal`);
+    else a.forEach((t, i) => { check(t, `${where} ${k}`, 'nl'); check(b[i], `${where} ${k}`, 'en'); });
+  }
+  for (const l of c.links ?? []) if (!/^https:\/\/www\.vatican\.va\//.test(l.url) || !l.labelNl || !l.labelEn) err(`${where}: links must be labelled vatican.va URLs (${l.url})`);
+  for (const sId of c.subjects ?? []) if (!subjectIds.has(sId)) err(`${where}: unknown subject ${sId}`);
+  if (nl < 700 || en < 700) err(`${where}: too short (${nl} nl / ${en} en words; minimum 700)`);
+  shortCats.push({ id: c.id, number: c.number });
+}
+const nums = shortCats.map((c) => c.number).sort((a, b) => a - b);
+if (new Set(nums).size !== nums.length) err('catechesis: duplicate numbers');
+
 // --- report -----------------------------------------------------------------
 for (const w of warnings) console.warn(`warn  ${w}`);
 if (errors.length) {
@@ -285,9 +331,10 @@ const index = {
   available,
   counts,
   studies: studies.map((x) => x.id).sort(),
+  catechesis: shortCats.sort((a, b) => a.number - b.number).map((x) => x.id),
 };
 // VALIDATE_ONLY=1 checks without writing index.json (safe for parallel runs).
 if (!process.env.VALIDATE_ONLY) writeFileSync(join(root, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 console.log(
-  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} catecheses · ${videos.items.length} videos · ${studies.length} study texts (${studies.reduce((n, x) => n + x.nl, 0)} words nl) · v${index.version}`,
+  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} audiences · ${videos.items.length} videos · ${shortCats.length} short catecheses · ${studies.length} study texts (${studies.reduce((n, x) => n + x.nl, 0)} words nl) · v${index.version}`,
 );

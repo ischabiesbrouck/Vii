@@ -186,6 +186,8 @@ export interface ContentIndex {
   counts: Record<string, number>;
   /** Subject ids that have a study text in /content/studies/. */
   studies?: string[];
+  /** Short catecheses in series order (/content/catechesis/). */
+  catechesis?: string[];
 }
 
 /** A lesson in the guided course (/learn). Editorial, labelled as such. */
@@ -321,4 +323,31 @@ export interface LicensedImage {
   license: string; // e.g. 'Public domain', 'CC BY-SA 4.0'
   licenseUrl?: string;
   sourceUrl: string; // Wikimedia Commons file page
+}
+
+/* ---------- Short catecheses (question-led explanations, no direct quotations) ---------- */
+
+export interface ShortCatechesis {
+  id: string;
+  number: number; // order in the series, 1–12
+  icon: string; // SubjectIcon name
+  /** The catechetical question that heads the text, e.g. "Wat is de Kerk?". */
+  questionNl: string;
+  questionEn: string;
+  titleNl: string;
+  titleEn: string;
+  minutes: number;
+  introNl: string;
+  introEn: string;
+  /** Prose only. References are written as "LG §8" and become links that open on click. */
+  sections: { headingNl: string; headingEn: string; nl: string[]; en: string[] }[];
+  /** Short summary points, after the "In brief" sections of the Catechism. */
+  inBriefNl: string[];
+  inBriefEn: string[];
+  reflectNl: string[];
+  reflectEn: string[];
+  /** Further reading: official texts only (vatican.va). */
+  links: { labelNl: string; labelEn: string; url: string }[];
+  subjects: string[];
+  review: 'unverified' | 'verified';
 }

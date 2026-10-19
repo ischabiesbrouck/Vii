@@ -1,9 +1,10 @@
 import MiniSearch, { type Options, type SearchResult } from 'minisearch';
 import { db } from './db';
-import { getAllParagraphs, getCatecheses, getClaims, getGlossary, getIndex, getLessons, getStudy, getSubjects } from './content';
+import { getAllParagraphs, getCatecheses, getClaims, getGlossary, getIndex, getLessons, getShortCatecheses, getStudy, getSubjects } from './content';
+import { toRoman } from './roman';
 import { shortCite } from './citation';
 
-export type SearchKind = 'paragraph' | 'study' | 'claim' | 'term' | 'subject' | 'lesson' | 'catechesis';
+export type SearchKind = 'paragraph' | 'study' | 'shortcat' | 'claim' | 'term' | 'subject' | 'lesson' | 'catechesis';
 
 export interface SearchDoc {
   id: string;
@@ -36,7 +37,7 @@ const OPTIONS: Options<SearchDoc> = {
 
 const CACHE_KEY = 'search-index';
 /** Bump when the shape of SearchDoc changes, to invalidate cached indexes. */
-const SCHEMA = 5;
+const SCHEMA = 6;
 
 async function buildDocs(): Promise<SearchDoc[]> {
   const [paras, claims, terms, subjects, lessons, cat] = await Promise.all([
@@ -48,6 +49,20 @@ async function buildDocs(): Promise<SearchDoc[]> {
     getCatecheses(),
   ]);
   const docs: SearchDoc[] = [];
+  for (const c of await getShortCatecheses()) {
+    docs.push({
+      id: `sc:${c.id}`,
+      kind: 'shortcat',
+      cite: `Catechesis ${toRoman(c.number)}`,
+      title: c.questionNl,
+      titleEn: c.questionEn,
+      text: [c.titleNl, c.titleEn, c.introNl, c.introEn, ...c.sections.flatMap((s) => [s.headingNl, s.headingEn, ...s.nl, ...s.en]), ...c.inBriefNl, ...c.inBriefEn].join(' '),
+      snippetNl: c.introNl,
+      snippetEn: c.introEn,
+      url: `/catechesis/${c.id}`,
+      tags: '',
+    });
+  }
   const studies = await Promise.all(subjects.map((s) => getStudy(s.id)));
   for (const [si, st] of studies.entries()) {
     const subject = subjects[si]!;

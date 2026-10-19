@@ -16,6 +16,7 @@ import type {
   TimelineEvent,
   Study,
   LicensedImage,
+  ShortCatechesis,
 } from '@/types/content';
 
 /**
@@ -50,6 +51,12 @@ export const getLessons = () => load<Lesson[]>('lessons.json');
 export const getCatecheses = () => load<CatechesisSeries>('catecheses.json');
 export const getVideos = () => load<VideoLibrary>('videos.json');
 export const getImages = () => load<LicensedImage[]>('images.json').catch(() => [] as LicensedImage[]);
+
+/** The short catecheses, in series order. */
+export async function getShortCatecheses(): Promise<ShortCatechesis[]> {
+  const index = await getIndex();
+  return Promise.all((index.catechesis ?? []).map((id) => load<ShortCatechesis>(`catechesis/${id}.json`)));
+}
 
 /** Full study text for a subject, or null when none has been written yet. */
 export async function getStudy(subjectId: string): Promise<Study | null> {
