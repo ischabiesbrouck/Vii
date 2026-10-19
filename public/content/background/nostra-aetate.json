@@ -86,29 +86,118 @@
     }
   ],
   "timeline": [
-    { "date": "1960-06-13", "nl": "Johannes XXIII ontvangt de historicus Jules Isaac in audiëntie.", "en": "John XXIII receives the historian Jules Isaac in audience." },
-    { "date": "1960-09", "nl": "Kardinaal Bea krijgt de opdracht een tekst over het Joodse volk voor te bereiden.", "en": "Cardinal Bea is charged with preparing a text on the Jewish people." },
-    { "date": "1962-06", "nl": "Na de affaire-Wardi wordt het decreet over de Joden van de agenda van de Centrale Voorbereidende Commissie gehaald.", "en": "After the Wardi affair the decree on the Jews is taken off the agenda of the Central Preparatory Commission." },
-    { "date": "1963-11-19", "nl": "Bea licht in de aula het hoofdstuk over de Joden in het schema over de oecumene toe.", "en": "Bea introduces in the hall the chapter on the Jews in the schema on ecumenism." },
-    { "date": "1964-05", "nl": "Paulus VI richt het Secretariaat voor de niet-christenen op.", "en": "Paul VI founds the Secretariat for Non-Christians." },
-    { "date": "1964-09", "nl": "Debat in de derde zitting over de herziene, afzonderlijke verklaring.", "en": "Debate in the third session on the revised, separate declaration." },
-    { "date": "1964-11", "nl": "De vaders keuren de verbrede tekst over alle niet-christelijke godsdiensten voorlopig goed.", "en": "The Fathers give provisional approval to the broadened text on all non-Christian religions." },
-    { "date": "1965-10-28", "nl": "Eindstemming (2221 tegen 88) en afkondiging door Paulus VI.", "en": "Final vote (2,221 to 88) and promulgation by Paul VI." },
-    { "date": "1974-12-01", "nl": "*Richtlijnen* voor de toepassing van NA §4.", "en": "*Guidelines* for implementing NA §4." },
-    { "date": "1986-04-13", "nl": "Johannes Paulus II bezoekt de synagoge van Rome.", "en": "John Paul II visits the synagogue of Rome." },
-    { "date": "1986-10-27", "nl": "Gebedsdag voor de vrede in Assisi met vertegenwoordigers van vele godsdiensten.", "en": "Day of prayer for peace at Assisi with representatives of many religions." },
-    { "date": "2015-12-10", "nl": "Bezinning van de Commissie voor de religieuze betrekkingen met het jodendom bij vijftig jaar NA.", "en": "Reflection by the Commission for Religious Relations with the Jews for fifty years of NA." }
+    {
+      "date": "1960-06-13",
+      "nl": "Johannes XXIII ontvangt de historicus Jules Isaac in audiëntie.",
+      "en": "John XXIII receives the historian Jules Isaac in audience."
+    },
+    {
+      "date": "1960-09",
+      "nl": "Kardinaal Bea krijgt de opdracht een tekst over het Joodse volk voor te bereiden.",
+      "en": "Cardinal Bea is charged with preparing a text on the Jewish people."
+    },
+    {
+      "date": "1962-06",
+      "nl": "Na de affaire-Wardi wordt het decreet over de Joden van de agenda van de Centrale Voorbereidende Commissie gehaald.",
+      "en": "After the Wardi affair the decree on the Jews is taken off the agenda of the Central Preparatory Commission."
+    },
+    {
+      "date": "1963-11-19",
+      "nl": "Bea licht in de aula het hoofdstuk over de Joden in het schema over de oecumene toe.",
+      "en": "Bea introduces in the hall the chapter on the Jews in the schema on ecumenism."
+    },
+    {
+      "date": "1964-05",
+      "nl": "Paulus VI richt het Secretariaat voor de niet-christenen op.",
+      "en": "Paul VI founds the Secretariat for Non-Christians."
+    },
+    {
+      "date": "1964-09",
+      "nl": "Debat in de derde zitting over de herziene, afzonderlijke verklaring.",
+      "en": "Debate in the third session on the revised, separate declaration."
+    },
+    {
+      "date": "1964-11",
+      "nl": "De vaders keuren de verbrede tekst over alle niet-christelijke godsdiensten voorlopig goed.",
+      "en": "The Fathers give provisional approval to the broadened text on all non-Christian religions."
+    },
+    {
+      "date": "1965-10-28",
+      "nl": "Eindstemming (2221 tegen 88) en afkondiging door Paulus VI.",
+      "en": "Final vote (2,221 to 88) and promulgation by Paul VI."
+    },
+    {
+      "date": "1974-12-01",
+      "nl": "*Richtlijnen* voor de toepassing van NA §4.",
+      "en": "*Guidelines* for implementing NA §4."
+    },
+    {
+      "date": "1986-04-13",
+      "nl": "Johannes Paulus II bezoekt de synagoge van Rome.",
+      "en": "John Paul II visits the synagogue of Rome."
+    },
+    {
+      "date": "1986-10-27",
+      "nl": "Gebedsdag voor de vrede in Assisi met vertegenwoordigers van vele godsdiensten.",
+      "en": "Day of prayer for peace at Assisi with representatives of many religions."
+    },
+    {
+      "date": "2015-12-10",
+      "nl": "Bezinning van de Commissie voor de religieuze betrekkingen met het jodendom bij vijftig jaar NA.",
+      "en": "Reflection by the Commission for Religious Relations with the Jews for fifty years of NA."
+    }
   ],
   "people": [
-    { "name": "Augustin Bea", "roleNl": "Kardinaal, voorzitter van het Secretariaat voor de eenheid; verantwoordelijk voor de tekst en relator in de aula.", "roleEn": "Cardinal, president of the Secretariat for Unity; responsible for the text and relator in the hall." },
-    { "name": "Jules Isaac", "roleNl": "Frans-Joodse historicus; vroeg Johannes XXIII in 1960 om een herziening van de christelijke leer over de Joden.", "roleEn": "French Jewish historian; asked John XXIII in 1960 for a review of Christian teaching on the Jews." },
-    { "name": "John M. Oesterreicher", "roleNl": "Priester en peritus van het Secretariaat voor de eenheid; werkte mee aan de ontwerpen over de Joden.", "roleEn": "Priest and peritus of the Secretariat for Unity; worked on the drafts on the Jews." },
-    { "name": "Gregory Baum", "roleNl": "Augustijn en peritus van het Secretariaat voor de eenheid; werkte mee aan de ontwerpen.", "roleEn": "Augustinian and peritus of the Secretariat for Unity; worked on the drafts." },
-    { "name": "Johannes Willebrands", "roleNl": "Secretaris van het Secretariaat voor de eenheid; later voorzitter van de Commissie voor de religieuze betrekkingen met het jodendom.", "roleEn": "Secretary of the Secretariat for Unity; later president of the Commission for Religious Relations with the Jews." },
-    { "name": "Abraham Joshua Heschel", "roleNl": "Amerikaanse rabbijn en godsdienstfilosoof; voerde gesprekken met Bea en het Secretariaat over de inhoud van de tekst.", "roleEn": "American rabbi and philosopher of religion; held talks with Bea and the Secretariat on the content of the text." },
-    { "name": "Paulus VI", "roleNl": "Paus vanaf 1963; richtte het Secretariaat voor de niet-christenen op en kondigde de verklaring af.", "roleEn": "Pope from 1963; founded the Secretariat for Non-Christians and promulgated the declaration." }
+    {
+      "name": "Augustin Bea",
+      "roleNl": "Kardinaal, voorzitter van het Secretariaat voor de eenheid; verantwoordelijk voor de tekst en relator in de aula.",
+      "roleEn": "Cardinal, president of the Secretariat for Unity; responsible for the text and relator in the hall."
+    },
+    {
+      "name": "Jules Isaac",
+      "roleNl": "Frans-Joodse historicus; vroeg Johannes XXIII in 1960 om een herziening van de christelijke leer over de Joden.",
+      "roleEn": "French Jewish historian; asked John XXIII in 1960 for a review of Christian teaching on the Jews."
+    },
+    {
+      "name": "John M. Oesterreicher",
+      "roleNl": "Priester en peritus van het Secretariaat voor de eenheid; werkte mee aan de ontwerpen over de Joden.",
+      "roleEn": "Priest and peritus of the Secretariat for Unity; worked on the drafts on the Jews."
+    },
+    {
+      "name": "Gregory Baum",
+      "roleNl": "Augustijn en peritus van het Secretariaat voor de eenheid; werkte mee aan de ontwerpen.",
+      "roleEn": "Augustinian and peritus of the Secretariat for Unity; worked on the drafts."
+    },
+    {
+      "name": "Johannes Willebrands",
+      "roleNl": "Secretaris van het Secretariaat voor de eenheid; later voorzitter van de Commissie voor de religieuze betrekkingen met het jodendom.",
+      "roleEn": "Secretary of the Secretariat for Unity; later president of the Commission for Religious Relations with the Jews."
+    },
+    {
+      "name": "Abraham Joshua Heschel",
+      "roleNl": "Amerikaanse rabbijn en godsdienstfilosoof; voerde gesprekken met Bea en het Secretariaat over de inhoud van de tekst.",
+      "roleEn": "American rabbi and philosopher of religion; held talks with Bea and the Secretariat on the content of the text."
+    },
+    {
+      "name": "Paulus VI",
+      "roleNl": "Paus vanaf 1963; richtte het Secretariaat voor de niet-christenen op en kondigde de verklaring af.",
+      "roleEn": "Pope from 1963; founded the Secretariat for Non-Christians and promulgated the declaration."
+    }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "bea-1963",
+      "section": 1,
+      "captionNl": "Kardinaal Augustin Bea in 1963. Johannes XXIII had zijn Secretariaat voor de Eenheid in 1960 gevraagd een tekst over de Joden voor te bereiden.",
+      "captionEn": "Cardinal Augustin Bea in 1963. In 1960 John XXIII had asked his Secretariat for Unity to prepare a text on the Jews."
+    },
+    {
+      "imageId": "synagogue-rome",
+      "section": 5,
+      "captionNl": "De Grote Synagoge van Rome aan de Tiber. Johannes Paulus II bezocht haar op 13 april 1986.",
+      "captionEn": "The Great Synagogue of Rome on the Tiber. John Paul II visited it on 13 April 1986."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books.",
     "Connelly, J. (2012). From enemy to brother: The revolution in Catholic teaching on the Jews, 1933–1965. Harvard University Press.",

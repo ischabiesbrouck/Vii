@@ -90,29 +90,124 @@
     }
   ],
   "timeline": [
-    { "date": "1960-06-05", "nl": "Johannes XXIII richt het Secretariaat voor de eenheid van de christenen op, onder kardinaal Bea.", "en": "John XXIII founds the Secretariat for Promoting Christian Unity under Cardinal Bea." },
-    { "date": "1962-06", "nl": "In de Centrale Voorbereidende Commissie botsen Ottaviani en Bea over Kerk, staat en godsdienstvrijheid.", "en": "In the Central Preparatory Commission Ottaviani and Bea clash over Church, state and religious freedom." },
-    { "date": "1963-04-11", "nl": "Johannes XXIII publiceert *Pacem in terris*, met het recht God te vereren volgens het rechte geweten.", "en": "John XXIII publishes *Pacem in terris*, including the right to worship God according to a right conscience." },
-    { "date": "1963-11-19", "nl": "De Smedt licht in de aula het hoofdstuk over de godsdienstvrijheid in het schema over de oecumene toe.", "en": "De Smedt introduces in the hall the chapter on religious freedom in the schema on ecumenism." },
-    { "date": "1964-09", "nl": "Debat in de derde zitting over de herziene tekst als afzonderlijke verklaring.", "en": "Debate in the third session on the revised text as a separate declaration." },
-    { "date": "1964-11-19", "nl": "De geplande stemming wordt uitgesteld; Paulus VI belooft behandeling als eerste punt in de vierde zitting.", "en": "The scheduled vote is postponed; Paul VI promises the text will be taken up first in the fourth session." },
-    { "date": "1965-09-21", "nl": "Op aandringen van Paulus VI stemmen de vaders in met de tekst als basis voor de definitieve verklaring.", "en": "At Paul VI's urging the Fathers accept the text as the basis for the definitive declaration." },
-    { "date": "1965-12-07", "nl": "Eindstemming (2308 tegen 70) en afkondiging door Paulus VI.", "en": "Final vote (2,308 to 70) and promulgation by Paul VI." },
-    { "date": "1983-01-25", "nl": "Afkondiging van het Wetboek van Canoniek Recht; canon 748 §2 verbiedt dwang tot het geloof.", "en": "Promulgation of the Code of Canon Law; canon 748 §2 forbids coercion into the faith." },
-    { "date": "1992-10-11", "nl": "Johannes Paulus II kondigt de Catechismus van de Katholieke Kerk af (over godsdienstvrijheid: nr. 2104–2109).", "en": "John Paul II promulgates the Catechism of the Catholic Church (on religious freedom: nos. 2104–2109)." },
-    { "date": "2005-12-22", "nl": "Toespraak van Benedictus XVI tot de Curie over de hermeneutiek van de hervorming, met DH als voorbeeld.", "en": "Benedict XVI's address to the Curia on the hermeneutic of reform, with DH as his example." }
+    {
+      "date": "1960-06-05",
+      "nl": "Johannes XXIII richt het Secretariaat voor de eenheid van de christenen op, onder kardinaal Bea.",
+      "en": "John XXIII founds the Secretariat for Promoting Christian Unity under Cardinal Bea."
+    },
+    {
+      "date": "1962-06",
+      "nl": "In de Centrale Voorbereidende Commissie botsen Ottaviani en Bea over Kerk, staat en godsdienstvrijheid.",
+      "en": "In the Central Preparatory Commission Ottaviani and Bea clash over Church, state and religious freedom."
+    },
+    {
+      "date": "1963-04-11",
+      "nl": "Johannes XXIII publiceert *Pacem in terris*, met het recht God te vereren volgens het rechte geweten.",
+      "en": "John XXIII publishes *Pacem in terris*, including the right to worship God according to a right conscience."
+    },
+    {
+      "date": "1963-11-19",
+      "nl": "De Smedt licht in de aula het hoofdstuk over de godsdienstvrijheid in het schema over de oecumene toe.",
+      "en": "De Smedt introduces in the hall the chapter on religious freedom in the schema on ecumenism."
+    },
+    {
+      "date": "1964-09",
+      "nl": "Debat in de derde zitting over de herziene tekst als afzonderlijke verklaring.",
+      "en": "Debate in the third session on the revised text as a separate declaration."
+    },
+    {
+      "date": "1964-11-19",
+      "nl": "De geplande stemming wordt uitgesteld; Paulus VI belooft behandeling als eerste punt in de vierde zitting.",
+      "en": "The scheduled vote is postponed; Paul VI promises the text will be taken up first in the fourth session."
+    },
+    {
+      "date": "1965-09-21",
+      "nl": "Op aandringen van Paulus VI stemmen de vaders in met de tekst als basis voor de definitieve verklaring.",
+      "en": "At Paul VI's urging the Fathers accept the text as the basis for the definitive declaration."
+    },
+    {
+      "date": "1965-12-07",
+      "nl": "Eindstemming (2308 tegen 70) en afkondiging door Paulus VI.",
+      "en": "Final vote (2,308 to 70) and promulgation by Paul VI."
+    },
+    {
+      "date": "1983-01-25",
+      "nl": "Afkondiging van het Wetboek van Canoniek Recht; canon 748 §2 verbiedt dwang tot het geloof.",
+      "en": "Promulgation of the Code of Canon Law; canon 748 §2 forbids coercion into the faith."
+    },
+    {
+      "date": "1992-10-11",
+      "nl": "Johannes Paulus II kondigt de Catechismus van de Katholieke Kerk af (over godsdienstvrijheid: nr. 2104–2109).",
+      "en": "John Paul II promulgates the Catechism of the Catholic Church (on religious freedom: nos. 2104–2109)."
+    },
+    {
+      "date": "2005-12-22",
+      "nl": "Toespraak van Benedictus XVI tot de Curie over de hermeneutiek van de hervorming, met DH als voorbeeld.",
+      "en": "Benedict XVI's address to the Curia on the hermeneutic of reform, with DH as his example."
+    }
   ],
   "people": [
-    { "name": "Émile-Joseph De Smedt", "roleNl": "Bisschop van Brugge, lid van het Secretariaat voor de eenheid en relator van de opeenvolgende ontwerpen in de aula.", "roleEn": "Bishop of Bruges, member of the Secretariat for Unity and relator of the successive drafts in the hall." },
-    { "name": "John Courtney Murray", "roleNl": "Amerikaanse jezuïet en peritus; werkte mee aan de ontwerpen en verdedigde de fundering vanuit de beperkte bevoegdheid van de staat en de openbare orde.", "roleEn": "American Jesuit and peritus; worked on the drafts and defended a foundation in the limited competence of the state and public order." },
-    { "name": "Augustin Bea", "roleNl": "Kardinaal, voorzitter van het Secretariaat voor de eenheid dat de tekst voorbereidde.", "roleEn": "Cardinal, president of the Secretariat for Unity, which prepared the text." },
-    { "name": "Pietro Pavan", "roleNl": "Italiaanse priester en sociaal-ethicus, betrokken bij *Pacem in terris* en peritus bij de redactie van de verklaring.", "roleEn": "Italian priest and social ethicist, involved in *Pacem in terris* and a peritus in drafting the declaration." },
-    { "name": "Alfredo Ottaviani", "roleNl": "Kardinaal, voorzitter van de Theologische Commissie; verdedigde de klassieke leer van these en hypothese.", "roleEn": "Cardinal, president of the Theological Commission; defended the classical teaching of thesis and hypothesis." },
-    { "name": "Marcel Lefebvre", "roleNl": "Aartsbisschop, leidende figuur van de Coetus Internationalis Patrum en tegenstander van de verklaring.", "roleEn": "Archbishop, leading figure of the Coetus Internationalis Patrum and opponent of the declaration." },
-    { "name": "Josef Beran", "roleNl": "Kardinaal-aartsbisschop van Praag; sprak in september 1965 over gewetensdwang in de geschiedenis van zijn land.", "roleEn": "Cardinal Archbishop of Prague; spoke in September 1965 about coercion of conscience in his country's history." },
-    { "name": "Karol Wojtyła", "roleNl": "Aartsbisschop van Krakau; benadrukte in zijn interventies de band tussen vrijheid, waarheid en verantwoordelijkheid.", "roleEn": "Archbishop of Kraków; stressed in his interventions the link between freedom, truth and responsibility." }
+    {
+      "name": "Émile-Joseph De Smedt",
+      "roleNl": "Bisschop van Brugge, lid van het Secretariaat voor de eenheid en relator van de opeenvolgende ontwerpen in de aula.",
+      "roleEn": "Bishop of Bruges, member of the Secretariat for Unity and relator of the successive drafts in the hall."
+    },
+    {
+      "name": "John Courtney Murray",
+      "roleNl": "Amerikaanse jezuïet en peritus; werkte mee aan de ontwerpen en verdedigde de fundering vanuit de beperkte bevoegdheid van de staat en de openbare orde.",
+      "roleEn": "American Jesuit and peritus; worked on the drafts and defended a foundation in the limited competence of the state and public order."
+    },
+    {
+      "name": "Augustin Bea",
+      "roleNl": "Kardinaal, voorzitter van het Secretariaat voor de eenheid dat de tekst voorbereidde.",
+      "roleEn": "Cardinal, president of the Secretariat for Unity, which prepared the text."
+    },
+    {
+      "name": "Pietro Pavan",
+      "roleNl": "Italiaanse priester en sociaal-ethicus, betrokken bij *Pacem in terris* en peritus bij de redactie van de verklaring.",
+      "roleEn": "Italian priest and social ethicist, involved in *Pacem in terris* and a peritus in drafting the declaration."
+    },
+    {
+      "name": "Alfredo Ottaviani",
+      "roleNl": "Kardinaal, voorzitter van de Theologische Commissie; verdedigde de klassieke leer van these en hypothese.",
+      "roleEn": "Cardinal, president of the Theological Commission; defended the classical teaching of thesis and hypothesis."
+    },
+    {
+      "name": "Marcel Lefebvre",
+      "roleNl": "Aartsbisschop, leidende figuur van de Coetus Internationalis Patrum en tegenstander van de verklaring.",
+      "roleEn": "Archbishop, leading figure of the Coetus Internationalis Patrum and opponent of the declaration."
+    },
+    {
+      "name": "Josef Beran",
+      "roleNl": "Kardinaal-aartsbisschop van Praag; sprak in september 1965 over gewetensdwang in de geschiedenis van zijn land.",
+      "roleEn": "Cardinal Archbishop of Prague; spoke in September 1965 about coercion of conscience in his country's history."
+    },
+    {
+      "name": "Karol Wojtyła",
+      "roleNl": "Aartsbisschop van Krakau; benadrukte in zijn interventies de band tussen vrijheid, waarheid en verantwoordelijkheid.",
+      "roleEn": "Archbishop of Kraków; stressed in his interventions the link between freedom, truth and responsibility."
+    }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "pius-ix",
+      "section": 0,
+      "captionNl": "Pius IX in 1875. Zijn encycliek *Quanta cura* met de *Syllabus errorum* (1864) veroordeelde onder meer de stelling dat godsdienstvrijheid een natuurlijk recht van iedereen is.",
+      "captionEn": "Pius IX in 1875. His encyclical *Quanta cura* with the *Syllabus of Errors* (1864) condemned, among other things, the proposition that religious freedom is a natural right of everyone."
+    },
+    {
+      "imageId": "bishops-square",
+      "section": 2,
+      "captionNl": "Bisschoppen op het Sint-Pietersplein na een zitting. Over de godsdienstvrijheid werd in drie zittingen gedebatteerd. Foto Lothar Wolleh.",
+      "captionEn": "Bishops in St Peter's Square after a session. Religious liberty was debated over three sessions. Photograph by Lothar Wolleh."
+    },
+    {
+      "imageId": "paul-vi",
+      "section": 3,
+      "captionNl": "Paulus VI kondigde *Dignitatis humanae* af op 7 december 1965, de dag voor de sluiting van het Concilie. Portret uit 1969.",
+      "captionEn": "Paul VI promulgated *Dignitatis humanae* on 7 December 1965, the day before the Council closed. Portrait from 1969."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books.",
     "Hünermann, P., & Hilberath, B. J. (Eds.). (2004–2006). Herders theologischer Kommentar zum Zweiten Vatikanischen Konzil (Vols. 1–5). Herder.",
