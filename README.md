@@ -76,7 +76,7 @@ it, and nothing is generated at runtime.
 | `claims.json`, `glossary.json`, `hermeneutics.json`, `timeline.json` | Claim Check, terms, readings, chronology |
 | `catecheses.json`, `videos.json` | Audiences and videos, with their sources |
 | `sources.json` | External sources, cited as `ext:…` |
-| `images.json` | Licensed images: author, licence, source. Currently empty |
+| `images.json` | 23 licensed images from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA): author, licence, source |
 
 `scripts/validate-content.mjs` runs before every build. It checks that every
 citation, cross-reference, quotation and source resolves. Citations in study
@@ -92,7 +92,19 @@ invalidates the cached search index.
 - **A study text:** follow the `Study` type. Conciliar text only appears through
   `quote` blocks, so excerpts are never retyped.
 - **Photos:** go in `public/images/` with an entry in `images.json`. The caption
-  shows author, licence and source.
+  shows author, licence and source, and the validator checks that each file exists.
+  `.github/workflows/images.yml` fetches them from Wikimedia Commons on GitHub's
+  runners, in two phases:
+  1. Edit `tools/images/queries.json` and push. The workflow searches Commons and
+     commits 480 px previews and their metadata to `tools/images/candidates/`. Only
+     public domain, CC0, CC BY and CC BY-SA files are kept; NC, ND and GFDL-only are
+     rejected.
+  2. Choose files in `tools/images/selection.json` (`id`, Commons `title`, alt text in
+     both languages, optional `author` correction) and push. The workflow checks the
+     licence again, downloads the files to `public/images/` and writes `images.json`.
+
+  Then reduce the files locally (the current set uses at most 1000 × 1400 px, JPEG
+  quality 80) and delete `tools/images/candidates/` before merging.
 
 ### Editorial status
 
@@ -131,6 +143,9 @@ Use `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`, or
   never test personal orthodoxy.
 - **Terms without a conciliar source**, such as *aggiornamento* and
   *ressourcement*, are labelled as such and do not link to a paragraph.
+- **Images** are precached with the rest of the app (about 4 MB), so figures also
+  appear offline. Captions state what the image shows and why it is there; each
+  figure links to its Commons page and licence, as CC BY and CC BY-SA require.
 - **Videos** are the only network traffic. Nothing loads before the reader
   presses play.
   - The player uses youtube-nocookie.com.

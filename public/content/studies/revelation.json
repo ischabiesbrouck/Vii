@@ -199,6 +199,12 @@
               "en": "God is the author of the sacred books, which were written under the inspiration of the Holy Spirit. The human writers are at the same time true authors: God made use of them with their own powers and abilities (DV §11). From this twofold authorship the text derives its statement on the truth of Scripture."
             },
             {
+              "type": "image",
+              "imageId": "codex-vaticanus",
+              "captionNl": "Een blad uit de Codex Vaticanus (4e eeuw) met Matteüs 1,22–2,18. Het handschrift wordt bewaard in de Biblioteca Apostolica Vaticana.",
+              "captionEn": "A leaf of Codex Vaticanus (4th century) with Matthew 1:22–2:18. The manuscript is kept in the Biblioteca Apostolica Vaticana."
+            },
+            {
               "type": "quote",
               "paragraphId": "DV-11"
             },

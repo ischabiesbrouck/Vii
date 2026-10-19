@@ -43,6 +43,12 @@
               "en": "Around 1900 the question took on a sharp form. According to Modernism, dogmas were time-bound expressions of religious experience whose meaning could change over time. Pius X condemned this view in 1907, and from then on any talk of ‘development’ was regarded with suspicion. Meanwhile, from the 1930s to the 1950s, the ressourcement movement grew. Henri de Lubac, Jean Daniélou, Yves Congar and others went back to Scripture, the Fathers and the liturgy, and in 1950 Congar published a study of true and false reform in the Church. In the same year Pius XII, in Humani generis, warned against relativising dogmatic formulations."
             },
             {
+              "type": "image",
+              "imageId": "john-xxiii",
+              "captionNl": "Johannes XXIII (paus 1958–1963). Hij opende het Concilie op 11 oktober 1962 met de rede Gaudet Mater Ecclesia.",
+              "captionEn": "John XXIII (pope 1958–1963). He opened the Council on 11 October 1962 with the address Gaudet Mater Ecclesia."
+            },
+            {
               "type": "p",
               "nl": "Johannes XXIII maakte in zijn openingsrede Gaudet Mater Ecclesia (11 oktober 1962) een onderscheid dat het hele Concilie zou kleuren. De geloofsschat zelf, de waarheden van de leer, is één ding; de wijze waarop ze worden uitgedrukt is iets anders, mits de betekenis dezelfde blijft. Het Concilie nam het onderscheid later in eigen woorden over en verwees daarbij naar de rede (GS §62). Voortaan kon over een nieuwe formulering gesproken worden zonder dat de inhoud zelf ter discussie stond.",
               "en": "In his opening address Gaudet Mater Ecclesia (11 October 1962) John XXIII drew a distinction that would colour the whole Council. The deposit of faith itself, the truths of doctrine, is one thing; the way in which they are expressed is another, provided the meaning remains the same. The Council later adopted the distinction in its own words, with a reference to the address (GS §62). From then on a new formulation could be discussed without the content itself being called into question."
@@ -235,21 +241,32 @@
                   "labelEn": "Development in continuity",
                   "nl": "De negentiende-eeuwse pausen veroordeelden het indifferentisme en een staat die godsdienst als louter privézaak behandelt. DH verklaart iets anders: een recht van de persoon om niet gedwongen te worden, gegrond in de waardigheid die door openbaring en rede gekend wordt (DH §2). De plicht tegenover de ware godsdienst blijft staan (DH §1). Het beginsel is hetzelfde gebleven; nieuw is de toepassing in een veranderde politieke situatie.",
                   "en": "The nineteenth-century popes condemned indifferentism and a state that treats religion as a merely private matter. DH declares something else: a right of the person not to be coerced, grounded in the dignity known through revelation and reason (DH §2). The duty toward the true religion stands (DH §1). The principle has stayed the same; what is new is its application in a changed political situation.",
-                  "sources": ["DH-1", "DH-2", "ext:benedict-2005"]
+                  "sources": [
+                    "DH-1",
+                    "DH-2",
+                    "ext:benedict-2005"
+                  ]
                 },
                 {
                   "labelNl": "Bewuste vernieuwing",
                   "labelEn": "Deliberate innovation",
                   "nl": "DH erkende, mede onder invloed van de Amerikaanse jezuïet John Courtney Murray, het beginsel van de constitutionele staat en de gewetensvrijheid zoals die in de moderne democratie waren gegroeid. Op dit punt was de oudere leer achterhaald. Dat de verklaring toegeeft dat in de Kerk soms gehandeld werd op een wijze die met het evangelie in strijd was (DH §12), wijst erop dat het Concilie hier werkelijk iets nieuws zei.",
                   "en": "DH recognised, partly under the influence of the American Jesuit John Courtney Murray, the principle of the constitutional state and freedom of conscience as these had grown in modern democracy. On this point the older teaching had been superseded. The declaration’s admission that the Church has at times acted in ways contrary to the Gospel (DH §12) indicates that the Council was here saying something genuinely new.",
-                  "sources": ["DH-2", "DH-12"]
+                  "sources": [
+                    "DH-2",
+                    "DH-12"
+                  ]
                 },
                 {
                   "labelNl": "Traditionalistische kritiek",
                   "labelEn": "Traditionalist critique",
                   "nl": "DH is niet te verzoenen met Quanta cura en met de leer over de plichten van de katholieke staat in Immortale Dei. DH §1 verwoordt een continuïteit die de rest van de tekst niet waarmaakt. Omdat het Concilie hier niets definieerde, blijft dit punt volgens deze lezing open voor verheldering door het leergezag. Onder anderen Marcel Lefebvre heeft deze positie verdedigd.",
                   "en": "DH cannot be reconciled with Quanta cura and with the teaching on the duties of the Catholic state in Immortale Dei. DH §1 asserts a continuity that the rest of the text does not deliver. Because the Council defined nothing here, this point remains, on this reading, open to clarification by the magisterium. Marcel Lefebvre, among others, defended this position.",
-                  "sources": ["ext:quanta-cura-1864", "ext:immortale-dei-1885", "ext:notificationes-1964"]
+                  "sources": [
+                    "ext:quanta-cura-1864",
+                    "ext:immortale-dei-1885",
+                    "ext:notificationes-1964"
+                  ]
                 }
               ]
             }

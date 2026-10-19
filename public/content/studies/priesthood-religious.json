@@ -74,6 +74,12 @@
               "en": "Presbyterorum Ordinis builds on LG §10. The common and the ministerial priesthood differ ‘in essence and not only in degree’, and yet each in its own way shares in the one priesthood of Christ. The ministerial priesthood forms and governs the priestly people and, in the person of Christ, brings about the Eucharistic sacrifice (LG §10). The decree adds the sacramental ground of the priesthood."
             },
             {
+              "type": "image",
+              "imageId": "ordination",
+              "captionNl": "Priesterwijding door bisschop László Huzsvár in Zrenjanin (Servië), 6 januari 2007. De pas gewijde priesters concelebreren met hun bisschop.",
+              "captionEn": "Priestly ordination by Bishop László Huzsvár in Zrenjanin, Serbia, on 6 January 2007. The newly ordained priests concelebrate with their bishop."
+            },
+            {
               "type": "quote",
               "paragraphId": "PO-2"
             },
@@ -255,14 +261,21 @@
                   "labelEn": "A discipline with deep roots",
                   "nl": "Het celibaat is een kerkelijke discipline met een theologische onderbouwing. PO §16 noemt de veelvoudige passendheid ervan voor het priesterschap, en Sacerdotalis caelibatus werkt die christologisch, ecclesiologisch en eschatologisch uit. Historici als Christian Cochini betogen bovendien dat al in de vroege Kerk een discipline van onthouding voor gewijden bestond. De bevestiging van de wet vormt volgens deze lezing het zwaartepunt van PO §16, en de opleiding moet erop gericht zijn (OT §10).",
                   "en": "Celibacy is an ecclesiastical discipline with a theological foundation. PO §16 speaks of its many-sided fittingness for the priesthood, and Sacerdotalis caelibatus develops this christologically, ecclesiologically and eschatologically. Historians such as Christian Cochini argue moreover that a discipline of continence for the ordained already existed in the early Church. On this reading the confirmation of the law is the centre of gravity of PO §16, and formation must be ordered to it (OT §10).",
-                  "sources": ["PO-16", "OT-10", "ext:sacerdotalis-caelibatus-1967"]
+                  "sources": [
+                    "PO-16",
+                    "OT-10",
+                    "ext:sacerdotalis-caelibatus-1967"
+                  ]
                 },
                 {
                   "labelNl": "Een discipline die in beginsel kan variëren",
                   "labelEn": "A discipline that can in principle vary",
                   "nl": "PO §16 zegt zelf dat het celibaat niet uit de aard van het priesterschap volgt, en eert uitdrukkelijk de gehuwde oosterse clerus. De Latijnse wet is daarom in beginsel een zaak van kerkelijke beslissing. Ook OT §10 spreekt van de wetten van de ‘eigen ritus’. Voorstanders van deze lezing pleiten voor de mogelijkheid van uitzonderingen, bijvoorbeeld voor gehuwde mannen in gebieden met een groot priestertekort. De waarde van het celibaat betwisten zij daarbij niet.",
                   "en": "PO §16 itself says that celibacy does not follow from the nature of the priesthood, and it expressly honours the married Eastern clergy. The Latin law is therefore in principle a matter of ecclesiastical decision. OT §10, too, speaks of the laws of one’s ‘own rite’. Proponents of this reading argue for the possibility of exceptions, for instance for married men in regions with a severe shortage of priests. They do not dispute the value of celibacy in doing so.",
-                  "sources": ["PO-16", "OT-10"]
+                  "sources": [
+                    "PO-16",
+                    "OT-10"
+                  ]
                 }
               ]
             }
@@ -287,14 +300,20 @@
                   "labelEn": "The order was reversed",
                   "nl": "PC §2 noemt de terugkeer naar de bronnen en de geest van de stichters vóór de aanpassing, en geeft de geestelijke vernieuwing voorrang. Volgens deze lezing namen veel instituten de aanpassing als uitgangspunt. Gemeenschapsleven, gebed en herkenbaarheid verzwakten, en met hen de eigen identiteit. Het herstel ligt dan in de volgorde die de tekst zelf aangeeft, gelezen in het licht van de roeping tot heiligheid (LG §40), zonder de vernieuwing terug te draaien.",
                   "en": "PC §2 names the return to the sources and the spirit of the founders before adaptation, and gives spiritual renewal priority. On this reading many institutes took adaptation as their starting point. Common life, prayer and visibility weakened, and with them their identity. Recovery then lies in the order the text itself sets out, read in the light of the call to holiness (LG §40), without undoing renewal.",
-                  "sources": ["PC-2", "LG-40"]
+                  "sources": [
+                    "PC-2",
+                    "LG-40"
+                  ]
                 },
                 {
                   "labelNl": "Een bredere culturele verschuiving",
                   "labelEn": "A wider cultural shift",
                   "nl": "Volgens deze lezing was de daling vooral het gevolg van secularisatie, kleinere gezinnen en nieuwe mogelijkheden voor vrouwen en mannen in onderwijs en zorg, processen die al vóór het Concilie waren ingezet. De aanpassing waar PC §2 om vraagt, was noodzakelijk en droeg vrucht. De Kerk moet de tekenen des tijds blijven verstaan (GS §4). Aantallen alleen zijn geen maatstaf voor trouw aan het charisma.",
                   "en": "On this reading the decline was chiefly the result of secularisation, smaller families and new opportunities for women and men in education and care, processes already under way before the Council. The adaptation PC §2 asks for was necessary and bore fruit. The Church must go on reading the signs of the times (GS §4). Numbers alone are no measure of fidelity to the charism.",
-                  "sources": ["PC-2", "GS-4"]
+                  "sources": [
+                    "PC-2",
+                    "GS-4"
+                  ]
                 }
               ]
             }

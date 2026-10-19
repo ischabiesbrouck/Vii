@@ -75,13 +75,13 @@ function Figure({ imageId, caption, n }: { imageId: string; caption: string; n: 
         alt={pick(lang, im.altNl, im.altEn)}
         loading="lazy"
         decoding="async"
-        className="h-auto w-full border border-line bg-surface"
+        className="mx-auto h-auto max-h-[75vh] w-auto max-w-full border border-line bg-surface"
       />
       <figcaption className="mt-2 text-[0.82rem] leading-snug text-muted">
         <span className="font-semibold text-fg">
           {t('study.figure')} {n}.
         </span>{' '}
-        {caption}{' '}
+        <Cited text={caption} />{' '}
         <span className="block pt-0.5 text-[0.75rem]">
           {im.author} ·{' '}
           {im.licenseUrl ? (

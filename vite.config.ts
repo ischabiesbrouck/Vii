@@ -49,8 +49,8 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        // Precache the entire app shell, fonts and ALL content JSON.
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,json,webmanifest}'],
+        // Precache the entire app shell, fonts, ALL content JSON and the licensed images.
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2,json,webmanifest}'],
         // Only Latin / Latin-ext font subsets are ever needed for NL, EN and LA text.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-wght-*.woff2'],
         navigateFallback: `${BASE}index.html`,

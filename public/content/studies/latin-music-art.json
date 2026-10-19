@@ -19,6 +19,12 @@
               "en": "The oldest Roman liturgy was Greek. In the course of the fourth century Latin became the liturgical language of the city, because the people had by then come to speak Latin. Afterwards it remained for centuries the language of the Latin rites, even when nobody spoke it as a mother tongue any longer. It stood for unity and for continuity with the Fathers; for those who did not understand it, it was also a threshold."
             },
             {
+              "type": "image",
+              "imageId": "missale-1651",
+              "captionNl": "Titelpagina van een Missale Romanum uit 1651. Tot 1965 werd de mis in de Latijnse Kerk vrijwel overal in het Latijn gevierd, volgens het missaal dat Pius V in 1570 had uitgevaardigd.",
+              "captionEn": "Title page of a Missale Romanum of 1651. Until 1965 Mass in the Latin Church was celebrated almost everywhere in Latin, following the missal Pius V had issued in 1570."
+            },
+            {
               "type": "box",
               "kind": "context",
               "titleNl": "Trente en Veterum sapientia",
@@ -139,6 +145,12 @@
               "type": "p",
               "nl": "Het hoofdstuk over de muziek opent met een opvallend sterke uitspraak. De muzikale traditie van de Kerk gaat die van iedere andere kunst te boven, omdat de gewijde zang een noodzakelijk of integrerend deel van de plechtige liturgie vormt (SC §112). Hoe nauwer kerkmuziek met de liturgische handeling verbonden is, hoe heiliger zij is. Muziek behoort volgens deze paragraaf tot de liturgie zelf.",
               "en": "The chapter on music opens with a remarkably strong statement. The musical tradition of the Church surpasses that of any other art, because sacred song forms a necessary or integral part of the solemn liturgy (SC §112). The more closely sacred music is joined to the liturgical action, the holier it is. On this paragraph’s terms, music belongs to the liturgy itself."
+            },
+            {
+              "type": "image",
+              "imageId": "neumes",
+              "captionNl": "Antifonen met neumen in een middeleeuws breviarium (Stiftsbibliothek St. Gallen, Cod. Sang. 103, f. 79r). SC §116 geeft het gregoriaans de eerste plaats.",
+              "captionEn": "Antiphons with neumes in a medieval breviary (Stiftsbibliothek St. Gallen, Cod. Sang. 103, fol. 79r). SC §116 gives Gregorian chant pride of place."
             },
             {
               "type": "quote",
