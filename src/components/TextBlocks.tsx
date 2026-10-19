@@ -43,7 +43,7 @@ export function ConciliarText({
           </>
         )}
       </figcaption>
-      <blockquote lang={lang === 'en' ? 'en' : 'nl'} className="whitespace-pre-line">
+      <blockquote lang={lang === 'en' ? 'en' : 'nl'} className="whitespace-pre-line" data-tts-before={shortCite(paragraph.id)}>
         {text}
       </blockquote>
       {showLatin && paragraph.textLa && (

@@ -63,7 +63,10 @@ export default defineConfig(({ mode }) => ({
         lang: 'nl-NL',
         start_url: BASE,
         scope: BASE,
-        display: 'standalone',
+        // Installed, the app fills the whole screen (no status or navigation bar on Android);
+        // where fullscreen is not supported (iOS) the browser falls back to standalone.
+        display: 'fullscreen',
+        display_override: ['fullscreen', 'standalone'],
         orientation: 'portrait',
         theme_color: '#7A1F1F',
         background_color: '#FAF8F3',

@@ -6,6 +6,7 @@ import { useFocusMode } from '@/store/focus';
 import { DocTypeBadge, SolemnityBadge } from '@/components/Badges';
 import { Commentary, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar } from '@/components/TextBlocks';
 import { ParagraphSheet, copyCitation } from '@/components/ParagraphSheet';
+import { ReadAloudButton } from '@/components/ReadAloud';
 import { SubjectIcon } from '@/components/SubjectIcon';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { getCatecheses, getDocumentContent, getDocuments, getSubjects, getVideos } from '@/lib/content';
@@ -494,6 +495,7 @@ export function DocumentReader() {
                     ))}
                   </select>
                 </label>
+                <ReadAloudButton target={listRef} className="min-h-[40px]" />
                 <button
                   type="button"
                   onClick={() => setFocus(!focus)}
@@ -533,7 +535,9 @@ export function DocumentReader() {
                 </details>
               </Commentary>
             )}
-            <p className="mb-8 text-xs text-muted">{t('doc.tapHint')}</p>
+            <p className="mb-8 text-xs text-muted" data-tts-skip>
+              {t('doc.tapHint')}
+            </p>
 
             <div ref={listRef} className={cn('max-w-[46rem] space-y-6', `reader-${fontSize}`)}>
               {paragraphs.map((p, i) => {

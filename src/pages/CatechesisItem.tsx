@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 import { Crumbs, Loading } from '@/components/TextBlocks';
 import { LinkedText } from '@/components/RefLink';
 import { ReadingBar } from '@/components/ReadingBar';
+import { ReadAloudButton } from '@/components/ReadAloud';
 import { getShortCatecheses, getSubjects } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
@@ -42,9 +43,10 @@ export function CatechesisItem() {
         <div className="rule-ornament mx-auto mt-5 max-w-[12rem]" aria-hidden>
           <span className="text-[0.5rem]">◆</span>
         </div>
-        <p className="mt-4 text-xs text-muted">
+        <p className="mt-4 text-xs text-muted" data-tts-skip>
           {t('learn.minutes', { count: c.minutes })} · {t('sc.refsHint')}
         </p>
+        <ReadAloudButton target={articleRef} className="mt-4" />
       </header>
 
       <div className="font-serif text-[1.08rem] leading-[1.8]">
@@ -76,7 +78,9 @@ export function CatechesisItem() {
           <ol className="mt-3 space-y-3 font-serif">
             {(lang === 'nl' ? c.inBriefNl : c.inBriefEn).map((b, bi) => (
               <li key={bi} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-2">
-                <span className="font-display text-sm font-semibold text-accent">{toRoman(bi + 1)}.</span>
+                <span className="font-display text-sm font-semibold text-accent" data-tts-skip>
+                  {toRoman(bi + 1)}.
+                </span>
                 <span>
                   <LinkedText text={b} />
                 </span>
@@ -99,7 +103,7 @@ export function CatechesisItem() {
         </ul>
       </section>
 
-      <section aria-labelledby="h-links" className="mt-10 grid gap-8 sm:grid-cols-2">
+      <section aria-labelledby="h-links" className="mt-10 grid gap-8 sm:grid-cols-2" data-tts-skip>
         <div>
           <h2 id="h-links" className="kicker mb-1.5">
             {t('sc.links')}
@@ -130,7 +134,7 @@ export function CatechesisItem() {
         )}
       </section>
 
-      <p className="mt-10 border-y border-dashed border-line py-2 text-center text-xs text-muted">
+      <p className="mt-10 border-y border-dashed border-line py-2 text-center text-xs text-muted" data-tts-skip>
         {t('sc.editorial')}
         {c.review === 'unverified' && ` · ${t('doc.unverified')}`}
       </p>

@@ -5,7 +5,7 @@ Second Vatican Council (1962–1965), organised by paragraph number. It is an
 installable web app (PWA) that works offline, in Dutch with an English
 translation. There is no backend, no account and no tracking. Once the service
 worker is installed the app makes no network requests, except for videos the
-reader chooses to play.
+reader chooses to play and, if the reader picks one, an online reading voice.
 
 > Concilium is a study aid. It does not speak for the Church. The official texts
 > are on [vatican.va](https://www.vatican.va/archive/hist_councils/ii_vatican_council/index.htm).
@@ -59,6 +59,7 @@ Fonts are self-hosted through Fontsource: EB Garamond, Source Serif 4, Cinzel an
 | `/catechesis`, `/catechesis/:id` | Twelve short catecheses, each headed by a question. Each has explanation, *In brief*, reflection questions and further reading. Nothing is quoted directly; references such as LG §8 are links that open the paragraph in a panel |
 | `/catecheses` | Register of Pope Leo XIV's general audiences on the Council (2026), with links to vatican.va |
 | `/videos` | Selected English-language videos; played in the app, with no YouTube suggestions afterwards |
+| *(any text page)* | **Voorlezen**: study chapters, catecheses and the document reader can be read aloud |
 | `/claims`, `/timeline`, `/glossary`, `/hermeneutics`, `/search`, `/about` | Claim Check, chronology, terms, readings of the Council, full-text search, colophon |
 
 ## Content
@@ -149,7 +150,23 @@ Use `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`, or
 - **Images** are precached with the rest of the app (about 4 MB), so figures also
   appear offline. Captions state what the image shows and why it is there; each
   figure links to its Commons page and licence, as CC BY and CC BY-SA require.
-- **Videos** are the only network traffic. Nothing loads before the reader
+- **Reading aloud** uses the device's own voices (Web Speech API); no voice is bundled
+  or downloaded. `src/lib/speech.ts` picks the best **male** voice by name, since the
+  API does not report gender: Microsoft Maarten (Edge, natural), Apple Xander
+  (premium/enhanced), Microsoft Frank (Windows) for Dutch; Ryan, Guy, Daniel and
+  Arthur for English. Readers can choose another voice and a speed (stored locally).
+  - Pages are read block by block, highlighted; "LG §8" is spoken as "Lumen Gentium,
+    paragraaf 8", "Pius XII" as "Pius de twaalfde". Latin, captions, navigation and
+    anything marked `data-tts-skip` are not read.
+  - Voices marked "online" (Edge natural voices, Chrome's Google voices) send the
+    text to the browser maker's speech service; the voice picker says so.
+  - Chrome on Android uses the system's default voice: a male Dutch voice is set in
+    Android's text-to-speech settings. The app explains this when no male voice is found.
+- **Full screen.** Installed, the app opens full screen (manifest `display:
+  fullscreen`, falling back to standalone). In the browser a full-screen button sits in
+  the header where the Fullscreen API exists; iPhone Safari has none, so the settings
+  explain *Add to Home Screen* instead.
+- **Videos** are the only network traffic besides online voices. Nothing loads before the reader
   presses play.
   - The player uses youtube-nocookie.com.
   - When the video ends, the app removes the player, so no suggestions or next video appear.

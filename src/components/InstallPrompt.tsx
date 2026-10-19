@@ -11,6 +11,7 @@ interface BeforeInstallPromptEvent extends Event {
 
 const isStandalone = () =>
   window.matchMedia('(display-mode: standalone)').matches ||
+  window.matchMedia('(display-mode: fullscreen)').matches ||
   (navigator as Navigator & { standalone?: boolean }).standalone === true;
 
 const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) && !/crios|fxios/i.test(navigator.userAgent);

@@ -120,8 +120,8 @@ export function About() {
         <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Privacy' : 'Privacy'}</h2>
         <p className="text-sm">
           {nl
-            ? 'Geen account, geen analytics. Leesvoortgang, bladwijzers, lesvoortgang en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB. De enige externe verbinding is een video die u zelf start: die wordt pas na uw klik geladen via youtube-nocookie.com. Links naar vatican.va openen in een nieuw tabblad.'
-            : 'No account, no analytics. Reading progress, bookmarks, lesson progress and settings stay on your device (localStorage); the search index is kept in IndexedDB. The only external connection is a video you start yourself: it loads only after your click, via youtube-nocookie.com. Links to vatican.va open in a new tab.'}
+            ? 'Geen account, geen analytics. Leesvoortgang, bladwijzers, lesvoortgang en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB. De enige externe verbinding is een video die u zelf start: die wordt pas na uw klik geladen via youtube-nocookie.com. Voorlezen gebruikt de stemmen van uw apparaat; kiest u een stem die als ‘online’ is gemarkeerd, dan stuurt uw browser de voorgelezen tekst naar zijn spraakdienst. Links naar vatican.va openen in een nieuw tabblad.'
+            : 'No account, no analytics. Reading progress, bookmarks, lesson progress and settings stay on your device (localStorage); the search index is kept in IndexedDB. The only external connection is a video you start yourself: it loads only after your click, via youtube-nocookie.com. Reading aloud uses your device’s voices; if you choose a voice marked ‘online’, your browser sends the text being read to its speech service. Links to vatican.va open in a new tab.'}
         </p>
       </section>
 

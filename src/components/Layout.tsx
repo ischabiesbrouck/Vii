@@ -13,7 +13,9 @@ import {
   Info,
   Library,
   ListChecks,
+  Maximize,
   Menu,
+  Minimize,
   Monitor,
   Moon,
   Scale,
@@ -27,6 +29,8 @@ import { InstallPrompt } from '@/components/InstallPrompt';
 import { Toast } from '@/components/Toast';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { usePlayer } from '@/store/player';
+import { useSpeech } from '@/store/speech';
+import { installedDisplay, toggleFullscreen, useFullscreen } from '@/lib/fullscreen';
 import { useOnline } from '@/lib/hooks';
 import { useUi, type FontSize, type Theme } from '@/store/ui';
 import { OFFICIAL_INDEX_URL, RKDOCUMENTEN_URL } from '@/config';
@@ -37,6 +41,13 @@ import { Seal } from '@/components/Seal';
 // Loaded on first use: the palette pulls in the search index, the theater the player.
 const CommandPalette = lazy(() => import('@/components/CommandPalette').then((m) => ({ default: m.CommandPalette })));
 const VideoTheater = lazy(() => import('@/components/VideoTheater').then((m) => ({ default: m.VideoTheater })));
+const SpeechBar = lazy(() => import('@/components/ReadAloud').then((m) => ({ default: m.SpeechBar })));
+const VoiceSettings = lazy(() => import('@/components/ReadAloud').then((m) => ({ default: m.VoiceSettings })));
+
+/** Stop reading aloud (loads the reader only if it is in use). */
+const stopReading = () => {
+  if (useSpeech.getState().status !== 'idle') void import('@/lib/readAloud').then((m) => m.stop());
+};
 
 const tabs = [
   { to: '/', key: 'home', Icon: Home, end: true },
@@ -142,7 +153,54 @@ export function SettingsPanel() {
           { value: 'lg', label: 'A++' },
         ]}
       />
+      <ScreenSetting />
+      <section aria-label={t('tts.voice')} className="mt-6 border-t border-line pt-5">
+        <Suspense fallback={null}>
+          <VoiceSettings />
+        </Suspense>
+      </section>
     </div>
+  );
+}
+
+const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+/** Full screen: a switch where the browser allows it, otherwise how to get it. */
+function ScreenSetting() {
+  const { t } = useTranslation();
+  const [on, can] = useFullscreen();
+  let body;
+  if (can)
+    body = (
+      <button
+        type="button"
+        aria-pressed={on}
+        onClick={() => void toggleFullscreen()}
+        className="flex min-h-[44px] w-full items-center justify-center gap-2 border border-line bg-card px-3 text-sm hover:border-fg/40 aria-pressed:bg-fg aria-pressed:text-bg"
+      >
+        {on ? <Minimize className="h-4 w-4" aria-hidden /> : <Maximize className="h-4 w-4" aria-hidden />}
+        {on ? t('fullscreen.exit') : t('fullscreen.enter')}
+      </button>
+    );
+  else if (installedDisplay()) body = <p className="text-sm text-muted">{t('fullscreen.installedHint')}</p>;
+  else if (isIos()) body = <p className="text-sm text-muted">{t('fullscreen.iosHint')}</p>;
+  else return null;
+  return (
+    <div className="mb-5">
+      <p className="kicker mb-2">{t('fullscreen.title')}</p>
+      {body}
+    </div>
+  );
+}
+
+function FullscreenButton({ className }: { className?: string }) {
+  const { t } = useTranslation();
+  const [on, can] = useFullscreen();
+  if (!can) return null;
+  return (
+    <button type="button" className={className} onClick={() => void toggleFullscreen()} aria-pressed={on} aria-label={on ? t('fullscreen.exit') : t('fullscreen.enter')} title={on ? t('fullscreen.exit') : t('fullscreen.enter')}>
+      {on ? <Minimize className="h-[1.1em] w-[1.1em]" aria-hidden /> : <Maximize className="h-[1.1em] w-[1.1em]" aria-hidden />}
+    </button>
   );
 }
 
@@ -270,6 +328,11 @@ export function Layout() {
   const theaterLoaded = useRef(false);
   if (playerUsed) theaterLoaded.current = true;
   const headerRef = useRef<HTMLElement>(null);
+  const speaking = useSpeech((s) => s.status !== 'idle');
+  const lang = useUi((s) => s.lang);
+
+  // Reading aloud belongs to the page it started on.
+  useEffect(() => stopReading, [location.pathname, lang]);
   const [stuck, setStuck] = useState(false);
 
   // The desktop navigation counts as stuck once the masthead is out of view.
@@ -377,6 +440,7 @@ export function Layout() {
             <LangBar />
             <span aria-hidden className="h-4 w-px bg-ink-fg/25" />
             <ThemeButton className="text-ink-fg/75" />
+            <FullscreenButton className="inline-flex h-8 items-center px-2 text-ink-fg/75 hover:text-white" />
             <span aria-hidden className="h-4 w-px bg-ink-fg/25" />
             <a href={OFFICIAL_INDEX_URL} target="_blank" rel="noopener noreferrer" className="text-ink-fg/75 hover:text-white">
               vatican.va ↗
@@ -389,7 +453,7 @@ export function Layout() {
         <div className="h-[3px] bg-gold/80" aria-hidden />
         <div className="mx-auto flex h-16 max-w-page items-center gap-3 px-4 lg:h-24 lg:px-8">
           <Wordmark />
-          <div className="ml-auto flex items-center gap-1">
+          <div className="ml-auto flex items-center gap-0.5 sm:gap-1">
             {!online && (
               <span className="inline-flex items-center gap-1 rounded-sm border border-line px-2 py-1 text-xs text-muted" title={t('app.offlineHint')} role="status">
                 <WifiOff className="h-3.5 w-3.5" aria-hidden />
@@ -397,12 +461,13 @@ export function Layout() {
               </span>
             )}
             <PaletteButton onOpen={() => setPaletteOpen(true)} />
-            <button type="button" className="icon-btn xl:hidden" aria-label={t('palette.open')} onClick={() => setPaletteOpen(true)}>
+            <FullscreenButton className="icon-btn w-9 text-[1.15rem] sm:w-11 lg:hidden" />
+            <button type="button" className="icon-btn w-9 sm:w-11 xl:hidden" aria-label={t('palette.open')} onClick={() => setPaletteOpen(true)}>
               <Search className="h-5 w-5" aria-hidden />
             </button>
             <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
-                <button type="button" aria-label={t('app.menu')} className="icon-btn lg:hidden">
+                <button type="button" aria-label={t('app.menu')} className="icon-btn w-9 sm:w-11 lg:hidden">
                   <Menu className="h-5 w-5" aria-hidden />
                 </button>
               </SheetTrigger>
@@ -556,6 +621,7 @@ export function Layout() {
       <Suspense fallback={null}>
         {paletteUsed.current && <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} />}
         {theaterLoaded.current && <VideoTheater />}
+        {speaking && <SpeechBar />}
       </Suspense>
       <InstallPrompt />
       <Toast />

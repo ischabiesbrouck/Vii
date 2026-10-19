@@ -46,7 +46,7 @@ function Quote({ id }: { id: string }) {
   if (!data) return <div className="skeleton h-24 w-full" />;
   return (
     <div className="my-6">
-      <p className="mb-1.5 text-xs text-muted">
+      <p className="mb-1.5 text-xs text-muted" data-tts-skip>
         <span lang="la" className="la">
           {data.doc.titleLa}
         </span>{' '}
@@ -130,7 +130,7 @@ export function StudyBlockView({ block: b, figure, first }: { block: StudyBlock;
                 <p className="mt-1.5 text-[0.9rem] leading-relaxed">
                   <Cited text={pick(lang, p.nl, p.en)} />
                 </p>
-                <p className="mt-2 text-xs text-muted">
+                <p className="mt-2 text-xs text-muted" data-tts-skip>
                   {t('study.sources')}:{' '}
                   {p.sources.map((s, i) => (
                     <span key={s}>
@@ -142,12 +142,14 @@ export function StudyBlockView({ block: b, figure, first }: { block: StudyBlock;
               </div>
             ))}
           </div>
-          <p className="mt-3 text-xs italic text-muted">{t('claims.positionsHint')}</p>
+          <p className="mt-3 text-xs italic text-muted" data-tts-skip>
+            {t('claims.positionsHint')}
+          </p>
         </section>
       );
     case 'diagram':
       return (
-        <figure className="my-8 font-sans">
+        <figure className="my-8 font-sans" data-tts-skip>
           <Diagram id={b.id} />
           <figcaption className="mt-2 text-[0.82rem] leading-snug text-muted">
             <span className="font-semibold text-fg">

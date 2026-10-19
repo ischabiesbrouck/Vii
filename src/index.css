@@ -215,3 +215,11 @@
 .dark .photo {
   filter: brightness(0.86) contrast(1.05);
 }
+
+/* The block being read aloud. */
+.tts-current {
+  background: rgb(var(--gold) / 0.16);
+  box-shadow: 0 0 0 6px rgb(var(--gold) / 0.16);
+  border-radius: 2px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
