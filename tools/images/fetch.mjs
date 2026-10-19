@@ -21,7 +21,7 @@ for (const s of selection) {
     height: m.height,
     altNl: s.altNl,
     altEn: s.altEn,
-    author: m.author,
+    author: s.author ?? m.author,
     license: m.license,
     ...(m.licenseUrl ? { licenseUrl: m.licenseUrl } : {}),
     sourceUrl: m.sourceUrl,
