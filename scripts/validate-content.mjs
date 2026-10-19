@@ -276,7 +276,9 @@ const catDir = join(root, 'catechesis');
 const catFiles = existsSync(catDir) ? readdirSync(catDir).filter((f) => f.endsWith('.json')) : [];
 const shortCats = [];
 // Direct quotations are not allowed: no quoted run of more than six words.
-const QUOTED = /[“"‘']([^”"’']{1,400})[”"’']/g;
+// A quotation opens after a space or bracket and closes before punctuation or a space,
+// so apostrophes inside words (God's, Church's, zo'n) are not taken for quotation marks.
+const QUOTED = /(?:^|[\s(])[“"‘']([^”"’]{1,400}?)[”"’'](?=[\s.,;:!?)]|$)/g;
 for (const f of catFiles) {
   hash.update(readFileSync(join(catDir, f)));
   const c = JSON.parse(readFileSync(join(catDir, f), 'utf8'));
