@@ -163,9 +163,11 @@ Use `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`, or
   never test personal orthodoxy.
 - **Terms without a conciliar source**, such as *aggiornamento* and
   *ressourcement*, are labelled as such and do not link to a paragraph.
-- **Images** are precached with the rest of the app (about 4 MB), so figures also
-  appear offline. Captions state what the image shows and why it is there; each
-  figure links to its Commons page and licence, as CC BY and CC BY-SA require.
+- **Images**: the 640 px copy of every photograph is precached (about 3 MB), so
+  figures always appear offline; full-size files (at most 1000 px) are cached the
+  first time they are shown, and offline a large screen falls back to the 640 px
+  copy. Captions state what the image shows and why it is there; each figure links
+  to its Commons page and licence, as CC BY and CC BY-SA require.
 - **Reading aloud** uses the device's own voices (Web Speech API); no voice is bundled
   or downloaded. `src/lib/speech.ts` picks the best **male** voice by name, since the
   API does not report gender: Microsoft Maarten (Edge, natural), Apple Xander

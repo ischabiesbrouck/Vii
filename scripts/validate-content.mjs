@@ -204,7 +204,8 @@ for (const im of images) {
   imageIds.add(im.id);
   for (const k of ['file', 'altNl', 'altEn', 'author', 'license', 'sourceUrl']) if (!im[k]) err(`image ${im.id}: missing ${k}`);
   if (!existsSync(join(root, '..', 'images', im.file))) err(`image ${im.id}: file public/images/${im.file} not found`);
-  if (im.width > 640 && !existsSync(join(root, '..', 'images', '640', im.file))) err(`image ${im.id}: reduced copy public/images/640/${im.file} not found`);
+  // Every image has a copy in 640/: it is what the service worker keeps for offline use.
+  if (!existsSync(join(root, '..', 'images', '640', im.file))) err(`image ${im.id}: copy public/images/640/${im.file} not found`);
 }
 for (const s of subjects) if (s.imageId && !imageIds.has(s.imageId)) err(`subject ${s.id}: unknown image ${s.imageId}`);
 const CITE = /\b(SC|IM|LG|OE|UR|CD|PC|OT|GE|NA|DV|AA|DH|AG|PO|GS) §(\d+)(?:[–-](\d+))?/g;

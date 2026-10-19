@@ -77,15 +77,23 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        // Precache the entire app shell, fonts, ALL content JSON and the licensed images.
+        // Precache the app shell, fonts, ALL content JSON and the 640 px copies of the images.
         globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2,json,webmanifest}'],
         // Only Latin / Latin-ext font subsets are ever needed for NL, EN and LA text.
-        globIgnores: ['**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-wght-*.woff2'],
+        // Full-size images are cached when first shown (below); offline, Photo falls back to 640 px.
+        globIgnores: ['**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-wght-*.woff2', 'images/*.jpg'],
         navigateFallback: `${BASE}index.html`,
         navigateFallbackDenylist: [new RegExp(`^${BASE}content/`)],
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
-        // No runtimeCaching: nothing external is ever fetched at runtime.
+        // Same-origin only: full-size photographs, kept once they have been viewed.
+        runtimeCaching: [
+          {
+            urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/images\/[^/]+\.jpg$/.test(url.pathname),
+            handler: 'CacheFirst',
+            options: { cacheName: 'concilium-images', expiration: { maxEntries: 120 } },
+          },
+        ],
       },
       devOptions: { enabled: false },
       disable: mode === 'artifact',
