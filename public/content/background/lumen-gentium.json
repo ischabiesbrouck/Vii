@@ -184,7 +184,32 @@
       "roleEn": "Pope from June 1963; had the Nota added and promulgated the constitution on 21 November 1964."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "vatican-i",
+      "section": 0,
+      "captionNl": "Het Eerste Vaticaans Concilie in de Sint-Pieter, 1870. Het definieerde het primaat en de onfeilbaarheid van de paus, maar kwam door de inname van Rome niet meer toe aan een leer over de bisschoppen.",
+      "captionEn": "The First Vatican Council in St Peter's, 1870. It defined the primacy and infallibility of the pope, but with the fall of Rome it never reached a teaching on the bishops."
+    },
+    {
+      "imageId": "pius-xii",
+      "section": 0,
+      "captionNl": "Pius XII, wiens encycliek *Mystici Corporis* (1943) de Kerk beschreef als het mystieke lichaam van Christus; het eerste ontwerp over de Kerk bouwde daarop voort.",
+      "captionEn": "Pius XII, whose encyclical *Mystici Corporis* (1943) described the Church as the mystical body of Christ; the first draft on the Church built on it."
+    },
+    {
+      "imageId": "council-procession-1962",
+      "section": 2,
+      "captionNl": "De processie van de concilievaders bij de opening op 11 oktober 1962. In december 1962 werd het eerste schema over de Kerk in de aula besproken en teruggestuurd voor herziening.",
+      "captionEn": "The procession of the Council Fathers at the opening on 11 October 1962. In December 1962 the first schema on the Church was debated in the hall and sent back for revision."
+    },
+    {
+      "imageId": "st-peters-nave",
+      "section": 3,
+      "captionNl": "Het schip van de Sint-Pieter, waar Paulus VI *Lumen gentium* op 21 november 1964 afkondigde.",
+      "captionEn": "The nave of St Peter's, where Paul VI promulgated *Lumen gentium* on 21 November 1964."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "Hünermann, P., & Hilberath, B. J. (Eds.). (2004–2005). Herders theologischer Kommentar zum Zweiten Vatikanischen Konzil (Vols. 1–5). Herder.",
