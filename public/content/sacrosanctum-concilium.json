@@ -18,7 +18,23 @@
         "ext:gaudet-mater-1962"
       ],
       "noteNl": "De vier doelen van het Concilie als geheel, geformuleerd in het eerste document. Let op de beperking: aanpassing betreft 'instellingen die aan verandering onderhevig zijn'.",
-      "noteEn": "The four aims of the Council as a whole, stated in its first document. Note the limitation: adaptation concerns 'institutions which are subject to change'."
+      "noteEn": "The four aims of the Council as a whole, stated in its first document. Note the limitation: adaptation concerns 'institutions which are subject to change'.",
+      "explain": {
+        "nl": {
+          "what": "Het eerste artikel van het eerste afgekondigde document noemt de doelen van het Concilie als geheel. Het wil het christelijk leven van de gelovigen verlevendigen, de veranderlijke instellingen beter afstemmen op de noden van deze tijd, de eenheid van alle christenen bevorderen en de missie naar de hele mensheid versterken. Uit die doelen leidt het af dat er bijzondere redenen zijn om de liturgie te vernieuwen en te bevorderen.",
+          "who": "Het Concilie spreekt hier over zichzelf: de concilievaders samen met de paus, in een constitutie. De woorden zijn gericht tot de hele Kerk, maar ook tot wie van buiten kijkt en wil weten wat het Concilie van plan is. De tekst gaat over het programma van de vergadering en over de plaats die de liturgie daarin krijgt.",
+          "why": "Johannes XXIII had het Concilie in januari 1959 aangekondigd zonder een uitgewerkt programma. In zijn openingsrede *Gaudet Mater Ecclesia* (11 oktober 1962) sprak hij van een pastoraal concilie dat de onveranderlijke leer zo wil voorleggen dat deze tijd haar kan verstaan. Het liturgieschema kwam als eerste in de aula. Toen het eind 1963 werd aangenomen, lagen de andere ontwerpen nog op tafel; dit proëmium werd zo een programmaverklaring voor het geheel.",
+          "how": "Het is een korte, plechtige opening in één zin, opgebouwd uit vier parallelle doelstellingen en een conclusie. De vier doelen keren later terug in de grote documenten: vernieuwing van het christelijk leven (LG §39–42), aanpassing van instellingen (PC §2), oecumene (UR §1) en missie (AG §1). De artikelen SC §2–4 lichten daarna toe waarom de liturgie in dit programma vooraan staat.",
+          "meaning": "Het woord aanpassing, later vaak met *aggiornamento* aangeduid, wordt hier begrensd: het betreft instellingen die aan verandering onderhevig zijn. Wie SC §1 leest als een opdracht om alles aan de tijd aan te passen, slaat die beperking over. Paul VI wees bij de sluiting van de tweede zitting (4 december 1963) op de betekenis van de volgorde: het eerste document gaat over God en het gebed. Of het Concilie als geheel vooral continuïteit of vooral vernieuwing bracht, blijft een open debat."
+        },
+        "en": {
+          "what": "The first article of the first document promulgated states the aims of the Council as a whole. It wants to give fresh vigour to the Christian life of the faithful, to adapt the institutions that can change to the needs of the age, to foster the unity of all Christians and to strengthen the mission to all humanity. From these aims it concludes that there are particular reasons for undertaking the reform and promotion of the liturgy.",
+          "who": "Here the Council speaks about itself: the Council Fathers together with the Pope, in a constitution. The words are addressed to the whole Church, and also to observers outside it who want to know what the Council intends. The subject is the programme of the assembly and the place the liturgy holds within it.",
+          "why": "John XXIII announced the Council in January 1959 without a detailed programme. In his opening address *Gaudet Mater Ecclesia* (11 October 1962) he spoke of a pastoral council that would present unchanging doctrine in a way the present age could understand. The liturgy schema was the first to be debated. When it was adopted at the end of 1963 the other drafts were still under discussion, so this prooemium became a statement of purpose for the whole Council.",
+          "how": "It is a short, solemn opening in a single sentence, built from four parallel aims and a conclusion. The four aims return later in the major documents: renewal of Christian life (LG §39–42), adaptation of institutions (PC §2), ecumenism (UR §1) and mission (AG §1). The articles SC §2–4 then explain why the liturgy stands at the head of this programme.",
+          "meaning": "Adaptation, later often called *aggiornamento*, is limited here: it concerns institutions that are subject to change. Reading SC §1 as a mandate to adapt everything to the times ignores that limit. Closing the second period on 4 December 1963, Paul VI pointed to the significance of the order: the first document concerns God and prayer. Whether the Council as a whole brought mainly continuity or mainly renewal remains an open debate."
+        }
+      }
     },
     {
       "id": "SC-2",
@@ -34,7 +50,23 @@
       "crossRefs": [
         "SC-10",
         "LG-11"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De liturgie is de plaats waar het werk van onze verlossing voltrokken wordt, vooral in het eucharistisch offer. Zij helpt de gelovigen het mysterie van Christus en het ware wezen van de Kerk in hun leven uit te drukken en aan anderen te tonen. De Kerk is menselijk en goddelijk, zichtbaar en onzichtbaar, actief en beschouwend, in de wereld en toch op weg; het menselijke staat daarin in dienst van het goddelijke. De liturgie bouwt de gelovigen op en maakt de Kerk tot een teken onder de volken.",
+          "who": "De concilievaders spreken tot alle gelovigen, die in de liturgie het mysterie van Christus leren beleven. Zij spreken over de liturgie en over de Kerk zelf. Aan het slot komen ook de mensen buiten de Kerk in beeld, voor wie de vierende gemeenschap een uitnodigend teken moet zijn.",
+          "why": "Voordat het Concilie over hervorming spreekt, wil het zeggen wat de liturgie is. De liturgische beweging had liturgie willen begrijpen als bron van geestelijk leven, en *Mediator Dei* (1947) had haar beschreven als de openbare eredienst van het mystieke lichaam. SC §2 sluit daarop aan en verbindt de liturgie meteen met de vraag naar de Kerk, die het Concilie later in *Lumen gentium* zou behandelen.",
+          "how": "Het artikel opent met een citaat uit een oud gebed over de offergaven van het Romeins Missaal en gaat dan over in een reeks tegenstellingen over de Kerk. Het eindigt met schriftwoorden over het teken voor de volken (Jesaja 11,12), het verzamelen van de verstrooide kinderen van God (Johannes 11,52) en de ene kudde onder één herder (Johannes 10,16). De paradoxen over de Kerk komen terug in LG §8.",
+          "meaning": "Voltrokken betekent dat de verlossing in de liturgie werkelijk gebeurt; de viering is meer dan een herinnering of een les. Het gaat om het mysterie van Christus dat in de Kerk tegenwoordig wordt. De zin over het menselijke dat aan het goddelijke ondergeschikt is, geeft een maatstaf voor elke hervorming. De Catechismus gebruikt dit artikel bij de liturgie (nr. 1068) en bij de Kerk als mysterie (nr. 771)."
+        },
+        "en": {
+          "what": "The liturgy is where the work of our redemption is accomplished, above all in the Eucharistic sacrifice. It helps the faithful to express in their lives, and show to others, the mystery of Christ and the real nature of the Church. The Church is human and divine, visible and invisible, active and contemplative, in the world and yet a pilgrim, with the human ordered to the divine. The liturgy builds the faithful into a temple and makes the Church a sign raised among the nations for those outside.",
+          "who": "The Council Fathers address all the faithful, who learn to live the mystery of Christ in the liturgy. They speak about the liturgy and about the Church herself. At the end those outside the Church also come into view: for them the celebrating community is to be an inviting sign.",
+          "why": "Before speaking of reform, the Council wants to say what the liturgy is. The liturgical movement had sought to understand the liturgy as the source of the spiritual life, and *Mediator Dei* (1947) had described it as the public worship of the Mystical Body. SC §2 builds on that and immediately links the liturgy with the question of the Church, which the Council would later treat in *Lumen gentium*.",
+          "how": "The article opens with a quotation from an ancient prayer over the offerings in the Roman Missal and moves into a series of contrasts about the Church. It closes with scriptural images: the sign for the nations (Isaiah 11:12), the gathering of God's scattered children (John 11:52) and the one flock under one shepherd (John 10:16). The paradoxes about the Church return in LG §8.",
+          "meaning": "Accomplished means that redemption really takes place in the liturgy; the celebration is more than a reminder or a lesson. What becomes present is the mystery of Christ in his Church. The phrase about the human being ordered to the divine gives a measure for any reform. The *Catechism* uses this article on the liturgy (no. 1068) and on the Church as mystery (no. 771)."
+        }
+      }
     },
     {
       "id": "SC-4",
@@ -150,7 +182,23 @@
         "SC-47",
         "ext:mediator-dei-1947",
         "ext:trent-sess22-1562"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Om het verlossingswerk te volbrengen is Christus altijd aanwezig in zijn Kerk, vooral in de liturgie. Het artikel noemt de wijzen van die aanwezigheid: in het misoffer, in de persoon van de bedienaar en vooral onder de eucharistische gedaanten; in de sacramenten, zodat Christus zelf doopt wanneer iemand doopt; in zijn woord, wanneer de Schrift gelezen wordt; en in de gemeenschap die bidt en zingt. Elke liturgische viering is daarom een handeling van Christus de priester en van zijn Lichaam, de Kerk.",
+          "who": "Het Concilie spreekt tot alle gelovigen en in het bijzonder tot wie de liturgie voorgaat en vormt. Het onderwerp is Christus zelf, zijn aanwezigheid en zijn priesterlijk handelen, waarmee hij de Kerk als zijn bruid verbindt. De tekst heeft een leerstellig karakter binnen deze constitutie.",
+          "why": "De liturgische beweging en *Mediator Dei* (1947) hadden de liturgie omschreven als de openbare eredienst van het mystieke lichaam, hoofd en leden. Het Concilie neemt die omschrijving over en verbreedt het spreken over Christus' aanwezigheid, dat in de eeuwen na Trente vooral op de eucharistie gericht was. Tegelijk wil het de unieke aanwezigheid in de eucharistie veilig stellen.",
+          "how": "Het artikel is opgebouwd als een rangorde. Voor de aanwezigheid in de bedienaar citeert het Trente (22e zitting, 1562); voor de sacramenten Augustinus' uitleg van het Johannesevangelie; voor de biddende gemeenschap Matteüs 18,20. Daarna volgt een omschrijving van de liturgie als uitoefening van het priesterambt van Christus. Het artikel vormt de theologische kern van het eerste hoofdstuk.",
+          "meaning": "Het woord vooral (*maxime*) bij de eucharistische gedaanten bepaalt de rangorde: de wijzen van aanwezigheid zijn echt, maar niet gelijkwaardig. Paul VI bevestigde dat in *Mysterium fidei* (1965), waar hij de eucharistische aanwezigheid in de volle zin werkelijk noemt. Wie alle vormen op één lijn zet, leest de tekst verkeerd. De Catechismus volgt dit artikel (nr. 1088 en 1373)."
+        },
+        "en": {
+          "what": "To accomplish the work of redemption, Christ is always present in his Church, above all in the liturgy. The article names the modes of that presence: in the sacrifice of the Mass, in the person of the minister and especially under the Eucharistic species; in the sacraments, so that when anyone baptizes it is Christ who baptizes; in his word, when Scripture is read; and in the community that prays and sings. Every liturgical celebration is therefore an action of Christ the priest and of his Body, the Church.",
+          "who": "The Council addresses all the faithful, and in particular those who lead and form others in the liturgy. Its subject is Christ himself, his presence and his priestly action, in which he associates the Church with himself as his bride. Within this constitution the passage has a doctrinal character.",
+          "why": "The liturgical movement and *Mediator Dei* (1947) had defined the liturgy as the public worship of the Mystical Body, Head and members. The Council takes over that definition and widens the language of Christ's presence, which after Trent had concentrated mainly on the Eucharist. At the same time it safeguards the unique presence in the Eucharist.",
+          "how": "The article is built as a ranking. For the presence in the minister it quotes Trent (Session XXII, 1562); for the sacraments, Augustine's commentary on John; for the praying community, Matthew 18:20. A definition follows of the liturgy as the exercise of Christ's priestly office. The article forms the theological core of the first chapter.",
+          "meaning": "The word especially (*maxime*) attached to the Eucharistic species fixes the order: the modes of presence are real, yet they are not equal. Paul VI confirmed this in *Mysterium fidei* (1965), calling the Eucharistic presence real in the fullest sense. Putting every mode on one level misreads the text. The *Catechism* follows this article (nos. 1088 and 1373)."
+        }
+      }
     },
     {
       "id": "SC-8",
@@ -165,7 +213,23 @@
       "crossRefs": [
         "SC-10",
         "LG-48"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Wie de liturgie op aarde viert, neemt al deel aan de hemelse liturgie in het nieuwe Jeruzalem, waar Christus als hogepriester dienst doet. Samen met de engelen zingt de Kerk de lof van God. Zij gedenkt de heiligen, hoopt op gemeenschap met hen en wacht op de komst van de Heer, tot Hij, ons leven, verschijnt en wij met Hem in heerlijkheid verschijnen.",
+          "who": "Het Concilie spreekt tot alle gelovigen die samenkomen om te vieren. Het spreekt over de verhouding tussen hun aardse viering en de hemelse liturgie van Christus, de engelen en de heiligen. Het spreekt als concilie, de vaders met de paus, in een constitutie.",
+          "why": "Na de nadruk op Christus' aanwezigheid in de viering (SC §7) wil het Concilie voorkomen dat de liturgie alleen als zaak van de plaatselijke gemeenschap gezien wordt. Het herneemt een thema dat in de Schrift, bij de kerkvaders en sterk in de oosterse traditie leeft: de aardse eredienst als deelname aan de eredienst van de hemel.",
+          "how": "Het artikel is bijna geheel opgebouwd uit schriftwoorden. Christus als dienaar van het ware heiligdom komt uit Hebreeën 8,2; het hemelse Jeruzalem uit Openbaring 21,2; het verlangen naar het hogere uit Kolossenzen 3,1; de verwachting van de Heiland uit Filippenzen 3,20 en Kolossenzen 3,4. De toon is beschouwend. Het artikel loopt vooruit op het hoofdstuk over de pelgrimerende Kerk in LG §48–51.",
+          "meaning": "Voorsmaak betekent dat de viering werkelijk deelneemt aan het hemelse, al is de volheid nog niet bereikt. De liturgie heeft daardoor een eschatologische richting: zij wijst vooruit naar de voltooiing. In het debat over de richting van het gebed beroepen voorstanders van een gemeenschappelijke oriëntatie zich op dit artikel; het artikel zelf spreekt daar niet over. De Catechismus citeert het in nr. 1090."
+        },
+        "en": {
+          "what": "Those who celebrate the liturgy on earth already share in the heavenly liturgy of the new Jerusalem, where Christ ministers as high priest. Together with the angels the Church sings the praise of God. She venerates the saints, hopes for fellowship with them and awaits the coming of the Lord, until he, our life, appears and we appear with him in glory.",
+          "who": "The Council addresses all the faithful who gather to celebrate. It speaks of the relation between their earthly celebration and the heavenly liturgy of Christ, the angels and the saints. It speaks as a council, the Fathers with the Pope, in a constitution.",
+          "why": "After stressing Christ's presence in the celebration (SC §7), the Council wants to prevent the liturgy being seen as the affair of the local community alone. It takes up a theme alive in Scripture, in the Fathers and strongly in the Eastern tradition: earthly worship as a share in the worship of heaven.",
+          "how": "The article is made up almost entirely of Scripture. Christ as minister of the true sanctuary comes from Hebrews 8:2; the heavenly Jerusalem from Revelation 21:2; seeking the things above from Colossians 3:1; awaiting the Saviour from Philippians 3:20 and Colossians 3:4. The tone is contemplative. The article anticipates the chapter on the pilgrim Church in LG §48–51.",
+          "meaning": "A foretaste means that the celebration really shares in heaven, though the fullness has not yet come. The liturgy therefore has an eschatological direction, pointing ahead to fulfilment. In the debate on the direction of prayer, advocates of a common orientation appeal to this article; the article itself does not address that question. The *Catechism* quotes it in no. 1090."
+        }
+      }
     },
     {
       "id": "SC-9",
@@ -211,7 +275,23 @@
       ],
       "crossRefs": [
         "LG-11"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Na de opmerking dat de liturgie niet het hele handelen van de Kerk omvat (SC §9), zegt het Concilie dat zij toch het hoogtepunt en de bron ervan is. Al het apostolisch werk is erop gericht dat mensen door geloof en doopsel kinderen van God worden, samenkomen, God loven, deelnemen aan het offer en het avondmaal van de Heer eten. Uit de liturgie, vooral uit de eucharistie, stroomt de genade die de mensen heiligt en God verheerlijkt.",
+          "who": "Het Concilie spreekt tot de hele Kerk: tot herders, die hun apostolaat op de liturgie moeten richten, en tot gelovigen, die uit de viering leven. Het spreekt over de verhouding tussen liturgie en de andere activiteiten van de Kerk, zoals verkondiging, catechese en dienst.",
+          "why": "De liturgische beweging wilde de liturgie terugbrengen in het midden van het kerkelijk leven, waar zij in de beleving van velen naast persoonlijke devoties en organisaties was komen te staan. Tegelijk moest het Concilie vermijden dat liturgie alles werd. Daarom gaat SC §9 voorop: geloof en bekering komen voor de viering. SC §10 geeft dan de plaats van de liturgie aan.",
+          "how": "Het artikel begint met *attamen*, niettemin, en vormt zo een tegenwicht bij SC §9. Twee beelden dragen het: het hoogtepunt waar alles naartoe gaat en de bron waaruit alles voortkomt. Het verwijst naar de paassacramenten en naar de vernieuwing van het verbond in de eucharistie. Het beeld keert terug in LG §11 en in PO §5.",
+          "meaning": "De formule betreft de liturgie als geheel en het handelen van de Kerk; LG §11 noemt de eucharistie bron en hoogtepunt van het christelijk leven. Beide teksten horen samen. Het artikel maakt verkondiging en dienst niet overbodig, want die leiden naar de viering en komen eruit voort. De Catechismus neemt de formule over in nr. 1074; voor de eucharistie in nr. 1324."
+        },
+        "en": {
+          "what": "Having noted that the liturgy is not the whole activity of the Church (SC §9), the Council says it is nonetheless the summit and source of that activity. All apostolic work aims at people becoming children of God through faith and baptism, gathering, praising God, taking part in the sacrifice and eating the Lord's Supper. From the liturgy, above all the Eucharist, flows the grace that sanctifies people and glorifies God.",
+          "who": "The Council speaks to the whole Church: to pastors, whose apostolate is to be directed to the liturgy, and to the faithful, who live from the celebration. Its subject is the relation between the liturgy and the Church's other activities, such as preaching, catechesis and service.",
+          "why": "The liturgical movement sought to return the liturgy to the centre of Church life, where for many it had come to stand beside private devotions and organisations. The Council also had to avoid making the liturgy everything. Hence SC §9 comes first: faith and conversion precede the celebration. SC §10 then states the place of the liturgy.",
+          "how": "The article begins with *attamen*, nevertheless, as a counterweight to SC §9. Two images carry it: the summit towards which everything moves and the source from which everything comes. It refers to the paschal sacraments and to the renewal of the covenant in the Eucharist. The image returns in LG §11 and PO §5.",
+          "meaning": "The formula concerns the liturgy as a whole and the activity of the Church; LG §11 calls the Eucharist the source and summit of the Christian life. The two texts belong together. The article does not make preaching or service superfluous, since these lead to the celebration and flow from it. The *Catechism* takes over the formula in no. 1074, and for the Eucharist in no. 1324."
+        }
+      }
     },
     {
       "id": "SC-11",
@@ -261,7 +341,23 @@
         "ext:mediator-dei-1947"
       ],
       "noteNl": "'Participatio actuosa' komt al voor bij Pius X (1903) en Pius XII (1947). Of 'actuosa' primair innerlijke betrokkenheid of uiterlijke activiteit betekent, is een terugkerend interpretatiepunt.",
-      "noteEn": "'Participatio actuosa' already appears in Pius X (1903) and Pius XII (1947). Whether 'actuosa' primarily means interior engagement or exterior activity is a recurring point of interpretation."
+      "noteEn": "'Participatio actuosa' already appears in Pius X (1903) and Pius XII (1947). Whether 'actuosa' primarily means interior engagement or exterior activity is a recurring point of interpretation.",
+      "explain": {
+        "nl": {
+          "what": "De Kerk wil dat alle gelovigen gebracht worden tot volledige, bewuste en actieve deelname aan de liturgie. De aard van de liturgie zelf vraagt dat, en door het doopsel is het voor het christenvolk een recht en een plicht. Die deelname is de eerste en onmisbare bron van de ware christelijke geest. Daarom moeten herders haar in heel hun pastoraal werk nastreven, en dat kan pas als zij zelf van de liturgie doordrongen zijn. Vandaar de vorming van de clerus.",
+          "who": "Het Concilie spreekt over alle gelovigen als dragers van de deelname. De opdracht richt zich in de eerste plaats tot de herders, bisschoppen en priesters, en tot wie priesters vormt; de volgende artikelen (SC §15–19) werken dat uit voor seminaries, docenten en pastoraal.",
+          "why": "De uitdrukking actieve deelname komt van Pius X, die in *Tra le sollecitudini* (1903) de deelname aan de heilige mysteries de eerste en onmisbare bron van christelijke geest noemde. Pius XII werkte het thema uit in *Mediator Dei* (1947). Veel gelovigen volgden de mis in stilte of met eigen gebeden. Het Concilie maakt de deelname tot het hoofddoel van de vernieuwing.",
+          "how": "Het artikel steunt het doopsel als grond van de deelname op 1 Petrus 2,9 en 2,4–5, het koninklijk priesterschap. Het neemt de formulering van Pius X bijna letterlijk over en trekt er een pastorale conclusie uit. Het artikel staat aan het begin van het deel over liturgische vorming en wordt in SC §19, §28 en §30 concreet gemaakt.",
+          "meaning": "*Actuosa* betekent werkzaam, betrokken: het gaat om een handelen dat de persoon raakt. SC §19 noemt innerlijke en uiterlijke deelname samen, en SC §30 noemt naast acclamaties en zang ook de heilige stilte. Een lezing legt het accent op de innerlijke vereniging met het offer, zo Ratzinger in *Der Geist der Liturgie* (2000); een andere op zichtbare deelname van de gemeenschap. De tekst houdt beide bijeen."
+        },
+        "en": {
+          "what": "The Church desires that all the faithful be led to full, conscious and active participation in the liturgy. The nature of the liturgy demands it, and by baptism it is the right and duty of the Christian people. This participation is the primary and indispensable source of the true Christian spirit. Pastors must therefore pursue it in all their pastoral work, which they can do only if they are themselves imbued with the liturgy. Hence the formation of the clergy.",
+          "who": "The Council speaks of all the faithful as the subjects of participation. The task is addressed first to pastors, bishops and priests, and to those who form priests; the following articles (SC §15–19) work this out for seminaries, teachers and pastoral care.",
+          "why": "The phrase active participation comes from Pius X, who in *Tra le sollecitudini* (1903) called participation in the sacred mysteries the primary and indispensable source of the Christian spirit. Pius XII developed the theme in *Mediator Dei* (1947). Many of the faithful followed Mass in silence or with their own prayers. The Council makes participation the chief aim of the renewal.",
+          "how": "The article grounds participation in baptism with 1 Peter 2:9 and 2:4–5, the royal priesthood. It takes over Pius X's formula almost word for word and draws a pastoral conclusion. It opens the section on liturgical formation and is made concrete in SC §19, §28 and §30.",
+          "meaning": "*Actuosa* means engaged, effective: an action that involves the person. SC §19 names interior and exterior participation together, and SC §30 lists reverent silence alongside acclamations and song. One reading stresses interior union with the sacrifice, as Ratzinger did in *The Spirit of the Liturgy* (2000); another stresses the visible participation of the community. The text holds both together."
+        }
+      }
     },
     {
       "id": "SC-21",
@@ -275,7 +371,23 @@
       ],
       "crossRefs": [
         "SC-23"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Opdat de gelovigen meer genade uit de liturgie ontvangen, wil de Kerk een algemene herstelling van de liturgie ondernemen. De liturgie bestaat uit onveranderlijke, door God ingestelde elementen en uit veranderlijke elementen. Die laatste mogen of moeten zelfs veranderen als er iets in geslopen is dat minder past bij de aard van de liturgie of ongeschikt is geworden. Teksten en riten moeten zo geordend worden dat zij het heilige duidelijker uitdrukken en het volk het gemakkelijk begrijpt en volledig kan meevieren.",
+          "who": "De concilievaders spreken hier als de Kerk die haar eigen liturgie herziet. De opdracht gaat in de eerste plaats naar wie de herziening zal uitvoeren, de Apostolische Stoel en de bisschoppen (SC §22, §25). Het doel betreft het hele christenvolk, dat de riten moet kunnen verstaan en meevieren.",
+          "why": "Pius XII had in de jaren 1950 al delen van de liturgie herzien, zoals de Paaswake en de Goede Week. Het Concilie wil nu een algemene herziening, maar moet aangeven wat de Kerk wel en niet kan veranderen. Trente had geleerd dat de Kerk bij de sacramenten veel mag regelen, met behoud van hun substantie (21e zitting, 1562), en *Mediator Dei* onderscheidde goddelijke en menselijke elementen.",
+          "how": "Het artikel opent het deel over de algemene herziening (SC §21–40). Het geeft eerst het doel, dan het onderscheid tussen onveranderlijk en veranderlijk, en ten slotte het criterium: helderheid en verstaanbaarheid. De volgende artikelen leggen vast wie mag herzien (SC §22) en onder welke voorwaarden (SC §23). De tekst is beleidsmatig en sober.",
+          "meaning": "Het Latijn spreekt van *instauratio*, wat herstel en vernieuwing tegelijk aanduidt. Het artikel somt de onveranderlijke elementen niet op; de traditie rekent er ten minste de substantie van de sacramenten toe. Het geeft geen vrijbrief om alles te veranderen en evenmin een verbod op verandering. De Catechismus neemt het onderscheid over in nr. 1205. Hoe ver de herziening mocht gaan, blijft omstreden."
+        },
+        "en": {
+          "what": "So that the faithful may receive more grace from the liturgy, the Church wishes to undertake a general restoration of it. The liturgy consists of immutable elements, divinely instituted, and of elements that can change. The latter may and even ought to change if something has crept in that suits the nature of the liturgy less well or has become unsuitable. Texts and rites are to be ordered so that they express holy things more clearly and the people can understand them easily and take full part.",
+          "who": "The Council Fathers speak as the Church revising her own liturgy. The task falls first to those who will carry out the revision, the Apostolic See and the bishops (SC §22, §25). The aim concerns the whole Christian people, who must be able to understand and take part in the rites.",
+          "why": "Pius XII had already revised parts of the liturgy in the 1950s, such as the Easter Vigil and Holy Week. The Council now wanted a general revision, but had to state what the Church can and cannot change. Trent had taught that the Church may regulate much in the sacraments while keeping their substance (Session XXI, 1562), and *Mediator Dei* distinguished divine and human elements.",
+          "how": "The article opens the section on the general restoration (SC §21–40). It gives first the aim, then the distinction between immutable and changeable, and finally the criterion of clarity and intelligibility. The following articles settle who may revise (SC §22) and on what conditions (SC §23). The text is sober and normative.",
+          "meaning": "The Latin speaks of *instauratio*, which conveys both restoration and renewal. The article does not list the immutable elements; tradition counts among them at least the substance of the sacraments. It gives no licence to change everything, and no ban on change either. The *Catechism* adopts the distinction in no. 1205. How far the revision might go remains disputed."
+        }
+      }
     },
     {
       "id": "SC-22",
@@ -287,7 +399,23 @@
         "liturgy",
         "authority"
       ],
-      "crossRefs": []
+      "crossRefs": [],
+      "explain": {
+        "nl": {
+          "what": "Het artikel regelt wie over de liturgie beslist. Dat is uitsluitend het kerkelijk gezag: de Apostolische Stoel en, binnen de grenzen van het recht, de bisschop. Binnen vastgestelde grenzen hebben ook de wettig opgerichte territoriale bisschoppenvergaderingen zeggenschap. Niemand anders, ook geen priester, mag op eigen gezag iets aan de liturgie toevoegen, weglaten of veranderen.",
+          "who": "Het Concilie spreekt tot de hele Kerk, maar vooral tot bisschoppen, bisschoppenconferenties en priesters. Het spreekt over de bevoegdheid ten aanzien van de liturgie: wie haar mag ordenen en wie aan de vastgestelde orde gebonden is.",
+          "why": "Sinds de Congregatie voor de Riten (1588) lag de regeling van de Romeinse liturgie vrijwel geheel bij Rome. Veel bisschoppen vroegen meer ruimte voor aanpassing in hun streek. De vraag hoeveel de territoriale vergaderingen mochten beslissen, was een van de terugkerende punten in het debat van 1962. Tegelijk wilde het Concilie willekeur van individuele bedienaren voorkomen.",
+          "how": "Het artikel heeft drie leden. Het eerste noemt het gezag, het tweede geeft de territoriale vergaderingen een eigen, begrensde bevoegdheid, het derde trekt de conclusie voor ieder ander. Het is een juridische tekst in de stijl van een canon. De genoemde bevoegdheid wordt elders toegepast, bijvoorbeeld voor de volkstaal (SC §36) en voor aanpassing aan culturen (SC §39–40).",
+          "meaning": "De territoriale vergaderingen lopen vooruit op de bisschoppenconferenties die CD §38 later regelde. Het artikel ging over in de Codex van 1983 (can. 838), die in 2017 met *Magnum principium* werd aangepast voor vertalingen. Het derde lid sluit eigenmachtige aanpassing uit, ook goedbedoelde. De Catechismus zegt in nr. 1125 dat geen sacramentele ritus naar believen van bedienaar of gemeenschap gewijzigd mag worden."
+        },
+        "en": {
+          "what": "The article settles who decides about the liturgy. It is solely Church authority: the Apostolic See and, within the limits of law, the bishop. Within defined limits the lawfully established territorial assemblies of bishops also have competence. No one else, not even a priest, may add, remove or change anything in the liturgy on his own authority.",
+          "who": "The Council speaks to the whole Church, but chiefly to bishops, bishops' conferences and priests. Its subject is competence over the liturgy: who may order it, and who is bound by the order once it is set.",
+          "why": "Since the Congregation of Rites was founded in 1588, regulation of the Roman liturgy had lain almost entirely with Rome. Many bishops asked for more room to adapt in their regions. How much the territorial assemblies might decide was one of the recurring points in the 1962 debate. At the same time the Council wanted to prevent arbitrary action by individual ministers.",
+          "how": "The article has three sections. The first names the authority, the second gives the territorial assemblies a limited competence of their own, and the third draws the conclusion for everyone else. It is a juridical text in the style of a canon. The competence it names is applied elsewhere, for instance to the vernacular (SC §36) and to cultural adaptation (SC §39–40).",
+          "meaning": "The territorial assemblies anticipate the episcopal conferences that CD §38 later regulated. The article passed into the 1983 Code (can. 838), which *Magnum principium* amended in 2017 with regard to translations. The third section excludes adaptation on one's own authority, even when well meant. The *Catechism* states in no. 1125 that no sacramental rite may be changed at the will of the minister or the community."
+        }
+      }
     },
     {
       "id": "SC-23",
@@ -305,7 +433,23 @@
         "SC-21"
       ],
       "noteNl": "Het criterium van 'organische groei' wordt zowel door voorstanders als critici van de latere hervorming (1969–1970) aangehaald.",
-      "noteEn": "The criterion of 'organic growth' is cited both by defenders and by critics of the later reform (1969–1970)."
+      "noteEn": "The criterion of 'organic growth' is cited both by defenders and by critics of the later reform (1969–1970).",
+      "explain": {
+        "nl": {
+          "what": "Elke herziening moet de gezonde traditie bewaren en tegelijk ruimte geven aan wettige vooruitgang. Daarom moet zij voorafgegaan worden door zorgvuldig theologisch, historisch en pastoraal onderzoek, en moeten de ervaringen met recente hervormingen meewegen. Vernieuwingen komen er alleen als het welzijn van de Kerk ze werkelijk en zeker vereist. Nieuwe vormen moeten organisch uit bestaande vormen groeien, en opvallende verschillen tussen riten in naburige streken moeten zoveel mogelijk vermeden worden.",
+          "who": "De tekst richt zich tot wie de liturgische boeken zal herzien: de commissies en het kerkelijk gezag dat SC §22 noemt, en de deskundigen die hen bijstaan. Indirect spreekt het tot iedereen die later over de hervorming oordeelt.",
+          "why": "Het Concilie wilde de algemene herziening van SC §21 aan voorwaarden binden. Er waren al ervaringen met de hervormingen van Pius XII en met indulten. Tegelijk bestond de vrees dat vernieuwing zou losraken van de traditie. *Mediator Dei* (1947) had al gewaarschuwd tegen zowel overhaaste vernieuwing als een eenzijdige voorkeur voor het oude omdat het oud is.",
+          "how": "Het artikel noemt eerst het dubbele doel, traditie en vooruitgang, en geeft dan voorwaarden in afnemende algemeenheid: onderzoek, ervaring, reële noodzaak, organische groei en eenheid in de streek. Het beeld van organische groei komt uit de natuur: een levend wezen groeit zonder iets anders te worden. Het artikel staat direct na de bevoegdheidsregel van SC §22.",
+          "meaning": "De woorden op een of andere wijze (*quodammodo*) geven ruimte, maar sluiten een constructie los van het bestaande uit. Voorstanders van de hervorming van 1969–1970 zien die als zorgvuldig voorbereid en organisch; critici, onder wie Alcuin Reid in *The Organic Development of the Liturgy*, menen dat het criterium niet overal gevolgd is. Benedictus XVI stelde in 2005 een hermeneutiek van hervorming in continuïteit voor. De tekst zelf beslist dat debat niet."
+        },
+        "en": {
+          "what": "Every revision must keep sound tradition and also leave room for legitimate progress. It must therefore be preceded by careful theological, historical and pastoral study, and take account of experience with recent reforms. Innovations are to be made only when the good of the Church genuinely and certainly requires them. New forms must grow organically from existing ones, and marked differences between the rites of neighbouring regions should be avoided as far as possible.",
+          "who": "The text is addressed to those who would revise the liturgical books: the commissions and the Church authority named in SC §22, and the experts assisting them. Indirectly it speaks to anyone who later judges the reform.",
+          "why": "The Council wished to bind the general restoration of SC §21 to conditions. There was already experience with the reforms of Pius XII and with indults. There was also concern that renewal might come loose from tradition. *Mediator Dei* (1947) had already warned both against hasty innovation and against a one-sided preference for the old because it is old.",
+          "how": "The article first names a double aim, tradition and progress, and then sets conditions of decreasing generality: study, experience, genuine need, organic growth and regional unity. The image of organic growth comes from nature: a living being grows without becoming something else. The article follows directly on the rule of competence in SC §22.",
+          "meaning": "The words in some way (*quodammodo*) allow latitude, while excluding a construction cut off from what exists. Defenders of the 1969–1970 reform see it as carefully prepared and organic; critics, among them Alcuin Reid in *The Organic Development of the Liturgy*, hold that the criterion was not observed everywhere. Benedict XVI proposed in 2005 a hermeneutic of reform in continuity. The text itself does not settle that debate."
+        }
+      }
     },
     {
       "id": "SC-26",
@@ -420,7 +564,23 @@
         "SC-21",
         "SC-23",
         "SC-50"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De riten moeten uitblinken door edele eenvoud. Zij zijn kort en helder, zonder nutteloze herhalingen, aangepast aan het bevattingsvermogen van de gelovigen, en hebben in de regel niet veel uitleg nodig. Het artikel is kort en geeft vooral een stijlnorm voor de herziening.",
+          "who": "Het richt zich tot wie de liturgische boeken herziet en tot wie de riten later uitvoert. Het spreekt over de vorm van de riten, met het oog op de gelovigen die ze moeten kunnen volgen.",
+          "why": "In de loop van de eeuwen waren in de Romeinse ritus herhalingen en aanvullingen ontstaan, bijvoorbeeld teksten die de priester las terwijl het koor ze zong. De liturgische beweging en historici als Edmund Bishop hadden gewezen op de oorspronkelijke soberheid van de Romeinse ritus. Het Concilie wilde riten die het volk zonder lange toelichting kon volgen.",
+          "how": "Het artikel opent de reeks normen die voortkomen uit het didactische en pastorale karakter van de liturgie (SC §33–36). Het is een opsomming van eigenschappen, samengebracht onder de formule *nobili simplicitate*. Het hangt samen met SC §21, dat verstaanbaarheid vraagt, en wordt voor de mis toegepast in SC §50.",
+          "meaning": "Beide woorden tellen. Eenvoud zonder adel wordt kaalheid; adel zonder eenvoud wordt overlading. Het artikel vraagt riten die uit zichzelf spreken, en sluit catechese of mystagogie niet uit. Hoe de twee termen zich verhouden, wordt verschillend geïnterpreteerd: sommigen zien in de latere hervorming een geslaagde toepassing, anderen een verarming van het symbolische. De Catechismus spreekt in nr. 1145–1152 over tekens en symbolen in de liturgie."
+        },
+        "en": {
+          "what": "The rites are to be marked by noble simplicity. They should be short and clear, without useless repetitions, within the people's powers of comprehension, and normally should not need much explanation. The article is brief and gives above all a norm of style for the revision.",
+          "who": "It is addressed to those who revise the liturgical books and to those who later carry out the rites. Its subject is the form of the rites, with a view to the faithful who must be able to follow them.",
+          "why": "Over the centuries repetitions and additions had accumulated in the Roman rite, for instance texts the priest read while the choir sang them. The liturgical movement and historians such as Edmund Bishop had pointed to the original sobriety of the Roman rite. The Council wanted rites the people could follow without lengthy commentary.",
+          "how": "The article opens the series of norms drawn from the didactic and pastoral nature of the liturgy (SC §33–36). It is a list of qualities gathered under the formula *nobili simplicitate*. It connects with SC §21, which asks for intelligibility, and is applied to the Mass in SC §50.",
+          "meaning": "Both words count. Simplicity without nobility becomes bareness; nobility without simplicity becomes overloaded. The article asks for rites that speak for themselves, and it does not exclude catechesis or mystagogy. How the two terms relate is read in different ways: some see the later reform as a sound application, others as a loss of symbolic depth. The *Catechism* treats signs and symbols in the liturgy in nos. 1145–1152."
+        }
+      }
     },
     {
       "id": "SC-36",
@@ -439,8 +599,24 @@
         "SC-101",
         "ext:veterum-sapientia-1962"
       ],
-      "noteNl": "De tekst bepaalt behoud van het Latijn als regel en uitbreiding van de volkstaal als mogelijkheid, onder toezicht van het territoriaal kerkelijk gezag (§36,3).",
-      "noteEn": "The text sets the retention of Latin as the rule and an extension of the vernacular as a possibility, under the supervision of the territorial ecclesiastical authority (§36.3)."
+      "noteNl": "De tekst bepaalt behoud van het Latijn als regel en uitbreiding van de volkstaal als mogelijkheid, onder toezicht van het territoriaal kerkelijk gezag (SC §36, derde lid).",
+      "noteEn": "The text sets the retention of Latin as the rule and an extension of the vernacular as a possibility, under the supervision of the territorial ecclesiastical authority (SC §36, third section).",
+      "explain": {
+        "nl": {
+          "what": "Het gebruik van het Latijn moet in de Latijnse riten behouden blijven, onverminderd het particulier recht. Omdat de moedertaal voor het volk vaak zeer nuttig is, mag haar plaats worden uitgebreid, vooral bij lezingen en aanwijzingen en bij sommige gebeden en gezangen. Of en in welke mate de volkstaal gebruikt wordt, beslist het territoriaal kerkelijk gezag, met goedkeuring of bevestiging van de Apostolische Stoel. Datzelfde gezag keurt de vertalingen goed.",
+          "who": "Het artikel betreft de Latijnse riten van de Kerk; de oosterse Kerken met hun eigen liturgische talen vallen erbuiten. Het richt zich tot de bisschoppen en hun territoriale vergaderingen, die over de volkstaal beslissen, en tot de Apostolische Stoel. Het spreekt over de taal waarin het volk de liturgie viert.",
+          "why": "Trente had in de 22e zitting (1562) geoordeeld dat het niet raadzaam was de mis overal in de volkstaal te vieren. In februari 1962 had Johannes XXIII met *Veterum sapientia* het Latijn sterk aanbevolen. De liturgische beweging vroeg om meer volkstaal, en er bestonden al tweetalige rituale. In de aula behoorde de taalkwestie in 1962 tot de meest besproken punten; de melkitische patriarch Maximos IV pleitte in het Frans voor de volkstaal.",
+          "how": "Het artikel heeft vier leden: een regel, een mogelijkheid, een bevoegdheid en een regeling voor vertalingen. De werkwoorden verschillen in gewicht: het Latijn moet behouden blijven, de ruimte voor de moedertaal mag uitgebreid worden. Het verwijst voor de bevoegdheid naar SC §22 en wordt toegepast op de mis (SC §54), de sacramenten (SC §63) en het getijdengebed (SC §101).",
+          "meaning": "De tekst stelt een rangorde: Latijn als regel, volkstaal als uitbreiding onder toezicht van het gezag. Wie zegt dat het Concilie het Latijn afschafte, keert die orde om; wie zegt dat het geen volkstaal wilde, vergeet de mogelijkheid die het opent. In de praktijk werd de volkstaal binnen enkele jaren bijna overal de norm. Of dat met de tekst strookt, is omstreden. Over vertalingen volgden *Liturgiam authenticam* (2001) en *Magnum principium* (2017)."
+        },
+        "en": {
+          "what": "The use of Latin is to be preserved in the Latin rites, particular law remaining in force. Because the mother tongue is often of great advantage to the people, its place may be extended, above all in the readings and directives and in some prayers and chants. Whether and to what extent the vernacular is used is decided by the territorial ecclesiastical authority, with the approval or confirmation of the Apostolic See. The same authority approves the translations.",
+          "who": "The article concerns the Latin rites of the Church; the Eastern Churches, with their own liturgical languages, fall outside it. It is addressed to the bishops and their territorial assemblies, who decide on the vernacular, and to the Apostolic See. Its subject is the language in which the people celebrate.",
+          "why": "Trent judged in Session XXII (1562) that it was not expedient to celebrate Mass everywhere in the vernacular. In February 1962 John XXIII had strongly commended Latin in *Veterum sapientia*. The liturgical movement asked for more vernacular, and bilingual rituals already existed. In 1962 the language question was among the most debated points in the hall; the Melkite Patriarch Maximos IV argued for the vernacular, speaking in French.",
+          "how": "The article has four sections: a rule, a possibility, a competence and a provision for translations. The verbs differ in weight: Latin is to be preserved, the place of the mother tongue may be extended. For competence it refers to SC §22, and it is applied to the Mass (SC §54), the sacraments (SC §63) and the Divine Office (SC §101).",
+          "meaning": "The text sets an order of rank: Latin as the rule, the vernacular as an extension under the oversight of authority. To say the Council abolished Latin inverts that order; to say it wanted no vernacular forgets the possibility it opens. In practice the vernacular became the norm almost everywhere within a few years. Whether that agrees with the text is disputed. On translation, *Liturgiam authenticam* (2001) and *Magnum principium* (2017) followed."
+        }
+      }
     },
     {
       "id": "SC-37",
@@ -555,7 +731,23 @@
         "SC-7",
         "LG-11",
         "ext:trent-sess22-1562"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Bij het Laatste Avondmaal stelde Christus het eucharistisch offer van zijn Lichaam en Bloed in, om het offer van het kruis door de eeuwen heen te bestendigen tot Hij wederkomt. Hij vertrouwde zijn Kerk de gedachtenis van zijn dood en verrijzenis toe. De eucharistie is een sacrament van liefde, een teken van eenheid, een band van naastenliefde en een paasmaal, waarin Christus genuttigd wordt, de ziel met genade vervuld wordt en een onderpand van de toekomstige heerlijkheid gegeven wordt.",
+          "who": "Het Concilie spreekt tot alle gelovigen over de eucharistie zelf, als inleiding op het hoofdstuk over de mis. Het onderwerp is Christus die het offer instelt en de Kerk die het viert. De concilievaders spreken hier samen met de paus, in leerstellige taal.",
+          "why": "Voordat het Concilie hervormingen van de mis vraagt (SC §48–58), legt het de leer vast. Na de Reformatie had Trente in de 22e zitting (1562) het offerkarakter van de mis omschreven. Het Concilie neemt die leer over, zodat de hervorming van de riten niet als wijziging van de leer kan gelden, en verbindt haar met de patristische en liturgische beeldtaal.",
+          "how": "Het artikel vat Trente samen en voegt daar beelden uit de traditie aan toe. De uitdrukking sacrament van liefde, teken van eenheid, band van liefde komt van Augustinus in zijn uitleg van Johannes. Het slot volgt de antifoon *O sacrum convivium* uit het officie van Sacramentsdag. Het artikel opent hoofdstuk II en draagt de praktische bepalingen die volgen.",
+          "meaning": "Offer en maal sluiten elkaar hier niet uit; het artikel noemt beide in één zin. De mis bestendigt het ene kruisoffer en voegt er geen nieuw offer aan toe. Een lezing die alleen het maal of alleen het offer overhoudt, doet de tekst tekort. Paul VI bevestigde deze leer in *Mysterium fidei* (1965). De Catechismus citeert het artikel in nr. 1323 en spreekt van offer, gedachtenis en heilig maal (nr. 1382)."
+        },
+        "en": {
+          "what": "At the Last Supper Christ instituted the Eucharistic sacrifice of his Body and Blood, to perpetuate the sacrifice of the Cross through the centuries until he comes again. He entrusted to his Church the memorial of his death and resurrection. The Eucharist is a sacrament of love, a sign of unity, a bond of charity and a paschal banquet, in which Christ is consumed, the soul is filled with grace and a pledge of future glory is given.",
+          "who": "The Council speaks to all the faithful about the Eucharist itself, as the introduction to the chapter on the Mass. Its subject is Christ instituting the sacrifice and the Church celebrating it. The Council Fathers speak here with the Pope, in doctrinal language.",
+          "why": "Before asking for reforms of the Mass (SC §48–58), the Council sets out the doctrine. After the Reformation, Trent had defined the sacrificial character of the Mass in Session XXII (1562). The Council takes that teaching over, so that the reform of the rites cannot be taken as a change of doctrine, and joins it to patristic and liturgical imagery.",
+          "how": "The article summarises Trent and adds images from the tradition. The phrase sacrament of love, sign of unity, bond of charity comes from Augustine's commentary on John. The close follows the antiphon *O sacrum convivium* from the Office of Corpus Christi. The article opens chapter II and carries the practical provisions that follow.",
+          "meaning": "Sacrifice and meal do not exclude each other here; the article names both in one sentence. The Mass perpetuates the one sacrifice of the Cross and adds no new one to it. A reading that keeps only the meal or only the sacrifice falls short of the text. Paul VI confirmed this teaching in *Mysterium fidei* (1965). The *Catechism* quotes the article in no. 1323 and speaks of sacrifice, memorial and sacred banquet (no. 1382)."
+        }
+      }
     },
     {
       "id": "SC-48",
@@ -607,7 +799,23 @@
         "SC-34"
       ],
       "noteNl": "De basis voor de herziening van de Ordo Missae (1969). Hoe ver 'vereenvoudigen met behoud van het wezen' mocht gaan, is het centrale punt van debat over de hervorming.",
-      "noteEn": "The basis for the revision of the Order of Mass (1969). How far 'simplifying while preserving the substance' could go is the central point in the debate on the reform."
+      "noteEn": "The basis for the revision of the Order of Mass (1969). How far 'simplifying while preserving the substance' could go is the central point in the debate on the reform.",
+      "explain": {
+        "nl": {
+          "what": "De Ordo Missae moet herzien worden, zodat de eigen aard en het doel van elk deel en hun onderlinge samenhang duidelijker worden, en de gelovigen gemakkelijker vroom en actief deelnemen. Daarom worden de riten vereenvoudigd met behoud van hun substantie. Wat in de loop der tijd verdubbeld werd of met weinig nut werd toegevoegd, vervalt. Wat door historische toevallen verloren ging, wordt hersteld volgens de oude norm van de kerkvaders, waar dat nuttig of nodig lijkt.",
+          "who": "De opdracht gaat naar de Apostolische Stoel en de commissies die de liturgische boeken zouden herzien (SC §25). Het artikel spreekt over de vaste delen van de mis, met het oog op de gelovigen die eraan deelnemen.",
+          "why": "De Romeinse mis had in de middeleeuwen elementen gekregen die vaak als verdubbeling golden, zoals gebeden die de priester zelf las terwijl ze gezongen werden. Andere oude elementen, zoals het algemeen gebed, waren verdwenen. Het debat in de aula van 1962 was fel; kardinaal Ottaviani sprak tegen ingrijpende veranderingen en werd door de voorzitter, kardinaal Alfrink, onderbroken toen hij zijn spreektijd overschreed.",
+          "how": "Het artikel geeft eerst het doel en dan drie bewerkingen: vereenvoudigen, laten vallen en herstellen. De uitdrukking norm van de kerkvaders (*pristina sanctorum Patrum norma*) stond al in de bul *Quo primum* (1570) van Pius V, die zijn missaal op die norm baseerde. De volgende artikelen werken onderdelen uit: Schrift (SC §51), homilie (SC §52), voorbede (SC §53).",
+          "meaning": "Vereenvoudigen gebeurt met behoud van de substantie; het artikel vraagt geen nieuwe mis. Op basis ervan verschenen de instructie *Inter Oecumenici* (1964) en de Ordo Missae van Paul VI (1969). Hoe ver vereenvoudiging mocht gaan, is het centrale twistpunt: voorstanders zien het missaal van 1970 als uitvoering van dit artikel, critici, zoals de kardinalen Ottaviani en Bacci in hun studie van 1969, zagen er een afwijking van de theologie van Trente in."
+        },
+        "en": {
+          "what": "The Order of Mass is to be revised so that the nature and purpose of each part, and the connection between them, appear more clearly, and the faithful can take part devoutly and actively more easily. The rites are therefore simplified while their substance is preserved. What was duplicated over time or added with little advantage is dropped. What was lost through accidents of history is restored according to the ancient norm of the Fathers, where this seems useful or necessary.",
+          "who": "The task is given to the Apostolic See and the commissions that would revise the liturgical books (SC §25). The article concerns the fixed parts of the Mass, with a view to the faithful who take part.",
+          "why": "In the Middle Ages the Roman Mass had acquired elements often regarded as duplications, such as prayers the priest read himself while they were being sung. Other ancient elements, such as the common prayer, had disappeared. The debate in the hall in 1962 was sharp; Cardinal Ottaviani spoke against far-reaching changes and was cut off by the presiding Cardinal Alfrink when he exceeded his time.",
+          "how": "The article states the aim and then three operations: simplifying, dropping and restoring. The phrase norm of the Fathers (*pristina sanctorum Patrum norma*) already appeared in Pius V's bull *Quo primum* (1570), which based his missal on that norm. The following articles work out particular parts: Scripture (SC §51), the homily (SC §52), the prayer of the faithful (SC §53).",
+          "meaning": "Simplification keeps the substance; the article does not ask for a new Mass. On its basis came the instruction *Inter Oecumenici* (1964) and Paul VI's Order of Mass (1969). How far simplification might go is the central point of dispute: defenders see the 1970 missal as the execution of this article, while critics, such as Cardinals Ottaviani and Bacci in their 1969 study, saw in it a departure from the theology of Trent."
+        }
+      }
     },
     {
       "id": "SC-51",
@@ -623,7 +831,23 @@
       "crossRefs": [
         "DV-21",
         "DV-25"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De schatten van de Bijbel moeten ruimer geopend worden, zodat de gelovigen aan de tafel van Gods woord overvloediger gevoed worden. Daarom moet over een vast aantal jaren een groter en representatiever deel van de Schrift aan het volk voorgelezen worden.",
+          "who": "Het artikel richt zich tot wie het lectionarium zou herzien, en via hen tot alle gelovigen die in de mis de Schrift horen. Het onderwerp is de plaats van de Bijbel in de eucharistieviering. Het spreekt als opdracht van het Concilie.",
+          "why": "Het missaal van 1570 had een jaarcyclus van lezingen waarin grote delen van de Schrift, vooral uit het Oude Testament, op zondag niet voorkwamen. De bijbelse beweging en de liturgische beweging vroegen om meer Schrift in de viering. Het Concilie had al gevraagd om een ruimere, gevarieerdere schriftlezing (SC §35).",
+          "how": "Het artikel is kort en opdrachtgevend. Het gebruikt het beeld van de twee tafels, van het woord en van het brood, dat in de spirituele traditie bekend is, onder meer uit de *Navolging van Christus* (boek IV, hoofdstuk 11). Het hangt samen met SC §24 en §35 en vindt een leerstellige parallel in DV §21, waar de Kerk Schrift en Lichaam van de Heer samen vereert.",
+          "meaning": "Het artikel vraagt een lezingenrooster over meerdere jaren, zonder een vorm voor te schrijven. Het *Ordo lectionum Missae* van 1969 voerde een driejarige cyclus voor zondagen en een tweejarige voor weekdagen in. Het artikel stelt de tafel van het woord niet boven of tegenover die van de eucharistie: beide vormen één eredienst (SC §56). Benedictus XVI werkte dit uit in *Verbum Domini* (2010)."
+        },
+        "en": {
+          "what": "The treasures of the Bible are to be opened up more lavishly, so that the faithful are more fully fed at the table of God's word. Over a set number of years a larger and more representative part of Scripture is therefore to be read to the people.",
+          "who": "The article is addressed to those who would revise the lectionary, and through them to all the faithful who hear Scripture at Mass. Its subject is the place of the Bible in the Eucharistic celebration.",
+          "why": "The 1570 missal had a one-year cycle of readings in which large parts of Scripture, especially of the Old Testament, did not occur on Sundays. The biblical and liturgical movements asked for more Scripture in worship. The Council had already asked for more ample and varied reading of Scripture (SC §35).",
+          "how": "The article is short and prescriptive. It uses the image of the two tables, of the word and of the bread, known in the spiritual tradition, for instance from the *Imitation of Christ* (book IV, chapter 11). It connects with SC §24 and §35 and has a doctrinal parallel in DV §21, where the Church venerates Scripture together with the Body of the Lord.",
+          "meaning": "The article asks for a cycle of readings over several years without prescribing its form. The *Ordo lectionum Missae* of 1969 introduced a three-year Sunday cycle and a two-year weekday cycle. The article does not set the table of the word above or against that of the Eucharist: the two form one act of worship (SC §56). Benedict XVI developed this in *Verbum Domini* (2010)."
+        }
+      }
     },
     {
       "id": "SC-52",
@@ -670,7 +894,23 @@
       ],
       "crossRefs": [
         "SC-36"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "In missen met het volk kan de moedertaal een passende plaats krijgen, vooral bij de lezingen en het algemeen gebed en, naar plaatselijke omstandigheden, bij de delen die het volk toekomen. Tegelijk moet ervoor gezorgd worden dat de gelovigen de vaste delen van de mis die hun toekomen ook in het Latijn samen kunnen zeggen of zingen. Waar een ruimer gebruik van de volkstaal wenselijk lijkt, geldt de procedure van SC §40.",
+          "who": "Het artikel richt zich tot de territoriale kerkelijke overheid, die over de volkstaal beslist, en tot de herders, die de gelovigen moeten leren de vaste delen in het Latijn te zingen. Het onderwerp is de taal van de mis met het volk.",
+          "why": "Het artikel past de regel van SC §36 toe op de mis, het onderdeel waarover in de aula het meest gesproken werd. De concilievaders zochten een evenwicht tussen verstaanbaarheid, vooral van de lezingen, en het behoud van een gemeenschappelijke Latijnse zang van het volk, zoals de liturgische beweging die met het gregoriaans had bevorderd.",
+          "how": "Het artikel geeft eerst een toestemming, dan een opdracht en ten slotte een verwijzing naar de procedure voor verdergaande aanpassing (SC §40). De vaste delen van het ordinarium zijn onder meer Kyrie, Gloria, Credo, Sanctus en Agnus Dei. Het artikel staat naast SC §36 en §101, die samen een consequente lijn vormen.",
+          "meaning": "De volkstaal krijgt een passende plaats, het Latijn van het ordinarium blijft een opdracht. In de praktijk verdween het Latijnse gezang in veel parochies, ondanks deze opdracht. Paul VI zond in 1974 de bisschoppen het boekje *Jubilate Deo* met eenvoudige gregoriaanse gezangen, en Benedictus XVI vroeg in *Sacramentum caritatis* (2007) opnieuw dat gelovigen enkele Latijnse gebeden en gezangen kennen. Of de latere praktijk met dit artikel strookt, is omstreden."
+        },
+        "en": {
+          "what": "In Masses with the people the mother tongue may be given a suitable place, especially in the readings and the common prayer and, depending on local circumstances, in the parts that belong to the people. At the same time steps should be taken so that the faithful can also say or sing together in Latin the fixed parts of the Mass that belong to them. Where wider use of the vernacular seems desirable, the procedure of SC §40 applies.",
+          "who": "The article is addressed to the territorial ecclesiastical authority, which decides on the vernacular, and to pastors, who must teach the faithful to sing the fixed parts in Latin. Its subject is the language of the Mass celebrated with the people.",
+          "why": "The article applies the rule of SC §36 to the Mass, the matter most discussed in the hall. The Council Fathers sought a balance between intelligibility, above all of the readings, and keeping a common Latin chant of the people, as the liturgical movement had promoted through Gregorian chant.",
+          "how": "The article first grants a permission, then sets a task, and finally refers to the procedure for further adaptation (SC §40). The fixed parts of the Ordinary include the Kyrie, Gloria, Creed, Sanctus and Agnus Dei. The article stands beside SC §36 and §101, which together form a consistent line.",
+          "meaning": "The vernacular receives a suitable place, and the Latin of the Ordinary remains a task. In practice Latin chant disappeared from many parishes despite this task. In 1974 Paul VI sent the bishops the booklet *Jubilate Deo* with simple Gregorian chants, and Benedict XVI in *Sacramentum caritatis* (2007) again asked that the faithful know some Latin prayers and chants. Whether later practice agrees with this article is disputed."
+        }
+      }
     },
     {
       "id": "SC-55",
@@ -688,7 +928,23 @@
         "ext:memoriale-domini-1969"
       ],
       "noteNl": "Het vervolg van §55 laat communie onder beide gedaanten toe in door de Apostolische Stoel te bepalen gevallen. Over de wijze van uitreiken (op de tong of in de hand) zegt het document niets.",
-      "noteEn": "The rest of §55 permits communion under both kinds in cases to be determined by the Apostolic See. The document says nothing about the manner of distribution (on the tongue or in the hand)."
+      "noteEn": "The rest of §55 permits communion under both kinds in cases to be determined by the Apostolic See. The document says nothing about the manner of distribution (on the tongue or in the hand).",
+      "explain": {
+        "nl": {
+          "what": "Het Concilie beveelt sterk aan dat de gelovigen na de communie van de priester het lichaam van de Heer ontvangen uit hetzelfde offer, dus van hosties die in die mis geconsacreerd zijn. Met behoud van de leerstellige beginselen van Trente kan de communie onder beide gedaanten worden toegestaan, in gevallen die de Apostolische Stoel bepaalt. Als voorbeelden noemt het artikel nieuw gewijden in hun wijdingsmis, nieuw geprofesten in hun professiemis en volwassen dopelingen in de mis na hun doop.",
+          "who": "Het richt zich tot priesters en tot de gelovigen die communiceren, en tot de Apostolische Stoel en de bisschoppen, die de gevallen voor communie onder beide gedaanten vaststellen. Het onderwerp is de communie als deel van de mis.",
+          "why": "In veel kerken werd de communie gewoonlijk uitgereikt uit het tabernakel, soms zelfs buiten de mis. Benedictus XIV (1742) en Pius XII in *Mediator Dei* (1947) hadden al aanbevolen te communiceren van hosties uit dezelfde mis. De kelk voor leken was sinds de middeleeuwen in de Latijnse Kerk verdwenen en na de Reformatie een twistpunt geworden. In de aula behoorde communie onder beide gedaanten in 1962 tot de omstreden punten.",
+          "how": "Het artikel combineert een aanbeveling met een voorzichtige toestemming. De verwijzing naar Trente heeft een functie: de 21e zitting (1562) leerde dat Christus geheel en volledig ontvangen wordt onder één gedaante. De toestemming staat dus niet in het teken van een leerstellige correctie. Het artikel staat tussen de bepalingen over het algemeen gebed (SC §53) en de concelebratie (SC §57–58).",
+          "meaning": "Meer volmaakte vorm betekent een vollediger teken van deelname aan het offer; wie onder één gedaante communiceert, ontvangt Christus geheel (Catechismus nr. 1390). De latere uitbreiding van communie onder beide gedaanten berust op uitvoeringsdocumenten; het Algemeen Statuut van het Romeins Missaal (nr. 85) herhaalt de aanbeveling van hosties uit dezelfde mis. Over de handcommunie zegt het artikel niets; die kwam later via *Memoriale Domini* (1969)."
+        },
+        "en": {
+          "what": "The Council strongly commends that the faithful, after the priest's communion, receive the Lord's body from the same sacrifice, that is, from hosts consecrated at that Mass. With the doctrinal principles of Trent intact, communion under both kinds may be granted in cases the Apostolic See determines. As examples the article names the newly ordained at the Mass of their ordination, the newly professed at the Mass of their profession and newly baptised adults at the Mass following their baptism.",
+          "who": "It is addressed to priests and to the faithful who receive communion, and to the Apostolic See and the bishops, who determine the cases for communion under both kinds. Its subject is communion as part of the Mass.",
+          "why": "In many churches communion was ordinarily given from the tabernacle, sometimes even outside Mass. Benedict XIV (1742) and Pius XII in *Mediator Dei* (1947) had already recommended communion from hosts consecrated at the same Mass. The chalice for the laity had disappeared in the Latin Church since the Middle Ages and became contested after the Reformation. In 1962 communion under both kinds was among the disputed points in the hall.",
+          "how": "The article combines a recommendation with a cautious permission. The reference to Trent has a purpose: Session XXI (1562) taught that Christ is received whole and entire under either kind. The permission is therefore no doctrinal correction. The article stands between the provisions on the common prayer (SC §53) and on concelebration (SC §57–58).",
+          "meaning": "A more perfect form means a fuller sign of sharing in the sacrifice; whoever receives under one kind receives Christ whole (*Catechism* no. 1390). The later extension of communion under both kinds rests on implementing documents, and the *General Instruction of the Roman Missal* (no. 85) repeats the recommendation of hosts from the same Mass. The article says nothing about communion in the hand, which came later through *Memoriale Domini* (1969)."
+        }
+      }
     },
     {
       "id": "SC-56",
@@ -895,7 +1151,23 @@
       ],
       "crossRefs": [
         "SC-36"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Volgens de eeuwenoude traditie van de Latijnse ritus behouden clerici in het getijdengebed het Latijn. De ordinarius kan in afzonderlijke gevallen een vertaling toestaan aan clerici voor wie het Latijn een ernstige belemmering vormt om het officie goed te bidden. Kloosterzusters en andere religieuzen kunnen met toestemming van hun overste de volkstaal gebruiken. Een cleric die het officie in de volkstaal bidt met een groep gelovigen of met die religieuzen, voldoet aan zijn verplichting, mits de vertaling goedgekeurd is.",
+          "who": "Het richt zich in de eerste plaats tot clerici, die tot het getijdengebed verplicht zijn, en tot de ordinarii die vrijstellingen verlenen. Daarnaast spreekt het over religieuzen en leken die het officie bidden. Het gaat om de taal van dat gebed.",
+          "why": "Het getijdengebed was voor clerici een persoonlijke verplichting die meestal alleen en in het Latijn vervuld werd. Niet iedere priester beheerste de taal goed genoeg om met vrucht te bidden. *Veterum sapientia* (1962) had het Latijn in de priesteropleiding sterk aanbevolen. Het Concilie zocht een regeling die de traditie handhaafde en tegelijk persoonlijke nood erkende.",
+          "how": "Het artikel sluit hoofdstuk IV af en heeft drie leden: een regel voor clerici met een uitzondering, een ruimere regeling voor religieuzen en een bepaling over de verplichting. Het past de regel van SC §36 toe, strenger dan bij de mis (SC §54). Het hoofdstuk vraagt elders dat het officie ook door leken gebeden wordt (SC §100).",
+          "meaning": "Voor clerici is het Latijn de regel en de volkstaal een uitzondering in afzonderlijke gevallen. Na de *Liturgia Horarum*, afgekondigd met *Laudis canticum* (1970), werd het officie in de praktijk bijna overal in vertaling gebeden, met goedkeuring van het gezag. De Codex van 1983 regelt de verplichting zelf (can. 276 §2, 3°). Of de praktijk de verhouding van regel en uitzondering heeft omgekeerd, is een vraag die het debat over SC §36 herhaalt."
+        },
+        "en": {
+          "what": "In accordance with the centuries-old tradition of the Latin rite, clerics retain Latin in the Divine Office. The ordinary may, in individual cases, permit a translation to clerics for whom Latin is a grave obstacle to praying the office properly. Nuns and other religious may use the vernacular with the permission of their superior. A cleric who prays the office in the vernacular with a group of faithful or with such religious fulfils his obligation, provided the translation is approved.",
+          "who": "It is addressed first to clerics, who are bound to the Divine Office, and to the ordinaries who grant permissions. It also speaks of religious and lay people who pray the office. Its subject is the language of that prayer.",
+          "why": "For clerics the Divine Office was a personal obligation, usually fulfilled alone and in Latin. Not every priest knew the language well enough to pray it with profit. *Veterum sapientia* (1962) had strongly commended Latin in priestly formation. The Council sought a provision that kept the tradition while recognising personal need.",
+          "how": "The article closes chapter IV and has three sections: a rule for clerics with an exception, a wider provision for religious, and a clause on the obligation. It applies the rule of SC §36, more strictly than for the Mass (SC §54). Elsewhere the chapter asks that lay people also pray the office (SC §100).",
+          "meaning": "For clerics Latin is the rule and the vernacular an exception in individual cases. After the *Liturgia Horarum*, promulgated with *Laudis canticum* (1970), the office came to be prayed almost everywhere in translation, with the approval of authority. The 1983 Code regulates the obligation itself (can. 276 §2, 3°). Whether practice has reversed rule and exception is a question that repeats the debate on SC §36."
+        }
+      }
     },
     {
       "id": "SC-102",
@@ -973,7 +1245,23 @@
       ],
       "crossRefs": [
         "SC-10"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Volgens een apostolische overlevering die teruggaat tot de dag van de verrijzenis, viert de Kerk elke achtste dag het paasmysterie; die dag heet terecht de dag des Heren, de zondag. Dan komen de gelovigen samen om het woord te horen en aan de eucharistie deel te nemen, en danken zij God die hen herboren heeft tot levende hoop. De zondag is de oorspronkelijke feestdag, een dag van vreugde en rust. Andere vieringen gaan alleen voor als zij werkelijk van het grootste belang zijn, want de zondag is grondslag en kern van het liturgisch jaar.",
+          "who": "Het Concilie spreekt tot alle gelovigen en tot de herders, die de zondag in de prediking en in de ordening van de kalender moeten bewaken. Het spreekt over de zondag als wekelijkse viering van Pasen.",
+          "why": "In de kalender was de zondag in de loop der eeuwen vaak verdrongen door heiligenfeesten. Al onder Johannes XXIII (1960) waren de rubrieken herzien. De liturgische beweging wilde het paasmysterie centraal stellen, en het Concilie had dat in SC §5–6 gedaan. SC §106 trekt de lijn door naar de week: elke zondag is een klein Pasen.",
+          "how": "Het artikel verwijst naar 1 Petrus 1,3 voor de levende hoop en sluit aan bij de nieuwtestamentische samenkomsten op de eerste dag van de week (Handelingen 20,7; Openbaring 1,10). De benaming achtste dag is patristisch, en Justinus beschreef al de zondagse samenkomst (*Eerste Apologie* 67). Het artikel opent na de algemene inleiding (SC §102–105) de bepalingen van hoofdstuk V.",
+          "meaning": "Oorspronkelijke feestdag betekent dat de zondag ouder is dan alle andere feesten en hun grond vormt. De kalender van 1969 gaf de zondag daarom voorrang op de meeste feesten. Johannes Paulus II werkte het artikel uit in *Dies Domini* (1998). De Catechismus citeert het in nr. 1166–1167 en behandelt de zondag als gebod in nr. 2174–2188."
+        },
+        "en": {
+          "what": "By an apostolic tradition going back to the day of the resurrection, the Church celebrates the paschal mystery every eighth day, rightly called the Lord's day or Sunday. On it the faithful gather to hear the word and take part in the Eucharist, giving thanks to God who has begotten them again to a living hope. Sunday is the original feast day, a day of joy and rest. Other celebrations take precedence only if truly of the greatest importance, for Sunday is the foundation and kernel of the liturgical year.",
+          "who": "The Council speaks to all the faithful and to pastors, who are to guard Sunday in preaching and in ordering the calendar. Its subject is Sunday as the weekly celebration of Easter. It speaks as a council, in a constitution.",
+          "why": "Over the centuries Sunday had often been displaced in the calendar by feasts of saints. The rubrics had already been revised under John XXIII (1960). The liturgical movement wished to place the paschal mystery at the centre, as the Council had done in SC §5–6. SC §106 extends that line to the week: every Sunday is a little Easter.",
+          "how": "The article refers to 1 Peter 1:3 for the living hope and echoes the New Testament gatherings on the first day of the week (Acts 20:7; Revelation 1:10). The name eighth day is patristic, and Justin had already described the Sunday assembly (*First Apology* 67). After the general introduction (SC §102–105), the article opens the provisions of chapter V.",
+          "meaning": "Original feast day means that Sunday is older than every other feast and grounds them all. The 1969 calendar therefore gave Sunday precedence over most feasts. John Paul II developed the article in *Dies Domini* (1998). The *Catechism* quotes it in nos. 1166–1167 and treats Sunday as a commandment in nos. 2174–2188."
+        }
+      }
     },
     {
       "id": "SC-112",
@@ -987,7 +1275,23 @@
       "crossRefs": [
         "SC-116",
         "ext:tra-le-sollecitudini-1903"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De muzikale traditie van de Kerk is een schat van onschatbare waarde, groter dan die van elke andere kunst, omdat het gewijde gezang, met de woorden verbonden, een noodzakelijk of integrerend deel van de plechtige liturgie vormt. De Schrift, de kerkvaders en de pausen, recent Pius X, hebben die dienende rol geprezen. Kerkmuziek is heiliger naarmate zij nauwer met de liturgische handeling verbonden is. De Kerk aanvaardt elke ware kunst met de vereiste eigenschappen, en het doel is Gods eer en de heiliging van de gelovigen.",
+          "who": "Het artikel opent hoofdstuk VI en spreekt tot de hele Kerk, in het bijzonder tot musici, componisten, koren en herders. Het onderwerp is de kerkmuziek en haar plaats in de liturgie. Het Concilie spreekt hier als leraar van de Kerk.",
+          "why": "Pius X had in *Tra le sollecitudini* (1903) de muziek omschreven als integrerend deel van de liturgie en haar dienende functie benadrukt. Pius XII zette die lijn voort in *Musicae sacrae disciplina* (1955). Het Concilie wilde dat erfgoed bevestigen en tegelijk ruimte laten voor nieuwe muziek en voor de zang van het volk.",
+          "how": "Het artikel is beschouwend en legt het fundament voor de concrete bepalingen (SC §113–121). Het steunt op Efeziërs 5,19 en Kolossenzen 3,16 en op de pausen. Het werkt met een criterium van nabijheid: hoe nauwer de muziek bij de liturgische handeling hoort, hoe heiliger zij is. Het noemt drie manieren waarop zij dat doet: zij maakt het gebed inniger, bevordert eendracht en verhoogt de plechtigheid.",
+          "meaning": "De dienende functie (*munus ministeriale*) betekent dat muziek deel heeft aan de liturgie zelf en geen versiering of concert binnen de viering is. Het criterium betreft de band met de handeling, niet een bepaalde stijl. De instructie *Musicam sacram* (1967) werkte de beginselen uit, en Johannes Paulus II herdacht *Tra le sollecitudini* in 2003 met een chirograaf. De Catechismus behandelt zang en muziek in nr. 1156–1158."
+        },
+        "en": {
+          "what": "The musical tradition of the Church is a treasure of inestimable value, greater than that of any other art, because sacred song united to the words forms a necessary or integral part of the solemn liturgy. Scripture, the Fathers and the popes, recently Pius X, have praised this ministerial role. Sacred music is holier the more closely it is joined to the liturgical action. The Church admits every true art with the needed qualities, and the aim is God's glory and the sanctification of the faithful.",
+          "who": "The article opens chapter VI and speaks to the whole Church, in particular to musicians, composers, choirs and pastors. Its subject is sacred music and its place in the liturgy. The Council speaks here as a teacher of the Church.",
+          "why": "Pius X, in *Tra le sollecitudini* (1903), had described music as an integral part of the liturgy and stressed its ministerial function. Pius XII continued that line in *Musicae sacrae disciplina* (1955). The Council wished to confirm that inheritance while leaving room for new music and for the singing of the people.",
+          "how": "The article is reflective and lays the foundation for the concrete provisions (SC §113–121). It rests on Ephesians 5:19, Colossians 3:16 and the popes. It works with a criterion of closeness: the more closely music belongs to the liturgical action, the holier it is. It names the ways it does so: by making prayer more fervent, fostering unity of minds and adding solemnity.",
+          "meaning": "The ministerial function (*munus ministeriale*) means that music shares in the liturgy itself and is no ornament or concert within the celebration. The criterion concerns the bond with the action, not a particular style. The instruction *Musicam sacram* (1967) worked out the principles, and John Paul II marked the centenary of *Tra le sollecitudini* with a chirograph in 2003. The *Catechism* treats song and music in nos. 1156–1158."
+        }
+      }
     },
     {
       "id": "SC-116",
@@ -1007,7 +1311,23 @@
         "ext:tra-le-sollecitudini-1903"
       ],
       "noteNl": "Het Latijn zegt 'proprium' (eigen aan); de Engelse vatican.va-vertaling geeft 'specially suited'. 'Ceteris paribus' (onder overigens gelijke omstandigheden) is de enige voorwaarde.",
-      "noteEn": "The Latin says 'proprium' (proper to); the English vatican.va translation renders 'specially suited'. 'Ceteris paribus' (other things being equal) is the only qualification."
+      "noteEn": "The Latin says 'proprium' (proper to); the English vatican.va translation renders 'specially suited'. 'Ceteris paribus' (other things being equal) is the only qualification.",
+      "explain": {
+        "nl": {
+          "what": "De Kerk erkent het gregoriaans als eigen aan de Romeinse liturgie; daarom moet het, onder overigens gelijke omstandigheden, in de liturgie de eerste plaats krijgen. Andere soorten kerkmuziek, vooral polyfonie, zijn niet uitgesloten, mits zij beantwoorden aan de geest van de liturgische handeling zoals SC §30 die omschrijft.",
+          "who": "Het artikel richt zich tot herders, koren, musici en iedereen die de muziek in de liturgie kiest. Het spreekt over het gregoriaans en de polyfonie in de Romeinse ritus. De oosterse riten vallen buiten deze bepaling.",
+          "why": "Het herstel van het gregoriaans was sinds Solesmes in de negentiende eeuw een kernpunt van de liturgische beweging. Pius X noemde het in 1903 het hoogste voorbeeld van kerkmuziek en gaf de klassieke polyfonie een ereplaats. Het Concilie bevestigt die rangorde, en ziet tegelijk de behoefte aan gezang van het volk en aan muziek uit andere culturen (SC §118–119).",
+          "how": "Het artikel is kort en normatief. Het begint met een erkenning van feitelijke aard (het gregoriaans hoort bij deze ritus), trekt er een norm uit (de eerste plaats) en voegt een open bepaling toe voor andere muziek. De verwijzing naar SC §30 verbindt de muziek met de actieve deelname. Het volgende artikel vraagt een kritische uitgave van de gezangboeken (SC §117).",
+          "meaning": "Het Latijn zegt *proprium*, eigen aan; de Engelse vertaling op vatican.va geeft specially suited. *Ceteris paribus* is de enige beperking: het laat ruimte voor omstandigheden waarin gregoriaans niet haalbaar is, maar maakt het niet tot één optie onder gelijken. Het Algemeen Statuut van het Romeins Missaal (nr. 41) herhaalt de bepaling. In veel parochies verdween het gregoriaans toch; *Jubilate Deo* (1974) probeerde een minimum te bewaren."
+        },
+        "en": {
+          "what": "The Church acknowledges Gregorian chant as proper to the Roman liturgy; other things being equal, it should therefore have pride of place in liturgical services. Other kinds of sacred music, especially polyphony, are not excluded, provided they accord with the spirit of the liturgical action as SC §30 describes it.",
+          "who": "The article is addressed to pastors, choirs, musicians and all who choose the music for the liturgy. Its subject is Gregorian chant and polyphony in the Roman rite. The Eastern rites fall outside this provision.",
+          "why": "Since Solesmes in the nineteenth century, the restoration of Gregorian chant had been a central concern of the liturgical movement. In 1903 Pius X called it the supreme model of sacred music and gave classical polyphony a place of honour. The Council confirms that order of rank, while also recognising the need for popular singing and for the music of other cultures (SC §118–119).",
+          "how": "The article is short and normative. It opens with an acknowledgement of fact (chant belongs to this rite), draws a norm from it (pride of place) and adds an open clause for other music. The reference to SC §30 links music with active participation. The next article asks for a critical edition of the chant books (SC §117).",
+          "meaning": "The Latin says *proprium*, proper to; the vatican.va English renders specially suited. *Ceteris paribus* is the only qualification: it allows for circumstances in which chant is not feasible, without making it one option among equals. The *General Instruction of the Roman Missal* (no. 41) repeats the provision. Chant nonetheless disappeared from many parishes; *Jubilate Deo* (1974) tried to preserve a minimum."
+        }
+      }
     },
     {
       "id": "SC-120",
@@ -1020,7 +1340,23 @@
       ],
       "crossRefs": [
         "SC-116"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "In de Latijnse Kerk moet het pijporgel in hoge ere gehouden worden, als het traditionele instrument dat de plechtigheden luister geeft en de geest tot God verheft. Andere instrumenten mogen in de eredienst gebruikt worden met instemming van het territoriaal gezag, mits zij geschikt zijn of geschikt gemaakt kunnen worden voor gewijd gebruik, passen bij de waardigheid van het godshuis en de gelovigen werkelijk stichten.",
+          "who": "Het artikel richt zich tot herders, organisten en musici, en tot de territoriale kerkelijke overheid die over andere instrumenten beslist. Het spreekt over muziekinstrumenten in de Latijnse liturgie. Oosterse Kerken, die vaak zonder instrumenten zingen, vallen erbuiten.",
+          "why": "Het orgel gold al eeuwen als het instrument van de Latijnse Kerk, en Pius X en Pius XII hadden dat bevestigd. Tegelijk vroegen missiegebieden en jonge kerken om ruimte voor hun eigen instrumenten, wat aansluit bij de aandacht voor de muzikale tradities van volken in SC §119.",
+          "how": "Het artikel volgt het patroon van de constitutie: eerst een regel die de traditie bevestigt, dan een mogelijkheid onder voorwaarden en onder toezicht van het gezag. De bevoegdheid verwijst naar SC §22 en naar de normen voor aanpassing in SC §37–40. De drie voorwaarden voor andere instrumenten zijn cumulatief.",
+          "meaning": "Het orgel krijgt een voorrang zonder exclusiviteit. Andere instrumenten zijn toegestaan, maar alleen na een besluit van het gezag en op grond van hun geschiktheid voor de liturgie, niet op grond van populariteit. *Musicam sacram* (1967) werkte deze bepalingen verder uit. Hoe het criterium van gewijd gebruik toegepast moet worden, bijvoorbeeld voor gitaar of slagwerk, verschilt per land en is een terugkerend punt van discussie."
+        },
+        "en": {
+          "what": "In the Latin Church the pipe organ is to be held in high esteem, as the traditional instrument that adds splendour to the ceremonies and lifts the mind to God. Other instruments may be used in worship with the consent of the territorial authority, provided they are suitable, or can be made suitable, for sacred use, accord with the dignity of the house of God and truly edify the faithful.",
+          "who": "The article is addressed to pastors, organists and musicians, and to the territorial ecclesiastical authority that decides on other instruments. Its subject is musical instruments in the Latin liturgy. The Eastern Churches, which often sing without instruments, fall outside it.",
+          "why": "For centuries the organ had been regarded as the instrument of the Latin Church, as Pius X and Pius XII had confirmed. Mission territories and young Churches asked for room for their own instruments, which fits the attention to the musical traditions of peoples in SC §119.",
+          "how": "The article follows the constitution's pattern: first a rule confirming tradition, then a possibility under conditions and under the oversight of authority. The competence refers to SC §22 and to the norms for adaptation in SC §37–40. The conditions for other instruments apply together.",
+          "meaning": "The organ is given precedence without exclusivity. Other instruments are allowed, though only after a decision of authority and on the ground of their suitability for the liturgy rather than their popularity. *Musicam sacram* (1967) worked these provisions out further. How the criterion of sacred use applies, for instance to guitar or percussion, varies from country to country and remains a recurring topic of discussion."
+        }
+      }
     },
     {
       "id": "SC-124",
@@ -1070,7 +1406,23 @@
         "ext:inter-oecumenici-1964"
       ],
       "noteNl": "§128 vraagt om herziening van de normen voor altaren, maar schrijft geen celebratierichting voor. 'Versus populum' wordt in SC nergens genoemd.",
-      "noteEn": "§128 asks for a revision of the norms for altars but prescribes no direction of celebration. 'Versus populum' is not mentioned anywhere in SC."
+      "noteEn": "§128 asks for a revision of the norms for altars but prescribes no direction of celebration. 'Versus populum' is not mentioned anywhere in SC.",
+      "explain": {
+        "nl": {
+          "what": "Samen met de herziening van de liturgische boeken (SC §25) moeten de kerkelijke bepalingen over de stoffelijke zaken van de eredienst spoedig herzien worden. Het gaat om de bouw van kerken, de vorm en constructie van altaren, de waardigheid, plaats en veiligheid van het tabernakel, de doopkapel, beelden, versiering en paramenten. Wat minder past bij de vernieuwde liturgie moet aangepast of afgeschaft worden, wat haar bevordert behouden of ingevoerd. De territoriale bisschoppenvergaderingen krijgen ruimte voor aanpassing aan plaatselijke noden.",
+          "who": "Het artikel richt zich tot het kerkelijk gezag dat de normen moet herzien, en via hen tot bisschoppen, architecten en kunstenaars. Het onderwerp is de materiële inrichting van de eredienst. Het Concilie geeft hier een opdracht, geen uitgewerkte normen.",
+          "why": "Kerkbouw en inrichting vielen onder de rubrieken en het kerkelijk recht van 1917, die vooral altaar, tabernakel en wijding regelden. De liturgische beweging had al nagedacht over ruimten die de deelname van de gemeenschap bevorderen. Het Concilie wilde de normen afstemmen op de vernieuwde riten, zonder zelf de details te regelen.",
+          "how": "Het is een opdracht tot herziening, geen uitgewerkte regeling. Het artikel somt de onderwerpen op en geeft een algemeen criterium: overeenstemming met de vernieuwde liturgie. Het hangt samen met SC §124, dat vraagt dat kerken geschikt zijn voor de liturgische handelingen en de actieve deelname van de gelovigen, en met SC §123, volgens welke de Kerk geen eigen stijl heeft.",
+          "meaning": "Het artikel schrijft geen celebratierichting voor; *versus populum* komt in de constitutie niet voor. De aanbeveling van een vrijstaand altaar staat in de instructie *Inter Oecumenici* (1964, nr. 91). Of priester en volk naar elkaar of samen naar het oosten gericht moeten vieren, is omstreden; Ratzinger en Uwe Michael Lang verdedigen de gemeenschappelijke richting. Latere normen staan in de Codex van 1983 (can. 1235–1239) en in het Algemeen Statuut van het Romeins Missaal."
+        },
+        "en": {
+          "what": "Together with the revision of the liturgical books (SC §25), the Church's laws on the material things of worship are to be revised soon. They concern the building of churches, the shape and construction of altars, the dignity, placing and security of the tabernacle, the baptistery, images, decoration and vestments. What suits the reformed liturgy less well is to be amended or abolished, and what furthers it kept or introduced. The territorial assemblies of bishops receive room to adapt to local needs.",
+          "who": "The article is addressed to the Church authority that must revise the norms, and through it to bishops, architects and artists. Its subject is the material setting of worship. The Council issues a mandate here, without detailed norms.",
+          "why": "Church building and furnishing fell under the rubrics and the 1917 Code, which mainly regulated the altar, the tabernacle and consecration. The liturgical movement had already reflected on spaces that foster the participation of the community. The Council wanted the norms brought into line with the reformed rites, without itself regulating the details.",
+          "how": "It is a mandate for revision, not a worked-out regulation. The article lists the subjects and gives a general criterion: agreement with the reformed liturgy. It connects with SC §124, which asks that churches suit the liturgical actions and the active participation of the faithful, and with SC §123, according to which the Church has no style of her own.",
+          "meaning": "The article prescribes no direction of celebration; *versus populum* does not occur in the constitution. The recommendation of a free-standing altar is found in the instruction *Inter Oecumenici* (1964, no. 91). Whether priest and people should face each other or face east together is disputed; Ratzinger and Uwe Michael Lang defend the common direction. Later norms are in the 1983 Code (cans. 1235–1239) and the *General Instruction of the Roman Missal*."
+        }
+      }
     }
   ]
 }
