@@ -52,7 +52,7 @@ export function ParagraphSheet({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent title={citation} description={`${doc.titleLa} — ${pick(lang, doc.titleNl, doc.titleEn)}`} closeLabel={t('app.close')}>
+      <SheetContent title={citation} description={`${doc.titleLa} · ${pick(lang, doc.titleNl, doc.titleEn)}`} closeLabel={t('app.close')}>
         <ConciliarText paragraph={paragraph} showLatin />
         {note && <Commentary className="mt-3">{note}</Commentary>}
 
@@ -113,7 +113,7 @@ export function ParagraphSheet({
           rel="noopener noreferrer"
           className="mt-5 inline-flex min-h-[44px] items-center gap-1 text-sm text-accent underline underline-offset-2"
         >
-          {t('doc.fullAt')} — {t('doc.official')}
+          {t('doc.fullAt')} · {t('doc.official')}
           <ExternalLink className="h-3.5 w-3.5" aria-hidden />
         </a>
       </SheetContent>

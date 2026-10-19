@@ -29,7 +29,7 @@ export function Hermeneutics() {
             <ul className="space-y-1 text-sm">
               {p.appealsTo.map((a) => (
                 <li key={a.paragraphId}>
-                  <CiteLink id={a.paragraphId} /> — {pick(lang, a.noteNl, a.noteEn)}
+                  <CiteLink id={a.paragraphId} />: {pick(lang, a.noteNl, a.noteEn)}
                 </li>
               ))}
             </ul>

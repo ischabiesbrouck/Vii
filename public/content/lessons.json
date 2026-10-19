@@ -32,8 +32,8 @@
       {
         "headingNl": "De aankondiging",
         "headingEn": "The announcement",
-        "bodyNl": "Johannes XXIII werd op 28 oktober 1958 gekozen, op 76-jarige leeftijd, en werd vaak als overgangspaus gezien. Op 25 januari 1959 kondigde hij in de basiliek van Sint-Paulus buiten de Muren tot verrassing van de kardinalen een oecumenisch concilie aan. Zijn doel formuleerde hij later als aggiornamento: de Kerk bij de tijd brengen, niet door haar leer te veranderen, maar door haar beter te laten verkondigen.",
-        "bodyEn": "John XXIII was elected on 28 October 1958, aged 76, and was often seen as a transitional pope. On 25 January 1959, at the Basilica of Saint Paul Outside the Walls, he surprised the cardinals by announcing an ecumenical council. He later described his aim as aggiornamento: bringing the Church up to date, not by changing her doctrine, but by enabling her to proclaim it better.",
+        "bodyNl": "Johannes XXIII werd op 28 oktober 1958 gekozen, op 76-jarige leeftijd, en werd vaak als overgangspaus gezien. Op 25 januari 1959 kondigde hij in de basiliek van Sint-Paulus buiten de Muren tot verrassing van de kardinalen een oecumenisch concilie aan. Zijn doel formuleerde hij later als aggiornamento: de Kerk bij de tijd brengen door haar leer beter te laten verkondigen, zonder die leer te veranderen.",
+        "bodyEn": "John XXIII was elected on 28 October 1958, aged 76, and was often seen as a transitional pope. On 25 January 1959, at the Basilica of Saint Paul Outside the Walls, he surprised the cardinals by announcing an ecumenical council. He later described his aim as aggiornamento: bringing the Church up to date by enabling her to proclaim her doctrine better, without changing it.",
         "refs": [
           "SC-1"
         ]
@@ -642,8 +642,8 @@
       {
         "headingNl": "Een bewuste volgorde",
         "headingEn": "A deliberate order",
-        "bodyNl": "LG begint niet bij de structuur, maar bij het mysterie: de Kerk als 'sacrament' van eenheid met God (hfdst. 1). Daarna volgt het volk van God, alle gedoopten samen (hfdst. 2), en pas dan de hiërarchie (hfdst. 3), de leken (hfdst. 4), de universele roeping tot heiligheid (hfdst. 5), de religieuzen (hfdst. 6), de hemelse voltooiing (hfdst. 7) en Maria (hfdst. 8). Die volgorde was een van de belangrijkste beslissingen van het Concilie.",
-        "bodyEn": "LG does not begin with structure but with mystery: the Church as 'sacrament' of union with God (ch. 1). Then comes the People of God, all the baptised together (ch. 2), and only then the hierarchy (ch. 3), the laity (ch. 4), the universal call to holiness (ch. 5), religious (ch. 6), heavenly fulfilment (ch. 7) and Mary (ch. 8). That order was one of the Council's most important decisions.",
+        "bodyNl": "LG opent met het mysterie: de Kerk als 'sacrament' van eenheid met God (hfdst. 1). Daarna volgt het volk van God, alle gedoopten samen (hfdst. 2), en pas dan de hiërarchie (hfdst. 3), de leken (hfdst. 4), de universele roeping tot heiligheid (hfdst. 5), de religieuzen (hfdst. 6), de hemelse voltooiing (hfdst. 7) en Maria (hfdst. 8). Die volgorde was een van de belangrijkste beslissingen van het Concilie.",
+        "bodyEn": "LG opens with the mystery: the Church as 'sacrament' of union with God (ch. 1). Then comes the People of God, all the baptised together (ch. 2), and only then the hierarchy (ch. 3), the laity (ch. 4), the universal call to holiness (ch. 5), religious (ch. 6), heavenly fulfilment (ch. 7) and Mary (ch. 8). That order was one of the Council's most important decisions.",
         "refs": [
           "LG-1",
           "LG-9",
@@ -1042,8 +1042,8 @@
       {
         "labelNl": "Paragrafen",
         "labelEn": "Paragraphs",
-        "valueNl": "93 — het langste document",
-        "valueEn": "93 — the longest document"
+        "valueNl": "93, het langste document",
+        "valueEn": "93, the longest document"
       }
     ],
     "paragraphs": [

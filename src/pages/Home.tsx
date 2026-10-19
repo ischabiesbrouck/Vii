@@ -6,7 +6,7 @@ import { VerdictBadge } from '@/components/Badges';
 import { CiteLink, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { SubjectCard } from '@/components/SubjectCard';
 import { VideoRow } from '@/components/VideoCard';
-import { getAllParagraphs, getCatecheses, getClaims, getDocuments, getLessons, getSubjects, getVideos, paragraphText, paragraphUrl } from '@/lib/content';
+import { getAllParagraphs, getCatecheses, getClaims, getDocuments, getLessons, getShortCatecheses, getSubjects, getVideos, paragraphText, paragraphUrl } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { shortCite } from '@/lib/citation';
 import { toRoman } from '@/lib/roman';
@@ -38,13 +38,13 @@ export function Home() {
   const lessonState = useUi((s) => s.lessons);
   const [q, setQ] = useState('');
   const { data, loading } = useAsync(
-    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getAllParagraphs(), getLessons(), getCatecheses(), getVideos()]),
+    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getAllParagraphs(), getLessons(), getCatecheses(), getVideos(), getShortCatecheses()]),
     [],
   );
   useDocumentTitle(undefined);
 
   if (loading || !data) return <Loading />;
-  const [docs, subjects, claims, paragraphs, lessons, cat, videos] = data;
+  const [docs, subjects, claims, paragraphs, lessons, cat, videos, shortCats] = data;
   const lessonsDone = lessons.filter((l) => lessonState[l.id]?.done).length;
   const nextLesson = lessons.find((l) => !lessonState[l.id]?.done) ?? lessons[0]!;
   const totalMinutes = lessons.reduce((n, l) => n + l.minutes, 0);
@@ -242,6 +242,32 @@ export function Home() {
           </tbody>
         </table>
       </section>
+
+      {shortCats.length > 0 && (
+        <section aria-labelledby="h-sc">
+          <SectionTitle
+            id="h-sc"
+            action={
+              <Link to="/catechesis" className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
+                {t('home.allCatechesis')} <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            }
+          >
+            {t('sc.title')}
+          </SectionTitle>
+          <p className="-mt-1 mb-4 max-w-prose text-sm text-muted">{t('sc.intro')}</p>
+          <ol className="grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
+            {shortCats.map((c) => (
+              <li key={c.id} className="border-b border-line">
+                <Link to={`/catechesis/${c.id}`} className="group grid grid-cols-[2.5rem_minmax(0,1fr)] gap-2 py-3">
+                  <span className="pt-0.5 font-display text-sm font-semibold text-accent">{toRoman(c.number)}</span>
+                  <span className="font-title text-[1.12rem] leading-snug group-hover:text-accent group-hover:underline">{pick(lang, c.questionNl, c.questionEn)}</span>
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       <div className="rule-ornament" aria-hidden>
         <span className="text-[0.55rem]">◆</span>

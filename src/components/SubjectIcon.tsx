@@ -17,6 +17,8 @@ import {
   Users,
   Wheat,
   type LucideIcon,
+  Flame,
+  Heart,
 } from 'lucide-react';
 
 const icons: Record<string, LucideIcon> = {
@@ -36,6 +38,8 @@ const icons: Record<string, LucideIcon> = {
   sprout: Sprout,
   sunrise: Sunrise,
   radio: Radio,
+  flame: Flame,
+  heart: Heart,
 };
 
 export function SubjectIcon({ name, className }: { name: string; className?: string }) {

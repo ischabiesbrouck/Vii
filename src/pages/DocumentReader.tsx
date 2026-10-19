@@ -9,7 +9,8 @@ import { ParagraphSheet, copyCitation } from '@/components/ParagraphSheet';
 import { SubjectIcon } from '@/components/SubjectIcon';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { getCatecheses, getDocumentContent, getDocuments, getSubjects, getVideos } from '@/lib/content';
-import { VideoCard } from '@/components/VideoCard';
+import { VideoRow } from '@/components/VideoCard';
+import { toRoman } from '@/lib/roman';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { cn, formatDate, pick } from '@/lib/utils';
@@ -101,7 +102,7 @@ function ReaderParagraph({
         tabIndex={0}
         aria-haspopup="dialog"
         aria-label={`${doc.abbr} §${p.number}`}
-        className="no-callout cursor-pointer rounded-md transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]"
+        className="no-callout cursor-pointer transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]"
         {...handlers}
       >
         <ConciliarText paragraph={p} cite={`${doc.abbr} §${p.number}`} />
@@ -133,7 +134,7 @@ function Outline({
       <ul className="grid grid-cols-5 gap-1 text-sm">
         {paragraphs.map((p) => (
           <li key={p.id}>
-            <button type="button" onClick={() => onPick(p.id)} className={cn('min-h-[36px] w-full rounded hover:bg-surface', p.id === currentId && 'bg-surface font-semibold text-accent')}>
+            <button type="button" onClick={() => onPick(p.id)} className={cn('min-h-[36px] w-full rounded-sm hover:bg-surface', p.id === currentId && 'bg-surface font-semibold text-accent')}>
               §{p.number}
             </button>
           </li>
@@ -142,7 +143,7 @@ function Outline({
     );
   }
   return (
-    <ol className="space-y-1">
+    <ol className="border-l border-line">
       {doc.outline.map((o) => {
         const inSection = paragraphs.filter((p) => p.number >= o.from && p.number <= o.to);
         const active = current && current.number >= o.from && current.number <= o.to;
@@ -153,15 +154,15 @@ function Outline({
               disabled={!inSection.length}
               onClick={() => inSection[0] && onPick(inSection[0].id)}
               className={cn(
-                'w-full rounded px-2 py-1.5 text-left transition-colors disabled:cursor-default',
-                active ? 'bg-surface' : 'enabled:hover:bg-surface',
+                '-ml-px w-full border-l-2 py-1.5 pl-3 pr-1 text-left transition-colors disabled:cursor-default',
+                active ? 'border-accent bg-surface' : 'border-transparent enabled:hover:border-gold',
               )}
             >
-              <span className={cn('block font-display text-[0.65rem] font-semibold uppercase tracking-caps', active ? 'text-accent' : 'text-gold-text')}>
+              <span className={cn('block font-title text-[0.95rem] small-caps', active ? 'text-accent' : 'text-gold-text')}>
                 {o.labelLa} · §{o.from}
                 {o.to !== o.from && `–${o.to}`}
               </span>
-              <span className={cn('block text-[0.82rem] leading-snug', inSection.length ? 'text-fg' : 'text-muted')}>{pick(lang, o.titleNl, o.titleEn)}</span>
+              <span className={cn('block font-serif text-[0.86rem] leading-snug', inSection.length ? 'text-fg' : 'text-muted')}>{pick(lang, o.titleNl, o.titleEn)}</span>
               <span className="block text-[0.7rem] text-muted">
                 {inSection.length ? t('doc.excerptCount', { count: inSection.length }) : t('doc.noneSeededInSection')}
               </span>
@@ -180,6 +181,12 @@ const sizes: { value: FontSize; label: string }[] = [
 ];
 
 const popeNl = { 'Paul VI': 'Paulus VI', 'John XXIII': 'Johannes XXIII' } as const;
+
+/** Conciliar period in which a document was promulgated: 1963 → II, 1964 → III, 1965 → IV. */
+const sessionOf = (iso: string) => {
+  const n = { '1963': 2, '1964': 3, '1965': 4 }[iso.slice(0, 4)];
+  return n ? toRoman(n) : '—';
+};
 
 export function DocumentReader() {
   const { id = '' } = useParams();
@@ -279,27 +286,78 @@ export function DocumentReader() {
   const stored = progress[id]?.fraction ?? 0;
   const shown = Math.max(stored, liveFraction);
   const total = (doc.voteFor ?? 0) + (doc.voteAgainst ?? 0);
-  const linkCls = 'inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold';
+  const linkCls = 'flex min-h-[42px] items-center justify-between gap-2 py-2 text-accent hover:underline';
 
   return (
     <div>
       <Crumbs items={[{ to: '/', label: t('crumbs.home') }, { to: '/documents', label: t('nav.documents') }, { label: doc.titleLa }]} />
 
-      {/* Title page */}
-      <header className="mb-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
-        <div className="min-w-0">
-          <div className="mb-3 flex flex-wrap items-center gap-1.5">
-            <DocTypeBadge type={doc.type} />
-            <SolemnityBadge solemnity={doc.solemnity} />
-          </div>
-          <h1 className="display-title text-[2.1rem] leading-[1.1] sm:text-5xl">
-            <span lang="la">{doc.titleLa}</span>
-          </h1>
-          <p className="mt-3 font-serif text-xl">{pick(lang, doc.titleNl, doc.titleEn)}</p>
-          <p lang="la" className="la mt-1 text-sm text-muted">
-            {doc.designationLa}
+      {/* Title page, after the official conciliar editions */}
+      <header className="mx-auto mb-10 max-w-3xl text-center">
+        <p className="kicker">Concilium Oecumenicum Vaticanum II</p>
+        {doc.promulgatedBy === 'Paul VI' && (
+          <p lang="la" className="mx-auto mt-5 max-w-xl font-title text-[0.98rem] leading-relaxed text-muted small-caps">
+            Paulus Episcopus, Servus Servorum Dei, una cum Sacrosancti Concilii Patribus, ad perpetuam rei memoriam
           </p>
-          <Commentary className="mt-6" label={`${t('commentary')} · ${t('doc.summary')}`}>
+        )}
+        <div className="rule-ornament mx-auto mt-6 max-w-xs" aria-hidden>
+          <span className="text-[0.55rem]">◆</span>
+        </div>
+        <p lang="la" className="mt-6 font-title text-[1.05rem] uppercase tracking-[0.14em] text-accent">
+          {doc.designationLa}
+        </p>
+        <h1 className="display-title mt-3 text-[2.3rem] leading-[1.08] sm:text-[3.4rem]">
+          <span lang="la">{doc.titleLa}</span>
+        </h1>
+        <p className="mt-3 font-title text-[1.35rem] italic">{pick(lang, doc.titleNl, doc.titleEn)}</p>
+        <p className="mt-4 text-sm text-muted">
+          {t('doc.promulgatedOn', { pope: lang === 'nl' ? popeNl[doc.promulgatedBy] : doc.promulgatedBy, date: formatDate(doc.promulgated, lang) })}
+        </p>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5">
+          <DocTypeBadge type={doc.type} />
+          <SolemnityBadge solemnity={doc.solemnity} />
+        </div>
+      </header>
+
+      <dl className="mb-8 grid grid-cols-2 border-y border-fg/70 text-sm sm:grid-cols-4">
+        <div className="border-b border-line p-3 sm:border-b-0 sm:pl-0">
+          <dt className="kicker">{t('doc.promulgated')}</dt>
+          <dd className="mt-0.5 tabular">{formatDate(doc.promulgated, lang)}</dd>
+        </div>
+        <div className="border-b border-l border-line p-3 sm:border-b-0">
+          <dt className="kicker">{t('doc.session')}</dt>
+          <dd className="mt-0.5">{sessionOf(doc.promulgated)}</dd>
+        </div>
+        <div className="p-3 sm:border-l sm:border-line">
+          <dt className="kicker">{t('doc.votes')}</dt>
+          <dd className="mt-0.5 tabular">
+            {doc.voteFor !== null && doc.voteAgainst !== null ? (
+              <>
+                <span className="flex h-1 overflow-hidden bg-line" aria-hidden>
+                  <span className="bg-gold" style={{ width: `${(doc.voteFor / total) * 100}%` }} />
+                  <span className="bg-accent" style={{ width: `${(doc.voteAgainst / total) * 100}%`, minWidth: 2 }} />
+                </span>
+                <span className="mt-1 block">
+                  {doc.voteFor.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.placet')}</span> · {doc.voteAgainst.toLocaleString(lang)}{' '}
+                  <span lang="la" className="la text-muted">{t('doc.nonPlacet')}</span>
+                </span>
+              </>
+            ) : (
+              '—'
+            )}
+          </dd>
+        </div>
+        <div className="border-l border-line p-3">
+          <dt className="kicker">{t('doc.paragraphsLabel')}</dt>
+          <dd className="mt-0.5 tabular">
+            {doc.paragraphCount} · {content ? t('doc.excerptCount', { count: paragraphs.length }) : t('doc.metadataOnly')}
+          </dd>
+        </div>
+      </dl>
+
+      <div className="mb-10 grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-[minmax(0,1fr)_17rem]">
+        <div>
+          <Commentary label={`${t('commentary')} · ${t('doc.summary')}`}>
             <p className="leading-relaxed">{pick(lang, doc.summaryNl, doc.summaryEn)}</p>
           </Commentary>
           {doc.keyParagraphs.length > 0 && (
@@ -314,56 +372,29 @@ export function DocumentReader() {
             </p>
           )}
         </div>
-
-        <aside className="panel h-fit p-5">
-          <dl className="space-y-3 text-sm">
-            <div>
-              <dt className="kicker">{t('doc.promulgated')}</dt>
-              <dd className="mt-0.5">
-                {formatDate(doc.promulgated, lang)}
-                <br />
-                <span className="text-muted">
-                  {t('doc.by')} {lang === 'nl' ? popeNl[doc.promulgatedBy] : doc.promulgatedBy}
-                </span>
-              </dd>
-            </div>
-            {doc.voteFor !== null && doc.voteAgainst !== null && (
-              <div>
-                <dt className="kicker">{t('doc.votes')}</dt>
-                <dd className="mt-1 tabular">
-                  <div className="flex h-2 overflow-hidden rounded-full bg-line" aria-hidden>
-                    <div className="bg-gold" style={{ width: `${(doc.voteFor / total) * 100}%` }} />
-                    <div className="bg-accent" style={{ width: `${(doc.voteAgainst / total) * 100}%`, minWidth: 2 }} />
-                  </div>
-                  <p className="mt-1.5">
-                    {doc.voteFor.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.placet')}</span> ·{' '}
-                    {doc.voteAgainst.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.nonPlacet')}</span>
-                  </p>
-                </dd>
-              </div>
-            )}
-            <div>
-              <dt className="kicker">{t('doc.paragraphsLabel')}</dt>
-              <dd className="mt-0.5 tabular">
-                {doc.paragraphCount} · {content ? t('doc.excerptCount', { count: paragraphs.length }) : t('doc.metadataOnly')}
-              </dd>
-            </div>
-          </dl>
-          <div className="mt-5 flex flex-col gap-2">
-            <a href={doc.officialUrl} target="_blank" rel="noopener noreferrer" className={linkCls}>
-              <ExternalLink className="h-3.5 w-3.5 text-gold-text" aria-hidden /> {t('doc.official')}
-            </a>
-            <a href={doc.officialUrlLa} target="_blank" rel="noopener noreferrer" className={linkCls}>
-              <ExternalLink className="h-3.5 w-3.5 text-gold-text" aria-hidden /> {t('doc.officialLa')}
-            </a>
-            {lang === 'nl' && (
-              <a href={RKDOCUMENTEN_URL} target="_blank" rel="noopener noreferrer" className={linkCls}>
-                <ExternalLink className="h-3.5 w-3.5 text-gold-text" aria-hidden /> rkdocumenten.nl
+        <div>
+          <p className="kicker mb-1.5">{t('footer.sources')}</p>
+          <ul className="divide-y divide-line border-y border-line text-sm">
+            <li>
+              <a href={doc.officialUrl} target="_blank" rel="noopener noreferrer" className={linkCls}>
+                {t('doc.official')} <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted" aria-hidden />
               </a>
+            </li>
+            <li>
+              <a href={doc.officialUrlLa} target="_blank" rel="noopener noreferrer" className={linkCls}>
+                {t('doc.officialLa')} <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted" aria-hidden />
+              </a>
+            </li>
+            {lang === 'nl' && (
+              <li>
+                <a href={RKDOCUMENTEN_URL} target="_blank" rel="noopener noreferrer" className={linkCls}>
+                  rkdocumenten.nl <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted" aria-hidden />
+                </a>
+              </li>
             )}
-          </div>
-        </aside>
-      </header>
+          </ul>
+        </div>
+      </div>
 
       {data.related.length > 0 && (
         <section className="mb-10" aria-label={t('doc.inSubjects')}>
@@ -371,7 +402,7 @@ export function DocumentReader() {
           <ul className="flex flex-wrap gap-2">
             {data.related.map((s) => (
               <li key={s.id}>
-                <Link to={`/subjects/${s.id}`} className="inline-flex min-h-[40px] items-center gap-2 rounded border border-line bg-card px-3 text-sm hover:border-gold">
+                <Link to={`/subjects/${s.id}`} className="chip whitespace-normal py-1.5 text-left">
                   <SubjectIcon name={s.icon} className="h-4 w-4 text-gold-text" />
                   {pick(lang, s.titleNl, s.titleEn)}
                 </Link>
@@ -382,16 +413,16 @@ export function DocumentReader() {
       )}
 
       {(data.catecheses.length > 0 || data.docVideos.length > 0) && (
-        <section className="mb-10 grid gap-6 lg:grid-cols-2" aria-label={t('learn.explore')}>
+        <section className="mb-10 grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-2" aria-label={t('learn.explore')}>
           {data.catecheses.length > 0 && (
             <div>
               <p className="kicker mb-2">{t('learn.catecheses')}</p>
               <ol className="divide-y divide-line border-y border-line">
                 {data.catecheses.map((c) => (
                   <li key={c.date}>
-                    <a href={c.url} target="_blank" rel="noopener noreferrer" className="flex items-baseline gap-3 py-2.5 hover:bg-surface sm:px-2">
-                      <span className="w-20 shrink-0 text-xs tabular text-gold-text">{formatDate(c.date, lang).replace(/ \d{4}$/, '')}</span>
-                      <span className="flex-1 text-sm">{pick(lang, c.titleNl, c.titleEn)}</span>
+                    <a href={c.url} target="_blank" rel="noopener noreferrer" className="group flex items-baseline gap-3 py-2.5">
+                      <span className="w-20 shrink-0 text-xs font-semibold uppercase tracking-[0.08em] tabular text-accent">{formatDate(c.date, lang).replace(/ \d{4}$/, '')}</span>
+                      <span className="flex-1 font-serif text-[0.95rem] group-hover:text-accent group-hover:underline">{pick(lang, c.titleNl, c.titleEn)}</span>
                       <ExternalLink className="h-3 w-3 shrink-0 text-muted" aria-hidden />
                     </a>
                   </li>
@@ -402,10 +433,10 @@ export function DocumentReader() {
           {data.docVideos.length > 0 && (
             <div>
               <p className="kicker mb-2">{t('video.title')}</p>
-              <ul className="grid gap-4 sm:grid-cols-2">
-                {data.docVideos.slice(0, 2).map((v) => (
+              <ul className="divide-y divide-line border-y border-line">
+                {data.docVideos.slice(0, 4).map((v) => (
                   <li key={v.youtubeId}>
-                    <VideoCard video={v} compact />
+                    <VideoRow video={v} />
                   </li>
                 ))}
               </ul>
@@ -415,14 +446,13 @@ export function DocumentReader() {
       )}
 
       {!content ? (
-        // TODO(content): add public/content/{docId}.json to enable the reader for this document.
         <Commentary>{t('doc.notSeeded')}</Commentary>
       ) : (
         <div className={focus ? 'mx-auto max-w-[50rem]' : 'grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]'}>
           {/* Table of contents (desktop) */}
           <aside data-chrome className="hidden lg:block" aria-label={t('doc.contents')}>
             <div className="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-y-auto pr-1">
-              <p className="kicker mb-3">{t('doc.contents')}</p>
+              <p className="mb-3 font-title text-[1.15rem] font-medium">Index</p>
               <Outline doc={doc} paragraphs={paragraphs} currentId={currentId} onPick={goTo} />
             </div>
           </aside>
@@ -435,7 +465,7 @@ export function DocumentReader() {
                   type="button"
                   aria-label={t('doc.contents')}
                   onClick={() => setTocOpen(true)}
-                  className="inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold lg:hidden"
+                  className="inline-flex min-h-[40px] items-center gap-1.5 rounded-sm border border-line bg-card px-3 text-sm hover:border-fg/40 lg:hidden"
                 >
                   <ListTree className="h-4 w-4" aria-hidden />
                   <span className="hidden min-[400px]:inline">{t('doc.contents')}</span>
@@ -443,7 +473,7 @@ export function DocumentReader() {
                 <label className="flex items-center gap-2 text-sm">
                   <span className="sr-only">{t('doc.jump')}</span>
                   <select
-                    className="min-h-[40px] rounded border border-line bg-card px-2 text-sm"
+                    className="min-h-[40px] rounded-sm border border-line bg-card px-2 text-sm"
                     value=""
                     aria-label={t('doc.jump')}
                     onChange={(e) => e.target.value && goTo(e.target.value)}
@@ -461,12 +491,12 @@ export function DocumentReader() {
                   onClick={() => setFocus(!focus)}
                   aria-pressed={focus}
                   title={focus ? t('doc.focusExit') : t('doc.focus')}
-                  className="ml-auto inline-flex min-h-[40px] items-center gap-1.5 rounded border border-line bg-card px-3 text-sm hover:border-gold"
+                  className="ml-auto inline-flex min-h-[40px] items-center gap-1.5 rounded-sm border border-line bg-card px-3 text-sm hover:border-fg/40"
                 >
                   {focus ? <Minimize2 className="h-4 w-4" aria-hidden /> : <Maximize2 className="h-4 w-4" aria-hidden />}
                   <span className="hidden sm:inline">{focus ? t('doc.focusExit') : t('doc.focus')}</span>
                 </button>
-                <div className="flex rounded border border-line bg-card p-0.5" role="group" aria-label={t('settings.fontSize')}>
+                <div className="flex rounded-sm border border-line bg-card p-0.5" role="group" aria-label={t('settings.fontSize')}>
                   {sizes.map((s) => (
                     <button
                       key={s.value}
@@ -504,10 +534,14 @@ export function DocumentReader() {
                 return (
                   <div key={p.id}>
                     {sec && sec !== prevSec && (
-                      <div className={cn('mb-6 sm:pl-[4.25rem]', i > 0 && 'pt-6')}>
-                        <p className="font-display text-xs font-semibold uppercase tracking-caps text-accent">{sec.labelLa}</p>
-                        <h2 className="mt-1 font-serif text-xl font-semibold leading-snug">{pick(lang, sec.titleNl, sec.titleEn)}</h2>
-                        <div className="rule-gold mt-3" aria-hidden />
+                      <div className={cn('mb-8 text-center sm:pl-[4.25rem]', i > 0 && 'pt-8')}>
+                        <p lang="la" className="font-title text-[1.05rem] uppercase tracking-[0.18em] text-accent">
+                          {sec.labelLa}
+                        </p>
+                        <h2 className="mx-auto mt-1 max-w-lg font-title text-[1.45rem] font-medium italic leading-snug">{pick(lang, sec.titleNl, sec.titleEn)}</h2>
+                        <div className="rule-ornament mx-auto mt-4 max-w-[10rem]" aria-hidden>
+                          <span className="text-[0.45rem]">◆</span>
+                        </div>
                       </div>
                     )}
                     <ReaderParagraph
@@ -534,7 +568,7 @@ export function DocumentReader() {
         </div>
       )}
 
-      <nav aria-label={t('nav.documents')} className="mt-14 grid gap-3 border-t border-line pt-6 sm:grid-cols-2">
+      <nav aria-label={t('nav.documents')} className="mt-14 grid gap-3 border-t border-fg/70 pt-6 sm:grid-cols-2">
         {data.prev ? (
           <Link to={`/documents/${data.prev.id}`} className="panel-link p-4">
             <span className="kicker inline-flex items-center gap-1">

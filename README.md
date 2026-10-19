@@ -1,232 +1,195 @@
-# Concilium — *Vaticanum II in context*
+# Concilium
 
-A local-first, installable PWA that puts the reader in direct contact with the
-16 documents of the Second Vatican Council (1962–1965) and their paragraph
-numbers. Dutch by default, English toggle. No backend, no accounts, no
-analytics, no network requests at runtime after the service worker installs.
+*Studium Concilii Vaticani II*: a study edition of the sixteen documents of the
+Second Vatican Council (1962–1965), organised by paragraph number. It is an
+installable web app (PWA) that works offline, in Dutch with an English
+translation. There is no backend, no account and no tracking. Once the service
+worker is installed the app makes no network requests, except for videos the
+reader chooses to play.
 
-> **Concilium is a study aid, not the magisterium.** The official texts are on
-> [vatican.va](https://www.vatican.va/archive/hist_councils/ii_vatican_council/index.htm).
+> Concilium is a study aid. It does not speak for the Church. The official texts
+> are on [vatican.va](https://www.vatican.va/archive/hist_councils/ii_vatican_council/index.htm).
 
-## Quick start
+## Getting started
 
 ```bash
 npm install
-npm run dev        # validates content, then starts Vite
-npm run build      # tsc --noEmit → content validation → vite build (+ service worker)
-npm test           # Vitest unit tests (citations, shuffle, content integrity, i18n key parity)
-npm run check      # typecheck + content validation + tests (what CI runs)
-npm run preview    # serve dist/ to test install + offline
+npm run dev        # validate content, then start Vite
+npm run check      # typecheck, content validation and unit tests (as in CI)
+npm run build      # check and production build with service worker
+npm run preview    # serve dist/ to test installation and offline use
 ```
 
-Deploy `dist/` to any static host with an SPA fallback to `index.html`
-(`public/_redirects` for Netlify and `vercel.json` for Vercel are included).
+Any static host with a fallback to `index.html` will serve `dist/`. Fallback
+config files are included for Netlify (`public/_redirects`) and Vercel
+(`vercel.json`).
 
-### GitHub Pages
-
-`.github/workflows/deploy-pages.yml` builds and deploys on every push to `main`
-to `https://<owner>.github.io/<repo>/` (here: `https://ischabiesbrouck.github.io/Vii/`).
-One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-The build sets `BASE_PATH=/<repo>/`, which the router, manifest, icons and service
-worker all follow; `404.html` provides the SPA fallback for deep links.
+**GitHub Pages.** `.github/workflows/deploy-pages.yml` deploys every push to
+`main` to `https://<owner>.github.io/<repo>/`, here
+<https://ischabiesbrouck.github.io/Vii/>.
+- One-time setup: Settings → Pages → Source: GitHub Actions.
+- The build sets `BASE_PATH=/<repo>/` for the router, manifest and service worker.
+- `404.html` handles deep links.
 
 ## Stack
 
-React 18 · TypeScript (strict) · Vite 6 · Tailwind CSS 3 with shadcn/ui-style
-components (Radix Dialog) · react-router-dom 6 (history routing) ·
-vite-plugin-pwa (Workbox, `autoUpdate`) · MiniSearch (index cached in
-IndexedDB via Dexie) · Zustand (persisted to localStorage) · i18next ·
-self-hosted Source Serif 4 and Inter (Fontsource).
+React 18, TypeScript (strict), Vite 6 and Tailwind CSS 3, with Radix
+primitives.
 
-## Routes
-
-| Route | Purpose |
+| Area | Libraries |
 |---|---|
-| `/` | Hero search, start-here subject, figures, continue reading, bookmarks, subjects, document of the day, Claim Check, the four sessions |
-| `/learn`, `/learn/:id` | **Course**: 10 lessons (why a council, how it worked, the four constitutions, each constitution, decrees and declarations, reception, reading today), each with key facts, the texts to read, Pope Leo XIV's catecheses, videos, a factual knowledge check and sources; progress saved locally |
-| `/catecheses` | Pope Leo XIV's 2026 general-audience catecheses on the Council's documents (28 so far), grouped by constitution, linking to the official texts on vatican.va |
-| `/videos` | 15 curated English videos (EWTN, Rome Reports, Word on Fire, CNS, Georgetown and others), filterable by kind; they play in the in-app theater (see below) |
-| `/subjects`, `/subjects/:id` | **Subjects**: 16 guided study paths (start / core / deeper). Each has objectives, an ordered reading path of excerpts with "studied" ticks (saved locally), related claims and terms, reflection questions and further reading |
-| `/documents` | The 16 documents by type, with solemnity badge |
-| `/documents/:id` | Reader: title page with vote bar, chapter outline (Caput I, II …) as sticky contents on desktop and a sheet on mobile, rubric-red marginal § numbers, previous/next document, related subjects; § anchors, sticky §-jump, 3 font sizes, progress bar; tap → sheet (cross-refs, note, copy/share citation, bookmark); long-press → copy citation |
-| `/claims`, `/claims/:id` | Claim Check, filterable by verdict; evidence paragraphs inline; contested claims show positions side by side |
-| `/search` | Offline full-text search (paragraphs, claims, terms); `LG 8` jumps to the paragraph |
-| `/timeline` | 1959 announcement → 1965 closing, by session |
-| `/glossary` | Searchable terms, disputed terms flagged |
-| `/hermeneutics` | Continuity / event / rupture readings, unresolved, with sources |
-| `/about` | Method, content status, licensing, privacy, sources, settings |
+| Routing | react-router 6 |
+| Offline and install | vite-plugin-pwa (Workbox) |
+| Search | MiniSearch; the index is cached in IndexedDB via Dexie |
+| State | Zustand, persisted in localStorage |
+| Translation | i18next |
+| Unit tests | Vitest |
+
+Fonts are self-hosted through Fontsource: EB Garamond, Source Serif 4, Cinzel and Inter.
+
+## What is in the app
+
+| Route | Content |
+|---|---|
+| `/` | Title page with the text of the day, search, programme of study, latest audiences, *Index documentorum*, study paths, Claim Check, video lectures |
+| `/documents`, `/documents/:id` | The sixteen documents; reader with title page, *Index*, red marginal paragraph numbers, paragraph sheet (cross-references, citation, bookmark), focus mode, reading progress |
+| `/learn`, `/learn/:id` | Course of ten *lectiones* with key facts, texts, catecheses, videos, a factual knowledge check and sources |
+| `/subjects`, `/subjects/:id` | Sixteen study paths: objectives, reading path, claims, terms, questions, further reading |
+| `/subjects/:id/study/:chapter` | Study text per subject, in chapters (*Caput I–V*) with numbered sections, quotations, boxes, positions, figures and bibliography |
+| `/catechesis`, `/catechesis/:id` | Twelve short catecheses, each headed by a question. Each has explanation, *In brief*, reflection questions and further reading. Nothing is quoted directly; references such as LG §8 are links that open the paragraph in a panel |
+| `/catecheses` | Register of Pope Leo XIV's general audiences on the Council (2026), with links to vatican.va |
+| `/videos` | Selected English-language videos; played in the app, with no YouTube suggestions afterwards |
+| `/claims`, `/timeline`, `/glossary`, `/hermeneutics`, `/search`, `/about` | Claim Check, chronology, terms, readings of the Council, full-text search, colophon |
 
 ## Content
 
-All content is static JSON in `public/content/`, reviewable in the repo and
-precached by the service worker. Nothing is generated at runtime.
+All content is static JSON in `public/content/`. The service worker precaches
+it, and nothing is generated at runtime.
 
 | File | Contents |
 |---|---|
-| `documents.json` | Metadata for all 16 documents (dates, votes, designation, summaries ≤ 80 words) |
-| `{docId}.json` | Paragraph excerpts for all 16 documents (125 in total), with chapter outlines for LG, SC, DV, DH, GS, UR, PO and CD |
-| `lessons.json` | 10 course lessons with knowledge checks; every reference validated |
-| `catecheses.json` | Leo XIV catecheses (date, official title, Dutch working title, vatican.va URL) |
-| `videos.json` | Video library; IDs and titles checked against web search results on 18 Oct 2026 |
-| `subjects.json` | 16 study paths; every step, claim and term is checked by the validator |
-| `claims.json` | 19 Claim Checks covering progressive, traditionalist and secular-media misreadings |
-| `timeline.json`, `glossary.json`, `hermeneutics.json` | Supporting modules |
-| `sources.json` | Registry of external (pre- and post-conciliar) sources referenced as `ext:…` |
+| `documents.json` | Metadata for the sixteen documents: dates, votes, Latin designation, summary, chapter outline |
+| `{docId}.json` | Paragraph excerpts (125 in total), with a Dutch working translation and Latin |
+| `studies/{subjectId}.json` | Sixteen study texts (about 38,500 words per language) |
+| `catechesis/{id}.json` | Twelve short catecheses (800–1,100 words per language); the validator rejects any quoted passage of more than six words |
+| `subjects.json`, `lessons.json` | Study paths and course |
+| `claims.json`, `glossary.json`, `hermeneutics.json`, `timeline.json` | Claim Check, terms, readings, chronology |
+| `catecheses.json`, `videos.json` | Audiences and videos, with their sources |
+| `sources.json` | External sources, cited as `ext:…` |
+| `images.json` | Licensed images: author, licence, source. Currently empty |
 
-### Adding a document's content
+`scripts/validate-content.mjs` runs before every build. It checks that every
+citation, cross-reference, quotation and source resolves. Citations in study
+texts must fall within each document's paragraph count, and every position in a
+dispute must name its sources. The script also writes `index.json`, whose hash
+invalidates the cached search index.
 
-1. Create `public/content/{docId}.json` following `DocumentContent` in
-   `src/types/content.ts` (paragraph ids are `ABBR-number`, e.g. `CD-11`).
-2. Run `npm run validate:content`. The file is picked up automatically: no
-   code change. All 16 documents now have a content file (125 excerpts). LG, SC, DV, DH and
-   GS are covered most fully; for the others the file holds the key paragraphs
-   that claims and subjects cite. TODO: widen coverage per document.
+### Adding content
 
-### Fidelity gate
+- **A document:** add `public/content/{docId}.json` following `DocumentContent`
+  in `src/types/content.ts`, with paragraph ids such as `CD-11`. No code change
+  is needed.
+- **A study text:** follow the `Study` type. Conciliar text only appears through
+  `quote` blocks, so excerpts are never retyped.
+- **Photos:** go in `public/images/` with an entry in `images.json`. The caption
+  shows author, licence and source.
 
-`scripts/validate-content.mjs` runs before every dev start and build and fails
-the build if any claim evidence, cross-reference, glossary entry, hermeneutics
-appeal or key paragraph does not resolve to a seeded paragraph or registered
-source. It also enforces the 80-word summary limit, requires two or more positions
-for every `contested` claim, and writes `index.json` (the list of available files
-plus a content hash that invalidates the cached search index).
+### Editorial status
 
-### Review status: **unverified**
+The excerpts, working translations, summaries, study texts and Claim Checks were
+**written with the help of AI and have not yet been checked line by line** against
+vatican.va, the *Acta Synodalia* or the literature cited. The app says so on
+every relevant page. Each file carries `"review": "unverified"` until an editor
+has checked it.
 
-The excerpts, Dutch working translations, summaries, vote counts and Claim
-Checks in this version were **drafted with AI assistance** and have **not yet
-been verified line by line** against vatican.va or the *Acta Synodalia*. Each
-content file carries `"review": "unverified"`, and the UI says so. Before any
-public release, an editor should:
+Before publication as a reference work, an editor should check:
+- the excerpts against the Latin and English texts;
+- the vote figures;
+- the bibliographic details;
+- the theological wording of the study texts.
 
-- check every `textEn` excerpt against the vatican.va translation, and every
-  `textLa` against the Latin text;
-- check the final-vote figures in `documents.json`;
-- check bibliographic details in `claims.json` and `hermeneutics.json`;
-- set `"review": "verified"` per file once checked.
+## Licensing
 
-## Interaction
+The conciliar texts and their translations are under copyright held by the
+**Libreria Editrice Vaticana**, and for Dutch by the respective translators.
+Without permission the app shows **excerpts per paragraph**, for study and
+commentary, with links to vatican.va and rkdocumenten.nl. The Dutch texts are
+the app's own working translations, not the official translation.
 
-- **Quick search**: Ctrl/⌘+K or `/` opens a keyboard-driven palette over pages and the full-text index.
-- **Route-level code splitting**: each page is its own chunk; vendor code is split into stable cached chunks. All of it is precached.
-- **Error boundary** per page, subtle page transitions (disabled under `prefers-reduced-motion`).
-- **Video theater**: videos play inside the app in one modal player (youtube-nocookie.com, `rel=0`). The app listens to the embed's documented postMessage events (no external API script; messages are accepted only from the player's own origin and window). When a video ends, the iframe is removed and replaced by the app's own end card (replay / close), so YouTube's end-screen suggestions and autoplay of a next video never appear. The position is saved locally: cards show progress, "resume from m:ss" and a "watched" mark.
-- **Focus mode** in the reader hides all chrome for distraction-free reading (Esc exits).
-- **Navigation**: back/forward restores the scroll position per history entry; on route change focus moves to the main region and the page title is announced to screen readers.
-- **Preloading**: after first paint, idle time is used to fetch all page chunks and build the search index, so later navigation is instant.
-- **Offline-ready toast** once the service worker has precached everything.
+Use `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`, or
+`VITE_CONTENT_MODE=full`) only once written permission has been obtained.
 
-## Quality gates
+## Editorial choices
 
-- `.github/workflows/ci.yml` runs `npm run check` and a production build on every pull request and branch push.
-- `.github/workflows/deploy-pages.yml` runs the tests before building and deploying `main`.
+- **Qualification of documents.** Only LG and DV are called *dogmatica* and GS
+  *pastoralis* in the official Latin designation.
+  - The others are marked "unqualified"; decrees are marked "disciplinary".
+  - The app shows the full Latin designation, so no label of its own is presented as part of the title.
+- **Disputed questions** (Claim Check, study texts, hermeneutics) show the
+  positions side by side, each with sources. The app does not decide between them.
+- **Knowledge checks** ask about facts: dates, and what a paragraph says. They
+  never test personal orthodoxy.
+- **Terms without a conciliar source**, such as *aggiornamento* and
+  *ressourcement*, are labelled as such and do not link to a paragraph.
+- **Videos** are the only network traffic. Nothing loads before the reader
+  presses play.
+  - The player uses youtube-nocookie.com.
+  - When the video ends, the app removes the player, so no suggestions or next video appear.
+  - Uploaders that could not be confirmed are labelled as such.
 
 ## Design
 
-**Editio academica**: the visual language of a pontifical faculty and of the Holy
-See's own publications, without any official emblem or branding.
+The design follows the typographic conventions of the Holy See's publications
+and of pontifical faculties, without using any official emblem.
 
-| Reference | What is borrowed |
+| Source | Adopted |
 |---|---|
-| vatican.va | Document index grouped by kind (constitutions, decrees, declarations), Latin titles in capitals before the vernacular, a plain language bar, cream and gold |
-| *Acta Apostolicae Sedis* and conciliar editions | Serif typography, small caps, centred capitals for document titles, paragraph numbers in rubric red, hairline and double rules |
+| vatican.va | Document index by kind, Latin titles in capitals before the vernacular, language bar |
+| *Acta Apostolicae Sedis*, conciliar editions | Serif type, small caps, centred chapter headings, paragraph numbers in red |
 | Liturgical books | Rubrics and initials in red |
-| Vatican News | Small red section labels with a date line ("Audientia generalis · Wednesday 7 October 2026") |
-| Curial documents | Latin date line in the utility bar ("Dominica, die XVIII mensis Octobris, anno MMXXVI"; weekdays as Feria II–VI) |
-| Pontifical universities | Seal with a Latin legend, a programme of study in a syllabus table (Lectio I–X, topic, length), details tables, sober forms |
+| Vatican News | Red section labels with a date line |
+| Curial documents | Latin date line (*Dominica, die XVIII mensis Octobris, anno MMXXVI*) and the heading formula *Paulus Episcopus, Servus Servorum Dei…* |
+| Pontifical universities | Seal with a Latin legend, syllabus tables, sober forms |
 
-- **Type**: EB Garamond for headings and small-caps labels, Source Serif 4 for reading text and conciliar quotations, Cinzel only for the wordmark and Latin document titles, Inter for interface text.
-- **Colour**: paper white, ink, rubric red `#7A1F1F` and gold `#A88A4A`.
-- **Form**: square corners, hairlines instead of shadows, no gradients.
-- **Seal**: the app's own seal, an open book under a cross inside a ring with the legend *STVDIVM · CONCILII · VATICANI · II · MCMLXII · MCMLXV*. It deliberately avoids the keys, tiara and arms of the Holy See.
-- **Footer**: a colophon stating that this is an unofficial study edition without ecclesiastical approval (imprimatur).
+**Typefaces:**
+- EB Garamond for headings and small caps.
+- Source Serif 4 for reading text.
+- Cinzel only for the wordmark and Latin titles.
+- Inter for interface text.
 
-Key screens:
+**Colours:** ink, rubric red (`#7A1F1F`) and gold (`#A88A4A`). Gold text uses `#6E5528` so that it meets WCAG AA.
 
-- **Home** (title page)
-  - Overline, title and a double rule.
-  - *Ex Concilio · Text of the day*: a paragraph with its rubric number and Latin incipit.
-  - Search form.
-  - Programme of study (syllabus table).
-  - The latest general-audience catecheses.
-  - *Index documentorum*.
-  - Study paths, Claim Check, video lectures and further study.
-- **Lesson**
-  - Breadcrumbs and a *Lectio V* overline.
-  - A details table (length, texts, knowledge check).
-  - Underlined material tabs (texts / videos / catecheses).
-  - Numbered sections with a red initial.
-  - A progress box and the course index in the margin.
-- **Catecheses**: a register of the audiences, newest first, grouped by month, with constitution tabs. `#YYYY-MM-DD` links highlight the day.
+**Seal:** the app's own, an open book under a cross, with no keys, tiara or arms of the Holy See.
 
-The tabs implement the WAI-ARIA tabs pattern. On desktop the masthead and a small-caps navigation row sit under a dark utility bar. On mobile there is a fixed five-tab bar.
+**Latin text:** text marked `lang="la"` follows EB Garamond's Latin rules, which set U as V in capitals (*CAPVT*).
 
-## Licensing guardrail
+## Accessibility and quality
 
-Conciliar texts and their modern translations are under copyright held by
-**Libreria Editrice Vaticana** and, for Dutch, by the respective translators.
-Until licensing is cleared the app ships **paragraph-level excerpts for
-commentary and criticism**, plus deep links to vatican.va (EN + LA) and
-rkdocumenten.nl.
+- **Accessibility**
+  - WCAG 2.2 AA as the target.
+  - Tabs follow the WAI-ARIA tabs pattern.
+  - On a page change, focus moves to the content and the page title is announced.
+  - Back navigation restores the scroll position.
+  - No horizontal scrolling at 320 px.
+- **Automated checks**
+  - `ci.yml` runs `npm run check` and a production build on every pull request.
+  - The Pages workflow runs the tests before every deployment.
+- **Manual checks before a release**
+  - Offline use with the network switched off.
+  - No external requests after installation.
+  - The video ending.
+  - Phone widths.
+- **Not yet done:** testing on physical iOS and Android devices.
 
-The single switch is `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`;
-override with `VITE_CONTENT_MODE=full`). In `'full'` mode the reader renders
-`fullTextNl` / `fullTextEn` where present and falls back to the excerpt
-elsewhere. **Do not add full texts or switch the flag before you have written
-permission.** The Dutch texts in the app are editorial working translations of
-the English excerpts, labelled as such. They are not the official Dutch
-translation.
+## Not in scope
 
-## Deviations from the original brief (and why)
+Accounts, comments, chat, push notifications, donations, orthodoxy tests, and
+anything that suggests the app speaks for the Church.
 
-1. **`Solemnity` gains `'unqualified'`.** Only LG and DV are *dogmatica* and GS
-   *pastoralis* in their official Latin designations. Calling SC or the
-   declarations "dogmatic" or "disciplinary" would present an editorial judgement
-   as fact. Decrees are labelled `disciplinary` by convention. Each document
-   also carries its exact `designationLa`.
-2. **Five tabs.** The mobile tab bar has five tabs (Home, Learn, Documents, Claims, Search) instead of four.
-3. **Bilingual editorial fields** (`summaryEn`, `claimEn`, `explanationEn`,
-   `titleEn`/`bodyEn`, `definitionEn`, `noteEn`) were added so that the EN toggle
-   covers content as well as UI chrome.
-4. **`ClaimCheck.positions`** holds the side-by-side positions required for
-   `contested` verdicts (content rule 4).
-5. **`GlossaryTerm.firstUse` may be `null`** for terms that do not occur in the
-   conciliar texts (*aggiornamento*, *ressourcement*). The UI says so instead of
-   pointing to a paragraph that does not contain the term.
-6. **Gold text colour.** `#B08D4F` on parchment is about 2.9:1 and fails WCAG AA.
-   It stays in use for borders, marks and the decree badge (with dark text), and
-   gold-tinted metadata text uses `#6E5528` (about 6.5:1). In dark mode the red
-   accent is lightened for text contrast.
-8. **Videos are the one opt-in network exception.** The brief forbids external calls at runtime. Videos use a click-to-load facade: nothing is requested from YouTube until the reader presses play, and the embed uses youtube-nocookie.com. Offline, the card says so. Video IDs could not be opened from the build environment (YouTube is blocked there), so they were checked against search results; uploaders that search could not confirm are labelled "channel not confirmed".
-9. **Knowledge checks** are factual (dates, what a paragraph says), never a test of personal orthodoxy, which stays out of scope.
-7. **Font precache** is limited to the Latin and Latin-ext subsets. Other subsets
-   are never requested for Dutch, English or Latin text.
-
-## Acceptance checks
-
-Verified locally with headless Chromium against `vite preview`:
-
-- service worker installs and controls the page; with the network **offline**,
-  every route, the LG reader, the paragraph sheet and search all work;
-- **zero** external requests and zero failed requests after install;
-- no horizontal scroll at **320 px** on any route;
-- `tsc --noEmit` is clean under `strict` (+ `noUncheckedIndexedAccess`);
-- video theater: an "ended" event removes the player and shows the end card; a spoofed message from another origin is ignored; the "watched" mark persists;
-- focus mode hides and restores the header; back navigation restores the scroll position.
-
-Not run here: a Lighthouse audit (Lighthouse 12 removed its PWA category; use
-Chrome DevTools → Application → Manifest for installability), and device tests
-on iOS Safari and Android Chrome.
-
-## Out of scope
-
-Accounts, comments, forums, AI chat, push notifications, donations, orthodoxy
-quizzes, and any feature that implies the app speaks for the Church.
-
-## Sources behind the content design
+## Literature
 
 - Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). *History of Vatican II* (Vols. 1–5). Orbis Books.
 - Benedict XVI. (2005, December 22). *Address to the Roman Curia offering them his Christmas greetings*. Libreria Editrice Vaticana.
-- Congregation for the Doctrine of the Faith. (2007). *Responses to some questions regarding certain aspects of the doctrine on the Church*. Libreria Editrice Vaticana.
+- Lamb, M. L., & Levering, M. (Eds.). (2008). *Vatican II: Renewal within tradition*. Oxford University Press.
 - O'Malley, J. W. (2008). *What happened at Vatican II*. Belknap Press of Harvard University Press.
 - Tanner, N. P. (Ed.). (1990). *Decrees of the ecumenical councils* (Vol. 2). Georgetown University Press.

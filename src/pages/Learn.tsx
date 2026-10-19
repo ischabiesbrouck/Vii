@@ -90,7 +90,14 @@ export function Learn() {
 
       <section aria-labelledby="h-explore">
         <SectionTitle id="h-explore">{t('learn.explore')}</SectionTitle>
-        <ul className="grid gap-4 md:grid-cols-3">
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <Link to="/catechesis" className="panel-link flex h-full flex-col p-5">
+              <BookOpenText className="h-6 w-6 text-gold-text" aria-hidden />
+              <span className="mt-3 font-title text-[1.35rem] font-medium">{t('sc.title')}</span>
+              <span className="mt-1 flex-1 text-sm text-muted">{t('sc.intro')}</span>
+            </Link>
+          </li>
           <li>
             <Link to="/subjects" className="panel-link flex h-full flex-col p-5">
               <GraduationCap className="h-6 w-6 text-gold-text" aria-hidden />

@@ -10,7 +10,7 @@
  *
  * To add a document's content: drop public/content/{docId}.json in place. No code change.
  */
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -65,7 +65,7 @@ const available = [];
 const counts = {};
 for (const d of documents) {
   const file = `${d.id}.json`;
-  if (!existsSync(join(root, file))) continue; // TODO(content): 13 documents await content files.
+  if (!existsSync(join(root, file))) continue; // documents without excerpts show metadata only
   available.push(d.id);
   hash.update(readFileSync(join(root, file)));
   const c = read(file);
@@ -169,6 +169,155 @@ for (const l of lessons) {
 }
 for (const v of videos.items) for (const l of v.lessonIds) if (!lessonIds.has(l)) err(`video ${v.youtubeId}: unknown lesson ${l}`);
 
+
+// --- study texts (public/content/studies/{subjectId}.json) -------------------
+const abbrMax = new Map(documents.map((d) => [d.abbr, d.paragraphCount]));
+const outlineAbbrs = new Set(documents.filter((d) => d.outline?.length).map((d) => d.abbr));
+const diagramIds = new Set(['sessions', 'documents', 'votes', 'dv-transmission', 'lg-belonging', 'lg-people', ...[...outlineAbbrs].map((a) => `outline-${a}`)]);
+const images = existsSync(join(root, 'images.json')) ? read('images.json') : [];
+const imageIds = new Set();
+for (const im of images) {
+  if (imageIds.has(im.id)) err(`images.json: duplicate ${im.id}`);
+  imageIds.add(im.id);
+  for (const k of ['file', 'altNl', 'altEn', 'author', 'license', 'sourceUrl']) if (!im[k]) err(`image ${im.id}: missing ${k}`);
+  if (!existsSync(join(root, '..', 'images', im.file))) err(`image ${im.id}: file public/images/${im.file} not found`);
+}
+const CITE = /\b(SC|IM|LG|OE|UR|CD|PC|OT|GE|NA|DV|AA|DH|AG|PO|GS) §(\d+)(?:[–-](\d+))?/g;
+const checkInlineCites = (text, where) => {
+  for (const m of text.matchAll(CITE)) {
+    const max = abbrMax.get(m[1]);
+    const a = Number(m[2]);
+    const b = m[3] ? Number(m[3]) : a;
+    if (a < 1 || b > max || b < a) err(`${where}: citation "${m[0]}" outside ${m[1]} §1–${max}`);
+  }
+};
+const studyFiles = existsSync(join(root, 'studies')) ? readdirSync(join(root, 'studies')).filter((f) => f.endsWith('.json')) : [];
+const studies = [];
+for (const f of studyFiles) {
+  hash.update(readFileSync(join(root, 'studies', f)));
+  const st = JSON.parse(readFileSync(join(root, 'studies', f), 'utf8'));
+  const where = `studies/${f}`;
+  if (`${st.subjectId}.json` !== f) err(`${where}: subjectId must match file name`);
+  if (!subjectIds.has(st.subjectId)) err(`${where}: unknown subject ${st.subjectId}`);
+  if (!['unverified', 'verified'].includes(st.review)) err(`${where}: review must be unverified|verified`);
+  if (!Array.isArray(st.chapters) || st.chapters.length < 3) err(`${where}: needs at least 3 chapters`);
+  if (!st.bibliography?.length) err(`${where}: bibliography missing`);
+  let nl = 0;
+  let en = 0;
+  let quotes = 0;
+  const textPair = (a, b, w) => {
+    if (typeof a !== 'string' || !a.trim() || typeof b !== 'string' || !b.trim()) err(`${w}: missing nl/en text`);
+    else {
+      nl += words(a);
+      en += words(b);
+      checkInlineCites(a, w);
+      checkInlineCites(b, w);
+    }
+  };
+  for (const [ci, ch] of (st.chapters ?? []).entries()) {
+    const cw = `${where} ch${ci + 1}`;
+    for (const k of ['labelLa', 'titleNl', 'titleEn', 'summaryNl', 'summaryEn']) if (!ch[k]?.trim()) err(`${cw}: missing ${k}`);
+    if (!ch.sections?.length) err(`${cw}: no sections`);
+    for (const [si, sec] of (ch.sections ?? []).entries()) {
+      const sw = `${cw} s${si + 1}`;
+      if (!sec.headingNl?.trim() || !sec.headingEn?.trim()) err(`${sw}: missing heading`);
+      if (!sec.blocks?.length) err(`${sw}: no blocks`);
+      for (const [bi, b] of (sec.blocks ?? []).entries()) {
+        const bw = `${sw} b${bi + 1} (${b.type})`;
+        switch (b.type) {
+          case 'p':
+            textPair(b.nl, b.en, bw);
+            break;
+          case 'quote':
+            quotes++;
+            if (!paragraphs.has(b.paragraphId)) err(`${bw}: ${b.paragraphId} is not a seeded paragraph`);
+            break;
+          case 'list':
+            if (!b.nl?.length || b.nl.length !== b.en?.length) err(`${bw}: nl/en lists must be non-empty and equal in length`);
+            else b.nl.forEach((x, i) => textPair(x, b.en[i], bw));
+            break;
+          case 'box':
+            if (!['term', 'note', 'context'].includes(b.kind)) err(`${bw}: bad kind ${b.kind}`);
+            textPair(b.titleNl, b.titleEn, bw);
+            textPair(b.nl, b.en, bw);
+            break;
+          case 'positions':
+            textPair(b.titleNl, b.titleEn, bw);
+            if (!(b.positions?.length >= 2)) err(`${bw}: needs at least two positions`);
+            for (const pos of b.positions ?? []) {
+              textPair(pos.labelNl, pos.labelEn, bw);
+              textPair(pos.nl, pos.en, bw);
+              if (!pos.sources?.length) err(`${bw}: each position needs sources`);
+              for (const r of pos.sources ?? []) checkRef(r, bw);
+            }
+            break;
+          case 'diagram':
+            if (!diagramIds.has(b.id)) err(`${bw}: unknown diagram ${b.id}`);
+            textPair(b.captionNl, b.captionEn, bw);
+            break;
+          case 'image':
+            if (!imageIds.has(b.imageId)) err(`${bw}: unknown image ${b.imageId}`);
+            textPair(b.captionNl, b.captionEn, bw);
+            break;
+          default:
+            err(`${bw}: unknown block type`);
+        }
+      }
+    }
+  }
+  if (nl < 1200 || en < 1200) err(`${where}: too short (${nl} nl / ${en} en words; minimum 1200 each)`);
+  if (quotes < 2) err(`${where}: needs at least two conciliar quotations`);
+  studies.push({ id: st.subjectId, nl, en });
+}
+
+
+// --- short catecheses (public/content/catechesis/{id}.json) ------------------
+const catDir = join(root, 'catechesis');
+const catFiles = existsSync(catDir) ? readdirSync(catDir).filter((f) => f.endsWith('.json')) : [];
+const shortCats = [];
+// Direct quotations are not allowed: no quoted run of more than six words.
+// A quotation opens after a space or bracket and closes before punctuation or a space,
+// so apostrophes inside words (God's, Church's, zo'n) are not taken for quotation marks.
+const QUOTED = /(?:^|[\s(])[“"‘']([^”"’]{1,400}?)[”"’'](?=[\s.,;:!?)]|$)/g;
+for (const f of catFiles) {
+  hash.update(readFileSync(join(catDir, f)));
+  const c = JSON.parse(readFileSync(join(catDir, f), 'utf8'));
+  const where = `catechesis/${f}`;
+  if (`${c.id}.json` !== f) err(`${where}: id must match file name`);
+  for (const k of ['questionNl', 'questionEn', 'titleNl', 'titleEn', 'introNl', 'introEn', 'icon']) if (!c[k]?.trim?.()) err(`${where}: missing ${k}`);
+  if (!Number.isInteger(c.number)) err(`${where}: number missing`);
+  if (!['unverified', 'verified'].includes(c.review)) err(`${where}: review must be unverified|verified`);
+  if (!(c.sections?.length >= 3)) err(`${where}: needs at least 3 sections`);
+  let nl = 0;
+  let en = 0;
+  const check = (t, w, lang) => {
+    if (typeof t !== 'string' || !t.trim()) return err(`${w}: empty ${lang} text`);
+    checkInlineCites(t, w);
+    for (const m of t.matchAll(QUOTED)) if (m[1].trim().split(/\s+/).length > 6) err(`${w}: direct quotation not allowed ("${m[1].slice(0, 40)}…")`);
+    if (lang === 'nl') nl += t.split(/\s+/).length;
+    else en += t.split(/\s+/).length;
+  };
+  check(c.introNl, where, 'nl');
+  check(c.introEn, where, 'en');
+  for (const [i, sec] of (c.sections ?? []).entries()) {
+    const w = `${where} s${i + 1}`;
+    if (!sec.headingNl?.trim() || !sec.headingEn?.trim()) err(`${w}: missing heading`);
+    if (!sec.nl?.length || sec.nl.length !== sec.en?.length) err(`${w}: nl/en paragraph count differs`);
+    for (const t of sec.nl ?? []) check(t, w, 'nl');
+    for (const t of sec.en ?? []) check(t, w, 'en');
+  }
+  for (const [a, b, k] of [[c.inBriefNl, c.inBriefEn, 'inBrief'], [c.reflectNl, c.reflectEn, 'reflect']]) {
+    if (!a?.length || a.length !== b?.length) err(`${where}: ${k} nl/en must be non-empty and equal`);
+    else a.forEach((t, i) => { check(t, `${where} ${k}`, 'nl'); check(b[i], `${where} ${k}`, 'en'); });
+  }
+  for (const l of c.links ?? []) if (!/^https:\/\/www\.vatican\.va\//.test(l.url) || !l.labelNl || !l.labelEn) err(`${where}: links must be labelled vatican.va URLs (${l.url})`);
+  for (const sId of c.subjects ?? []) if (!subjectIds.has(sId)) err(`${where}: unknown subject ${sId}`);
+  if (nl < 700 || en < 700) err(`${where}: too short (${nl} nl / ${en} en words; minimum 700)`);
+  shortCats.push({ id: c.id, number: c.number });
+}
+const nums = shortCats.map((c) => c.number).sort((a, b) => a - b);
+if (new Set(nums).size !== nums.length) err('catechesis: duplicate numbers');
+
 // --- report -----------------------------------------------------------------
 for (const w of warnings) console.warn(`warn  ${w}`);
 if (errors.length) {
@@ -183,8 +332,11 @@ const index = {
   review: allReviewed ? 'verified' : 'unverified',
   available,
   counts,
+  studies: studies.map((x) => x.id).sort(),
+  catechesis: shortCats.sort((a, b) => a.number - b.number).map((x) => x.id),
 };
-writeFileSync(join(root, 'index.json'), JSON.stringify(index, null, 2) + '\n');
+// VALIDATE_ONLY=1 checks without writing index.json (safe for parallel runs).
+if (!process.env.VALIDATE_ONLY) writeFileSync(join(root, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 console.log(
-  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} catecheses · ${videos.items.length} videos · v${index.version}`,
+  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} audiences · ${videos.items.length} videos · ${shortCats.length} short catecheses · ${studies.length} study texts (${studies.reduce((n, x) => n + x.nl, 0)} words nl) · v${index.version}`,
 );

@@ -99,7 +99,7 @@
 @layer components {
   /* Conciliar text: serif, vellum ground, rubric rule on the left. */
   .conciliar {
-    @apply border border-line bg-surface px-4 py-3 font-serif;
+    @apply bg-surface px-5 py-4 font-serif;
     border-left: 3px solid rgb(var(--accent));
     line-height: 1.7;
     font-variant-numeric: oldstyle-nums;

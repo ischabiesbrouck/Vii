@@ -1,0 +1,455 @@
+{
+  "subjectId": "liturgy",
+  "review": "unverified",
+  "chapters": [
+    {
+      "labelLa": "Caput I",
+      "titleNl": "Van Solesmes naar de aula",
+      "titleEn": "From Solesmes to the council floor",
+      "summaryNl": "Sacrosanctum Concilium bouwt voort op een halve eeuw liturgische beweging en op hervormingen die Pius X en Pius XII al hadden ingezet. Het schema kwam als eerste in de aula en werd op 4 december 1963 als eerste document afgekondigd.",
+      "summaryEn": "Sacrosanctum Concilium builds on half a century of liturgical movement and on reforms already begun by Pius X and Pius XII. Its schema was the first to reach the aula, and on 4 December 1963 it became the first document to be promulgated.",
+      "sections": [
+        {
+          "headingNl": "Guéranger, Pius X en Beauduin",
+          "headingEn": "Guéranger, Pius X and Beauduin",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Wie Sacrosanctum Concilium als een plotselinge breuk leest, slaat een eeuw voorgeschiedenis over. Prosper Guéranger, abt van het heropgerichte Solesmes, plaatste de liturgie al in de negentiende eeuw in het middelpunt van het geestelijk leven, en vanuit zijn abdij begon het herstel van het gregoriaans. Pius X vroeg in 1903, in het motu proprio Tra le sollecitudini, om ‘actieve deelname’ van de gelovigen aan de heilige mysteries. Zes jaar later gaf de Belgische benedictijn Lambert Beauduin op het katholieke congres van Mechelen de aanzet tot een pastorale liturgische beweging. Die verbreidde zich over België, Duitsland, Frankrijk en de Verenigde Staten.",
+              "en": "Reading Sacrosanctum Concilium as a sudden rupture means skipping a century of prehistory. Prosper Guéranger, abbot of the refounded Solesmes, had already placed the liturgy at the centre of the spiritual life in the nineteenth century, and the restoration of Gregorian chant began in his abbey. In 1903 Pius X, in the motu proprio Tra le sollecitudini, asked for the ‘active participation’ of the faithful in the sacred mysteries. Six years later the Belgian Benedictine Lambert Beauduin, at the Catholic congress of Malines, gave the impulse to a pastoral liturgical movement. It spread through Belgium, Germany, France and the United States."
+            },
+            {
+              "type": "box",
+              "kind": "context",
+              "titleNl": "Pius XII en de eerste hervormingen",
+              "titleEn": "Pius XII and the first reforms",
+              "nl": "Mediator Dei (1947) was de eerste encycliek die geheel aan de liturgie gewijd was. Pius XII bevestigde daarin de deelname van de gelovigen en legde de nadruk op hun innerlijke vereniging met het offer van Christus. Hij waarschuwde ook tegen een eenzijdige voorliefde voor het oude om het oude. Onder zijn pontificaat werden de paaswake (1951, eerst bij wijze van proef) en de liturgie van de Goede Week (1955) herzien, en werd de eucharistische nuchterheid verzacht. Toen het Concilie bijeenkwam, had de paus zelf de herziening van de riten dus al in gang gezet.",
+              "en": "Mediator Dei (1947) was the first encyclical devoted entirely to the liturgy. In it Pius XII affirmed the participation of the faithful and stressed their interior union with the sacrifice of Christ. He also warned against a one-sided preference for the ancient simply because it is ancient. Under his pontificate the Easter Vigil (1951, at first experimentally) and the rites of Holy Week (1955) were revised, and the Eucharistic fast was relaxed. When the Council met, the Pope himself had therefore already set the revision of the rites in motion."
+            },
+            {
+              "type": "p",
+              "nl": "Twee kenmerken van de constitutie zijn uit die voorgeschiedenis te verklaren. Zij neemt bewust termen over die al in het pauselijk onderricht voorkwamen, zoals actieve deelname (SC §14). Verder gaat zij ervan uit dat de liturgie een organisch geheel vormt, dat na historisch en theologisch onderzoek behoedzaam herzien kan worden (SC §23).",
+              "en": "Two features of the constitution follow from this prehistory. It deliberately takes over terms already present in papal teaching, such as active participation (SC §14). It also assumes that the liturgy is an organic whole, which may be revised with care after historical and theological study (SC §23)."
+            }
+          ]
+        },
+        {
+          "headingNl": "Het eerste schema in de aula, 1962–1963",
+          "headingEn": "The first schema on the floor, 1962–1963",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De voorbereidende liturgische commissie stond onder leiding van kardinaal Gaetano Cicognani; Annibale Bugnini was secretaris. Haar schema gold als het best uitgewerkte van alle voorbereidende ontwerpen en kwam vanaf 22 oktober 1962 als eerste in de aula ter sprake. In het debat keerden vier punten steeds terug: Latijn en volkstaal, de communie onder beide gedaanten, de concelebratie, en de vraag hoeveel de bisschoppen en hun territoriale vergaderingen zelf over de liturgie mochten beslissen. Half november 1962 aanvaardden de vaders het schema met grote meerderheid als basis voor verdere bewerking.",
+              "en": "The preparatory liturgical commission was chaired by Cardinal Gaetano Cicognani, with Annibale Bugnini as secretary. Its schema was regarded as the most fully worked out of all the preparatory drafts, and from 22 October 1962 it was the first to be discussed in the aula. Four points kept returning in the debate: Latin and the vernacular, communion under both kinds, concelebration, and how far bishops and their territorial assemblies might decide liturgical matters for themselves. In mid-November 1962 the Fathers accepted the schema by a large majority as the basis for further revision."
+            },
+            {
+              "type": "p",
+              "nl": "In de tweede zitting werd over de hoofdstukken afzonderlijk gestemd. Op 4 december 1963 nam het Concilie de constitutie aan met 2.147 placet tegen 4 non placet. Paulus VI kondigde haar dezelfde dag af, samen met Inter Mirifica, op de dag af vierhonderd jaar na de sluiting van Trente. Over de tekst zelf bestond weinig onenigheid; de strijd van de jaren daarna betrof de uitvoering.",
+              "en": "In the second period the chapters were voted on separately. On 4 December 1963 the Council adopted the constitution by 2,147 placet to 4 non placet. Paul VI promulgated it the same day, together with Inter Mirifica, four hundred years to the day after the close of Trent. The text itself was hardly in dispute; the conflict of the following years concerned its implementation."
+            },
+            {
+              "type": "diagram",
+              "id": "sessions",
+              "captionNl": "De vier zittingsperioden van het Concilie (1962–1965). Sacrosanctum Concilium werd aan het einde van de tweede periode afgekondigd, als eerste document.",
+              "captionEn": "The four periods of the Council (1962–1965). Sacrosanctum Concilium was promulgated at the end of the second period, as the first document."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput II",
+      "titleNl": "Het paasmysterie en de voorwaarden voor hervorming",
+      "titleEn": "The paschal mystery and the conditions for reform",
+      "summaryNl": "SC §2–13 beschrijft de liturgie als werk van Christus en zijn Kerk, met het paasmysterie als middelpunt. Op die grondslag regelen SC §14–40 de deelname van de gelovigen, het kerkelijk gezag over de riten en de voorwaarden voor elke herziening.",
+      "summaryEn": "SC §2–13 describes the liturgy as the work of Christ and his Church, centred on the paschal mystery. On that basis SC §14–40 regulates the participation of the faithful, Church authority over the rites and the conditions for any revision.",
+      "sections": [
+        {
+          "headingNl": "Christus aanwezig in de viering",
+          "headingEn": "Christ present in the celebration",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Voordat de constitutie één rubriek noemt, zet zij een theologie van de liturgie uiteen. In de liturgie wordt het werk van de verlossing voltrokken, vooral in het eucharistisch offer, en zij maakt het mysterie van Christus en het ware wezen van de Kerk zichtbaar (SC §2). Het middelpunt is het paasmysterie: Christus’ lijden, verrijzenis en hemelvaart, waaruit het sacrament van heel de Kerk is voortgekomen (SC §5–6). Liturgie is daarom uitoefening van het priesterambt van Christus, een handeling van Christus en zijn Lichaam samen (SC §7).",
+              "en": "Before it mentions a single rubric, the constitution sets out a theology of the liturgy. In the liturgy the work of redemption is accomplished, above all in the Eucharistic sacrifice, and it manifests the mystery of Christ and the real nature of the Church (SC §2). At its centre stands the paschal mystery: Christ’s passion, resurrection and ascension, from which the sacrament of the whole Church came forth (SC §5–6). The liturgy is therefore the exercise of the priestly office of Christ, an action of Christ and his Body together (SC §7)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-7"
+            },
+            {
+              "type": "p",
+              "nl": "SC §7 somt de wijzen van Christus’ aanwezigheid in een vaste volgorde op: in het misoffer, in de persoon van de bedienaar, ‘vooral onder de eucharistische gedaanten’, in de sacramenten, in zijn woord, en in de gemeenschap die bidt en zingt. De tekst onderscheidt die wijzen en brengt er een rangorde in aan. Paulus VI nam die ordening over in Mysterium fidei (1965), waar hij de eucharistische aanwezigheid ‘werkelijk’ noemt in de volste zin van het woord. Aansluitend opent SC §8 een eschatologisch perspectief. In de aardse liturgie krijgen de gelovigen een voorsmaak van de hemelse, die in het hemels Jeruzalem gevierd wordt.",
+              "en": "SC §7 lists the modes of Christ’s presence in a fixed order: in the sacrifice of the Mass, in the person of the minister, ‘especially under the Eucharistic species’, in the sacraments, in his word, and in the community that prays and sings. The text distinguishes these modes and ranks them. Paul VI took over that ranking in Mysterium fidei (1965), where he calls the Eucharistic presence ‘real’ in the fullest sense. SC §8 then opens an eschatological perspective. In the earthly liturgy the faithful receive a foretaste of the heavenly liturgy celebrated in the heavenly Jerusalem."
+            }
+          ]
+        },
+        {
+          "headingNl": "Hoogtepunt en bron, bron en hoogtepunt",
+          "headingEn": "Summit and source, source and summit",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De bekendste formule van de constitutie volgt op een beperking. Verkondiging, geloof en bekering gaan aan de liturgie vooraf; zij omvat dus niet het hele handelen van de Kerk (SC §9). ‘Niettemin’ is zij het hoogtepunt en de bron:",
+              "en": "The constitution’s best-known formula follows a limitation. Preaching, faith and conversion come before the liturgy, which therefore does not make up the whole activity of the Church (SC §9). ‘Nevertheless’ it is the summit and the source:"
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-10"
+            },
+            {
+              "type": "p",
+              "nl": "Een jaar later gebruikt Lumen Gentium hetzelfde beeld voor de eucharistie, in omgekeerde volgorde: bron en hoogtepunt van heel het christelijk leven. In de eucharistie dragen de gelovigen het goddelijk Slachtoffer aan God op, en zichzelf met Hem (LG §11). De reikwijdte van beide teksten verschilt. SC §10 spreekt over de liturgie als geheel en over het handelen van de Kerk, LG §11 over het eucharistisch offer en het leven van de afzonderlijke gelovige, in het kader van het gemeenschappelijk priesterschap (LG §10). Ze worden het best samen gelezen.",
+              "en": "A year later Lumen Gentium uses the same image for the Eucharist, in reverse order: the source and summit of the whole Christian life. In it the faithful offer the divine Victim to God, and themselves along with it (LG §11). The two texts differ in scope. SC §10 speaks of the liturgy as a whole and of the activity of the Church; LG §11 of the Eucharistic sacrifice and the life of the individual believer, within the framework of the common priesthood (LG §10). They are best read together."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "LG-11"
+            }
+          ]
+        },
+        {
+          "headingNl": "Volledige, bewuste en actieve deelname",
+          "headingEn": "Full, conscious and active participation",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Uit die theologie leidt de constitutie haar pastorale doel af. De Kerk wil alle gelovigen brengen tot volledige, bewuste en actieve deelname. De aard van de liturgie zelf vraagt daarom, en op grond van het doopsel heeft het christenvolk er recht op en is het ertoe gehouden (SC §14). Eerst moet dan de geestelijkheid zelf liturgisch gevormd worden (SC §14–19). De gelovigen komen met de rechte gesteltenis, hun geest in overeenstemming met hun stem (SC §11), en de herders bevorderen een deelname die zowel innerlijk als uiterlijk is (SC §19).",
+              "en": "From this theology the constitution derives its pastoral aim. The Church desires that all the faithful be led to full, conscious and active participation. The very nature of the liturgy demands it, and by reason of baptism it is the right and duty of the Christian people (SC §14). The clergy must therefore first be formed in the liturgy themselves (SC §14–19). The faithful come with the right dispositions, their minds attuned to their voices (SC §11), and pastors promote participation that is both interior and exterior (SC §19)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-14"
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Actieve deelname (participatio actuosa)",
+              "titleEn": "Active participation (participatio actuosa)",
+              "nl": "De volledige, bewuste en actieve deelname van alle gelovigen, die de aard van de liturgie zelf vraagt (SC §14). De tekst noemt zowel innerlijke als uiterlijke deelname (SC §19). Als vormen geeft SC §30 acclamaties, antwoorden, psalmgezang, antifonen, liederen, handelingen en lichaamshoudingen, en ook het eerbiedig stilzwijgen op het daartoe bestemde moment. Ieder doet daarbij alleen en geheel wat hem toekomt (SC §28).",
+              "en": "The full, conscious and active participation of all the faithful, demanded by the very nature of the liturgy (SC §14). The text names both interior and exterior participation (SC §19). As its forms SC §30 lists acclamations, responses, psalmody, antiphons, songs, actions and bodily attitudes, and also reverent silence at the proper times. Each person does all, and only, what pertains to his role (SC §28)."
+            }
+          ]
+        },
+        {
+          "headingNl": "Wie de liturgie regelt, en onder welke voorwaarden",
+          "headingEn": "Who regulates the liturgy, and on what terms",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Hierop volgt de algemene herstelling van de liturgie (SC §21). In dezelfde paragraaf staat het onderscheid waarop de rest van het hoofdstuk rust: de liturgie bestaat uit onveranderlijke, door God ingestelde elementen en uit elementen die kunnen veranderen. Wie wijzigingen mag aanbrengen, regelt SC §22. Dat zijn de Apostolische Stoel en, binnen de grenzen van het recht, de bisschop en de territoriale bisschoppenvergaderingen. Niemand anders, ook geen priester, mag op eigen gezag iets toevoegen, weglaten of veranderen.",
+              "en": "Then comes the general restoration of the liturgy (SC §21). The same paragraph contains the distinction on which the rest of the chapter rests: the liturgy consists of immutable elements, divinely instituted, and of elements that can change. Who may make changes is settled in SC §22. They are the Apostolic See and, within the limits of law, the bishop and the territorial assemblies of bishops. No one else, not even a priest, may add, remove or change anything on his own authority."
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Onveranderlijk en veranderlijk",
+              "titleEn": "Immutable and changeable",
+              "nl": "SC §21 onderscheidt in de liturgie onveranderlijke, door God ingestelde elementen en elementen die aan verandering onderhevig zijn. Die laatste kunnen of moeten zelfs veranderen als er iets in is binnengeslopen dat minder past. Welke elementen onveranderlijk zijn, somt de tekst niet op. De theologische traditie rekent daartoe in elk geval de substantie van de sacramenten, die volgens Trente buiten de macht van de Kerk valt.",
+              "en": "SC §21 distinguishes in the liturgy immutable elements, divinely instituted, and elements subject to change. The latter may or even ought to change if something less fitting has crept in. The text does not list which elements are immutable. The theological tradition counts among them at least the substance of the sacraments, which according to Trent lies outside the Church’s power."
+            },
+            {
+              "type": "p",
+              "nl": "SC §23 bindt elke herziening aan voorwaarden. Er moet gedegen theologisch, historisch en pastoraal onderzoek aan voorafgaan. Vernieuwingen komen er alleen als het welzijn van de Kerk ze werkelijk en zeker vraagt, en nieuwe vormen moeten organisch uit de bestaande voortkomen.",
+              "en": "SC §23 ties every revision to conditions. It must be preceded by careful theological, historical and pastoral study. Innovations are made only when the good of the Church genuinely and certainly requires them, and new forms must grow organically from those already existing."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-23"
+            },
+            {
+              "type": "p",
+              "nl": "Binnen die grenzen staan de praktische normen. De riten moeten uitblinken door edele eenvoud (SC §34). De Schrift krijgt een ruimere plaats (SC §24 en §35). Voor aanpassing aan culturen is ruimte, voor zover die strookt met de ware en echte liturgische geest en de substantiële eenheid van de Romeinse ritus bewaart (SC §37–40).",
+              "en": "Within those limits come the practical norms. The rites are to be distinguished by noble simplicity (SC §34). Scripture is to receive a fuller place (SC §24 and §35). There is room for adaptation to cultures, insofar as it harmonises with the true and authentic liturgical spirit and preserves the substantial unity of the Roman rite (SC §37–40)."
+            },
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Edele eenvoud (nobilis simplicitas)",
+              "titleEn": "Noble simplicity (nobilis simplicitas)",
+              "nl": "Volgens SC §34 moeten de riten uitblinken door edele eenvoud. Ze zijn kort en doorzichtig, vermijden nutteloze herhalingen en zijn in het algemeen zonder veel uitleg te begrijpen. Beide woorden tellen. Eenvoud die niet edel is, wordt kaalheid, en wat edel wil zijn zonder eenvoud, raakt overladen. Hoe de twee zich tot elkaar verhouden, wordt verschillend uitgelegd.",
+              "en": "According to SC §34 the rites are to be distinguished by noble simplicity. They are short and clear, avoid useless repetitions and are normally intelligible without much explanation. Both words count. Simplicity that is not noble becomes bareness, and nobility without simplicity becomes overloaded. How the two relate is interpreted in different ways."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput III",
+      "titleNl": "De herziening van de mis en de dag des Heren",
+      "titleEn": "The revision of the Mass and the Lord’s day",
+      "summaryNl": "SC §47–58 vraagt om een herziene Ordo Missae, een rijker lectionarium, de homilie en het algemeen gebed; SC §106 maakt de zondag tot de oorspronkelijke feestdag. Over de betekenis van actieve deelname lopen de lezingen uiteen.",
+      "summaryEn": "SC §47–58 asks for a revised Order of Mass, a fuller lectionary, the homily and the prayer of the faithful; SC §106 makes Sunday the original feast day. Readings of what active participation means diverge.",
+      "sections": [
+        {
+          "headingNl": "Ordo Missae, lectionarium en homilie",
+          "headingEn": "Order of Mass, lectionary and homily",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Het tweede hoofdstuk opent met de leer van Trente. Bij het Laatste Avondmaal stelde Christus het eucharistisch offer in om het kruisoffer door de eeuwen heen te bestendigen; de mis is tegelijk gedachtenis, sacrament van de liefde, teken van eenheid en paasmaal (SC §47). De gelovigen moeten er niet als vreemden of zwijgende toeschouwers bij zijn, maar leren zichzelf op te dragen (SC §48). Op die grondslag vraagt het Concilie om een herziening van de Ordo Missae. De riten worden vereenvoudigd met behoud van hun wezen, verdubbelingen vallen weg en verloren gegane elementen worden hersteld naar de norm van de kerkvaders (SC §50).",
+              "en": "The second chapter opens with the teaching of Trent. At the Last Supper Christ instituted the Eucharistic sacrifice in order to perpetuate the sacrifice of the Cross throughout the centuries; the Mass is at once a memorial, a sacrament of love, a sign of unity and a paschal banquet (SC §47). The faithful should not be present as strangers or silent spectators, but learn to offer themselves (SC §48). On that basis the Council asks for a revision of the Order of Mass. The rites are to be simplified while their substance is preserved, duplications are dropped and elements lost over time are restored according to the norm of the Fathers (SC §50)."
+            },
+            {
+              "type": "quote",
+              "paragraphId": "SC-50"
+            },
+            {
+              "type": "list",
+              "nl": [
+                "De tafel van Gods woord moet rijker gedekt worden: over een vast aantal jaren wordt een groter deel van de Schrift gelezen (SC §51).",
+                "De homilie, die uit de heilige teksten put, hoort bij de liturgie zelf en mag op zon- en feestdagen niet zonder ernstige reden ontbreken (SC §52).",
+                "Het algemeen gebed, het gebed van de gelovigen, wordt hersteld (SC §53).",
+                "Communie uit hetzelfde offer wordt sterk aanbevolen; communie onder beide gedaanten is mogelijk in gevallen die de Apostolische Stoel bepaalt (SC §55).",
+                "Dienst van het woord en eucharistische dienst vormen samen één eredienst (SC §56); de concelebratie wordt uitgebreid (SC §57–58)."
+              ],
+              "en": [
+                "The table of God’s word is to be laid more richly: a larger part of Scripture is read over a set number of years (SC §51).",
+                "The homily, drawn from the sacred texts, is part of the liturgy itself and should not be omitted on Sundays and feasts without a serious reason (SC §52).",
+                "The common prayer, the prayer of the faithful, is restored (SC §53).",
+                "Communion from the same sacrifice is strongly commended; communion under both kinds is possible in cases to be determined by the Apostolic See (SC §55).",
+                "The liturgy of the word and the Eucharistic liturgy together form one single act of worship (SC §56); concelebration is extended (SC §57–58)."
+              ]
+            },
+            {
+              "type": "p",
+              "nl": "De latere hoofdstukken behandelen de overige sacramenten (SC §59–82), het getijdengebed (SC §83–101) en het liturgisch jaar. Daar krijgt de zondag een eigen plaats. Sinds de dag van de verrijzenis komt de Kerk wekelijks samen om het paasmysterie te vieren, en de dag des Heren is daarom de oorspronkelijke feestdag (SC §106). Andere vieringen mogen alleen boven de zondag gesteld worden als zij werkelijk van het grootste belang zijn.",
+              "en": "The later chapters treat the other sacraments (SC §59–82), the Divine Office (SC §83–101) and the liturgical year. There Sunday receives a place of its own. Since the day of the resurrection the Church has gathered weekly to celebrate the paschal mystery, and the Lord’s day is therefore the original feast day (SC §106). Other celebrations may take precedence over Sunday only if they are truly of the greatest importance."
+            }
+          ]
+        },
+        {
+          "headingNl": "Offer en maal, beginsel en uitvoering",
+          "headingEn": "Sacrifice and meal, principle and execution",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Ook de eucharistie zelf vraagt om onderscheidingen. SC houdt de offerleer van Trente vast: de mis bestendigt het kruisoffer (SC §47). In dezelfde zin gebruikt de tekst de woorden ‘gedachtenis’ en ‘paasmaal’, en die sluiten elkaar niet uit. De Catechismus noemt de eucharistie in één adem offer, gedachtenis en heilig maal. Een lezing die één aspect losmaakt van de andere, doet de tekst tekort.",
+              "en": "The Eucharist itself also calls for distinctions. SC holds fast to the teaching of Trent on sacrifice: the Mass perpetuates the sacrifice of the Cross (SC §47). In the same sentence the text uses the words ‘memorial’ and ‘paschal banquet’, and these do not exclude one another. The Catechism calls the Eucharist at once sacrifice, memorial and sacred banquet. A reading that detaches one aspect from the others does the text an injustice."
+            },
+            {
+              "type": "p",
+              "nl": "Beginsel en uitvoering moeten evenzeer gescheiden blijven. SC is grotendeels een kaderwet. Het geeft beginselen en richtingen en laat de concrete herziening van de boeken uitdrukkelijk aan anderen over (SC §25; SC §22), wat verklaart waarom het er heel anders uitziet dan een missaal. Het overzicht hieronder geeft de opbouw. Na de algemene beginselen volgen de eucharistie, de sacramenten, het getijdengebed, het liturgisch jaar, de muziek en de kunst.",
+              "en": "Principle and implementation must likewise be kept apart. SC is largely a framework law. It gives principles and directions and expressly leaves the concrete revision of the books to others (SC §25; SC §22), which is why it looks so different from a missal. The outline below gives its structure. After the general principles come the Eucharist, the sacraments, the Divine Office, the liturgical year, music and art."
+            },
+            {
+              "type": "diagram",
+              "id": "outline-SC",
+              "captionNl": "De opbouw van Sacrosanctum Concilium: inleiding en zeven hoofdstukken, met de paragraafnummers per hoofdstuk. Dit onderwerp leest vooral de inleiding en de hoofdstukken I, II en V.",
+              "captionEn": "The structure of Sacrosanctum Concilium: introduction and seven chapters, with the paragraph numbers of each chapter. This subject reads mainly the introduction and chapters I, II and V."
+            }
+          ]
+        },
+        {
+          "headingNl": "Innerlijk of uiterlijk deelnemen",
+          "headingEn": "Taking part inwardly or outwardly",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Over het begrip uit SC §14 dat het vaakst wordt aangehaald, lopen de lezingen uiteen. Het Latijn spreekt van participatio actuosa. De ene lezing legt het zwaartepunt bij de innerlijke vereniging met het offer, de andere bij de zichtbare en hoorbare deelname van de gemeenschap. Beide beroepen zich op de constitutie, die over innerlijke en uiterlijke deelname in één zin spreekt (SC §19).",
+              "en": "Readings diverge on the term from SC §14 that is quoted most often. The Latin speaks of participatio actuosa. One reading places the weight on interior union with the sacrifice, the other on the visible and audible participation of the community. Both appeal to the constitution, which speaks of interior and exterior participation in a single sentence (SC §19)."
+            },
+            {
+              "type": "positions",
+              "titleNl": "Is actieve deelname vooral innerlijk of vooral uiterlijk?",
+              "titleEn": "Is active participation primarily interior or primarily exterior?",
+              "positions": [
+                {
+                  "labelNl": "Primair innerlijk",
+                  "labelEn": "Primarily interior",
+                  "nl": "Het Latijnse ‘actuosa’ duidt volgens deze lezing in de eerste plaats op daadwerkelijke, werkzame betrokkenheid, en minder op bezigheid. Deelname bestaat er dan vooral in dat de gelovige zich met het offer van Christus verenigt en zichzelf opdraagt (SC §48; LG §11), in lijn met Mediator Dei. Uiterlijke handelingen en het stilzwijgen staan in dienst van die innerlijke act (SC §30). Ratzinger heeft deze lezing in The Spirit of the Liturgy met kracht verdedigd.",
+                  "en": "On this reading the Latin ‘actuosa’ refers first of all to real, effective engagement rather than to busyness. Participation then consists above all in the believer’s uniting himself with the sacrifice of Christ and offering himself (SC §48; LG §11), in line with Mediator Dei. Exterior actions and silence serve that interior act (SC §30). Ratzinger defended this reading forcefully in The Spirit of the Liturgy.",
+                  "sources": [
+                    "SC-14",
+                    "LG-11",
+                    "ext:mediator-dei-1947"
+                  ]
+                },
+                {
+                  "labelNl": "Innerlijk én uiterlijk, met nadruk op het gemeenschappelijke",
+                  "labelEn": "Interior and exterior, with emphasis on the communal",
+                  "nl": "Volgens deze lezing wilde het Concilie de passieve aanwezigheid van de gelovigen overwinnen. Het noemt uitdrukkelijk acclamaties, antwoorden, gezang en gebaren (SC §30), wil dat ieder zijn eigen rol vervult (SC §28–29) en geeft de voorkeur aan gemeenschappelijke vieringen boven quasi-private (SC §27). Uiterlijke deelname is dan de zichtbare vorm van de innerlijke, omdat de mens lichaam en ziel is.",
+                  "en": "On this reading the Council set out to overcome the passive presence of the faithful. It expressly names acclamations, responses, singing and gestures (SC §30), wants each person to carry out his own role (SC §28–29) and prefers communal celebrations to quasi-private ones (SC §27). Exterior participation is then the visible form of the interior, since the human person is body and soul.",
+                  "sources": [
+                    "SC-14",
+                    "ext:tra-le-sollecitudini-1903"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput IV",
+      "titleNl": "Het Consilium en het missaal van Paulus VI",
+      "titleEn": "The Consilium and the missal of Paul VI",
+      "summaryNl": "Tussen 1964 en 1971 werden onder leiding van het Consilium de liturgische boeken herzien. Of die hervorming trouw was aan de constitutie, wordt sindsdien betwist, en de pausen na het Concilie hebben elk hun eigen regeling getroffen.",
+      "summaryEn": "Between 1964 and 1971 the liturgical books were revised under the direction of the Consilium. Whether that reform was faithful to the constitution has been disputed ever since, and each pope after the Council has made his own arrangements.",
+      "sections": [
+        {
+          "headingNl": "Van Sacram Liturgiam tot Liturgia Horarum",
+          "headingEn": "From Sacram Liturgiam to the Liturgia Horarum",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De uitvoering kwam in handen van een speciale raad, het Consilium voor de uitvoering van de constitutie. Het werd opgericht met het motu proprio Sacram Liturgiam (januari 1964); kardinaal Giacomo Lercaro werd voorzitter, Annibale Bugnini secretaris. De uitvoeringsdocumenten volgden elkaar daarna snel op.",
+              "en": "Implementation was entrusted to a special body, the Consilium for the implementation of the constitution. It was set up by the motu proprio Sacram Liturgiam (January 1964), with Cardinal Giacomo Lercaro as president and Annibale Bugnini as secretary. The implementing documents then followed in quick succession."
+            },
+            {
+              "type": "list",
+              "nl": [
+                "1964: de instructie Inter Oecumenici geeft de eerste concrete wijzigingen, onder meer een ruimere plaats voor de volkstaal.",
+                "1969: met de apostolische constitutie Missale Romanum kondigt Paulus VI de nieuwe Ordo Missae af; in hetzelfde jaar verschijnt het nieuwe lectionarium.",
+                "1970: de typische uitgave van het herziene Romeins Missaal verschijnt.",
+                "1971: het herziene getijdengebed (Liturgia Horarum) verschijnt."
+              ],
+              "en": [
+                "1964: the instruction Inter Oecumenici sets out the first concrete changes, including a wider place for the vernacular.",
+                "1969: with the apostolic constitution Missale Romanum Paul VI promulgates the new Order of Mass; the new lectionary appears in the same year.",
+                "1970: the typical edition of the revised Roman Missal appears.",
+                "1971: the revised Divine Office (Liturgia Horarum) appears."
+              ]
+            },
+            {
+              "type": "p",
+              "nl": "Al in 1969 stuurden de kardinalen Ottaviani en Bacci Paulus VI een kritische studie over de nieuwe Ordo Missae. Anderen begroetten het nieuwe missaal als de vervulling van wat de liturgische beweging had gezocht: meer Schrift in de lezingen (SC §51), het herstelde gebed van de gelovigen (SC §53) en een viering die de aanwezigen konden verstaan. Het debat dat toen begon, is nog altijd gaande.",
+              "en": "As early as 1969 Cardinals Ottaviani and Bacci sent Paul VI a critical study of the new Order of Mass. Others welcomed the new missal as the fulfilment of what the liturgical movement had sought: more Scripture in the readings (SC §51), the restored prayer of the faithful (SC §53) and a celebration those present could understand. The debate that began then is still going on."
+            }
+          ]
+        },
+        {
+          "headingNl": "Het missaal van 1970 gemeten aan SC §23",
+          "headingEn": "The 1970 missal measured against SC §23",
+          "blocks": [
+            {
+              "type": "box",
+              "kind": "term",
+              "titleNl": "Organische groei",
+              "titleEn": "Organic growth",
+              "nl": "Nieuwe vormen moeten ‘op een of andere wijze’ organisch uit reeds bestaande vormen groeien (SC §23). Het beeld is ontleend aan een levend organisme, dat groeit zonder iets anders te worden. In de tekst staat het criterium naast gedegen onderzoek en werkelijk nut voor de Kerk. Verdedigers en critici van de hervorming van 1969–1970 beroepen zich er allebei op.",
+              "en": "New forms must grow organically ‘in some way’ from forms already existing (SC §23). The image is taken from a living organism, which grows without becoming something else. In the text the criterion stands alongside thorough study and genuine benefit to the Church. Defenders and critics of the reform of 1969–1970 both invoke it."
+            },
+            {
+              "type": "positions",
+              "titleNl": "Was de hervorming van 1969–1970 trouw aan SC?",
+              "titleEn": "Was the reform of 1969–1970 faithful to SC?",
+              "positions": [
+                {
+                  "labelNl": "Trouwe uitvoering",
+                  "labelEn": "Faithful implementation",
+                  "nl": "De constitutie vroeg zelf om een herziening van de Ordo Missae, met vereenvoudiging, herstel naar de norm van de kerkvaders en een rijkere schriftlezing (SC §50–51). Zij legde de uitvoering bij de Apostolische Stoel (SC §22), en de paus kondigde het nieuwe missaal zelf af. Bugnini werkt deze lezing uit in zijn verslag van de hervorming: het missaal van Paulus VI voerde uit wat de vaders hadden besloten. De Bisschoppensynode van 1985 bevestigde de hervorming als vrucht van het Concilie en vroeg om verdieping ervan.",
+                  "en": "The constitution itself asked for a revision of the Order of Mass, with simplification, restoration according to the norm of the Fathers and richer reading of Scripture (SC §50–51). It placed implementation with the Apostolic See (SC §22), and the Pope himself promulgated the new missal. Bugnini develops this reading in his account of the reform: the missal of Paul VI carried out what the Fathers had decided. The 1985 Synod of Bishops affirmed the reform as a fruit of the Council and asked that it be deepened.",
+                  "sources": [
+                    "SC-50",
+                    "SC-51",
+                    "SC-22",
+                    "ext:synod-1985"
+                  ]
+                },
+                {
+                  "labelNl": "De hervorming ging verder dan de tekst",
+                  "labelEn": "The reform went further than the text",
+                  "nl": "In tempo en omvang ging de uitvoering volgens deze lezing verder dan SC vroeg. De constitutie stelde het Latijn als regel (SC §36), gaf het gregoriaans de eerste plaats (SC §116) en liet geen vernieuwingen toe die het welzijn van de Kerk niet werkelijk vereiste (SC §23). Alcuin Reid betoogt in The Organic Development of the Liturgy dat dit criterium niet overal is nageleefd. Deze lezing erkent de geldigheid van het nieuwe missaal en vraagt om een herlezing ervan in het licht van de conciliaire tekst.",
+                  "en": "On this reading, implementation went further in pace and scope than SC asked. The constitution set Latin as the rule (SC §36), gave Gregorian chant pride of place (SC §116) and allowed no innovations that the good of the Church did not genuinely require (SC §23). Alcuin Reid argues in The Organic Development of the Liturgy that this criterion was not observed everywhere. This reading accepts the validity of the new missal and asks for it to be reread in the light of the conciliar text.",
+                  "sources": [
+                    "SC-23",
+                    "SC-36",
+                    "SC-116"
+                  ]
+                },
+                {
+                  "labelNl": "Het debat ligt vooral in de praktijk",
+                  "labelEn": "The debate lies mainly in practice",
+                  "nl": "Een derde lezing legt de vraag elders. Veel van wat als ‘de hervorming’ geldt, staat in SC noch in het missaal; het ontstond in de praktijk, soms in strijd met beide. SC §22 sluit eigenmachtige aanpassing uitdrukkelijk uit. De opdracht is dan de bestaande boeken getrouw te vieren, met zorg voor de ars celebrandi, waar het latere leergezag herhaaldelijk om vroeg.",
+                  "en": "A third reading places the question elsewhere. Much of what counts as ‘the reform’ is found neither in SC nor in the missal; it arose in practice, sometimes contrary to both. SC §22 expressly excludes adaptation on one’s own authority. The task is then to celebrate the existing books faithfully, with care for the ars celebrandi, as later magisterial teaching has repeatedly asked.",
+                  "sources": [
+                    "SC-22",
+                    "SC-23",
+                    "SC-34"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "headingNl": "Van Vicesimus quintus annus tot Desiderio desideravi",
+          "headingEn": "From Vicesimus quintus annus to Desiderio desideravi",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De pausen na het Concilie hebben de constitutie steeds als blijvend gezaghebbend behandeld, elk met een eigen accent. Johannes Paulus II schreef bij haar vijfentwintigste verjaardag de apostolische brief Vicesimus quintus annus (1988). Benedictus XVI zette in 2005 de hermeneutiek van hervorming in continuïteit tegenover die van breuk (ext:benedict-2005). Met Summorum Pontificum (2007) liet hij het missaal van 1962 ruimer toe, als buitengewone vorm van de ene Romeinse ritus. Franciscus herriep die regeling in 2021 met Traditionis custodes. Hij noemde de boeken van Paulus VI en Johannes Paulus II de enige uitdrukking van de lex orandi van de Romeinse ritus, en schreef in Desiderio desideravi (2022) over liturgische vorming.",
+              "en": "The popes after the Council have always treated the constitution as permanently authoritative, each with his own emphasis. John Paul II marked its twenty-fifth anniversary with the apostolic letter Vicesimus quintus annus (1988). In 2005 Benedict XVI set the hermeneutic of reform in continuity against that of rupture (ext:benedict-2005). With Summorum Pontificum (2007) he allowed wider use of the 1962 missal, as the extraordinary form of the one Roman rite. Francis revoked that arrangement in 2021 with Traditionis custodes. He called the books of Paul VI and John Paul II the unique expression of the lex orandi of the Roman rite, and in Desiderio desideravi (2022) he wrote on liturgical formation."
+            },
+            {
+              "type": "box",
+              "kind": "note",
+              "titleNl": "Drie niveaus uit elkaar houden",
+              "titleEn": "Three levels to keep apart",
+              "nl": "Summorum Pontificum en Traditionis custodes zijn disciplinaire regelingen over het gebruik van liturgische boeken. Een gezaghebbende uitleg van SC als tekst geven zij niet. Wie over de liturgische hervorming schrijft, doet er goed aan drie niveaus gescheiden te houden: wat de constitutie zegt, wat de uitvoeringsdocumenten bepaalden en hoe latere pausen de praktijk regelden. Paus Leo XIV wijdde van mei tot augustus 2026 acht woensdagcatecheses aan Sacrosanctum Concilium. Ze vormen een actuele lezing door het leergezag en worden het best naast de tekst zelf gelezen.",
+              "en": "Summorum Pontificum and Traditionis custodes are disciplinary arrangements on the use of liturgical books. They do not give an authoritative interpretation of SC as a text. Anyone writing about the liturgical reform does well to keep three levels apart: what the constitution says, what the implementing documents determined, and how later popes regulated practice. From May to August 2026 Pope Leo XIV devoted eight Wednesday catecheses to Sacrosanctum Concilium. They are a current magisterial reading and are best read alongside the text itself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "labelLa": "Caput V",
+      "titleNl": "Sacrosanctum Concilium na zestig jaar lezen",
+      "titleEn": "Reading Sacrosanctum Concilium sixty years on",
+      "summaryNl": "De hervormingsnormen van SC §21–40 zijn alleen te begrijpen vanuit de theologie van SC §5–13 en de voorwaarden van SC §22–23. Veel wat aan de constitutie wordt toegeschreven, komt uit latere besluiten en praktijk.",
+      "summaryEn": "The norms for reform in SC §21–40 can only be understood from the theology of SC §5–13 and the conditions of SC §22–23. Much that is attributed to the constitution comes from later decisions and practice.",
+      "sections": [
+        {
+          "headingNl": "Van de theologie naar de normen",
+          "headingEn": "From the theology to the norms",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "De hervormingsnormen van SC §21–40 zijn onverstaanbaar zonder SC §5–13. Daar wordt de liturgie beschreven als werk van Christus, dat de gemeenschap ontvangt en viert en niet zelf voortbrengt. Elke uitspraak over vernieuwing staat bovendien onder de voorwaarden van SC §22–23: kerkelijk gezag, werkelijk nut en organische groei. Wie een paragraaf over aanpassing aanhaalt, hoort die voorwaarden mee te citeren.",
+              "en": "The norms for reform in SC §21–40 cannot be understood without SC §5–13. There the liturgy is described as the work of Christ, which the community receives and celebrates and does not produce itself. Every statement about renewal also stands under the conditions of SC §22–23: Church authority, genuine benefit and organic growth. Anyone quoting a paragraph on adaptation ought to quote those conditions with it."
+            },
+            {
+              "type": "p",
+              "nl": "Ook de rangorde in de formuleringen telt. ‘Moet behouden blijven’ (SC §36) weegt zwaarder dan ‘mag uitgebreid worden’; de tekst stelt een regel en opent daarnaast een mogelijkheid. Evenmin vallen tekst en uitvoering samen. Over celebratie naar het volk toe of communie op de hand zegt SC niets; beide komen uit latere besluiten en uit de praktijk. Ten slotte vraagt SC om een lezing samen met LG §10–11, waar de liturgie de handeling is van heel het priesterlijke volk. Gemeenschappelijk en ambtelijk priesterschap hebben daarin elk een eigen plaats.",
+              "en": "The ranking within the wording also counts. ‘Is to be preserved’ (SC §36) carries more weight than ‘may be extended’; the text sets a rule and opens a possibility alongside it. Nor do text and implementation coincide. SC says nothing about celebration facing the people or communion in the hand; both come from later decisions and from practice. Finally, SC asks to be read together with LG §10–11, where the liturgy is the action of the whole priestly people. The common and the ministerial priesthood each have their own place in it."
+            },
+            {
+              "type": "p",
+              "nl": "Van de lezer vraagt dit iets. Een verdediger van de hervorming moet de strenge voorwaarden van SC §23 ernstig nemen. Een criticus moet erkennen dat de constitutie werkelijk om vereenvoudiging en herziening vroeg (SC §50). Geen van beide kampen kan de tekst voor zich alleen opeisen.",
+              "en": "This asks something of the reader. A defender of the reform must take the strict conditions of SC §23 seriously. A critic must acknowledge that the constitution really did ask for simplification and revision (SC §50). Neither camp can claim the text for itself alone."
+            }
+          ]
+        },
+        {
+          "headingNl": "Open vragen bij SC §14–23",
+          "headingEn": "Open questions on SC §14–23",
+          "blocks": [
+            {
+              "type": "p",
+              "nl": "Bij herlezing blijven enkele vragen staan. Welke elementen zijn volgens SC §21 onveranderlijk, en waarom noemt de tekst ze niet bij naam? Hoe verhoudt het criterium van organische groei (SC §23) zich tot de hervorming van 1969–1970? Is actieve deelname (SC §14) in de eerste plaats iets innerlijks of iets uiterlijks, of is die tegenstelling zelf te eenvoudig?",
+              "en": "On rereading, a few questions remain. Which elements are immutable according to SC §21, and why does the text not name them? How does the criterion of organic growth (SC §23) relate to the reform of 1969–1970? Is active participation (SC §14) primarily interior or exterior, or is that opposition itself too simple?"
+            },
+            {
+              "type": "p",
+              "nl": "Het volgende onderwerp, over Latijn, gregoriaans en kerkbouw, past dezelfde methode toe op de concrete bepalingen over taal, muziek en ruimte (SC §36, §112–121 en §122–130). Het verschil tussen tekst en latere praktijk is daar het grootst.",
+              "en": "The next subject, on Latin, chant and church building, applies the same method to the concrete provisions on language, music and space (SC §36, §112–121 and §122–130). There the gap between text and later practice is widest."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bibliography": [
+    "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books.",
+    "Bugnini, A. (1990). The reform of the liturgy 1948–1975 (M. J. O’Connell, Trans.). Liturgical Press.",
+    "Catechism of the Catholic Church (2nd ed.). (1997). Libreria Editrice Vaticana.",
+    "O’Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
+    "Ratzinger, J. (2000). The spirit of the liturgy (J. Saward, Trans.). Ignatius Press.",
+    "Reid, A. (2005). The organic development of the liturgy (2nd ed.). Ignatius Press.",
+    "Tanner, N. P. (Ed.). (1990). Decrees of the ecumenical councils (Vol. 2). Sheed & Ward; Georgetown University Press.",
+    "Vorgrimler, H. (Ed.). (1967). Commentary on the documents of Vatican II (Vol. 1). Herder and Herder."
+  ]
+}

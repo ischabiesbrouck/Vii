@@ -14,6 +14,9 @@ import type {
   Lang,
   Paragraph,
   TimelineEvent,
+  Study,
+  LicensedImage,
+  ShortCatechesis,
 } from '@/types/content';
 
 /**
@@ -47,16 +50,26 @@ export const getSubjects = () => load<Subject[]>('subjects.json');
 export const getLessons = () => load<Lesson[]>('lessons.json');
 export const getCatecheses = () => load<CatechesisSeries>('catecheses.json');
 export const getVideos = () => load<VideoLibrary>('videos.json');
+export const getImages = () => load<LicensedImage[]>('images.json').catch(() => [] as LicensedImage[]);
+
+/** The short catecheses, in series order. */
+export async function getShortCatecheses(): Promise<ShortCatechesis[]> {
+  const index = await getIndex();
+  return Promise.all((index.catechesis ?? []).map((id) => load<ShortCatechesis>(`catechesis/${id}.json`)));
+}
+
+/** Full study text for a subject, or null when none has been written yet. */
+export async function getStudy(subjectId: string): Promise<Study | null> {
+  const index = await getIndex();
+  if (!index.studies?.includes(subjectId)) return null;
+  return load<Study>(`studies/${subjectId}.json`);
+}
 
 export async function getDocument(id: string): Promise<CouncilDocument | undefined> {
   return (await getDocuments()).find((d) => d.id === id);
 }
 
-/**
- * Paragraph content for a document, or null when no /content/{docId}.json exists yet.
- * TODO(content): the 13 documents without a content file show metadata only until
- * their file is added — no code change required, see README → Adding content.
- */
+/** Paragraph excerpts for a document, or null when it has no content file (the reader then shows metadata only). */
 export async function getDocumentContent(docId: string): Promise<DocumentContent | null> {
   const index = await getIndex();
   if (!index.available.includes(docId)) return null;

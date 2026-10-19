@@ -23,6 +23,8 @@ interface UiState {
   studied: Record<string, string[]>;
   /** Lesson id → completion and best knowledge-check score. */
   lessons: Record<string, { done: boolean; score: number | null; updatedAt: number }>;
+  /** Subject id → study-text chapters read (1-based). */
+  studyRead: Record<string, number[]>;
   setLang: (lang: Lang) => void;
   setTheme: (theme: Theme) => void;
   setFontSize: (size: FontSize) => void;
@@ -31,6 +33,7 @@ interface UiState {
   dismissInstall: () => void;
   toggleStudied: (subjectId: string, paragraphId: string) => void;
   setLesson: (id: string, patch: { done?: boolean; score?: number }) => void;
+  markChapterRead: (subjectId: string, chapter: number) => void;
 }
 
 /**
@@ -48,6 +51,7 @@ export const useUi = create<UiState>()(
       installDismissed: false,
       studied: {},
       lessons: {},
+      studyRead: {},
       setLang: (lang) => set({ lang }),
       setTheme: (theme) => set({ theme }),
       setFontSize: (fontSize) => set({ fontSize }),
@@ -83,6 +87,11 @@ export const useUi = create<UiState>()(
               },
             },
           };
+        }),
+      markChapterRead: (subjectId, chapter) =>
+        set((s) => {
+          const cur = s.studyRead[subjectId] ?? [];
+          return cur.includes(chapter) ? s : { studyRead: { ...s.studyRead, [subjectId]: [...cur, chapter].sort((a, b) => a - b) } };
         }),
       toggleStudied: (subjectId, paragraphId) =>
         set((s) => {

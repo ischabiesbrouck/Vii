@@ -1,16 +1,14 @@
 /**
  * Content model. All content is static, versioned JSON under /public/content.
  * Nothing here is ever generated at runtime.
- *
- * Deviations from the original brief are marked DEVIATION and explained in README.md.
  */
 
 export type DocType = 'constitution' | 'decree' | 'declaration';
 
 /**
- * DEVIATION: 'unqualified' added. Only LG and DV carry "dogmatica" and GS
- * "pastoralis" in their official Latin designation; labelling SC or the
- * declarations otherwise would be an editorial judgement presented as fact.
+ * Only LG and DV carry "dogmatica" and GS "pastoralis" in their official Latin
+ * designation. The other documents are 'unqualified' (decrees: 'disciplinary'),
+ * so that no editorial label is presented as part of the title.
  */
 export type Solemnity = 'dogmatic' | 'pastoral' | 'disciplinary' | 'unqualified';
 
@@ -186,6 +184,10 @@ export interface ContentIndex {
   available: string[];
   /** Number of seeded paragraphs per docId. */
   counts: Record<string, number>;
+  /** Subject ids that have a study text in /content/studies/. */
+  studies?: string[];
+  /** Short catecheses in series order (/content/catechesis/). */
+  catechesis?: string[];
 }
 
 /** A lesson in the guided course (/learn). Editorial, labelled as such. */
@@ -261,4 +263,91 @@ export interface VideoLibrary {
   noteNl: string;
   noteEn: string;
   items: Video[];
+}
+
+/* ---------- Study texts (full editorial explanation per subject) ---------- */
+
+export type DiagramId =
+  | 'sessions'
+  | 'documents'
+  | 'votes'
+  | 'dv-transmission'
+  | 'lg-belonging'
+  | 'lg-people'
+  | `outline-${'LG' | 'SC' | 'DV' | 'DH' | 'GS' | 'UR' | 'PO' | 'CD'}`;
+
+export type StudyBlock =
+  /** Editorial prose. Citations written as "LG §8" or "GS §22–24" are linked automatically. */
+  | { type: 'p'; nl: string; en: string }
+  /** A conciliar excerpt, rendered from the seeded paragraph (never retyped). */
+  | { type: 'quote'; paragraphId: string }
+  | { type: 'list'; nl: string[]; en: string[] }
+  | { type: 'box'; kind: 'term' | 'note' | 'context'; titleNl: string; titleEn: string; nl: string; en: string }
+  /** Contested questions: positions side by side, never decided by the app. */
+  | { type: 'positions'; titleNl: string; titleEn: string; positions: { labelNl: string; labelEn: string; nl: string; en: string; sources: string[] }[] }
+  | { type: 'diagram'; id: DiagramId; captionNl: string; captionEn: string }
+  /** A licensed image from public/content/images.json. */
+  | { type: 'image'; imageId: string; captionNl: string; captionEn: string };
+
+export interface StudySection {
+  headingNl: string;
+  headingEn: string;
+  blocks: StudyBlock[];
+}
+
+export interface StudyChapter {
+  labelLa: string; // 'Caput I'
+  titleNl: string;
+  titleEn: string;
+  summaryNl: string;
+  summaryEn: string;
+  sections: StudySection[];
+}
+
+export interface Study {
+  subjectId: string;
+  review: 'unverified' | 'verified';
+  chapters: StudyChapter[];
+  /** APA 7 references for the whole study text. */
+  bibliography: string[];
+}
+
+export interface LicensedImage {
+  id: string;
+  file: string; // path under public/images/
+  width: number;
+  height: number;
+  altNl: string;
+  altEn: string;
+  author: string;
+  license: string; // e.g. 'Public domain', 'CC BY-SA 4.0'
+  licenseUrl?: string;
+  sourceUrl: string; // Wikimedia Commons file page
+}
+
+/* ---------- Short catecheses (question-led explanations, no direct quotations) ---------- */
+
+export interface ShortCatechesis {
+  id: string;
+  number: number; // order in the series, 1–12
+  icon: string; // SubjectIcon name
+  /** The catechetical question that heads the text, e.g. "Wat is de Kerk?". */
+  questionNl: string;
+  questionEn: string;
+  titleNl: string;
+  titleEn: string;
+  minutes: number;
+  introNl: string;
+  introEn: string;
+  /** Prose only. References are written as "LG §8" and become links that open on click. */
+  sections: { headingNl: string; headingEn: string; nl: string[]; en: string[] }[];
+  /** Short summary points, after the "In brief" sections of the Catechism. */
+  inBriefNl: string[];
+  inBriefEn: string[];
+  reflectNl: string[];
+  reflectEn: string[];
+  /** Further reading: official texts only (vatican.va). */
+  links: { labelNl: string; labelEn: string; url: string }[];
+  subjects: string[];
+  review: 'unverified' | 'verified';
 }

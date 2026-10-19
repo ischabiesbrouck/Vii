@@ -4,6 +4,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { useTranslation } from 'react-i18next';
 import {
   BookOpen,
+  BookOpenText,
   ChevronDown,
   Clock,
   Film,
@@ -48,6 +49,7 @@ const primary = [
   { to: '/subjects', key: 'subjects', end: false },
   { to: '/documents', key: 'documents', end: false },
   { to: '/claims', key: 'claims', end: false },
+  { to: '/catechesis', key: 'catechesis', end: false },
   { to: '/catecheses', key: 'catecheses', end: false },
   { to: '/videos', key: 'videos', end: false },
 ] as const;
@@ -63,6 +65,7 @@ const footerLinks = [...primary.slice(1), ...more];
 
 const secondary = [
   { to: '/subjects', key: 'subjects', Icon: GraduationCap },
+  { to: '/catechesis', key: 'catechesis', Icon: BookOpenText },
   { to: '/catecheses', key: 'catecheses', Icon: ScrollText },
   { to: '/videos', key: 'videos', Icon: Film },
   { to: '/timeline', key: 'timeline', Icon: Clock },
@@ -143,7 +146,7 @@ export function SettingsPanel() {
 function Wordmark() {
   const { t } = useTranslation();
   return (
-    <Link to="/" className="flex min-w-0 items-center gap-3 py-1" aria-label={`${t('app.name')} — ${t('nav.home')}`}>
+    <Link to="/" className="flex min-w-0 items-center gap-3 py-1" aria-label={`${t('app.name')}, ${t('nav.home')}`}>
       <Seal className="h-11 w-11 text-accent lg:h-14 lg:w-14" />
       <span className="min-w-0 border-l border-line pl-3">
         <span className="block font-display text-[1.12rem] font-bold uppercase leading-none tracking-[0.18em] sm:text-[1.35rem]">{t('app.name')}</span>
