@@ -55,16 +55,25 @@ function RefPanel({ abbr, n, label }: { abbr: string; n: number; label: string }
 export function RefLink({ abbr, n, label }: { abbr: string; n: number; label: string }) {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
+  const docs = useDocuments().data ?? [];
+  const doc = docs.find((d) => d.abbr === abbr);
+  const href = `${import.meta.env.BASE_URL}documents/${doc?.id ?? ''}#${abbr}-${n}`;
   return (
     <>
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
+      {/* A real link (inline, so it never breaks away from its brackets): a plain click opens the
+          panel; modifier clicks keep the browser's behaviour (new tab, new window). */}
+      <a
+        href={href}
+        onClick={(e) => {
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+          e.preventDefault();
+          setOpen(true);
+        }}
         aria-haspopup="dialog"
         className="whitespace-nowrap font-semibold text-accent underline decoration-accent/40 underline-offset-[3px] hover:decoration-accent"
       >
         {label}
-      </button>
+      </a>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetContent title={label} description={t('ref.sheet')} closeLabel={t('app.close')}>
           {open && <RefPanel abbr={abbr} n={n} label={label} />}

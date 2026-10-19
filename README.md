@@ -56,6 +56,7 @@ Fonts are self-hosted through Fontsource: EB Garamond, Source Serif 4, Cinzel an
 | `/learn`, `/learn/:id` | Course of ten *lectiones* with key facts, texts, catecheses, videos, a factual knowledge check and sources |
 | `/subjects`, `/subjects/:id` | Sixteen study paths: objectives, reading path, claims, terms, questions, further reading |
 | `/subjects/:id/study/:chapter` | Study text per subject, in chapters (*Caput I–V*) with numbered sections, quotations, boxes, positions, figures and bibliography |
+| `/catechesis`, `/catechesis/:id` | Twelve short catecheses, each headed by a question. Each has explanation, *In brief*, reflection questions and further reading. Nothing is quoted directly; references such as LG §8 are links that open the paragraph in a panel |
 | `/catecheses` | Register of Pope Leo XIV's general audiences on the Council (2026), with links to vatican.va |
 | `/videos` | Selected English-language videos; played in the app, with no YouTube suggestions afterwards |
 | `/claims`, `/timeline`, `/glossary`, `/hermeneutics`, `/search`, `/about` | Claim Check, chronology, terms, readings of the Council, full-text search, colophon |
@@ -70,6 +71,7 @@ it, and nothing is generated at runtime.
 | `documents.json` | Metadata for the sixteen documents: dates, votes, Latin designation, summary, chapter outline |
 | `{docId}.json` | Paragraph excerpts (125 in total), with a Dutch working translation and Latin |
 | `studies/{subjectId}.json` | Sixteen study texts (about 38,500 words per language) |
+| `catechesis/{id}.json` | Twelve short catecheses (800–1,100 words per language); the validator rejects any quoted passage of more than six words |
 | `subjects.json`, `lessons.json` | Study paths and course |
 | `claims.json`, `glossary.json`, `hermeneutics.json`, `timeline.json` | Claim Check, terms, readings, chronology |
 | `catecheses.json`, `videos.json` | Audiences and videos, with their sources |
