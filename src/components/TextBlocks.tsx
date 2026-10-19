@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ExternalLink, Lightbulb } from 'lucide-react';
+import { useExplain } from '@/store/explain';
 import { cn } from '@/lib/utils';
 import { shortCite } from '@/lib/citation';
 import { paragraphText, paragraphUrl } from '@/lib/content';
@@ -15,17 +16,33 @@ export function ConciliarText({
   className,
   showLatin = false,
   cite,
+  explainable = true,
 }: {
   paragraph: Paragraph;
   className?: string;
   showLatin?: boolean;
   cite?: ReactNode;
+  /** Tapping opens the explanation panel (off where a panel is already at hand). */
+  explainable?: boolean;
 }) {
   const { t } = useTranslation();
   const lang = useLang();
   const { text, isExcerpt } = paragraphText(paragraph, lang);
+  const canExplain = explainable && !!paragraph.explain;
+  const open = () => useExplain.getState().open(paragraph.id);
   return (
-    <figure className={cn('conciliar', className)}>
+    <figure
+      className={cn('conciliar', canExplain && 'cursor-pointer transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]', className)}
+      onClick={
+        canExplain
+          ? (e) => {
+              // Links and buttons keep their own action; selecting text does not open the panel.
+              if ((e.target as HTMLElement).closest('a, button') || window.getSelection()?.toString()) return;
+              open();
+            }
+          : undefined
+      }
+    >
       <figcaption className="mb-1 flex flex-wrap items-center gap-x-2 font-sans text-xs text-muted">
         <span className="font-semibold text-accent">{cite ?? shortCite(paragraph.id)}</span>
         <span aria-hidden>·</span>
@@ -41,6 +58,19 @@ export function ConciliarText({
             <span aria-hidden>·</span>
             <span>{t('para.workingTranslation')}</span>
           </>
+        )}
+        {canExplain && (
+          <button
+            type="button"
+            onClick={open}
+            aria-haspopup="dialog"
+            aria-label={t('explain.openLabel', { cite: shortCite(paragraph.id) })}
+            data-tts-skip
+            className="ml-auto inline-flex min-h-[28px] items-center gap-1 rounded-sm border border-gold/60 bg-paper px-2 font-medium text-gold-text transition-colors hover:border-accent hover:text-accent"
+          >
+            <Lightbulb className="h-3.5 w-3.5" aria-hidden />
+            {t('explain.open')}
+          </button>
         )}
       </figcaption>
       <blockquote lang={lang === 'en' ? 'en' : 'nl'} className="whitespace-pre-line" data-tts-before={shortCite(paragraph.id)}>

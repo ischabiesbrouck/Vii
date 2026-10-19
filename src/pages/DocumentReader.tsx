@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Maximize2, Minimize2, MoreHorizontal, Star } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Maximize2, Minimize2, Lightbulb, Star } from 'lucide-react';
 import { useFocusMode } from '@/store/focus';
 import { DocTypeBadge, SolemnityBadge } from '@/components/Badges';
 import { Commentary, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar } from '@/components/TextBlocks';
@@ -9,7 +9,9 @@ import { ParagraphSheet, copyCitation } from '@/components/ParagraphSheet';
 import { ReadAloudButton } from '@/components/ReadAloud';
 import { SubjectIcon } from '@/components/SubjectIcon';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
-import { getCatecheses, getDocumentContent, getDocuments, getSubjects, getVideos } from '@/lib/content';
+import { getBackground, getCatecheses, getDocumentContent, getDocuments, getSubjects, getVideos } from '@/lib/content';
+import { DocumentHistory } from '@/components/DocumentHistory';
+import { SegmentedTabs, panelId, tabId } from '@/components/ui/tabs';
 import { VideoRow } from '@/components/VideoCard';
 import { toRoman } from '@/lib/roman';
 import { useAsync } from '@/lib/useAsync';
@@ -105,12 +107,12 @@ function ReaderParagraph({
           title={t('para.actions')}
           className="ml-auto inline-flex h-8 w-8 items-center justify-center rounded-sm text-muted transition-colors hover:bg-surface hover:text-fg sm:ml-0"
         >
-          <MoreHorizontal className="h-4 w-4" aria-hidden />
+          <Lightbulb className="h-4 w-4" aria-hidden />
         </button>
       </div>
       {/* Tapping the text opens the same panel; long-press copies the citation. Keyboard users use the button above. */}
       <div className="no-callout cursor-pointer transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]" {...handlers}>
-        <ConciliarText paragraph={p} cite={`${doc.abbr} §${p.number}`} />
+        <ConciliarText paragraph={p} cite={`${doc.abbr} §${p.number}`} explainable={false} />
       </div>
     </article>
   );
@@ -201,7 +203,14 @@ export function DocumentReader() {
   const navigate = useNavigate();
   const { fontSize, setFontSize, bookmarks, progress, recordProgress } = useUi();
   const { data, loading } = useAsync(async () => {
-    const [docs, content, subjects, cat, videos] = await Promise.all([getDocuments(), getDocumentContent(id), getSubjects(), getCatecheses(), getVideos()]);
+    const [docs, content, subjects, cat, videos, background] = await Promise.all([
+      getDocuments(),
+      getDocumentContent(id),
+      getSubjects(),
+      getCatecheses(),
+      getVideos(),
+      getBackground(id),
+    ]);
     const ordered = [...docs].sort((a, b) => a.promulgated.localeCompare(b.promulgated) || a.titleLa.localeCompare(b.titleLa));
     const i = ordered.findIndex((d) => d.id === id);
     const doc = ordered[i];
@@ -209,10 +218,14 @@ export function DocumentReader() {
     const related = subjects.filter((s) => s.steps.some((st) => st.paragraphId.startsWith(`${doc.abbr}-`)));
     const catecheses = cat.items.filter((c) => c.docId === doc.id);
     const docVideos = videos.items.filter((v) => v.docIds.includes(doc.id));
-    return { doc, content, prev: ordered[i - 1], next: ordered[i + 1], related, catecheses, docVideos };
+    return { doc, content, background, prev: ordered[i - 1], next: ordered[i + 1], related, catecheses, docVideos };
   }, [id]);
   const doc = data?.doc;
   const content = data?.content;
+  const [params, setParams] = useSearchParams();
+  // A link to a paragraph (#LG-8) always shows the text.
+  const view = params.get('view') === 'history' && !location.hash ? 'history' : 'text';
+  const setView = (v: 'text' | 'history') => setParams(v === 'history' ? { view: 'history' } : {}, { replace: true });
   const [active, setActive] = useState<Paragraph | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [tocOpen, setTocOpen] = useState(false);
@@ -454,10 +467,31 @@ export function DocumentReader() {
         </section>
       )}
 
-      {!content ? (
+      {data.background && (
+        <SegmentedTabs
+          prefix="doc"
+          label={doc.titleLa}
+          value={view}
+          onChange={setView}
+          className="mb-8"
+          items={[
+            { id: 'text', label: t('history.tabText'), count: content?.paragraphs.length },
+            { id: 'history', label: t('history.tabHistory') },
+          ]}
+        />
+      )}
+
+      {data.background && view === 'history' ? (
+        <div role="tabpanel" id={panelId('doc', 'history')} aria-labelledby={tabId('doc', 'history')}>
+          <DocumentHistory background={data.background} />
+        </div>
+      ) : !content ? (
         <Commentary>{t('doc.notSeeded')}</Commentary>
       ) : (
-        <div className={focus ? 'mx-auto max-w-[50rem]' : 'grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]'}>
+        <div
+          {...(data.background ? { role: 'tabpanel', id: panelId('doc', 'text'), 'aria-labelledby': tabId('doc', 'text') } : {})}
+          className={focus ? 'mx-auto max-w-[50rem]' : 'grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]'}
+        >
           {/* Table of contents (desktop) */}
           <aside data-chrome className="hidden lg:block" aria-label={t('doc.contents')}>
             <div className="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-y-auto pr-1">

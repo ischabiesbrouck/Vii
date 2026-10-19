@@ -93,6 +93,36 @@ export interface Paragraph {
   crossRefs: string[];
   noteNl?: string; // editorial, labelled "Toelichting"
   noteEn?: string;
+  /** Plain-language explanation shown when the excerpt is tapped. */
+  explain?: { nl: ParagraphExplanation; en: ParagraphExplanation };
+}
+
+/** What the paragraph says, to whom, why, how it argues, and what is meant by it. */
+export interface ParagraphExplanation {
+  /** What is written: the paragraph in plain words, not only the excerpt. */
+  what: string;
+  /** To whom it speaks and of whom it speaks. */
+  who: string;
+  /** Why: the question it answers, its occasion and drafting history. */
+  why: string;
+  /** How: genre, line of argument, sources (Scripture, Fathers, councils, popes), place in the document. */
+  how: string;
+  /** What is meant, and what is not: key terms, later reception, common misreadings. */
+  meaning: string;
+}
+
+/** History and background of one document: /content/background/{docId}.json. */
+export interface DocumentBackground {
+  docId: string;
+  review: ReviewStatus;
+  sections: { headingNl: string; headingEn: string; nl: string[]; en: string[] }[];
+  /** Drafting chronology; dates as YYYY-MM-DD or YYYY-MM. */
+  timeline: { date: string; nl: string; en: string }[];
+  people: { name: string; roleNl: string; roleEn: string }[];
+  /** Figures; `section` is the index of the section they follow. */
+  images: { imageId: string; captionNl: string; captionEn: string; section: number }[];
+  /** APA references. */
+  sources: string[];
 }
 
 export type ReviewStatus = 'unverified' | 'verified';
@@ -192,6 +222,8 @@ export interface ContentIndex {
   studies?: string[];
   /** Short catecheses in series order (/content/catechesis/). */
   catechesis?: string[];
+  /** docIds that have a history file in /content/background/. */
+  backgrounds?: string[];
 }
 
 /** A lesson in the guided course (/learn). Editorial, labelled as such. */

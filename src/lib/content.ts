@@ -17,6 +17,7 @@ import type {
   Study,
   LicensedImage,
   ShortCatechesis,
+  DocumentBackground,
 } from '@/types/content';
 
 /**
@@ -59,6 +60,13 @@ export async function getShortCatecheses(): Promise<ShortCatechesis[]> {
 }
 
 /** Full study text for a subject, or null when none has been written yet. */
+/** History and background of a document, or null if it has none yet. */
+export async function getBackground(docId: string): Promise<DocumentBackground | null> {
+  const index = await getIndex();
+  if (!index.backgrounds?.includes(docId)) return null;
+  return load<DocumentBackground>(`background/${docId}.json`);
+}
+
 export async function getStudy(subjectId: string): Promise<Study | null> {
   const index = await getIndex();
   if (!index.studies?.includes(subjectId)) return null;

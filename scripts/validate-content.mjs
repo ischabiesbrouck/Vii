@@ -42,6 +42,10 @@ if (documents.length !== 16) err(`documents.json: expected 16 documents, found $
 const docIds = new Set();
 const abbrs = new Map();
 const words = (s) => s.trim().split(/\s+/).length;
+// A quotation opens after a space or bracket and closes before punctuation or a space,
+// so apostrophes inside words (God's, Church's, zo'n) are not taken for quotation marks.
+const QUOTED = /(?:^|[\s(])[“"‘']([^”"’]{1,400}?)[”"’'](?=[\s.,;:!?)]|$)/g;
+const longQuotes = (t, max) => [...t.matchAll(QUOTED)].filter((m) => words(m[1]) > max).map((m) => m[1].slice(0, 40));
 for (const d of documents) {
   if (docIds.has(d.id)) err(`duplicate document id ${d.id}`);
   docIds.add(d.id);
@@ -61,6 +65,8 @@ for (const d of documents) {
 
 // --- paragraphs -------------------------------------------------------------
 const paragraphs = new Map();
+/** Inline citations in explanations, checked once checkInlineCites exists. */
+const pendingCites = [];
 const available = [];
 const counts = {};
 for (const d of documents) {
@@ -78,6 +84,23 @@ for (const d of documents) {
     if (p.docId !== d.id) err(`${p.id}: docId mismatch`);
     if (p.number < 1 || p.number > d.paragraphCount) err(`${p.id}: number outside 1..${d.paragraphCount}`);
     if (!p.textNl?.trim() || !p.textEn?.trim()) err(`${p.id}: empty text`);
+    // Excerpts only (quotation right): keep each one short.
+    for (const k of ['textNl', 'textEn']) if (p[k] && words(p[k]) > 120) err(`${p.id}.${k}: ${words(p[k])} words (excerpt max 120)`);
+    if (p.textLa && words(p.textLa) > 45) err(`${p.id}.textLa: ${words(p.textLa)} words (max 45)`);
+    if (!p.explain) err(`${p.id}: missing explanation (explain.nl / explain.en)`);
+    else
+      for (const lang of ['nl', 'en'])
+        for (const k of ['what', 'who', 'why', 'how', 'meaning']) {
+          const t = p.explain[lang]?.[k];
+          if (typeof t !== 'string' || !t.trim()) {
+            err(`${p.id}.explain.${lang}.${k}: missing`);
+            continue;
+          }
+          const n = words(t);
+          if (n < 20 || n > 130) err(`${p.id}.explain.${lang}.${k}: ${n} words (20–130)`);
+          for (const q of longQuotes(t, 8)) err(`${p.id}.explain.${lang}.${k}: quotation of more than eight words ("${q}…")`);
+          pendingCites.push([t, `${p.id}.explain.${lang}.${k}`]);
+        }
     if (paragraphs.has(p.id)) err(`duplicate paragraph ${p.id}`);
     paragraphs.set(p.id, p);
   }
@@ -193,6 +216,47 @@ const checkInlineCites = (text, where) => {
     if (a < 1 || b > max || b < a) err(`${where}: citation "${m[0]}" outside ${m[1]} §1–${max}`);
   }
 };
+for (const [t, w] of pendingCites) checkInlineCites(t, w);
+
+// --- document backgrounds (public/content/background/{docId}.json) -----------
+const bgDir = join(root, 'background');
+const backgrounds = [];
+for (const f of existsSync(bgDir) ? readdirSync(bgDir).filter((x) => x.endsWith('.json')) : []) {
+  hash.update(readFileSync(join(bgDir, f)));
+  const b = JSON.parse(readFileSync(join(bgDir, f), 'utf8'));
+  const where = `background/${f}`;
+  if (`${b.docId}.json` !== f || !documents.some((d) => d.id === b.docId)) err(`${where}: docId must match a document and the file name`);
+  if (!['unverified', 'verified'].includes(b.review)) err(`${where}: review must be unverified|verified`);
+  if (!(b.sections?.length >= 4 && b.sections.length <= 8)) err(`${where}: 4–8 sections`);
+  let nl = 0;
+  let en = 0;
+  for (const [i, sec] of (b.sections ?? []).entries()) {
+    if (!sec.headingNl?.trim() || !sec.headingEn?.trim()) err(`${where}: section ${i + 1} needs both headings`);
+    if (!Array.isArray(sec.nl) || !Array.isArray(sec.en) || sec.nl.length !== sec.en.length || !sec.nl.length) err(`${where}: section ${i + 1} needs nl/en paragraphs of equal number`);
+    for (const [lang, arr] of [['nl', sec.nl ?? []], ['en', sec.en ?? []]])
+      for (const t of arr) {
+        checkInlineCites(t, `${where} §${i + 1}`);
+        for (const q of longQuotes(t, 8)) err(`${where} §${i + 1}: quotation of more than eight words ("${q}…")`);
+        if (lang === 'nl') nl += words(t);
+        else en += words(t);
+      }
+  }
+  if (nl < 700 || en < 700) err(`${where}: too short (${nl} nl / ${en} en words; minimum 700)`);
+  for (const t of b.timeline ?? []) {
+    if (!/^\d{4}-\d{2}(-\d{2})?$/.test(t.date)) err(`${where}: timeline date ${t.date} (use YYYY-MM-DD or YYYY-MM)`);
+    if (!t.nl?.trim() || !t.en?.trim()) err(`${where}: timeline ${t.date} needs nl and en`);
+  }
+  if (!(b.timeline?.length >= 4)) err(`${where}: at least 4 timeline entries`);
+  for (const p of b.people ?? []) if (!p.name || !p.roleNl || !p.roleEn) err(`${where}: person needs name, roleNl, roleEn`);
+  for (const im of b.images ?? []) {
+    if (!imageIds.has(im.imageId)) err(`${where}: unknown image ${im.imageId}`);
+    if (!im.captionNl || !im.captionEn) err(`${where}: image ${im.imageId} needs captions`);
+    if (!Number.isInteger(im.section) || im.section < 0 || im.section >= (b.sections?.length ?? 0)) err(`${where}: image ${im.imageId} section index out of range`);
+  }
+  if (!(b.sources?.length >= 3)) err(`${where}: at least 3 sources`);
+  backgrounds.push(b.docId);
+}
+
 const studyFiles = existsSync(join(root, 'studies')) ? readdirSync(join(root, 'studies')).filter((f) => f.endsWith('.json')) : [];
 const studies = [];
 for (const f of studyFiles) {
@@ -278,9 +342,6 @@ const catDir = join(root, 'catechesis');
 const catFiles = existsSync(catDir) ? readdirSync(catDir).filter((f) => f.endsWith('.json')) : [];
 const shortCats = [];
 // Direct quotations are not allowed: no quoted run of more than six words.
-// A quotation opens after a space or bracket and closes before punctuation or a space,
-// so apostrophes inside words (God's, Church's, zo'n) are not taken for quotation marks.
-const QUOTED = /(?:^|[\s(])[“"‘']([^”"’]{1,400}?)[”"’'](?=[\s.,;:!?)]|$)/g;
 for (const f of catFiles) {
   hash.update(readFileSync(join(catDir, f)));
   const c = JSON.parse(readFileSync(join(catDir, f), 'utf8'));
@@ -336,9 +397,10 @@ const index = {
   counts,
   studies: studies.map((x) => x.id).sort(),
   catechesis: shortCats.sort((a, b) => a.number - b.number).map((x) => x.id),
+  backgrounds: backgrounds.sort(),
 };
 // VALIDATE_ONLY=1 checks without writing index.json (safe for parallel runs).
 if (!process.env.VALIDATE_ONLY) writeFileSync(join(root, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 console.log(
-  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} audiences · ${videos.items.length} videos · ${shortCats.length} short catecheses · ${studies.length} study texts (${studies.reduce((n, x) => n + x.nl, 0)} words nl) · v${index.version}`,
+  `content ok · ${documents.length} documents · ${available.length} with paragraphs · ${paragraphs.size} paragraphs · ${claims.length} claims · ${glossary.length} terms · ${subjects.length} subjects · ${lessons.length} lessons · ${catecheses.items.length} audiences · ${videos.items.length} videos · ${backgrounds.length} backgrounds · ${shortCats.length} short catecheses · ${studies.length} study texts (${studies.reduce((n, x) => n + x.nl, 0)} words nl) · v${index.version}`,
 );
