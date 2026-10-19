@@ -162,7 +162,20 @@
       "roleEn": "Withdrew celibacy from debate, promulgated the decree and wrote *Sacerdotalis caelibatus*."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "trent",
+      "section": 0,
+      "captionNl": "Pasquale Cati, Het Concilie van Trente (1588). Trente legde de leer over het wijdingssacrament en het offer van de mis vast, die eeuwenlang het beeld van de priester bepaalde.",
+      "captionEn": "Pasquale Cati, The Council of Trent (1588). Trent defined the teaching on holy orders and the sacrifice of the Mass that shaped the image of the priest for centuries."
+    },
+    {
+      "imageId": "ordination",
+      "section": 5,
+      "captionNl": "Priesterwijding door bisschop László Huzsvár in Zrenjanin (Servië), 6 januari 2007. De pas gewijde priesters concelebreren met hun bisschop.",
+      "captionEn": "Priestly ordination by Bishop László Huzsvár in Zrenjanin, Serbia, 6 January 2007. The newly ordained priests concelebrate with their bishop."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "Hünermann, P., & Hilberath, B. J. (Eds.). (2004–2006). Herders theologischer Kommentar zum Zweiten Vatikanischen Konzil (Vols. 1–5). Herder.",

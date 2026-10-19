@@ -179,7 +179,26 @@
       "roleEn": "Established the Synod of Bishops, promulgated the decree and reformed the Curia in 1967."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "vatican-i",
+      "section": 0,
+      "captionNl": "Het Eerste Vaticaans Concilie, 1870. Na de definitie van het pauselijk primaat werd het geschorst voordat het een leer over de bisschoppen kon vaststellen.",
+      "captionEn": "The First Vatican Council, 1870. After defining the papal primacy it was suspended before it could set out a teaching on the bishops."
+    },
+    {
+      "imageId": "ottaviani-council",
+      "section": 2,
+      "captionNl": "Kardinaal Alfredo Ottaviani, secretaris van het Heilig Officie. In november 1963 kwamen in het debat over de bisschoppen ook de werkwijze van de Curie en de collegialiteit scherp ter sprake. Foto Lothar Wolleh.",
+      "captionEn": "Cardinal Alfredo Ottaviani, Secretary of the Holy Office. In November 1963 the debate on the bishops also turned sharply to the methods of the Curia and to collegiality. Photograph by Lothar Wolleh."
+    },
+    {
+      "imageId": "council-fathers",
+      "section": 4,
+      "captionNl": "Concilievaders in hun banken tijdens een zitting. Foto Lothar Wolleh.",
+      "captionEn": "Council Fathers in their benches during a session. Photograph by Lothar Wolleh."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "Hünermann, P., & Hilberath, B. J. (Eds.). (2004–2006). Herders theologischer Kommentar zum Zweiten Vatikanischen Konzil (Vols. 1–5). Herder.",
