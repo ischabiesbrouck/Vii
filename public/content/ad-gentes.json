@@ -5,6 +5,40 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "AG-1",
+      "docId": "ad-gentes",
+      "number": 1,
+      "textEn": "Having been divinely sent to the nations of the world to be unto them “a universal sacrament of salvation,” the Church, driven by the inner necessity of her own catholicity, and obeying the mandate of her Founder (cf. Mark 16:16), strives ever to proclaim the Gospel to all men.",
+      "textNl": "Door God gezonden naar de volken om voor hen het “universeel sacrament van het heil” te zijn, tracht de Kerk, gedreven door de innerlijke noodzaak van haar eigen katholiciteit en gehoorzaam aan de opdracht van haar Stichter (vgl. Marcus 16,16), het evangelie aan alle mensen te verkondigen.",
+      "textLa": "Ad gentes divinitus missa ut sit «universale salutis sacramentum», Ecclesia …",
+      "tags": [
+        "mission",
+        "ecclesiology",
+        "sacrament"
+      ],
+      "crossRefs": [
+        "LG-1",
+        "LG-48",
+        "AG-2"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De inleiding zegt waarom het decreet er is. De Kerk is door God naar de volken gezonden om voor hen het universeel sacrament van het heil te zijn. Gedreven door haar katholiciteit en gehoorzaam aan de opdracht van Christus verkondigt zij het evangelie aan alle mensen. De apostelen hebben het woord verkondigd en Kerken gesticht; hun opvolgers zetten dat werk voort. In een wereld die snel verandert, wil het Concilie de beginselen van de missionaire activiteit vastleggen en de krachten van alle gelovigen bundelen.",
+          "who": "Het Concilie spreekt samen met Paulus VI in een decreet tot de hele Kerk: bisschoppen, priesters, religieuzen en leken. Het spreekt ook over de volken die het evangelie nog niet kennen, en over de apostelen en hun opvolgers als dragers van de zending. Missionarissen zelf komen pas in latere hoofdstukken uitdrukkelijk aan bod.",
+          "why": "Rond 1960 werden veel landen in Afrika en Azië onafhankelijk. Het oude beeld van missie als werk in verre gebieden onder de Congregatie de Propaganda Fide, vaak in de schaduw van koloniale macht, moest worden herdacht. Een eerste korte reeks stellingen werd in november 1964 door de vaders als te mager beoordeeld. De volledig herschreven tekst kon in 1965 steunen op de inmiddels afgekondigde Lumen Gentium.",
+          "how": "De inleiding is kort en zet de toon voor het hele decreet. Zij citeert LG §48, waar de Kerk het universeel sacrament van het heil heet, en verwijst naar de zendingsopdracht van Marcus 16. Daarna volgt een historische lijn van de apostelen naar hun opvolgers, en ten slotte een blik op de eigen tijd. Hoofdstuk I (AG §2-9) geeft daarna de leerstellige grondslag.",
+          "meaning": "Sacrament van het heil betekent, zoals LG §1 uitlegt, teken en werktuig van de vereniging met God en van de eenheid van het mensdom. Katholiciteit is hier geen statistisch begrip; de Kerk is voor alle volken bestemd en daarom innerlijk gedreven tot zending. De Catechismus (nr. 849-856) gebruikt deze paragraaf als opening van zijn uitleg over de zending. Het decreet doelt niet op uitbreiding van macht; het spreekt van een opdracht die uit het wezen van de Kerk voortkomt."
+        },
+        "en": {
+          "what": "The preface states why the decree exists. The Church has been sent by God to the nations to be for them the universal sacrament of salvation. Driven by her catholicity and obedient to Christ's command, she proclaims the Gospel to all people. The apostles preached the word and founded Churches; their successors carry the work on. In a rapidly changing world the Council wishes to set out the principles of missionary activity and to gather the energies of all the faithful.",
+          "who": "The Council speaks with Paul VI in a decree addressed to the whole Church: bishops, priests, religious and laity. It also speaks of the peoples who do not yet know the Gospel, and of the apostles and their successors as bearers of the mission. The missionaries themselves come explicitly into view only in later chapters.",
+          "why": "Around 1960 many countries in Africa and Asia became independent. The older picture of mission as work in distant territories under the Congregation de Propaganda Fide, often in the shadow of colonial power, had to be rethought. A first short series of propositions was judged too meagre by the Fathers in November 1964. The wholly rewritten text of 1965 could draw on Lumen Gentium, by then promulgated.",
+          "how": "The preface is short and sets the tone of the whole decree. It quotes LG §48, where the Church is called the universal sacrament of salvation, and refers to the missionary command of Mark 16. A historical line from the apostles to their successors follows, and finally a look at the present age. Chapter I (AG §2-9) then provides the doctrinal foundation.",
+          "meaning": "Sacrament of salvation means, as LG §1 explains, sign and instrument of union with God and of the unity of the human race. Catholicity is not a statistical notion here; the Church is meant for all peoples and is therefore inwardly driven to mission. The Catechism (nos. 849-856) uses this paragraph to open its account of mission. The decree has no expansion of power in view; it speaks of a task that flows from what the Church is."
+        }
+      }
+    },
+    {
       "id": "AG-2",
       "docId": "ad-gentes",
       "number": 2,
@@ -19,7 +53,56 @@
       "crossRefs": [
         "AG-7",
         "LG-1"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De pelgrimerende Kerk is uit haar aard missionair. Zij vindt haar oorsprong in de zending van de Zoon en de zending van de heilige Geest, volgens het plan van de Vader. Dat plan komt voort uit de liefde van de Vader, die als een bron alles voortbrengt. God wil de mensen laten delen in zijn eigen leven, en hen niet alleen als afzonderlijke personen roepen, maar hen samenbrengen tot een volk. Zo is de zending van de Kerk ingebed in het leven van de Drie-ene God zelf.",
+          "who": "De paragraaf spreekt over God: de Vader die het plan van het heil heeft, de Zoon en de Geest die gezonden worden. Hij spreekt over de Kerk als geheel en heeft alle gelovigen op het oog. Hij is niet in de eerste plaats tot missionarissen gericht; hij beschrijft wat de Kerk als zodanig is.",
+          "why": "Lang werd missie vooral juridisch en praktisch omschreven: het werk van bepaalde personen in bepaalde gebieden. Het ontwerp dat de vaders in 1964 te mager vonden, had weinig theologische grondslag. Bij de herschrijving in 1965 werd hoofdstuk I nieuw opgebouwd vanuit de triniteitsleer. Volgens de bekende gegevens werkten Yves Congar en Joseph Ratzinger daar in het bijzonder aan.",
+          "how": "AG §2 opent hoofdstuk I, over de leerstellige beginselen (AG §2-9). De redenering gaat van de Vader (AG §2) naar de zending van de Zoon (AG §3) en de Geest (AG §4), en vandaar naar de apostelen en de Kerk (AG §5). De paragraaf sluit aan bij de trinitarische opening van Lumen Gentium (LG §2-4) en past de klassieke leer over de goddelijke zendingen toe op de Kerk.",
+          "meaning": "Uit haar aard missionair betekent dat zending geen bijkomende activiteit is die de Kerk ook zou kunnen nalaten. Paulus VI noemde evangeliseren in Evangelii nuntiandi (1975) de diepste identiteit van de Kerk; de Catechismus behandelt het in nr. 850. De paragraaf heft het onderscheid tussen missie onder volken die Christus niet kennen en gewone zielzorg niet op; dat onderscheid maakt AG §6 uitdrukkelijk."
+        },
+        "en": {
+          "what": "The pilgrim Church is missionary by her very nature. She has her origin in the mission of the Son and the mission of the Holy Spirit, in accordance with the plan of the Father. That plan springs from the Father's love, which like a fountain brings everything forth. God wills to let people share in his own life, and calls them not merely as individuals but gathers them into a people. The mission of the Church is thus embedded in the life of the Triune God himself.",
+          "who": "The paragraph speaks of God: the Father who has the plan of salvation, and the Son and the Spirit who are sent. It speaks of the Church as a whole and has all the faithful in view. It is not addressed first to missionaries; it describes what the Church as such is.",
+          "why": "For a long time mission was described chiefly in juridical and practical terms: the work of certain people in certain territories. The draft the Fathers found too meagre in 1964 had little theological foundation. In the 1965 rewriting chapter I was rebuilt from the doctrine of the Trinity. According to the known record, Yves Congar and Joseph Ratzinger worked on it in particular.",
+          "how": "AG §2 opens chapter I, on doctrinal principles (AG §2-9). The argument runs from the Father (AG §2) to the mission of the Son (AG §3) and of the Spirit (AG §4), and from there to the apostles and the Church (AG §5). The paragraph follows the Trinitarian opening of Lumen Gentium (LG §2-4) and applies the classical teaching on the divine missions to the Church.",
+          "meaning": "Missionary by her very nature means that mission is no additional activity the Church might also leave aside. In Evangelii nuntiandi (1975) Paul VI called evangelising the deepest identity of the Church; the Catechism treats it in no. 850. The paragraph does not erase the distinction between mission among peoples who do not know Christ and ordinary pastoral care; AG §6 makes that distinction explicitly."
+        }
+      }
+    },
+    {
+      "id": "AG-6",
+      "docId": "ad-gentes",
+      "number": 6,
+      "textEn": "The special undertakings in which preachers of the Gospel, sent by the Church and going into the whole world, carry out the work of preaching the Gospel and planting the Church among peoples or groups who do not yet believe in Christ, are generally called “missions.” … The proper purpose of this missionary activity is evangelization, and the planting of the Church among those peoples and groups where it has not yet taken root.",
+      "textNl": "De bijzondere ondernemingen waarin verkondigers van het evangelie, door de Kerk gezonden en uitgaand over de hele wereld, het werk verrichten van de verkondiging van het evangelie en de planting van de Kerk onder volken of groepen die nog niet in Christus geloven, worden gewoonlijk “missies” genoemd. … Het eigen doel van deze missionaire activiteit is de evangelisatie en de planting van de Kerk onder die volken en groepen waar zij nog geen wortel heeft geschoten.",
+      "tags": [
+        "mission",
+        "evangelisation",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "AG-2",
+        "AG-7",
+        "UR-1"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De ene zending van de Kerk wordt onder verschillende omstandigheden uitgeoefend. Missies in de eigenlijke zin zijn de ondernemingen waarin door de Kerk gezonden verkondigers het evangelie brengen en de Kerk planten onder volken of groepen die nog niet in Christus geloven. Het doel is evangelisatie en de planting van de Kerk waar zij nog geen wortel heeft. Het belangrijkste middel is de verkondiging van het evangelie. Missionaire activiteit onderscheidt zich van de zielzorg onder gelovigen en van het streven naar christelijke eenheid, maar hangt er nauw mee samen.",
+          "who": "De paragraaf spreekt over de bisschoppen als eerste verantwoordelijken, over de verkondigers die de Kerk uitzendt, en over volken en groepen die Christus nog niet kennen. Hij spreekt ook over christenen in het algemeen, omdat hun verdeeldheid het getuigenis tegenover de volken schaadt.",
+          "why": "In de katholieke missiologie bestonden twee accenten. De school van Münster rond Joseph Schmidlin legde de nadruk op verkondiging en bekering, de school van Leuven rond Pierre Charles op de planting van de Kerk. Het Concilie moest bovendien omschrijven wat missie was in een tijd waarin missiegebieden zelfstandige Kerken werden.",
+          "how": "Na de leerstellige grondslag in AG §2-5 geeft AG §6 een definitie. De tekst verbindt beide missiologische accenten in één formule: evangelisatie en planting van de Kerk. Daarna maakt hij onderscheidingen tussen missionaire, pastorale en oecumenische activiteit. De verwijzing naar de verdeeldheid van de christenen sluit aan bij UR §1, dat die verdeeldheid een ergernis voor de wereld noemt.",
+          "meaning": "Planting van de Kerk (plantatio Ecclesiae) betekent de vorming van een plaatselijke Kerk met eigen geestelijkheid, sacramenteel leven en instellingen, die op haar beurt missionair wordt. Johannes Paulus II onderscheidde in Redemptoris missio (1990, nr. 33) in dezelfde lijn drie situaties: missie onder wie Christus niet kent, gewone zielzorg, en nieuwe evangelisatie in landen van oude christelijke traditie. De onderscheiding dient om de eigen taak van de missie niet te laten verdwijnen in algemene kerkelijke activiteit."
+        },
+        "en": {
+          "what": "The one mission of the Church is carried out in different circumstances. Missions in the proper sense are the undertakings in which preachers sent by the Church bring the Gospel and plant the Church among peoples or groups who do not yet believe in Christ. Their aim is evangelisation and the planting of the Church where she has not yet taken root. Its chief means is preaching. It is distinct from pastoral care of the faithful and from work for Christian unity, yet bound up with both.",
+          "who": "The paragraph speaks of the bishops as those chiefly responsible, of the preachers the Church sends, and of peoples and groups who do not yet know Christ. It also speaks of Christians in general, since their division harms the witness before the nations.",
+          "why": "Catholic missiology had two emphases. The Münster school around Joseph Schmidlin stressed proclamation and conversion, the Louvain school around Pierre Charles the planting of the Church. The Council also had to define mission at a time when mission territories were becoming self-standing Churches.",
+          "how": "After the doctrinal foundation in AG §2-5, AG §6 offers a definition. The text joins the two missiological emphases in one formula: evangelisation and the planting of the Church. It then distinguishes missionary, pastoral and ecumenical activity. The reference to the division of Christians echoes UR §1, which calls that division a scandal to the world.",
+          "meaning": "Planting the Church (plantatio Ecclesiae) means the formation of a local Church with its own clergy, sacramental life and institutions, which becomes missionary in turn. In the same line John Paul II distinguished three situations in Redemptoris missio (1990, no. 33): mission among those who do not know Christ, ordinary pastoral care, and new evangelisation in countries of ancient Christian tradition. The distinction keeps the proper task of mission from dissolving into Church activity in general."
+        }
+      }
     },
     {
       "id": "AG-7",
@@ -37,7 +120,23 @@
         "LG-16",
         "NA-2",
         "ext:redemptoris-missio-1990"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "De paragraaf geeft de reden van de missionaire activiteit. God wil dat alle mensen gered worden, en Christus is de enige middelaar. Geloof en doopsel zijn nodig, en dus ook de Kerk, waarin men door het doopsel binnengaat. God kan mensen die buiten eigen schuld het evangelie niet kennen, langs wegen die Hij kent tot het geloof brengen. Toch rust op de Kerk de noodzaak en de heilige plicht het evangelie te verkondigen. Door de missie wordt God verheerlijkt en wordt zijn plan met de mensheid voltooid.",
+          "who": "Het Concilie spreekt tot de hele Kerk, die de plicht tot verkondiging draagt. Het spreekt over mensen die het evangelie niet kennen, en onderscheidt hen die buiten eigen schuld onwetend zijn van hen die de Kerk als noodzakelijk kennen en toch weigeren binnen te gaan of te blijven.",
+          "why": "De vraag naar het heil van wie buiten de zichtbare Kerk staat, was vóór het Concilie scherp gesteld. In 1949 had het Heilig Officie in een brief aan aartsbisschop Cushing van Boston de strikte lezing van Leonard Feeney afgewezen. Tegelijk groeide de vrees dat de erkenning van heil buiten de Kerk de missie overbodig zou maken. AG §7 antwoordt op die vrees.",
+          "how": "De paragraaf is een redenering in stappen. Hij vertrekt van 1 Timoteüs 2 over Gods heilswil en de ene middelaar, herhaalt LG §14 over de noodzaak van de Kerk, en formuleert dan een zin in twee helften met hoewel en toch. Hebreeën 11,6, over het geloof zonder hetwelk men God niet kan behagen, wordt in die zin verwerkt. Daarna volgt de doxologische slotgedachte: missie verheerlijkt God.",
+          "meaning": "De zin houdt twee waarheden samen: Gods vrijheid om te redden en de plicht van de Kerk te verkondigen. Theologen verschillen over hoe ruim de hoop van LG §16 is. Karl Rahner sprak van anonieme christenen; Hans Urs von Balthasar en later Ralph Martin leggen de nadruk op de voorwaarden en de waarschuwing in dezelfde tekst. Redemptoris missio (1990) en de Catechismus (nr. 846-848) houden vast aan beide helften. Missie is volgens de tekst dus nooit overbodig."
+        },
+        "en": {
+          "what": "The paragraph gives the reason for missionary activity. God wills all people to be saved, and Christ is the one mediator. Faith and baptism are necessary, and with them the Church, which people enter through baptism. God can lead those who through no fault of their own do not know the Gospel to faith, in ways known to himself. Yet the necessity and the sacred duty of preaching the Gospel rest on the Church. Through mission God is glorified and his plan for humanity is brought to completion.",
+          "who": "The Council addresses the whole Church, which carries the duty to proclaim. It speaks of people who do not know the Gospel, and distinguishes those who are ignorant through no fault of their own from those who know the Church to be necessary and still refuse to enter or remain in her.",
+          "why": "Before the Council the question of the salvation of those outside the visible Church had been sharply posed. In 1949 the Holy Office, in a letter to Archbishop Cushing of Boston, had rejected the strict reading of Leonard Feeney. At the same time there was growing fear that recognising salvation outside the Church would make mission superfluous. AG §7 answers that fear.",
+          "how": "The paragraph argues step by step. It starts from 1 Timothy 2 on God's saving will and the one mediator, repeats LG §14 on the necessity of the Church, and then forms a sentence in two halves joined by though and yet. Hebrews 11:6, on the faith without which it is impossible to please God, is worked into that sentence. A doxological conclusion follows: mission gives glory to God.",
+          "meaning": "The sentence holds two truths together: God's freedom to save and the Church's duty to proclaim. Theologians differ on how wide the hope of LG §16 is. Karl Rahner spoke of anonymous Christians; Hans Urs von Balthasar and later Ralph Martin stress the conditions and the warning in the same text. Redemptoris missio (1990) and the Catechism (nos. 846-848) hold on to both halves. According to the text, mission is therefore never superfluous."
+        }
+      }
     },
     {
       "id": "AG-11",
@@ -55,7 +154,88 @@
         "AG-7"
       ],
       "noteNl": "'Zaden van het Woord' (semina Verbi) is een uitdrukking van Justinus de Martelaar (2e eeuw).",
-      "noteEn": "'Seeds of the Word' (semina Verbi) is an expression of Justin Martyr (2nd century)."
+      "noteEn": "'Seeds of the Word' (semina Verbi) is an expression of Justin Martyr (2nd century).",
+      "explain": {
+        "nl": {
+          "what": "De paragraaf opent het artikel over het christelijk getuigenis. Christenen die onder andere volken leven, moeten door hun leven en woord de nieuwe mens tonen die zij in het doopsel zijn geworden. Daarom moeten zij de mensen onder wie zij leven goed kennen, deelnemen aan hun culturele en sociale leven, en vertrouwd raken met hun nationale en religieuze tradities. Met vreugde en eerbied moeten zij de zaden van het Woord ontdekken die daarin verborgen liggen, en tegelijk letten op de veranderingen die de volken doormaken.",
+          "who": "De tekst richt zich tot alle christenen die onder niet-christenen leven, leken zowel als missionarissen. Hij spreekt over de volken met hun culturen en godsdiensten, en over Christus, die zelf de harten van mensen kende en door een waarlijk menselijke omgang tot het goddelijk licht bracht.",
+          "why": "In de koloniale periode werden missie en Europese cultuur vaak verward. Na de dekolonisatie vroegen bisschoppen uit Afrika en Azië om meer eerbied voor de culturen van hun volken. Het Concilie greep terug op de vroege Kerk, waar Justinus de Martelaar in de Griekse wijsbegeerte fragmenten van de Logos zag. NA §2 had kort daarvoor gesproken van wat waar en heilig is in de godsdiensten.",
+          "how": "AG §11 staat aan het begin van hoofdstuk II, over het missiewerk zelf. Het eerste artikel gaat over het getuigenis (AG §11-12), het tweede over de verkondiging (AG §13-14), het derde over de vorming van de christelijke gemeenschap (AG §15-18). De volgorde is betekenisvol: aanwezigheid en getuigenis gaan vooraf aan het woord. De paragraaf gebruikt de uitdrukking van Justinus en het voorbeeld van Christus in de omgang met mensen.",
+          "meaning": "Zaden van het Woord (semina Verbi) zijn sporen van waarheid in culturen en godsdiensten die naar Christus wijzen. Zaden zijn nog geen oogst; zij moeten aan het licht gebracht, gezuiverd en voltooid worden, zoals LG §17 zegt. De Catechismus (nr. 843) spreekt van voorbereiding op het evangelie. Dominus Iesus (2000) waarschuwt ervoor deze waardering niet te lezen als gelijkstelling van de godsdiensten met het evangelie."
+        },
+        "en": {
+          "what": "The paragraph opens the article on Christian witness. Christians who live among other peoples must show, by life and word, the new person they became in baptism. They should therefore know well the people among whom they live, take part in their cultural and social life, and become familiar with their national and religious traditions. Gladly and reverently they should lay bare the seeds of the Word hidden in them, while also attending to the changes these peoples are undergoing.",
+          "who": "The text addresses all Christians who live among non-Christians, lay people as well as missionaries. It speaks of the peoples with their cultures and religions, and of Christ, who himself knew the hearts of people and led them to divine light through a truly human way of dealing with them.",
+          "why": "In the colonial period mission and European culture were often confused. After decolonisation bishops from Africa and Asia asked for greater respect for the cultures of their peoples. The Council reached back to the early Church, where Justin Martyr saw fragments of the Logos in Greek philosophy. Shortly before, NA §2 had spoken of what is true and holy in the religions.",
+          "how": "AG §11 stands at the start of chapter II, on missionary work itself. Its first article treats witness (AG §11-12), the second preaching (AG §13-14), the third the forming of the Christian community (AG §15-18). The order is telling: presence and witness come before the word. The paragraph uses Justin's expression and the example of Christ in his dealings with people.",
+          "meaning": "Seeds of the Word (semina Verbi) are traces of truth in cultures and religions that point toward Christ. Seeds are not yet a harvest; they must be brought to light, purified and completed, as LG §17 says. The Catechism (no. 843) speaks of a preparation for the Gospel. Dominus Iesus (2000) warns against reading this esteem as placing the religions on a level with the Gospel."
+        }
+      }
+    },
+    {
+      "id": "AG-22",
+      "docId": "ad-gentes",
+      "number": 22,
+      "textEn": "In harmony with the economy of the Incarnation, the young churches, rooted in Christ and built up on the foundation of the Apostles, take to themselves in a wonderful exchange all the riches of the nations which were given to Christ as an inheritance (cf. Ps. 2:8).",
+      "textNl": "In overeenstemming met de heilseconomie van de menswording nemen de jonge Kerken, geworteld in Christus en gebouwd op het fundament van de apostelen, in een wonderbare uitwisseling alle rijkdommen van de volken op, die Christus in erfenis zijn gegeven (vgl. Psalm 2,8).",
+      "tags": [
+        "mission",
+        "evangelisation",
+        "tradition"
+      ],
+      "crossRefs": [
+        "AG-11",
+        "AG-6"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het zaad van het woord van God groeit in goede grond en neemt daaruit zijn voeding op. Zo nemen de jonge Kerken, geworteld in Christus en gebouwd op de apostelen, de rijkdommen van de volken op: hun gebruiken en tradities, hun wijsheid en kennis, hun kunsten. In elk groot sociaal-cultureel gebied moet theologisch onderzoek nagaan hoe geloof en leven zich daar kunnen uitdrukken. Zo worden syncretisme en valse particularisme vermeden, en blijven de bijzondere tradities verbonden in de eenheid van de Kerk.",
+          "who": "De paragraaf spreekt over de jonge Kerken, die in hoofdstuk III (AG §19-22) centraal staan, en tot hun bisschoppen, theologen en gelovigen. Hij spreekt ook over de volken met hun culturen, die als erfenis aan Christus zijn gegeven, en over de bisschoppenconferenties die in grote culturele gebieden moeten samenwerken.",
+          "why": "De vraag hoe het evangelie zich in een niet-Europese cultuur kan uitdrukken, was oud. In de ritenstrijd had Benedictus XIV in 1742 de Chinese riten verboden; Pius XII stond ze in 1939 onder voorwaarden toe. Rond het Concilie werden in Afrika en Azië Kerken met een eigen bisschoppen en clerus zelfstandig. Bisschoppen uit die regio's vroegen dat hun Kerken niet langer als kopieën van Europa zouden gelden.",
+          "how": "De paragraaf werkt met beelden: zaad en grond, menswording en uitwisseling. De analogie met de menswording draagt het argument: zoals het Woord vlees werd in een bepaalde cultuur, zo neemt de Kerk aan wat goed is in de volken. Psalm 2,8 wordt aangehaald voor de volken als erfenis van Christus. Daarna volgen praktische aanwijzingen voor theologisch onderzoek en samenwerking in grote culturele gebieden.",
+          "meaning": "Het woord inculturatie komt in de tekst niet voor; het werd later gangbaar en door Johannes Paulus II gebruikt in Catechesi tradendae (1979, nr. 53) en Redemptoris missio (1990, nr. 52-54). De wonderbare uitwisseling veronderstelt dat de cultuur gezuiverd en verheven wordt. Over de grenzen van aanpassing, ook in de liturgie (vgl. SC §37-40), lopen de meningen uiteen: sommigen vrezen verlies van eenheid, anderen te weinig ruimte voor eigenheid."
+        },
+        "en": {
+          "what": "The seed of God's word grows in good soil and draws its nourishment from it. In the same way the young Churches, rooted in Christ and built on the apostles, take up the riches of the nations: their customs and traditions, their wisdom and learning, their arts. In each great socio-cultural area theological research should consider how faith and life can find expression there. Syncretism and false particularism are thus avoided, and the particular traditions remain joined in the unity of the Church.",
+          "who": "The paragraph speaks of the young Churches, which are the subject of chapter III (AG §19-22), and to their bishops, theologians and faithful. It also speaks of the nations with their cultures, given to Christ as an inheritance, and of the episcopal conferences that are to work together within great cultural areas.",
+          "why": "How the Gospel could find expression in a non-European culture was an old question. In the Rites controversy Benedict XIV had forbidden the Chinese rites in 1742; Pius XII allowed them under conditions in 1939. Around the time of the Council, Churches with their own bishops and clergy were becoming self-standing in Africa and Asia. Bishops from those regions asked that their Churches no longer be treated as copies of Europe.",
+          "how": "The paragraph works with images: seed and soil, incarnation and exchange. The analogy with the Incarnation carries the argument: as the Word became flesh within a particular culture, so the Church takes up what is good in the nations. Psalm 2:8 is cited for the nations as Christ's inheritance. Practical directions follow for theological research and cooperation in great cultural areas.",
+          "meaning": "The word inculturation does not occur in the text; it became current later and was used by John Paul II in Catechesi tradendae (1979, no. 53) and Redemptoris missio (1990, nos. 52-54). The wonderful exchange assumes that culture is purified and raised up. Opinions differ on the limits of adaptation, also in the liturgy (cf. SC §37-40): some fear a loss of unity, others too little room for what is proper to each people."
+        }
+      }
+    },
+    {
+      "id": "AG-35",
+      "docId": "ad-gentes",
+      "number": 35,
+      "textEn": "Since the whole Church is missionary, and the work of evangelization is a basic duty of the People of God, this sacred synod invites all to a deep interior renewal …",
+      "textNl": "Omdat heel de Kerk missionair is en het werk van de evangelisatie een fundamentele plicht van het volk van God is, nodigt deze heilige Synode allen uit tot een diepe innerlijke vernieuwing …",
+      "tags": [
+        "mission",
+        "people-of-god",
+        "evangelisation"
+      ],
+      "crossRefs": [
+        "AG-2",
+        "LG-33",
+        "ext:redemptoris-missio-1990"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Hoofdstuk VI begint met de grondgedachte van de samenwerking. Omdat heel de Kerk missionair is en evangelisatie een fundamentele plicht van het volk van God, nodigt het Concilie allen uit tot een diepe innerlijke vernieuwing. Wie zich levendig bewust is van de eigen verantwoordelijkheid voor de verspreiding van het evangelie, zal zijn deel nemen in het missiewerk onder de volken. Missie wordt zo een zaak van alle gelovigen.",
+          "who": "De paragraaf spreekt tot alle leden van het volk van God. De volgende paragrafen werken dat uit voor de afzonderlijke groepen: alle gelovigen (AG §36), de gemeenschappen (AG §37), de bisschoppen (AG §38), de priesters (AG §39), de instituten van volmaaktheid (AG §40) en de leken (AG §41).",
+          "why": "Lang was de missie in de praktijk vooral een zaak van missionarissen, ordes en congregaties, gesteund door de pauselijke missiewerken. Pius XII had in Fidei donum (1957) bisschoppen gevraagd priesters ter beschikking te stellen voor andere Kerken, vooral in Afrika. Het Concilie trekt die lijn door: als de zending uit de aard van de Kerk voortkomt (AG §2), dan dragen alle gelovigen er verantwoordelijkheid voor.",
+          "how": "De paragraaf is kort en heeft het karakter van een uitnodiging. Hij trekt de conclusie uit het leerstellige hoofdstuk I en sluit aan bij LG §17, dat elke leerling van Christus de plicht toekent het geloof naar vermogen te verspreiden. Hij opent hoofdstuk VI (AG §35-41), dat de bijdrage van ieder afzonderlijk uitwerkt, vóór het besluit in AG §42.",
+          "meaning": "Fundamentele plicht betekent dat geen gelovige van deze verantwoordelijkheid ontslagen is, ook al zijn niet allen geroepen om als missionaris uit te gaan. Gebed, offer en steun tellen evengoed mee. Johannes Paulus II schreef in Redemptoris missio (1990, nr. 2) dat de missie de Kerk vernieuwt. Franciscus sprak in Evangelii gaudium (2013, nr. 120) van alle gedoopten als missionaire leerlingen. De tekst bedoelt geen activisme; hij vraagt eerst innerlijke vernieuwing."
+        },
+        "en": {
+          "what": "Chapter VI opens with the basic idea of cooperation. Since the whole Church is missionary and evangelisation is a basic duty of the People of God, the Council invites all to a deep interior renewal. Those who are vividly aware of their own responsibility for spreading the Gospel will take their share in missionary work among the nations. Mission thereby becomes the concern of all the faithful.",
+          "who": "The paragraph addresses all members of the People of God. The following paragraphs work this out for particular groups: all the faithful (AG §36), communities (AG §37), bishops (AG §38), priests (AG §39), institutes of perfection (AG §40) and the laity (AG §41).",
+          "why": "For a long time mission was in practice mainly the concern of missionaries, orders and congregations, supported by the pontifical mission societies. In Fidei donum (1957) Pius XII had asked bishops to make priests available to other Churches, especially in Africa. The Council extends that line: if mission flows from the nature of the Church (AG §2), all the faithful carry responsibility for it.",
+          "how": "The paragraph is short and takes the form of an invitation. It draws the conclusion from the doctrinal chapter I and connects with LG §17, which assigns to every disciple of Christ the duty of spreading the faith according to his ability. It opens chapter VI (AG §35-41), which works out each group's contribution, before the conclusion in AG §42.",
+          "meaning": "Basic duty means that no believer is released from this responsibility, even though not all are called to go out as missionaries. Prayer, sacrifice and support count as well. John Paul II wrote in Redemptoris missio (1990, no. 2) that mission renews the Church. Francis spoke in Evangelii gaudium (2013, no. 120) of all the baptised as missionary disciples. The text does not mean activism; it asks first for interior renewal."
+        }
+      }
     }
   ]
 }
