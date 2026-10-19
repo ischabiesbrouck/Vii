@@ -46,7 +46,7 @@ const nl: Guide = {
   ],
   tabs: { content: 'Inhoud', tech: 'Werking', install: 'Installeren' },
   content: [
-    { icon: 'documents', title: 'De zestien documenten', text: 'Vier constituties, negen decreten en drie verklaringen, met paragraafnummers. Per paragraaf een excerpt in Nederlandse werkvertaling, vaak met het Latijn; de officiële tekst staat op vatican.va.', to: '/documents', link: 'Naar de documenten' },
+    { icon: 'documents', title: 'De zestien documenten', text: 'Vier constituties, negen decreten en drie verklaringen, met paragraafnummers. Bij elk excerpt een uitleg: wat er staat, tot wie, waarom, hoe en wat bedoeld wordt. Per document ook de geschiedenis van het ontstaan, met foto’s; de officiële tekst staat op vatican.va.', to: '/documents', link: 'Naar de documenten' },
     { icon: 'course', title: 'Cursus in tien lectiones', text: 'Van de aankondiging in 1959 tot de receptie vandaag. Elke les sluit af met een korte kennischeck op feiten, niet op overtuiging.', to: '/learn', link: 'Naar de cursus' },
     { icon: 'subjects', title: 'Zestien onderwerpen', text: 'Studiepaden langs de kernparagrafen, elk met een doorlopende studietekst in hoofdstukken, met schema’s, afbeeldingen en literatuur.', to: '/subjects', link: 'Naar de onderwerpen' },
     { icon: 'catechesis', title: 'Catecheses', text: 'Twaalf korte catecheses die bij een vraag beginnen, en het register van de audiënties van paus Leo XIV over het Concilie.', to: '/catechesis', link: 'Naar de catecheses' },
@@ -64,7 +64,7 @@ const nl: Guide = {
   tech: [
     { icon: 'offline', title: 'Offline en privé', text: 'Na het eerste bezoek staan teksten, zoekindex en afbeeldingen op uw apparaat. Er is geen account en geen tracking. Alleen een video die u zelf start, of een online voorleesstem, maakt verbinding.' },
     { icon: 'search', title: 'Zoeken', text: 'Snel zoeken opent met Ctrl K (⌘ K op een Mac), met / of via het vergrootglas. De zoekpagina doorzoekt alle paragrafen, studieteksten, catecheses, claims en begrippen, ook offline.' },
-    { icon: 'reader', title: 'De lezer', text: 'Tik op een paragraaf, of gebruik de knop ernaast, voor citatie, bladwijzer en verwijzingen. Lang indrukken kopieert de citatie. In de werkbalk: inhoud, sprong naar een paragraaf, focusmodus en lettergrootte.' },
+    { icon: 'reader', title: 'De lezer', text: 'Tik op een excerpt, waar ook in de app, of op de knop Uitleg, voor de uitleg, citatie, bladwijzer en verwijzingen. Lang indrukken kopieert de citatie. In de werkbalk: inhoud, sprong naar een paragraaf, focusmodus en lettergrootte.' },
     { icon: 'listen', title: 'Voorlezen', text: 'Studieteksten, catecheses en documenten hebben een knop Voorlezen. De app kiest de beste mannenstem op uw apparaat; stem en snelheid wijzigt u in de spelerbalk of bij Instellingen. Spatie pauzeert, Esc stopt.' },
     { icon: 'display', title: 'Weergave', text: 'Licht of donker, Nederlands of Engels, lettergrootte en volledig scherm vindt u bij Instellingen in het menu, en op de computer in de bovenste balk.' },
     { icon: 'progress', title: 'Voortgang', text: 'Gelezen hoofdstukken, afgeronde lessen en bladwijzers worden alleen op dit apparaat bewaard. Wist u de websitegegevens van de browser, dan verdwijnen ze.' },
@@ -93,7 +93,7 @@ const en: Guide = {
   ],
   tabs: { content: 'Contents', tech: 'How it works', install: 'Install' },
   content: [
-    { icon: 'documents', title: 'The sixteen documents', text: 'Four constitutions, nine decrees and three declarations, with paragraph numbers. Each paragraph has an excerpt in English, often with the Latin; the official text is on vatican.va.', to: '/documents', link: 'To the documents' },
+    { icon: 'documents', title: 'The sixteen documents', text: 'Four constitutions, nine decrees and three declarations, with paragraph numbers. Every excerpt has an explanation: what it says, to whom, why, how and what is meant. Each document also has the history of how it came about, with photographs; the official text is on vatican.va.', to: '/documents', link: 'To the documents' },
     { icon: 'course', title: 'A course in ten lectiones', text: 'From the announcement in 1959 to the reception today. Each lesson ends with a short knowledge check on facts, not on belief.', to: '/learn', link: 'To the course' },
     { icon: 'subjects', title: 'Sixteen subjects', text: 'Study paths through the key paragraphs, each with a continuous study text in chapters, with diagrams, images and literature.', to: '/subjects', link: 'To the subjects' },
     { icon: 'catechesis', title: 'Catecheses', text: 'Twelve short catecheses that begin with a question, and the register of Pope Leo XIV’s general audiences on the Council.', to: '/catechesis', link: 'To the catecheses' },
@@ -111,7 +111,7 @@ const en: Guide = {
   tech: [
     { icon: 'offline', title: 'Offline and private', text: 'After the first visit the texts, search index and images are on your device. There is no account and no tracking. Only a video you start yourself, or an online reading voice, uses the network.' },
     { icon: 'search', title: 'Search', text: 'Quick search opens with Ctrl K (⌘ K on a Mac), with / or from the magnifying glass. The search page covers every paragraph, study text, catechesis, claim and term, offline too.' },
-    { icon: 'reader', title: 'The reader', text: 'Tap a paragraph, or use the button beside it, for citation, bookmark and cross-references. A long press copies the citation. The toolbar has contents, jump to paragraph, focus mode and text size.' },
+    { icon: 'reader', title: 'The reader', text: 'Tap an excerpt anywhere in the app, or the Explain button, for the explanation, citation, bookmark and cross-references. A long press copies the citation. The toolbar has contents, jump to paragraph, focus mode and text size.' },
     { icon: 'listen', title: 'Read aloud', text: 'Study texts, catecheses and documents have a Listen button. The app picks the best male voice on your device; change voice and speed in the player bar or under Settings. Space pauses, Esc stops.' },
     { icon: 'display', title: 'Display', text: 'Light or dark, Dutch or English, text size and full screen are under Settings in the menu, and on a computer in the top bar.' },
     { icon: 'progress', title: 'Progress', text: 'Chapters read, lessons completed and bookmarks are kept on this device only. Clearing the browser’s site data removes them.' },
