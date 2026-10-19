@@ -62,11 +62,7 @@ export async function getDocument(id: string): Promise<CouncilDocument | undefin
   return (await getDocuments()).find((d) => d.id === id);
 }
 
-/**
- * Paragraph content for a document, or null when no /content/{docId}.json exists yet.
- * TODO(content): the 13 documents without a content file show metadata only until
- * their file is added — no code change required, see README → Adding content.
- */
+/** Paragraph excerpts for a document, or null when it has no content file (the reader then shows metadata only). */
 export async function getDocumentContent(docId: string): Promise<DocumentContent | null> {
   const index = await getIndex();
   if (!index.available.includes(docId)) return null;

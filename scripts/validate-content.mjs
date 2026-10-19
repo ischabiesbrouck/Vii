@@ -65,7 +65,7 @@ const available = [];
 const counts = {};
 for (const d of documents) {
   const file = `${d.id}.json`;
-  if (!existsSync(join(root, file))) continue; // TODO(content): 13 documents await content files.
+  if (!existsSync(join(root, file))) continue; // documents without excerpts show metadata only
   available.push(d.id);
   hash.update(readFileSync(join(root, file)));
   const c = read(file);

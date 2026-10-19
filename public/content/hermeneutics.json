@@ -34,8 +34,8 @@
         { "paragraphId": "LG-8", "noteNl": "De verschuiving van 'est' naar 'subsistit in'.", "noteEn": "The shift from 'est' to 'subsistit in'." },
         { "paragraphId": "DH-2", "noteNl": "Erkenning van godsdienstvrijheid als recht.", "noteEn": "Recognition of religious freedom as a right." }
       ],
-      "criticismNl": "Critici stellen dat een 'geest' die los van of tegen de letter wordt ingeroepen, niet te toetsen is en de teksten — die de vaders met overgrote meerderheid aannamen — van hun gezag berooft. O'Malley zelf benadrukt dat stijl en tekst niet tegen elkaar uitgespeeld mogen worden.",
-      "criticismEn": "Critics argue that a 'spirit' invoked apart from or against the letter cannot be tested and deprives the texts — adopted by the Fathers by overwhelming majorities — of their authority. O'Malley himself stresses that style and text must not be played off against each other.",
+      "criticismNl": "Critici stellen dat een 'geest' die los van of tegen de letter wordt ingeroepen, niet te toetsen is. Zo verliezen teksten die de vaders met overgrote meerderheid aannamen hun gezag. O'Malley zelf benadrukt dat stijl en tekst niet tegen elkaar uitgespeeld mogen worden.",
+      "criticismEn": "Critics argue that a 'spirit' invoked apart from or against the letter cannot be tested, and so strips texts the Fathers adopted by overwhelming majorities of their authority. O'Malley himself stresses that style and text must not be played off against each other.",
       "sources": [
         "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books.",
         "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
@@ -46,15 +46,15 @@
       "id": "traditionalist-rupture",
       "labelNl": "Breuk (traditionalistische kritiek)",
       "labelEn": "Rupture (traditionalist critique)",
-      "thesisNl": "Op enkele punten — godsdienstvrijheid, oecumene, collegialiteit — zijn de teksten zelf dubbelzinnig of niet te verzoenen met eerder leergezag. Omdat het Concilie zich pastoraal noemde en niets definieerde, staan zulke punten open voor correctie.",
-      "thesisEn": "On some points — religious freedom, ecumenism, collegiality — the texts themselves are ambiguous or irreconcilable with prior magisterium. Because the Council called itself pastoral and defined nothing, such points remain open to correction.",
+      "thesisNl": "Op enkele punten, zoals godsdienstvrijheid, oecumene en collegialiteit, zijn de teksten zelf dubbelzinnig of niet te verzoenen met eerder leergezag. Omdat het Concilie zich pastoraal noemde en niets definieerde, staan zulke punten open voor correctie.",
+      "thesisEn": "On some points, such as religious freedom, ecumenism and collegiality, the texts themselves are ambiguous or irreconcilable with prior magisterium. Because the Council called itself pastoral and defined nothing, such points remain open to correction.",
       "appealsTo": [
         { "paragraphId": "DH-2", "noteNl": "Gezien als in spanning met Quanta cura (1864).", "noteEn": "Seen as in tension with Quanta cura (1864)." },
         { "paragraphId": "LG-8", "noteNl": "'Subsistit in' als bewuste dubbelzinnigheid.", "noteEn": "'Subsistit in' as deliberate ambiguity." },
         { "paragraphId": "LG-22", "noteNl": "Collegialiteit als bedreiging van het primaat (vóór de Nota praevia).", "noteEn": "Collegiality as a threat to the primacy (before the Nota praevia)." }
       ],
-      "criticismNl": "Critici stellen dat deze positie, net als de 'gebeurtenis'-lezing, het Concilie als breuk leest — alleen met een tegengesteld waardeoordeel — en dat zij het gezag van een oecumenisch concilie met de paus onderschat (LG §25).",
-      "criticismEn": "Critics argue that this position, like the 'event' reading, reads the Council as a rupture — only with the opposite value judgement — and underestimates the authority of an ecumenical council with the pope (LG §25).",
+      "criticismNl": "Critici stellen dat deze positie, net als de 'gebeurtenis'-lezing, het Concilie als breuk leest, zij het met het omgekeerde waardeoordeel, en dat zij het gezag van een oecumenisch concilie met de paus onderschat (LG §25).",
+      "criticismEn": "Critics argue that this position, like the 'event' reading, reads the Council as a rupture, though with the opposite value judgement, and underestimates the authority of an ecumenical council with the pope (LG §25).",
       "sources": [
         "de Mattei, R. (2012). The Second Vatican Council: An unwritten story. Loreto Publications.",
         "Gherardini, B. (2009). Concilio Ecumenico Vaticano II: Un discorso da fare. Casa Mariana Editrice.",

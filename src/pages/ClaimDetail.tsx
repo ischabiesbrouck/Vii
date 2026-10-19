@@ -48,7 +48,7 @@ export function ClaimDetail() {
           {evidence.map((e) => (
             <li key={e.paragraphId}>
               <p className="mb-2 text-sm">
-                <CiteLink id={e.paragraphId} /> — {pick(lang, e.relevance, e.relevanceEn)}
+                <CiteLink id={e.paragraphId} />: {pick(lang, e.relevance, e.relevanceEn)}
               </p>
               {e.resolved ? (
                 <ConciliarText paragraph={e.resolved.paragraph} cite={shortCite(e.paragraphId)} />

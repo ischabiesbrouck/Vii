@@ -143,7 +143,7 @@ export function SettingsPanel() {
 function Wordmark() {
   const { t } = useTranslation();
   return (
-    <Link to="/" className="flex min-w-0 items-center gap-3 py-1" aria-label={`${t('app.name')} — ${t('nav.home')}`}>
+    <Link to="/" className="flex min-w-0 items-center gap-3 py-1" aria-label={`${t('app.name')}, ${t('nav.home')}`}>
       <Seal className="h-11 w-11 text-accent lg:h-14 lg:w-14" />
       <span className="min-w-0 border-l border-line pl-3">
         <span className="block font-display text-[1.12rem] font-bold uppercase leading-none tracking-[0.18em] sm:text-[1.35rem]">{t('app.name')}</span>

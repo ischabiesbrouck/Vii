@@ -1,16 +1,14 @@
 /**
  * Content model. All content is static, versioned JSON under /public/content.
  * Nothing here is ever generated at runtime.
- *
- * Deviations from the original brief are marked DEVIATION and explained in README.md.
  */
 
 export type DocType = 'constitution' | 'decree' | 'declaration';
 
 /**
- * DEVIATION: 'unqualified' added. Only LG and DV carry "dogmatica" and GS
- * "pastoralis" in their official Latin designation; labelling SC or the
- * declarations otherwise would be an editorial judgement presented as fact.
+ * Only LG and DV carry "dogmatica" and GS "pastoralis" in their official Latin
+ * designation. The other documents are 'unqualified' (decrees: 'disciplinary'),
+ * so that no editorial label is presented as part of the title.
  */
 export type Solemnity = 'dogmatic' | 'pastoral' | 'disciplinary' | 'unqualified';
 

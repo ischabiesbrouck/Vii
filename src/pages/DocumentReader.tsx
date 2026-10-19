@@ -446,7 +446,6 @@ export function DocumentReader() {
       )}
 
       {!content ? (
-        // TODO(content): add public/content/{docId}.json to enable the reader for this document.
         <Commentary>{t('doc.notSeeded')}</Commentary>
       ) : (
         <div className={focus ? 'mx-auto max-w-[50rem]' : 'grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]'}>

@@ -36,7 +36,7 @@ const OPTIONS: Options<SearchDoc> = {
 
 const CACHE_KEY = 'search-index';
 /** Bump when the shape of SearchDoc changes, to invalidate cached indexes. */
-const SCHEMA = 4;
+const SCHEMA = 5;
 
 async function buildDocs(): Promise<SearchDoc[]> {
   const [paras, claims, terms, subjects, lessons, cat] = await Promise.all([
@@ -59,8 +59,8 @@ async function buildDocs(): Promise<SearchDoc[]> {
         id: `st:${subject.id}:${ci + 1}`,
         kind: 'study',
         cite: ch.labelLa,
-        title: `${ch.titleNl} — ${subject.titleNl}`,
-        titleEn: `${ch.titleEn} — ${subject.titleEn}`,
+        title: `${ch.titleNl} · ${subject.titleNl}`,
+        titleEn: `${ch.titleEn} · ${subject.titleEn}`,
         text,
         snippetNl: ch.summaryNl,
         snippetEn: ch.summaryEn,
@@ -116,8 +116,8 @@ async function buildDocs(): Promise<SearchDoc[]> {
       id: `p:${p.id}`,
       kind: 'paragraph',
       cite: `${shortCite(p.id)} ${doc.abbr}${p.number}`,
-      title: `${doc.titleLa} — ${doc.titleNl}`,
-      titleEn: `${doc.titleLa} — ${doc.titleEn}`,
+      title: `${doc.titleLa} · ${doc.titleNl}`,
+      titleEn: `${doc.titleLa} · ${doc.titleEn}`,
       text: [p.textNl, p.textEn, p.textLa ?? '', p.noteNl ?? '', p.noteEn ?? ''].join(' '),
       snippetNl: p.textNl,
       snippetEn: p.textEn,

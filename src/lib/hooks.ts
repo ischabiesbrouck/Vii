@@ -42,6 +42,6 @@ export function useThemeEffect() {
 
 export function useDocumentTitle(title: string | undefined) {
   useEffect(() => {
-    document.title = title ? `${title} · Concilium` : 'Concilium — Vaticanum II in context';
+    document.title = title ? `${title} · Concilium` : 'Concilium · Vaticanum II in context';
   }, [title]);
 }
