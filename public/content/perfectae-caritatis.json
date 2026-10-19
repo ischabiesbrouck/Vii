@@ -5,6 +5,38 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "PC-1",
+      "docId": "perfectae-caritatis",
+      "number": 1,
+      "textEn": "The sacred synod has already shown in the constitution on the Church that the pursuit of perfect charity through the evangelical counsels draws its origin from the doctrine and example of the Divine Master and reveals itself as a splendid sign of the heavenly kingdom.",
+      "textNl": "De heilige Synode heeft reeds in de constitutie over de Kerk getoond dat het streven naar volmaakte liefde langs de weg van de evangelische raden zijn oorsprong vindt in de leer en het voorbeeld van de goddelijke Meester, en zich openbaart als een luisterrijk teken van het hemelse koninkrijk.",
+      "textLa": "Perfectae caritatis prosecutionem per consilia evangelica …",
+      "tags": [
+        "religious-life",
+        "holiness"
+      ],
+      "crossRefs": [
+        "PC-2",
+        "LG-40"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De inleiding herinnert aan wat Lumen Gentium al had gezegd: het streven naar volmaakte liefde langs de weg van de evangelische raden komt voort uit de leer en het voorbeeld van Christus, en is een teken van het hemelse koninkrijk. Van het begin af hebben mannen en vrouwen Christus vrijer willen volgen, als kluizenaars, monniken of in gemeenschappen. Het decreet behandelt nu het leven en de tucht van de instituten waarvan de leden kuisheid, armoede en gehoorzaamheid beloven, en stelt algemene beginselen op voor hun vernieuwing.",
+          "who": "Het Concilie spreekt, samen met Paulus VI, in een decreet tot de religieuze instituten en hun leden, mannen en vrouwen, contemplatief en actief. De beginselen gelden ook, met eerbied voor hun eigen aard, voor gemeenschappen zonder geloften en voor seculiere instituten. Onrechtstreeks spreekt het tot de hele Kerk, voor wie het religieuze leven een teken is.",
+          "why": "Rond 1960 telde de Kerk zeer veel religieuzen, vooral vrouwen in onderwijs, zorg en missie. Veel instituten leefden nog met gebruiken uit de negentiende eeuw. Pius XII had in de jaren vijftig al aangedrongen op aanpassing, onder meer van kleding en vorming. Het oorspronkelijke ontwerp sprak van de staten van volmaaktheid; de leer daarover kreeg uiteindelijk haar plaats in hoofdstuk VI van Lumen Gentium.",
+          "how": "De inleiding steunt uitdrukkelijk op de constitutie over de Kerk (LG §43-47) en vat de geschiedenis van het religieuze leven kort samen, van de woestijnvaders tot de moderne congregaties. Zij noemt de verscheidenheid van gaven en instituten een sieraad van de Kerk. Daarna kondigt zij het eigen onderwerp aan: de beginselen van vernieuwing, die in PC §2-4 volgen, en de afzonderlijke vormen en geloften in PC §5-25.",
+          "meaning": "De evangelische raden zijn kuisheid omwille van het koninkrijk, armoede en gehoorzaamheid. Volgens de tekst zijn zij geen privézaak; zij tonen iets van het koninkrijk dat komt. LG §44 noemt het religieuze leven een teken dat alle leden van de Kerk aanspoort tot hun roeping. Volmaakte liefde is het doel van alle christenen (LG §40); religieuzen streven daarnaar langs een eigen weg. Zie Catechismus nr. 914-933 en Vita consecrata (1996)."
+        },
+        "en": {
+          "what": "The introduction recalls what Lumen Gentium had already said: the pursuit of perfect charity by way of the evangelical counsels springs from the teaching and example of Christ and is a sign of the heavenly kingdom. From the beginning men and women wished to follow Christ more freely, as hermits, monks or in communities. The decree now treats the life and discipline of the institutes whose members profess chastity, poverty and obedience, and lays down general principles for their renewal.",
+          "who": "The Council, together with Paul VI, addresses in a decree the religious institutes and their members, men and women, contemplative and active. The principles also apply, with respect for their own character, to societies of common life without vows and to secular institutes. Indirectly it speaks to the whole Church, for which religious life is a sign.",
+          "why": "Around 1960 the Church counted a very large number of religious, above all women in teaching, health care and the missions. Many institutes still lived by customs from the nineteenth century. In the 1950s Pius XII had already urged adaptation, among other things of dress and formation. The original draft spoke of the states of perfection; the teaching on them eventually found its place in chapter VI of Lumen Gentium.",
+          "how": "The introduction rests expressly on the constitution on the Church (LG §43-47) and briefly sums up the history of religious life, from the desert fathers to the modern congregations. It calls the variety of gifts and institutes an adornment of the Church. Then it announces its own subject: the principles of renewal, which follow in PC §2-4, and the particular forms and vows in PC §5-25.",
+          "meaning": "The evangelical counsels are chastity for the sake of the kingdom, poverty and obedience. According to the text they are no private matter; they show something of the kingdom to come. LG §44 calls religious life a sign that spurs all members of the Church to their vocation. Perfect charity is the goal of all Christians (LG §40); religious strive for it by a way of their own. See Catechism nos. 914-933 and Vita consecrata (1996)."
+        }
+      }
+    },
+    {
       "id": "PC-2",
       "docId": "perfectae-caritatis",
       "number": 2,
@@ -20,7 +52,86 @@
         "LG-40"
       ],
       "noteNl": "Deze ene zin bevat beide bewegingen van het Concilie: terugkeer naar de bronnen (ressourcement) en aanpassing (aggiornamento), in die volgorde.",
-      "noteEn": "This one sentence contains both movements of the Council: return to the sources (ressourcement) and adaptation (aggiornamento), in that order."
+      "noteEn": "This one sentence contains both movements of the Council: return to the sources (ressourcement) and adaptation (aggiornamento), in that order.",
+      "explain": {
+        "nl": {
+          "what": "Aangepaste vernieuwing omvat twee bewegingen: de voortdurende terugkeer naar de bronnen van het christelijk leven en naar de oorspronkelijke geest van de instituten, en hun aanpassing aan de veranderde omstandigheden. De tekst noemt daarvoor beginselen. De navolging van Christus is de hoogste regel. De geest en de doeleinden van de stichters moeten trouw bewaard blijven. Instituten moeten deelnemen aan het leven van de Kerk en de tijd kennen. Geestelijke vernieuwing heeft altijd voorrang, ook boven uiterlijke werken.",
+          "who": "Het decreet richt zich tot alle religieuze instituten, hun oversten en kapittels, en tot elke religieuze. Het spreekt over de stichters en hun charisma, over de Schrift als bron, en over de Kerk, met wier liturgische, bijbelse, oecumenische, missionaire en sociale initiatieven de instituten zich moeten verbinden.",
+          "why": "Het oorspronkelijke ontwerp legde de nadruk op tucht en de staten van volmaaktheid. In 1964 werd het tot een reeks stellingen ingekort, en in de aula vroegen vaders, onder wie kardinaal Julius Döpfner, om een diepere theologische grondslag en een echte vernieuwing. In de herziening van 1965 kreeg PC §2 zijn huidige vorm, met de terugkeer naar de bronnen vóór de aanpassing.",
+          "how": "De paragraaf geeft eerst een definitie in één zin en werkt die dan uit in vijf beginselen, aangeduid met letters. De volgorde draagt betekenis: Christus en het evangelie eerst, dan de stichters, dan de Kerk, dan de tijd, en ten slotte de voorrang van het geestelijke. PC §3 en PC §4 geven daarna praktische criteria en zeggen wie de vernieuwing moet uitvoeren.",
+          "meaning": "Ressourcement (terugkeer naar de bronnen) en aggiornamento (aanpassing) zijn geen woorden van de tekst, maar beschrijven de twee bewegingen goed. Charisma van de stichter betekent de eigen geest en zending van een instituut. Over de toepassing van PC §2 na 1965 bestaan twee lezingen: de ene meent dat veel instituten met aanpassing begonnen en hun identiteit verloren, de andere wijt de terugloop vooral aan secularisatie. Beide beroepen zich op deze paragraaf."
+        },
+        "en": {
+          "what": "Appropriate renewal comprises two movements: a constant return to the sources of Christian life and to the original spirit of the institutes, and their adaptation to changed conditions. The text sets out principles for this. The following of Christ is the supreme rule. The spirit and aims of the founders are to be faithfully preserved. Institutes are to share in the life of the Church and to know their times. Spiritual renewal always has priority, even over outward works.",
+          "who": "The decree addresses all religious institutes, their superiors and chapters, and every religious. It speaks of the founders and their charism, of Scripture as source, and of the Church, with whose liturgical, biblical, ecumenical, missionary and social initiatives the institutes are to associate themselves.",
+          "why": "The original draft stressed discipline and the states of perfection. In 1964 it was cut back to a series of propositions, and in the aula Fathers, among them Cardinal Julius Döpfner, asked for a deeper theological foundation and genuine renewal. In the 1965 revision PC §2 received its present form, with the return to the sources placed before adaptation.",
+          "how": "The paragraph first gives a one-sentence definition and then develops it in five principles marked by letters. The order carries meaning: Christ and the Gospel first, then the founders, then the Church, then the times, and finally the priority of the spiritual. PC §3 and PC §4 then give practical criteria and say who is to carry out the renewal.",
+          "meaning": "Ressourcement (return to the sources) and aggiornamento (adaptation) are not words of the text, yet they describe its two movements well. The founder's charism means the proper spirit and mission of an institute. There are two readings of how PC §2 was applied after 1965: one holds that many institutes began with adaptation and lost their identity, the other attributes the decline chiefly to secularisation. Both appeal to this paragraph."
+        }
+      }
+    },
+    {
+      "id": "PC-12",
+      "docId": "perfectae-caritatis",
+      "number": 12,
+      "textEn": "The chastity “for the sake of the kingdom of heaven” (Matt. 19:12) which religious profess should be counted an outstanding gift of grace. It frees the heart of man in a unique fashion (cf. 1 Cor. 7:32-35) so that it may be more inflamed with love for God and for all men.",
+      "textNl": "De kuisheid “om het koninkrijk der hemelen” (Matteüs 19,12), die de religieuzen beloven, moet als een uitnemende gave van de genade worden beschouwd. Zij maakt het hart van de mens op bijzondere wijze vrij (vgl. 1 Korintiërs 7,32-35), opdat het meer ontbrandt in liefde tot God en tot alle mensen.",
+      "tags": [
+        "religious-life",
+        "celibacy"
+      ],
+      "crossRefs": [
+        "PC-1",
+        "PO-16",
+        "LG-40"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De kuisheid om het koninkrijk der hemelen is een uitnemende gave van de genade. Zij maakt het hart vrij om meer lief te hebben, God en alle mensen. Zij is een teken van de hemelse goederen en een middel om zich aan God en het apostolaat te wijden, en herinnert aan het huwelijk tussen Christus en de Kerk. Religieuzen moeten op Gods hulp vertrouwen en waakzaam zijn. Kandidaten moeten voldoende psychologische en affectieve rijpheid hebben. Broederlijke liefde in de gemeenschap beschermt de kuisheid.",
+          "who": "De paragraaf spreekt tot de religieuzen, mannen en vrouwen, en tot hun oversten en opleiders, die de rijpheid van kandidaten moeten beoordelen. Hij spreekt over Christus en de Kerk als bruidegom en bruid, en over de gemeenschap die het celibatair leven draagt.",
+          "why": "Het Concilie wilde de geloften theologisch en menselijk beschrijven, naast hun juridische kant. In de jaren zestig werd het celibaat in de samenleving steeds minder begrepen, en de menswetenschappen vroegen aandacht voor affectieve rijpheid. Dat de tekst psychologische rijpheid uitdrukkelijk noemt, sluit aan bij die vragen. Hetzelfde jaar behandelde PO §16 het celibaat van priesters.",
+          "how": "PC §12 opent de reeks over de drie geloften: kuisheid (PC §12), armoede (PC §13) en gehoorzaamheid (PC §14). De tekst steunt op Matteüs 19,12 over wie ongehuwd blijft om het koninkrijk, en op 1 Korintiërs 7 over het onverdeelde hart. Hij beweegt zich van de theologische betekenis naar de geestelijke middelen en ten slotte naar praktische eisen voor vorming en gemeenschapsleven.",
+          "meaning": "Uitnemende gave betekent dat kuisheid omwille van het koninkrijk een roeping is en geen minachting van het huwelijk. De tekst noemt haar een teken, wat betekent dat zij iets over God en het koninkrijk zegt aan anderen. De Catechismus (nr. 915-916 en nr. 1618-1620) houdt huwelijk en maagdelijkheid samen als twee wegen die elkaar veronderstellen. Vita consecrata (1996) werkt het tekenkarakter verder uit. De nadruk op rijpheid sluit een louter wilsmatige opvatting uit."
+        },
+        "en": {
+          "what": "Chastity for the sake of the kingdom of heaven is an outstanding gift of grace. It frees the heart to love more, both God and all people. It is a sign of heavenly goods and a means of dedicating oneself to God and the apostolate, and it recalls the marriage of Christ and the Church. Religious should trust in God's help and not in their own strength, be watchful and also use natural means. Candidates need sufficient psychological and emotional maturity. Fraternal love in community protects chastity.",
+          "who": "The paragraph addresses religious, men and women, and their superiors and formators, who must judge the maturity of candidates. It speaks of Christ and the Church as bridegroom and bride, and of the community that supports celibate life.",
+          "why": "The Council wished to describe the vows in theological and human terms, alongside their juridical side. In the 1960s celibacy was less and less understood in society, and the human sciences drew attention to emotional maturity. That the text expressly mentions psychological maturity reflects those questions. In the same year PO §16 treated the celibacy of priests.",
+          "how": "PC §12 opens the series on the three vows: chastity (PC §12), poverty (PC §13) and obedience (PC §14). The text rests on Matthew 19:12 on those who remain unmarried for the sake of the kingdom, and on 1 Corinthians 7 on the undivided heart. It moves from the theological meaning to the spiritual means and finally to practical requirements for formation and community life.",
+          "meaning": "Outstanding gift means that chastity for the sake of the kingdom is a vocation and no disdain for marriage. The text calls it a sign, meaning that it says something about God and the kingdom to others. The Catechism (nos. 915-916 and 1618-1620) holds marriage and virginity together as two ways that presuppose each other. Vita consecrata (1996) develops its character as sign further. The emphasis on maturity rules out a merely voluntaristic view."
+        }
+      }
+    },
+    {
+      "id": "PC-14",
+      "docId": "perfectae-caritatis",
+      "number": 14,
+      "textEn": "In professing obedience, religious offer the full surrender of their own will as a sacrifice of themselves to God and so are united permanently and securely to God's salvific will.",
+      "textNl": "Door de gelofte van gehoorzaamheid brengen de religieuzen de volledige overgave van hun eigen wil als offer van zichzelf aan God, en worden zij zo duurzaam en veilig verenigd met Gods heilswil.",
+      "tags": [
+        "religious-life",
+        "authority"
+      ],
+      "crossRefs": [
+        "PC-2",
+        "PC-12"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Door de gelofte van gehoorzaamheid bieden religieuzen hun eigen wil als offer aan God aan, en verenigen zij zich duurzaam met zijn heilswil. Zij volgen daarin Christus, die kwam om de wil van de Vader te doen. Zij gehoorzamen hun oversten in geloof, met inzet van verstand en wil, en op actieve en verantwoordelijke wijze. Oversten oefenen hun gezag uit als dienst, luisteren bereid naar de leden en bevorderen hun medewerking, met behoud van hun gezag om te beslissen. Kapittels en raden moeten de deelname van allen tot uitdrukking brengen.",
+          "who": "De paragraaf spreekt tot de religieuzen en uitdrukkelijk ook tot de oversten, die van hun dienst rekenschap moeten afleggen. Hij spreekt over Christus, die gehoorzaam werd en zich ontledigde, en over de gemeenschap als plaats waar gezag en gehoorzaamheid samen het welzijn van allen dienen.",
+          "why": "Vóór het Concilie werd gehoorzaamheid in veel instituten vooral als onderwerping aan regels en oversten beleefd. De vaders wilden de gelofte opnieuw in Christus funderen en tegelijk ruimte maken voor verantwoordelijkheid en overleg. Dat sloot aan bij de algemene vraag naar inspraak die ook in andere teksten van het Concilie klinkt.",
+          "how": "PC §14 sluit de reeks over de geloften af. Het argument is christologisch: het verwijst naar Johannes 4,34 over het voedsel van Jezus, de wil van de Vader, en naar Filippenzen 2 over de Zoon die de gestalte van een dienaar aannam. Daarna volgt een praktisch deel over de verhouding tussen leden en oversten, met nadruk op wederzijdse verantwoordelijkheid.",
+          "meaning": "Actieve en verantwoordelijke gehoorzaamheid betekent dat de religieuze meedenkt, maar niet dat de gelofte haar bindende kracht verliest; de tekst bewaart het gezag van de oversten om te beslissen en te bevelen. De Codex van 1983 neemt dit op in can. 601 en can. 618-619. In 2008 publiceerde de Congregatie voor de Instituten van Gewijd Leven de instructie Faciem tuam over dienst van het gezag en gehoorzaamheid."
+        },
+        "en": {
+          "what": "By the vow of obedience religious offer their own will to God as a sacrifice of themselves, and are lastingly united with his saving will. In this they follow Christ, who came to do the will of the Father. They obey their superiors in faith, with mind and will engaged, in an active and responsible way. Superiors are to exercise authority as service, treat members with respect, listen willingly and encourage cooperation, while keeping their own authority to decide. Chapters and councils are to express the participation of all.",
+          "who": "The paragraph addresses religious and expressly also superiors, who must give an account of their service. It speaks of Christ, who became obedient and emptied himself, and of the community as the place where authority and obedience together serve the good of all.",
+          "why": "Before the Council obedience in many institutes was experienced mainly as submission to rules and superiors. The Fathers wished to ground the vow anew in Christ and at the same time to make room for responsibility and consultation. That matched the general call for participation heard in other conciliar texts as well.",
+          "how": "PC §14 closes the series on the vows. The argument is Christological: it refers to John 4:34 on Jesus' food being the Father's will, and to Philippians 2 on the Son who took the form of a servant. A practical part follows on the relation between members and superiors, with stress on mutual responsibility.",
+          "meaning": "Active and responsible obedience means that religious think along, not that the vow loses its binding force; the text preserves the superiors' authority to decide and command. The 1983 Code takes this up in can. 601 and cann. 618-619. In 2008 the Congregation for Institutes of Consecrated Life issued the instruction Faciem tuam on the service of authority and obedience."
+        }
+      }
     }
   ]
 }

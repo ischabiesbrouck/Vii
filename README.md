@@ -52,7 +52,7 @@ Fonts are self-hosted through Fontsource: EB Garamond, Source Serif 4, Cinzel an
 | Route | Content |
 |---|---|
 | `/` | Title page with the text of the day, search, programme of study, latest audiences, *Index documentorum*, study paths, Claim Check, video lectures |
-| `/documents`, `/documents/:id` | The sixteen documents; reader with title page, *Index*, red marginal paragraph numbers, paragraph sheet (cross-references, citation, bookmark), focus mode, reading progress |
+| `/documents`, `/documents/:id` | The sixteen documents; reader with title page, *Index*, red marginal paragraph numbers, paragraph sheet (explanation, cross-references, citation, bookmark), focus mode, reading progress, and a *History and background* tab (drafting history, timeline, people, figures, literature). Tapping any excerpt anywhere in the app opens its explanation: what it says, to whom, why, how, and what is meant |
 | `/learn`, `/learn/:id` | Course of ten *lectiones* with key facts, texts, catecheses, videos, a factual knowledge check and sources |
 | `/subjects`, `/subjects/:id` | Sixteen study paths: objectives, reading path, claims, terms, questions, further reading |
 | `/subjects/:id/study/:chapter` | Study text per subject, in chapters (*Caput I–V*) with numbered sections, quotations, boxes, positions, figures and bibliography |
@@ -86,14 +86,15 @@ it, and nothing is generated at runtime.
 | File | Contents |
 |---|---|
 | `documents.json` | Metadata for the sixteen documents: dates, votes, Latin designation, summary, chapter outline |
-| `{docId}.json` | Paragraph excerpts (125 in total), with a Dutch working translation and Latin |
+| `{docId}.json` | Paragraph excerpts (PCOUNT in total), with a Dutch working translation and Latin, and per excerpt an explanation in five parts (`explain`: what, who, why, how, meaning; 20–130 words per part, no quotation of more than eight words) |
+| `background/{docId}.json` | History and background of each document: 4–8 sections (at least 700 words per language), dated timeline, people, figures with captions, literature in APA 7 |
 | `studies/{subjectId}.json` | Sixteen study texts (about 38,500 words per language) |
 | `catechesis/{id}.json` | Twelve short catecheses (800–1,100 words per language); the validator rejects any quoted passage of more than six words |
 | `subjects.json`, `lessons.json` | Study paths and course |
 | `claims.json`, `glossary.json`, `hermeneutics.json`, `timeline.json` | Claim Check, terms, readings, chronology |
 | `catecheses.json`, `videos.json` | Audiences and videos, with their sources |
 | `sources.json` | External sources, cited as `ext:…` |
-| `images.json` | 23 licensed images from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA): author, licence, source |
+| `images.json` | 41 licensed images from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA): author, licence, source |
 
 `scripts/validate-content.mjs` runs before every build. It checks that every
 citation, cross-reference, quotation and source resolves. Citations in study
@@ -128,7 +129,8 @@ invalidates the cached search index.
 
 ### Editorial status
 
-The excerpts, working translations, summaries, study texts and Claim Checks were
+The excerpts, working translations, explanations, document histories, summaries,
+study texts and Claim Checks were
 **written with the help of AI and have not yet been checked line by line** against
 vatican.va, the *Acta Synodalia* or the literature cited. The app says so on
 every relevant page. Each file carries `"review": "unverified"` until an editor
@@ -136,7 +138,7 @@ has checked it.
 
 Before publication as a reference work, an editor should check:
 - the excerpts against the Latin and English texts;
-- the vote figures;
+- the vote figures and the dates in the document histories;
 - the bibliographic details;
 - the theological wording of the study texts.
 
@@ -163,7 +165,7 @@ Use `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`, or
   never test personal orthodoxy.
 - **Terms without a conciliar source**, such as *aggiornamento* and
   *ressourcement*, are labelled as such and do not link to a paragraph.
-- **Images**: the 640 px copy of every photograph is precached (about 3 MB), so
+- **Images**: the 640 px copy of every photograph is precached (about 2.6 MB), so
   figures always appear offline; full-size files (at most 1000 px) are cached the
   first time they are shown, and offline a large screen falls back to the 640 px
   copy. Captions state what the image shows and why it is there; each figure links

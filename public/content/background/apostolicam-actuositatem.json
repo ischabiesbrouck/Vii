@@ -171,7 +171,20 @@
       "roleEn": "Dominican theologian and peritus; his Jalons (1953) laid the ground for a positive theology of the laity."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "leo-xiii",
+      "section": 0,
+      "captionNl": "Leo XIII (1878–1903), geschilderd door Franz von Lenbach. Met *Rerum novarum* (1891) begon de moderne sociale leer, waarin katholieke lekenverenigingen en -bewegingen opkwamen.",
+      "captionEn": "Leo XIII (1878–1903), painted by Franz von Lenbach. *Rerum novarum* (1891) began the modern social teaching in which Catholic lay associations and movements grew."
+    },
+    {
+      "imageId": "holy-family",
+      "section": 4,
+      "captionNl": "Murillo, *De heilige familie met het vogeltje*. AA §11 noemt het gezin de eerste en levende cel van de samenleving en geeft gehuwden en gezinnen een eigen apostolaat.",
+      "captionEn": "Murillo, *The Holy Family with a Little Bird*. AA §11 calls the family the first and vital cell of society and gives married people and families an apostolate of their own."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",
