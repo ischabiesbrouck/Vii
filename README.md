@@ -62,6 +62,22 @@ Fonts are self-hosted through Fontsource: EB Garamond, Source Serif 4, Cinzel an
 | *(any text page)* | **Voorlezen**: study chapters, catecheses and the document reader can be read aloud |
 | `/claims`, `/timeline`, `/glossary`, `/hermeneutics`, `/search`, `/about` | Claim Check, chronology, terms, readings of the Council, full-text search, colophon |
 
+### Start-up and welcome
+
+- **Start-up animation** (in `index.html`, so it shows before the JavaScript loads):
+  - the app icon turns over into the seal, whose Latin legend turns slowly, then the
+    wordmark appears and the whole fades into the app (about 2.2 s);
+  - once per session, so on every launch of the installed app; a tap or key skips it;
+  - with *reduce motion* the seal is shown without rotation.
+- **Welcome and guide** (`src/components/Welcome.tsx`, text in `src/lib/guide.ts`):
+  - opens by itself on the first visit, after the animation; afterwards from the menu,
+    the *Meer* menu, the footer and the About page;
+  - three tabs: *Inhoud* (what the app contains and where to begin), *Werking* (offline,
+    search, reader, reading aloud, display, progress, updates) and *Installeren*
+    (steps per platform, the reader's own device first, with an install button where
+    the browser offers one).
+  - The small install banner waits until the guide has been seen.
+
 ## Content
 
 All content is static JSON in `public/content/`. The service worker precaches

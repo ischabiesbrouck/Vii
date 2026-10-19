@@ -6,6 +6,7 @@ import {
   BookOpen,
   BookOpenText,
   ChevronDown,
+  Compass,
   Clock,
   Film,
   GraduationCap,
@@ -30,6 +31,7 @@ import { Toast } from '@/components/Toast';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { usePlayer } from '@/store/player';
 import { useSpeech } from '@/store/speech';
+import { splashDone, useWelcome } from '@/store/welcome';
 import { installedDisplay, toggleFullscreen, useFullscreen } from '@/lib/fullscreen';
 import { useOnline } from '@/lib/hooks';
 import { useUi, type FontSize, type Theme } from '@/store/ui';
@@ -41,6 +43,7 @@ import { Seal } from '@/components/Seal';
 // Loaded on first use: the palette pulls in the search index, the theater the player.
 const CommandPalette = lazy(() => import('@/components/CommandPalette').then((m) => ({ default: m.CommandPalette })));
 const VideoTheater = lazy(() => import('@/components/VideoTheater').then((m) => ({ default: m.VideoTheater })));
+const Welcome = lazy(() => import('@/components/Welcome').then((m) => ({ default: m.Welcome })));
 const SpeechBar = lazy(() => import('@/components/ReadAloud').then((m) => ({ default: m.SpeechBar })));
 const VoiceSettings = lazy(() => import('@/components/ReadAloud').then((m) => ({ default: m.VoiceSettings })));
 
@@ -310,6 +313,14 @@ function MoreMenu() {
               </Link>
             </DropdownMenu.Item>
           ))}
+          <DropdownMenu.Separator className="my-1 h-px bg-line" />
+          <DropdownMenu.Item
+            onSelect={() => useWelcome.getState().show()}
+            className="flex min-h-[40px] cursor-pointer items-center gap-2 border-l-2 border-transparent px-4 text-sm outline-none data-[highlighted]:border-accent data-[highlighted]:bg-surface"
+          >
+            <Compass className="h-4 w-4 text-gold-text" aria-hidden />
+            {t('app.guide')}
+          </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
@@ -329,6 +340,19 @@ export function Layout() {
   if (playerUsed) theaterLoaded.current = true;
   const headerRef = useRef<HTMLElement>(null);
   const speaking = useSpeech((s) => s.status !== 'idle');
+  const welcomeOpen = useWelcome((s) => s.open);
+  const welcomeLoaded = useRef(false);
+  if (welcomeOpen) welcomeLoaded.current = true;
+
+  // First visit: the welcome guide opens once the start-up animation has gone.
+  useEffect(() => {
+    if (useUi.getState().welcomeSeen) return;
+    let alive = true;
+    void splashDone().then(() => alive && !useUi.getState().welcomeSeen && useWelcome.getState().show());
+    return () => {
+      alive = false;
+    };
+  }, []);
   const lang = useUi((s) => s.lang);
 
   // Reading aloud belongs to the page it started on.
@@ -488,6 +512,17 @@ export function Layout() {
                       </li>
                     ))}
                   </ul>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      useWelcome.getState().show();
+                    }}
+                    className="flex min-h-[48px] w-full items-center gap-3 border-b border-l-2 border-line border-l-transparent px-3 text-left hover:bg-surface"
+                  >
+                    <Compass className="h-5 w-5" aria-hidden />
+                    {t('app.guide')}
+                  </button>
                 </nav>
                 <SettingsPanel />
               </SheetContent>
@@ -581,6 +616,9 @@ export function Layout() {
                 </a>
               </li>
             </ul>
+            <button type="button" onClick={() => useWelcome.getState().show()} className="mt-4 inline-flex items-center gap-1.5 text-sm text-ink-fg/85 hover:text-white hover:underline">
+              <Compass className="h-4 w-4" aria-hidden /> {t('app.guide')}
+            </button>
             <p className="mt-6 text-xs text-ink-fg/60">{t('footer.privacy')}</p>
           </div>
         </div>
@@ -622,6 +660,7 @@ export function Layout() {
         {paletteUsed.current && <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} />}
         {theaterLoaded.current && <VideoTheater />}
         {speaking && <SpeechBar />}
+        {welcomeLoaded.current && <Welcome />}
       </Suspense>
       <InstallPrompt />
       <Toast />

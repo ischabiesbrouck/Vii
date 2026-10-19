@@ -3,11 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Download, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useUi } from '@/store/ui';
-
-interface BeforeInstallPromptEvent extends Event {
-  prompt: () => Promise<void>;
-  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
-}
+import { promptInstall, useInstall } from '@/store/install';
 
 const isStandalone = () =>
   window.matchMedia('(display-mode: standalone)').matches ||
@@ -20,32 +16,23 @@ const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) && !/crios|fxi
 export function InstallPrompt() {
   const { t } = useTranslation();
   const dismissed = useUi((s) => s.installDismissed);
+  const welcomeSeen = useUi((s) => s.welcomeSeen);
   const dismiss = useUi((s) => s.dismissInstall);
-  const [evt, setEvt] = useState<BeforeInstallPromptEvent | null>(null);
+  const evt = useInstall((s) => s.event);
   const [showIos, setShowIos] = useState(false);
 
   useEffect(() => {
-    if (dismissed || isStandalone()) return;
-    const handler = (e: Event) => {
-      e.preventDefault();
-      setEvt(e as BeforeInstallPromptEvent);
-    };
-    window.addEventListener('beforeinstallprompt', handler);
-    // iOS Safari has no beforeinstallprompt: show the manual hint instead.
+    if (dismissed || !welcomeSeen || isStandalone()) return;
+    // iOS Safari has no install prompt: show the manual hint instead.
     const iosTimer = isIos() ? setTimeout(() => setShowIos(true), 4000) : undefined;
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handler);
-      clearTimeout(iosTimer);
-    };
-  }, [dismissed]);
+    return () => clearTimeout(iosTimer);
+  }, [dismissed, welcomeSeen]);
 
-  if (dismissed || (!evt && !showIos)) return null;
+  // Not on the first visit: the welcome guide explains installation there.
+  if (dismissed || !welcomeSeen || isStandalone() || (!evt && !showIos)) return null;
 
   const install = async () => {
-    if (!evt) return;
-    await evt.prompt();
-    await evt.userChoice;
-    setEvt(null);
+    await promptInstall();
     dismiss();
   };
 
