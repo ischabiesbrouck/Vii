@@ -186,7 +186,32 @@
       "roleEn": "Peritus to Cardinal Frings; later wrote the commentary on the preface and the first chapters in the series edited by Vorgrimler."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "trent",
+      "section": 0,
+      "captionNl": "Pasquale Cati, Het Concilie van Trente (1588). In 1546 sprak Trente over de heilige boeken en de ongeschreven overleveringen; de uitleg van dat decreet kwam in 1962 opnieuw ter tafel.",
+      "captionEn": "Pasquale Cati, The Council of Trent (1588). In 1546 Trent spoke of the sacred books and the unwritten traditions; how to read that decree came back to the table in 1962."
+    },
+    {
+      "imageId": "ottaviani-council",
+      "section": 1,
+      "captionNl": "Kardinaal Alfredo Ottaviani, secretaris van het Heilig Officie en voorzitter van de voorbereidende theologische commissie, die het schema *De fontibus revelationis* opstelde. Foto Lothar Wolleh.",
+      "captionEn": "Cardinal Alfredo Ottaviani, Secretary of the Holy Office and president of the preparatory theological commission, which drew up the schema *De fontibus revelationis*. Photograph by Lothar Wolleh."
+    },
+    {
+      "imageId": "john-xxiii-council",
+      "section": 2,
+      "captionNl": "Johannes XXIII in de concilieaula. Na de stemming van 20 november 1962 liet hij het schema terugnemen en vertrouwde hij de herziening toe aan een gemengde commissie. Foto Lothar Wolleh.",
+      "captionEn": "John XXIII in the council hall. After the vote of 20 November 1962 he had the schema withdrawn and entrusted its revision to a mixed commission. Photograph by Lothar Wolleh."
+    },
+    {
+      "imageId": "gutenberg",
+      "section": 4,
+      "captionNl": "Eerste bladzijde van de Gutenbergbijbel (circa 1455), de Latijnse Vulgaat, met de brief van Hiëronymus aan Paulinus. DV §22 wil dat de Schrift voor alle gelovigen toegankelijk is.",
+      "captionEn": "First page of the Gutenberg Bible (about 1455), the Latin Vulgate, with Jerome's letter to Paulinus. DV §22 asks that Scripture be open to all the faithful."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "Burigana, R. (1998). La Bibbia nel Concilio: La redazione della costituzione \"Dei verbum\" del Vaticano II. Il Mulino.",

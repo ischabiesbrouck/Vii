@@ -147,7 +147,20 @@
       "roleEn": "Promulgated the decree on 4 December 1963 and established the Pontifical Commission for Social Communications in 1964."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "vatican-radio-1931",
+      "section": 0,
+      "captionNl": "Pius XI en Guglielmo Marconi bij de opening van Radio Vaticana, 12 februari 1931. Vijf jaar later schreef Pius XI de filmencycliek *Vigilanti cura* (1936).",
+      "captionEn": "Pius XI and Guglielmo Marconi at the opening of Vatican Radio, 12 February 1931. Five years later Pius XI wrote the encyclical on film *Vigilanti cura* (1936)."
+    },
+    {
+      "imageId": "leo-xiii-osservatore",
+      "section": 1,
+      "captionNl": "Leo XIII laat zich L'Osservatore Romano voorlezen, gravure uit 1899. De Vaticaanse krant verschijnt sinds 1861.",
+      "captionEn": "Leo XIII has L'Osservatore Romano read to him, engraving from 1899. The Vatican newspaper has appeared since 1861."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "Baragli, E. (1969). L'Inter mirifica: Introduzione, storia, discussione, commento, documentazione. Studio Romano della Comunicazione Sociale.",
