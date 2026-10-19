@@ -19,6 +19,8 @@ interface UiState {
   progress: Record<string, Progress>;
   bookmarks: string[];
   installDismissed: boolean;
+  /** The welcome guide has been seen (it opens by itself only on the first visit). */
+  welcomeSeen: boolean;
   /** Subject id → paragraph ids marked as studied. */
   studied: Record<string, string[]>;
   /** Lesson id → completion and best knowledge-check score. */
@@ -31,6 +33,7 @@ interface UiState {
   recordProgress: (docId: string, fraction: number, lastParagraphId: string | null) => void;
   toggleBookmark: (paragraphId: string) => void;
   dismissInstall: () => void;
+  setWelcomeSeen: () => void;
   toggleStudied: (subjectId: string, paragraphId: string) => void;
   setLesson: (id: string, patch: { done?: boolean; score?: number }) => void;
   markChapterRead: (subjectId: string, chapter: number) => void;
@@ -49,6 +52,7 @@ export const useUi = create<UiState>()(
       progress: {},
       bookmarks: [],
       installDismissed: false,
+      welcomeSeen: false,
       studied: {},
       lessons: {},
       studyRead: {},
@@ -74,6 +78,7 @@ export const useUi = create<UiState>()(
           bookmarks: s.bookmarks.includes(id) ? s.bookmarks.filter((b) => b !== id) : [...s.bookmarks, id],
         })),
       dismissInstall: () => set({ installDismissed: true }),
+      setWelcomeSeen: () => set({ welcomeSeen: true }),
       setLesson: (id, patch) =>
         set((s) => {
           const prev = s.lessons[id] ?? { done: false, score: null, updatedAt: 0 };

@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Compass } from 'lucide-react';
+import { useWelcome } from '@/store/welcome';
 import { Commentary, PageHeader } from '@/components/TextBlocks';
 import { SettingsPanel } from '@/components/Layout';
 import { getImages, getIndex } from '@/lib/content';
@@ -31,6 +33,13 @@ export function About() {
     <div className="mx-auto max-w-3xl space-y-10">
       <PageHeader title={t('about.title')} intro={t('app.tagline')} />
       <p className="text-sm font-medium">{t('footer.unofficial')}</p>
+      <button
+        type="button"
+        onClick={() => useWelcome.getState().show()}
+        className="inline-flex min-h-[44px] items-center gap-2 rounded-sm border border-fg/25 px-4 text-sm font-medium hover:border-fg/60"
+      >
+        <Compass className="h-4 w-4 text-gold-text" aria-hidden /> {t('app.guide')}
+      </button>
 
       <Commentary label={nl ? 'Disclaimer' : 'Disclaimer'}>
         <p>

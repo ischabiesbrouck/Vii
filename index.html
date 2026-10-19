@@ -21,9 +21,99 @@
         if (dark) document.documentElement.classList.add('dark');
         if (s.lang === 'en') document.documentElement.lang = 'en';
       } catch (e) {}
+      // Start-up animation: once per session (every launch of the installed app).
+      try {
+        if (sessionStorage.getItem('concilium-splash')) document.documentElement.classList.add('no-splash');
+        else sessionStorage.setItem('concilium-splash', '1');
+      } catch (e) {}
     </script>
+    <style>
+      /* Start-up animation: the app icon turns over into the seal, whose legend turns
+         slowly; then the wordmark, then the whole fades into the app (about 2.2 s). */
+      #splash { position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: rgb(var(--bg, 252 251 248)); color: rgb(var(--accent, 122 31 31));
+        animation: sp-out .4s ease-in 1.85s forwards; }
+      .no-splash #splash { display: none; }
+      #splash.sp-skip { animation: sp-out .2s ease-in forwards; }
+      .sp-stage { perspective: 700px; animation: sp-in .45s cubic-bezier(.22,1,.36,1) both; }
+      .sp-coin { position: relative; width: 132px; height: 132px; transform-style: preserve-3d;
+        animation: sp-flip .8s cubic-bezier(.65,0,.35,1) .45s both; }
+      .sp-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+      .sp-front svg { width: 100%; height: 100%; filter: drop-shadow(0 10px 18px rgb(40 30 20 / .25)); border-radius: 24px; }
+      .sp-back { transform: rotateY(180deg); }
+      .sp-back svg { width: 100%; height: 100%; }
+      .sp-legend { transform-origin: 60px 60px; animation: sp-turn 2.2s linear both; }
+      .sp-word { margin-top: 26px; font-family: "Cinzel Variable", Georgia, serif; font-weight: 700; letter-spacing: .22em; text-transform: uppercase;
+        font-size: 1.35rem; color: rgb(var(--fg, 28 27 25)); animation: sp-text .5s ease-out 1s both; }
+      .sp-rule { width: 9rem; height: 4px; margin-top: 10px; border-top: 1px solid rgb(var(--gold, 168 138 74) / .7); border-bottom: 1px solid rgb(var(--gold, 168 138 74) / .7);
+        animation: sp-text .5s ease-out 1.1s both; }
+      .sp-sub { margin-top: 10px; font-family: "EB Garamond Variable", Garamond, Georgia, serif; font-style: italic; font-size: 1.05rem;
+        color: rgb(var(--muted, 92 87 79)); animation: sp-text .5s ease-out 1.15s both; }
+      @keyframes sp-in { from { opacity: 0; transform: scale(.84); } to { opacity: 1; transform: none; } }
+      @keyframes sp-flip { from { transform: rotateY(0); } to { transform: rotateY(180deg); } }
+      @keyframes sp-turn { from { transform: rotate(40deg); } to { transform: rotate(-30deg); } }
+      @keyframes sp-text { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+      @keyframes sp-out { to { opacity: 0; visibility: hidden; } }
+      @media (prefers-reduced-motion: reduce) {
+        #splash { animation-delay: .9s; }
+        .sp-stage, .sp-legend, .sp-word, .sp-rule, .sp-sub { animation: none; }
+        .sp-coin { animation: none; transform: rotateY(180deg); }
+      }
+    </style>
   </head>
   <body>
+    <div id="splash" aria-hidden="true">
+      <div class="sp-stage">
+        <div class="sp-coin">
+          <div class="sp-face sp-front">
+            <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#7A1F1F" /><path d="M48.3 20.4A20 20 0 1 0 48.3 43.6" fill="none" stroke="#FAF8F3" stroke-width="7" /><circle cx="32" cy="32" r="4.5" fill="#B08D4F" /></svg>
+          </div>
+          <div class="sp-face sp-back">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="sp-ring" d="M 60 17 a 43 43 0 1 1 -0.01 0" /></defs>
+              <circle cx="60" cy="60" r="57" fill="rgb(var(--paper, 255 255 255))" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="60" cy="60" r="53.5" fill="none" stroke="currentColor" stroke-width="0.6" />
+              <circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="0.6" />
+              <g class="sp-legend">
+                <text fill="currentColor" font-family='"Cinzel Variable", Georgia, serif' font-size="7.4" font-weight="600" letter-spacing="0.6">
+                  <textPath href="#sp-ring" textLength="268" lengthAdjust="spacing">STVDIVM · CONCILII · VATICANI · II · MCMLXII · MCMLXV ·</textPath>
+                </text>
+              </g>
+              <path d="M60 33.5v15M54.5 38.5h11" stroke="currentColor" stroke-width="2" stroke-linecap="square" fill="none" />
+              <path d="M60 57c-6-3.2-13-3.6-19-2.2v19.4c6-1.4 13-1 19 2.2 6-3.2 13-3.6 19-2.2V54.8c-6-1.4-13-1-19 2.2zM60 57v19.4" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" fill="none" />
+              <path d="M45 60.5c3.6-.6 7.6-.3 11 1M45 65c3.6-.6 7.6-.3 11 1M64 61.5c3.4-1.3 7.4-1.6 11-1M64 66c3.4-1.3 7.4-1.6 11-1" stroke="currentColor" stroke-width="0.7" fill="none" />
+              <text x="60" y="87" text-anchor="middle" fill="currentColor" font-family='"Cinzel Variable", Georgia, serif' font-size="7" font-weight="700" letter-spacing="1.2">II</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="sp-word">Concilium</div>
+      <div class="sp-rule"></div>
+      <div class="sp-sub" lang="la">Studium Concilii Vaticani II</div>
+    </div>
+    <script>
+      // Remove the start-up animation when it has faded; a tap or key skips it.
+      (function () {
+        var el = document.getElementById('splash');
+        if (!el || document.documentElement.classList.contains('no-splash')) {
+          if (el) el.remove();
+          return;
+        }
+        var finished = false;
+        var done = function () {
+          if (finished) return;
+          finished = true;
+          el.remove();
+          document.removeEventListener('keydown', skip);
+          window.dispatchEvent(new Event('concilium:splash-done'));
+        };
+        var skip = function () { el.classList.add('sp-skip'); setTimeout(done, 220); };
+        el.addEventListener('pointerdown', skip);
+        document.addEventListener('keydown', skip);
+        el.addEventListener('animationend', function (e) { if (e.target === el) done(); });
+        setTimeout(done, 2600);
+      })();
+    </script>
     <div id="root">
       <!-- Static shell: paints as soon as the stylesheet arrives; React replaces it on mount. -->
       <div class="min-h-dvh bg-bg">

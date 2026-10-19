@@ -1,5 +1,6 @@
 const nl = {
   app: {
+    guide: 'Welkom en gids',
     name: 'Concilium',
     tagline: 'Vaticanum II in context',
     subtitle: 'Studium Concilii Vaticani II',
@@ -424,6 +425,7 @@ type Shape<T> = { [K in keyof T]: T[K] extends string ? string : Shape<T[K]> };
 
 const en: Shape<typeof nl> = {
   app: {
+    guide: 'Welcome and guide',
     name: 'Concilium',
     subtitle: 'Studium Concilii Vaticani II',
     tagline: 'Vatican II in context',
