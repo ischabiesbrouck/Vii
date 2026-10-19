@@ -157,7 +157,20 @@
       "roleEn": "Promulgated the decree and issued the implementing norms in Ecclesiae Sanctae (1966)."
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "imageId": "abbey",
+      "section": 4,
+      "captionNl": "Romaanse gang in de benedictijnenabdij van de Mont-Saint-Michel. PC §9 vraagt dat de eerbiedwaardige instelling van het monastieke leven in Oost en West trouw bewaard blijft.",
+      "captionEn": "Romanesque passage in the Benedictine abbey of Mont-Saint-Michel. PC §9 asks that the venerable institution of monastic life, in East and West, be faithfully preserved."
+    },
+    {
+      "imageId": "paul-vi",
+      "section": 5,
+      "captionNl": "Paulus VI. Met het motu proprio *Ecclesiae Sanctae* (6 augustus 1966) gaf hij de normen voor de uitvoering van PC, waaronder de bijzondere kapittels voor de vernieuwing van de constituties.",
+      "captionEn": "Paul VI. In the motu proprio *Ecclesiae Sanctae* (6 August 1966) he gave the norms for implementing PC, including the special chapters for the renewal of the constitutions."
+    }
+  ],
   "sources": [
     "Alberigo, G., & Komonchak, J. A. (Eds.). (1995–2006). History of Vatican II (Vols. 1–5). Orbis Books; Peeters.",
     "O'Malley, J. W. (2008). What happened at Vatican II. Belknap Press of Harvard University Press.",

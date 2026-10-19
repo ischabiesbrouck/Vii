@@ -86,7 +86,7 @@ it, and nothing is generated at runtime.
 | File | Contents |
 |---|---|
 | `documents.json` | Metadata for the sixteen documents: dates, votes, Latin designation, summary, chapter outline |
-| `{docId}.json` | Paragraph excerpts (PCOUNT in total), with a Dutch working translation and Latin, and per excerpt an explanation in five parts (`explain`: what, who, why, how, meaning; 20–130 words per part, no quotation of more than eight words) |
+| `{docId}.json` | Paragraph excerpts (252 in total), with a Dutch working translation and Latin, and per excerpt an explanation in five parts (`explain`: what, who, why, how, meaning; 20–130 words per part, no quotation of more than eight words) |
 | `background/{docId}.json` | History and background of each document: 4–8 sections (at least 700 words per language), dated timeline, people, figures with captions, literature in APA 7 |
 | `studies/{subjectId}.json` | Sixteen study texts (about 38,500 words per language) |
 | `catechesis/{id}.json` | Twelve short catecheses (800–1,100 words per language); the validator rejects any quoted passage of more than six words |
