@@ -5,8 +5,9 @@ import { ArrowRight, Check, ChevronRight, ExternalLink } from 'lucide-react';
 import { VerdictBadge } from '@/components/Badges';
 import { CiteLink, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
 import { SubjectCard } from '@/components/SubjectCard';
+import { Credit, Photo, useImage } from '@/components/Photo';
 import { VideoRow } from '@/components/VideoCard';
-import { getAllParagraphs, getCatecheses, getClaims, getDocuments, getLessons, getShortCatecheses, getSubjects, getVideos, paragraphText, paragraphUrl } from '@/lib/content';
+import { getNthParagraph, getCatecheses, getClaims, getDocuments, getLessons, getShortCatecheses, getSubjects, getVideos, paragraphText, paragraphUrl } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { shortCite } from '@/lib/citation';
 import { toRoman } from '@/lib/roman';
@@ -15,11 +16,11 @@ import { cn, pick } from '@/lib/utils';
 import { useUi } from '@/store/ui';
 import type { DocType } from '@/types/content';
 
-function dayIndex(n: number) {
+/** A number that changes once a day (day of the year plus the year). */
+function dayIndex() {
   const d = new Date();
   const start = Date.UTC(d.getFullYear(), 0, 0);
-  const day = Math.floor((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - start) / 86_400_000);
-  return (day + d.getFullYear()) % n;
+  return Math.floor((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - start) / 86_400_000) + d.getFullYear();
 }
 
 const loc = (lang: 'nl' | 'en') => (lang === 'nl' ? 'nl-NL' : 'en-GB');
@@ -29,6 +30,76 @@ const shortDate = (iso: string, lang: 'nl' | 'en') => new Date(`${iso}T12:00:00`
 
 const docTypes: DocType[] = ['constitution', 'decree', 'declaration'];
 
+/** Plate I: a photograph of the council hall, with caption and credit. */
+function Frontispiece() {
+  const { t } = useTranslation();
+  const image = useImage('council-aula');
+  return (
+    <figure className="lg:mt-2">
+      <div className="aspect-[5/4] overflow-hidden border border-line bg-surface">
+        {image && <Photo image={image} priority sizes="(min-width: 1024px) 34rem, 100vw" className="h-full w-full object-cover" />}
+      </div>
+      <figcaption className="mt-2 font-sans text-[0.84rem] leading-snug text-muted">
+        <span className="font-title text-[0.95rem] text-accent small-caps">{t('home.plateLabel')}</span> {t('home.plate')}
+        {image && <Credit image={image} className="mt-0.5 block" />}
+      </figcaption>
+    </figure>
+  );
+}
+
+/** Ex Concilio: one paragraph a day, vernacular beside the Latin. Loads a single document. */
+function TextOfTheDay() {
+  const { t } = useTranslation();
+  const lang = useLang();
+  const { data } = useAsync(() => Promise.all([getNthParagraph(dayIndex()), getDocuments()]), []);
+  const [day, docs] = data ?? [];
+  return (
+    <section aria-labelledby="h-day" className="-mx-4 border-y border-line bg-surface px-4 py-10 lg:-mx-8 lg:px-8 lg:py-12">
+      <div className="grid min-h-[14rem] grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[13rem_minmax(0,1fr)_minmax(0,1fr)] lg:gap-10">
+        <div>
+          <p id="h-day" className="kicker">
+            Ex Concilio · {t('home.textOfDay')}
+          </p>
+          {day && docs && (
+            <>
+              <p className="mt-2 font-display text-[0.85rem] font-semibold uppercase leading-snug tracking-[0.12em]" lang="la">
+                {day.doc.titleLa}
+              </p>
+              <p className="mt-1 text-sm text-muted">{pick(lang, day.doc.titleNl, day.doc.titleEn)}</p>
+              <Link
+                to={paragraphUrl(day.paragraph.id, docs)}
+                className="mt-4 inline-flex min-h-[40px] items-center gap-1.5 border border-fg/25 bg-paper px-3 text-sm font-medium transition-colors hover:border-fg/60"
+              >
+                {t('home.readInContext')} · {shortCite(day.paragraph.id)} <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+              </Link>
+            </>
+          )}
+        </div>
+        {day ? (
+          <>
+            <blockquote className={cn('font-serif text-[1.18rem] leading-[1.7] lg:text-[1.25rem]', !day.paragraph.textLa && 'max-w-[46rem] lg:col-span-2')}>
+              <span className="mr-1.5 font-semibold text-accent">{day.paragraph.number}.</span>
+              {paragraphText(day.paragraph, lang).text}
+            </blockquote>
+            {day.paragraph.textLa ? (
+              <div lang="la" className="border-t border-gold/50 pt-4 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+                <p className="sr-only">{t('home.latinText')}</p>
+                <p className="la font-serif text-[1.02rem] leading-[1.7] text-muted">{day.paragraph.textLa}</p>
+              </div>
+            ) : null}
+          </>
+        ) : (
+          <div className="space-y-3 lg:col-span-2" aria-hidden>
+            <div className="skeleton h-4 w-full" />
+            <div className="skeleton h-4 w-11/12" />
+            <div className="skeleton h-4 w-4/5" />
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
 export function Home() {
   const { t } = useTranslation();
   const lang = useLang();
@@ -37,23 +108,83 @@ export function Home() {
   const bookmarks = useUi((s) => s.bookmarks);
   const lessonState = useUi((s) => s.lessons);
   const [q, setQ] = useState('');
-  const { data, loading } = useAsync(
-    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getAllParagraphs(), getLessons(), getCatecheses(), getVideos(), getShortCatecheses()]),
+  const { data } = useAsync(
+    () => Promise.all([getDocuments(), getSubjects(), getClaims(), getLessons(), getCatecheses(), getVideos(), getShortCatecheses()]),
     [],
   );
   useDocumentTitle(undefined);
 
-  if (loading || !data) return <Loading />;
-  const [docs, subjects, claims, paragraphs, lessons, cat, videos, shortCats] = data;
-  const lessonsDone = lessons.filter((l) => lessonState[l.id]?.done).length;
-  const nextLesson = lessons.find((l) => !lessonState[l.id]?.done) ?? lessons[0]!;
+  const lessons = data?.[3];
+  const lessonsDone = lessons?.filter((l) => lessonState[l.id]?.done).length ?? 0;
+  const nextLesson = lessons ? (lessons.find((l) => !lessonState[l.id]?.done) ?? lessons[0]) : undefined;
+
+  const onSearch = (e: FormEvent) => {
+    e.preventDefault();
+    navigate(`/search?q=${encodeURIComponent(q)}`);
+  };
+
+  // The title page needs no content files, so it paints before any fetch completes.
+  const hero = (
+    <section aria-labelledby="hero-title" className="grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:gap-16">
+      <div>
+        <p className="kicker">
+          Concilium Oecumenicum Vaticanum II<span className="hidden sm:inline"> · MCMLXII – MCMLXV</span>
+        </p>
+        <h1 id="hero-title" className="mt-3 max-w-[20ch] font-title text-[2.45rem] font-medium leading-[1.06] sm:text-[3.4rem] xl:text-[3.7rem]">
+          {t('home.heroTitle')}
+        </h1>
+        <div className="rule-double mt-6 max-w-[14rem]" aria-hidden />
+        <p className="mt-6 max-w-prose font-serif text-[1.12rem] leading-relaxed text-fg/85">{t('home.intro')}</p>
+        <div className="mt-7 flex flex-wrap gap-3">
+          <Link
+            to={nextLesson ? `/learn/${nextLesson.id}` : '/learn'}
+            className="inline-flex min-h-[46px] items-center gap-2 rounded-sm bg-primary px-5 text-sm font-semibold text-primary-fg transition-colors hover:bg-primary/90"
+          >
+            {lessonsDone === 0 || !nextLesson ? t('learn.start') : t('learn.resume', { n: nextLesson.number })}
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
+          <Link to="/documents" className="inline-flex min-h-[46px] items-center gap-2 rounded-sm border border-fg/25 px-5 text-sm font-medium transition-colors hover:border-fg/60">
+            {t('home.docIndex')}
+          </Link>
+        </div>
+        <form role="search" onSubmit={onSearch} className="mt-8 max-w-xl">
+          <label htmlFor="home-search" className="kicker mb-1.5 block">
+            {t('home.searchLabel')}
+          </label>
+          <div className="flex">
+            <input
+              id="home-search"
+              type="search"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder={t('home.searchPlaceholder')}
+              className="min-h-[46px] min-w-0 flex-1 rounded-l-sm border border-r-0 border-fg/25 bg-paper px-3 text-base placeholder:text-muted focus:border-fg/60"
+            />
+            <button type="submit" className="rounded-r-sm bg-fg px-4 text-sm font-semibold text-bg hover:bg-fg/85">
+              {t('home.searchButton')}
+            </button>
+          </div>
+        </form>
+      </div>
+      <Frontispiece />
+    </section>
+  );
+
+  if (!data || !lessons || !nextLesson)
+    return (
+      <div className="space-y-16">
+        {hero}
+        <TextOfTheDay />
+        <Loading />
+      </div>
+    );
+  const [docs, subjects, claims, , cat, videos, shortCats] = data;
   const totalMinutes = lessons.reduce((n, l) => n + l.minutes, 0);
   const todayIso = new Date().toISOString().slice(0, 10);
   const audiences = [...cat.items]
     .filter((c) => c.date <= todayIso)
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 4);
-  const ofTheDay = paragraphs[dayIndex(paragraphs.length)];
   const core = subjects.filter((s) => s.level !== 'deeper').slice(0, 6);
   const lectures = videos.items.slice(0, 4);
   const featuredClaims = [claims.find((c) => c.verdict === 'not-in-the-text'), claims.find((c) => c.verdict === 'contested'), claims.find((c) => c.verdict === 'partly')].filter(
@@ -64,85 +195,10 @@ export function Home() {
     .sort((a, b) => b[1].updatedAt - a[1].updatedAt)[0];
   const recentDoc = recent && docs.find((d) => d.id === recent[0]);
 
-  const onSearch = (e: FormEvent) => {
-    e.preventDefault();
-    navigate(`/search?q=${encodeURIComponent(q)}`);
-  };
-
   return (
     <div className="space-y-16">
-      {/* Title page */}
-      <section aria-labelledby="hero-title" className="grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)] lg:gap-14">
-        <div>
-          <p className="kicker">
-            Concilium Oecumenicum Vaticanum II<span className="hidden sm:inline"> · MCMLXII – MCMLXV</span>
-          </p>
-          <h1 id="hero-title" className="mt-3 max-w-[22ch] font-title text-[2.45rem] font-medium leading-[1.06] sm:text-[3.3rem]">
-            {t('home.heroTitle')}
-          </h1>
-          <div className="rule-double mt-6 max-w-[14rem]" aria-hidden />
-          <p className="mt-6 max-w-prose font-serif text-[1.12rem] leading-relaxed text-fg/85">{t('home.intro')}</p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              to={`/learn/${nextLesson.id}`}
-              className="inline-flex min-h-[46px] items-center gap-2 rounded-sm bg-primary px-5 text-sm font-semibold text-primary-fg transition-colors hover:bg-primary/90"
-            >
-              {lessonsDone === 0 ? t('learn.start') : t('learn.resume', { n: nextLesson.number })}
-              <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-            <Link to="/documents" className="inline-flex min-h-[46px] items-center gap-2 rounded-sm border border-fg/25 px-5 text-sm font-medium transition-colors hover:border-fg/60">
-              {t('home.docIndex')}
-            </Link>
-          </div>
-          <form role="search" onSubmit={onSearch} className="mt-8 max-w-xl">
-            <label htmlFor="home-search" className="kicker mb-1.5 block">
-              {t('home.searchLabel')}
-            </label>
-            <div className="flex">
-              <input
-                id="home-search"
-                type="search"
-                value={q}
-                onChange={(e) => setQ(e.target.value)}
-                placeholder={t('home.searchPlaceholder')}
-                className="min-h-[46px] min-w-0 flex-1 rounded-l-sm border border-r-0 border-fg/25 bg-paper px-3 text-base placeholder:text-muted focus:border-fg/60"
-              />
-              <button type="submit" className="rounded-r-sm bg-fg px-4 text-sm font-semibold text-bg hover:bg-fg/85">
-                {t('home.searchButton')}
-              </button>
-            </div>
-          </form>
-        </div>
-
-        {ofTheDay && (
-          <aside aria-labelledby="h-day" className="self-start border border-line bg-paper">
-            <div className="h-[3px] bg-accent" aria-hidden />
-            <div className="p-6">
-              <p id="h-day" className="kicker">
-                Ex Concilio · {t('home.textOfDay')}
-              </p>
-              <p className="mt-1 font-display text-[0.8rem] font-semibold uppercase tracking-[0.12em]" lang="la">
-                {ofTheDay.doc.titleLa}
-              </p>
-              <blockquote className="mt-4 font-serif text-[1.12rem] leading-[1.65]">
-                <span className="float-left mr-2 mt-1 font-serif text-sm font-semibold text-accent">{ofTheDay.paragraph.number}.</span>
-                {paragraphText(ofTheDay.paragraph, lang).text}
-              </blockquote>
-              {ofTheDay.paragraph.textLa && (
-                <p lang="la" className="la mt-3 border-t border-line pt-3 text-[0.92rem] text-muted">
-                  {ofTheDay.paragraph.textLa}
-                </p>
-              )}
-              <p className="mt-4 flex items-center justify-between gap-3 text-sm">
-                <span className="font-semibold text-accent">{shortCite(ofTheDay.paragraph.id)}</span>
-                <Link to={paragraphUrl(ofTheDay.paragraph.id, docs)} className="inline-flex items-center gap-1 font-medium text-accent hover:underline">
-                  {t('home.readInContext')} <ArrowRight className="h-3.5 w-3.5" aria-hidden />
-                </Link>
-              </p>
-            </div>
-          </aside>
-        )}
-      </section>
+      {hero}
+      <TextOfTheDay />
 
       {(recentDoc || bookmarks.length > 0) && (
         <section className="flex flex-col gap-4 border-y border-line py-4 text-sm sm:flex-row sm:items-center sm:gap-8">
@@ -243,6 +299,28 @@ export function Home() {
         </table>
       </section>
 
+      {/* Study paths */}
+      <section aria-labelledby="h-subjects">
+        <SectionTitle
+          id="h-subjects"
+          action={
+            <Link to="/subjects" className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
+              {t('home.allSubjects')} <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          }
+        >
+          {t('nav.subjects')}
+        </SectionTitle>
+        <p className="-mt-1 mb-5 max-w-prose text-sm text-muted">{t('home.subjectsLead')}</p>
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {core.map((s) => (
+            <li key={s.id}>
+              <SubjectCard subject={s} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {shortCats.length > 0 && (
         <section aria-labelledby="h-sc">
           <SectionTitle
@@ -341,28 +419,6 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Study paths */}
-      <section aria-labelledby="h-subjects">
-        <SectionTitle
-          id="h-subjects"
-          action={
-            <Link to="/subjects" className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
-              {t('home.allSubjects')} <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-          }
-        >
-          {t('nav.subjects')}
-        </SectionTitle>
-        <p className="-mt-1 mb-5 max-w-prose text-sm text-muted">{t('home.subjectsLead')}</p>
-        <ul className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
-          {core.map((s) => (
-            <li key={s.id} className="bg-card">
-              <SubjectCard subject={s} flat />
-            </li>
-          ))}
-        </ul>
       </section>
 
       {/* Claim check | video lectures */}

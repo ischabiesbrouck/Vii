@@ -210,3 +210,8 @@
   background-size: 200% 100%;
   animation: shimmer 1.4s linear infinite;
 }
+
+/* Photographs sit slightly dimmer on the dark ground, so they do not glare. */
+.dark .photo {
+  filter: brightness(0.86) contrast(1.05);
+}

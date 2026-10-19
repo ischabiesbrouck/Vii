@@ -1,8 +1,10 @@
+import { useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 import { Crumbs, Loading } from '@/components/TextBlocks';
 import { LinkedText } from '@/components/RefLink';
+import { ReadingBar } from '@/components/ReadingBar';
 import { getShortCatecheses, getSubjects } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
@@ -13,6 +15,7 @@ export function CatechesisItem() {
   const { id = '' } = useParams();
   const { t } = useTranslation();
   const lang = useLang();
+  const articleRef = useRef<HTMLElement>(null);
   const { data, loading } = useAsync(() => Promise.all([getShortCatecheses(), getSubjects()]), []);
   const list = data?.[0] ?? [];
   const i = list.findIndex((c) => c.id === id);
@@ -26,7 +29,8 @@ export function CatechesisItem() {
   const sections = lang === 'nl' ? c.sections.map((s) => ({ h: s.headingNl, ps: s.nl })) : c.sections.map((s) => ({ h: s.headingEn, ps: s.en }));
 
   return (
-    <article className="mx-auto max-w-[44rem]">
+    <article ref={articleRef} className="mx-auto max-w-[44rem]">
+      <ReadingBar target={articleRef} />
       <Crumbs items={[{ to: '/', label: t('crumbs.home') }, { to: '/catechesis', label: t('sc.title') }, { label: `${toRoman(c.number)}` }]} />
 
       <header className="mb-8 text-center">

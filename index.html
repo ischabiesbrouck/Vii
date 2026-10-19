@@ -24,7 +24,15 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static shell: paints as soon as the stylesheet arrives; React replaces it on mount. -->
+      <div class="min-h-dvh bg-bg">
+        <div class="h-[3px] bg-gold/80"></div>
+        <div class="mx-auto flex h-16 max-w-page items-center border-b border-line px-4 lg:h-24 lg:px-8">
+          <span class="font-display text-[1.12rem] font-bold uppercase leading-none tracking-[0.18em] text-fg sm:text-[1.35rem]">Concilium</span>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

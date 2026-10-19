@@ -4,6 +4,7 @@ import { SubjectCard } from '@/components/SubjectCard';
 import { getSubjects } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle } from '@/lib/hooks';
+import { cn } from '@/lib/utils';
 import type { SubjectLevel } from '@/types/content';
 
 const levels: SubjectLevel[] = ['start', 'core', 'deeper'];
@@ -26,8 +27,8 @@ export function Subjects() {
               <SectionTitle id={`h-${level}`}>{t(`subjects.level.${level}`)}</SectionTitle>
               <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {group.map((s) => (
-                  <li key={s.id}>
-                    <SubjectCard subject={s} featured={level === 'start'} />
+                  <li key={s.id} className={cn(group.length === 1 && 'sm:col-span-2 lg:col-span-3')}>
+                    <SubjectCard subject={s} featured={level === 'start'} wide={group.length === 1} />
                   </li>
                 ))}
               </ul>

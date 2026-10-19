@@ -94,13 +94,27 @@ export async function getParagraph(
 
 export async function getAllParagraphs(): Promise<{ paragraph: Paragraph; doc: CouncilDocument }[]> {
   const [docs, index] = await Promise.all([getDocuments(), getIndex()]);
-  const out: { paragraph: Paragraph; doc: CouncilDocument }[] = [];
-  for (const doc of docs) {
-    if (!index.available.includes(doc.id)) continue;
-    const content = await load<DocumentContent>(`${doc.id}.json`);
-    for (const paragraph of content.paragraphs) out.push({ paragraph, doc });
+  const available = docs.filter((d) => index.available.includes(d.id));
+  const contents = await Promise.all(available.map((d) => load<DocumentContent>(`${d.id}.json`)));
+  return available.flatMap((doc, i) => contents[i]!.paragraphs.map((paragraph) => ({ paragraph, doc })));
+}
+
+/** The n-th seeded paragraph (modulo the total), loading only the document that holds it. */
+export async function getNthParagraph(n: number): Promise<{ paragraph: Paragraph; doc: CouncilDocument } | null> {
+  const [docs, index] = await Promise.all([getDocuments(), getIndex()]);
+  const available = docs.filter((d) => index.available.includes(d.id));
+  const total = available.reduce((sum, d) => sum + (index.counts[d.id] ?? 0), 0);
+  if (!total) return null;
+  let i = n % total;
+  for (const doc of available) {
+    const count = index.counts[doc.id] ?? 0;
+    if (i < count) {
+      const paragraph = (await getDocumentContent(doc.id))?.paragraphs[i];
+      return paragraph ? { paragraph, doc } : null;
+    }
+    i -= count;
   }
-  return out;
+  return null;
 }
 
 /** Text to render, honouring the CONTENT_MODE licensing switch. */

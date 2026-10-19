@@ -52,6 +52,9 @@ const nl = {
   home: {
     docIndex: 'Index van de documenten',
     textOfDay: 'Tekst van de dag',
+    plate: 'De concilievaders in het schip van de Sint-Pietersbasiliek, 1962–1965.',
+    plateLabel: 'Tab. I',
+    latinText: 'Latijnse tekst',
     readInContext: 'Lees in context',
     searchLabel: 'Zoek in de teksten',
     searchButton: 'Zoeken',
@@ -150,6 +153,7 @@ const nl = {
   },
   para: {
     citation: 'Citatie',
+    actions: 'Citatie, bladwijzer en verwijzingen',
     copy: 'Kopieer citatie',
     copied: 'Citatie gekopieerd',
     share: 'Delen',
@@ -439,6 +443,9 @@ const en: Shape<typeof nl> = {
   home: {
     docIndex: 'Index of the documents',
     textOfDay: 'Text of the day',
+    plate: 'The Council Fathers in the nave of St Peter’s Basilica, 1962–1965.',
+    plateLabel: 'Plate I',
+    latinText: 'Latin text',
     readInContext: 'Read in context',
     searchLabel: 'Search the texts',
     searchButton: 'Search',
@@ -535,6 +542,7 @@ const en: Shape<typeof nl> = {
     all: 'All 16 documents',
   },
   para: {
+    actions: 'Citation, bookmark and cross-references',
     citation: 'Citation',
     copy: 'Copy citation',
     copied: 'Citation copied',

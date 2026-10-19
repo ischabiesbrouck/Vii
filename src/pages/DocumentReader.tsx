@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Maximize2, Minimize2, Star } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookmarkCheck, ExternalLink, Info, ListTree, Maximize2, Minimize2, MoreHorizontal, Star } from 'lucide-react';
 import { useFocusMode } from '@/store/focus';
 import { DocTypeBadge, SolemnityBadge } from '@/components/Badges';
 import { Commentary, ConciliarText, CiteLink, Crumbs, Loading, ProgressBar } from '@/components/TextBlocks';
@@ -96,15 +96,19 @@ function ReaderParagraph({
         {isKey && <Star className="h-3.5 w-3.5 fill-gold text-gold" aria-label={t('doc.keyParagraphs')} />}
         {isBookmarked && <BookmarkCheck className="h-3.5 w-3.5 text-accent" aria-label={t('para.bookmark')} />}
         {(p.noteNl || p.noteEn) && <Info className="h-3.5 w-3.5 text-gold-text" aria-label={t('commentary')} />}
+        <button
+          type="button"
+          onClick={() => onOpen(p)}
+          aria-haspopup="dialog"
+          aria-label={`${t('para.actions')}: ${doc.abbr} §${p.number}`}
+          title={t('para.actions')}
+          className="ml-auto inline-flex h-8 w-8 items-center justify-center rounded-sm text-muted transition-colors hover:bg-surface hover:text-fg sm:ml-0"
+        >
+          <MoreHorizontal className="h-4 w-4" aria-hidden />
+        </button>
       </div>
-      <div
-        role="button"
-        tabIndex={0}
-        aria-haspopup="dialog"
-        aria-label={`${doc.abbr} §${p.number}`}
-        className="no-callout cursor-pointer transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]"
-        {...handlers}
-      >
+      {/* Tapping the text opens the same panel; long-press copies the citation. Keyboard users use the button above. */}
+      <div className="no-callout cursor-pointer transition-shadow hover:shadow-[0_0_0_1px_rgb(var(--gold))]" {...handlers}>
         <ConciliarText paragraph={p} cite={`${doc.abbr} §${p.number}`} />
       </div>
     </article>
@@ -337,9 +341,13 @@ export function DocumentReader() {
                   <span className="bg-gold" style={{ width: `${(doc.voteFor / total) * 100}%` }} />
                   <span className="bg-accent" style={{ width: `${(doc.voteAgainst / total) * 100}%`, minWidth: 2 }} />
                 </span>
-                <span className="mt-1 block">
-                  {doc.voteFor.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.placet')}</span> · {doc.voteAgainst.toLocaleString(lang)}{' '}
-                  <span lang="la" className="la text-muted">{t('doc.nonPlacet')}</span>
+                <span className="mt-1 flex flex-wrap gap-x-2">
+                  <span className="whitespace-nowrap">
+                    {doc.voteFor.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.placet')}</span>
+                  </span>
+                  <span className="whitespace-nowrap">
+                    {doc.voteAgainst.toLocaleString(lang)} <span lang="la" className="la text-muted">{t('doc.nonPlacet')}</span>
+                  </span>
                 </span>
               </>
             ) : (

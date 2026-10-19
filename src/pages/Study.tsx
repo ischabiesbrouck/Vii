@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft, ArrowRight, Check, ListTree } from 'lucide-react';
 import { Apa, Crumbs, Loading } from '@/components/TextBlocks';
 import { StudyBlockView } from '@/components/StudyText';
+import { ReadingBar } from '@/components/ReadingBar';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { getStudy, getSubjects } from '@/lib/content';
 import { useAsync } from '@/lib/useAsync';
@@ -46,6 +47,7 @@ export function Study() {
   const lang = useLang();
   const markChapterRead = useUi((s) => s.markChapterRead);
   const [tocOpen, setTocOpen] = useState(false);
+  const articleRef = useRef<HTMLElement>(null);
   const { data, loading } = useAsync(async () => {
     const [study, subjects] = await Promise.all([getStudy(id), getSubjects()]);
     return { study, subject: subjects.find((s) => s.id === id) };
@@ -99,7 +101,8 @@ export function Study() {
           </div>
         </aside>
 
-        <article className="min-w-0 max-w-[44rem]">
+        <article ref={articleRef} className="min-w-0 max-w-[44rem]">
+          <ReadingBar target={articleRef} />
           {/* Running head, as in a printed book */}
           <div className="mb-8 flex items-center justify-between gap-3 border-b border-line pb-2 text-xs text-muted">
             <span className="truncate font-title text-[0.95rem] italic">{subjectTitle}</span>
@@ -130,10 +133,10 @@ export function Study() {
           {ch.sections.length > 1 && (
             <nav aria-label={t('study.inChapter')} className="mb-10 font-sans text-sm">
               <p className="kicker mb-1">{t('study.inChapter')}</p>
-              <ol className="space-y-0.5">
+              <ol>
                 {ch.sections.map((s, i) => (
                   <li key={s.headingNl}>
-                    <a href={`#sec-${n}-${i + 1}`} className="hover:text-accent hover:underline">
+                    <a href={`#sec-${n}-${i + 1}`} className="inline-block py-1.5 hover:text-accent hover:underline">
                       <span className="tabular text-muted">
                         {n}.{i + 1}
                       </span>{' '}

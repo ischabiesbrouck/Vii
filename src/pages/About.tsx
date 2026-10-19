@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { Commentary, PageHeader } from '@/components/TextBlocks';
 import { SettingsPanel } from '@/components/Layout';
-import { getIndex } from '@/lib/content';
+import { getImages, getIndex } from '@/lib/content';
+import { Credit, Photo } from '@/components/Photo';
+import { pick } from '@/lib/utils';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { CONTENT_MODE, OFFICIAL_INDEX_URL, RKDOCUMENTEN_URL } from '@/config';
@@ -21,6 +23,7 @@ export function About() {
   const { t } = useTranslation();
   const lang = useLang();
   const { data: index } = useAsync(getIndex, []);
+  const { data: images } = useAsync(getImages, []);
   useDocumentTitle(t('about.title'));
   const nl = lang === 'nl';
 
@@ -132,6 +135,30 @@ export function About() {
           ))}
         </ul>
       </section>
+
+      {images && images.length > 0 && (
+        <section id="image-credits" aria-labelledby="h-credits">
+          <h2 id="h-credits" className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">
+            {nl ? 'Beeldverantwoording' : 'Image credits'}
+          </h2>
+          <p className="mb-4 text-sm text-muted">
+            {nl
+              ? 'Alle afbeeldingen komen van Wikimedia Commons en zijn vrij van rechten of vrij gelicentieerd (CC0, CC BY, CC BY-SA). De licentie is per afbeelding gecontroleerd. Ze zijn verkleind; verder ongewijzigd.'
+              : 'All images come from Wikimedia Commons and are in the public domain or freely licensed (CC0, CC BY, CC BY-SA). Each licence was checked per image. They have been reduced in size and are otherwise unaltered.'}
+          </p>
+          <ul className="divide-y divide-line border-y border-line">
+            {images.map((im) => (
+              <li key={im.id} className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-center gap-4 py-3">
+                <Photo image={im} sizes="72px" className="aspect-square h-[4.5rem] w-[4.5rem] border border-line object-cover" />
+                <span className="min-w-0 text-sm">
+                  <span className="block leading-snug">{pick(lang, im.altNl, im.altEn)}</span>
+                  <Credit image={im} className="mt-0.5 block" />
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section>
         <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Instellingen' : 'Settings'}</h2>

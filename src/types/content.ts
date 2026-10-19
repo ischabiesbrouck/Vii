@@ -51,6 +51,10 @@ export type SubjectLevel = 'start' | 'core' | 'deeper';
 
 /** A guided study path through the texts. */
 export interface Subject {
+  /** Licensed image (images.json) for cards and the subject header. */
+  imageId?: string;
+  /** CSS object-position for the cropped image, e.g. '50% 20%'. */
+  imageFocus?: string;
   id: string;
   icon: string;
   level: SubjectLevel;

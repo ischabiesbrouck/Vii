@@ -104,7 +104,10 @@ invalidates the cached search index.
      licence again, downloads the files to `public/images/` and writes `images.json`.
 
   Then reduce the files locally (the current set uses at most 1000 × 1400 px, JPEG
-  quality 80) and delete `tools/images/candidates/` before merging.
+  quality 80), make a 640 px copy in `public/images/640/` for phones (the validator
+  checks it exists), and delete `tools/images/candidates/` before merging.
+  A subject's card and header photo is set with `imageId` (and optionally
+  `imageFocus`, a CSS object-position) in `subjects.json`.
 
 ### Editorial status
 
@@ -165,6 +168,7 @@ and of pontifical faculties, without using any official emblem.
 | Vatican News | Red section labels with a date line |
 | Curial documents | Latin date line (*Dominica, die XVIII mensis Octobris, anno MMXXVI*) and the heading formula *Paulus Episcopus, Servus Servorum Dei…* |
 | Pontifical universities | Seal with a Latin legend, syllabus tables, sober forms |
+| Printed study editions | Photographs as numbered plates (*Tab. I*), with caption and credit |
 
 **Typefaces:**
 - EB Garamond for headings and small caps.
@@ -186,6 +190,15 @@ and of pontifical faculties, without using any official emblem.
   - On a page change, focus moves to the content and the page title is announced.
   - Back navigation restores the scroll position.
   - No horizontal scrolling at 320 px.
+- **Performance** (Lighthouse 13, simulated mobile / desktop, home page)
+  - Desktop 97–99 on the main pages; mobile about 75; layout shift 0.
+  - The masthead is static HTML in `index.html` and paints before the JavaScript.
+  - The home title page renders without waiting for content; the text of the day
+    loads one document, not all sixteen.
+  - The search engine, the command palette and the video player load on first use;
+    other page chunks and the search index are warmed a few seconds after load.
+  - The Latin subsets of the four typefaces are preloaded (a small Vite plugin).
+  - Photos are served from `srcset` (640 px or full) with fixed dimensions.
 - **Automated checks**
   - `ci.yml` runs `npm run check` and a production build on every pull request.
   - The Pages workflow runs the tests before every deployment.

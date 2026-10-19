@@ -123,7 +123,6 @@ export function VideoTheater() {
                     src={src}
                     title={video.title}
                     allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-                    allowFullScreen
                     referrerPolicy="strict-origin-when-cross-origin"
                   />
                 ) : (
