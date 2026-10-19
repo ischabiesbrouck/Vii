@@ -5,63 +5,241 @@
   "review": "unverified",
   "paragraphs": [
     {
-      "id": "DH-1", "docId": "dignitatis-humanae", "number": 1,
+      "id": "DH-1",
+      "docId": "dignitatis-humanae",
+      "number": 1,
       "textEn": "First, the council professes its belief that God Himself has made known to mankind the way in which men are to serve Him, and thus be saved in Christ and come to blessedness. We believe that this one true religion subsists in the Catholic and Apostolic Church … Religious freedom, in turn, which men demand as necessary to fulfill their duty to worship God, has to do with immunity from coercion in civil society. Therefore it leaves untouched traditional Catholic doctrine on the moral duty of men and societies toward the true religion and toward the one Church of Christ.",
       "textNl": "Allereerst belijdt het Concilie dat God zelf aan het mensdom de weg heeft bekendgemaakt waarlangs de mensen Hem moeten dienen en zo in Christus gered en gelukzalig kunnen worden. Deze ene ware godsdienst, zo geloven wij, is verwerkelijkt (subsistere) in de katholieke en apostolische Kerk … De godsdienstvrijheid die de mensen opeisen om hun plicht tot godsverering te kunnen vervullen, betreft de vrijwaring van dwang in de burgerlijke samenleving. Zij laat daarom de traditionele katholieke leer over de morele plicht van mensen en samenlevingen tegenover de ware godsdienst en de ene Kerk van Christus onaangetast.",
       "textLa": "… integram relinquit traditionalem doctrinam catholicam de morali hominum ac societatum officio erga veram religionem et unicam Christi Ecclesiam.",
-      "tags": ["religious-liberty", "true-religion", "continuity", "church-and-state"],
-      "crossRefs": ["DH-2", "LG-8", "ext:immortale-dei-1885", "ext:quanta-cura-1864"],
+      "tags": [
+        "religious-liberty",
+        "true-religion",
+        "continuity",
+        "church-and-state"
+      ],
+      "crossRefs": [
+        "DH-2",
+        "LG-8",
+        "ext:immortale-dei-1885",
+        "ext:quanta-cura-1864"
+      ],
       "noteNl": "Deze zin werd in de laatste redactie toegevoegd. Hoe zij zich verhoudt tot §2 vormt de kern van het interpretatiedebat; zie Claim Check.",
       "noteEn": "This sentence was added in the final redaction. How it relates to §2 is the core of the interpretive debate; see Claim Check."
     },
     {
-      "id": "DH-2", "docId": "dignitatis-humanae", "number": 2,
+      "id": "DH-2",
+      "docId": "dignitatis-humanae",
+      "number": 2,
       "textEn": "This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that no one is to be forced to act in a manner contrary to his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits. … The council further declares that the right to religious freedom has its foundation in the very dignity of the human person as this dignity is known through the revealed word of God and by reason itself.",
       "textNl": "Dit Vaticaans Concilie verklaart dat de menselijke persoon recht heeft op godsdienstvrijheid. Deze vrijheid houdt in dat alle mensen vrij moeten zijn van dwang, zowel van de kant van individuen als van sociale groepen en van welke menselijke macht ook, zodat niemand gedwongen wordt tegen zijn geweten te handelen, privé of in het openbaar, alleen of met anderen, binnen de juiste grenzen. … Het Concilie verklaart verder dat het recht op godsdienstvrijheid gegrond is in de waardigheid zelf van de menselijke persoon, zoals die door het geopenbaarde woord van God en door de rede zelf gekend wordt.",
       "textLa": "Haec Vaticana Synodus declarat personam humanam ius habere ad libertatem religiosam.",
-      "tags": ["religious-liberty", "human-dignity", "church-and-state"],
-      "crossRefs": ["DH-1", "DH-7", "DH-10", "ext:quanta-cura-1864"],
+      "tags": [
+        "religious-liberty",
+        "human-dignity",
+        "church-and-state"
+      ],
+      "crossRefs": [
+        "DH-1",
+        "DH-7",
+        "DH-10",
+        "ext:quanta-cura-1864"
+      ],
       "noteNl": "Het recht wordt geformuleerd als een recht op vrijwaring van dwang (een negatief recht), niet als een recht om te geloven wat men wil zonder morele verplichting.",
       "noteEn": "The right is framed as a right to immunity from coercion (a negative right), not as a right to believe whatever one wishes without moral obligation."
     },
     {
-      "id": "DH-3", "docId": "dignitatis-humanae", "number": 3,
+      "id": "DH-3",
+      "docId": "dignitatis-humanae",
+      "number": 3,
       "textEn": "Further light is shed on the subject if one considers that the highest norm of human life is the divine law—eternal, objective and universal—whereby God orders, directs and governs the entire universe and all the ways of the human community …",
       "textNl": "Dit wordt nog duidelijker als men bedenkt dat de hoogste norm van het menselijk leven de goddelijke wet zelf is — eeuwig, objectief en universeel — waardoor God de hele wereld en de wegen van de menselijke gemeenschap ordent, leidt en bestuurt …",
-      "tags": ["religious-liberty", "natural-law", "conscience"],
-      "crossRefs": ["GS-16"]
+      "tags": [
+        "religious-liberty",
+        "natural-law",
+        "conscience"
+      ],
+      "crossRefs": [
+        "GS-16"
+      ]
     },
     {
-      "id": "DH-7", "docId": "dignitatis-humanae", "number": 7,
+      "id": "DH-4",
+      "docId": "dignitatis-humanae",
+      "number": 4,
+      "textEn": "The freedom or immunity from coercion in matters religious which is the endowment of persons as individuals is also to be recognized as their right when they act in community. Religious communities are a requirement of the social nature both of man and of religion itself.",
+      "textNl": "De vrijheid of vrijwaring van dwang in godsdienstige aangelegenheden die personen als individuen toekomt, moet ook als hun recht worden erkend wanneer zij gemeenschappelijk handelen. Godsdienstige gemeenschappen zijn immers een eis van de sociale natuur van zowel de mens als de godsdienst zelf.",
+      "tags": [
+        "religious-liberty",
+        "freedom",
+        "church-and-state"
+      ],
+      "crossRefs": [
+        "DH-2",
+        "DH-13"
+      ]
+    },
+    {
+      "id": "DH-5",
+      "docId": "dignitatis-humanae",
+      "number": 5,
+      "textEn": "The family, since it is a society in its own original right, has the right freely to live its own domestic religious life under the guidance of parents. Parents, moreover, have the right to determine, in accordance with their own religious beliefs, the kind of religious education that their children are to receive.",
+      "textNl": "Het gezin, als samenleving met een eigen en oorspronkelijk recht, heeft het recht zijn godsdienstig leven in huiselijke kring vrij te beleven onder leiding van de ouders. De ouders hebben bovendien het recht om, overeenkomstig hun eigen godsdienstige overtuiging, te bepalen welke godsdienstige opvoeding hun kinderen zullen ontvangen.",
+      "tags": [
+        "religious-liberty",
+        "family",
+        "parents",
+        "education"
+      ],
+      "crossRefs": [
+        "DH-4",
+        "GE-3"
+      ]
+    },
+    {
+      "id": "DH-6",
+      "docId": "dignitatis-humanae",
+      "number": 6,
+      "textEn": "If, in view of peculiar circumstances obtaining among peoples, special civil recognition is given to one religious community in the constitutional order of society, it is at the same time imperative that the right of all citizens and religious communities to religious freedom should be recognized and made effective in practice.",
+      "textNl": "Wanneer, gelet op bijzondere omstandigheden bij de volken, aan één godsdienstige gemeenschap in de rechtsorde van de samenleving een bijzondere burgerlijke erkenning wordt verleend, dan moet tegelijk het recht van alle burgers en godsdienstige gemeenschappen op godsdienstvrijheid worden erkend en in de praktijk verwerkelijkt.",
+      "tags": [
+        "religious-liberty",
+        "church-and-state",
+        "common-good"
+      ],
+      "crossRefs": [
+        "DH-1",
+        "DH-7",
+        "ext:immortale-dei-1885"
+      ]
+    },
+    {
+      "id": "DH-7",
+      "docId": "dignitatis-humanae",
+      "number": 7,
       "textEn": "… society has the right to defend itself against possible abuses committed on the pretext of freedom of religion.",
       "textNl": "… de samenleving heeft het recht zich te verdedigen tegen misbruiken die onder het voorwendsel van godsdienstvrijheid kunnen plaatsvinden.",
-      "tags": ["religious-liberty", "public-order", "church-and-state"],
-      "crossRefs": ["DH-2"],
+      "tags": [
+        "religious-liberty",
+        "public-order",
+        "church-and-state"
+      ],
+      "crossRefs": [
+        "DH-2"
+      ],
       "noteNl": "§7 noemt als grenzen de bescherming van de rechten van allen, de openbare vrede en de openbare zedelijkheid, samen de 'openbare orde'.",
       "noteEn": "§7 names as limits the protection of the rights of all, public peace and public morality, together 'public order'."
     },
     {
-      "id": "DH-10", "docId": "dignitatis-humanae", "number": 10,
-      "textEn": "It is one of the major tenets of Catholic doctrine that man's response to God in faith must be free: no one therefore is to be forced to embrace the Christian faith against his own will.",
-      "textNl": "Het is een van de hoofdpunten van de katholieke leer dat de mens God vrijwillig moet antwoorden door te geloven; daarom mag niemand tegen zijn wil gedwongen worden het geloof te aanvaarden.",
-      "tags": ["religious-liberty", "faith", "freedom"],
-      "crossRefs": ["DH-2"]
+      "id": "DH-9",
+      "docId": "dignitatis-humanae",
+      "number": 9,
+      "textEn": "What is more, this doctrine of freedom has roots in divine revelation, and for this reason Christians are bound to respect it all the more conscientiously. Revelation does not indeed affirm in so many words the right of man to immunity from external coercion in matters religious. It does, however, disclose the dignity of the human person in its full dimensions.",
+      "textNl": "Bovendien heeft deze leer over de vrijheid haar wortels in de goddelijke openbaring, en daarom moeten christenen haar des te nauwgezetter eerbiedigen. De openbaring stelt weliswaar niet met zoveel woorden het recht van de mens op vrijwaring van uitwendige dwang in godsdienstige aangelegenheden. Zij openbaart echter de waardigheid van de menselijke persoon in haar volle omvang.",
+      "tags": [
+        "religious-liberty",
+        "revelation",
+        "human-dignity"
+      ],
+      "crossRefs": [
+        "DH-2",
+        "DH-10"
+      ]
     },
     {
-      "id": "DH-12", "docId": "dignitatis-humanae", "number": 12,
+      "id": "DH-10",
+      "docId": "dignitatis-humanae",
+      "number": 10,
+      "textEn": "It is one of the major tenets of Catholic doctrine that man's response to God in faith must be free: no one therefore is to be forced to embrace the Christian faith against his own will.",
+      "textNl": "Het is een van de hoofdpunten van de katholieke leer dat de mens God vrijwillig moet antwoorden door te geloven; daarom mag niemand tegen zijn wil gedwongen worden het christelijk geloof te aanvaarden.",
+      "tags": [
+        "religious-liberty",
+        "faith",
+        "freedom"
+      ],
+      "crossRefs": [
+        "DH-2"
+      ]
+    },
+    {
+      "id": "DH-11",
+      "docId": "dignitatis-humanae",
+      "number": 11,
+      "textEn": "God calls men to serve Him in spirit and in truth, hence they are bound in conscience but they stand under no compulsion. … He bore witness to the truth, but He refused to impose the truth by force on those who spoke against it.",
+      "textNl": "God roept de mensen om Hem in geest en waarheid te dienen; zij zijn daardoor in geweten gebonden, maar staan niet onder dwang. … Hij heeft getuigenis afgelegd van de waarheid, maar weigerde haar met geweld op te leggen aan hen die haar tegenspraken.",
+      "tags": [
+        "religious-liberty",
+        "christology",
+        "freedom",
+        "conscience"
+      ],
+      "crossRefs": [
+        "DH-10",
+        "DH-12"
+      ]
+    },
+    {
+      "id": "DH-12",
+      "docId": "dignitatis-humanae",
+      "number": 12,
       "textEn": "In the life of the People of God, as it has made its pilgrim way through the vicissitudes of human history, there has at times appeared a way of acting that was hardly in accord with the spirit of the Gospel or even opposed to it.",
       "textNl": "In het leven van het volk van God, op zijn pelgrimstocht door de wisselvalligheden van de menselijke geschiedenis, is soms een wijze van handelen voorgekomen die weinig in overeenstemming was met de geest van het evangelie, of er zelfs mee in strijd was.",
-      "tags": ["religious-liberty", "history"],
-      "crossRefs": ["DH-10"],
+      "tags": [
+        "religious-liberty",
+        "history"
+      ],
+      "crossRefs": [
+        "DH-10"
+      ],
       "noteNl": "De tekst vervolgt dat de leer van de Kerk dat niemand tot het geloof gedwongen mag worden, ondanks dit alles standhield.",
       "noteEn": "The text continues that the Church's teaching that no one is to be coerced into faith has nonetheless stood firm throughout."
     },
     {
-      "id": "DH-14", "docId": "dignitatis-humanae", "number": 14,
+      "id": "DH-13",
+      "docId": "dignitatis-humanae",
+      "number": 13,
+      "textEn": "Among the things that concern the good of the Church and indeed the welfare of society here on earth … this certainly is preeminent, namely, that the Church should enjoy that full measure of freedom which her care for the salvation of men requires. … The freedom of the Church is the fundamental principle in what concerns the relations between the Church and governments and the whole civil order.",
+      "textNl": "Onder wat het welzijn van de Kerk en ook het welzijn van de aardse samenleving aangaat … neemt dit zeker de eerste plaats in: dat de Kerk de volle vrijheid geniet die haar zorg voor het heil van de mensen vereist. … De vrijheid van de Kerk is het grondbeginsel in de betrekkingen tussen de Kerk en de overheden en de gehele burgerlijke orde.",
+      "tags": [
+        "religious-liberty",
+        "church-and-state",
+        "freedom"
+      ],
+      "crossRefs": [
+        "DH-4",
+        "DH-14",
+        "GS-76"
+      ]
+    },
+    {
+      "id": "DH-14",
+      "docId": "dignitatis-humanae",
+      "number": 14,
       "textEn": "In the formation of their consciences, the Christian faithful ought carefully to attend to the sacred and certain doctrine of the Church. For the Church is, by the will of Christ, the teacher of the truth.",
       "textNl": "Bij de vorming van hun geweten moeten de christengelovigen zorgvuldig acht slaan op de heilige en zekere leer van de Kerk. Want de Kerk is naar de wil van Christus de lerares van de waarheid.",
-      "tags": ["conscience", "magisterium"],
-      "crossRefs": ["GS-16", "LG-25"]
+      "tags": [
+        "conscience",
+        "magisterium"
+      ],
+      "crossRefs": [
+        "GS-16",
+        "LG-25"
+      ]
+    },
+    {
+      "id": "DH-15",
+      "docId": "dignitatis-humanae",
+      "number": 15,
+      "textEn": "The fact is that men of the present day want to be able freely to profess their religion in private and in public. Indeed, religious freedom has already been declared to be a civil right in most constitutions, and it is solemnly recognized in international documents.",
+      "textNl": "Het is een feit dat de mensen van vandaag hun godsdienst vrij willen kunnen belijden, privé en in het openbaar. De godsdienstvrijheid is in de meeste grondwetten al tot burgerrecht verklaard en wordt in internationale documenten plechtig erkend.",
+      "tags": [
+        "religious-liberty",
+        "signs-of-the-times",
+        "church-and-state"
+      ],
+      "crossRefs": [
+        "DH-2",
+        "DH-7"
+      ]
     }
   ]
 }

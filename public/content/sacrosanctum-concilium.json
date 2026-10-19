@@ -37,6 +37,105 @@
       ]
     },
     {
+      "id": "SC-4",
+      "docId": "sacrosanctum-concilium",
+      "number": 4,
+      "textEn": "Lastly, in faithful obedience to tradition, the sacred Council declares that holy Mother Church holds all lawfully acknowledged rites to be of equal right and dignity; that she wishes to preserve them in the future and to foster them in every way. The Council also desires that, where necessary, the rites be revised carefully in the light of sound tradition, and that they be given new vigor to meet the circumstances and needs of modern times.",
+      "textNl": "Ten slotte verklaart het heilig Concilie, in trouwe gehoorzaamheid aan de traditie, dat de heilige Moeder Kerk alle wettig erkende riten als gelijk in recht en waardigheid beschouwt, en dat zij ze in de toekomst wil bewaren en op alle wijzen bevorderen. Het Concilie wenst ook dat zij, waar nodig, in het licht van de gezonde traditie zorgvuldig herzien worden en nieuwe kracht krijgen voor de omstandigheden en noden van deze tijd.",
+      "tags": [
+        "liturgy",
+        "eastern-churches",
+        "reform"
+      ],
+      "crossRefs": [
+        "OE-2",
+        "SC-21"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De laatste paragraaf van de inleiding doet twee uitspraken. Het Concilie verklaart dat de Kerk alle wettig erkende riten, oosterse en westerse, als gelijk in recht en waardigheid beschouwt en ze wil bewaren en bevorderen. Daarnaast wil het dat die riten, waar nodig, zorgvuldig herzien worden in het licht van de gezonde traditie, zodat ze nieuwe kracht krijgen voor de omstandigheden van vandaag.",
+          "who": "De concilievaders met Paulus VI spreken in een constitutie die tot de hele Kerk gericht is. De paragraaf heeft de gemeenschappen van alle riten op het oog: de Latijnse Kerk en de oosterse katholieke Kerken met hun eigen liturgische families. Onrechtstreeks stelt hij ook de oosterse Kerken die niet in volle gemeenschap met Rome leven gerust: de komende hervorming beoogt geen latinisering.",
+          "why": "In vroegere eeuwen werden de oosterse katholieke riten soms behandeld als geduldde varianten naast de Romeinse ritus, en drongen Latijnse gebruiken erin door. Leo XIII had hun eigenheid al verdedigd in *Orientalium dignitas* (1894). Omdat SC bijna uitsluitend over de Romeinse ritus handelt, wilden de vaders van bij het begin zeggen dat die keuze geen rangorde tussen de riten inhoudt.",
+          "how": "De paragraaf sluit de inleiding (SC §1–4) af en werkt als een bepaling over de reikwijdte. Hij verklaart eerst een beginsel, met een beroep op trouw aan de traditie, en spreekt daarna de wens uit tot zorgvuldige herziening. Hetzelfde paar van bewaren en vernieuwen keert in de hele constitutie terug, van SC §21 tot SC §23. Het decreet over de oosterse Kerken werkt de eerste helft uitvoerig uit (OE §2–6).",
+          "meaning": "Gelijk recht en gelijke waardigheid betreft de riten als legitieme uitdrukkingen van het ene geloof; het maakt van een plaatselijk gebruik nog geen ritus. De wens tot herziening geldt voor alle riten, al geeft SC zelf alleen normen voor de Romeinse (SC §3). De Catechismus neemt het beginsel over bij de liturgische tradities (Catechismus nr. 1203). De paragraaf onderwerpt de oosterse riten evenmin aan de Romeinse hervorming."
+        },
+        "en": {
+          "what": "The last paragraph of the introduction makes two statements. The Council declares that the Church holds all lawfully recognised rites, Eastern as well as Western, to be of equal right and dignity, and wishes to preserve and foster them. It also wants these rites, where needed, revised with care in the light of sound tradition, so that they gain new vigour for present circumstances.",
+          "who": "The Council Fathers with Paul VI speak in a constitution addressed to the whole Church. The paragraph has in view the communities of every rite: the Latin Church and the Eastern Catholic Churches with their own liturgical families. Indirectly it also reassures the Eastern Churches outside full communion with Rome that the coming reform intends no Latinisation.",
+          "why": "In earlier centuries the Eastern Catholic rites were at times treated as tolerated variants beside the Roman rite, and Latin customs were introduced into them. Leo XIII had already defended their integrity in *Orientalium dignitas* (1894). Because SC deals almost entirely with the Roman rite, the Fathers wished to say at the outset that this focus implies no ranking among rites.",
+          "how": "The paragraph closes the preface (SC §1–4) and works as a clause of scope. It first declares a principle, appealing to fidelity to tradition, and then states a wish for careful revision. The same pairing of preservation and renewal recurs through the whole constitution, from SC §21 to SC §23. The decree on the Eastern Churches develops the first half at length (OE §2–6).",
+          "meaning": "Equal right and dignity concerns the rites as legitimate expressions of the one faith; it does not turn every local custom into a rite. The wish for revision applies to all rites, though SC itself gives norms only for the Roman one (SC §3). The Catechism takes up the principle when it treats liturgical traditions (Catechism no. 1203). Nor does the paragraph place the Eastern rites under the Roman reform."
+        }
+      }
+    },
+    {
+      "id": "SC-5",
+      "docId": "sacrosanctum-concilium",
+      "number": 5,
+      "textEn": "He achieved His task principally by the paschal mystery of His blessed passion, resurrection from the dead, and the glorious ascension, whereby \"dying, he destroyed our death and, rising, he restored our life.\" For it was from the side of Christ as He slept the sleep of death upon the cross that there issued forth \"the wondrous sacrament of the whole Church.\"",
+      "textNl": "Hij heeft dat werk vooral volbracht door het paasmysterie van zijn zalig lijden, zijn verrijzenis uit de doden en zijn glorievolle hemelvaart, waardoor Hij 'stervend onze dood vernietigd en verrijzend ons het leven hersteld heeft'. Want uit de zijde van Christus, ontslapen aan het kruis, is 'het wonderbare sacrament van heel de Kerk' voortgekomen.",
+      "tags": [
+        "liturgy",
+        "christology",
+        "salvation",
+        "ecclesiology"
+      ],
+      "crossRefs": [
+        "SC-6",
+        "SC-47",
+        "LG-1"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het eerste hoofdstuk begint met de heilsgeschiedenis. God, die wil dat alle mensen gered worden, sprak door de profeten en zond daarna zijn Zoon, wiens mensheid het werktuig van ons heil was. Christus voltrok dat werk vooral door het paasmysterie: zijn lijden, verrijzenis en hemelvaart. Uit zijn zijde, toen Hij aan het kruis in de dood ontsliep, kwam het sacrament van heel de Kerk voort.",
+          "who": "De vaders richten zich tot de hele Kerk en via haar tot iedere lezer die wil weten wat christelijke eredienst is. Zij spreken over God de Vader, die in de geschiedenis handelt, en over Christus, wiens heilswerk de inhoud van alle liturgie is. De Kerk verschijnt hier als vrucht van dat werk, nog voor zij als vierende gemeenschap ter sprake komt.",
+          "why": "De voorbereidende commissie koos ervoor de hervorming te funderen in een theologie van de liturgie, nog voor er normen werden gegeven. Het paasmysterie als middelpunt van de eredienst was gerijpt in de liturgische beweging, met name in de mysterietheologie van Odo Casel van Maria Laach, en in de herstelde paaswake van 1951. In eerdere concilieteksten had die gedachte weinig voorgangers.",
+          "how": "De paragraaf leest als een korte geloofsbelijdenis. Hij gaat van het oudtestamentische voorspel naar Christus en vervolgens naar de Kerk, met verwijzingen naar de Schrift (1 Timoteüs 2,4; Hebreeën 1,1) en naar twee liturgische teksten: de paasprefatie en een gebed uit de liturgie van Stille Zaterdag in het oudere Romeins Missaal. Het beeld van de Kerk die uit de doorstoken zijde geboren wordt, stamt van de kerkvaders, onder wie Augustinus.",
+          "meaning": "Het paasmysterie benoemt de hele doortocht van Christus door de dood naar het leven; elke liturgie viert dat mysterie. Dat de Kerk sacrament heet, loopt vooruit op LG §1, waar zij teken en werktuig van de vereniging met God is. De term voegt geen achtste sacrament toe; hij beschrijft de Kerk als zichtbaar teken van het werk van Christus. De Catechismus bouwt zijn behandeling van de liturgie op deze paragraaf (Catechismus nr. 1067)."
+        },
+        "en": {
+          "what": "The first chapter opens with salvation history. God, who wills all to be saved, spoke through the prophets and then sent his Son, whose humanity was the instrument of our salvation. Christ completed this work above all through the paschal mystery of his passion, resurrection and ascension. From his side, as he slept in death on the cross, the sacrament of the whole Church came forth.",
+          "who": "The Fathers address the whole Church, and through it every reader who wants to know what Christian worship is. They speak of God the Father, who acts in history, and of Christ, whose saving work is the content of all liturgy. The Church appears here as the fruit of that work, before she appears as the community that celebrates it.",
+          "why": "The preparatory commission chose to ground the reform in a theology of the liturgy before giving any norms. The idea of the paschal mystery as the centre of worship had matured in the liturgical movement, notably in the mystery theology of Odo Casel of Maria Laach, and in the restored Easter Vigil of 1951. In earlier conciliar teaching it had little precedent.",
+          "how": "The paragraph reads like a short creed. It moves from the Old Testament prelude to Christ and then to the Church, citing Scripture (1 Timothy 2:4, Hebrews 1:1) and two liturgical texts: the Easter preface and a prayer of the Holy Saturday liturgy in the older Roman Missal. The image of the Church born from the pierced side of Christ comes from the Fathers, Augustine among them.",
+          "meaning": "The paschal mystery names the whole passage of Christ through death to life, which every liturgy celebrates. Calling the Church a sacrament anticipates LG §1, where she is a sign and instrument of union with God. The term adds no eighth sacrament; it describes the Church as the visible sign of the work of Christ. The Catechism builds its treatment of the liturgy on this paragraph (Catechism no. 1067)."
+        }
+      }
+    },
+    {
+      "id": "SC-6",
+      "docId": "sacrosanctum-concilium",
+      "number": 6,
+      "textEn": "Thus by baptism men are plunged into the paschal mystery of Christ: they die with Him, are buried with Him, and rise with Him … From that time onwards the Church has never failed to come together to celebrate the paschal mystery …",
+      "textNl": "Zo worden de mensen door het doopsel ondergedompeld in het paasmysterie van Christus: zij sterven met Hem, worden met Hem begraven en verrijzen met Hem … Sindsdien heeft de Kerk nooit nagelaten samen te komen om het paasmysterie te vieren …",
+      "tags": [
+        "liturgy",
+        "baptism",
+        "salvation"
+      ],
+      "crossRefs": [
+        "SC-5",
+        "SC-106",
+        "SC-14"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Zoals Christus door de Vader gezonden werd, zond Hij de apostelen om het evangelie te verkondigen en het heilswerk te voltrekken door het offer en de sacramenten waarrond heel het liturgisch leven draait. Door het doopsel worden mensen in het paasmysterie opgenomen: zij sterven en verrijzen met Christus en ontvangen de Geest van het kindschap. Sinds Pinksteren is de Kerk nooit opgehouden samen te komen om het paasmysterie te vieren, met lezing van de Schrift, eucharistie en dankzegging.",
+          "who": "De paragraaf spreekt over de apostelen en hun opvolgers als gezondenen, en over alle gedoopten als mensen die in de dood en verrijzenis van Christus zijn opgenomen. Hij richt zich tot de hele Kerk en herinnert elke gelovige eraan dat het eigen doopsel de toegang tot de liturgie is. De concilievaders spreken met de paus in het leerstellige begin van de constitutie.",
+          "why": "Na Trente werden de sacramenten in handboeken vaak afzonderlijk besproken, vooral naar geldigheid en uitwerking. De liturgische beweging wilde hun gemeenschappelijke wortel in het Pasen van Christus en hun band met de zending terugwinnen. Door zending, doopsel en eucharistie in één paragraaf te verbinden, gaven de vaders de latere oproep tot deelname (SC §14) een fundament in het doopsel.",
+          "how": "De tekst is uit Schriftplaatsen samengesteld: Marcus 16,15 over de zending, Romeinen 6,4 over het doopsel, Romeinen 8,15 over het kindschap, Johannes 4,23 over de ware aanbidders, 1 Korintiërs 11,26 over de verkondiging van de dood van de Heer en Handelingen 2,41–47 over de eerste gemeente, naast Lucas 24,27. Over de eucharistie citeert de tekst het decreet van Trente. De paragraaf voltooit de beweging die in SC §5 van Christus naar de Kerk begon.",
+          "meaning": "Het ondergedompeld worden in het paasmysterie is een sacramentele werkelijkheid; dat is ook de betekenis van het Griekse werkwoord achter het woord doopsel. De liturgie verschijnt als de plaats waar de Kerk steeds naar Pasen terugkeert. De paragraaf herleidt de mis niet tot een gedachtenismaal: hij spreekt van offer en sacramenten samen, en van de overwinning van Christus die tegenwoordig gesteld wordt. De Catechismus citeert hem bij doopsel en paasmysterie (Catechismus nr. 1086)."
+        },
+        "en": {
+          "what": "As Christ was sent by the Father, he sent the apostles to preach the Gospel and to carry out the work of salvation through the sacrifice and sacraments around which the liturgy revolves. By baptism people are drawn into the paschal mystery: they die and rise with Christ and receive the Spirit of adoption. Since Pentecost the Church has never ceased to gather for the paschal mystery, reading the Scriptures, celebrating the Eucharist and giving thanks.",
+          "who": "The paragraph speaks of the apostles and their successors as those who are sent, and of all the baptised as those drawn into the death and resurrection of Christ. It addresses the whole Church and reminds every believer that his or her own baptism is the entrance into the liturgy. The Council Fathers speak with the pope in the doctrinal opening of the constitution.",
+          "why": "Post-Tridentine manuals often discussed the sacraments one by one, chiefly in terms of validity and effect. The liturgical movement sought to recover their common root in the Easter of Christ and their link with mission. By joining sending, baptism and Eucharist in one paragraph, the Fathers gave the later call for participation (SC §14) a baptismal foundation.",
+          "how": "The text is woven from Scripture: Mark 16:15 on the sending, Romans 6:4 on baptism, Romans 8:15 on adoption, John 4:23 on true worshippers, 1 Corinthians 11:26 on proclaiming the death of the Lord and Acts 2:41–47 on the first community, as well as Luke 24:27. On the Eucharist the text quotes the decree of Trent. The paragraph completes the movement begun in SC §5 from Christ to the Church.",
+          "meaning": "Being plunged into the paschal mystery is a sacramental reality, and it is also the sense of the Greek verb behind the word baptism. The liturgy appears as the place where the Church keeps returning to Easter. The paragraph does not reduce the Mass to a memorial meal: it speaks of sacrifice and sacraments together, and of the victory of Christ made present. The Catechism quotes it on baptism and the paschal mystery (Catechism no. 1086)."
+        }
+      }
+    },
+    {
       "id": "SC-7",
       "docId": "sacrosanctum-concilium",
       "number": 7,
@@ -69,6 +168,38 @@
       ]
     },
     {
+      "id": "SC-9",
+      "docId": "sacrosanctum-concilium",
+      "number": 9,
+      "textEn": "The sacred liturgy does not exhaust the entire activity of the Church. Before men can come to the liturgy they must be called to faith and to conversion …",
+      "textNl": "De heilige liturgie omvat niet het hele handelen van de Kerk. Want voordat de mensen tot de liturgie kunnen komen, moeten zij tot geloof en bekering geroepen worden …",
+      "tags": [
+        "liturgy",
+        "evangelisation",
+        "faith"
+      ],
+      "crossRefs": [
+        "SC-10",
+        "AG-2"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het Concilie begrenst wat het net over de liturgie heeft gezegd. De eredienst is niet het geheel van het handelen van de Kerk. Mensen moeten eerst het evangelie horen en tot geloof en bekering komen. Ook aan gelovigen moet de Kerk geloof en boete verkondigen, hen voorbereiden op de sacramenten en hun leren de geboden van Christus te onderhouden en werken van naastenliefde, vroomheid en apostolaat te verrichten.",
+          "who": "De paragraaf spreekt over de Kerk als geheel en over twee groepen: wie nog niet gelooft, aan wie het evangelie verkondigd moet worden, en de gelovigen, die blijvende verkondiging en vorming nodig hebben. Hij richt zich tot de herders en tot allen die de zending van de Kerk uitvoeren. De concilievaders en de paus spreken in het theologische deel van de constitutie.",
+          "why": "Sterke uitspraken over de liturgie, zoals in SC §10, konden de indruk wekken dat eredienst alles is wat de Kerk doet. De vaders wilden een liturgisme voorkomen dat los staat van zending en naastenliefde. De liturgische beweging was zelf op sommige plaatsen van esthetisme beschuldigd, en Pius XII had in *Mediator Dei* (1947) voor overdrijvingen gewaarschuwd. Deze paragraaf houdt verkondiging en getuigenis in beeld.",
+          "how": "De redenering steunt op Romeinen 10,14–15: hoe kunnen mensen iemand aanroepen in wie zij niet geloven, of geloven zonder prediker? Daarbij komen Johannes 17,3 en Matteüs 28,20 over het onderhouden van alles wat Christus geboden heeft. Door contrast bereidt de paragraaf de volgende voor; SC §10 begint met het woord niettemin. Beide horen samen gelezen te worden.",
+          "meaning": "De tekst onderscheidt verkondiging, catechese en eredienst zonder ze te scheiden. Het geloof gaat aan de sacramentele viering vooraf, en de liturgie veronderstelt een gelovige gemeenschap. De paragraaf verlaagt de rang van de liturgie niet; hij plaatst haar binnen het geheel van het kerkelijk leven. De Catechismus herhaalt het punt in eigen woorden (Catechismus nr. 1072), en AG §2 werkt de missionaire kant uit."
+        },
+        "en": {
+          "what": "The Council sets a limit to what it has just said about the liturgy. Worship is not the whole of the activity of the Church. People must first hear the Gospel and come to faith and conversion. To believers too the Church must preach faith and penance, prepare them for the sacraments and teach them to keep the commandments of Christ and to undertake works of charity, piety and the apostolate.",
+          "who": "The paragraph speaks about the Church as a whole and about two groups: those who do not yet believe, to whom the Gospel must be proclaimed, and the faithful, who need continuing preaching and formation. It addresses pastors and all who carry out the mission of the Church. The Council Fathers and the pope speak in the theological part of the constitution.",
+          "why": "Strong statements about the liturgy, as in SC §10, could suggest that worship is everything the Church does. The Fathers wished to prevent a liturgism cut off from mission and charity. The liturgical movement had itself been accused of aestheticism in some quarters, and Pius XII had warned against exaggerations in *Mediator Dei* (1947). This paragraph keeps preaching and witness in view.",
+          "how": "The argument rests on Romans 10:14–15: how can people call on one in whom they have not believed, or believe without a preacher? It adds John 17:3 and Matthew 28:20 on teaching all that Christ commanded. By contrast the paragraph prepares the next one, since SC §10 opens with the word nevertheless. The two are meant to be read together.",
+          "meaning": "The text distinguishes proclamation, catechesis and worship without separating them. Faith comes before sacramental celebration, and the liturgy presupposes a believing community. The paragraph does not lower the rank of the liturgy; it places it within the whole life of the Church. The Catechism repeats the point in its own words (Catechism no. 1072), and AG §2 develops the missionary side."
+        }
+      }
+    },
+    {
       "id": "SC-10",
       "docId": "sacrosanctum-concilium",
       "number": 10,
@@ -81,6 +212,38 @@
       "crossRefs": [
         "LG-11"
       ]
+    },
+    {
+      "id": "SC-11",
+      "docId": "sacrosanctum-concilium",
+      "number": 11,
+      "textEn": "But in order that the liturgy may be able to produce its full effects, it is necessary that the faithful come to it with proper dispositions, that their minds should be attuned to their voices, and that they should cooperate with divine grace lest they receive it in vain. … it is their duty also to ensure that the faithful take part fully aware of what they are doing, actively engaged in the rite, and enriched by its effects.",
+      "textNl": "Opdat de liturgie echter haar volle uitwerking kan hebben, is het nodig dat de gelovigen er met de goede gesteltenis naartoe komen, dat hun geest in overeenstemming is met hun stem, en dat zij met de goddelijke genade meewerken om haar niet tevergeefs te ontvangen. … het is ook hun plicht ervoor te zorgen dat de gelovigen deelnemen in het besef van wat zij doen, actief betrokken bij de ritus en gesterkt door de vruchten ervan.",
+      "tags": [
+        "liturgy",
+        "participation",
+        "spirituality"
+      ],
+      "crossRefs": [
+        "SC-14",
+        "SC-48"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Opdat de liturgie haar volle vrucht draagt, moeten de gelovigen met de goede gesteltenis komen. Hun innerlijke houding moet overeenstemmen met wat zij zeggen, en zij moeten met de genade meewerken. De herders moeten daarom verder kijken dan geldigheid en geoorloofdheid. Zij moeten ervoor zorgen dat de gelovigen bewust en actief deelnemen en dat de viering in hen vrucht draagt.",
+          "who": "De paragraaf richt zich tot twee groepen. Hij spreekt de gelovigen aan op hun eigen innerlijke voorbereiding en de zielzorgers op hun verantwoordelijkheid. Zo leggen de concilievaders de zorg voor een goede viering bij clerus en leken samen, ieder op eigen wijze. De paragraaf hoort bij het leerstellige begin van het eerste hoofdstuk.",
+          "why": "De sacramententheologie na Trente hield terecht vast aan de werking van de sacramenten door de voltrokken ritus (*ex opere operato*). In de praktijk vernauwde de pastorale aandacht zich soms tot de voorwaarden voor een geldige en geoorloofde viering. De liturgische beweging, en Pius XII in *Mediator Dei* (1947), benadrukten dat de vruchtbaarheid ook afhangt van de gesteltenis van wie ontvangt. Deze paragraaf brengt beide kanten samen.",
+          "how": "De paragraaf gaat van de leer over naar de pastorale gevolgen. Hij citeert 2 Korintiërs 6,1 over het niet tevergeefs ontvangen van de genade. De zinsnede over geest en stem sluit aan bij de Regel van Benedictus, hoofdstuk 19, over het bidden van de psalmen. Hij bereidt SC §14 voor, waar deelname het doel van heel de hervorming wordt, en SC §19 over innerlijke en uiterlijke deelname.",
+          "meaning": "Geldigheid blijft de voorwaarde voor elk sacrament; de paragraaf voegt eraan toe dat zij niet het geheel van de zielzorg is. Volle uitwerking betekent de vrucht van de genade in het leven van de gelovige, wat geloof en openheid veronderstelt. De tekst geeft geen vrijbrief om de rubrieken licht te nemen. Hij vraagt een viering die correct is en ook begrepen en ontvangen wordt. De Catechismus zegt iets vergelijkbaars over de gesteltenis (Catechismus nr. 1098)."
+        },
+        "en": {
+          "what": "For the liturgy to bear its full fruit, the faithful must come with the right dispositions. Their inner attitude must match what they say, and they must cooperate with grace. Pastors therefore have to look beyond validity and liceity. They must ensure that the faithful take part knowingly and actively, and that the celebration bears fruit in them.",
+          "who": "The paragraph addresses two groups. It speaks to the faithful about their own inner preparation, and to pastors of souls about their responsibility. In this way the Council Fathers place the care for good celebration on clergy and laity together, each in their own way. The paragraph belongs to the doctrinal opening of the first chapter.",
+          "why": "Sacramental theology after Trent rightly held that the sacraments act by the rite performed (*ex opere operato*). In practice, pastoral attention sometimes narrowed to the conditions of valid and licit celebration. The liturgical movement, and Pius XII in *Mediator Dei* (1947), stressed that fruitfulness also depends on the dispositions of the recipient. This paragraph brings both sides together.",
+          "how": "The paragraph turns from doctrine to pastoral consequence. It quotes 2 Corinthians 6:1 on not receiving grace in vain. The phrase about mind and voice echoes the Rule of Benedict, chapter 19, on praying the psalms. It prepares SC §14, where participation becomes the aim of the whole reform, and SC §19 on interior and exterior participation.",
+          "meaning": "Validity remains the condition of every sacrament; the paragraph adds that it is not the whole of pastoral care. Full effects means the fruit of grace in the life of the believer, which presupposes faith and openness. The text gives no licence to treat rubrics lightly. It asks for celebration that is correct and is also understood and received. The Catechism makes a similar point on dispositions (Catechism no. 1098)."
+        }
+      }
     },
     {
       "id": "SC-14",
@@ -145,6 +308,104 @@
       "noteEn": "The criterion of 'organic growth' is cited both by defenders and by critics of the later reform (1969–1970)."
     },
     {
+      "id": "SC-26",
+      "docId": "sacrosanctum-concilium",
+      "number": 26,
+      "textEn": "Liturgical services are not private functions, but are celebrations of the Church, which is the \"sacrament of unity,\" namely, the holy people united and ordered under their bishops.",
+      "textNl": "Liturgische handelingen zijn geen privéhandelingen, maar vieringen van de Kerk, die het 'sacrament van de eenheid' is, namelijk het heilige volk, verenigd en geordend onder de bisschoppen.",
+      "tags": [
+        "liturgy",
+        "ecclesiology",
+        "bishops"
+      ],
+      "crossRefs": [
+        "SC-41",
+        "SC-28",
+        "LG-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Liturgische vieringen zijn vieringen van heel de Kerk, die het sacrament van de eenheid is: het heilige volk, verzameld en geordend onder de bisschoppen. Zij behoren daarom tot het hele lichaam van de Kerk en maken het zichtbaar. Elk lid wordt er op een andere wijze door geraakt, volgens verschil in wijding, ambt en daadwerkelijke deelname.",
+          "who": "De paragraaf spreekt over de Kerk als geheel: bisschoppen, priesters en gelovigen, samen geordend. Hij richt zich tot ieder die de liturgie viert of bijwoont, en in het bijzonder tot geestelijken die een ritus als hun eigen zaak zouden beschouwen. Hij opent de afdeling met normen die voortvloeien uit het hiërarchische en gemeenschappelijke karakter van de liturgie (SC §26–32).",
+          "why": "In de decennia voor het Concilie was de privémis, door een priester met alleen een misdienaar gelezen, gangbaar, en volgden veel gelovigen de mis met persoonlijke devoties. De liturgische beweging wilde het kerkelijk karakter van elke viering terugwinnen. De vaders stellen eerst het beginsel en trekken daarna de praktische gevolgen, zoals de voorkeur voor gemeenschappelijke viering in SC §27.",
+          "how": "De paragraaf is een korte leerstellige uitspraak met een bron uit de kerkvaders: Cyprianus van Carthago, die in zijn traktaat over de eenheid van de Kerk haar het sacrament van de eenheid noemt. De ecclesiologie loopt vooruit op LG §1 en LG §26, waar de Kerk sacrament is en de bisschop beheerder van de genade. Hij zet het kader voor de normen over taken in SC §28–29.",
+          "meaning": "Dat liturgie openbare eredienst is, betekent niet dat elke viering een grote gemeenschap vraagt. Ook een mis met weinig aanwezigen blijft een daad van heel de Kerk, zoals SC §27 zelf erkent. De kern is dat geen ritus aan een individu of een groep toebehoort. De Catechismus citeert de paragraaf waar hij bespreekt wie de liturgie viert (Catechismus nr. 1140)."
+        },
+        "en": {
+          "what": "Liturgical services are celebrations of the whole Church, which is the sacrament of unity: the holy people gathered and ordered under the bishops. They therefore belong to the whole Body of the Church and make it visible. Each member is touched by them in a different way, according to differences of order, office and actual participation.",
+          "who": "The paragraph speaks of the Church as a whole: bishops, priests and faithful, ordered together. It addresses everyone who celebrates or attends the liturgy, and in particular clergy who might regard a rite as their own affair. It opens the section of norms drawn from the hierarchic and communal nature of the liturgy (SC §26–32).",
+          "why": "In the decades before the Council the private Mass, said by a priest with only a server, was common, and many faithful followed Mass with personal devotions. The liturgical movement sought to recover the ecclesial character of every celebration. The Fathers state the principle first and then draw practical consequences, such as the preference for communal celebration in SC §27.",
+          "how": "The paragraph is a short doctrinal statement with a patristic source: Cyprian of Carthage, whose treatise on the unity of the Church calls it the sacrament of unity. Its ecclesiology anticipates LG §1 and LG §26, where the Church is a sacrament and the bishop the steward of grace. It sets the frame for the norms on roles in SC §28–29.",
+          "meaning": "Calling the liturgy public worship does not mean that every celebration needs a large congregation. Even a Mass with few people present remains an act of the whole Church, as SC §27 itself recognises. The point is that no rite belongs to an individual or a group. The Catechism quotes the paragraph where it discusses who celebrates the liturgy (Catechism no. 1140)."
+        }
+      }
+    },
+    {
+      "id": "SC-28",
+      "docId": "sacrosanctum-concilium",
+      "number": 28,
+      "textEn": "In liturgical celebrations each person, minister or layman, who has an office to perform, should do all of that, but only those parts which pertain to his office by the nature of the rite and the principles of liturgy.",
+      "textNl": "In liturgische vieringen moet ieder, bedienaar of leek, die een taak te vervullen heeft, al dat, maar ook alleen dat doen wat volgens de aard van de ritus en de liturgische beginselen bij zijn taak hoort.",
+      "tags": [
+        "liturgy",
+        "participation",
+        "laity"
+      ],
+      "crossRefs": [
+        "SC-26",
+        "SC-30",
+        "LG-10"
+      ],
+      "explain": {
+        "nl": {
+          "what": "In elke liturgische viering doet ieder, gewijde bedienaar of leek, alles wat bij zijn of haar taak hoort, en alleen dat. Wat die taak is, bepalen de aard van de ritus en de liturgische normen. De regel beschermt twee dingen: niemand wordt tot toeschouwer herleid, en niemand neemt het deel van een ander over.",
+          "who": "De norm geldt voor iedereen met een taak in de viering: bisschop, priester, diaken, misdienaars, lectoren, commentatoren, koor en gemeenschap. Hij richt zich vooral tot de voorgangers, die vóór het Concilie bij een gezongen mis ook de teksten van koor of diaken nog zelf stil lazen. De concilievaders plaatsen hem bij de normen over het hiërarchische en gemeenschappelijke karakter van de liturgie.",
+          "why": "Volgens de rubrieken van die tijd las de celebrant elke tekst van de mis zelf, ook wat het koor zong of de subdiaken voordroeg. Dat drukte de centrale rol van de priester uit en verduisterde tegelijk de inbreng van anderen. De hervorming zocht een geordende verdeling van taken, als weerspiegeling van de Kerk als gestructureerd lichaam in SC §26.",
+          "how": "De norm is kort en juridisch van vorm. Hij trekt een gevolg uit de ecclesiologie van SC §26 en leidt naar SC §29, dat stelt dat misdienaars, lectoren, commentatoren en koorleden een echte liturgische bediening uitoefenen. SC §30 somt daarna de delen van het volk op. De drie paragrafen vormen één geheel over de taken in de viering.",
+          "meaning": "De formule alles en alleen dat werkt in twee richtingen. Zij verbiedt een klerikalisering van de liturgie, waarbij de priester elke taak opslorpt, en evengoed het omgekeerde, waarbij leken overnemen wat bij de wijding hoort. Paulus VI ordende in *Ministeria quaedam* (1972) de lekenbedieningen van lector en acoliet in die geest. De Catechismus beschrijft de vierende gemeenschap in vergelijkbare termen (Catechismus nr. 1144)."
+        },
+        "en": {
+          "what": "In every liturgical celebration each person, ordained minister or lay person, does all and only what belongs to his or her role. The nature of the rite and the liturgical norms determine what that is. The rule protects two things: no one is reduced to a spectator, and no one takes over the part of another.",
+          "who": "The norm applies to everyone with a part in the celebration: bishop, priest, deacon, servers, readers, commentators, choir and congregation. It addresses celebrants above all, who before the Council would read quietly at a sung Mass even the texts sung by the choir or the deacon. The Council Fathers set it among the norms on the hierarchic and communal nature of the liturgy.",
+          "why": "Under the rubrics of the time, the celebrant read every text of the Mass himself, even what the choir sang or the subdeacon chanted. This expressed the central role of the priest and at the same time obscured the parts of others. The reform sought an ordered distribution of roles, reflecting the Church as a structured body in SC §26.",
+          "how": "The norm is brief and juridical in form. It draws a consequence from the ecclesiology of SC §26 and leads into SC §29, which states that servers, readers, commentators and choir members exercise a genuine liturgical ministry. SC §30 then lists the parts that belong to the people. The three paragraphs form one unit on roles in the celebration.",
+          "meaning": "The formula all and only cuts both ways. It forbids a clericalisation of the liturgy, in which the priest absorbs every role, and equally its reverse, in which lay people take up what belongs to ordination. Paul VI reorganised the lay ministries of reader and acolyte in this spirit in *Ministeria quaedam* (1972). The Catechism describes the celebrating assembly in similar terms (Catechism no. 1144)."
+        }
+      }
+    },
+    {
+      "id": "SC-30",
+      "docId": "sacrosanctum-concilium",
+      "number": 30,
+      "textEn": "To promote active participation, the people should be encouraged to take part by means of acclamations, responses, psalmody, antiphons, and songs, as well as by actions, gestures, and bodily attitudes. And at the proper times all should observe a reverent silence.",
+      "textNl": "Om de actieve deelname te bevorderen, moet het volk aangemoedigd worden deel te nemen door acclamaties, antwoorden, psalmgezang, antifonen en liederen, en ook door handelingen, gebaren en lichaamshoudingen. En op de gepaste tijden moeten allen een eerbiedige stilte bewaren.",
+      "tags": [
+        "liturgy",
+        "participation",
+        "prayer"
+      ],
+      "crossRefs": [
+        "SC-14",
+        "SC-28"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Om de actieve deelname te bevorderen, moet het volk deelnemen door acclamaties, antwoorden, psalmgezang, antifonen en liederen, en door handelingen, gebaren en lichaamshoudingen. Op de gepaste tijden moeten allen ook een eerbiedige stilte bewaren. De stilte staat zo tussen de vormen van deelname, naast spreken en zingen.",
+          "who": "De paragraaf spreekt over het volk, de verzamelde gelovigen, en richt zich tot wie vieringen voorbereidt en leidt: de zielzorgers, de verantwoordelijken voor de muziek en de instanties die de boeken zouden herzien. Het is een norm van de concilievaders in het praktische deel van het eerste hoofdstuk.",
+          "why": "Bij veel stille missen vóór het Concilie zei het volk niets; de misdienaar antwoordde in zijn plaats. De dialoogmis, die in sommige streken al decennia werd aangemoedigd en in 1958 door de Congregatie voor de Riten werd geregeld, had daar verandering in gebracht. De vaders wilden de delen van het volk tot een gewoon onderdeel van elke ritus maken.",
+          "how": "De paragraaf is een opsomming, wat haar voor een concilietekst ongewoon concreet maakt. Hij volgt op SC §28–29 over de taken; SC §31 vraagt daarna dat de herziene boeken in hun rubrieken ook de delen van het volk regelen. De slotzin over de stilte weegt op tegen de opsomming van gesproken, gezongen en lichamelijke vormen.",
+          "meaning": "De paragraaf beschrijft hoe actieve deelname er uiterlijk uitziet, zonder uiterlijke activiteit tegenover innerlijk gebed te plaatsen. Stilte telt als een vorm van deelname op zich. Het debat of *actuosa participatio* in de eerste plaats innerlijk of uiterlijk is, draait vaak om deze tekst en om SC §19; beide zijden beroepen zich erop. De Algemene Inleiding op het Romeins Missaal heeft de momenten van stilte later nader bepaald."
+        },
+        "en": {
+          "what": "To foster active participation, the people are to take part through acclamations, responses, psalmody, antiphons and songs, and through actions, gestures and bodily postures. At the proper times all should also keep a reverent silence. Silence is thus listed among the forms of participation, alongside speech and song.",
+          "who": "The paragraph speaks of the people, the gathered faithful, and addresses those who prepare and lead celebrations: pastors, those responsible for music, and the authorities who would revise the books. It is a norm of the Council Fathers within the practical part of the first chapter.",
+          "why": "At many Low Masses before the Council the people said nothing, while the server answered for them. The dialogue Mass, encouraged in some regions for decades and regulated by the Sacred Congregation of Rites in 1958, had begun to change this. The Fathers wished to make the parts of the people a normal feature of every rite.",
+          "how": "The paragraph is a list, which makes it unusually concrete for a conciliar text. It follows SC §28–29 on roles and is followed by SC §31, which asks that the revised books provide for the parts of the people in their rubrics. The closing sentence on silence balances the list of spoken, sung and bodily forms.",
+          "meaning": "The paragraph describes what active participation looks like outwardly, without setting outward activity against inner prayer. Silence counts as a form of participation in its own right. The debate on whether *actuosa participatio* is first interior or exterior often turns on this text and on SC §19, and both sides appeal to it. The General Instruction of the Roman Missal later specified the moments of silence."
+        }
+      }
+    },
+    {
       "id": "SC-34",
       "docId": "sacrosanctum-concilium",
       "number": 34,
@@ -182,6 +443,105 @@
       "noteEn": "The text sets the retention of Latin as the rule and an extension of the vernacular as a possibility, under the supervision of the territorial ecclesiastical authority (§36.3)."
     },
     {
+      "id": "SC-37",
+      "docId": "sacrosanctum-concilium",
+      "number": 37,
+      "textEn": "Even in the liturgy, the Church has no wish to impose a rigid uniformity in matters which do not implicate the faith or the good of the whole community; rather does she respect and foster the genius and talents of the various races and peoples. Anything in these peoples' way of life which is not indissolubly bound up with superstition and error she studies with sympathy and, if possible, preserves intact.",
+      "textNl": "Ook in de liturgie wil de Kerk geen starre eenvormigheid opleggen in zaken die het geloof of het welzijn van heel de gemeenschap niet raken; zij eerbiedigt en bevordert veeleer de geestesgaven en talenten van de verschillende volken. Wat in hun levenswijze niet onlosmakelijk met bijgeloof en dwaling verbonden is, beschouwt zij welwillend en bewaart zij, zo mogelijk, ongeschonden.",
+      "tags": [
+        "liturgy",
+        "mission",
+        "reform"
+      ],
+      "crossRefs": [
+        "SC-23",
+        "SC-36",
+        "AG-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "In zaken die het geloof of het welzijn van de hele gemeenschap niet raken, wil de Kerk geen starre eenvormigheid opleggen, ook niet in de liturgie. Zij eerbiedigt en bevordert de gaven van de verschillende volken. Wat in hun gebruiken niet met bijgeloof en dwaling verbonden is, beschouwt zij welwillend en bewaart zij waar mogelijk; soms neemt zij het zelfs in de liturgie op, mits het met de ware liturgische geest overeenstemt.",
+          "who": "De paragraaf spreekt over de volken en culturen waarin de Kerk leeft, met bijzondere aandacht voor de missielanden. Hij richt zich tot de bisschoppen en territoriale gezagsdragers die aanpassingen zouden voorstellen, en tot de Apostolische Stoel die ze zou goedkeuren. Hij opent de afdeling met normen voor aanpassing aan de cultuur en tradities van de volken (SC §37–40).",
+          "why": "Bisschoppen uit Afrika en Azië hadden ervaren hoe een in Europa gevormde liturgie voor hun volk vreemd kon aanvoelen. Op de achtergrond stond de ritenstrijd over China, in 1742 afgesloten en in 1939 onder Pius XII gedeeltelijk herzien. Pius XII had in *Summi Pontificatus* (1939) al het respect voor de culturen van de volken verdedigd. De vaders gaven die zorg een liturgische vorm.",
+          "how": "De paragraaf geeft het beginsel; de volgende geven de procedure. SC §38 laat wettige varianten toe binnen de substantiële eenheid van de Romeinse ritus, SC §39 legt ze bij het territoriaal gezag binnen de grenzen van de typische edities, en SC §40 voorziet in verdergaande aanpassing met goedkeuring van de Apostolische Stoel. AG §22 past dezelfde gedachte later toe op de jonge Kerken.",
+          "meaning": "De tekst handelt over wat men nu inculturatie van de liturgie noemt, al was dat woord toen nog niet gangbaar. Hij stelt duidelijke voorwaarden: het geloof en het algemeen welzijn staan niet ter discussie, en aanpassingen moeten met de liturgische geest stroken. De instructie *Varietates legitimae* (1994) werkte die normen uit. De lezingen verschillen over hoe ver SC §40 afwijking van het Romeinse patroon toelaat; de tekst laat ruimte voor een voorzichtige en een ruimere opvatting."
+        },
+        "en": {
+          "what": "In matters that do not touch the faith or the good of the whole community, the Church does not wish to impose rigid uniformity, even in the liturgy. She respects and fosters the gifts of different peoples. Whatever in their customs is not bound up with superstition and error she considers with goodwill and, where possible, preserves; at times she even admits it into the liturgy, provided it fits the true liturgical spirit.",
+          "who": "The paragraph speaks of the peoples and cultures among whom the Church lives, with particular attention to mission lands. It addresses the bishops and territorial authorities who would propose adaptations, and the Apostolic See which would approve them. It opens the section of norms for adaptation to the culture and traditions of peoples (SC §37–40).",
+          "why": "Bishops from Africa and Asia had experienced how a liturgy shaped in Europe could seem foreign to their people. The Chinese rites controversy, closed in 1742 and partly revisited under Pius XII in 1939, stood in the background. Pius XII had already defended respect for the cultures of peoples in *Summi Pontificatus* (1939). The Fathers gave these concerns a liturgical form.",
+          "how": "The paragraph states the principle; the following ones give the procedure. SC §38 allows legitimate variations within the substantial unity of the Roman rite, SC §39 assigns them to the territorial authority within limits set in the typical editions, and SC §40 provides for more radical adaptation with the approval of the Apostolic See. AG §22 later applies the same thought to the young Churches.",
+          "meaning": "The text concerns what is now called the inculturation of the liturgy, though the word was not yet current. It sets clear conditions: faith and the common good are not negotiable, and adaptations must harmonise with the liturgical spirit. The instruction *Varietates legitimae* (1994) worked out these norms. Readings differ on how far SC §40 allows departure from the Roman pattern; the text leaves room for a cautious view and for a broader one."
+        }
+      }
+    },
+    {
+      "id": "SC-41",
+      "docId": "sacrosanctum-concilium",
+      "number": 41,
+      "textEn": "The bishop is to be considered as the high priest of his flock, from whom the life in Christ of his faithful is in some way derived and dependent.",
+      "textNl": "De bisschop moet beschouwd worden als de hogepriester van zijn kudde, van wie het leven in Christus van zijn gelovigen op een of andere wijze voortkomt en afhangt.",
+      "tags": [
+        "liturgy",
+        "bishops",
+        "diocese"
+      ],
+      "crossRefs": [
+        "SC-26",
+        "LG-21",
+        "CD-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De bisschop moet beschouwd worden als de hogepriester van zijn kudde; van hem gaat het leven in Christus van zijn gelovigen op een of andere wijze uit. Allen moeten daarom het liturgisch leven van het bisdom rond de bisschop hoog achten, vooral in zijn kathedraal. De Kerk wordt het duidelijkst zichtbaar wanneer heel het volk deelneemt aan één eucharistie, aan één altaar, onder voorzitterschap van de bisschop met zijn priesters en bedienaars.",
+          "who": "De paragraaf spreekt over de diocesane bisschop en over de plaatselijke Kerk rond hem: zijn priesters, bedienaars en gelovigen. Hij richt zich tot alle gelovigen van een bisdom, met de vraag het liturgisch leven ervan te waarderen, en tot de bisschoppen zelf, die aan hun liturgische ambt herinnerd worden. Hij opent de afdeling over het liturgisch leven in bisdom en parochie (SC §41–42).",
+          "why": "In de periode na Trente en Vaticanum I legde de theologie van het bisschopsambt meer nadruk op jurisdictie dan op het sacramentele ambt, en het pausschap beheerste het ecclesiologisch denken. De patristiek had het vroegchristelijke beeld van de plaatselijke Kerk rond haar bisschop bij één eucharistie teruggevonden. SC, een jaar vóór *Lumen Gentium* afgekondigd, geeft die visie al een liturgische uitdrukking.",
+          "how": "De paragraaf steunt op Ignatius van Antiochië, wiens brieven aan de Magnesiërs, de Filadelfiërs en de Smyrneeërs spreken van één eucharistie, één altaar en één bisschop. Hij verbindt een leerstellige uitspraak met een pastorale conclusie. SC §42 legt daarna uit dat parochies, opgericht onder een pastoor die de plaats van de bisschop inneemt, de zichtbare Kerk ter plaatse vertegenwoordigen.",
+          "meaning": "Hogepriester is een traditionele titel, en de woorden op een of andere wijze begrenzen de uitspraak: het leven van de genade komt van Christus, langs het ambt van de bisschop. De paragraaf maakt van het bisdom geen zelfstandige eenheid; LG §23 en LG §26 werken uit hoe de plaatselijke Kerk volledig Kerk is in gemeenschap met de andere en met Rome. CD §15 noemt de bisschoppen de voornaamste uitdelers van de mysteries van God."
+        },
+        "en": {
+          "what": "The bishop is to be regarded as the high priest of his flock, from whom the life in Christ of his faithful in some way derives. All should therefore value the liturgical life of the diocese centred on the bishop, above all in his cathedral. The Church is most visibly manifested when the whole people takes part in one Eucharist, at one altar, presided over by the bishop with his priests and ministers.",
+          "who": "The paragraph speaks of the diocesan bishop and of the local Church around him, with his priests, ministers and faithful. It addresses all the faithful of a diocese, asking them to value its liturgical life, and the bishops themselves, who are reminded of their liturgical office. It opens the section on liturgical life in diocese and parish (SC §41–42).",
+          "why": "In the period after Trent and Vatican I, the theology of the episcopate stressed jurisdiction more than sacramental office, and the papacy dominated ecclesiological thought. Patristic study had recovered the early image of the local Church gathered around its bishop at one Eucharist. SC, promulgated a year before *Lumen Gentium*, already gives this view a liturgical expression.",
+          "how": "The paragraph draws on Ignatius of Antioch, whose letters to the Magnesians, Philadelphians and Smyrnaeans speak of one Eucharist, one altar and one bishop. It joins a doctrinal statement to a pastoral conclusion. SC §42 then explains that parishes, set up under a pastor who takes the place of the bishop, represent the visible Church in their locality.",
+          "meaning": "High priest is a traditional title, and the words in some way limit the claim: the life of grace comes from Christ, through the ministry of the bishop. The paragraph does not make the diocese a self-sufficient unit; LG §23 and LG §26 develop how the local Church is fully Church in communion with the others and with Rome. CD §15 calls bishops the principal dispensers of the mysteries of God."
+        }
+      }
+    },
+    {
+      "id": "SC-43",
+      "docId": "sacrosanctum-concilium",
+      "number": 43,
+      "textEn": "Zeal for the promotion and restoration of the liturgy is rightly held to be a sign of the providential dispositions of God in our time, as a movement of the Holy Spirit in His Church.",
+      "textNl": "De ijver voor de bevordering en vernieuwing van de liturgie wordt terecht beschouwd als een teken van Gods voorzienige beschikkingen voor onze tijd, als een beweging van de heilige Geest in zijn Kerk.",
+      "tags": [
+        "liturgy",
+        "renewal",
+        "history"
+      ],
+      "crossRefs": [
+        "SC-14",
+        "SC-22",
+        "ext:mediator-dei-1947"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De ijver voor de bevordering en vernieuwing van de liturgie wordt terecht gezien als een teken van Gods voorzienige beschikkingen voor onze tijd en als een beweging van de heilige Geest in zijn Kerk. Hij tekent het leven van de Kerk en het religieus denken en handelen van deze tijd. Het Concilie stelt daarom verdere normen om de pastoraal-liturgische actie te bevorderen.",
+          "who": "De paragraaf spreekt over de liturgische beweging en over allen die zich voor liturgische vernieuwing inzetten: monniken, geleerden, zielzorgers en leken in vele landen. Hij richt zich tot de hele Kerk en nodigt haar uit die beweging als een gave te zien. De concilievaders met de paus spreken hier op een toon van erkenning.",
+          "why": "De liturgische beweging, van Guéranger en Beauduin tot de pastoraal-liturgische congressen van de jaren vijftig, was soms met argwaan bekeken. Pius XII noemde haar in zijn toespraak tot het internationale liturgische congres van Assisi in 1956 een teken van de voorzienigheid en een doorgang van de heilige Geest door de Kerk. SC neemt dat oordeel over en geeft de beweging zo de erkenning van een concilie.",
+          "how": "De paragraaf opent de afdeling over de bevordering van de pastoraal-liturgische actie (SC §43–46). De eerste zin is een theologisch oordeel over de recente geschiedenis; de rest leidt praktische normen in. SC §44–46 vragen daarna liturgische commissies op het niveau van de bisschoppenconferentie en het bisdom, een instituut voor pastorale liturgie en commissies voor muziek en kunst.",
+          "meaning": "Een beweging een doorgang van de Geest noemen (het Latijn heeft *transitus*) is een sterke theologische uitspraak; zij erkent vernieuwing als werk van God in de Kerk. Zij heiligt niet elk voorstel van liturgisten, en de normen die volgen plaatsen de vernieuwing onder het gezag van de bisschoppen en de Apostolische Stoel (SC §22). Lezers verschillen over de vraag of de vaders het programma van de beweging onderschreven of vooral haar geestelijk doel."
+        },
+        "en": {
+          "what": "Zeal for promoting and restoring the liturgy is rightly regarded as a sign of the providential plans of God for our time and as a movement of the Holy Spirit in his Church. It marks the life of the Church and the religious thought and action of the age. The Council therefore lays down further norms to foster pastoral liturgical action.",
+          "who": "The paragraph speaks of the liturgical movement and of all who worked for liturgical renewal: monks, scholars, pastors and lay people in many countries. It addresses the whole Church, inviting it to see that movement as a gift. The Council Fathers with the pope speak here in a tone of recognition.",
+          "why": "The liturgical movement, from Guéranger and Beauduin to the pastoral liturgical congresses of the 1950s, had at times been viewed with suspicion. In his address to the international liturgical congress at Assisi in 1956, Pius XII called it a sign of providence and a passing of the Holy Spirit through the Church. SC takes over that judgement and so gives the movement conciliar recognition.",
+          "how": "The paragraph opens the section on promoting pastoral liturgical action (SC §43–46). Its first sentence is a theological judgement on recent history; the rest introduces practical norms. SC §44–46 then ask for liturgical commissions at the level of the episcopal conference and the diocese, an institute for pastoral liturgy, and commissions for music and art.",
+          "meaning": "To call a movement a passing of the Spirit (the Latin has *transitus*) is a strong theological claim; it recognises renewal as the work of God in the Church. It does not canonise every proposal made by liturgists, and the norms that follow place renewal under the authority of the bishops and the Apostolic See (SC §22). Readers differ on whether the Fathers endorsed the programme of the movement or chiefly its spiritual aim."
+        }
+      }
+    },
+    {
       "id": "SC-47",
       "docId": "sacrosanctum-concilium",
       "number": 47,
@@ -196,6 +556,39 @@
         "LG-11",
         "ext:trent-sess22-1562"
       ]
+    },
+    {
+      "id": "SC-48",
+      "docId": "sacrosanctum-concilium",
+      "number": 48,
+      "textEn": "The Church, therefore, earnestly desires that Christ's faithful, when present at this mystery of faith, should not be there as strangers or silent spectators; on the contrary, through a good understanding of the rites and prayers they should take part in the sacred action conscious of what they are doing, with devotion and full collaboration.",
+      "textNl": "Daarom verlangt de Kerk vurig dat de christengelovigen bij dit mysterie van het geloof niet als vreemden of zwijgende toeschouwers aanwezig zijn; zij moeten integendeel, door een goed begrip van de riten en gebeden, bewust, vroom en actief aan de heilige handeling deelnemen.",
+      "tags": [
+        "eucharist",
+        "participation",
+        "sacrifice"
+      ],
+      "crossRefs": [
+        "SC-47",
+        "SC-14",
+        "LG-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De Kerk verlangt vurig dat de gelovigen bij de eucharistie niet aanwezig zijn als vreemden of zwijgende toeschouwers. Met een goed begrip van de riten en gebeden moeten zij bewust, vroom en actief deelnemen. Zij moeten zich laten vormen door het woord van God, gevoed worden aan de tafel van de Heer en God danken. Door de onbevlekte offergave op te dragen, door de handen van de priester en samen met hem, leren zij ook zichzelf op te dragen en worden zij steeds inniger met God en met elkaar verenigd.",
+          "who": "De paragraaf spreekt over alle gelovigen die de mis bijwonen, de gewone gemeenschap in elke parochie. Onrechtstreeks richt hij zich tot de zielzorgers en tot wie de ordo missae zou herzien, want wat hij vraagt veronderstelt zowel vorming als geschikte riten. De concilievaders spreken in de aanhef van hoofdstuk II over de eucharistie.",
+          "why": "Pius XI had in *Divini cultus* (1928) bijna hetzelfde beeld gebruikt en betreurd dat de gelovigen als afzijdige en zwijgende toeschouwers aanwezig waren. Pius XII leerde in *Mediator Dei* (1947) dat de gelovigen het offer door de priester en met hem opdragen, en zichzelf erbij. Het Concilie brengt beide lijnen samen en bereidt zo de vraag om herziening van de riten in SC §50 voor.",
+          "how": "De paragraaf sluit onmiddellijk aan op de leerstellige uitspraak van SC §47 en maakt er een pastoraal doel van. Hij gaat van aanwezigheid naar begrip, van begrip naar deelname, en van deelname naar zelfgave en eenheid. De slotwending, dat God alles in allen zij, verwijst naar 1 Korintiërs 15,28. LG §11 herhaalt de leer dat de gelovigen het goddelijk offerlam en zichzelf opdragen.",
+          "meaning": "De paragraaf geeft de diepste zin van deelname: de zelfgave van de gelovigen, verenigd met het offer van Christus. Dat zij door de handen van de priester en met hem opdragen, wist het onderscheid tussen het ambtelijk en het gemeenschappelijk priesterschap niet uit; LG §10 stelt dat duidelijk. Wie de innerlijke deelname benadrukt en wie het gemeenschappelijk handelen benadrukt, vinden hier allebei steun. Het begrip van de riten verschijnt als middel tot die vereniging."
+        },
+        "en": {
+          "what": "The Church earnestly desires that the faithful, when present at the Eucharist, should not be there as strangers or silent spectators. With a good understanding of the rites and prayers, they should take part consciously, devoutly and actively. They should be formed by the word of God, nourished at the table of the Lord, and give thanks. Offering the spotless Victim through the hands of the priest and together with him, they learn to offer themselves too, and are drawn into ever closer union with God and one another.",
+          "who": "The paragraph speaks of all the faithful who attend Mass, the ordinary congregation in every parish. Implicitly it addresses pastors and those who would revise the Order of Mass, since what it asks requires both formation and suitable rites. The Council Fathers speak in the opening of chapter II on the Eucharist.",
+          "why": "Pius XI had used almost the same image in *Divini cultus* (1928), regretting that the faithful attended as detached and silent spectators. Pius XII taught in *Mediator Dei* (1947) that the faithful offer the sacrifice through the priest and with him, and offer themselves with it. The Council gathers both strands and so prepares the call for a revision of the rites in SC §50.",
+          "how": "The paragraph follows directly on the doctrinal statement of SC §47 and turns it into a pastoral aim. It moves from presence to understanding, from understanding to participation, and from participation to self-offering and unity. Its closing phrase, that God may be all in all, echoes 1 Corinthians 15:28. LG §11 repeats the teaching that the faithful offer the divine Victim and themselves with it.",
+          "meaning": "The paragraph gives the deepest sense of participation: the self-offering of the faithful united with the sacrifice of Christ. Their offering through the hands of the priest and with him does not erase the difference between the ministerial and the common priesthood, which LG §10 states clearly. Those who stress interior participation and those who stress communal action both find support here. Understanding the rites is presented as a means toward that union."
+        }
+      }
     },
     {
       "id": "SC-50",
@@ -233,6 +626,38 @@
       ]
     },
     {
+      "id": "SC-52",
+      "docId": "sacrosanctum-concilium",
+      "number": 52,
+      "textEn": "By means of the homily the mysteries of the faith and the guiding principles of the Christian life are expounded from the sacred text, during the course of the liturgical year; the homily, therefore, is to be highly esteemed as part of the liturgy itself.",
+      "textNl": "In de homilie worden in de loop van het liturgisch jaar de mysteries van het geloof en de richtlijnen voor het christelijk leven vanuit de heilige tekst uiteengezet; daarom moet de homilie als deel van de liturgie zelf hoog geacht worden.",
+      "tags": [
+        "liturgy",
+        "scripture",
+        "mass"
+      ],
+      "crossRefs": [
+        "SC-51",
+        "DV-24"
+      ],
+      "explain": {
+        "nl": {
+          "what": "In de homilie worden de mysteries van het geloof en de richtlijnen voor het christelijk leven in de loop van het liturgisch jaar vanuit de heilige tekst uitgelegd. De homilie moet daarom hoog geacht worden als deel van de liturgie zelf. In de missen op zondagen en verplichte feestdagen met het volk mag zij niet zonder ernstige reden wegvallen.",
+          "who": "De paragraaf richt zich tot wie in de mis preekt, priesters en diakens, en tot de gelovigen die luisteren. Hij spreekt over de homilie als een daad van het leerambt van de Kerk binnen de eredienst. De concilievaders plaatsen hem tussen de normen voor de herziening van de mis in hoofdstuk II.",
+          "why": "Vóór het Concilie werd de preek vaak als een onderbreking van de mis behandeld: de celebrant legde soms de manipel af, en het onderwerp volgde dikwijls een catechetisch programma los van de lezingen. Trente had al de prediking op zon- en feestdagen voorgeschreven. De liturgische en de bijbelse beweging wilden dat de prediking zou voortkomen uit de Schrift die net verkondigd was.",
+          "how": "De paragraaf volgt op SC §51 over de ruimere lezing van de Schrift en gaat vooraf aan SC §53 over het gebed van de gelovigen. Samen geven zij vorm aan de dienst van het woord. SC §35 had de prediking al deel van de liturgische handeling genoemd. DV §24 voegt eraan toe dat de bediening van het woord, met de liturgische homilie op de eerste plaats, uit de Schrift leeft.",
+          "meaning": "Een homilie verschilt van een lezing of een morele toespraak: zij legt het geloof uit vanuit de teksten van de dag en leidt naar de eucharistie die volgt. Dat zij deel van de liturgie is, betekent dat zij voorbehouden is aan gewijde bedienaren, zoals het Wetboek van 1983 bepaalt (canon 767). De norm verbiedt geen leerstellige catechese; hij vraagt dat zulk onderricht uit de lezingen en het liturgisch jaar geput wordt."
+        },
+        "en": {
+          "what": "Through the homily the mysteries of faith and the principles of Christian life are explained from the sacred text in the course of the liturgical year. The homily is therefore to be highly esteemed as part of the liturgy itself. At Masses on Sundays and holy days of obligation with the people present, it should not be omitted except for a serious reason.",
+          "who": "The paragraph addresses those who preach at Mass, priests and deacons, and the faithful who hear them. It speaks of the homily as an act of the teaching office of the Church within worship. The Council Fathers place it among the norms for the revision of the Mass in chapter II.",
+          "why": "Before the Council the sermon was often treated as an interruption of the Mass: the celebrant might lay aside the maniple, and the topic frequently followed a catechetical programme unrelated to the readings. Trent had already required preaching on Sundays and feasts. The liturgical and biblical movements wanted preaching to grow out of the Scripture just proclaimed.",
+          "how": "The paragraph follows SC §51 on the fuller reading of Scripture and precedes SC §53 on the prayer of the faithful. Together they shape the liturgy of the word. SC §35 had already called preaching part of the liturgical service. DV §24 adds that the ministry of the word, with the liturgical homily in first place, is nourished by Scripture.",
+          "meaning": "A homily differs from a lecture or a moral talk: it expounds the faith from the texts of the day and leads into the Eucharist that follows. Because it is part of the liturgy, it is reserved to ordained ministers, as the 1983 Code states (canon 767). The norm does not forbid doctrinal catechesis; it asks that such teaching be drawn from the readings and the liturgical year."
+        }
+      }
+    },
+    {
       "id": "SC-54",
       "docId": "sacrosanctum-concilium",
       "number": 54,
@@ -266,6 +691,198 @@
       "noteEn": "The rest of §55 permits communion under both kinds in cases to be determined by the Apostolic See. The document says nothing about the manner of distribution (on the tongue or in the hand)."
     },
     {
+      "id": "SC-56",
+      "docId": "sacrosanctum-concilium",
+      "number": 56,
+      "textEn": "The two parts which, in a certain sense, go to make up the Mass, namely, the liturgy of the word and the eucharistic liturgy, are so closely connected with each other that they form but one single act of worship.",
+      "textNl": "De twee delen waaruit de mis in zekere zin bestaat, namelijk de dienst van het woord en de eucharistische liturgie, zijn zo nauw met elkaar verbonden dat zij één enkele cultusdaad vormen.",
+      "tags": [
+        "mass",
+        "scripture",
+        "eucharist"
+      ],
+      "crossRefs": [
+        "SC-51",
+        "SC-47",
+        "DV-21"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De twee delen waaruit de mis in zekere zin bestaat, de dienst van het woord en de eucharistische liturgie, zijn zo nauw verbonden dat zij één enkele cultusdaad vormen. Het Concilie spoort de zielzorgers daarom aan de gelovigen te leren aan de hele mis deel te nemen, vooral op zondagen en verplichte feestdagen.",
+          "who": "De paragraaf spreekt over de opbouw van de mis en over de gelovigen die haar bijwonen. De aansporing is gericht tot de zielzorgers, die hun volk moeten onderrichten. De concilievaders spreken in het hoofdstuk over de eucharistie, na de normen over lezingen, homilie en voorbede.",
+          "why": "De moraaltheologie vóór het Concilie onderscheidde voor de vervulling van de zondagsplicht de voornaamste delen van de mis: offerande, consecratie en communie. Veel gelovigen besloten daaruit dat te laat komen tijdens de lezingen weinig uitmaakte. De nieuwe aandacht voor de Schrift in SC §51 vroeg om een correctie van die gewoonte.",
+          "how": "De paragraaf verbindt een leerstellige uitspraak met een pastorale aansporing. De gedachte van woord en eucharistie als twee delen van één geheel verbindt SC §51 met SC §47–48. DV §21 zegt later dat de Kerk de Schrift altijd vereerd heeft zoals het lichaam van de Heer, en het brood des levens aanbiedt van de ene tafel van het woord en van het lichaam.",
+          "meaning": "Eén cultusdaad betekent dat de lezingen een volwaardig deel van de eucharistieviering zijn, waarin Christus in zijn woord tegenwoordig is (SC §7). De paragraaf maakt de twee delen niet in elk opzicht gelijk; het eucharistisch offer blijft het hoogtepunt. De Catechismus beschrijft de mis in dezelfde twee delen als één daad (Catechismus nr. 1346)."
+        },
+        "en": {
+          "what": "The two parts that in a sense make up the Mass, the liturgy of the word and the Eucharistic liturgy, are so closely joined that they form one single act of worship. The Council therefore urges pastors to teach the faithful to take part in the whole Mass, especially on Sundays and holy days of obligation.",
+          "who": "The paragraph speaks of the structure of the Mass and of the faithful who attend it. Its exhortation is addressed to pastors of souls, who are to instruct their people. The Council Fathers speak within the chapter on the Eucharist, after the norms on the readings, the homily and the prayer of the faithful.",
+          "why": "Moral theology before the Council distinguished the principal parts of the Mass, offertory, consecration and communion, for the fulfilment of the Sunday obligation. Many faithful concluded that arriving during the readings was of little consequence. The renewed attention to Scripture in SC §51 required a correction of that habit.",
+          "how": "The paragraph combines a doctrinal statement with a pastoral exhortation. Its idea of word and Eucharist as two parts of one whole links SC §51 to SC §47–48. DV §21 later says that the Church has always venerated the Scriptures as she venerates the body of the Lord, offering the bread of life from the one table of the word and of the body.",
+          "meaning": "One act of worship means that the readings are an integral part of the Eucharistic celebration, in which Christ is present in his word (SC §7). The paragraph does not make the two parts equal in every respect; the Eucharistic sacrifice remains the summit. The Catechism describes the Mass in the same two parts as one act (Catechism no. 1346)."
+        }
+      }
+    },
+    {
+      "id": "SC-59",
+      "docId": "sacrosanctum-concilium",
+      "number": 59,
+      "textEn": "The purpose of the sacraments is to sanctify men, to build up the body of Christ, and, finally, to give worship to God; because they are signs they also instruct. They not only presuppose faith, but by words and objects they also nourish, strengthen, and express it; that is why they are called \"sacraments of faith.\"",
+      "textNl": "De sacramenten zijn bestemd om de mensen te heiligen, het lichaam van Christus op te bouwen en ten slotte God eredienst te brengen; als tekens onderrichten zij ook. Zij veronderstellen het geloof, en door woorden en dingen voeden, versterken en uiten zij het ook; daarom heten zij 'sacramenten van het geloof'.",
+      "tags": [
+        "sacraments",
+        "faith"
+      ],
+      "crossRefs": [
+        "SC-7",
+        "LG-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De sacramenten zijn er om de mensen te heiligen, het lichaam van Christus op te bouwen en God eredienst te brengen. Omdat zij tekens zijn, onderrichten zij ook. Zij veronderstellen het geloof en voeden, versterken en uiten het door woorden en dingen; daarom heten zij sacramenten van het geloof. Zij schenken genade, en de viering zelf maakt de gelovigen ontvankelijk om die vruchtbaar te ontvangen, God te eren en de naastenliefde te beoefenen.",
+          "who": "De paragraaf opent hoofdstuk III over de overige sacramenten en de sacramentaliën. Hij spreekt over alle sacramenten en richt zich tot de gelovigen, die de tekens moeten verstaan, en onrechtstreeks tot de zielzorgers en de herzieners van de riten, die die tekens verstaanbaar moeten maken. De concilievaders spreken hier leerstellig.",
+          "why": "De katholieke sacramententheologie sinds Trente benadrukte de objectieve werkzaamheid van de sacramenten tegenover opvattingen uit de Reformatie die ze tot geloofstekens leken te herleiden. De vaders behouden die werkzaamheid en halen de oudere leer terug, ook bij Thomas van Aquino te vinden, dat sacramenten tevens tekens zijn die onderrichten en het geloof uitdrukken. Dat evenwicht beantwoordt een pastorale zorg: riten die niet begrepen werden.",
+          "how": "De paragraaf gaat van doel naar teken, van teken naar geloof en van geloof naar vruchtbaarheid. Zijn redenering ondersteunt de praktische normen die volgen, zoals het gebruik van de volkstaal in de sacramentele riten (SC §63) en de herziening van elke ritus (SC §64–82). Hij past op alle sacramenten toe wat SC §7 zei over de tegenwoordigheid van Christus erin.",
+          "meaning": "De uitdrukking sacramenten van het geloof laat de bron van de genade bij Christus, die in het sacrament handelt; het geloof wordt erin verondersteld, gevoed en uitgedrukt. De paragraaf sluit een magische opvatting van de riten uit, en evenzeer een louter symbolische. De Catechismus citeert hem over het doel van de sacramenten (Catechismus nr. 1123)."
+        },
+        "en": {
+          "what": "The sacraments exist to sanctify people, to build up the Body of Christ and to give worship to God. Because they are signs, they also instruct. They presuppose faith and, through words and things, nourish, strengthen and express it, which is why they are called sacraments of faith. They confer grace, and the celebration itself disposes the faithful to receive it fruitfully, to worship God and to practise charity.",
+          "who": "The paragraph opens chapter III on the other sacraments and the sacramentals. It speaks of all the sacraments and addresses the faithful, who are to understand the signs, and implicitly pastors and the revisers of the rites, who must make those signs intelligible. The Council Fathers speak here in a doctrinal mode.",
+          "why": "Catholic sacramental theology since Trent emphasised the objective efficacy of the sacraments against Reformation views that seemed to reduce them to signs of faith. The Fathers keep that efficacy and recover the older teaching, found also in Thomas Aquinas, that sacraments are signs which teach and express faith. The balance answers a pastoral concern about rites that were not understood.",
+          "how": "The paragraph moves from purpose to sign, from sign to faith, and from faith to fruitfulness. Its argument supports the practical norms that follow, such as the use of the vernacular in sacramental rites (SC §63) and the revision of each rite (SC §64–82). It extends to all sacraments what SC §7 said of the presence of Christ in them.",
+          "meaning": "The phrase sacraments of faith leaves the source of grace with Christ, who acts in the sacrament; faith is presupposed by it, nourished in it and expressed through it. The paragraph excludes a magical view of rites and also a purely symbolic one. The Catechism quotes it on the purpose of the sacraments (Catechism no. 1123)."
+        }
+      }
+    },
+    {
+      "id": "SC-64",
+      "docId": "sacrosanctum-concilium",
+      "number": 64,
+      "textEn": "The catechumenate for adults, comprising several distinct steps, is to be restored and to be taken into use at the discretion of the local ordinary. By this means the time of the catechumenate, which is intended as a period of suitable instruction, may be sanctified by sacred rites to be celebrated at successive intervals of time.",
+      "textNl": "Het catechumenaat voor volwassenen, in verschillende stappen verdeeld, moet hersteld worden en naar het oordeel van de plaatselijke ordinaris in gebruik genomen. Zo kan de tijd van het catechumenaat, die voor passend onderricht bedoeld is, geheiligd worden door heilige riten die op opeenvolgende tijdstippen gevierd worden.",
+      "tags": [
+        "baptism",
+        "sacraments",
+        "formation"
+      ],
+      "crossRefs": [
+        "SC-6",
+        "SC-59"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het catechumenaat voor volwassenen, met verschillende onderscheiden stappen, moet hersteld worden en naar oordeel van de plaatselijke ordinaris in gebruik genomen. Zo kan de tijd van het catechumenaat, bedoeld voor passend onderricht, geheiligd worden door riten die op opeenvolgende momenten gevierd worden. De paragraaf doet zo een structuur uit de vroege Kerk herleven voor volwassenen die om het doopsel vragen.",
+          "who": "De paragraaf spreekt over volwassenen die zich op het doopsel voorbereiden en over de gemeenschappen die hen opnemen. Hij richt zich tot de plaatselijke ordinarissen, die over de invoering beslissen, en tot wie de riten zou herzien. Missiebisschoppen hadden er direct belang bij, omdat de volwassenendoop in hun bisdommen gewoon was.",
+          "why": "In de vroege Kerk doorliepen volwassenen vóór hun doop met Pasen een catechumenaat van onderricht en riten. In latere eeuwen, toen de kinderdoop de regel was, werden die riten in één plechtigheid samengedrukt. Missionarissen in Afrika hadden al met een catechumenaat in fasen geëxperimenteerd, en in 1962 keurde de Heilige Stoel een ritus voor de volwassenendoop in stappen goed.",
+          "how": "De paragraaf is een korte norm, typisch voor hoofdstuk III, dat elk sacrament afzonderlijk overloopt. Hij wordt gevolgd door bepalingen over aanpassing in missielanden (SC §65) en over de herziening van de riten voor volwassenen- en kinderdoop (SC §66–67). AG §14 werkt het catechumenaat uit als geestelijke weg en als leerschool van het christelijk leven.",
+          "meaning": "Het catechumenaat is een periode van vorming met liturgische stappen, die onderricht, gebed en bekering verbindt. De Ordo voor de christelijke initiatie van volwassenen (1972) voerde de paragraaf uit en werd een van de meest gebruikte vruchten van de hervorming. De tekst laat de invoering aan het plaatselijk oordeel over en maakt het catechumenaat dus niet overal verplicht. De Catechismus verwijst ernaar (Catechismus nr. 1232)."
+        },
+        "en": {
+          "what": "The adult catechumenate, made up of several distinct stages, is to be restored and introduced at the discretion of the local ordinary. The time of the catechumenate, meant for suitable instruction, can then be sanctified by sacred rites celebrated at successive intervals. The paragraph thus revives a structure of the early Church for adults who seek baptism.",
+          "who": "The paragraph speaks of adults preparing for baptism and of the communities that receive them. It addresses local ordinaries, who decide on its introduction, and those who would revise the rites. Missionary bishops had a direct interest in it, since adult baptism was common in their dioceses.",
+          "why": "In the early Church adults passed through a catechumenate of instruction and rites before their baptism at Easter. In later centuries, with infant baptism the norm, these rites were compressed into a single ceremony. Missionaries in Africa had already experimented with a catechumenate in stages, and in 1962 the Holy See approved a rite of adult baptism arranged in steps.",
+          "how": "The paragraph is a brief norm, typical of chapter III, which reviews each sacrament in turn. It is followed by provisions on adaptation in mission lands (SC §65) and on the revision of the rites of adult and infant baptism (SC §66–67). AG §14 develops the catechumenate as a spiritual journey and an apprenticeship in the Christian life.",
+          "meaning": "The catechumenate is a period of formation marked by liturgical steps, joining instruction, prayer and conversion. The Rite of Christian Initiation of Adults (1972) implemented the paragraph and became one of the most widely used fruits of the reform. The text leaves its introduction to local judgement, so the catechumenate is not made compulsory everywhere. The Catechism refers to it (Catechism no. 1232)."
+        }
+      }
+    },
+    {
+      "id": "SC-73",
+      "docId": "sacrosanctum-concilium",
+      "number": 73,
+      "textEn": "\"Extreme unction,\" which may also and more fittingly be called \"anointing of the sick,\" is not a sacrament for those only who are at the point of death. Hence, as soon as any one of the faithful begins to be in danger of death from sickness or old age, the fitting time for him to receive this sacrament has certainly already arrived.",
+      "textNl": "Het 'laatste oliesel', dat ook en beter 'ziekenzalving' genoemd kan worden, is niet alleen een sacrament voor wie op het punt staat te sterven. Daarom is het geschikte ogenblik om het te ontvangen zeker al gekomen zodra een gelovige door ziekte of ouderdom in levensgevaar begint te verkeren.",
+      "tags": [
+        "sacraments",
+        "reform"
+      ],
+      "crossRefs": [
+        "SC-59",
+        "LG-11"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Het laatste oliesel, dat beter ook ziekenzalving genoemd wordt, is geen sacrament alleen voor wie op sterven ligt. Zodra een gelovige door ziekte of ouderdom in levensgevaar begint te komen, is het geschikte ogenblik om het te ontvangen zeker al gekomen. De volgende paragrafen vragen een doorlopende ritus van biecht, zalving en viaticum, en een herziening van de gebeden naar de verschillende toestand van de zieken.",
+          "who": "De paragraaf spreekt over ernstig zieken en ouderen, en over de priesters die hen zalven. Hij richt zich tot de zielzorgers en de gelovigen, van wie velen het sacrament waren gaan vrezen als teken van een nakende dood en de priester daarom te laat riepen. De concilievaders spreken in hoofdstuk III over de sacramenten.",
+          "why": "De brief van Jakobus (5,14–15) spreekt over de oudsten die de zieken zalven tot oprichting en vergeving. In het middeleeuwse Westen raakte het sacrament aan het sterfbed gebonden, vandaar de naam laatste oliesel. Trente leerde in zijn veertiende zitting (1551) dat het vooral aan gevaarlijk zieken die het einde naderen wordt gegeven. De vaders haalden de ruimere strekking van de bijbeltekst terug.",
+          "how": "De paragraaf is een korte, corrigerende norm. Hij stelt een betere naam voor en verruimt het ogenblik van ontvangst, zonder de leer over het sacrament te wijzigen. Hij staat naast SC §74–75 over de doorlopende ritus en de herziening van de gebeden. LG §11 beschrijft hetzelfde sacrament als de Kerk die de zieken aanbeveelt bij de lijdende en verheerlijkte Heer.",
+          "meaning": "Gevaar door ziekte of ouderdom is ruimer dan een nakende dood, terwijl de zalving een sacrament blijft voor ernstige ziekte en de broosheid van de ouderdom. Paulus VI voerde de paragraaf uit met *Sacram unctionem infirmorum* (1972) en een herziene ritus. Het Wetboek van 1983 (canon 1004) en de Catechismus (Catechismus nr. 1514) nemen die ruimere opvatting over. Het viaticum blijft het eigenlijke sacrament van de stervenden."
+        },
+        "en": {
+          "what": "Extreme unction, which may more fittingly be called anointing of the sick, is not a sacrament only for those at the point of death. As soon as a believer begins to be in danger of death from sickness or old age, the right time to receive it has certainly come. The following paragraphs ask for a continuous rite of confession, anointing and viaticum, and a revision of the prayers to fit the varying conditions of the sick.",
+          "who": "The paragraph speaks of the seriously ill and the elderly, and of the priests who anoint them. It addresses pastors and the faithful, many of whom had come to fear the sacrament as a sign of imminent death and therefore called the priest too late. The Council Fathers speak within chapter III on the sacraments.",
+          "why": "The Letter of James (5:14–15) speaks of the elders anointing the sick for their raising up and forgiveness. In the medieval West the sacrament became tied to the deathbed, hence the name extreme unction. Trent taught in its fourteenth session (1551) that it is given especially to the dangerously ill who seem near death. The Fathers recovered the wider scope of the biblical text.",
+          "how": "The paragraph is a short corrective norm. It proposes a better name and widens the moment of reception, without changing the doctrine of the sacrament. It stands alongside SC §74–75 on the continuous rite and the revision of the prayers. LG §11 describes the same sacrament as the Church commending the sick to the suffering and glorified Lord.",
+          "meaning": "Danger from sickness or old age is broader than imminent death, while the anointing remains a sacrament for serious illness and the frailty of age. Paul VI implemented the paragraph with *Sacram unctionem infirmorum* (1972) and a revised rite. The 1983 Code (canon 1004) and the Catechism (Catechism no. 1514) adopt this wider understanding. Viaticum remains the proper sacrament of the dying."
+        }
+      }
+    },
+    {
+      "id": "SC-83",
+      "docId": "sacrosanctum-concilium",
+      "number": 83,
+      "textEn": "Christ Jesus, high priest of the new and eternal covenant, taking human nature, introduced into this earthly exile that hymn which is sung throughout all ages in the halls of heaven. He joins the entire community of mankind to Himself, associating it with His own singing of this canticle of divine praise.",
+      "textNl": "Christus Jezus, de hogepriester van het nieuwe en eeuwige verbond, heeft bij het aannemen van de menselijke natuur in deze aardse ballingschap de lofzang binnengebracht die in de hemelse woningen door alle eeuwen gezongen wordt. Hij verenigt heel de gemeenschap van de mensen met zich en betrekt haar bij het zingen van deze goddelijke lofzang.",
+      "tags": [
+        "divine-office",
+        "prayer",
+        "christology"
+      ],
+      "crossRefs": [
+        "SC-100",
+        "SC-101",
+        "SC-8"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Christus, de hogepriester van het nieuwe en eeuwige verbond, heeft de lofzang die in de hemel door alle eeuwen gezongen wordt, in deze aardse ballingschap binnengebracht. Hij verenigt heel de mensengemeenschap met zich en betrekt haar bij zijn eigen lofzang. Dat priesterlijk werk zet Hij voort door zijn Kerk, die onophoudelijk de Heer looft en voor het heil van heel de wereld voorspraak doet. Zij doet dat in de eucharistie en op andere wijzen, vooral in het getijdengebed.",
+          "who": "De paragraaf spreekt over Christus de hogepriester en over de Kerk als de gemeenschap die met Hem bidt. Hij opent hoofdstuk IV over het getijdengebed en richt zich tot allen die het bidden: clerici en religieuzen die ertoe verplicht zijn, en leken die uitgenodigd worden eraan deel te nemen. De concilievaders spreken hier leerstellig en beschouwend.",
+          "why": "In de twintigste eeuw werd het brevier op veel plaatsen ervaren als een persoonlijke verplichting van clerici, alleen en vaak haastig gelezen. De getijden werden dikwijls gebeden op tijdstippen die niet bij het uur van de dag pasten. De vaders wilden het karakter van gebed van heel de Kerk, verbonden met de lofzang van Christus zelf, herstellen voordat zij normen voor de hervorming gaven (SC §88–101).",
+          "how": "De paragraaf plaatst het getijdengebed in de christologie, zoals SC §5–7 dat voor heel de liturgie deed. Het beeld van de hemelse lofzang die op aarde gebracht wordt, sluit aan bij SC §8 en bij de brief aan de Hebreeën over het priesterschap van Christus. SC §84 legt daarna uit dat het getijdengebed de loop van dag en nacht heiligt en de stem is van de Bruid die zich tot de Bruidegom richt.",
+          "meaning": "Het getijdengebed verschijnt als het gebed van Christus zelf, voortgezet in zijn lichaam, zodat wie het bidt in naam van de Kerk bidt. Dat geeft het een openbaar en kerkelijk karakter, ook wanneer iemand het alleen bidt. Paulus VI voerde de hervormde getijdenliturgie in met de apostolische constitutie *Laudis canticum* (1970), waarvan de beginwoorden naar deze paragraaf verwijzen. De Catechismus behandelt het getijdengebed in dezelfde termen (Catechismus nr. 1174)."
+        },
+        "en": {
+          "what": "Christ, the high priest of the new and eternal covenant, brought into this earthly exile the hymn of praise sung in heaven through all ages. He joins the whole human community to himself and associates it with his own song of praise. He continues this priestly work through his Church, which praises the Lord without ceasing and intercedes for the salvation of the whole world. It does so in the Eucharist and in other ways, above all by praying the divine office.",
+          "who": "The paragraph speaks of Christ the high priest and of the Church as the community that prays with him. It opens chapter IV on the divine office and addresses all who pray it: clergy and religious who are bound to it, and lay people who are invited to share it. The Council Fathers speak in a doctrinal and contemplative register.",
+          "why": "By the twentieth century the breviary was widely experienced as a personal obligation of clerics, read alone and often in haste. Its hours were frequently prayed at times unrelated to the hour of the day. The Fathers wished to restore its character as the prayer of the whole Church, joined to the praise of Christ himself, before giving norms for its reform (SC §88–101).",
+          "how": "The paragraph places the office within Christology, as SC §5–7 did for the whole liturgy. Its image of the heavenly hymn brought to earth echoes SC §8 and the Letter to the Hebrews on the priesthood of Christ. SC §84 then explains that the office sanctifies the course of day and night and is the voice of the Bride addressing her Bridegroom.",
+          "meaning": "The divine office is presented as the prayer of Christ himself, continued in his Body, so that whoever prays it prays in the name of the Church. This gives it a public and ecclesial character, even when one person prays it alone. Paul VI introduced the reformed Liturgy of the Hours with the apostolic constitution *Laudis canticum* (1970), whose opening words echo this paragraph. The Catechism treats the office in the same terms (Catechism no. 1174)."
+        }
+      }
+    },
+    {
+      "id": "SC-100",
+      "docId": "sacrosanctum-concilium",
+      "number": 100,
+      "textEn": "Pastors of souls should see to it that the chief hours, especially Vespers, are celebrated in common in church on Sundays and the more solemn feasts. And the laity, too, are encouraged to recite the divine office, either with the priests, or among themselves, or even individually.",
+      "textNl": "De zielzorgers moeten ervoor zorgen dat de voornaamste getijden, vooral de vespers, op zondagen en hoogfeesten in de kerk gemeenschappelijk gevierd worden. Ook de leken worden aangespoord het getijdengebed te bidden, samen met de priesters, onder elkaar of zelfs ieder afzonderlijk.",
+      "tags": [
+        "divine-office",
+        "laity",
+        "prayer"
+      ],
+      "crossRefs": [
+        "SC-83",
+        "SC-101"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De zielzorgers moeten ervoor zorgen dat de voornaamste getijden, vooral de vespers, op zondagen en hoogfeesten gemeenschappelijk in de kerk gevierd worden. Ook leken worden aangemoedigd het getijdengebed te bidden, met de priesters, onder elkaar of zelfs alleen. De paragraaf hoort bij de reeks over wie het getijdengebed bidt (SC §95–100) en opent het voor wie geen clericus of religieus is.",
+          "who": "De paragraaf richt zich tot de zielzorgers, die de gemeenschappelijke viering moeten regelen, en tot de leken, die uitgenodigd worden deel te nemen. Hij spreekt over de parochiegemeenschap die buiten de mis samenkomt om te bidden. De concilievaders schrijven als herders die het volk een deel willen geven in het dagelijks gebed van de Kerk.",
+          "why": "De gezongen vespers op zondagnamiddag waren op sommige plaatsen bewaard gebleven, maar in de meeste parochies was het getijdengebed uit de ervaring van het volk verdwenen, vervangen door devoties zoals het lof of de rozenkrans. De liturgische beweging had completen en vespers voor lekengroepen aangemoedigd. De vaders wilden het volk opnieuw een deel geven in het gebed van de getijden.",
+          "how": "De paragraaf heeft een pastorale, uitnodigende toon: hij moedigt aan zonder te verplichten. Hij bouwt voort op SC §83–84, waar het getijdengebed het gebed van Christus en zijn lichaam is, en trekt het gevolg dat ook leken eraan deelhebben. SC §101 regelt daarna de taal en laat de volkstaal toe voor religieuzen en voor wie samen met de gelovigen bidt.",
+          "meaning": "Leken die het getijdengebed bidden, nemen geen verplichting op zich; zij sluiten zich aan bij het openbaar gebed van de Kerk. De paragraaf ziet het getijdengebed ook als een parochieviering, naast een boek voor clerici. In de praktijk bleef dat in veel streken beperkt; zondagse vespers werden in de meeste parochies geen gewoonte. De Catechismus citeert de paragraaf (Catechismus nr. 1175)."
+        },
+        "en": {
+          "what": "Pastors should see that the principal hours, especially Vespers, are celebrated in common in church on Sundays and the more solemn feasts. Lay people too are encouraged to pray the divine office, with the priests, among themselves, or even alone. The paragraph belongs to the series on who prays the office (SC §95–100) and opens it beyond clergy and religious.",
+          "who": "The paragraph addresses pastors of souls, who are to arrange the common celebration, and lay people, who are invited to take part. It speaks of the parish community gathering for prayer outside Mass. The Council Fathers write as pastors who wish to give the people a share in the daily prayer of the Church.",
+          "why": "Sung Vespers on Sunday afternoon had survived in some places, but in most parishes the office had disappeared from the experience of the people, replaced by devotions such as Benediction or the rosary. The liturgical movement had promoted Compline and Vespers for lay groups. The Fathers wished to give the people back a share in the prayer of the hours.",
+          "how": "The paragraph is pastoral and inviting in tone: it encourages without obliging. It builds on SC §83–84, where the office is the prayer of Christ and his Body, and draws the consequence that the laity may share in it. SC §101 then regulates language, allowing the vernacular for religious and for those who pray with the faithful.",
+          "meaning": "Lay people who pray the office take on no obligation; they join the public prayer of the Church. The paragraph envisages the office as a parish celebration as well as a book for clergy. Its realisation remained limited in many regions, and Sunday Vespers did not become customary in most parishes. The Catechism quotes the paragraph (Catechism no. 1175)."
+        }
+      }
+    },
+    {
       "id": "SC-101",
       "docId": "sacrosanctum-concilium",
       "number": 101,
@@ -279,6 +896,70 @@
       "crossRefs": [
         "SC-36"
       ]
+    },
+    {
+      "id": "SC-102",
+      "docId": "sacrosanctum-concilium",
+      "number": 102,
+      "textEn": "Holy Mother Church is conscious that she must celebrate the saving work of her divine Spouse by devoutly recalling it on certain days throughout the course of the year. Every week, on the day which she has called the Lord's day, she keeps the memory of the Lord's resurrection, which she also celebrates once in the year, together with His blessed passion, in the most solemn festival of Easter.",
+      "textNl": "De heilige Moeder Kerk is zich ervan bewust dat zij het heilswerk van haar goddelijke Bruidegom moet vieren door het op vaste dagen in de loop van het jaar in heilige gedachtenis te houden. Elke week, op de dag die zij de dag des Heren genoemd heeft, gedenkt zij de verrijzenis van de Heer, die zij eenmaal per jaar, samen met zijn zalig lijden, ook viert op het hoogfeest van Pasen.",
+      "tags": [
+        "liturgical-year",
+        "sunday"
+      ],
+      "crossRefs": [
+        "SC-106",
+        "SC-103",
+        "SC-5"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De Kerk viert het heilswerk van Christus door het op vaste dagen in de loop van het jaar te gedenken. Elke week, op de dag des Heren, gedenkt zij zijn verrijzenis, die zij eenmaal per jaar samen met zijn lijden op Pasen viert. In de loop van het jaar ontvouwt zij heel het mysterie van Christus, van menswording en geboorte tot hemelvaart, Pinksteren en de verwachting van zijn wederkomst, zodat de kracht van zijn heilsdaden voor de gelovigen van elke tijd tegenwoordig wordt.",
+          "who": "De paragraaf spreekt over de Kerk als Bruid die haar Bruidegom viert, en richt zich tot alle gelovigen die het liturgisch jaar beleven. Hij opent hoofdstuk V en betreft dus ook wie de kalender zou herzien. De concilievaders schrijven leerstellig, voordat zij normen geven voor de zondag, de tijden en de heiligen (SC §106–111).",
+          "why": "Rond het midden van de twintigste eeuw was de kalender overladen met heiligenfeesten, die vaak de zondagen en de liturgische tijden verdrongen. De hervorming van de Goede Week onder Pius XII (1955) had de voorrang van het paasmysterie al deels hersteld. De vaders wilden dat het jaar opnieuw gelezen werd als ontvouwing van het ene mysterie van Christus.",
+          "how": "De paragraaf gaat van de week naar het jaar, en van Pasen naar de hele cyclus. Hij kadert alles wat volgt: Maria in SC §103, de heiligen in SC §104, de zondag in SC §106 en de tijden, vooral de veertigdagentijd, in SC §107–110. Het thema van het paasmysterie uit SC §5–6 krijgt hier een vorm in de tijd.",
+          "meaning": "Het liturgisch jaar is een sacramenteel tegenwoordig stellen van de mysteries van Christus, meer dan een reeks gedenkdagen. De gelovigen komen met die mysteries in aanraking en worden met heilbrengende genade vervuld. Paulus VI voerde de paragraaf uit in de algemene Romeinse kalender met het motu proprio *Mysterii paschalis* (1969). De Catechismus behandelt het jaar in dezelfde termen (Catechismus nrs. 1168–1171)."
+        },
+        "en": {
+          "what": "The Church celebrates the saving work of Christ by recalling it on fixed days through the year. Every week, on the Lord's day, she keeps the memory of his resurrection, which once a year she celebrates together with his passion at Easter. Over the year she unfolds the whole mystery of Christ, from the incarnation and birth to the ascension, Pentecost and the expectation of his return, so that the power of his saving acts becomes present to the faithful in every age.",
+          "who": "The paragraph speaks of the Church as the Bride celebrating her Spouse, and addresses all the faithful who live the liturgical year. It opens chapter V, so it also concerns those who would revise the calendar. The Council Fathers write in a doctrinal register before giving norms for Sunday, the seasons and the saints (SC §106–111).",
+          "why": "By the mid-twentieth century the calendar had become crowded with feasts of saints, which often displaced the Sundays and the seasons. The reform of Holy Week under Pius XII (1955) had begun to restore the primacy of the paschal mystery. The Fathers wished the year to be read again as the unfolding of the one mystery of Christ.",
+          "how": "The paragraph moves from the week to the year, and from Easter to the whole cycle. It frames everything that follows: Mary in SC §103, the saints in SC §104, Sunday in SC §106, and the seasons, especially Lent, in SC §107–110. The theme of the paschal mystery from SC §5–6 is given a shape in time here.",
+          "meaning": "The liturgical year is a sacramental making-present of the mysteries of Christ, more than a series of commemorations. The faithful come into contact with these mysteries and are filled with saving grace. Paul VI implemented the paragraph in the General Roman Calendar with the motu proprio *Mysterii paschalis* (1969). The Catechism treats the year in the same terms (Catechism nos. 1168–1171)."
+        }
+      }
+    },
+    {
+      "id": "SC-103",
+      "docId": "sacrosanctum-concilium",
+      "number": 103,
+      "textEn": "In celebrating this annual cycle of Christ's mysteries, holy Church honors with especial love the Blessed Mary, Mother of God, who is joined by an inseparable bond to the saving work of her Son. In her the Church holds up and admires the most excellent fruit of the redemption, and joyfully contemplates, as in a faultless model, that which she herself desires and hopes wholly to be.",
+      "textNl": "Bij de viering van deze jaarlijkse kring van de mysteries van Christus vereert de heilige Kerk met bijzondere liefde de heilige Maria, de Moeder van God, die door een onverbrekelijke band met het heilswerk van haar Zoon verbonden is. In haar bewondert en verheerlijkt de Kerk de voortreffelijkste vrucht van de verlossing, en zij beschouwt met vreugde, als in een smetteloos beeld, wat zij zelf geheel verlangt en hoopt te zijn.",
+      "tags": [
+        "liturgical-year",
+        "mary"
+      ],
+      "crossRefs": [
+        "SC-102",
+        "LG-67",
+        "LG-60"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Bij de viering van de jaarlijkse kring van de mysteries van Christus eert de Kerk met bijzondere liefde Maria, de Moeder van God, die door een onverbrekelijke band met het heilswerk van haar Zoon verbonden is. In haar bewondert de Kerk de voortreffelijkste vrucht van de verlossing, en zij beschouwt met vreugde, als in een smetteloos beeld, wat zij zelf geheel verlangt en hoopt te zijn.",
+          "who": "De paragraaf spreekt over Maria en over de Kerk die haar eert, en richt zich tot alle gelovigen die haar feesten vieren. De concilievaders plaatsen haar binnen de kring van de mysteries van Christus. Hun woorden bereiden de uitvoerigere behandeling van Maria in de constitutie over de Kerk voor, die een jaar later werd afgekondigd.",
+          "why": "De Mariadevotie vóór het Concilie was intens, getekend door het dogma van de tenhemelopneming (1950) en het Mariajaar 1954, en ontwikkelde zich soms los van de liturgie. Het Concilie besliste op 29 oktober 1963 met een kleine meerderheid de Mariatekst in *Lumen Gentium* op te nemen en geen afzonderlijk schema te maken. SC, enkele weken later aanvaard, situeert Maria al binnen het mysterie van Christus.",
+          "how": "De paragraaf is kort en lyrisch. Hij beschrijft Maria eerst in verhouding tot het werk van haar Zoon en daarna als beeld van wat de Kerk hoopt te worden, een thema dat wortelt in de kerkvaders, onder wie Ambrosius. Hij staat tussen SC §102 over de kring van de mysteries van Christus en SC §104 over de martelaren en heiligen. LG §53 en LG §63–65 werken dezelfde gedachten later uit.",
+          "meaning": "De onverbrekelijke band plaatst de Mariafeesten binnen de viering van Christus, zonder er een parallelle kring van te maken. Dat Maria de voortreffelijkste vrucht van de verlossing heet, bevestigt dat ook zij verlost is, op een unieke wijze, zoals het dogma van de onbevlekte ontvangenis leert. Paulus VI werkte deze paragraaf uit in *Marialis cultus* (1974). De Catechismus citeert hem (Catechismus nr. 1172)."
+        },
+        "en": {
+          "what": "In celebrating the annual cycle of the mysteries of Christ, the Church honours with special love Mary, Mother of God, who is joined by an inseparable bond to the saving work of her Son. In her the Church admires the most excellent fruit of the redemption, and contemplates with joy, as in a spotless image, what she herself desires and hopes wholly to be.",
+          "who": "The paragraph speaks of Mary and of the Church that honours her, and addresses all the faithful who celebrate her feasts. The Council Fathers place her within the cycle of the mysteries of Christ. Their words prepare the fuller treatment of Mary in the constitution on the Church, promulgated a year later.",
+          "why": "Marian devotion before the Council was intense, marked by the dogma of the Assumption (1950) and the Marian Year of 1954, and it sometimes developed apart from the liturgy. On 29 October 1963 the Council decided by a narrow margin to include the Marian text in *Lumen Gentium* and to make no separate schema. SC, adopted a few weeks later, already situates Mary within the mystery of Christ.",
+          "how": "The paragraph is short and lyrical. It describes Mary first in relation to the work of her Son and then as the image of what the Church hopes to become, a theme rooted in the Fathers, Ambrose among them. It stands between SC §102 on the cycle of the mysteries of Christ and SC §104 on the martyrs and saints. LG §53 and LG §63–65 later develop the same ideas.",
+          "meaning": "The inseparable bond places the Marian feasts within the celebration of Christ, without making them a parallel cycle. Calling Mary the most excellent fruit of redemption affirms that she too is redeemed, in a unique way, as the dogma of the Immaculate Conception teaches. Paul VI developed this paragraph in *Marialis cultus* (1974). The Catechism quotes it (Catechism no. 1172)."
+        }
+      }
     },
     {
       "id": "SC-106",
@@ -340,6 +1021,39 @@
       "crossRefs": [
         "SC-116"
       ]
+    },
+    {
+      "id": "SC-124",
+      "docId": "sacrosanctum-concilium",
+      "number": 124,
+      "textEn": "Ordinaries, by the encouragement and favor they show to art which is truly sacred, should strive after noble beauty rather than mere sumptuous display. … And when churches are to be built, let great care be taken that they be suitable for the celebration of liturgical services and for the active participation of the faithful.",
+      "textNl": "De ordinarissen moeten bij het bevorderen en begunstigen van echt gewijde kunst eerder edele schoonheid nastreven dan louter praal. … En bij het bouwen van kerken moet er zorgvuldig op gelet worden dat zij geschikt zijn voor de viering van de liturgische handelingen en voor de actieve deelname van de gelovigen.",
+      "tags": [
+        "architecture",
+        "participation",
+        "bishops"
+      ],
+      "crossRefs": [
+        "SC-128",
+        "SC-14",
+        "SC-34"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De ordinarissen moeten bij de bevordering van echt gewijde kunst eerder edele schoonheid zoeken dan louter praal; dat geldt ook voor gewaden en versiering. De bisschoppen moeten uit de kerken kunstwerken weren die strijdig zijn met geloof, zeden en christelijke vroomheid, of die door middelmatigheid of schijn artistieke waarde missen. Bij de bouw van kerken moet er zorgvuldig op gelet worden dat zij geschikt zijn voor de viering van de liturgie en voor de actieve deelname van de gelovigen.",
+          "who": "De paragraaf richt zich tot de bisschoppen en andere ordinarissen, die verantwoordelijk zijn voor de gewijde kunst en de kerkbouw in hun bisdom. Onrechtstreeks spreekt hij ook architecten, kunstenaars en parochiegemeenschappen aan die kerken en hun inrichting laten ontwerpen of maken. De concilievaders spreken in hoofdstuk VII over de gewijde kunst.",
+          "why": "In de negentiende en vroege twintigste eeuw werden veel kerken ingericht met massaal vervaardigde beelden en versiering, en sommige nieuwbouw zocht vooral vertoon. Tegelijk had de liturgische beweging, met architecten als Rudolf Schwarz in Duitsland, kerken ontworpen rond het altaar en de gemeenschap. De vaders wilden kunst beoordelen naar haar dienst aan de eredienst.",
+          "how": "De paragraaf past de beginselen van SC §122–123 toe: gewijde kunst als hoogtepunt van religieuze kunst en de openheid van de Kerk voor elke stijl. Het criterium voor gebouwen komt rechtstreeks uit SC §14: kerken moeten deelname mogelijk maken. SC §128 geeft daarna de opdracht de normen over kerkbouw en altaren te herzien.",
+          "meaning": "Edele schoonheid sluit aan bij de edele eenvoud van SC §34; armoede van middelen noch weelde is de maatstaf. De paragraaf schrijft geen bepaalde stijl of indeling voor en zegt niets over de richting van de viering. Latere documenten, zoals de Algemene Inleiding op het Romeins Missaal, en canon 1216 van het Wetboek van 1983 gaven meer gedetailleerde normen. In debatten over moderne kerkarchitectuur beroepen beide zijden zich op deze tekst."
+        },
+        "en": {
+          "what": "Ordinaries, in promoting truly sacred art, should seek noble beauty more than mere sumptuous display; this applies also to vestments and ornaments. Bishops should keep from churches works of art that offend faith, morals and Christian piety, or that lack artistic worth through mediocrity or pretence. When churches are built, great care must be taken that they suit the celebration of the liturgy and the active participation of the faithful.",
+          "who": "The paragraph addresses bishops and other ordinaries, who are responsible for sacred art and church building in their dioceses. Indirectly it speaks to architects, artists and parish communities who commission or make churches and their furnishings. The Council Fathers speak in chapter VII on sacred art and sacred furnishings.",
+          "why": "In the nineteenth and early twentieth centuries many churches were furnished with mass-produced statues and ornaments, and some new building favoured display. At the same time the liturgical movement, with architects such as Rudolf Schwarz in Germany, had designed churches around the altar and the assembly. The Fathers wished to judge art by its service to worship.",
+          "how": "The paragraph applies the principles of SC §122–123, on sacred art as the summit of religious art and on the openness of the Church to every style. Its criterion for buildings comes straight from SC §14: churches must make participation possible. SC §128 then mandates the revision of the norms on church building and altars.",
+          "meaning": "Noble beauty echoes the noble simplicity of SC §34; neither poverty of means nor sumptuousness is the measure. The paragraph prescribes no particular style or layout and says nothing about the direction of celebration. Later documents, such as the General Instruction of the Roman Missal, and canon 1216 of the 1983 Code gave more detailed norms. In debates on modern church architecture both sides cite this text."
+        }
+      }
     },
     {
       "id": "SC-128",
