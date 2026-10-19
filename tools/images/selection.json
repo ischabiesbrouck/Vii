@@ -1,25 +1,258 @@
 [
-  { "id": "council-aula", "title": "File:Second Vatican Council by Lothar Wolleh 005 cropped.jpg", "altNl": "De concilievaders op de tribunes in het schip van de Sint-Pietersbasiliek, met het altaar onder het baldakijn van Bernini", "altEn": "The Council Fathers on the tiered stands in the nave of St Peter's Basilica, with the altar under Bernini's baldachin" },
-  { "id": "council-fathers", "title": "File:Second Vatican Council by Lothar Wolleh 003.jpg", "altNl": "Bisschoppen met mijter in hun banken tijdens een zitting van het Concilie", "altEn": "Mitred bishops in their benches during a session of the Council" },
-  { "id": "bishops-square", "title": "File:Second Vatican Council by Lothar Wolleh 008.jpg", "altNl": "Drie bisschoppen in toog lopen over het Sint-Pietersplein, van achteren gezien", "altEn": "Three bishops in cassocks walking across St Peter's Square, seen from behind" },
-  { "id": "concelebration-1964", "title": "File:Pope Paul VI concelebration 3rd session CVII.png", "altNl": "Zwart-witfoto van priesters in een kring rond het altaar bij de concelebratie van Paulus VI", "altEn": "Black-and-white photograph of priests in a circle around the altar at Paul VI's concelebration", "author": "Unknown photographer" },
-  { "id": "john-xxiii", "title": "File:Ioannes XXIII, by De Agostini, 1958–1963.jpg", "altNl": "Portret van paus Johannes XXIII in rode mozetta en stola", "altEn": "Portrait of Pope John XXIII in red mozzetta and stole" },
-  { "id": "paul-vi", "title": "File:Pope Paul VI 1969 Portrait (4x5 cropped).jpg", "altNl": "Portret van paus Paulus VI met mozetta en geborduurde stola", "altEn": "Portrait of Pope Paul VI with mozzetta and embroidered stole" },
-  { "id": "paul-vi-un", "title": "File:Pope (Paul VI), visiting U.N. (United Nations, New York) LCCN2020732639.jpg", "altNl": "Paulus VI in het wit tussen geestelijken en beveiligers bij zijn bezoek aan de Verenigde Naties", "altEn": "Paul VI in white among clergy and security staff during his visit to the United Nations" },
-  { "id": "athenagoras", "title": "File:Athenagoras I with Pope Paul VI in Rome.jpg", "altNl": "Patriarch Athenagoras I en paus Paulus VI gezeten bij het altaar van de Sint-Pieter", "altEn": "Patriarch Athenagoras I and Pope Paul VI seated at the altar of St Peter's", "author": "Unknown photographer" },
-  { "id": "iconostasis", "title": "File:Italo-Albanian Catholic Church iconostasis.jpg", "altNl": "Houten iconostase met rijen iconen in een Italo-Albanese katholieke kerk", "altEn": "Wooden iconostasis with rows of icons in an Italo-Albanian Catholic church" },
-  { "id": "cathedra-petri", "title": "File:Rom, Vatikan, Petersdom, Cathedra Petri (Bernini) 4.jpg", "altNl": "De bronzen Cathedra Petri van Bernini in de apsis van de Sint-Pieter, gedragen door vier kerkvaders, met daarboven het glasraam met de duif", "altEn": "Bernini's bronze Cathedra Petri in the apse of St Peter's, borne by four Fathers of the Church, beneath the window with the dove" },
-  { "id": "codex-vaticanus", "title": "File:Codex Vaticanus Matthew 1,22-2,18.jpg", "altNl": "Perkamentblad in drie kolommen Griekse hoofdletters uit de Codex Vaticanus", "altEn": "Parchment leaf in three columns of Greek capitals from Codex Vaticanus" },
-  { "id": "st-peters-nave", "title": "File:St-Peter Basilica interior 2010.jpg", "altNl": "Het schip van de Sint-Pietersbasiliek richting het baldakijn en de koepel", "altEn": "The nave of St Peter's Basilica looking towards the baldachin and the dome" },
-  { "id": "holy-family", "title": "File:Sagrada Familia del pajarito (Murillo).jpg", "altNl": "Schilderij van Murillo: Jozef houdt het kind Jezus vast, dat een vogeltje omhoog houdt voor een hondje; Maria zit aan het spinnewiel", "altEn": "Painting by Murillo: Joseph holds the child Jesus, who raises a small bird above a dog; Mary sits at her spinning wheel" },
-  { "id": "baptismal-font", "title": "File:Baptismal font of Saint-Sernin.jpg", "altNl": "Stenen doopvont op een voet in een zijkapel van de Saint-Sernin in Toulouse", "altEn": "Stone baptismal font on a pedestal in a side chapel of Saint-Sernin, Toulouse" },
-  { "id": "neumes", "title": "File:E-codices bke-0103 079r large (1).jpg", "altNl": "Middeleeuws perkamentblad met Latijnse tekst en neumen, met rode en blauwe initialen", "altEn": "Medieval parchment leaf with Latin text and neumes, with red and blue initials" },
-  { "id": "missale-1651", "title": "File:Missale romanum MDCLI first page.jpg", "altNl": "Titelpagina van een Missale Romanum uit 1651 met een gravure van het Laatste Avondmaal", "altEn": "Title page of a Missale Romanum of 1651 with an engraving of the Last Supper" },
-  { "id": "missale-canon", "title": "File:Missale Romanum - Consecration.JPG", "altNl": "Opengeslagen missaal bij de consecratie, tekst in zwart en rood", "altEn": "Open missal at the consecration, text in black and red" },
-  { "id": "salus-populi", "title": "File:Salus Populi Romani after restoration.jpg", "altNl": "De icoon Salus Populi Romani: Maria in donkerblauwe mantel met het Kind op haar arm", "altEn": "The icon Salus Populi Romani: Mary in a dark blue mantle with the Child on her arm" },
-  { "id": "pieta", "title": "File:Michelangelo's Pietà Saint Peter's Basilica Vatican City.jpg", "altNl": "De marmeren Pietà van Michelangelo: Maria met het dode lichaam van Christus op haar schoot", "altEn": "Michelangelo's marble Pietà: Mary with the dead body of Christ on her lap" },
-  { "id": "vatican-radio-1931", "title": "File:Pius XI with Guglielmo Marconi, at the inauguration of Vatican Radio, 1931.jpg", "altNl": "Zwart-witfoto van Pius XI en Guglielmo Marconi bij een zendinstallatie", "altEn": "Black-and-white photograph of Pius XI and Guglielmo Marconi at a transmitter" },
-  { "id": "francis-xavier", "title": "File:Anthony van Dyck - painting from Rome Jesuit church now in the Vatican.jpg", "altNl": "Schilderij van de heilige Franciscus Xaverius in zwarte jezuïetentoog, opkijkend naar engelen in de wolken", "altEn": "Painting of Saint Francis Xavier in a black Jesuit cassock, looking up at angels in the clouds" },
-  { "id": "pentecost", "title": "File:Pentecostés (El Greco, c. 1600) Prado.jpg", "altNl": "El Greco, Pinksteren: de apostelen en Maria met vlammen boven het hoofd onder de duif van de Geest", "altEn": "El Greco, Pentecost: the apostles and Mary with flames above their heads beneath the dove of the Spirit" },
-  { "id": "ordination", "title": "File:Zr-Huzsvár concelebration.jpg", "altNl": "Bisschop en priesters in kazuifel concelebreren aan het altaar bij een priesterwijding", "altEn": "Bishop and priests in chasubles concelebrating at the altar at a priestly ordination" }
+  {
+    "id": "council-aula",
+    "title": "File:Second Vatican Council by Lothar Wolleh 005 cropped.jpg",
+    "altNl": "De concilievaders op de tribunes in het schip van de Sint-Pietersbasiliek, met het altaar onder het baldakijn van Bernini",
+    "altEn": "The Council Fathers on the tiered stands in the nave of St Peter's Basilica, with the altar under Bernini's baldachin"
+  },
+  {
+    "id": "council-fathers",
+    "title": "File:Second Vatican Council by Lothar Wolleh 003.jpg",
+    "altNl": "Bisschoppen met mijter in hun banken tijdens een zitting van het Concilie",
+    "altEn": "Mitred bishops in their benches during a session of the Council"
+  },
+  {
+    "id": "bishops-square",
+    "title": "File:Second Vatican Council by Lothar Wolleh 008.jpg",
+    "altNl": "Drie bisschoppen in toog lopen over het Sint-Pietersplein, van achteren gezien",
+    "altEn": "Three bishops in cassocks walking across St Peter's Square, seen from behind"
+  },
+  {
+    "id": "concelebration-1964",
+    "title": "File:Pope Paul VI concelebration 3rd session CVII.png",
+    "altNl": "Zwart-witfoto van priesters in een kring rond het altaar bij de concelebratie van Paulus VI",
+    "altEn": "Black-and-white photograph of priests in a circle around the altar at Paul VI's concelebration",
+    "author": "Unknown photographer"
+  },
+  {
+    "id": "john-xxiii",
+    "title": "File:Ioannes XXIII, by De Agostini, 1958–1963.jpg",
+    "altNl": "Portret van paus Johannes XXIII in rode mozetta en stola",
+    "altEn": "Portrait of Pope John XXIII in red mozzetta and stole"
+  },
+  {
+    "id": "paul-vi",
+    "title": "File:Pope Paul VI 1969 Portrait (4x5 cropped).jpg",
+    "altNl": "Portret van paus Paulus VI met mozetta en geborduurde stola",
+    "altEn": "Portrait of Pope Paul VI with mozzetta and embroidered stole"
+  },
+  {
+    "id": "paul-vi-un",
+    "title": "File:Pope (Paul VI), visiting U.N. (United Nations, New York) LCCN2020732639.jpg",
+    "altNl": "Paulus VI in het wit tussen geestelijken en beveiligers bij zijn bezoek aan de Verenigde Naties",
+    "altEn": "Paul VI in white among clergy and security staff during his visit to the United Nations"
+  },
+  {
+    "id": "athenagoras",
+    "title": "File:Athenagoras I with Pope Paul VI in Rome.jpg",
+    "altNl": "Patriarch Athenagoras I en paus Paulus VI gezeten bij het altaar van de Sint-Pieter",
+    "altEn": "Patriarch Athenagoras I and Pope Paul VI seated at the altar of St Peter's",
+    "author": "Unknown photographer"
+  },
+  {
+    "id": "iconostasis",
+    "title": "File:Italo-Albanian Catholic Church iconostasis.jpg",
+    "altNl": "Houten iconostase met rijen iconen in een Italo-Albanese katholieke kerk",
+    "altEn": "Wooden iconostasis with rows of icons in an Italo-Albanian Catholic church"
+  },
+  {
+    "id": "cathedra-petri",
+    "title": "File:Rom, Vatikan, Petersdom, Cathedra Petri (Bernini) 4.jpg",
+    "altNl": "De bronzen Cathedra Petri van Bernini in de apsis van de Sint-Pieter, gedragen door vier kerkvaders, met daarboven het glasraam met de duif",
+    "altEn": "Bernini's bronze Cathedra Petri in the apse of St Peter's, borne by four Fathers of the Church, beneath the window with the dove"
+  },
+  {
+    "id": "codex-vaticanus",
+    "title": "File:Codex Vaticanus Matthew 1,22-2,18.jpg",
+    "altNl": "Perkamentblad in drie kolommen Griekse hoofdletters uit de Codex Vaticanus",
+    "altEn": "Parchment leaf in three columns of Greek capitals from Codex Vaticanus"
+  },
+  {
+    "id": "st-peters-nave",
+    "title": "File:St-Peter Basilica interior 2010.jpg",
+    "altNl": "Het schip van de Sint-Pietersbasiliek richting het baldakijn en de koepel",
+    "altEn": "The nave of St Peter's Basilica looking towards the baldachin and the dome"
+  },
+  {
+    "id": "holy-family",
+    "title": "File:Sagrada Familia del pajarito (Murillo).jpg",
+    "altNl": "Schilderij van Murillo: Jozef houdt het kind Jezus vast, dat een vogeltje omhoog houdt voor een hondje; Maria zit aan het spinnewiel",
+    "altEn": "Painting by Murillo: Joseph holds the child Jesus, who raises a small bird above a dog; Mary sits at her spinning wheel"
+  },
+  {
+    "id": "baptismal-font",
+    "title": "File:Baptismal font of Saint-Sernin.jpg",
+    "altNl": "Stenen doopvont op een voet in een zijkapel van de Saint-Sernin in Toulouse",
+    "altEn": "Stone baptismal font on a pedestal in a side chapel of Saint-Sernin, Toulouse"
+  },
+  {
+    "id": "neumes",
+    "title": "File:E-codices bke-0103 079r large (1).jpg",
+    "altNl": "Middeleeuws perkamentblad met Latijnse tekst en neumen, met rode en blauwe initialen",
+    "altEn": "Medieval parchment leaf with Latin text and neumes, with red and blue initials"
+  },
+  {
+    "id": "missale-1651",
+    "title": "File:Missale romanum MDCLI first page.jpg",
+    "altNl": "Titelpagina van een Missale Romanum uit 1651 met een gravure van het Laatste Avondmaal",
+    "altEn": "Title page of a Missale Romanum of 1651 with an engraving of the Last Supper"
+  },
+  {
+    "id": "missale-canon",
+    "title": "File:Missale Romanum - Consecration.JPG",
+    "altNl": "Opengeslagen missaal bij de consecratie, tekst in zwart en rood",
+    "altEn": "Open missal at the consecration, text in black and red"
+  },
+  {
+    "id": "salus-populi",
+    "title": "File:Salus Populi Romani after restoration.jpg",
+    "altNl": "De icoon Salus Populi Romani: Maria in donkerblauwe mantel met het Kind op haar arm",
+    "altEn": "The icon Salus Populi Romani: Mary in a dark blue mantle with the Child on her arm"
+  },
+  {
+    "id": "pieta",
+    "title": "File:Michelangelo's Pietà Saint Peter's Basilica Vatican City.jpg",
+    "altNl": "De marmeren Pietà van Michelangelo: Maria met het dode lichaam van Christus op haar schoot",
+    "altEn": "Michelangelo's marble Pietà: Mary with the dead body of Christ on her lap"
+  },
+  {
+    "id": "vatican-radio-1931",
+    "title": "File:Pius XI with Guglielmo Marconi, at the inauguration of Vatican Radio, 1931.jpg",
+    "altNl": "Zwart-witfoto van Pius XI en Guglielmo Marconi bij een zendinstallatie",
+    "altEn": "Black-and-white photograph of Pius XI and Guglielmo Marconi at a transmitter"
+  },
+  {
+    "id": "francis-xavier",
+    "title": "File:Anthony van Dyck - painting from Rome Jesuit church now in the Vatican.jpg",
+    "altNl": "Schilderij van de heilige Franciscus Xaverius in zwarte jezuïetentoog, opkijkend naar engelen in de wolken",
+    "altEn": "Painting of Saint Francis Xavier in a black Jesuit cassock, looking up at angels in the clouds"
+  },
+  {
+    "id": "pentecost",
+    "title": "File:Pentecostés (El Greco, c. 1600) Prado.jpg",
+    "altNl": "El Greco, Pinksteren: de apostelen en Maria met vlammen boven het hoofd onder de duif van de Geest",
+    "altEn": "El Greco, Pentecost: the apostles and Mary with flames above their heads beneath the dove of the Spirit"
+  },
+  {
+    "id": "ordination",
+    "title": "File:Zr-Huzsvár concelebration.jpg",
+    "altNl": "Bisschop en priesters in kazuifel concelebreren aan het altaar bij een priesterwijding",
+    "altEn": "Bishop and priests in chasubles concelebrating at the altar at a priestly ordination"
+  },
+  {
+    "id": "council-procession-1962",
+    "title": "File:Konzilseroeffnung 1.jpg",
+    "altNl": "De processie van de concilievaders over het Sint-Pietersplein bij de opening van het Concilie, 11 oktober 1962",
+    "altEn": "The procession of the Council Fathers across St Peter's Square at the opening of the Council, 11 October 1962"
+  },
+  {
+    "id": "john-xxiii-council",
+    "title": "File:Giovanni XXIII durante il Concilio Vaticano II (Lothar Wolleh).jpg",
+    "altNl": "Paus Johannes XXIII op de troon in de concilieaula, omringd door prelaten",
+    "altEn": "Pope John XXIII enthroned in the council hall, surrounded by prelates"
+  },
+  {
+    "id": "bea-1963",
+    "title": "File:CardinalBea.jpg",
+    "altNl": "Kardinaal Augustin Bea in gesprek, 1963",
+    "altEn": "Cardinal Augustin Bea in conversation, 1963"
+  },
+  {
+    "id": "bea-visser-1966",
+    "title": "File:Bundesarchiv B 145 Bild-F023138-0009, Frankfurt, Friedenspreis des Deutschen Buchhandels.jpg",
+    "altNl": "Uitreiking van de Vredesprijs van de Duitse Boekhandel aan kardinaal Bea en Willem Visser 't Hooft in de Paulskirche, Frankfurt, 1966",
+    "altEn": "The Peace Prize of the German Book Trade presented to Cardinal Bea and Willem Visser 't Hooft in the Paulskirche, Frankfurt, 1966",
+    "author": "Jens Gathmann / Bundesarchiv"
+  },
+  {
+    "id": "suenens-1964",
+    "title": "File:Belgische paras terug Vlnr Kardinaal Suenens, Prins Albert, Koningin Fabiol, Bestanddeelnr 917-1938.jpg",
+    "altNl": "Kardinaal Suenens naast prins Albert, koningin Fabiola en prinses Paola, 1 december 1964",
+    "altEn": "Cardinal Suenens beside Prince Albert, Queen Fabiola and Princess Paola, 1 December 1964",
+    "author": "Anefo / Nationaal Archief"
+  },
+  {
+    "id": "ottaviani-council",
+    "title": "File:Alfredo Cardinal Ottaviani by Lothar Wolleh.jpg",
+    "altNl": "Kardinaal Alfredo Ottaviani tijdens het Concilie",
+    "altEn": "Cardinal Alfredo Ottaviani during the Council"
+  },
+  {
+    "id": "pius-xii",
+    "title": "File:Michael Pitcairn – Portrait of Pope Pius XII with tabard (1951).jpg",
+    "altNl": "Portret van paus Pius XII in witte toog en rode mozetta",
+    "altEn": "Portrait of Pope Pius XII in white cassock and red mozzetta",
+    "author": "Michael Pitcairn"
+  },
+  {
+    "id": "pius-ix",
+    "title": "File:Pius IX, by Adolphe Braun, 1875.jpg",
+    "altNl": "Zwart-witfoto van paus Pius IX, zittend, 1875",
+    "altEn": "Black-and-white photograph of Pope Pius IX, seated, 1875",
+    "author": "Adolphe Braun"
+  },
+  {
+    "id": "leo-xiii",
+    "title": "File:Pope-leo-xiii-01.jpg",
+    "altNl": "Geschilderd portret van paus Leo XIII in rode mozetta",
+    "altEn": "Painted portrait of Pope Leo XIII in red mozzetta"
+  },
+  {
+    "id": "vatican-i",
+    "title": "File:Vatican-assemblee-1870-119120 2.jpg",
+    "altNl": "Het Eerste Vaticaans Concilie in zitting in de Sint-Pieter, 1870",
+    "altEn": "The First Vatican Council in session in St Peter's, 1870",
+    "author": "Unknown artist"
+  },
+  {
+    "id": "trent",
+    "title": "File:Pasquale Cati Da Iesi - The Council of Trent - WGA04574.jpg",
+    "altNl": "Fresco van het Concilie van Trente met de concilievaders in zitting en allegorische figuren op de voorgrond",
+    "altEn": "Fresco of the Council of Trent with the Council Fathers in session and allegorical figures in the foreground"
+  },
+  {
+    "id": "synagogue-rome",
+    "title": "File:Great Synagogue of Rome.jpg",
+    "altNl": "De Grote Synagoge van Rome aan de Tiber, met haar vierkante koepel",
+    "altEn": "The Great Synagogue of Rome on the Tiber, with its square dome"
+  },
+  {
+    "id": "gregoriana",
+    "title": "File:Exterior of the Pontifical Gregorian University in Rome.jpg",
+    "altNl": "Gevel van de Pauselijke Universiteit Gregoriana aan de Piazza della Pilotta in Rome",
+    "altEn": "Façade of the Pontifical Gregorian University on Piazza della Pilotta in Rome"
+  },
+  {
+    "id": "gutenberg",
+    "title": "File:Gutenberg bible Old Testament Epistle of St Jerome.jpg",
+    "altNl": "Eerste bladzijde van de Gutenbergbijbel met de brief van Hiëronymus, in twee kolommen met gekleurde initiaal",
+    "altEn": "First page of the Gutenberg Bible with the letter of Jerome, in two columns with a coloured initial",
+    "author": "Johannes Gutenberg (printer)"
+  },
+  {
+    "id": "osservatore-1891",
+    "title": "File:L'Osservatore Romano - 15 May 1891, Rerum Novarum.jpg",
+    "altNl": "Voorpagina van L'Osservatore Romano van 15 mei 1891 met de encycliek Rerum novarum",
+    "altEn": "Front page of L'Osservatore Romano of 15 May 1891 with the encyclical Rerum novarum",
+    "author": "L'Osservatore Romano"
+  },
+  {
+    "id": "leo-xiii-osservatore",
+    "title": "File:Leone XIII nella vita intima Sua Santità ascolta la lettura dell’”Osservatore Romano”.jpg",
+    "altNl": "Gravure van paus Leo XIII die luistert terwijl een secretaris L'Osservatore Romano voorleest, 1899",
+    "altEn": "Engraving of Pope Leo XIII listening as a secretary reads L'Osservatore Romano aloud, 1899",
+    "author": "Unknown artist"
+  },
+  {
+    "id": "meouchi",
+    "title": "File:Paul Pierre Méouchi.jpg",
+    "altNl": "De maronitische patriarch Paul Pierre Méouchi in het rood tijdens een zitting van het Concilie",
+    "altEn": "The Maronite Patriarch Paul Pierre Méouchi in red during a session of the Council"
+  },
+  {
+    "id": "abbey",
+    "title": "File:Inside of the Benedictine abbey - Mont St Michel (32543187310).jpg",
+    "altNl": "Romaanse gang met rondbogen in de benedictijnenabdij van de Mont-Saint-Michel",
+    "altEn": "Romanesque passage with round arches in the Benedictine abbey of Mont-Saint-Michel"
+  }
 ]
