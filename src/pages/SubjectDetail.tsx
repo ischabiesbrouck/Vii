@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft, ArrowRight, Check, Clock } from 'lucide-react';
 import { SubjectIcon } from '@/components/SubjectIcon';
+import { Credit, Photo, useImage } from '@/components/Photo';
 import { useSubjectProgress } from '@/components/SubjectCard';
 import { VerdictBadge } from '@/components/Badges';
 import { Apa, Commentary, ConciliarText, Crumbs, Loading, ProgressBar, SectionTitle } from '@/components/TextBlocks';
@@ -34,6 +35,7 @@ export function SubjectDetail() {
   const studied = useUi((s) => s.studied[id]) ?? [];
   const toggleStudied = useUi((s) => s.toggleStudied);
   const chaptersRead = useUi((s) => s.studyRead[id]) ?? [];
+  const image = useImage(useAsync(getSubjects, []).data?.find((x) => x.id === id)?.imageId);
 
   const { data, loading } = useAsync(async () => {
     const [subjects, claims, glossary, docs, videos, study] = await Promise.all([getSubjects(), getClaims(), getGlossary(), getDocuments(), getVideos(), getStudy(id)]);
@@ -70,7 +72,7 @@ export function SubjectDetail() {
 
         <header className="mb-8">
           <div className="flex items-start gap-4">
-            <span className="mt-1 hidden h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/60 bg-surface text-gold-text sm:flex">
+            <span className={cn('mt-1 hidden h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/60 bg-surface text-gold-text', !s.imageId && 'sm:flex')}>
               <SubjectIcon name={s.icon} className="h-6 w-6" />
             </span>
             <div className="min-w-0">
@@ -92,6 +94,15 @@ export function SubjectDetail() {
             <span className="text-[0.55rem]">◆</span>
           </div>
         </header>
+
+        {s.imageId && (
+          <figure className="mb-8">
+            <div className="aspect-[2/1] overflow-hidden border border-line bg-surface sm:aspect-[21/9]">
+              {image && <Photo image={image} focus={s.imageFocus} priority sizes="(min-width: 1024px) 50rem, 100vw" className="h-full w-full object-cover" />}
+            </div>
+            <figcaption className="mt-1.5 min-h-[1.25rem] text-right">{image && <Credit image={image} />}</figcaption>
+          </figure>
+        )}
 
         <Commentary className="mb-8">
           <p className="leading-relaxed">{pick(lang, s.introNl, s.introEn)}</p>

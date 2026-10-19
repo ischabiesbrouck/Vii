@@ -196,6 +196,12 @@
               "en": "The first field of the lay apostolate is the family, which LG §11 calls a kind of ‘domestic Church’ (ecclesia domestica). Gravissimum Educationis draws a conclusion from this for education. Parents are the first educators of their children; school and state have a supporting role (GE §3)."
             },
             {
+              "type": "image",
+              "imageId": "holy-family",
+              "captionNl": "Bartolomé Esteban Murillo, De Heilige Familie met het vogeltje (ca. 1650, Museo del Prado). Het Concilie noemt het gezin een huiskerk (LG §11).",
+              "captionEn": "Bartolomé Esteban Murillo, The Holy Family with a Little Bird (c. 1650, Museo del Prado). The Council calls the family a domestic church (LG §11)."
+            },
+            {
               "type": "quote",
               "paragraphId": "GE-3"
             },
@@ -270,14 +276,24 @@
                   "labelEn": "A theological mark of the lay vocation",
                   "nl": "Het seculiere karakter wijst de eigen plaats aan waar God de leek roept (LG §31), en is daarmee meer dan een sociologisch gegeven. Het zwaartepunt van het lekenapostolaat ligt daarom in gezin, werk en samenleving, en het grote gevaar is de scheiding tussen geloof en leven (GS §43). Wie de leek vooral via kerkelijke taken omschrijft, loopt het risico leken te ‘clericaliseren’ en het onderscheid met het gewijde ambt te vervagen (LG §10). Deze lezing sluit aan bij Christifideles laici en de Catechismus.",
                   "en": "The secular character marks out the proper place where God calls the lay person (LG §31), and so is more than a sociological fact. The centre of gravity of the lay apostolate therefore lies in family, work and society, and the great danger is the split between faith and life (GS §43). To describe the laity chiefly in terms of Church tasks risks ‘clericalising’ them and blurring the distinction from ordained ministry (LG §10). This reading is in line with Christifideles laici and the Catechism.",
-                  "sources": ["LG-31", "GS-43", "LG-10", "ext:ccc-1997"]
+                  "sources": [
+                    "LG-31",
+                    "GS-43",
+                    "LG-10",
+                    "ext:ccc-1997"
+                  ]
                 },
                 {
                   "labelNl": "Een typologische omschrijving vanuit het doopsel",
                   "labelEn": "A typological description grounded in baptism",
                   "nl": "LG §31 zegt zelf dat de term ‘hier’ in een bepaalde zin wordt verstaan. De diepste grond van het leek-zijn ligt volgens deze lezing in het doopsel en in de deelname aan de zending van de Kerk zelf (LG §33; AA §2). Een plaats in de wereld hebben ook clerici en religieuzen in zekere mate. Deze lezing, die onder meer bij de latere Congar te vinden is, legt de nadruk op de gemeenschap van alle gedoopten met verschillende diensten. Medewerking van leken binnen de Kerk geldt dan als een legitieme vorm van hetzelfde apostolaat, binnen de grenzen die LG §10 trekt.",
                   "en": "LG §31 itself says that the term is ‘here’ understood in a particular sense. On this reading the deepest ground of being a lay person lies in baptism and in participation in the mission of the Church itself (LG §33; AA §2). Clerics and religious also have a place in the world to some extent. This reading, found among others in the later Congar, stresses the communion of all the baptised with diverse ministries. Lay cooperation within the Church then counts as a legitimate form of the same apostolate, within the limits LG §10 sets.",
-                  "sources": ["LG-31", "LG-33", "AA-2", "LG-10"]
+                  "sources": [
+                    "LG-31",
+                    "LG-33",
+                    "AA-2",
+                    "LG-10"
+                  ]
                 }
               ]
             }

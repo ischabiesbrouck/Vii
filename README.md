@@ -5,7 +5,7 @@ Second Vatican Council (1962–1965), organised by paragraph number. It is an
 installable web app (PWA) that works offline, in Dutch with an English
 translation. There is no backend, no account and no tracking. Once the service
 worker is installed the app makes no network requests, except for videos the
-reader chooses to play.
+reader chooses to play and, if the reader picks one, an online reading voice.
 
 > Concilium is a study aid. It does not speak for the Church. The official texts
 > are on [vatican.va](https://www.vatican.va/archive/hist_councils/ii_vatican_council/index.htm).
@@ -59,6 +59,7 @@ Fonts are self-hosted through Fontsource: EB Garamond, Source Serif 4, Cinzel an
 | `/catechesis`, `/catechesis/:id` | Twelve short catecheses, each headed by a question. Each has explanation, *In brief*, reflection questions and further reading. Nothing is quoted directly; references such as LG §8 are links that open the paragraph in a panel |
 | `/catecheses` | Register of Pope Leo XIV's general audiences on the Council (2026), with links to vatican.va |
 | `/videos` | Selected English-language videos; played in the app, with no YouTube suggestions afterwards |
+| *(any text page)* | **Voorlezen**: study chapters, catecheses and the document reader can be read aloud |
 | `/claims`, `/timeline`, `/glossary`, `/hermeneutics`, `/search`, `/about` | Claim Check, chronology, terms, readings of the Council, full-text search, colophon |
 
 ## Content
@@ -76,7 +77,7 @@ it, and nothing is generated at runtime.
 | `claims.json`, `glossary.json`, `hermeneutics.json`, `timeline.json` | Claim Check, terms, readings, chronology |
 | `catecheses.json`, `videos.json` | Audiences and videos, with their sources |
 | `sources.json` | External sources, cited as `ext:…` |
-| `images.json` | Licensed images: author, licence, source. Currently empty |
+| `images.json` | 23 licensed images from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA): author, licence, source |
 
 `scripts/validate-content.mjs` runs before every build. It checks that every
 citation, cross-reference, quotation and source resolves. Citations in study
@@ -92,7 +93,22 @@ invalidates the cached search index.
 - **A study text:** follow the `Study` type. Conciliar text only appears through
   `quote` blocks, so excerpts are never retyped.
 - **Photos:** go in `public/images/` with an entry in `images.json`. The caption
-  shows author, licence and source.
+  shows author, licence and source, and the validator checks that each file exists.
+  `.github/workflows/images.yml` fetches them from Wikimedia Commons on GitHub's
+  runners, in two phases:
+  1. Edit `tools/images/queries.json` and push. The workflow searches Commons and
+     commits 480 px previews and their metadata to `tools/images/candidates/`. Only
+     public domain, CC0, CC BY and CC BY-SA files are kept; NC, ND and GFDL-only are
+     rejected.
+  2. Choose files in `tools/images/selection.json` (`id`, Commons `title`, alt text in
+     both languages, optional `author` correction) and push. The workflow checks the
+     licence again, downloads the files to `public/images/` and writes `images.json`.
+
+  Then reduce the files locally (the current set uses at most 1000 × 1400 px, JPEG
+  quality 80), make a 640 px copy in `public/images/640/` for phones (the validator
+  checks it exists), and delete `tools/images/candidates/` before merging.
+  A subject's card and header photo is set with `imageId` (and optionally
+  `imageFocus`, a CSS object-position) in `subjects.json`.
 
 ### Editorial status
 
@@ -131,7 +147,26 @@ Use `CONTENT_MODE` in `src/config.ts` (`'excerpt' | 'full'`, or
   never test personal orthodoxy.
 - **Terms without a conciliar source**, such as *aggiornamento* and
   *ressourcement*, are labelled as such and do not link to a paragraph.
-- **Videos** are the only network traffic. Nothing loads before the reader
+- **Images** are precached with the rest of the app (about 4 MB), so figures also
+  appear offline. Captions state what the image shows and why it is there; each
+  figure links to its Commons page and licence, as CC BY and CC BY-SA require.
+- **Reading aloud** uses the device's own voices (Web Speech API); no voice is bundled
+  or downloaded. `src/lib/speech.ts` picks the best **male** voice by name, since the
+  API does not report gender: Microsoft Maarten (Edge, natural), Apple Xander
+  (premium/enhanced), Microsoft Frank (Windows) for Dutch; Ryan, Guy, Daniel and
+  Arthur for English. Readers can choose another voice and a speed (stored locally).
+  - Pages are read block by block, highlighted; "LG §8" is spoken as "Lumen Gentium,
+    paragraaf 8", "Pius XII" as "Pius de twaalfde". Latin, captions, navigation and
+    anything marked `data-tts-skip` are not read.
+  - Voices marked "online" (Edge natural voices, Chrome's Google voices) send the
+    text to the browser maker's speech service; the voice picker says so.
+  - Chrome on Android uses the system's default voice: a male Dutch voice is set in
+    Android's text-to-speech settings. The app explains this when no male voice is found.
+- **Full screen.** Installed, the app opens full screen (manifest `display:
+  fullscreen`, falling back to standalone). In the browser a full-screen button sits in
+  the header where the Fullscreen API exists; iPhone Safari has none, so the settings
+  explain *Add to Home Screen* instead.
+- **Videos** are the only network traffic besides online voices. Nothing loads before the reader
   presses play.
   - The player uses youtube-nocookie.com.
   - When the video ends, the app removes the player, so no suggestions or next video appear.
@@ -150,6 +185,7 @@ and of pontifical faculties, without using any official emblem.
 | Vatican News | Red section labels with a date line |
 | Curial documents | Latin date line (*Dominica, die XVIII mensis Octobris, anno MMXXVI*) and the heading formula *Paulus Episcopus, Servus Servorum Dei…* |
 | Pontifical universities | Seal with a Latin legend, syllabus tables, sober forms |
+| Printed study editions | Photographs as numbered plates (*Tab. I*), with caption and credit |
 
 **Typefaces:**
 - EB Garamond for headings and small caps.
@@ -171,6 +207,15 @@ and of pontifical faculties, without using any official emblem.
   - On a page change, focus moves to the content and the page title is announced.
   - Back navigation restores the scroll position.
   - No horizontal scrolling at 320 px.
+- **Performance** (Lighthouse 13, simulated mobile / desktop, home page)
+  - Desktop 97–99 on the main pages; mobile about 75; layout shift 0.
+  - The masthead is static HTML in `index.html` and paints before the JavaScript.
+  - The home title page renders without waiting for content; the text of the day
+    loads one document, not all sixteen.
+  - The search engine, the command palette and the video player load on first use;
+    other page chunks and the search index are warmed a few seconds after load.
+  - The Latin subsets of the four typefaces are preloaded (a small Vite plugin).
+  - Photos are served from `srcset` (640 px or full) with fixed dimensions.
 - **Automated checks**
   - `ci.yml` runs `npm run check` and a production build on every pull request.
   - The Pages workflow runs the tests before every deployment.

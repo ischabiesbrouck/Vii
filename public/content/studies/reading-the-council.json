@@ -19,6 +19,12 @@
               "en": "An ecumenical or general council is an assembly of the bishops of the whole world which, together with and under the pope, speaks with supreme authority on faith and the life of the Church. Lumen Gentium describes that authority in its teaching on the college of bishops. The college, never without its head, holds full and supreme power over the universal Church and exercises it in a solemn way in an ecumenical council (LG §22). In the Catholic reckoning Vatican II is the twenty-first council of this kind. Its predecessor, Vatican I (1869–1870), was cut short by the Franco-Prussian War and the capture of Rome."
             },
             {
+              "type": "image",
+              "imageId": "council-aula",
+              "captionNl": "De concilieaula in het schip van de Sint-Pieter: tribunes voor ruim tweeduizend bisschoppen aan weerszijden, het altaar onder het baldakijn van Bernini. Foto Lothar Wolleh, 1962–1965.",
+              "captionEn": "The council hall in the nave of St Peter’s: stands for more than two thousand bishops on either side, the altar under Bernini’s baldachin. Photograph by Lothar Wolleh, 1962–1965."
+            },
+            {
               "type": "p",
               "nl": "Voor de lezer heeft dat gevolgen. Een concilietekst heeft geen auteur in de gewone zin van het woord, en evenmin is hij een verslag van de discussie. De concilievaders stemden erover, de paus kondigde hem af, en de tekst plaatst zich uitdrukkelijk in de lijn van eerdere concilies. Een geciteerde paragraaf geeft dus de leer weer van een college dat samen met de opvolger van Petrus spreekt (LG §25).",
               "en": "This has consequences for the reader. A conciliar text has no author in the ordinary sense of the word, nor is it a record of the debate. The Council Fathers voted on it, the pope promulgated it, and the text expressly places itself in the line of earlier councils. A paragraph quoted from it therefore states the teaching of a college speaking together with the successor of Peter (LG §25)."
@@ -250,21 +256,36 @@
                   "labelEn": "Reform in continuity",
                   "nl": "Het Concilie vernieuwt de ene Kerk, die groeit en zich ontwikkelt en toch dezelfde blijft. Op het niveau van de beginselen is er continuïteit; in concrete toepassingen, zoals de verhouding tussen Kerk en staat, kan er discontinuïteit zijn. De teksten zijn de maatstaf, gelezen in het licht van de Traditie waarop zij zich zelf beroepen (DV §1, LG §18). Johannes Paulus II, de synode van 1985 en Benedictus XVI lazen het Concilie onder meer op deze manier.",
                   "en": "The Council renews the one Church, which grows and develops while remaining the same. At the level of principles there is continuity; in concrete applications, such as the relation between Church and state, there can be discontinuity. The texts are the measure, read in the light of the Tradition to which they themselves appeal (DV §1, LG §18). John Paul II, the Synod of 1985 and Benedict XVI, among others, read the Council in this way.",
-                  "sources": ["ext:benedict-2005", "ext:synod-1985", "DV-1", "LG-18"]
+                  "sources": [
+                    "ext:benedict-2005",
+                    "ext:synod-1985",
+                    "DV-1",
+                    "LG-18"
+                  ]
                 },
                 {
                   "labelNl": "Gebeurtenis en nieuw begin",
                   "labelEn": "Event and new beginning",
                   "nl": "Het Concilie was meer dan de som van zijn teksten: een gebeurtenis die een nieuwe stijl van kerk-zijn inluidde, met dialoog in plaats van veroordeling. De compromissen in de teksten verhullen soms de werkelijke richting. Die blijkt uit het verloop van de debatten en uit de uitdrukkelijke wil tot aanpassing (SC §1) en tot het lezen van de tekenen des tijds (GS §4). Deze lezing wordt vooral met de school van Bologna verbonden.",
                   "en": "The Council was more than the sum of its texts: an event that inaugurated a new style of being Church, with dialogue instead of condemnation. The compromises in the texts sometimes conceal the real direction. That direction appears from the course of the debates and from the express will to adapt (SC §1) and to read the signs of the times (GS §4). This reading is chiefly associated with the Bologna school.",
-                  "sources": ["SC-1", "GS-4", "LG-8", "DH-2"]
+                  "sources": [
+                    "SC-1",
+                    "GS-4",
+                    "LG-8",
+                    "DH-2"
+                  ]
                 },
                 {
                   "labelNl": "Breuk (traditionalistische kritiek)",
                   "labelEn": "Rupture (traditionalist critique)",
                   "nl": "Op enkele punten, zoals godsdienstvrijheid, oecumene en collegialiteit, zijn de teksten zelf dubbelzinnig of moeilijk te verzoenen met eerder leergezag, bijvoorbeeld met Quanta cura (1864). Omdat het Concilie zich pastoraal noemde en niets nieuw definieerde, staan zulke punten volgens deze lezing open voor verdere verheldering of correctie door het leergezag.",
                   "en": "On some points, such as religious freedom, ecumenism and collegiality, the texts themselves are ambiguous or hard to reconcile with earlier magisterium, for example with Quanta cura (1864). Because the Council called itself pastoral and defined nothing new, such points remain, on this reading, open to further clarification or correction by the magisterium.",
-                  "sources": ["ext:quanta-cura-1864", "ext:notificationes-1964", "DH-2", "LG-8"]
+                  "sources": [
+                    "ext:quanta-cura-1864",
+                    "ext:notificationes-1964",
+                    "DH-2",
+                    "LG-8"
+                  ]
                 }
               ]
             },

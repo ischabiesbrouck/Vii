@@ -1,0 +1,44 @@
+name: Images from Wikimedia Commons
+
+# Runs on GitHub's runners, which can reach Wikimedia Commons. Phase 1 (queries.json changed):
+# search and save licence-checked previews. Phase 2 (selection.json changed): fetch the chosen
+# images and write public/content/images.json. Results are committed back to the same branch.
+on:
+  push:
+    branches-ignore: [main]
+    paths: ['tools/images/queries.json', 'tools/images/selection.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Which phase?
+        id: phase
+        run: |
+          changed=$(git diff --name-only HEAD~1 HEAD || true)
+          echo "search=$(echo "$changed" | grep -q 'tools/images/queries.json' && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+          echo "fetch=$(echo "$changed" | grep -q 'tools/images/selection.json' && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+      - name: Phase 1, search and previews
+        if: steps.phase.outputs.search == 'yes'
+        run: node tools/images/search.mjs
+      - name: Phase 2, fetch selected images
+        if: steps.phase.outputs.fetch == 'yes'
+        run: node tools/images/fetch.mjs
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in tools/images/candidates public/images public/content/images.json; do if [ -e "$p" ]; then git add "$p"; fi; done
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Images: results from Wikimedia Commons (${{ steps.phase.outputs.search == 'yes' && 'previews' || 'selection' }})"
+          git push

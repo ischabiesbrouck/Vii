@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { Commentary, PageHeader } from '@/components/TextBlocks';
 import { SettingsPanel } from '@/components/Layout';
-import { getIndex } from '@/lib/content';
+import { getImages, getIndex } from '@/lib/content';
+import { Credit, Photo } from '@/components/Photo';
+import { pick } from '@/lib/utils';
 import { useAsync } from '@/lib/useAsync';
 import { useDocumentTitle, useLang } from '@/lib/hooks';
 import { CONTENT_MODE, OFFICIAL_INDEX_URL, RKDOCUMENTEN_URL } from '@/config';
@@ -21,6 +23,7 @@ export function About() {
   const { t } = useTranslation();
   const lang = useLang();
   const { data: index } = useAsync(getIndex, []);
+  const { data: images } = useAsync(getImages, []);
   useDocumentTitle(t('about.title'));
   const nl = lang === 'nl';
 
@@ -117,8 +120,8 @@ export function About() {
         <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Privacy' : 'Privacy'}</h2>
         <p className="text-sm">
           {nl
-            ? 'Geen account, geen analytics. Leesvoortgang, bladwijzers, lesvoortgang en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB. De enige externe verbinding is een video die u zelf start: die wordt pas na uw klik geladen via youtube-nocookie.com. Links naar vatican.va openen in een nieuw tabblad.'
-            : 'No account, no analytics. Reading progress, bookmarks, lesson progress and settings stay on your device (localStorage); the search index is kept in IndexedDB. The only external connection is a video you start yourself: it loads only after your click, via youtube-nocookie.com. Links to vatican.va open in a new tab.'}
+            ? 'Geen account, geen analytics. Leesvoortgang, bladwijzers, lesvoortgang en instellingen blijven op uw apparaat (localStorage); de zoekindex staat in IndexedDB. De enige externe verbinding is een video die u zelf start: die wordt pas na uw klik geladen via youtube-nocookie.com. Voorlezen gebruikt de stemmen van uw apparaat; kiest u een stem die als ‘online’ is gemarkeerd, dan stuurt uw browser de voorgelezen tekst naar zijn spraakdienst. Links naar vatican.va openen in een nieuw tabblad.'
+            : 'No account, no analytics. Reading progress, bookmarks, lesson progress and settings stay on your device (localStorage); the search index is kept in IndexedDB. The only external connection is a video you start yourself: it loads only after your click, via youtube-nocookie.com. Reading aloud uses your device’s voices; if you choose a voice marked ‘online’, your browser sends the text being read to its speech service. Links to vatican.va open in a new tab.'}
         </p>
       </section>
 
@@ -132,6 +135,30 @@ export function About() {
           ))}
         </ul>
       </section>
+
+      {images && images.length > 0 && (
+        <section id="image-credits" aria-labelledby="h-credits">
+          <h2 id="h-credits" className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">
+            {nl ? 'Beeldverantwoording' : 'Image credits'}
+          </h2>
+          <p className="mb-4 text-sm text-muted">
+            {nl
+              ? 'Alle afbeeldingen komen van Wikimedia Commons en zijn vrij van rechten of vrij gelicentieerd (CC0, CC BY, CC BY-SA). De licentie is per afbeelding gecontroleerd. Ze zijn verkleind; verder ongewijzigd.'
+              : 'All images come from Wikimedia Commons and are in the public domain or freely licensed (CC0, CC BY, CC BY-SA). Each licence was checked per image. They have been reduced in size and are otherwise unaltered.'}
+          </p>
+          <ul className="divide-y divide-line border-y border-line">
+            {images.map((im) => (
+              <li key={im.id} className="grid grid-cols-[4.5rem_minmax(0,1fr)] items-center gap-4 py-3">
+                <Photo image={im} sizes="72px" className="aspect-square h-[4.5rem] w-[4.5rem] border border-line object-cover" />
+                <span className="min-w-0 text-sm">
+                  <span className="block leading-snug">{pick(lang, im.altNl, im.altEn)}</span>
+                  <Credit image={im} className="mt-0.5 block" />
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section>
         <h2 className="mb-3 border-b border-line pb-2 font-display text-sm font-semibold uppercase tracking-caps">{nl ? 'Instellingen' : 'Settings'}</h2>

@@ -1,10 +1,34 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import type { Plugin } from 'vite';
 import { fileURLToPath, URL } from 'node:url';
 
 // Deploy path: '/' by default; BASE_PATH=/Vii/ for GitHub Pages (project site).
 const BASE = (process.env.BASE_PATH ?? '/').replace(/\/?$/, '/');
+
+/**
+ * Preload the Latin subsets of the four typefaces. Without this the fonts are found
+ * only after the CSS has been parsed, and text reflows when they arrive (layout shift).
+ */
+function preloadFonts(): Plugin {
+  let base = '/';
+  return {
+    name: 'concilium:preload-fonts',
+    configResolved(c) {
+      base = c.base;
+    },
+    transformIndexHtml: {
+      order: 'post',
+      handler(_html, ctx) {
+        if (!ctx.bundle) return [];
+        return Object.keys(ctx.bundle)
+          .filter((f) => /\/(eb-garamond|source-serif-4|inter|cinzel)-latin-wght-normal-[\w-]+\.woff2$/.test(f))
+          .map((f) => ({ tag: 'link', attrs: { rel: 'preload', as: 'font', type: 'font/woff2', href: base + f, crossorigin: '' }, injectTo: 'head' as const }));
+      },
+    },
+  };
+}
 
 export default defineConfig(({ mode }) => ({
   // `vite build --mode artifact`: self-contained preview with relative asset paths.
@@ -27,6 +51,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
+    preloadFonts(),
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: false,
@@ -38,7 +63,10 @@ export default defineConfig(({ mode }) => ({
         lang: 'nl-NL',
         start_url: BASE,
         scope: BASE,
-        display: 'standalone',
+        // Installed, the app fills the whole screen (no status or navigation bar on Android);
+        // where fullscreen is not supported (iOS) the browser falls back to standalone.
+        display: 'fullscreen',
+        display_override: ['fullscreen', 'standalone'],
         orientation: 'portrait',
         theme_color: '#7A1F1F',
         background_color: '#FAF8F3',
@@ -49,8 +77,8 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        // Precache the entire app shell, fonts and ALL content JSON.
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,json,webmanifest}'],
+        // Precache the entire app shell, fonts, ALL content JSON and the licensed images.
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,woff2,json,webmanifest}'],
         // Only Latin / Latin-ext font subsets are ever needed for NL, EN and LA text.
         globIgnores: ['**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-wght-*.woff2'],
         navigateFallback: `${BASE}index.html`,

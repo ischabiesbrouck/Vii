@@ -74,6 +74,12 @@
               "en": "The reading path begins with AG §2, the doctrinal paragraph on which the rest of the decree rests. According to the Council the Church is missionary by her very nature, because she proceeds from the mission of the Son and the mission of the Holy Spirit, in accordance with the decree of the Father. The decree thus grounds mission first in God himself, and only in the second place in Christ’s command or in the needs of the world. AG §3–5 work this out: the sending of the Son, the outpouring of the Spirit at Pentecost and the sending of the apostles."
             },
             {
+              "type": "image",
+              "imageId": "pentecost",
+              "captionNl": "El Greco, Pinksteren (ca. 1600, Museo del Prado). AG §4 verbindt het begin van de zending van de Kerk met de uitstorting van de Geest.",
+              "captionEn": "El Greco, Pentecost (c. 1600, Museo del Prado). AG §4 links the beginning of the Church’s mission with the outpouring of the Spirit."
+            },
+            {
               "type": "quote",
               "paragraphId": "AG-2"
             },
@@ -187,6 +193,12 @@
               "type": "p",
               "nl": "Het decreet werkt met verwante woorden die elk een eigen betekenis hebben. Zending (missio) in de strikt theologische zin is het zenden van de Zoon en de Geest, waaraan de Kerk deelheeft (AG §2–5). De missies, in het meervoud, zijn de bijzondere ondernemingen waardoor verkondigers van het evangelie worden uitgezonden naar volkeren of groepen die nog niet in Christus geloven (AG §6). Die missionaire activiteit onderscheidt het decreet van de pastorale zorg voor de gelovigen en van het werk voor het herstel van de christelijke eenheid, al erkent het dat de drie nauw samenhangen (AG §6).",
               "en": "The decree works with related words, each with its own sense. Mission (missio) in the strictly theological sense is the sending of the Son and the Spirit, in which the Church shares (AG §2–5). The missions, in the plural, are the particular undertakings by which heralds of the Gospel are sent to peoples or groups who do not yet believe in Christ (AG §6). The decree distinguishes this missionary activity from the pastoral care of the faithful and from work for the restoration of Christian unity, though it recognises that the three are closely connected (AG §6)."
+            },
+            {
+              "type": "image",
+              "imageId": "francis-xavier",
+              "captionNl": "Franciscus Xaverius (1506–1552), missionaris in India en Japan. Schilderij van omstreeks 1630, afkomstig uit een jezuïetenkerk in Rome, nu in de Vaticaanse Musea.",
+              "captionEn": "Francis Xavier (1506–1552), missionary in India and Japan. Painting of about 1630 from a Jesuit church in Rome, now in the Vatican Museums."
             },
             {
               "type": "box",

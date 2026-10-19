@@ -104,7 +104,6 @@ export function VideoRow({ video }: { video: Video }) {
   const open = usePlayer((s) => s.open);
   const w = useWatched((s) => s.watched[video.youtubeId]);
   const progress = w?.done ? 1 : w && w.duration ? w.at / w.duration : 0;
-  const label = t('video.playLabel', { title: video.title });
   const body = (
     <>
       <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-accent/60 text-accent transition-colors duration-200 group-hover:bg-accent group-hover:text-accent-fg">
@@ -134,12 +133,12 @@ export function VideoRow({ video }: { video: Video }) {
     );
   if (IS_ARTIFACT_PREVIEW)
     return (
-      <a href={watchUrl(video.youtubeId)} target="_blank" rel="noopener noreferrer" className={cls} aria-label={label}>
+      <a href={watchUrl(video.youtubeId)} target="_blank" rel="noopener noreferrer" className={cls}>
         {body}
       </a>
     );
   return (
-    <button type="button" onClick={() => open(video)} className={cls} aria-label={label} aria-haspopup="dialog">
+    <button type="button" onClick={() => open(video)} className={cls} aria-haspopup="dialog">
       {body}
     </button>
   );

@@ -1,10 +1,10 @@
 import { Fragment, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink } from 'lucide-react';
 import { ConciliarText, RefItem } from '@/components/TextBlocks';
 import { Diagram } from '@/components/Diagram';
-import { getImages, getParagraph } from '@/lib/content';
+import { getParagraph } from '@/lib/content';
+import { Credit, Photo, useImage } from '@/components/Photo';
 import { useDocuments } from '@/lib/data';
 import { useAsync } from '@/lib/useAsync';
 import { useLang } from '@/lib/hooks';
@@ -46,12 +46,12 @@ function Quote({ id }: { id: string }) {
   if (!data) return <div className="skeleton h-24 w-full" />;
   return (
     <div className="my-6">
-      <p className="mb-1.5 text-xs text-muted">
+      <p className="mb-1.5 text-xs text-muted" data-tts-skip>
         <span lang="la" className="la">
           {data.doc.titleLa}
         </span>{' '}
         ·{' '}
-        <Link to={`/documents/${data.doc.id}#${id}`} className="text-accent hover:underline">
+        <Link to={`/documents/${data.doc.id}#${id}`} className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
           {data.doc.abbr} §{data.paragraph.number}
         </Link>
       </p>
@@ -61,41 +61,18 @@ function Quote({ id }: { id: string }) {
 }
 
 function Figure({ imageId, caption, n }: { imageId: string; caption: string; n: number }) {
-  const lang = useLang();
   const { t } = useTranslation();
-  const { data: images } = useAsync(getImages, []);
-  const im = images?.find((x) => x.id === imageId);
+  const im = useImage(imageId);
   if (!im) return null;
   return (
-    <figure className="my-8">
-      <img
-        src={`${import.meta.env.BASE_URL}images/${im.file}`}
-        width={im.width}
-        height={im.height}
-        alt={pick(lang, im.altNl, im.altEn)}
-        loading="lazy"
-        decoding="async"
-        className="h-auto w-full border border-line bg-surface"
-      />
-      <figcaption className="mt-2 text-[0.82rem] leading-snug text-muted">
+    <figure className="my-9">
+      <Photo image={im} sizes="(min-width: 768px) 44rem, 100vw" className="mx-auto h-auto max-h-[75vh] w-auto max-w-full border border-line" />
+      <figcaption className="mt-2.5 border-l-2 border-gold/70 pl-3 font-sans text-[0.84rem] leading-snug text-muted">
         <span className="font-semibold text-fg">
           {t('study.figure')} {n}.
         </span>{' '}
-        {caption}{' '}
-        <span className="block pt-0.5 text-[0.75rem]">
-          {im.author} ·{' '}
-          {im.licenseUrl ? (
-            <a href={im.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline">
-              {im.license}
-            </a>
-          ) : (
-            im.license
-          )}{' '}
-          ·{' '}
-          <a href={im.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-0.5 underline">
-            Wikimedia Commons <ExternalLink className="h-3 w-3" aria-hidden />
-          </a>
-        </span>
+        <Cited text={caption} />
+        <Credit image={im} className="mt-1 block" />
       </figcaption>
     </figure>
   );
@@ -153,7 +130,7 @@ export function StudyBlockView({ block: b, figure, first }: { block: StudyBlock;
                 <p className="mt-1.5 text-[0.9rem] leading-relaxed">
                   <Cited text={pick(lang, p.nl, p.en)} />
                 </p>
-                <p className="mt-2 text-xs text-muted">
+                <p className="mt-2 text-xs text-muted" data-tts-skip>
                   {t('study.sources')}:{' '}
                   {p.sources.map((s, i) => (
                     <span key={s}>
@@ -165,12 +142,14 @@ export function StudyBlockView({ block: b, figure, first }: { block: StudyBlock;
               </div>
             ))}
           </div>
-          <p className="mt-3 text-xs italic text-muted">{t('claims.positionsHint')}</p>
+          <p className="mt-3 text-xs italic text-muted" data-tts-skip>
+            {t('claims.positionsHint')}
+          </p>
         </section>
       );
     case 'diagram':
       return (
-        <figure className="my-8 font-sans">
+        <figure className="my-8 font-sans" data-tts-skip>
           <Diagram id={b.id} />
           <figcaption className="mt-2 text-[0.82rem] leading-snug text-muted">
             <span className="font-semibold text-fg">

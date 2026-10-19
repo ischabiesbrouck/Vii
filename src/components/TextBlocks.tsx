@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink } from 'lucide-react';
+import { ChevronLeft, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { shortCite } from '@/lib/citation';
 import { paragraphText, paragraphUrl } from '@/lib/content';
@@ -43,7 +43,7 @@ export function ConciliarText({
           </>
         )}
       </figcaption>
-      <blockquote lang={lang === 'en' ? 'en' : 'nl'} className="whitespace-pre-line">
+      <blockquote lang={lang === 'en' ? 'en' : 'nl'} className="whitespace-pre-line" data-tts-before={shortCite(paragraph.id)}>
         {text}
       </blockquote>
       {showLatin && paragraph.textLa && (
@@ -136,9 +136,17 @@ export function SectionTitle({ children, id, action }: { children: ReactNode; id
 }
 
 export function Crumbs({ items }: { items: { to?: string; label: string }[] }) {
+  // Phones get one "back to parent" link instead of a trail that wraps over two lines.
+  const parent = [...items].reverse().find((it) => it.to);
   return (
     <nav aria-label="Breadcrumb" className="mb-4 text-xs text-muted">
-      <ol className="flex flex-wrap items-center gap-1">
+      {parent?.to && (
+        <Link to={parent.to} className="inline-flex min-h-[36px] max-w-full items-center gap-1 hover:text-accent sm:hidden">
+          <ChevronLeft className="h-4 w-4 shrink-0 text-gold" aria-hidden />
+          <span className="truncate">{parent.label}</span>
+        </Link>
+      )}
+      <ol className="hidden flex-wrap items-center gap-1 sm:flex">
         {items.map((it, i) => (
           <li key={i} className="flex items-center gap-1">
             {i > 0 && <span aria-hidden className="text-gold">/</span>}

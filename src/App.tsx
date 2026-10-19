@@ -5,7 +5,6 @@ import { Layout } from '@/components/Layout';
 import { Loading } from '@/components/TextBlocks';
 import { Home } from '@/pages/Home';
 import { useThemeEffect } from '@/lib/hooks';
-import { getSearchEngine } from '@/lib/search';
 
 // Route-level code splitting: only Home ships in the entry chunk. All chunks are
 // still precached by the service worker, so every route works offline.
@@ -43,12 +42,17 @@ const ROUTER_BASENAME = import.meta.env.BASE_URL.replace(/\/$/, '');
 export function App() {
   useThemeEffect();
 
-  // Build (or restore) the offline search index at app init, off the critical path.
+  // Background work, started only once the first page has settled: warm every page
+  // chunk (so later navigation never shows a loader), then build or restore the offline
+  // search index. Search loads dynamically, so MiniSearch and Dexie stay out of the entry chunk.
   useEffect(() => {
-    const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 1500));
-    idle(() => void getSearchEngine().catch(() => undefined));
-    // Warm every page chunk after first paint, so later navigation never shows a loader.
-    idle(() => preloaders.forEach((load) => void load().catch(() => undefined)));
+    const idle = (cb: () => void) => (window.requestIdleCallback ? window.requestIdleCallback(cb, { timeout: 4000 }) : window.setTimeout(cb, 200));
+    const t1 = window.setTimeout(() => idle(() => preloaders.forEach((load) => void load().catch(() => undefined))), 2500);
+    const t2 = window.setTimeout(() => idle(() => void import('@/lib/search').then((m) => m.getSearchEngine()).catch(() => undefined)), 6000);
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+    };
   }, []);
 
   const s = (el: React.ReactNode) => <Suspense fallback={<Loading />}>{el}</Suspense>;
