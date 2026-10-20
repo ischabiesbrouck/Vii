@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Explanation } from '@/components/Explanation';
 import { Bookmark, BookmarkCheck, Copy, ExternalLink, Share2 } from 'lucide-react';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
@@ -53,7 +54,8 @@ export function ParagraphSheet({
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent title={citation} description={`${doc.titleLa} · ${pick(lang, doc.titleNl, doc.titleEn)}`} closeLabel={t('app.close')}>
-        <ConciliarText paragraph={paragraph} showLatin />
+        <ConciliarText paragraph={paragraph} showLatin explainable={false} />
+        <Explanation paragraph={paragraph} />
         {note && <Commentary className="mt-3">{note}</Commentary>}
 
         <div className="mt-4 flex flex-wrap gap-2">

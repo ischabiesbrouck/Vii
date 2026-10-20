@@ -46,6 +46,15 @@ export function Photo({
       fetchPriority={priority ? 'high' : 'auto'}
       decoding="async"
       style={focus ? { objectPosition: focus } : undefined}
+      // Offline, a full-size file that was never viewed is not cached: use the 640 px copy,
+      // which every image has and the service worker always keeps.
+      onError={(e) => {
+        const img = e.currentTarget;
+        if (img.dataset.fallback) return;
+        img.dataset.fallback = '1';
+        img.removeAttribute('srcset');
+        img.src = `${BASE}640/${image.file}`;
+      }}
       className={cn('photo bg-surface', className)}
     />
   );

@@ -5,6 +5,37 @@
   "review": "unverified",
   "paragraphs": [
     {
+      "id": "PO-1",
+      "docId": "presbyterorum-ordinis",
+      "number": 1,
+      "textEn": "The excellence of the order of priests in the Church has already been recalled to the mind of all by this sacred Synod.",
+      "textNl": "Deze heilige Synode heeft de voortreffelijkheid van de orde der priesters in de Kerk al bij allen in herinnering gebracht.",
+      "tags": [
+        "priesthood",
+        "renewal"
+      ],
+      "crossRefs": [
+        "PO-2",
+        "OT-1"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De inleiding herinnert eraan dat het Concilie al meermaals over de waarde van het priesterschap heeft gesproken. Omdat de taak van priesters in de vernieuwing van de Kerk zwaar is en steeds moeilijker wordt, wil het decreet uitvoeriger over hen handelen. Wat het zegt, geldt voor alle priesters, vooral voor wie in de zielzorg werken, met passende aanpassing voor religieuze priesters. Het doel is hun dienst krachtiger te steunen en hun leven beter te verzorgen.",
+          "who": "Het Concilie spreekt over en tot de priesters, de presbyters, de tweede graad van het wijdingssacrament. Het noemt uitdrukkelijk de priesters in de zielzorg en vraagt de tekst voor religieuze priesters aan te passen. De gelovigen lezen mee, omdat het decreet ook hun verhouding tot de priesters beschrijft.",
+          "why": "Tijdens het Concilie werd geklaagd dat de priesters weinig aandacht kregen: er was veel gezegd over bisschoppen en leken, en weinig over de gewone zielzorgers. In de derde zitting stuurden de vaders een korte reeks stellingen over de priesters terug als ontoereikend. Het nieuwe schema dat volgde, kreeg een eigen inleiding die de priesters een duidelijke plaats gaf naast de leer van LG §28.",
+          "how": "Het is een korte, programmatische inleiding. Zij verwijst terug naar eerdere teksten van het Concilie en kondigt de opbouw van het decreet aan: het priesterschap in de zending van de Kerk, het dienstwerk en het leven van de priesters. Het woord presbyter in de titel kiest de oude, bijbelse term voor de priesters, in plaats van het algemenere clericus van het eerste ontwerp.",
+          "meaning": "Met de orde der priesters (ordo presbyterorum) wordt de groep gewijde priesters bedoeld, onderscheiden van bisschoppen en diakens. De nadruk op moeilijke omstandigheden is pastoraal bedoeld; er spreekt geen verwijt aan de priesters uit. De inleiding sluit aan bij OT §1 over de vernieuwing van de Kerk, die grotendeels van haar priesters afhangt. De Catechismus behandelt de priesters in nr. 1562–1568."
+        },
+        "en": {
+          "what": "The preface recalls that the Council has already spoken several times of the dignity of the priesthood. Because the task of priests in the renewal of the Church is weighty and increasingly difficult, the decree wishes to treat them more fully. What it says applies to all priests, especially those in the care of souls, with suitable adaptation for religious priests. Its aim is to support their ministry more effectively and to provide better for their life.",
+          "who": "The Council speaks about and to priests, the presbyters, the second grade of the sacrament of orders. It names priests in pastoral care explicitly and asks that the text be adapted for religious priests. The faithful read along, since the decree also describes their relation to priests.",
+          "why": "During the Council it was said that priests received little attention: much had been said about bishops and laity, and little about ordinary pastors. In the third session the Fathers sent a short set of propositions on priests back as inadequate. The new schema that followed received its own preface, which gave priests a clear place alongside the teaching of LG §28.",
+          "how": "This is a short, programmatic preface. It refers back to earlier texts of the Council and announces the structure of the decree: the priesthood in the mission of the Church, the ministry and the life of priests. The word presbyter in the title chooses the ancient biblical term for priests, in place of the more general clericus of the first draft.",
+          "meaning": "The order of priests (ordo presbyterorum) means the body of ordained priests, distinct from bishops and deacons. The stress on difficult circumstances is pastoral in intent and carries no reproach of priests. The preface connects with OT §1 on the renewal of the Church depending largely on her priests. The Catechism treats priests in nos. 1562–1568."
+        }
+      }
+    },
+    {
       "id": "PO-2",
       "docId": "presbyterorum-ordinis",
       "number": 2,
@@ -19,7 +50,154 @@
       "crossRefs": [
         "LG-10",
         "LG-21"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "§2 grondt het priesterschap in Christus. Hij maakt heel zijn lichaam deelgenoot van zijn zalving: alle gelovigen vormen een heilig en koninklijk priesterschap. Daarnaast stelde Hij bedienaars aan die in de gemeenschap de heilige macht hebben het offer op te dragen, zonden te vergeven en het priesterlijk ambt openlijk uit te oefenen. Priesters ontvangen die taak in ondergeschikte graad van de bisschoppen, door een eigen sacrament dat hen tekent en aan Christus het Hoofd gelijkvormig maakt.",
+          "who": "Het Concilie spreekt over de priesters en hun plaats in de zending van de Kerk. Het richt zich in de eerste plaats tot de priesters zelf, en beschrijft ook het gemeenschappelijk priesterschap van alle gedoopten. De bisschoppen worden genoemd als degenen van wie de priesters hun ambt in ondergeschikte graad ontvangen.",
+          "why": "Na de leer over het gemeenschappelijk priesterschap in LG §10 rees de vraag wat het eigene van het ambtelijk priesterschap was. §2 beantwoordt die vraag vanuit de wijding. Het eerste ontwerp over de clerus sprak vooral over plichten en discipline; de herziene tekst van 1965 opende met een theologisch hoofdstuk, omdat de vaders het priesterschap theologisch gefundeerd wilden zien.",
+          "how": "De paragraaf gaat van Christus naar de Kerk en dan naar het ambt. Hij steunt op de Schrift, onder meer 1 Petrus 2,5.9 en Romeinen 15,16, en op de leer van Trente over het wijdingssacrament. Het slot noemt het doel: door de dienst van de priesters wordt het geestelijk offer van de gelovigen verenigd met het offer van Christus in de eucharistie. Deze paragraaf is de leerstellige basis van het hele decreet.",
+          "meaning": "In persona Christi Capitis betekent dat de priester bij verkondiging, sacramenten en leiding van de gemeenschap optreedt als teken van Christus die zijn Kerk leidt. Het merkteken (character) is onuitwisbaar, zodat de wijding niet herhaald wordt. De priester wordt daardoor geen christen van hogere rang; het gaat om dienst. Zie de Catechismus nr. 1548 en 1581–1582, en *Pastores dabo vobis* (1992)."
+        },
+        "en": {
+          "what": "§2 grounds the priesthood in Christ. He makes his whole body share in his anointing: all the faithful form a holy and royal priesthood. He also appointed ministers who in the community hold the sacred power to offer sacrifice, forgive sins and exercise the priestly office publicly. Priests receive that task in a subordinate degree from the bishops, through a sacrament of its own that marks them and configures them to Christ the Head.",
+          "who": "The Council speaks of priests and their place in the mission of the Church. It addresses priests themselves first of all, and it also describes the common priesthood of all the baptised. The bishops are named as those from whom priests receive their office in a subordinate degree.",
+          "why": "After the teaching on the common priesthood in LG §10, the question arose what was distinctive of the ministerial priesthood. §2 answers from ordination. The first draft on the clergy spoke mainly of duties and discipline; the revised text of 1965 opened with a theological chapter, since the Fathers wanted the priesthood given a theological foundation.",
+          "how": "The paragraph moves from Christ to the Church and then to the ministry. It draws on Scripture, including 1 Peter 2:5, 9 and Romans 15:16, and on Trent's teaching on the sacrament of orders. Its close names the purpose: through the ministry of priests the spiritual sacrifice of the faithful is united to Christ's sacrifice in the Eucharist. This paragraph is the doctrinal basis of the whole decree.",
+          "meaning": "In persona Christi Capitis means that in preaching, the sacraments and leading the community the priest acts as a sign of Christ who leads his Church. The character is indelible, so ordination is not repeated. It does not make the priest a Christian of higher rank; the point is service. See Catechism nos. 1548 and 1581–1582, and *Pastores dabo vobis* (1992)."
+        }
+      }
+    },
+    {
+      "id": "PO-4",
+      "docId": "presbyterorum-ordinis",
+      "number": 4,
+      "textEn": "The People of God finds its unity first of all through the Word of the living God, which is quite rightly expected from the mouth of priests. Since no one can be saved who has not first believed, priests, as co-workers with their bishops, have the primary duty of proclaiming the Gospel of God to all.",
+      "textNl": "Het volk van God vindt zijn eenheid in de eerste plaats door het woord van de levende God, dat men terecht uit de mond van de priesters verwacht. Omdat niemand gered kan worden die niet eerst gelooft, hebben de priesters als medewerkers van de bisschoppen als eerste taak het evangelie van God aan allen te verkondigen.",
+      "tags": [
+        "priesthood",
+        "scripture",
+        "evangelisation"
+      ],
+      "crossRefs": [
+        "DV-25",
+        "PO-5"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§4 opent het hoofdstuk over het dienstwerk met de verkondiging. Het volk van God komt samen door het woord van God, en omdat het geloof aan het heil voorafgaat, is de verkondiging de eerste taak van de priesters. Zij brengen het evangelie aan ongelovigen en gelovigen, door hun voorbeeld, door gesprek, door catechese en vooral door de prediking in de liturgie. Die prediking moet de blijvende waarheid van het evangelie toepassen op de concrete omstandigheden van het leven.",
+          "who": "De paragraaf richt zich tot de priesters als medewerkers van de bisschoppen. Hij spreekt over hun hoorders: wie nog niet gelooft, wie gelooft en verder gevormd moet worden, en de gemeenschap die de eucharistie viert. Dat men het woord terecht uit de mond van de priesters verwacht, legt een verantwoordelijkheid bij hen; de formulering doet denken aan Maleachi 2,7.",
+          "why": "Trente had de prediking aan de herders opgedragen, maar in het gangbare beeld van de priester stonden misoffer en sacramenten voorop. De bijbelse, liturgische en kerygmatische vernieuwing van de twintigste eeuw vroeg aandacht voor het woord. Het Concilie had de homilie al hoog gewaardeerd (SC §35; SC §52) en de clerus tot Schriftlezing opgeroepen (DV §25). §4 trekt die lijn door naar de opdracht van de priesters.",
+          "how": "De paragraaf begint met een theologische grond, ontleend aan Romeinen 10,14–17 over het geloof dat uit het horen komt, en aan Marcus 16,15 over de zending naar heel de wereld. Daarna noemt hij de vormen van verkondiging en eindigt hij bij de liturgie, waar woord en sacrament één geheel vormen. Zo bereidt §4 de paragraaf over de sacramenten voor (PO §5).",
+          "meaning": "Dat de verkondiging de eerste taak heet, betreft de logica van het geloof: wie niet gehoord heeft, kan niet geloven. Het vestigt geen rangorde boven de eucharistie, die PO §5 bron en hoogtepunt van alle evangelisatie noemt. De prediking mag ook geen uiteenzetting van algemene waarheden blijven; zij moet het leven van de hoorders raken. Zie Catechismus nr. 1564 en *Evangelii gaudium* (2013) nr. 135–159 over de homilie."
+        },
+        "en": {
+          "what": "§4 opens the chapter on the ministry with preaching. The People of God is gathered by the word of God, and since faith precedes salvation, proclamation is the first task of priests. They bring the Gospel to unbelievers and believers, through example, conversation, catechesis and above all preaching in the liturgy. Such preaching must apply the lasting truth of the Gospel to the concrete circumstances of life.",
+          "who": "The paragraph is addressed to priests as co-workers of the bishops. It speaks of their hearers: those who do not yet believe, believers who need further formation, and the community celebrating the Eucharist. That the word is rightly expected from the mouth of priests places a responsibility on them; the phrasing recalls Malachi 2:7.",
+          "why": "Trent had charged pastors with preaching, but in the prevailing image of the priest the Mass and the sacraments came first. The biblical, liturgical and kerygmatic renewal of the twentieth century called for attention to the word. The Council had already valued the homily highly (SC §35; SC §52) and urged the clergy to read Scripture (DV §25). §4 carries that line into the task of priests.",
+          "how": "The paragraph opens with a theological ground taken from Romans 10:14–17 on faith that comes from hearing, and from Mark 16:15 on the mission to the whole world. It then lists the forms of proclamation and ends with the liturgy, where word and sacrament form one whole. In this way §4 prepares for the paragraph on the sacraments (PO §5).",
+          "meaning": "Calling proclamation the first task concerns the logic of faith: one who has not heard cannot believe. It sets up no ranking above the Eucharist, which PO §5 calls the source and summit of all evangelisation. Nor may preaching remain an exposition of general truths; it must touch the lives of its hearers. See Catechism no. 1564 and *Evangelii gaudium* (2013) nos. 135–159 on the homily."
+        }
+      }
+    },
+    {
+      "id": "PO-5",
+      "docId": "presbyterorum-ordinis",
+      "number": 5,
+      "textEn": "For the most blessed Eucharist contains the entire spiritual boon of the Church, that is, Christ himself, our Pasch and Living Bread. … the Eucharist shows itself as the source and the apex of the whole work of preaching the Gospel.",
+      "textNl": "Want in de allerheiligste eucharistie is heel het geestelijk goed van de Kerk vervat, namelijk Christus zelf, ons Pascha en levend Brood. … de eucharistie blijkt de bron en het hoogtepunt van heel de verkondiging van het evangelie.",
+      "tags": [
+        "priesthood",
+        "eucharist",
+        "sacraments"
+      ],
+      "crossRefs": [
+        "LG-11",
+        "SC-10",
+        "PO-4"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§5 beschrijft de priester als bedienaar van de sacramenten. Door doopsel, boete, ziekenzalving en vooral de eucharistie heiligen de priesters het volk van God. Alle sacramenten en ambten zijn op de eucharistie gericht, omdat zij Christus zelf bevat. De priesters moeten de gelovigen leren hun leven samen met Christus aan de Vader aan te bieden, het getijdengebed bidden en zorgen dat de kerk waar de eucharistie gevierd en bewaard wordt, een waardig huis van gebed is.",
+          "who": "Het decreet spreekt tot de priesters over hun sacramentele dienst. Het gaat ook over de gelovigen: catechumenen die naar de doop worden geleid, zondaars die tot het sacrament van de boete komen, zieken en de vierende gemeenschap. Hun eigen bewuste deelname wordt als doel van de priesterlijke dienst genoemd, in de lijn van SC §14.",
+          "why": "De liturgische beweging had de eucharistie weer als hart van het kerkelijk leven naar voren gebracht. SC §10 noemde de liturgie het hoogtepunt en de bron van het handelen van de Kerk, en LG §11 noemde het eucharistisch offer bron en hoogtepunt van heel het christelijk leven. §5 past die leer toe op de priester en verbindt de eucharistie met de verkondiging.",
+          "how": "De paragraaf gaat uit van de heiligende taak van Christus, waaraan de priesters deelhebben. Hij noemt de sacramenten afzonderlijk en komt dan bij de eucharistie, met een verwijzing naar Johannes 6 over het brood dat leven geeft. Het slot gaat over het gebed, de liturgische tijden en de inrichting van het kerkgebouw. De paragraaf volgt op de verkondiging (PO §4) en gaat vooraf aan het herderlijk leiden (PO §6).",
+          "meaning": "Bron en hoogtepunt betekent dat de evangelisatie uit de eucharistie voortkomt en ernaartoe leidt: de verkondiging brengt mensen tot de gemeenschap rond het altaar. Andere vormen van pastoraal worden daarmee niet minder waard, want zij zijn erop gericht. De Catechismus citeert deze paragraaf in nr. 1324. Johannes Paulus II nam de gedachte op in *Ecclesia de Eucharistia* (2003)."
+        },
+        "en": {
+          "what": "§5 describes the priest as minister of the sacraments. Through baptism, penance, anointing of the sick and above all the Eucharist, priests sanctify the People of God. All sacraments and ministries are directed to the Eucharist, because it contains Christ himself. Priests are to teach the faithful to offer their lives to the Father together with Christ, to pray the Divine Office, and to see that the church where the Eucharist is celebrated and reserved is a worthy house of prayer.",
+          "who": "The decree speaks to priests about their sacramental ministry. It also concerns the faithful: catechumens led to baptism, sinners coming to the sacrament of penance, the sick and the celebrating community. Their own conscious participation is named as the aim of priestly ministry, in line with SC §14.",
+          "why": "The liturgical movement had brought the Eucharist back to the centre of Church life. SC §10 called the liturgy the summit and source of the Church's activity, and LG §11 called the eucharistic sacrifice the source and summit of the whole Christian life. §5 applies that teaching to the priest and links the Eucharist with preaching.",
+          "how": "The paragraph starts from Christ's sanctifying task, in which priests share. It names the sacraments one by one and then comes to the Eucharist, with a reference to John 6 on the bread that gives life. The close concerns prayer, the liturgical seasons and the furnishing of the church building. The paragraph follows preaching (PO §4) and precedes pastoral leadership (PO §6).",
+          "meaning": "Source and summit means that evangelisation flows from the Eucharist and leads towards it: preaching brings people into the communion around the altar. Other forms of pastoral work lose none of their value, since they are directed to it. The Catechism quotes this paragraph in no. 1324. John Paul II took up the idea in *Ecclesia de Eucharistia* (2003)."
+        }
+      }
+    },
+    {
+      "id": "PO-7",
+      "docId": "presbyterorum-ordinis",
+      "number": 7,
+      "textEn": "All priests, together with bishops, so share in one and the same priesthood and ministry of Christ that the very unity of their consecration and mission requires their hierarchical communion with the order of bishops.",
+      "textNl": "Alle priesters hebben samen met de bisschoppen zo deel aan één en hetzelfde priesterschap en ambt van Christus, dat de eenheid zelf van hun wijding en zending hun hiërarchische gemeenschap met de orde van de bisschoppen vereist.",
+      "tags": [
+        "priesthood",
+        "bishops",
+        "communion"
+      ],
+      "crossRefs": [
+        "PO-2",
+        "CD-16",
+        "LG-21"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§7 behandelt de verhouding tussen bisschop en priesters. Omdat zij aan hetzelfde priesterschap van Christus deelhebben, staan de priesters in hiërarchische gemeenschap met de bisschoppen. De bisschoppen moeten hun priesters als broeders en vrienden beschouwen, voor hun welzijn zorgen en hen raadplegen; daartoe moet er een raad of senaat van priesters zijn die het presbyterium vertegenwoordigt. De priesters moeten in hun bisschop het gezag van Christus erkennen en hem met liefde en gehoorzaamheid bijstaan.",
+          "who": "De paragraaf richt zich tot twee groepen tegelijk, de bisschoppen en de priesters. Hij beschrijft hun wederzijdse plichten en de structuur die hun samenwerking moet dragen. Ook de gelovigen hebben er belang bij, omdat de eenheid van bisschop en priesters de eenheid van de plaatselijke Kerk dient.",
+          "why": "De verhouding tussen bisschop en priester werd vóór het Concilie vooral juridisch beschreven, als die tussen overste en ondergeschikte. LG §28 sprak van de priesters als zorgzame medewerkers van de bisschoppen, die met hem één presbyterium vormen. Uit die leer volgde de wens naar een orgaan van overleg. *Ecclesiae Sanctae* (1966) schreef de priesterraad voor elk bisdom voor.",
+          "how": "De paragraaf heeft een theologisch begin, de eenheid van wijding en zending, en trekt daaruit gevolgen voor beide kanten. Hij steunt op LG §28, en het beeld van de priesters als vrienden sluit aan bij Johannes 15,15. §7 staat aan het begin van de reeks over de verhoudingen van de priester: tot de bisschop (PO §7), de medepriesters (PO §8) en de leken (PO §9).",
+          "meaning": "Hiërarchische gemeenschap betekent hier dat de priester zijn ambt alleen in verbondenheid met de bisschop uitoefent. De gevraagde gehoorzaamheid past in een verhouding van vertrouwen, die met het beeld van broeders en vrienden wordt omschreven. De raad van priesters heeft een raadgevende stem. Het Wetboek van 1983 regelt de priesterraad in can. 495–501; zie ook de Catechismus nr. 1567."
+        },
+        "en": {
+          "what": "§7 treats the relation between bishop and priests. Because they share in the same priesthood of Christ, priests stand in hierarchical communion with the bishops. Bishops are to regard their priests as brothers and friends, care for their welfare and consult them; for this there should be a council or senate of priests representing the presbyterate. Priests are to recognise in their bishop the authority of Christ and assist him with love and obedience.",
+          "who": "The paragraph addresses two groups at once, bishops and priests. It describes their mutual duties and the structure that is to support their cooperation. The faithful also have an interest in it, since the unity of bishop and priests serves the unity of the local Church.",
+          "why": "Before the Council the relation between bishop and priest was described mainly in juridical terms, as superior and subordinate. LG §28 spoke of priests as prudent co-workers of the bishops, forming one presbyterate with him. From this teaching came the wish for a consultative body. *Ecclesiae Sanctae* (1966) required a council of priests in every diocese.",
+          "how": "The paragraph has a theological opening, the unity of consecration and mission, and draws consequences for both sides from it. It rests on LG §28, and the image of priests as friends echoes John 15:15. §7 begins the series on the priest's relationships: with the bishop (PO §7), fellow priests (PO §8) and the laity (PO §9).",
+          "meaning": "Hierarchical communion here means that a priest exercises his ministry only in union with the bishop. The obedience asked for belongs within a relation of trust, described with the image of brothers and friends. The council of priests has a consultative voice. The 1983 Code regulates the presbyteral council in can. 495–501; see also Catechism no. 1567."
+        }
+      }
+    },
+    {
+      "id": "PO-9",
+      "docId": "presbyterorum-ordinis",
+      "number": 9,
+      "textEn": "… they are brothers among brothers with all those who have been reborn at the baptismal font. … Priests must sincerely acknowledge and promote the dignity of the laity and the part proper to them in the mission of the Church.",
+      "textNl": "… zij zijn broeders onder broeders met allen die in het doopsel herboren zijn. … De priesters moeten de waardigheid van de leken en de eigen rol die hun in de zending van de Kerk toekomt, oprecht erkennen en bevorderen.",
+      "tags": [
+        "priesthood",
+        "laity",
+        "people-of-god"
+      ],
+      "crossRefs": [
+        "LG-10",
+        "LG-33",
+        "AA-2"
+      ],
+      "explain": {
+        "nl": {
+          "what": "§9 beschrijft de priesters te midden van de leken. Hoewel zij als vader en leraar een eigen ambt hebben, zijn zij met alle gelovigen leerlingen van de Heer en broeders onder broeders. Zij moeten de waardigheid en eigen verantwoordelijkheid van de leken erkennen, naar hen luisteren, hun deskundigheid waarderen en hun charisma's onderscheiden en bevorderen. Zij kunnen hun taken toevertrouwen en hun ruimte geven voor eigen initiatief, zodat priesters en leken samen de eenheid van de gemeenschap opbouwen.",
+          "who": "De paragraaf richt zich tot de priesters en spreekt over de leken; in het slot spreekt hij ook de leken zelf aan. Zij worden opgeroepen hun priesters met kinderlijke liefde als herders en vaders te volgen, met hen mee te leven en hen te helpen. Ook de gescheiden christenen en wie zich van de sacramenten of het geloof hebben verwijderd, worden aan de zorg van de priesters toevertrouwd.",
+          "why": "Lumen Gentium had in de hoofdstukken over het volk van God en over de leken veel aandacht gegeven aan de waardigheid en zending van alle gedoopten (LG §10; LG §33). De vraag was hoe de priester zich daartoe moest verhouden. Waar de clerus vaak als afzonderlijke stand tegenover de leken was voorgesteld, legt §9 de nadruk op gemeenschappelijk leerlingschap en samenwerking, in lijn met LG §37.",
+          "how": "De paragraaf begint met een bijbels beeld van broederschap, dat aansluit bij Matteüs 23,8 over de ene Meester. Daarna volgt een reeks praktische vermaningen. Voor het onderscheiden van charisma's verwijst hij naar 1 Johannes 4,1, de opdracht de geesten te toetsen. De paragraaf sluit de reeks over de verhoudingen van de priester af en gaat over in de verdeling van priesters over de wereld (PO §10).",
+          "meaning": "Broeders onder broeders betekent geen opheffing van het onderscheid tussen ambtelijk en gemeenschappelijk priesterschap, dat PO §2 en LG §10 vasthouden. De paragraaf beschrijft de geest waarin het ambt wordt uitgeoefend. De instructie *Ecclesiae de mysterio* (1997) over de medewerking van niet-gewijde gelovigen werkt de grenzen tussen beide rollen verder uit. Paus Franciscus verbindt deze paragraaf in zijn kritiek op clericalisme met de waardering van de leken."
+        },
+        "en": {
+          "what": "§9 describes priests in the midst of the laity. Although they hold a distinct office as fathers and teachers, they are, with all the faithful, disciples of the Lord and brothers among brothers. They are to recognise the dignity and proper responsibility of the laity, listen to them, value their expertise and discern and foster their charisms. They may entrust tasks to them and leave room for their initiative, so that priests and laity together build up the unity of the community.",
+          "who": "The paragraph addresses priests and speaks about the laity; at its close it also addresses the laity directly. They are urged to follow their priests with filial love as pastors and fathers, to share their concerns and to help them. Separated Christians and those who have drifted from the sacraments or from the faith are also entrusted to the care of priests.",
+          "why": "In its chapters on the People of God and on the laity, Lumen Gentium had given great attention to the dignity and mission of all the baptised (LG §10; LG §33). The question was how the priest should relate to this. Where the clergy had often been presented as a separate estate facing the laity, §9 stresses shared discipleship and cooperation, in line with LG §37.",
+          "how": "The paragraph opens with a biblical image of brotherhood, echoing Matthew 23:8 on the one Teacher. A series of practical exhortations follows. For discerning charisms it refers to 1 John 4:1, the command to test the spirits. The paragraph closes the series on the priest's relationships and leads into the distribution of priests across the world (PO §10).",
+          "meaning": "Brothers among brothers does not abolish the distinction between ministerial and common priesthood, which PO §2 and LG §10 maintain. The paragraph describes the spirit in which the ministry is exercised. The instruction *Ecclesiae de mysterio* (1997) on the collaboration of the non-ordained faithful sets out the boundaries between the two roles further. Pope Francis links this paragraph, in his critique of clericalism, with esteem for the laity."
+        }
+      }
     },
     {
       "id": "PO-16",
@@ -36,7 +214,23 @@
         "ext:sacerdotalis-caelibatus-1967"
       ],
       "noteNl": "Verderop in §16 'keurt de Synode deze wetgeving opnieuw goed en bevestigt haar' voor wie tot het priesterschap in de Latijnse Kerk bestemd zijn.",
-      "noteEn": "Later in §16 the Synod 'again approves and confirms this legislation' for those destined for the priesthood in the Latin Church."
+      "noteEn": "Later in §16 the Synod 'again approves and confirms this legislation' for those destined for the priesthood in the Latin Church.",
+      "explain": {
+        "nl": {
+          "what": "§16 gaat over het celibaat. Volmaakte en voortdurende onthouding omwille van het rijk der hemelen wordt door de Kerk hoog gewaardeerd, vooral voor het priesterleven; zij volgt echter niet uit de aard van het priesterschap, zoals de vroege Kerk en de oosterse Kerken tonen. Het Concilie wil de discipline van de oosterse Kerken met hun gehuwde priesters niet veranderen. Omdat het celibaat bij het priesterschap past, bevestigt het de wet voor wie in de Latijnse Kerk priester wordt, en vraagt het alle gelovigen om deze gave te bidden.",
+          "who": "Het Concilie spreekt tot alle priesters, in het bijzonder tot die van de Latijnse Kerk, voor wie de celibaatswet geldt. Het spreekt met waardering over de gehuwde priesters van de oosterse Kerken en spoort hen aan in hun roeping te volharden. Ook alle gelovigen worden aangesproken: zij moeten bidden dat de gave van het celibaat de priesters overvloedig geschonken wordt.",
+          "why": "Tijdens het Concilie werd in de pers en door enkele vaders over het celibaat gesproken. In oktober 1965 onttrok Paulus VI het onderwerp aan het openbare debat, omdat hij een discussie in de aula niet opportuun achtte; de vaders konden schriftelijk opmerkingen indienen. §16 werd daarna geformuleerd als bevestiging van de bestaande wet, met een theologische motivering en met erkenning van de oosterse praktijk.",
+          "how": "De paragraaf zet drie stappen: waardering, relativering en bevestiging. Hij motiveert het celibaat vanuit Christus, aan wie de priester zich met ongedeeld hart toewijdt, vanuit de dienst aan allen, en vanuit de komende wereld, waarvan het een teken is. Hij steunt op Matteüs 19,12 en 1 Korintiërs 7,32–34. De paragraaf staat in hoofdstuk III, tussen gehoorzaamheid (PO §15) en armoede (PO §17).",
+          "meaning": "Het onderscheid tussen leer en discipline staat hier centraal. Dat het celibaat niet uit de aard van het priesterschap volgt, is een theologische uitspraak; dat de Latijnse Kerk het verplicht stelt, is een kerkelijke wet. Over de vraag hoe vast die wet is, verschillen de meningen, zoals de studie over priesters en religieuzen in deze uitgave toont. Zie *Sacerdotalis caelibatus* (1967), can. 277 en de Catechismus nr. 1579–1580."
+        },
+        "en": {
+          "what": "§16 concerns celibacy. Perfect and perpetual continence for the sake of the kingdom of heaven is highly valued by the Church, especially for priestly life; yet it does not follow from the nature of the priesthood, as the early Church and the Eastern Churches show. The Council does not wish to change the discipline of the Eastern Churches with their married priests. Because celibacy suits the priesthood, it confirms the law for those ordained in the Latin Church and asks all the faithful to pray for this gift.",
+          "who": "The Council speaks to all priests, especially those of the Latin Church, for whom the law of celibacy holds. It speaks with esteem of the married priests of the Eastern Churches and encourages them to persevere in their vocation. All the faithful are addressed as well: they are to pray that the gift of celibacy be given generously to priests.",
+          "why": "During the Council celibacy was discussed in the press and by some Fathers. In October 1965 Paul VI withdrew the subject from public debate, judging a discussion in the hall inopportune; the Fathers could submit written observations. §16 was then formulated as a confirmation of the existing law, with a theological rationale and with recognition of Eastern practice.",
+          "how": "The paragraph takes three steps: appreciation, qualification and confirmation. It grounds celibacy in Christ, to whom the priest gives himself with an undivided heart, in service to all, and in the world to come, of which it is a sign. It draws on Matthew 19:12 and 1 Corinthians 7:32–34. The paragraph stands in chapter III, between obedience (PO §15) and poverty (PO §17).",
+          "meaning": "The distinction between doctrine and discipline is central here. That celibacy does not follow from the nature of the priesthood is a theological statement; that the Latin Church requires it is a law of the Church. Opinions differ on how fixed that law is, as the study on priests and religious in this edition shows. See *Sacerdotalis caelibatus* (1967), can. 277 and Catechism nos. 1579–1580."
+        }
+      }
     }
   ]
 }

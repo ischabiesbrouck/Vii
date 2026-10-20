@@ -17,7 +17,56 @@
       "crossRefs": [
         "GE-3",
         "GS-26"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Alle mensen hebben, krachtens hun waardigheid als persoon, een onvervreemdbaar recht op opvoeding die beantwoordt aan hun uiteindelijke bestemming, aan hun aanleg, geslacht, cultuur en tradities. Ware opvoeding vormt de mens met het oog op zijn laatste doel en op het welzijn van de samenleving. Kinderen en jongeren moeten geholpen worden hun lichamelijke, morele en verstandelijke gaven harmonisch te ontwikkelen, met een positieve en voorzichtige seksuele opvoeding. Zij hebben recht te leren morele waarden met een recht geweten te beoordelen en God te kennen en lief te hebben.",
+          "who": "Deze verklaring van het Concilie, door Paulus VI afgekondigd, spreekt hier over alle mensen, van welk ras, welke stand of leeftijd ook, en niet alleen over katholieken. Zij richt zich tot ouders, opvoeders en overheden, en vraagt in het bijzonder aan wie verantwoordelijkheid draagt voor volken en onderwijs, ervoor te zorgen dat de jeugd dit recht niet wordt onthouden.",
+          "why": "Na de Tweede Wereldoorlog werd het recht op onderwijs internationaal erkend, onder meer in artikel 26 van de Universele Verklaring van de Rechten van de Mens (1948). Tegelijk groeide in veel landen de invloed van de staat op het onderwijs. Pius XI had in Divini illius magistri (1929) de opvoeding beschreven als taak van gezin, burgerlijke samenleving en Kerk. GE §1 herneemt die leer in de taal van de rechten van de persoon.",
+          "how": "De paragraaf redeneert vanuit de menselijke natuur en de waardigheid van de persoon, zonder eerst een beroep te doen op de openbaring. Zo kan hij ook niet-christenen aanspreken. Hij verwijst naar de vooruitgang van psychologie en pedagogiek en eindigt met een oproep aan overheden. De christelijke opvoeding volgt pas in GE §2. De volgorde gaat zo van het algemeen menselijke naar het bijzonder christelijke.",
+          "meaning": "Uiteindelijke bestemming betekent het laatste doel van de mens, de gemeenschap met God. Opvoeding beperkt zich volgens de tekst dus niet tot kennis of beroepsvorming; zij betreft de hele persoon. De vermelding van seksuele opvoeding wordt soms over het hoofd gezien; de tekst vraagt dat zij positief en voorzichtig gebeurt, met de ouders als eerste verantwoordelijken. De Catechismus (nr. 2221-2231) neemt deze lijn op bij de plichten van ouders."
+        },
+        "en": {
+          "what": "All people, by virtue of their dignity as persons, have an inalienable right to an education suited to their final end and to their abilities, sex, culture and traditions. True education forms the person with a view to his ultimate end and to the good of society. Children and young people should be helped to develop their physical, moral and intellectual gifts harmoniously, with a positive and prudent sexual education. They have a right to learn to judge moral values with a right conscience and to know and love God.",
+          "who": "This declaration of the Council, promulgated by Paul VI, here speaks of all people, of every race, condition and age, and not only of Catholics. It addresses parents, educators and governments, and asks in particular those responsible for peoples and for education to see that the young are not deprived of this right.",
+          "why": "After the Second World War the right to education was recognised internationally, for instance in article 26 of the Universal Declaration of Human Rights (1948). In many countries the state was also gaining influence over education. In Divini illius magistri (1929) Pius XI had described education as the task of the family, civil society and the Church. GE §1 restates that teaching in the language of the rights of the person.",
+          "how": "The paragraph argues from human nature and the dignity of the person, without first appealing to revelation. That allows it to address non-Christians too. It refers to advances in psychology and pedagogy and ends with an appeal to governments. Christian education follows only in GE §2. The order moves from what is common to all people to what is specifically Christian.",
+          "meaning": "Ultimate end means the final goal of the human person, communion with God. Education in the text's sense is therefore not limited to knowledge or vocational training; it concerns the whole person. The reference to sexual education is sometimes overlooked; the text asks that it be positive and prudent, with parents as those chiefly responsible. The Catechism (nos. 2221-2231) takes up this line in treating the duties of parents."
+        }
+      }
+    },
+    {
+      "id": "GE-2",
+      "docId": "gravissimum-educationis",
+      "number": 2,
+      "textEn": "Since all Christians have become by rebirth of water and the Holy Spirit a new creature so that they should be called and should be children of God, they have a right to a Christian education.",
+      "textNl": "Omdat alle christenen door de wedergeboorte uit water en heilige Geest een nieuwe schepping zijn geworden, zodat zij kinderen van God heten en zijn, hebben zij recht op een christelijke opvoeding.",
+      "tags": [
+        "education",
+        "baptism",
+        "formation"
+      ],
+      "crossRefs": [
+        "GE-1",
+        "LG-11",
+        "SC-14"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Alle gedoopten zijn een nieuwe schepping en kinderen van God, en hebben daarom recht op een christelijke opvoeding. Die beoogt meer dan menselijke rijping. Zij wil dat de gedoopten het mysterie van het heil steeds beter leren kennen, zich bewust worden van het geloof dat zij ontvingen, God leren aanbidden in geest en waarheid, vooral in de liturgie, en volgens de nieuwe mens leven. Zo dragen zij bij aan de groei van het Lichaam van Christus en aan het welzijn van de samenleving.",
+          "who": "De paragraaf spreekt over alle gedoopten, kinderen en volwassenen. Hij richt zich vooral tot de herders, aan wie het Concilie de ernstige plicht herinnert ervoor te zorgen dat alle gelovigen deze opvoeding ontvangen, en in het bijzonder de jongeren, die de hoop van de Kerk zijn.",
+          "why": "Na de algemene grondslag in GE §1 moest de verklaring zeggen wat christelijke opvoeding eigen is. De catechetische vernieuwing van de twintigste eeuw, met haar aandacht voor Schrift en liturgie, vormt de achtergrond. Sacrosanctum Concilium (1963) had de actieve deelname aan de liturgie tot doel van de pastoraal gemaakt (SC §14), en GE §2 noemt de liturgie uitdrukkelijk als plaats van vorming.",
+          "how": "De redenering is sacramenteel. Het recht volgt uit het doopsel, de wedergeboorte uit water en Geest waarvan Johannes 3 spreekt. Daarna somt de tekst de doelen op en verwijst naar Johannes 4 over aanbidding in geest en waarheid en naar de brief aan de Efeziërs over de volwassenheid in Christus. De paragraaf verbindt zo de persoonlijke groei van de gelovige met de opbouw van de Kerk.",
+          "meaning": "Christelijke opvoeding is hier meer dan godsdienstonderricht op school. Zij omvat geloofskennis, gebed, liturgie en levenswandel, en is de taak van gezin, parochie en school samen. De Codex van 1983 neemt het recht op in can. 217 en de plicht van ouders in can. 793. Het recht van GE §2 komt bovenop het algemene recht van GE §1 en vervangt het niet: ook de menselijke vorming blijft deel van de christelijke opvoeding."
+        },
+        "en": {
+          "what": "All the baptised are a new creation and children of God, and therefore have a right to a Christian education. It aims at more than human maturity: it seeks that the baptised come to know the mystery of salvation ever better, grow aware of the gift of faith they have received, learn to worship God in spirit and truth, above all in the liturgy, and live according to the new self. In this way they contribute to the growth of the Body of Christ and to the good of society.",
+          "who": "The paragraph speaks of all the baptised, children and adults. It turns above all to pastors, whom the Council reminds of their grave duty to see that all the faithful receive this education, and especially the young, who are the hope of the Church.",
+          "why": "After the general foundation in GE §1 the declaration had to say what is proper to Christian education. The catechetical renewal of the twentieth century, with its attention to Scripture and liturgy, forms the background. Sacrosanctum Concilium (1963) had made active participation in the liturgy the aim of pastoral work (SC §14), and GE §2 expressly names the liturgy as a place of formation.",
+          "how": "The argument is sacramental. The right follows from baptism, the rebirth of water and the Spirit of which John 3 speaks. The text then lists the aims and refers to John 4 on worship in spirit and truth and to Ephesians on maturity in Christ. In this way the paragraph links the personal growth of the believer with the building up of the Church.",
+          "meaning": "Christian education here means more than religious instruction at school. It includes knowledge of the faith, prayer, liturgy and way of life, and is the shared task of family, parish and school. The 1983 Code takes up the right in can. 217 and the duty of parents in can. 793. The right in GE §2 is added to the general right of GE §1 and does not replace it: human formation remains part of Christian education."
+        }
+      }
     },
     {
       "id": "GE-3",
@@ -32,7 +81,88 @@
       ],
       "crossRefs": [
         "GS-50"
-      ]
+      ],
+      "explain": {
+        "nl": {
+          "what": "Omdat ouders hun kinderen het leven hebben gegeven, hebben zij de zeer ernstige plicht hen op te voeden. Zij zijn de eerste en voornaamste opvoeders. Het gezin is de eerste school van de sociale deugden, en in het christelijk gezin leren kinderen God kennen en aanbidden en de naaste liefhebben. De burgerlijke samenleving moet de rechten van de ouders beschermen en aanvullen wat ontbreekt. Ook de Kerk heeft een eigen titel om op te voeden, omdat zij alle mensen de weg van het heil moet wijzen.",
+          "who": "De paragraaf spreekt tot ouders, in het bijzonder christelijke ouders, en over hun kinderen. Hij spreekt ook over de burgerlijke samenleving en de staat, en over de Kerk als moeder. Het Concilie ordent zo de verantwoordelijkheden van drie gemeenschappen die elk op eigen wijze bij de opvoeding betrokken zijn.",
+          "why": "De verhouding tussen gezin, staat en Kerk in het onderwijs was een oud strijdpunt, in het bijzonder in landen met een staatsmonopolie op scholen of met een schoolstrijd. Pius XI had in Divini illius magistri (1929) het voorrecht van het gezin boven de staat verdedigd. GE §3 herneemt die leer en geeft haar een grond in het ouderschap zelf.",
+          "how": "De redenering gaat uit van een natuurlijk feit: wie leven geeft, is verantwoordelijk voor de opvoeding. Van daaruit worden de taken van de andere gemeenschappen bepaald. De burgerlijke samenleving helpt volgens het beginsel van subsidiariteit. De Kerk heeft een titel van eigen aard, die zowel op haar zending als op haar moederschap berust. De paragraaf sluit aan bij LG §11 en bij de leer over het huwelijk in GS §48-50.",
+          "meaning": "Eerste en voornaamste betekent dat de ouders hun taak niet van school of staat ontvangen; zij volgt uit het ouderschap. De staat vervangt de ouders niet, maar beschermt en ondersteunt hen. Dignitatis Humanae bevestigt het recht van ouders om de godsdienstige opvoeding van hun kinderen te bepalen (DH §5). Zie Catechismus nr. 2221-2223 en Familiaris consortio (1981). De tekst zet ouders en staat niet tegen elkaar op; hij ordent hun taken."
+        },
+        "en": {
+          "what": "Because parents have given life to their children, they have the most serious obligation to educate them. They are the primary and principal educators. The family is the first school of the social virtues, and in the Christian family children learn to know and worship God and to love their neighbour. Civil society must protect the rights of parents and supply what is lacking. The Church too has her own title to educate, because she must show all people the way of salvation.",
+          "who": "The paragraph addresses parents, Christian parents in particular, and speaks of their children. It also speaks of civil society and the state, and of the Church as mother. The Council thus orders the responsibilities of three communities, each involved in education in its own way.",
+          "why": "The relation between family, state and Church in education was an old point of conflict, particularly in countries with a state monopoly on schools or with a school struggle. In Divini illius magistri (1929) Pius XI had defended the priority of the family over the state. GE §3 restates that teaching and grounds it in parenthood itself.",
+          "how": "The argument starts from a natural fact: whoever gives life is responsible for education. From there the tasks of the other communities are determined. Civil society helps according to the principle of subsidiarity. The Church has a title of her own kind, resting both on her mission and on her motherhood. The paragraph connects with LG §11 and with the teaching on marriage in GS §48-50.",
+          "meaning": "Primary and principal means that parents do not receive their task from the school or the state; it follows from parenthood. The state does not replace parents but protects and supports them. Dignitatis Humanae confirms the right of parents to determine the religious education of their children (DH §5). See Catechism nos. 2221-2223 and Familiaris consortio (1981). The text does not set parents against the state; it orders their tasks."
+        }
+      }
+    },
+    {
+      "id": "GE-6",
+      "docId": "gravissimum-educationis",
+      "number": 6,
+      "textEn": "Parents who have the primary and inalienable right and duty to educate their children must enjoy true liberty in their choice of schools. Consequently, the public power, which has the obligation to protect and defend the rights of citizens, must see to it, in its concern for distributive justice, that public subsidies are paid out in such a way that parents are truly free to choose according to their conscience the schools they want for their children.",
+      "textNl": "Ouders, die het eerste en onvervreemdbare recht en de plicht hebben hun kinderen op te voeden, moeten waarlijk vrij zijn in hun keuze van scholen. Daarom moet de overheid, die de plicht heeft de rechten van de burgers te beschermen en te verdedigen, er uit zorg voor de verdelende rechtvaardigheid voor zorgen dat de overheidssubsidies zo worden toegekend dat de ouders werkelijk vrij zijn om volgens hun geweten de scholen te kiezen die zij voor hun kinderen wensen.",
+      "tags": [
+        "education",
+        "parents",
+        "church-and-state",
+        "justice"
+      ],
+      "crossRefs": [
+        "GE-3",
+        "DH-2"
+      ],
+      "explain": {
+        "nl": {
+          "what": "Ouders hebben het eerste en onvervreemdbare recht en de plicht hun kinderen op te voeden, en moeten daarom werkelijk vrij zijn in de keuze van een school. De overheid moet uit verdelende rechtvaardigheid de publieke middelen zo verdelen dat die vrijheid reëel is. Zij moet het recht van kinderen op goed onderwijs beschermen, toezien op de bekwaamheid van leraren en het niveau van de studies, en elk schoolmonopolie vermijden. Gelovigen worden opgeroepen mee te werken aan goede onderwijsmethoden en ouderverenigingen te steunen.",
+          "who": "De paragraaf richt zich tot ouders en tot de overheid. Hij spreekt ook tot alle gelovigen, die moeten helpen passende methoden van opvoeding te vinden en de school te steunen. In de achtergrond staan de samenlevingen met verschillende levensbeschouwingen, waar meerdere soorten scholen naast elkaar bestaan.",
+          "why": "In veel landen eiste de staat in de negentiende en twintigste eeuw het onderwijs voor zich op. Elders was een schoolstrijd uitgevochten. In Nederland legde de Pacificatie van 1917 de gelijke financiering van openbaar en bijzonder lager onderwijs in de Grondwet vast; in België sloten de partijen in 1958 het Schoolpact. GE §6 formuleert als beginsel wat in die landen al institutioneel was geregeld.",
+          "how": "De paragraaf trekt een praktische conclusie uit GE §3. Uit het recht van de ouders volgt de vrijheid van schoolkeuze, en uit die vrijheid volgt een eis van verdelende rechtvaardigheid aan de overheid. De tekst verbindt het natuurrecht met het staatsrecht. Hij staat midden in het deel over de scholen (GE §5-9), tussen het belang van de school (GE §5) en de godsdienstige vorming op alle scholen (GE §7).",
+          "meaning": "Verdelende rechtvaardigheid betekent dat de overheid publieke middelen eerlijk verdeelt over de burgers, zonder ouders te benadelen omdat zij volgens hun geweten een school kiezen. Monopolie verwijst naar een stelsel waarin alleen de staat scholen mag inrichten. De verklaring schrijft geen bepaald onderwijsstelsel voor. De Codex van 1983 (can. 797) en de Catechismus (nr. 2229) nemen het beginsel over. Wie GE §6 in een actueel debat aanhaalt, moet beginsel en nationale vormgeving onderscheiden."
+        },
+        "en": {
+          "what": "Parents have the primary and inalienable right and duty to educate their children, and must therefore be truly free in choosing a school. Out of distributive justice, public authority must allocate public funds so that this freedom is real. It must protect the right of children to a good education, see to the competence of teachers and the standard of studies, and avoid any school monopoly. The faithful are urged to help develop sound methods of education and to support associations of parents.",
+          "who": "The paragraph addresses parents and public authorities. It also speaks to all the faithful, who are to help find suitable methods of education and to support the school. In the background stand societies with differing convictions, where several kinds of school exist side by side.",
+          "why": "In many countries during the nineteenth and twentieth centuries the state claimed education for itself. Elsewhere a school struggle had been fought out. In the Netherlands the Pacification of 1917 laid down in the Constitution equal funding for public and denominational primary schools; in Belgium the parties concluded the School Pact in 1958. GE §6 states as a principle what those countries had already arranged institutionally.",
+          "how": "The paragraph draws a practical conclusion from GE §3. From the right of parents follows the freedom to choose a school, and from that freedom follows a demand of distributive justice on public authority. The text joins natural law to constitutional law. It stands in the middle of the section on schools (GE §5-9), between the importance of the school (GE §5) and religious formation in all schools (GE §7).",
+          "meaning": "Distributive justice means that public authority distributes public means fairly among citizens, without penalising parents for choosing a school according to conscience. Monopoly refers to a system in which only the state may run schools. The declaration prescribes no particular school system. The 1983 Code (can. 797) and the Catechism (no. 2229) take up the principle. Anyone citing GE §6 in a current debate must distinguish the principle from its national form."
+        }
+      }
+    },
+    {
+      "id": "GE-8",
+      "docId": "gravissimum-educationis",
+      "number": 8,
+      "textEn": "The influence of the Church in the field of education is shown in a special manner by the Catholic school. No less than other schools does the Catholic school pursue cultural goals and the human formation of youth. But its proper function is to create for the school community a special atmosphere animated by the Gospel spirit of freedom and charity …",
+      "textNl": "De invloed van de Kerk op het terrein van de opvoeding blijkt op bijzondere wijze uit de katholieke school. Niet minder dan andere scholen streeft de katholieke school culturele doelen en de menselijke vorming van de jeugd na. Maar haar eigen taak is voor de schoolgemeenschap een bijzondere sfeer te scheppen, bezield door de evangelische geest van vrijheid en liefde …",
+      "tags": [
+        "education",
+        "formation",
+        "freedom"
+      ],
+      "crossRefs": [
+        "GE-6",
+        "GE-3"
+      ],
+      "explain": {
+        "nl": {
+          "what": "De katholieke school is een bijzondere uitdrukking van de rol van de Kerk in de opvoeding. Zij streeft dezelfde culturele doelen en menselijke vorming na als andere scholen. Haar eigen taak is een schoolgemeenschap te vormen die bezield is door de evangelische geest van vrijheid en liefde, waarin jongeren als nieuwe schepping groeien en alle kennis in verband wordt gebracht met het geloof. Het Concilie bevestigt het recht van de Kerk scholen op te richten en te leiden, en vraagt veel van de leraren.",
+          "who": "De paragraaf richt zich tot de leiding en leraren van katholieke scholen, die de eerste verantwoordelijkheid dragen voor het eigen karakter van de school. Hij spreekt ook tot katholieke ouders, die hun kinderen waar mogelijk aan katholieke scholen moeten toevertrouwen, en tot de overheden, aan wie het recht van de Kerk op scholen in herinnering wordt gebracht.",
+          "why": "Het preparatoire ontwerp heette aanvankelijk een ontwerp over de katholieke scholen. In de herziening werd het een algemene verklaring over de christelijke opvoeding, maar de school bleef een centraal onderwerp. In veel landen was het bestaan of de financiering van katholieke scholen omstreden. Elders vormden zij een groot deel van het onderwijs, en daar groeide de vraag wat hen eigen was naast andere scholen.",
+          "how": "De paragraaf beschrijft eerst wat de katholieke school met andere scholen gemeen heeft, en daarna wat haar eigen is. Hij legt het eigene in de sfeer van de schoolgemeenschap en in de verbinding van cultuur en heilsboodschap. Daarna volgen de rechten van de Kerk en de taak van de leraren. GE §9 behandelt vervolgens de verschillende soorten katholieke scholen.",
+          "meaning": "De evangelische geest van vrijheid en liefde betekent dat het katholieke karakter in de eerste plaats in de gemeenschap en de omgang wordt gezocht, niet alleen in de godsdienstles. Vrijheid wijst ook op eerbied voor het geweten van leerlingen die het geloof niet delen (vgl. DH §2). De Congregatie voor de Katholieke Opvoeding werkte dit uit in De katholieke school (1977). Een lezing die de school ziet als middel van afzondering, mist de nadruk op dienst aan de samenleving."
+        },
+        "en": {
+          "what": "The Catholic school is a special expression of the Church's role in education. It pursues the same cultural aims and human formation as other schools. Its proper task is to form a school community animated by the Gospel spirit of freedom and charity, in which young people grow as a new creation and all knowledge is related to faith. The Council reaffirms the right of the Church to found and run schools, and asks much of the teachers.",
+          "who": "The paragraph addresses those who run and teach in Catholic schools, who bear the first responsibility for the school's proper character. It also speaks to Catholic parents, who should entrust their children to Catholic schools where possible, and to public authorities, who are reminded of the Church's right to schools.",
+          "why": "The preparatory draft was at first a draft on Catholic schools. In revision it became a general declaration on Christian education, but the school remained a central subject. In many countries the existence or funding of Catholic schools was contested. Elsewhere they made up a large share of education, and there the question grew of what was proper to them beside other schools.",
+          "how": "The paragraph first describes what the Catholic school has in common with other schools and then what is proper to it. It places the proper element in the atmosphere of the school community and in the link between culture and the message of salvation. The rights of the Church and the task of teachers follow. GE §9 then treats the various kinds of Catholic schools.",
+          "meaning": "The Gospel spirit of freedom and charity means that the Catholic character is sought first in the community and its way of life, not only in religious instruction. Freedom also implies respect for the conscience of pupils who do not share the faith (cf. DH §2). The Congregation for Catholic Education developed this in The Catholic School (1977). A reading that sees the school as a means of withdrawal misses its emphasis on service to society."
+        }
+      }
     }
   ]
 }

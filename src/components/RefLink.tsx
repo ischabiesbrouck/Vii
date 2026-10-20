@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { ConciliarText } from '@/components/TextBlocks';
+import { Explanation } from '@/components/Explanation';
 import { getParagraph } from '@/lib/content';
 import { useDocuments } from '@/lib/data';
 import { useAsync } from '@/lib/useAsync';
@@ -30,7 +31,10 @@ function RefPanel({ abbr, n, label }: { abbr: string; n: number; label: string }
       {loading ? (
         <div className="skeleton h-24 w-full" />
       ) : data ? (
-        <ConciliarText paragraph={data.paragraph} showLatin cite={label} />
+        <>
+          <ConciliarText paragraph={data.paragraph} showLatin cite={label} explainable={false} />
+          <Explanation paragraph={data.paragraph} />
+        </>
       ) : (
         <p className="border border-dashed border-line px-4 py-3 text-sm text-muted">{t('ref.notSeeded', { cite: label })}</p>
       )}

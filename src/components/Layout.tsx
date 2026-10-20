@@ -32,6 +32,7 @@ import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { usePlayer } from '@/store/player';
 import { useSpeech } from '@/store/speech';
 import { splashDone, useWelcome } from '@/store/welcome';
+import { useExplain } from '@/store/explain';
 import { installedDisplay, toggleFullscreen, useFullscreen } from '@/lib/fullscreen';
 import { useOnline } from '@/lib/hooks';
 import { useUi, type FontSize, type Theme } from '@/store/ui';
@@ -43,6 +44,7 @@ import { Seal } from '@/components/Seal';
 // Loaded on first use: the palette pulls in the search index, the theater the player.
 const CommandPalette = lazy(() => import('@/components/CommandPalette').then((m) => ({ default: m.CommandPalette })));
 const VideoTheater = lazy(() => import('@/components/VideoTheater').then((m) => ({ default: m.VideoTheater })));
+const ExplainSheet = lazy(() => import('@/components/ExplainSheet').then((m) => ({ default: m.ExplainSheet })));
 const Welcome = lazy(() => import('@/components/Welcome').then((m) => ({ default: m.Welcome })));
 const SpeechBar = lazy(() => import('@/components/ReadAloud').then((m) => ({ default: m.SpeechBar })));
 const VoiceSettings = lazy(() => import('@/components/ReadAloud').then((m) => ({ default: m.VoiceSettings })));
@@ -340,6 +342,7 @@ export function Layout() {
   if (playerUsed) theaterLoaded.current = true;
   const headerRef = useRef<HTMLElement>(null);
   const speaking = useSpeech((s) => s.status !== 'idle');
+  const explaining = useExplain((s) => !!s.id);
   const welcomeOpen = useWelcome((s) => s.open);
   const welcomeLoaded = useRef(false);
   if (welcomeOpen) welcomeLoaded.current = true;
@@ -355,8 +358,9 @@ export function Layout() {
   }, []);
   const lang = useUi((s) => s.lang);
 
-  // Reading aloud belongs to the page it started on.
+  // Reading aloud belongs to the page it started on; so does an open explanation panel.
   useEffect(() => stopReading, [location.pathname, lang]);
+  useEffect(() => useExplain.getState().close(), [location.pathname]);
   const [stuck, setStuck] = useState(false);
 
   // The desktop navigation counts as stuck once the masthead is out of view.
@@ -409,10 +413,14 @@ export function Layout() {
     };
   }, []);
 
+  // A change of query string alone (a tab such as ?view=history) keeps the scroll position.
+  const lastPath = useRef(location.pathname);
   useEffect(() => {
     keyRef.current = location.key;
     setMenuOpen(false);
-    if (location.hash) return;
+    const samePage = lastPath.current === location.pathname;
+    lastPath.current = location.pathname;
+    if (location.hash || (samePage && navType === 'REPLACE')) return;
     let saved: number | null = null;
     try {
       const v = sessionStorage.getItem(`scroll:${location.key}`);
@@ -661,6 +669,7 @@ export function Layout() {
         {theaterLoaded.current && <VideoTheater />}
         {speaking && <SpeechBar />}
         {welcomeLoaded.current && <Welcome />}
+        {explaining && <ExplainSheet />}
       </Suspense>
       <InstallPrompt />
       <Toast />
